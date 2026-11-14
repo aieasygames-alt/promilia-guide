@@ -68,3 +68,9 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 本轮本地 `npm run check`、46 项单元测试、预览构建、30 项桌面/手机浏览器测试和正式构建均通过。预览构建为 39 个 HTML、16 篇稿件；正式构建为 34 个 HTML、12 篇已审核文章，战斗稿未进入正式产物。对上述预览地址执行 `site:verify --mode preview --commit d3fbf8038cb7d3c037822b60a49cf7f2b7ec6517` 重试后 48/48 通过：两篇中日文战斗页面可访问，提交清单一致，预览保持 `X-Robots-Tag: noindex`、空 Sitemap、正确 canonical、Pagefind 和真实 404，未跳转到正式主域名。
 
 战斗中日文稿仍为 `status: draft` / `translationStatus: draft`，没有审核人或审核日期。预览交付不等于正式发布；下一步是逐语言真实人工审核，取得可复核战斗证据后再评估正式收录。CMS、站内账号、评论仍不在范围内。
+
+## 站点 logo 更新
+
+提交 `bb808f00ad5cd2bad0ea97e640d5af5235ff8922` 已推送到 `main`，正式主域名的 `build-info.json` 已返回相同 SHA。Cloudflare Pages 生产部署检查对应部署 ID `1ff693bb-55d2-4209-a525-344b65faeef6`，不可变地址为 https://1ff693bb.promilia-guide.pages.dev；该不可变 pages.dev 地址按既有规则带 `noindex`，正式可索引入口仍为 https://promiliaguide.com。
+
+本次更新从用户提供的白底标志生成完整透明 `public/images/logo.png` 与导航横版 `public/images/logo-wordmark.png`，替换头部、页脚及 Organization JSON-LD logo。生产构建继续包含 12 篇已审核文章，战斗草稿未进入正式页面。预览与正式构建、46 项单元测试、30 项桌面/手机测试和线上 48 项检查均已通过。
