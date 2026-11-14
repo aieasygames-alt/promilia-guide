@@ -62,6 +62,25 @@ test('combat preview provides a bilingual, actionable first-run record and links
   }
 });
 
+test('official character and kibo catalogs render bilingual source-backed entries', async ({ page }) => {
+  for (const [locale, characterNames, kiboNames] of [
+    ['zh-hans', ['艾妮丝', '姬瑟贝露', '西夫未瑟', '忒拉拉'], ['星鳐', '绒心布里尼', '菜鸡', '布鲁达', '怯影之翼']],
+    ['ja', ['アニス', 'キャスベル', 'シンフォーリア', 'テララ'], ['メテオール', 'モフリーネ', 'キャバード', 'ブルーダ', 'ナイトフォール']],
+  ] as const) {
+    await page.goto(`/${locale}/characters/`);
+    await expect(page.locator('[data-entity-catalog="character"] [data-entity-id]')).toHaveCount(4);
+    await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[0]);
+    await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[3]);
+    await expect(page.locator('.entity-card').first().locator('.entity-card-footer a')).toHaveAttribute('href', locale === 'ja' ? 'https://azurpromilia.jp/character' : 'https://azurpromilia.manjuu.com/home/');
+
+    await page.goto(`/${locale}/kibo/`);
+    await expect(page.locator('[data-entity-catalog="kibo"] [data-entity-id]')).toHaveCount(5);
+    await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[0]);
+    await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[4]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
+
 test('Pagefind searches Chinese, Japanese and aliases within the current locale', async ({ page }) => {
   for (const [locale, query] of [['zh-hans', '设备'], ['ja', '端末'], ['zh-hans', '藍色星原'], ['ja', 'アズールプロミリア'], ['zh-hans', 'azure promilia']]) {
     await page.goto(`/${locale}/search/?q=${encodeURIComponent(query)}`);
@@ -140,7 +159,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   const download = await pending;
   expect(download.suggestedFilename()).toMatch(/^promilia-editorial-status-\d{4}-\d{2}-\d{2}\.json$/);
   const result = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(result.summary).toMatchObject({ articles: 16, publishable: 12, verifiedSources: 11, verifiedClaims: 9 });
+  expect(result.summary).toMatchObject({ articles: 16, publishable: 12, verifiedSources: 14, verifiedClaims: 9 });
   await page.setViewportSize({ width: 320, height: 900 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });

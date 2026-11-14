@@ -249,5 +249,68 @@
         "note": "公式サイトのリンクとアプリIDを照合。今回の表示では登録・インストール操作を確認できていないため、日本のアカウントでの利用可否は保証しません。"
       }
     }
+  },
+  {
+    "id": "cn-official-character-kibo-2026-11-14",
+    "title": "国服官网首页角色与奇波展示",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "gameRegion": "中国大陆官网",
+    "status": "verified",
+    "note": "读取官网当前前端展示的角色与奇波区块；角色名称、英文标识、地区标签和奇波分类/简介均按官网展示记录。未据此补充技能倍率、养成材料、强度或获取地点。",
+    "excerpt": "官网当前展示 4 个角色图卡：艾妮丝（Anais）、姬瑟贝露（Cathbelle）、西夫未瑟（Symphoria）、忒拉拉（Terara）；以及 5 个奇波：星鳐（STARAY）、绒心布里尼（DOWNYBRINNY）、菜鸡（CABBIRD）、布鲁达（BLUDA）、怯影之翼（VESPERVAMP）。",
+    "evidenceFile": "research/2026-11-14-official-entities.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式サイト：キャラクターとキボの表示",
+        "note": "公式トップのキャラクター・キボ表示を確認。数値、育成素材、強さ、入手場所は補っていません。"
+      }
+    }
+  },
+  {
+    "id": "jp-official-character-2026-11-14",
+    "title": "日本公式キャラクター一覧",
+    "publisher": "Manjuu・Yostar / アズールプロミリア公式サイト",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/character",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "核对官方角色列表、日语名称、英文名、简介和所属/ゆかりの地。日本官网当前还列出メーツァ；本次按项目请求仅纳入前四个已公布角色。",
+    "excerpt": "官方列表列出アニス（Anais）、キャスベル（Cathbelle）、シンフォーリア（Symphoria）、テララ（Terara）及其他角色；四名角色的简介和所属/ゆかりの地均可在对应官方页面核对。",
+    "evidenceFile": "research/2026-11-14-official-entities.md",
+    "localized": {
+      "zh-hans": {
+        "title": "日本官方角色列表",
+        "note": "核对日语名称、英文名、角色简介和所属/相关地区；本次按请求收录前四个角色。"
+      }
+    }
+  },
+  {
+    "id": "jp-official-kibo-2026-11-14",
+    "title": "日本公式キボ一覧",
+    "publisher": "Manjuu・Yostar / アズールプロミリア公式サイト",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/kibo",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "核对官方キボ列表、日语名称、英文标识、分类和公开生态简介。",
+    "excerpt": "官方列表展示メテオール（STARAY）、モフリーネ（DOWNYBRINNY）、キャバード（CABBIRD）、ブルーダ（BLUDA）、ナイトフォール（VESPERVAMP），并提供分类与生态特征简介。",
+    "evidenceFile": "research/2026-11-14-official-entities.md",
+    "localized": {
+      "zh-hans": {
+        "title": "日本官方奇波列表",
+        "note": "核对日语名称、英文标识、分类和生态简介。"
+      }
+    }
   }
 ]

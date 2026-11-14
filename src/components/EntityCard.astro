@@ -1,0 +1,43 @@
+---
+import type { Entity, EntityLocale } from '../data/entities';
+import type { Source } from '../lib/facts';
+import Icon from './Icon.astro';
+
+interface Props {
+  entity: Entity;
+  locale: EntityLocale;
+  source?: Source;
+  index: number;
+}
+
+const { entity, locale, source, index } = Astro.props;
+const ja = locale === 'ja';
+const sourceLabel = ja ? '公式ページ' : '官方页面';
+const classificationLabel = ja ? '分類' : '分类';
+const originLabel = ja ? '所属・ゆかりの地' : '所属与相关地区';
+---
+
+<article class={`entity-card entity-card-${entity.kind}`} data-entity-id={entity.id} data-entity-kind={entity.kind}>
+  <div class="entity-card-topline">
+    <span class="entity-number">0{index + 1}</span>
+    <span class="pill">{ja ? '公式発表' : '官方已公布'}</span>
+  </div>
+  <header class="entity-card-heading">
+    <div>
+      <h2>{entity.names[locale]}</h2>
+      <p class="entity-romanized">{entity.romanized}</p>
+    </div>
+    <span class="entity-mark" aria-hidden="true"><Icon name={entity.kind === 'character' ? 'person' : 'leaf'} size={24}/></span>
+  </header>
+  <p class="entity-aliases" data-pagefind-weight="0.4">{entity.aliases[locale]}</p>
+  <p class="entity-summary">{entity.summary[locale]}</p>
+  {entity.quote && <blockquote>{entity.quote[locale]}</blockquote>}
+  {(entity.classification || entity.origin) && <dl class="entity-facts">
+    {entity.classification && <div><dt>{classificationLabel}</dt><dd>{entity.classification[locale]}</dd></div>}
+    {entity.origin && <div><dt>{originLabel}</dt><dd>{entity.origin[locale]}</dd></div>}
+  </dl>}
+  <footer class="entity-card-footer">
+    <span>{ja ? '資料確認日：2026-11-14' : '资料核对：2026-11-14'}</span>
+    {source?.url && <a href={source.url} target="_blank" rel="noopener noreferrer">{sourceLabel}<Icon name="arrow" size={14}/></a>}
+  </footer>
+</article>
