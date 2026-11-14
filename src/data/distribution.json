@@ -1,0 +1,51 @@
+[
+  {
+    "id": "cn-pc",
+    "region": "cn",
+    "platform": "pc",
+    "entryClaim": "cn-platform-details",
+    "scheduleClaim": "cn-launch-date",
+    "preloadClaim": "cn-preload-status"
+  },
+  {
+    "id": "cn-android",
+    "region": "cn",
+    "platform": "android",
+    "entryClaim": "cn-platform-details",
+    "scheduleClaim": "cn-launch-date",
+    "preloadClaim": "cn-preload-status"
+  },
+  {
+    "id": "cn-ios",
+    "region": "cn",
+    "platform": "ios",
+    "entryClaim": "cn-ios-store",
+    "scheduleClaim": "cn-launch-date",
+    "preloadClaim": "cn-preload-status",
+    "compatibilityClaim": "cn-ios-compatibility"
+  },
+  {
+    "id": "jp-pc",
+    "region": "jp",
+    "platform": "pc",
+    "entryClaim": "jp-platform-details",
+    "scheduleClaim": "jp-release-status",
+    "preloadClaim": "jp-preload-status"
+  },
+  {
+    "id": "jp-android",
+    "region": "jp",
+    "platform": "android",
+    "entryClaim": "jp-official-entry",
+    "scheduleClaim": "jp-release-status",
+    "preloadClaim": "jp-preload-status"
+  },
+  {
+    "id": "jp-ios",
+    "region": "jp",
+    "platform": "ios",
+    "entryClaim": "jp-official-entry",
+    "scheduleClaim": "jp-release-status",
+    "preloadClaim": "jp-preload-status"
+  }
+]

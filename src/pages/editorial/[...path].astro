@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import { allGuides, preview } from '../../lib/content';
+import { sources, claims, channels } from '../../lib/facts';
+import { createEditorialReport, findContentImpact } from '../../lib/editorial.mjs';
+import { createReleaseReport, releasePlanSchema } from '../../lib/release-readiness.mjs';
+import rawPlan from '../../data/release-plan.json';
+import ReleaseReadiness from '../../components/ReleaseReadiness.astro';
+import { validateEntries } from '../../lib/content-integrity.mjs';
+import { validateDistribution } from '../../lib/distribution.mjs';
+export function getStaticPaths() { return preview ? [{ params: { path: undefined } }] : []; }
+const entries = (await allGuides()).map((entry) => ({ ...entry, path: `src/content/guides/${entry.id}.md` }));
+const context = { entries, sources, claims };
+const report = createEditorialReport(context);
+const releaseReport = createReleaseReport({ ...context, plan: releasePlanSchema.parse(rawPlan), validationIssues: [...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)] });
+const topics = [...new Set(entries.map((entry) => entry.data.contentId))];
+const selections = [
+  ...sources.map((source) => ({ key: `source:${source.id}`, label: source.id, group: '来源', query: { sourceId: source.id } })),
+  ...claims.map((claim) => ({ key: `claim:${claim.id}`, label: `${claim.id} · r${claim.revision}`, group: '事实', query: { claimId: claim.id } })),
+  ...topics.map((id) => ({ key: `content:${id}`, label: id, group: '主题', query: { contentId: id } })),
+];
+const impactRoutes = Object.fromEntries(selections.map((selection) => [selection.key, findContentImpact({ ...context, ...selection.query }).articles.map((article) => article.url)]));
+---
+<Base title="内容审核工作台" description="内部编辑预览：来源、事实、稿件状态与修订影响范围。" noindex searchable={false}>
+  <div class="container editorial-page">
+    <header class="page-heading"><p class="eyebrow">EDITORIAL WORKSPACE</p><h1>内容审核工作台</h1><p>查看事实依据、稿件阻碍与双语同步情况。此页面仅在编辑预览中生成；不会代替人工审核或自动发布文章。</p></header>
+    <div class="editorial-stats"><div><strong>{report.summary.articles}</strong><span>语言稿件</span></div><div><strong>{report.summary.verifiedSources} / {report.summary.sources}</strong><span>已核验来源</span></div><div><strong>{report.summary.verifiedClaims} / {report.summary.claims}</strong><span>已核验事实</span></div><div><strong>{report.summary.publishable}</strong><span>可正式发布</span></div><div><strong>{report.summary.staleArticles}</strong><span>需同步修订</span></div></div>
+    <ReleaseReadiness report={releaseReport}/>
+    <section class="editorial-section"><div class="section-head"><div><h2>稿件与影响范围</h2><p>选择一个来源、事实或主题，列出需要复查的全部语言稿。</p></div><button class="button secondary" id="download-report" type="button">下载状态报告</button></div>
+      <div class="editorial-filters"><label for="impact-filter">影响范围<select id="impact-filter"><option value="">全部稿件</option>{['来源', '事实', '主题'].map((group) => <optgroup label={group}>{selections.filter((selection) => selection.group === group).map((selection) => <option value={selection.key}>{selection.label}</option>)}</optgroup>)}</select></label><label for="state-filter">待处理状态<select id="state-filter"><option value="all">全部状态</option><option value="review">待人工审核</option><option value="stale">事实或译文待更新</option><option value="publishable">可发布</option></select></label><span id="filtered-count" role="status" aria-live="polite">显示 {report.articles.length} 篇稿件</span></div>
+      <div class="editorial-table-scroll"><table class="editorial-table"><thead><tr><th>主题与文件</th><th>语言 / 修订</th><th>发布阻碍</th><th>核验提醒</th></tr></thead><tbody>{report.articles.map((article) => <tr data-report-row data-route={article.url} data-review={String(article.blockers.some((issue) => issue.code === 'manual-review'))} data-stale={String(article.blockers.some((issue) => ['stale-claim', 'stale-translation'].includes(issue.code)))} data-publishable={String(article.publishable)}><td><a href={article.url}>{article.title} ↗</a><small>{article.file}</small><span class={`pill ${article.publishable ? '' : 'pending'}`}>{article.publishable ? '可发布' : '待处理'}</span></td><td><strong>{article.locale}</strong><small>原稿 r{article.sourceRevision}{article.translatedFromRevision !== null && ` / 译自 r${article.translatedFromRevision}`}</small></td><td><ul>{article.blockers.length ? article.blockers.map((issue) => <li>{issue.message}</li>) : <li>无发布阻碍</li>}</ul></td><td><ul>{article.warnings.length ? article.warnings.map((issue) => <li>{issue.message}</li>) : <li>无额外提醒</li>}</ul></td></tr>)}</tbody></table></div>
+      <p id="report-status" class="search-help" role="status"></p>
+    </section>
+    <section class="editorial-section"><div class="section-head"><div><h2>来源核验记录</h2><p>来源核对日期与文章实质更新时间分开记录。</p></div></div><div class="editorial-sources">{sources.map((source) => <article><span class={`pill ${source.status === 'verified' ? '' : 'pending'}`}>{source.status === 'verified' ? '来源已核验' : '仅作规划线索'}</span><h3>{source.url ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a> : source.title}</h3><p>{source.note}</p><small>{source.id}<br/>原文发布：{source.publishedAt || '未注明'} · 来源核对：{source.checkedAt || '未核验'}</small>{source.excerpt && <blockquote>{source.excerpt}</blockquote>}<button class="text-link" type="button" data-source-impact={`source:${source.id}`}>查看受影响稿件 →</button></article>)}</div></section>
+    <section class="editorial-section prose"><h2>完成审核后如何发布</h2><ol><li>逐条确认正文与事实摘要、原始来源、适用地区及版本一致。</li><li>将正文引用的 <code>claimRevisions</code> 更新为已复查的事实修订号；事实变动时同步审阅中日文稿件。</li><li>完成真实人工审核后记录 <code>reviewer</code>、<code>reviewedAt</code>，并设置文章与译文的发布状态。</li><li>运行内容检查与正式构建。任何来源、事实或译文修订冲突都会阻止错误发布。</li></ol><p>此工作台只读取本地文件。筛选、报告导出和查看稿件不会改写审核字段或向外部发送内容。</p></section>
+  </div>
+  <script id="editorial-report-data" type="application/json" is:inline set:html={JSON.stringify({ report, impactRoutes, releaseReport }).replace(/</g, '\\u003c')}/>
+  <script>
+    const dataNode = document.getElementById('editorial-report-data');
+    if (dataNode) {
+      const { report, impactRoutes, releaseReport } = JSON.parse(dataNode.textContent || '{}');
+      document.getElementById('download-release-report')!.addEventListener('click', () => {
+        const url = URL.createObjectURL(new Blob([JSON.stringify(releaseReport, null, 2)], { type: 'application/json;charset=utf-8' }));
+        const link = document.createElement('a'); link.href = url; link.download = `promilia-release-readiness-${releaseReport.asOf}.json`; link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        document.getElementById('release-report-status')!.textContent = '已生成首发报告；稿件和审核状态未被修改。';
+      });
+      const impact = document.querySelector<HTMLSelectElement>('#impact-filter')!;
+      const state = document.querySelector<HTMLSelectElement>('#state-filter')!;
+      const rows = [...document.querySelectorAll<HTMLTableRowElement>('[data-report-row]')];
+      const filter = () => {
+        const routes = impact.value ? new Set(impactRoutes[impact.value] || []) : null;
+        let count = 0;
+        rows.forEach((row) => {
+          const stateMatch = state.value === 'all' || row.dataset[state.value] === 'true';
+          const show = stateMatch && (!routes || routes.has(row.dataset.route));
+          row.hidden = !show; if (show) count++;
+        });
+        document.getElementById('filtered-count')!.textContent = `显示 ${count} 篇稿件`;
+      };
+      impact.addEventListener('change', filter); state.addEventListener('change', filter);
+      document.querySelectorAll<HTMLButtonElement>('[data-source-impact]').forEach((button) => button.addEventListener('click', () => {
+        impact.value = button.dataset.sourceImpact!; state.value = 'all'; filter(); impact.focus();
+        impact.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+      }));
+      document.getElementById('download-report')!.addEventListener('click', () => {
+        const url = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], { type: 'application/json;charset=utf-8' }));
+        const link = document.createElement('a'); link.href = url; link.download = `promilia-editorial-status-${report.asOf}.json`; link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        document.getElementById('report-status')!.textContent = '已生成本地报告；审核状态未被修改。';
+      });
+    }
+  </script>
+</Base>
+<style>
+  .editorial-page{padding-top:20px}.editorial-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}.editorial-stats>div{padding:22px;background:var(--mint);border:1px solid var(--line);border-radius:5px}.editorial-stats strong{display:block;font:30px Georgia,serif}.editorial-stats span{display:block;font-size:12px;color:var(--muted);margin-top:8px}.editorial-section{margin-top:45px}.editorial-filters{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:20px}.editorial-filters label{font-size:12px;display:flex;flex-direction:column;gap:7px;min-width:160px}.editorial-filters select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:10px;max-width:100%}.editorial-filters>span{font-size:12px;color:var(--muted);padding:10px 0}.editorial-table-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--card)}.editorial-table{border-collapse:collapse;width:100%;font-size:12px}.editorial-table th{text-align:left;font-weight:500;background:var(--mint);padding:14px 18px;white-space:nowrap}.editorial-table td{padding:17px 18px;border-top:1px solid var(--line);vertical-align:top;min-width:150px;max-width:330px}.editorial-table td:first-child{min-width:260px}.editorial-table a{font-size:14px;color:var(--green)}.editorial-table small{display:block;color:var(--muted);font-size:10px;overflow-wrap:anywhere;margin:7px 0}.editorial-table ul{margin:0;padding-left:16px}.editorial-table li{margin:0 0 7px}.editorial-sources{display:grid;grid-template-columns:1fr 1fr;gap:20px}.editorial-sources article{min-width:0;overflow-wrap:anywhere;padding:24px;border:1px solid var(--line);background:var(--card);border-radius:5px}.editorial-sources h3{font-size:17px;font-weight:500;margin:15px 0}.editorial-sources p{font-size:12px;color:var(--muted)}.editorial-sources small{font-size:10px;display:block;margin-top:15px;color:var(--muted);overflow-wrap:anywhere}.editorial-sources blockquote{font-size:12px;margin:18px 0;padding:15px;background:var(--mint);border-left:2px solid var(--gold)}.editorial-sources button{border:0;background:transparent;padding:0;margin-top:14px}.editorial-table tr[hidden]{display:none}@media(max-width:820px){.editorial-stats{grid-template-columns:repeat(3,1fr)}.editorial-sources{grid-template-columns:1fr}}@media(max-width:520px){.editorial-stats{grid-template-columns:repeat(2,1fr)}.editorial-stats>div{padding:18px}.editorial-stats strong{font-size:26px}.editorial-filters{display:block}.editorial-filters label{margin-bottom:15px}.editorial-section .section-head{display:block}.editorial-section .section-head button{margin-top:20px}.editorial-table td{padding:15px}}
+</style>

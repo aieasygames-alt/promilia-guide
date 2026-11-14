@@ -1,0 +1,63 @@
+{
+  "id": "initial-bilingual",
+  "title": "首批双语内容",
+  "locales": [
+    "zh-hans",
+    "ja"
+  ],
+  "topics": [
+    {
+      "contentId": "launch",
+      "label": "公测时间与预约",
+      "requiredClaims": [
+        "cn-launch-date",
+        "cn-opening-time",
+        "jp-release-status",
+        "jp-official-entry"
+      ]
+    },
+    {
+      "contentId": "global-release",
+      "label": "发行地区",
+      "requiredClaims": [
+        "cn-launch-date",
+        "jp-release-status",
+        "jp-platform-plan",
+        "jp-official-entry"
+      ]
+    },
+    {
+      "contentId": "download",
+      "label": "下载与预约入口",
+      "requiredClaims": [
+        "cn-ios-store",
+        "cn-platform-details",
+        "cn-preload-status",
+        "jp-release-status",
+        "jp-official-entry",
+        "jp-platform-details",
+        "jp-preload-status"
+      ]
+    },
+    {
+      "contentId": "requirements",
+      "label": "配置与兼容条件",
+      "requiredClaims": [
+        "cn-ios-compatibility",
+        "cn-platform-details",
+        "jp-platform-plan",
+        "jp-platform-details"
+      ]
+    },
+    {
+      "contentId": "getting-started",
+      "label": "开服准备清单",
+      "requiredClaims": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "jp-release-status",
+        "jp-official-entry"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+name: Verify hosted site
+on:
+  workflow_dispatch:
+    inputs:
+      deployment_url:
+        description: 'HTTPS origin to check (Pages preview or production)'
+        type: string
+        required: true
+      deployment_mode:
+        description: 'Expected build and indexing mode'
+        type: choice
+        options:
+          - preview
+          - production
+        default: preview
+        required: true
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Verify deployed responses
+        env:
+          DEPLOYMENT_URL: ${{ inputs.deployment_url }}
+          DEPLOYMENT_MODE: ${{ inputs.deployment_mode }}
+        run: node scripts/verify-site.mjs --url "$DEPLOYMENT_URL" --mode "$DEPLOYMENT_MODE" --json > site-verification.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hosted-site-verification
+          path: site-verification.json

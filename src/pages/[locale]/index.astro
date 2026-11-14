@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { visibleGuides, articlePath, type Locale } from '../../lib/content';
+import { t } from '../../lib/i18n';
+import { origin, locales, languageTag } from '../../lib/publication.mjs';
+import { claims, sources } from '../../lib/facts';
+import { releaseSummary } from '../../lib/editorial.mjs';
+export function getStaticPaths() { return locales.map((locale) => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const c = t(locale);
+const releases = (['cn', 'jp'] as const).map((region) => releaseSummary({ claims, sources, locale, region }));
+const entries = await visibleGuides(locale);
+const root = `/${locale}/`;
+const guideLink = (id: string) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? articlePath(entry.data) : root + 'guides/'; };
+const featured = ['launch', 'global-release', 'download', 'getting-started'].flatMap((id) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? [entry] : []; });
+const alternates = [...locales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/` })), { lang: 'x-default', href: origin + '/' }];
+const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'kibo/' }, { icon: 'shield', path: 'systems/' }, { icon: 'compass', path: 'systems/' }];
+---
+<Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア 攻略・配信情報' : '星原旅伴 · 蓝色星原：旅谣攻略'} description={c.intro} alternates={alternates}>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? '出典を明記 · バージョンを区別 · 継続して更新' : '来源可追溯 · 版本有标注 · 内容持续修订'}</span></div></div>
+    <div class="hero-visual"><img src="/images/field-landscape.svg" width="1400" height="1000" alt={locale === 'ja' ? '緑の山並みと湖を描いた、このサイトのオリジナル装飾イラスト。ゲーム画面ではありません。' : '本站原创的山野、湖泊与星光风景装饰插画，非游戏画面。'} fetchpriority="high"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-compass" aria-hidden="true"><span>N</span><Icon name="compass" size={50}/></div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>THE JOURNEY STARTS HERE</small><strong>{c.fieldnotesSub}</strong></span><span class="caption-index">01 / ∞</span></div></div>
+  </section>
+  <div class="container">
+    {releases.map((release) => <section class="status-strip" aria-label={release.label} data-release-claim={release.claimId} data-release-revision={release.revision} data-release-verified={String(release.verified)}><span class="status-title"><span class="status-dot"></span>{release.label}</span><p>{release.detail}</p>{release.source?.url ? <a href={release.source.url} target="_blank" rel="noopener noreferrer">{locale === 'ja' ? '公式告知' : '官方原文'}<Icon name="arrow" size={15}/></a> : <a href={guideLink('global-release')}>{locale === 'ja' ? '配信状況' : '发行状态'}<Icon name="arrow" size={15}/></a>}</section>)}
+    <section class="home-section" aria-labelledby="focus-title"><div class="section-head"><div><div class="section-kicker">BEFORE YOU SET OUT</div><h2 id="focus-title">{c.focus}</h2><p>{c.focusSub}</p></div><a class="text-link" href={root + 'guides/'}>{c.all}<Icon name="arrow" size={16}/></a></div>{featured.length ? <div class="guide-grid">{featured.map((entry, index) => <GuideCard entry={entry} index={index}/>)}</div> : <div class="empty-state"><Icon name="book" size={30}/><h3>{c.noContent}</h3><p>{c.noContentNote}</p><a class="text-link" href={root + 'editorial-policy/'}>{c.policy}<Icon name="arrow" size={16}/></a></div>}</section>
+    <section class="journey-path"><div class="journey-heading"><span class="label">A LITTLE PREPARATION</span><h2>{c.path}</h2><p>{c.pathSub}</p><Icon name="compass" size={55}/></div><div class="path-steps">{['global-release', 'requirements', 'getting-started'].map((id, i) => <a href={guideLink(id)}><span class="step-number">0{i + 1}</span><strong>{c.pathSteps[i]}</strong><Icon name="arrow" size={19}/></a>)}</div></section>
+    <section class="home-section toolkit"><div class="section-head"><div><div class="section-kicker">KEEP THESE CLOSE</div><h2>{c.toolkit}</h2><p>{c.toolkitSub}</p></div><span class="toolkit-star" aria-hidden="true">✧</span></div><div class="toolkit-grid">{tools.map((tool, i) => <a href={root + tool.path}><span class="tool-icon"><Icon name={tool.icon} size={25}/></span><div><h3>{c.toolkitNames[i]}</h3><p>{c.toolkitNotes[i]}</p></div><Icon name="arrow" size={16}/></a>)}</div></section>
+    <section class="updates-callout"><Icon name="book" size={28}/><div><h2>{c.updatesTitle}</h2><p>{c.updatesSub}</p></div><a class="text-link" href={root + 'updates/'}>{c.readUpdates}<Icon name="arrow" size={17}/></a></section>
+  </div>
+</Base>

@@ -1,0 +1,253 @@
+[
+  {
+    "id": "project-roadmap-2026-11-14",
+    "title": "项目实施方案（2026-11-14 修订）",
+    "publisher": "项目规划文档",
+    "url": null,
+    "file": "plans/IMPLEMENTATION-ROADMAP.md",
+    "publishedAt": "2026-11-14",
+    "checkedAt": null,
+    "gameVersion": "未核验",
+    "status": "planning-only",
+    "note": "仅记录排期与待核验问题，不作为游戏规则或发行公告的官方证据。",
+    "kind": "project",
+    "gameRegion": "项目排期，不适用游戏服务器",
+    "localized": {
+      "ja": {
+        "title": "プロジェクト企画書（2026-11-14 改訂）",
+        "note": "作業計画であり、ゲーム情報の公式根拠ではありません。"
+      }
+    }
+  },
+  {
+    "id": "cn-launch-announcement-2026-10-23",
+    "title": "《蓝色星原：旅谣》公测正式定档11月26日！",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/901234083139555328/",
+    "publishedAt": "2026-10-23",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "公测前 / 2026-11-14 页面状态",
+    "gameRegion": "中国大陆官网公告",
+    "status": "verified",
+    "note": "通过浏览器读取动态加载的原始公告正文。未给出开服小时；不据此推断日本或全球同步发行。",
+    "excerpt": "2026/10/23；《蓝色星原：旅谣》公测将于11月26日正式开启。预约地址：https://azurpromilia.manjuu.com/home/",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：11月26日のサービス開始告知",
+        "note": "原文の日付は2026/10/23。開始時刻や日本向け配信の確定情報としては扱いません。"
+      }
+    }
+  },
+  {
+    "id": "cn-official-home-2026-11-14",
+    "title": "国服官网首页与预约入口",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "公测前 / 2026-11-14 页面状态",
+    "gameRegion": "中国大陆官网",
+    "status": "verified",
+    "note": "记录官网当前可见的预约与商店入口，不把预约按钮当成已开放客户端下载。",
+    "excerpt": "标题：11月26日正式公测；页面按钮：立即预约；页面链接指向中国区 App Store 应用 id6754017631。",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式サイトと事前登録の入口",
+        "note": "公式サイトで事前登録と中国本土向けApp Storeへのリンクを確認。ダウンロード開始とは区別します。"
+      }
+    }
+  },
+  {
+    "id": "cn-app-store-2026-11-14",
+    "title": "中国区 App Store：蓝色星原：旅谣",
+    "publisher": "App Store / 开发者：蛮啾游戏",
+    "kind": "official-store",
+    "url": "https://apps.apple.com/cn/app/%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F-%E6%97%85%E8%B0%A3/id6754017631",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "公测前 / 2026-11-14 页面状态",
+    "gameRegion": "中国区 App Store",
+    "status": "verified",
+    "note": "商店页由国服官网链接交叉确认。预计日期不等于已可下载；商店兼容条件不等于推荐性能配置，展示大小不等于完整安装空间。",
+    "excerpt": "预计于2026年11月26日推出；iPhone、iPad；iOS 15.0 或更高版本，iPadOS 15.0 或更高版本；大小 3.9 GB。",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土向けApp Store：蓝色星原：旅谣",
+        "note": "公式サイトからリンクを確認。配信予定、OS互換性、ストア表示サイズを記録。実際の空き容量や快適な動作を保証する情報ではありません。"
+      }
+    }
+  },
+  {
+    "id": "tc-official-home-2026-11-14",
+    "title": "繁中官网首页：11月26日正式公测",
+    "publisher": "藍色星原：旅謠繁中官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.jimi-global.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-14",
+    "gameVersion": "公测前 / 2026-11-14 页面状态",
+    "gameRegion": "繁中官网；服务器与完整发行地区需另核验",
+    "status": "verified",
+    "note": "只证明繁中官网的页面表述与链接，不将其标为全球官网发行范围，也不推断日本服务器、跨区账号或互通规则。",
+    "excerpt": "标题：11月26日正式公測；公告列表：2026.10.23《藍色星原：旅謠》公測正式定檔11月26日！；页面链接指向台湾区App Store及Google Play。",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "繁体字公式サイト：11月26日の案内",
+        "note": "繁体字サイトの表示を確認したものです。日本や世界共通の配信日、サーバーの共通化を意味しません。"
+      }
+    }
+  },
+  {
+    "id": "cn-test-preload-2026-09-15",
+    "title": "《蓝色星原：旅谣》「旅迹测试」预下载现已开启",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/885587514843336704/",
+    "publishedAt": "2026-09-15",
+    "excerpt": "已获取测试资格的星临者可进行测试包体的预下载；PC（Windows）、移动安卓端、移动iOS端均只可绑定一台设备。",
+    "note": "这份公告限于9月旅迹测试及获资格账号，不证明11月公测客户端下载、互通或设备绑定规则。",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "旅迹测试（历史测试，非正式公测）",
+    "gameRegion": "中国大陆旅迹测试",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：9月の「旅迹测试」事前ダウンロード告知",
+        "note": "9月の参加資格制テストの情報です。11月の正式配布先、データ共有、端末制限の根拠にはしません。"
+      }
+    }
+  },
+  {
+    "id": "cn-test-ended-2026-10-07",
+    "title": "《蓝色星原：旅谣》「旅迹测试」正式结束",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/892769825091358720/",
+    "publishedAt": "2026-10-07",
+    "excerpt": "「旅迹测试」已于2026年10月7日 16:00（UTC+8）结束，测试服务器现已关闭，星临者无法再登录游戏。",
+    "note": "仅核对旅迹测试结束及旧测试服务器关闭，不据此判断正式公测服务器状态；充值返还条款未在本轮完整核验。",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "旅迹测试（历史测试，非正式公测）",
+    "gameRegion": "中国大陆旅迹测试",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：「旅迹测试」終了のお知らせ",
+        "note": "10月7日のテスト終了とテストサーバー閉鎖の告知です。正式サービスの稼働状況や返金・還元条件全体の根拠ではありません。"
+      }
+    }
+  },
+  {
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "id": "jp-publishing-2025-12-15",
+    "title": "Yostar：日本地区共同发行公告",
+    "publisher": "株式会社Yostar",
+    "url": "https://yostar.co.jp/news/71",
+    "publishedAt": "2025-12-15",
+    "gameRegion": "日本",
+    "excerpt": "日本国内での共同パブリッシング権を取得；配信プラットフォーム：iOS / Android / Windows（予定）。",
+    "note": "用于核对日本运营主体、官网/官方X身份和计划平台。文中旧有“配信時期：未定”已由2026-10-23日程公告更新，不用于否定后续日期。",
+    "localized": {
+      "ja": {
+        "title": "Yostar：日本国内での共同サービス提供のお知らせ",
+        "note": "日本向けの運営主体、公式サイト・X、対応予定プラットフォームを確認。掲載当時の配信時期未定という記述は、後の日程告知と区別します。"
+      }
+    }
+  },
+  {
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "id": "jp-launch-announcement-2026-10-23",
+    "title": "日本官方X：2026年11月26日正式发行",
+    "publisher": "アズールプロミリア公式 / Manjuu・Yostar",
+    "url": "https://x.com/AzurPromilia_JP/status/2113466648586047817",
+    "publishedAt": "2026-10-23",
+    "gameRegion": "日本",
+    "excerpt": "【リリース日決定！】『アズールプロミリア』は2026年11月26日(木)に正式リリース！；事前登録はこちら azurpromilia.jp/pre-register/",
+    "note": "已读取单条原帖，发布账号由日本官网和Yostar公告交叉确认。正文未列开服小时；帖子发布时间不是游戏开服时间。",
+    "localized": {
+      "ja": {
+        "title": "日本公式X：2026年11月26日リリース決定",
+        "note": "公式サイトとYostar告知から発信元を確認し、原文を照合。具体的なサービス開始時刻はこの投稿に記載されていません。"
+      }
+    }
+  },
+  {
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "id": "jp-official-home-2026-11-14",
+    "title": "日本官方网站与官方名称",
+    "publisher": "Manjuu・Yostar / アズールプロミリア公式サイト",
+    "url": "https://azurpromilia.jp/",
+    "publishedAt": null,
+    "gameRegion": "日本",
+    "excerpt": "『アズールプロミリア』（Azur Promilia）；星霊「キボ」；App Store・Google Play・事前登録；© Manjuu Co., Ltd. © Yostar, Inc.",
+    "note": "核对日语游戏名称、キボ用语、事前注册及商店链接。商店链接存在不证明当前账号可安装或服务器已开放。",
+    "localized": {
+      "ja": {
+        "title": "アズールプロミリア公式サイト",
+        "note": "公式の作品名・「キボ」の表記と、事前登録・ストアへのリンクを確認。インストールやログインの可否は別途確認が必要です。"
+      }
+    }
+  },
+  {
+    "kind": "official",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "id": "jp-pre-register-2026-11-14",
+    "title": "日本官方事前注册页面",
+    "publisher": "Manjuu・Yostar / アズールプロミリア公式サイト",
+    "url": "https://azurpromilia.jp/pre-register/",
+    "publishedAt": null,
+    "gameRegion": "日本",
+    "excerpt": "『アズールプロミリア』（Azur Promilia）の事前登録に関する公式ページです。App Store・Google Playの登録ページと、事前登録者数に応じた報酬をご案内します。",
+    "note": "仅确认日本iOS/Android事前注册入口。未提交注册、未登录或变更商店地区；未把奖励展示当作完整领取条款。页面未提供本轮可确认的PC安装器或正式预下载日程。",
+    "localized": {
+      "ja": {
+        "title": "アズールプロミリア 事前登録ページ",
+        "note": "App Store・Google Playの登録案内を確認。登録は行っていません。報酬の受取条件、PC版の配布先、事前ダウンロード日程は別途確認します。"
+      }
+    }
+  },
+  {
+    "kind": "official-store",
+    "checkedAt": "2026-11-14",
+    "gameVersion": "正式发行前 / 2026-11-14 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "id": "jp-google-play-2026-11-14",
+    "title": "Google Play：アズールプロミリア",
+    "publisher": "Google Play / Yostar Limited.",
+    "url": "https://play.google.com/store/apps/details?id=com.Yostar.AzurpromiliaJP",
+    "publishedAt": null,
+    "gameRegion": "日本向けアプリ；本轮商店界面为美国（中文）",
+    "excerpt": "アズールプロミリア；Yostar Limited.；应用ID com.Yostar.AzurpromiliaJP；更新日期2026年11月8日。",
+    "note": "由日本官网和事前注册页链接交叉确认应用身份。本轮界面没有显示可确认的注册或安装按钮，不根据浏览器所在地区推断日本账号可用状态；不提供直接安装承诺。",
+    "localized": {
+      "ja": {
+        "title": "Google Play：アズールプロミリア（Yostar Limited.）",
+        "note": "公式サイトのリンクとアプリIDを照合。今回の表示では登録・インストール操作を確認できていないため、日本のアカウントでの利用可否は保証しません。"
+      }
+    }
+  }
+]

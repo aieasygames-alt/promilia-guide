@@ -1,0 +1,46 @@
+name: Validate site
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm test
+      - run: npm run --silent content:status -- --json > content-status.json
+      - run: npm run --silent content:readiness -- --json > release-readiness.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-status
+          path: |
+            content-status.json
+            release-readiness.json
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-site
+          path: dist/
+      - run: npm run build:pages
+        env:
+          CF_PAGES: '1'
+          CF_PAGES_BRANCH: editorial/ci
+          PAGES_PRODUCTION_BRANCH: main
+          PAGES_BUILD_MODE: preview
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - uses: actions/upload-artifact@v4
+        with:
+          name: editorial-preview-noindex
+          path: dist/
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-failures
+          path: test-results/

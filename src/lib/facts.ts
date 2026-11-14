@@ -1,0 +1,10 @@
+import { z } from 'zod';
+import rawSources from '../data/sources.json';
+import rawClaims from '../data/claims.json';
+import rawChannels from '../data/distribution.json';
+import { sourceSchema, claimSchema, distributionSchema } from './editorial-schema.mjs';
+export const sources = z.array(sourceSchema).parse(rawSources);
+export const claims = z.array(claimSchema).parse(rawClaims);
+export const channels = z.array(distributionSchema).parse(rawChannels);
+export type Source = z.infer<typeof sourceSchema>;
+export type Claim = z.infer<typeof claimSchema>;

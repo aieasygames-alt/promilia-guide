@@ -1,0 +1,96 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { t } from '../lib/i18n';
+import { preview, type Locale } from '../lib/content';
+import { origin, languageTag } from '../lib/publication.mjs';
+interface Props {
+  locale?: Locale; title: string; description: string; noindex?: boolean;
+  alternates?: { lang: string; href: string }[];
+  languageTarget?: string; missingTranslation?: boolean;
+  schema?: Record<string, unknown> | Record<string, unknown>[]; searchable?: boolean;
+}
+const { locale = 'zh-hans', title, description, noindex = false, alternates = [], languageTarget, missingTranslation = false, schema, searchable = true } = Astro.props;
+const c = t(locale);
+const root = `/${locale}/`;
+const other = locale === 'zh-hans' ? 'ja' : 'zh-hans';
+const canonical = origin + Astro.url.pathname;
+const nav = [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['updates/', c.updates]];
+const active = (href: string) => href === '' ? Astro.url.pathname === root : Astro.url.pathname.startsWith(root + href);
+const indexable = !noindex && !preview;
+const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
+const metadata = schema || {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'Organization', '@id': origin + '/#organization', name: 'Promilia Guide', url: origin, logo: origin + '/favicon.svg' },
+    { '@type': isHome ? 'WebSite' : 'WebPage', name: title, url: canonical, inLanguage: languageTag[locale], description, publisher: { '@id': origin + '/#organization' } },
+  ],
+};
+---
+<!doctype html>
+<html lang={languageTag[locale]}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#193e3c" />
+    <title>{title} | Promilia Guide</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={indexable ? 'index,follow' : 'noindex,follow'} />
+    <link rel="canonical" href={canonical} />
+    {indexable && alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={alt.href} />)}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:site_name" content="Promilia Guide" />
+    <meta property="og:type" content={Array.isArray(schema) ? 'article' : 'website'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === 'ja' ? 'ja_JP' : 'zh_CN'} />
+    <meta property="og:image" content={origin + '/images/social.png'} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(metadata).replace(/</g, '\\u003c')} />
+  </head>
+  <body data-pagefind-ignore={searchable ? undefined : 'all'}>
+    <a class="skip-link" href="#main">{c.skip}</a>
+    {preview && <div class="preview-bar" data-pagefind-ignore><span>{c.preview}</span> {c.previewNote} <a href="/editorial/" style="text-decoration:underline;margin-left:12px">{locale === 'ja' ? '編集状況' : '编辑工作台'} ↗</a></div>}
+    <header class="site-header" data-pagefind-ignore>
+      <div class="header-inner">
+        <a class="brand" href={root} aria-label={`Promilia Guide — ${c.home}`}>
+          <span class="brand-symbol"><Icon name="star" size={30}/></span>
+          <span><strong>Promilia<span>Guide</span></strong><small>{c.tagline}</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label={c.menu}>
+          {nav.map(([href, label]) => <a href={root + href} aria-current={active(href) ? 'page' : undefined}>{label}</a>)}
+        </nav>
+        <div class="header-actions">
+          <a class="search-shortcut" href={root + 'search/'} aria-label={c.searchLabel}><Icon name="search" size={19}/><span>{c.searchButton}</span><kbd>/</kbd></a>
+          <div class="language-wrap">
+            <a class="language-button" href={languageTarget || `/${other}/`} lang={languageTag[other]} aria-label={missingTranslation ? c.noTranslation + ' · ' + c.targetHome : c.language} data-language-choice={other}><Icon name="globe" size={17}/>{locale === 'zh-hans' ? '日本語' : '简中'}<span aria-hidden="true">↗</span></a>
+            {missingTranslation && <span class="language-note">{c.noTranslation} · {c.targetHome}</span>}
+          </div>
+          <details class="mobile-menu"><summary aria-label={c.menu}><span></span><span></span><span></span></summary><nav aria-label={c.menu}>{nav.map(([href, label]) => <a href={root + href} aria-current={active(href) ? 'page' : undefined}>{label}</a>)}</nav></details>
+        </div>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer" data-pagefind-ignore>
+      <div class="footer-inner"><div><a class="footer-brand" href={root}><Icon name="star" size={22}/>Promilia Guide</a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
+      <div class="footer-bottom"><span>© 2026 Promilia Guide</span><span>MADE FOR THE JOURNEY <span aria-hidden="true">✧</span></span></div>
+    </footer>
+    <script>
+      document.addEventListener('keydown', (event) => {
+        const el = event.target as HTMLElement;
+        if (event.key === '/' && !event.metaKey && !event.ctrlKey && !el.matches('input, textarea, select, [contenteditable="true"]')) {
+          event.preventDefault();
+          const search = document.querySelector<HTMLInputElement>('#search-input');
+          if (search) search.focus();
+          else (document.querySelector('.search-shortcut') as HTMLAnchorElement)?.click();
+        }
+      });
+      document.querySelectorAll<HTMLAnchorElement>('[data-language-choice]').forEach((link) => link.addEventListener('click', () => {
+        try { localStorage.setItem('promilia:language', link.dataset.languageChoice!); } catch { /* Language navigation remains available. */ }
+      }));
+    </script>
+  </body>
+</html>

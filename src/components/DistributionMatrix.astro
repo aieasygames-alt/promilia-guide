@@ -1,0 +1,74 @@
+---
+import { channels, claims, sources } from '../lib/facts';
+import { distributionRows } from '../lib/distribution.mjs';
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const ja = locale === 'ja';
+const rows = distributionRows({ channels, claims, sources, locale });
+const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => [source.id, source] as const))).values()];
+---
+<section class="distribution" data-distribution aria-labelledby="distribution-title">
+  <header class="distribution-heading"><p class="eyebrow">BEFORE YOU DOWNLOAD</p><h2 id="distribution-title">{ja ? '地域と端末で配布状況を確認' : '按地区和设备核对入口'}</h2><p>{ja ? '事前登録・事前ダウンロード・配信開始は別の段階です。未確認の欄は非対応を意味しません。' : '预约、预下载与正式下载分别核对。“待核验”不代表不支持该设备。'}</p></header>
+  <div class="distribution-filters" data-distribution-controls hidden>
+    <label>{ja ? '利用する地域' : '使用地区'}<select data-region-filter><option value="all">{ja ? 'すべての地域' : '全部地区'}</option><option value="cn">{ja ? '中国本土' : '中国大陆'}</option><option value="jp">{ja ? '日本' : '日本地区'}</option></select></label>
+    <label>{ja ? '利用する端末' : '使用设备'}<select data-platform-filter><option value="all">{ja ? 'すべての端末' : '全部设备'}</option><option value="pc">PC</option><option value="android">Android</option><option value="ios">iPhone / iPad</option></select></label>
+    <p data-distribution-count role="status" aria-live="polite" data-ja={String(ja)}>{ja ? `${rows.length} 件を表示` : `显示 ${rows.length} 项`}</p>
+  </div>
+  <div class="distribution-grid">{rows.map((row) => <article class="distribution-card" data-channel={row.id} data-region={row.region} data-platform={row.platform} data-stage={row.stage || 'pending'}>
+    <div class="distribution-card-top"><span class="distribution-region">{row.regionLabel}</span><span class={`pill ${row.stage ? '' : 'pending'}`}>{row.stageLabel}</span></div>
+    <h3>{row.platformLabel}</h3><p class="distribution-summary">{row.entrySummary}</p>
+    <dl><div><dt>{row.region === 'cn' ? (ja ? '中国本土の告知日程' : '国服公告日期') : (ja ? '対象地域の配信日' : '地区发行日期')}</dt><dd>{row.date ? <time datetime={row.date}>{row.date}</time> : (ja ? '確認中' : '待核验')}</dd></div><div><dt>{ja ? '正式版の事前ダウンロード' : '公测预下载'}</dt><dd>{row.preloadUrl ? <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の案内を確認' : '查看官方安排'} ↗</a> : (ja ? '確認中' : '待核验')}</dd></div>{row.minimumOS && <div><dt>{ja ? 'ストアの互換性表示' : '商店兼容条件'}</dt><dd>{row.minimumOS}</dd></div>}</dl>
+    {row.entryUrl ? <a class="distribution-action" href={row.entryUrl} target="_blank" rel="noopener noreferrer">{ja ? `${row.stageLabel}の入口を確認` : `查看${row.stageLabel}入口`} <span aria-hidden="true">↗</span></a> : <p class="distribution-pending">{ja ? '確認できた配布先を登録するまで、リンクは表示しません。' : '确认公开入口后补充链接。'}</p>}
+    {row.evidence.length > 0 && <p class="distribution-source-note">{ja ? `出典 ${row.evidence.length} 件 · 確認日 ` : `${row.evidence.length} 份来源 · 核对日期 `}{[...new Set(row.evidence.map((source) => source.checkedAt))].join(' / ')}</p>}
+  </article>)}</div>
+  <details class="distribution-evidence" data-distribution-evidence>
+    <summary>{ja ? '出典と確認日を見る' : '展开依据与核对日期'} <span data-evidence-count>({evidence.length})</span></summary>
+    <ul>{evidence.map((source) => <li data-evidence-channels={rows.filter((row) => row.evidence.some((item) => item.id === source.id)).map((row) => row.id).join(' ')}><a href={`#source-${source.id}`}>{source.title}</a><small>{ja ? '出典確認日' : '来源核对'}：{source.checkedAt}</small></li>)}</ul>
+    <p data-no-evidence hidden>{ja ? '選択中の地域・端末には、確認済みの出典がまだ登録されていません。' : '所选地区与设备尚无已核验来源。'}</p>
+  </details>
+  <p class="distribution-footnote">{ja ? '中国本土の告知日程は、各端末の配布開始を保証しません。9月の「旅迹测试」は終了済みで、過去のテスト用入口・規約を正式版に流用しません。' : '国服公告日期不等于每个设备均已开放下载。9 月“旅迹测试”已经结束，历史测试入口与规则不能直接用于公测。'}</p>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-distribution]').forEach((section) => {
+    const region = section.querySelector<HTMLSelectElement>('[data-region-filter]')!;
+    const platform = section.querySelector<HTMLSelectElement>('[data-platform-filter]')!;
+    const count = section.querySelector<HTMLElement>('[data-distribution-count]')!;
+    const cards = [...section.querySelectorAll<HTMLElement>('[data-channel]')];
+    const evidence = [...section.querySelectorAll<HTMLElement>('[data-evidence-channels]')];
+    const params = new URLSearchParams(location.search);
+    region.value = [...region.options].some((option) => option.value === params.get('region')) ? params.get('region')! : 'cn';
+    platform.value = [...platform.options].some((option) => option.value === params.get('platform')) ? params.get('platform')! : 'all';
+    section.querySelector<HTMLElement>('[data-distribution-controls]')!.hidden = false;
+    const filter = (updateUrl = false) => {
+      let visible = 0;
+      const visibleIds = new Set<string>();
+      cards.forEach((card) => {
+        card.hidden = !((region.value === 'all' || region.value === card.dataset.region) && (platform.value === 'all' || platform.value === card.dataset.platform));
+        if (!card.hidden) { visible++; visibleIds.add(card.dataset.channel!); }
+      });
+      count.textContent = count.dataset.ja === 'true' ? `${visible} 件を表示` : `显示 ${visible} 项`;
+      let evidenceCount = 0;
+      evidence.forEach((item) => {
+        item.hidden = !item.dataset.evidenceChannels!.split(' ').some((id) => visibleIds.has(id));
+        if (!item.hidden) evidenceCount++;
+      });
+      section.querySelector<HTMLElement>('[data-evidence-count]')!.textContent = `(${evidenceCount})`;
+      section.querySelector<HTMLElement>('[data-no-evidence]')!.hidden = evidenceCount > 0;
+      if (updateUrl) {
+        const url = new URL(location.href); url.searchParams.set('region', region.value); url.searchParams.set('platform', platform.value);
+        history.replaceState(null, '', url);
+      }
+      const language = document.querySelector<HTMLAnchorElement>('.language-button');
+      if (language && /\/(guides|systems)\/[^/]+\/$/.test(new URL(language.href).pathname)) {
+        const target = new URL(language.href); target.searchParams.set('region', region.value); target.searchParams.set('platform', platform.value);
+        target.hash = 'distribution-title'; language.href = target.href;
+      }
+    };
+    region.addEventListener('change', () => filter(true)); platform.addEventListener('change', () => filter(true));
+    filter();
+  });
+</script>
+<style>
+  .distribution{margin:32px 0 40px;padding:26px;border:1px solid var(--line);background:var(--card);border-radius:5px}.distribution-heading .eyebrow{font-size:9px;letter-spacing:.2em;margin-bottom:12px}.distribution h2{font:500 26px var(--serif);margin:0 0 12px}.distribution-heading>p:last-child{font-size:12px;color:var(--muted);line-height:1.9}.distribution-filters{display:flex;gap:16px;flex-wrap:wrap;align-items:end;padding:20px 0;border-bottom:1px solid var(--line);margin-bottom:20px}.distribution-filters[hidden]{display:none}.distribution-filters label{font-size:11px;display:grid;gap:7px;flex:1;min-width:130px}.distribution-filters select{width:100%;min-width:0;padding:10px;background:var(--paper);color:var(--ink);border:1px solid var(--line);font:inherit}.distribution-filters p{font-size:10px;color:var(--muted);padding-bottom:10px}.distribution-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.distribution-card{min-width:0;border:1px solid var(--line);border-top:3px solid var(--green);padding:20px;display:flex;flex-direction:column;overflow-wrap:anywhere}.distribution-card[hidden]{display:none}.distribution-card[data-stage="pending"]{border-top-color:var(--gold)}.distribution-card-top{display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap}.distribution-region{font-size:10px;color:var(--muted)}.distribution h3{font:500 22px var(--serif);margin:18px 0 12px}.distribution-summary{font-size:12px;line-height:1.9;margin-bottom:16px}.distribution dl{font-size:11px;margin:0 0 18px}.distribution dl>div{border-top:1px solid var(--line);padding:10px 0}.distribution dt{color:var(--muted);font-size:10px;margin-bottom:5px}.distribution dd{margin:0}.distribution-action{display:flex;justify-content:space-between;padding:12px 14px;background:var(--green);color:var(--paper);font-size:12px;margin-top:auto}.distribution-pending{font-size:11px;color:var(--muted);margin-top:auto;padding:12px;background:var(--mint)}.distribution-source-note{font-size:10px;color:var(--muted);margin-top:14px}.distribution-evidence{border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.distribution-evidence summary{font-size:12px;color:var(--green);cursor:pointer;min-height:32px}.distribution-evidence ul{padding:0;list-style:none;margin:8px 0 0}.distribution-evidence li{padding:12px 0;border-top:1px solid var(--line)}.distribution-evidence li[hidden]{display:none}.distribution-evidence a{font-size:11px;color:var(--green);line-height:1.8;text-decoration:underline;text-underline-offset:3px}.distribution-evidence small{display:block;font-size:10px;color:var(--muted);margin-top:5px}.distribution-evidence p{font-size:11px;color:var(--muted)}.distribution-footnote{font-size:11px;line-height:1.9;color:var(--muted);margin-top:22px;padding-left:14px;border-left:2px solid var(--gold)}@media(max-width:650px){.distribution{padding:20px}.distribution-grid{grid-template-columns:minmax(0,1fr)}.distribution h2{font-size:22px}.distribution-filters{gap:14px}.distribution-filters p{width:100%;padding:0}}
+</style>

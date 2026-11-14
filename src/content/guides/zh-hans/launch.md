@@ -1,0 +1,62 @@
+---
+contentId: "launch"
+locale: "zh-hans"
+slug: "launch"
+section: "guides"
+title: "公测时间与预约：先核对地区，再安排出发"
+description: "核对国服与日本独立官方日程和预约入口，区分开服小时、预下载与奖励领取条件。"
+author: "Promilia Guide 编辑部"
+publishedAt: "2026-11-14"
+updatedAt: "2026-11-14"
+gameVersion: "公测前 / 2026-11-14 官方页面核对"
+gameRegion: "中国大陆、日本（分地区说明）"
+verification: "official"
+status: "published"
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
+sourceRevision: 3
+translationStatus: "published"
+aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
+related: ["global-release", "download", "getting-started"]
+order: 1
+minutes: 4
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"}]
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":1,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":1}
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-14"
+---
+
+## 先选地区，再看日期
+
+国服与日本官方分别发布了 2026 年 11 月 26 日的日程。上方事实摘要保留各自原文；两地日期相同，也不能据此判断全球同步、服务器相通或账号共用。
+
+日本日期来自日本官方 X 的独立公告。本轮核对的两地日期原文都没有开服小时；帖子发布时间是发布信息的时刻，不能当作游戏开服时间。只有后续原文明确给出时刻和时区，才进行换算。
+
+## 按目标地区选择预约入口
+
+| 准备游玩的地区 | 本轮确认的入口 | 下一步 |
+| --- | --- | --- |
+| 中国大陆 | 国服官网预约及其中国区 App Store 链接 | 核对官网当前条款、商店地区与设备条件 |
+| 日本 | 日本官网事前注册页，提供 App Store / Google Play | 按自己的设备进入商店，检查账号与地区条件 |
+| 其他地区 | 不能用上述两地的日期和入口代替 | 在[发行地区说明](/zh-hans/guides/global-release/)核对资料范围 |
+
+从上方事实摘要中的官方入口继续操作。预约完成、客户端下载、服务器可登录是不同状态；本站没有代办预约或验证个人账号资格。
+
+## 预约前后分别确认什么
+
+1. 先记下目标地区、设备和渠道，再打开对应官网；避免选错地区的同名商店页面。
+2. 阅读当期账号、手机号或商店条件。只在官方页面输入所需信息，不向本站提供密码或验证码。
+3. 按实际显示完成预约，保留成功提示；网页能够打开，不等于当前账号必定可以注册或安装。
+4. 继续关注该地区的预下载和开服公告。有预约记录，也应在正式开放时再次确认客户端版本与服务器。
+
+## 预约奖励需要另看领取规则
+
+国服定档公告及日本注册页均展示预约相关奖励，但展示内容不等于完整发放条款。领取期限、对象服务器、账号绑定、创建角色和领取入口都需要分别确认。
+
+在完整条件核对前，不承诺自动到账、跨区领取或无需创建角色，也不把历史测试奖励条件套到正式服务。涉及付费或不可撤回操作时，先读对应活动规则。
+
+## 开服前还缺哪些信息
+
+本轮尚未确认两地具体开服小时、日本正式预下载日程、国服 PC/安卓与日本 PC 的公开安装器，以及完整奖励与互通条款。这里记录的是本轮资料范围，不表示官方从未公布。
+
+先在[下载速查](/zh-hans/guides/download/)按地区和设备查看当前阶段，再用[准备清单](/zh-hans/guides/getting-started/)记录已完成事项。日期到来不会自动把本站状态改为已开服。

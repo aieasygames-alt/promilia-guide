@@ -1,0 +1,63 @@
+---
+import Icon from './Icon.astro';
+import type { Locale } from '../lib/content';
+import { t } from '../lib/i18n';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = t(locale);
+---
+<div id="search-app" data-locale={locale} data-empty={c.searchEmpty} data-unavailable={c.searchUnavailable} data-loading={c.loading} data-count={c.resultCount}>
+  <form class="search-form" role="search"><Icon name="search" size={21}/><label class="sr-only" for="search-input">{c.searchLabel}</label><input id="search-input" name="q" type="search" autocomplete="off" placeholder={c.search} maxlength="160"/><button type="submit">{c.searchButton}</button></form>
+  <p class="search-help">{c.searchHelp}</p><p class="search-status" role="status" aria-live="polite"></p><div class="search-results" aria-label={c.results}></div>
+  <noscript><p class="notice">{locale === 'ja' ? '検索には JavaScript が必要です。ガイド一覧から記事を読むこともできます。' : '搜索需要启用 JavaScript，你也可以从攻略目录直接阅读。'}</p></noscript>
+</div>
+<script>
+  const app = document.getElementById('search-app');
+  if (app) {
+    const input = app.querySelector<HTMLInputElement>('input')!;
+    const form = app.querySelector('form')!;
+    const status = app.querySelector<HTMLElement>('.search-status')!;
+    const results = app.querySelector<HTMLElement>('.search-results')!;
+    let sequence = 0;
+    let engine: Promise<any> | undefined;
+    const loadEngine = () => engine ||= (async () => {
+      const path = '/pagefind/pagefind.js';
+      return await import(/* @vite-ignore */ path);
+    })();
+    async function search() {
+      const current = ++sequence;
+      const term = input.value.trim();
+      results.replaceChildren();
+      const url = new URL(location.href);
+      if (term) url.searchParams.set('q', term); else url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+      if (!term) { status.textContent = ''; return; }
+      status.textContent = app!.dataset.loading!;
+      try {
+        const pagefind = await loadEngine();
+        const response = await pagefind.search(term);
+        const data = await Promise.all(response.results.slice(0, 30).map((result: { data: () => Promise<any> }) => result.data()));
+        if (current !== sequence) return;
+        const local = data.filter((item) => new URL(item.url, location.origin).pathname.startsWith(`/${app!.dataset.locale}/`));
+        status.textContent = local.length ? `${local.length} ${app!.dataset.count}` : app!.dataset.empty!;
+        local.slice(0, 12).forEach((item) => {
+          const article = document.createElement('article'); article.className = 'search-result';
+          const h2 = document.createElement('h2'); const link = document.createElement('a');
+          link.href = new URL(item.url, location.origin).pathname;
+          link.textContent = item.meta.title || link.pathname; h2.append(link);
+          const excerpt = document.createElement('p');
+          excerpt.textContent = new DOMParser().parseFromString(item.excerpt || item.meta.description || '', 'text/html').body.textContent;
+          article.append(h2, excerpt); results.append(article);
+        });
+      } catch {
+        if (current === sequence) status.textContent = app!.dataset.unavailable!;
+      }
+    }
+    form.addEventListener('submit', (event) => { event.preventDefault(); search(); });
+    let debounce: ReturnType<typeof setTimeout>;
+    input.addEventListener('input', () => { clearTimeout(debounce); ++sequence; debounce = setTimeout(search, 200); });
+    input.value = new URLSearchParams(location.search).get('q') || '';
+    if (input.value) search();
+  }
+</script>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>

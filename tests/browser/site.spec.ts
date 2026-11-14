@@ -1,0 +1,235 @@
+import { test, expect } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
+
+test('home renders, mobile navigation works, and layout fits viewport', async ({ page, isMobile }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await page.goto('/zh-hans/');
+  await expect(page.locator('h1')).toContainText('每一步都有方向');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  if (isMobile) {
+    await page.locator('.mobile-menu summary').click();
+    await page.locator('.mobile-menu nav').getByRole('link', { name: '开荒攻略' }).click();
+  } else await page.locator('.desktop-nav').getByRole('link', { name: '开荒攻略' }).click();
+  await expect(page).toHaveURL(/\/zh-hans\/guides\//);
+  expect(errors).toEqual([]);
+});
+
+test('checklist survives reload and preserves tasks across corresponding languages', async ({ page }) => {
+  await page.goto('/zh-hans/guides/getting-started/');
+  const task = page.locator('[data-task="device"]');
+  await task.check();
+  await expect(page.locator('.checklist-count')).toContainText('1 / 6');
+  await page.reload();
+  await expect(task).toBeChecked();
+  await page.locator('.language-button').click();
+  await expect(page).toHaveURL(/\/ja\/guides\/getting-started\//);
+  await expect(task).toBeChecked();
+  await page.getByRole('button', { name: '進捗をリセット' }).click();
+  await expect(task).not.toBeChecked();
+});
+
+test('both languages fit narrow phones and tablet widths', async ({ page }) => {
+  for (const width of [320, 768]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const locale of ['zh-hans', 'ja']) {
+      await page.goto(`/${locale}/`);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${locale} at ${width}px`).toBe(true);
+    }
+  }
+});
+
+test('missing translation goes to explicit target language home', async ({ page }) => {
+  await page.goto('/zh-hans/guides/resources/');
+  const language = page.locator('.language-button');
+  await expect(language).toHaveAttribute('aria-label', /暂无对应译文/);
+  await expect(language).toHaveAttribute('href', '/ja/');
+  await language.click();
+  await expect(page).toHaveURL(/\/ja\/$/);
+});
+
+test('Pagefind searches Chinese, Japanese and aliases within the current locale', async ({ page }) => {
+  for (const [locale, query] of [['zh-hans', '设备'], ['ja', '端末'], ['zh-hans', '藍色星原'], ['ja', 'アズールプロミリア'], ['zh-hans', 'azure promilia']]) {
+    await page.goto(`/${locale}/search/?q=${encodeURIComponent(query)}`);
+    await expect(page.locator('.search-result').first()).toBeVisible({ timeout: 15000 });
+    const links = await page.locator('.search-result h2 a').evaluateAll((elements) => elements.map((element) => element.getAttribute('href')));
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.every((link) => link?.startsWith(`/${locale}/`))).toBe(true);
+  }
+});
+
+test('unknown route returns HTTP 404 and preview pages cannot be indexed', async ({ page, request }) => {
+  const response = await request.get('/does-not-exist/');
+  expect(response.status()).toBe(404);
+  await page.goto('/ja/guides/download/');
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,follow');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('feedback download contains the report and makes no submission', async ({ page }) => {
+  await page.goto('/zh-hans/contact/?page=%2Fzh-hans%2Fguides%2Flaunch%2F');
+  await expect(page.locator('[name="page"]')).toHaveValue('/zh-hans/guides/launch/');
+  await page.locator('[name="body"]').fill('测试纠错：需要补充原始公告与适用地区。');
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: '下载文本' }).click();
+  const download = await downloadPromise;
+  expect(download.suggestedFilename()).toBe('promilia-guide-feedback.txt');
+  await expect(page.locator('.feedback-actions [role="status"]')).toContainText('尚未发送');
+});
+
+test('home and article share verified regional facts and dated original citations', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja']) {
+    await page.goto(`/${locale}/`);
+    const status = page.locator('[data-release-claim="cn-launch-date"]');
+    await expect(status).toHaveAttribute('data-release-revision', '2');
+    await expect(status).toHaveAttribute('data-release-verified', 'true');
+    await expect(status.locator('a')).toHaveAttribute('href', 'https://azurpromilia.manjuu.com/home/news/detail/901234083139555328/');
+    const japan = page.locator('[data-release-claim="jp-release-status"]');
+    await expect(japan).toHaveAttribute('data-release-revision', '2');
+    await expect(japan).toHaveAttribute('data-release-verified', 'true');
+    await expect(japan).toContainText(/日本/);
+    await expect(japan.locator('a')).toHaveAttribute('href', 'https://x.com/AzurPromilia_JP/status/2113466648586047817');
+    await page.goto(`/${locale}/guides/launch/`);
+    await expect(page.locator('[data-claim-id="cn-launch-date"]')).toHaveAttribute('data-claim-revision', '2');
+    await expect(page.locator('[data-claim-id="cn-opening-time"]')).toHaveAttribute('data-claim-verified', 'false');
+    await expect(page.locator('[data-claim-id="jp-release-status"]')).toHaveAttribute('data-claim-revision', '2');
+    await expect(page.locator('[data-claim-id="jp-release-status"]')).toHaveAttribute('data-claim-verified', 'true');
+    await expect(page.locator('#source-jp-launch-announcement-2026-10-23')).toContainText('2026-10-23');
+    await expect(page.locator('#source-cn-launch-announcement-2026-10-23')).toContainText('2026-10-23');
+    await expect(page.locator('#source-cn-launch-announcement-2026-10-23')).toContainText('2026-11-14');
+    await page.setViewportSize({ width: 320, height: 900 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
+
+test('editorial preview filters bilingual impact and exports a local report', async ({ page }) => {
+  await page.goto('/editorial/');
+  await expect(page.locator('h1')).toHaveText('内容审核工作台');
+  await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(16);
+  await page.locator('#impact-filter').selectOption('claim:cn-launch-date');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(10);
+  const routes = await page.locator('[data-report-row]:visible').evaluateAll((rows) => rows.map((row) => row.getAttribute('data-route')));
+  expect(routes.some((route) => route?.startsWith('/ja/'))).toBe(true);
+  expect(routes.some((route) => route?.startsWith('/zh-hans/'))).toBe(true);
+  await page.locator('#impact-filter').selectOption('source:cn-app-store-2026-11-14');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(8);
+  await page.locator('#impact-filter').selectOption('content:launch');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
+  await page.locator('#state-filter').selectOption('publishable');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
+  await expect(page.locator('#filtered-count')).toHaveText('显示 2 篇稿件');
+  await page.locator('#state-filter').selectOption('review');
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(0);
+  const pending = page.waitForEvent('download');
+  await page.getByRole('button', { name: '下载状态报告' }).click();
+  const download = await pending;
+  expect(download.suggestedFilename()).toMatch(/^promilia-editorial-status-\d{4}-\d{2}-\d{2}\.json$/);
+  const result = JSON.parse(await readFile((await download.path())!, 'utf8'));
+  expect(result.summary).toMatchObject({ articles: 16, publishable: 12, verifiedSources: 11, verifiedClaims: 9 });
+  await page.setViewportSize({ width: 320, height: 900 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('distribution filters keep unverified and historical clients out of actionable links', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja']) {
+    await page.goto(`/${locale}/guides/download/`);
+    const matrix = page.locator('[data-distribution]');
+    await expect(matrix.locator('[data-channel]:visible')).toHaveCount(3);
+    await matrix.locator('[data-region-filter]').selectOption('cn');
+    await matrix.locator('[data-platform-filter]').selectOption('ios');
+    await expect(matrix.locator('[data-channel]:visible')).toHaveCount(1);
+    await expect(matrix.locator('[data-channel="cn-ios"]')).toHaveAttribute('data-stage', 'reservation');
+    await expect(matrix.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com\/cn\//);
+    await matrix.locator('[data-platform-filter]').selectOption('android');
+    await expect(matrix.locator('[data-channel]:visible')).toHaveCount(1);
+    await expect(matrix.locator('[data-channel="cn-android"] .distribution-action')).toHaveCount(0);
+    await matrix.locator('[data-region-filter]').selectOption('jp');
+    await expect(matrix.locator('[data-channel="jp-android"]')).toBeVisible();
+    await expect(matrix.locator('[data-channel="jp-android"] time')).toHaveText('2026-11-26');
+    await expect(matrix.locator('[data-channel="jp-android"]')).toHaveAttribute('data-stage', 'reservation');
+    await expect(matrix.locator('[data-channel="jp-android"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
+    await matrix.locator('[data-platform-filter]').selectOption('pc');
+    await expect(matrix.locator('[data-channel="jp-pc"] .distribution-action')).toHaveCount(0);
+    await matrix.locator('[data-platform-filter]').selectOption('ios');
+    await expect(matrix.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
+    await expect(matrix.locator('[data-channel="jp-ios"] dl')).not.toContainText('iOS 15.0');
+    await expect(page.locator('#source-jp-publishing-2025-12-15')).toContainText('2025-12-15');
+    await expect(page.locator('#source-cn-test-ended-2026-10-07')).toContainText('2026-10-07');
+    await page.setViewportSize({ width: 320, height: 900 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
+
+test('distribution facts and links are available without JavaScript', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  try {
+    const page = await context.newPage();
+    await page.goto('http://127.0.0.1:4321/zh-hans/guides/platforms/');
+    await expect(page.locator('[data-channel]')).toHaveCount(6);
+    await expect(page.locator('[data-distribution-controls]')).toBeHidden();
+    await expect(page.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com/);
+    await page.locator('[data-distribution-evidence] summary').click();
+    await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(9);
+    await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
+    await expect(page.locator('[data-channel="jp-pc"] .distribution-action')).toHaveCount(0);
+    await page.setViewportSize({ width: 320, height: 900 });
+    await page.locator('[data-mobile-toc] summary').click();
+    await expect(page.locator('[data-mobile-toc] a[href="#distribution-title"]')).toBeVisible();
+  } finally { await context.close(); }
+});
+
+test('first release dashboard shows the ten reviewed articles and exports readiness', async ({ page }) => {
+  await page.goto('/editorial/#release-readiness');
+  await expect(page.locator('[data-release-ready]')).toHaveAttribute('data-release-ready', 'true');
+  await expect(page.locator('[data-release-count]')).toHaveText('10 / 10');
+  await expect(page.locator('[data-release-article]')).toHaveCount(10);
+  const row = page.locator('[data-release-article="launch:ja"]');
+  await row.locator('summary').click();
+  await expect(row).not.toContainText('缺少真实审核人与审核日期');
+  const pending = page.waitForEvent('download');
+  await page.getByRole('button', { name: '下载首发报告' }).click();
+  const download = await pending;
+  const report = JSON.parse(await readFile((await download.path())!, 'utf8'));
+  expect(report.summary).toMatchObject({ required: 10, ready: 10, missing: 0, awaitingReview: 0 });
+  expect(report.validationIssues).toEqual([]);
+  await page.setViewportSize({ width: 320, height: 900 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('distribution selection survives reload and language switching with deduplicated evidence', async ({ page }) => {
+  await page.goto('/zh-hans/guides/download/?region=cn&platform=ios#distribution-title');
+  await expect(page.locator('[data-channel]:visible')).toHaveCount(1);
+  await page.locator('[data-distribution-evidence] summary').click();
+  await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(5);
+  await expect(page.locator('.distribution-card .distribution-evidence')).toHaveCount(0);
+  await page.reload();
+  await expect(page.locator('[data-platform-filter]')).toHaveValue('ios');
+  await page.locator('.language-button').click();
+  await expect(page).toHaveURL(/\/ja\/guides\/download\/\?region=cn&platform=ios#distribution-title$/);
+  await expect(page.locator('[data-channel]:visible')).toHaveCount(1);
+  await page.locator('[data-region-filter]').selectOption('jp');
+  await expect(page).toHaveURL(/region=jp&platform=ios/);
+  await page.locator('[data-distribution-evidence] summary').click();
+  await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(3);
+  await expect(page.locator('[data-no-evidence]')).toBeHidden();
+  await page.goto('/zh-hans/guides/download/?region=unknown&platform=invalid');
+  await expect(page.locator('[data-region-filter]')).toHaveValue('cn');
+  await expect(page.locator('[data-platform-filter]')).toHaveValue('all');
+});
+
+test('narrow article navigation collapses after a jump and leaves the target below the header', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  for (const locale of ['zh-hans', 'ja']) {
+    await page.goto(`/${locale}/guides/download/`);
+    const toc = page.locator('[data-mobile-toc]');
+    await expect(toc).not.toHaveAttribute('open', '');
+    await toc.locator('summary').click();
+    await toc.locator('a[href="#distribution-title"]').click();
+    await expect(page).toHaveURL(/#distribution-title$/);
+    await expect(toc).not.toHaveAttribute('open', '');
+    await expect(page.locator('#distribution-title')).toBeFocused();
+    await expect.poll(async () => page.locator('#distribution-title').evaluate((node) => node.getBoundingClientRect().top)).toBeGreaterThanOrEqual(72);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});

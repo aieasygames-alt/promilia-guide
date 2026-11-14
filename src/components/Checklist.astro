@@ -1,0 +1,46 @@
+---
+import type { Locale } from '../lib/content';
+import { t } from '../lib/i18n';
+interface Props { contentId: string; locale: Locale; items: { id: string; text: string }[] }
+const { contentId, locale, items } = Astro.props;
+const c = t(locale);
+---
+<section class="checklist-box" data-checklist={contentId} data-storage-error={c.storageError} data-completed-label={c.saved} data-pagefind-ignore>
+  <div class="checklist-head"><h2>{c.checklist}</h2><span class="checklist-count" aria-live="polite">0 / {items.length} {c.saved}</span></div>
+  <p>{c.checklistNote}</p><progress max={items.length} value="0" aria-label={c.saved}></progress>
+  <ul class="checklist-items">{items.map((item) => <li><label><input type="checkbox" data-task={item.id}/><span>{item.text}</span></label></li>)}</ul>
+  <button class="reset-button" type="button">{c.reset}</button><span class="storage-notice" role="status"></span>
+  <noscript><p>{locale === 'ja' ? '保存機能には JavaScript が必要です。チェックリストはそのまま読めます。' : '保存进度需要启用 JavaScript，清单内容仍可直接阅读。'}</p></noscript>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-checklist]').forEach((section) => {
+    const key = `promilia:checklist:${section.dataset.checklist}:v1`;
+    const inputs = Array.from(section.querySelectorAll<HTMLInputElement>('input[data-task]'));
+    const valid = new Set(inputs.map((input) => input.dataset.task!));
+    const progress = section.querySelector('progress')!;
+    const label = section.querySelector('.checklist-count')!;
+    const warning = () => { section.querySelector('.storage-notice')!.textContent = section.dataset.storageError || ''; };
+    function read() {
+      try {
+        const raw: unknown = JSON.parse(localStorage.getItem(key) || '[]');
+        const saved = new Set(Array.isArray(raw) ? raw.filter((id): id is string => typeof id === 'string' && valid.has(id)) : []);
+        inputs.forEach((input) => { input.checked = saved.has(input.dataset.task!); });
+      } catch { warning(); }
+      update();
+    }
+    function update() {
+      const count = inputs.filter((input) => input.checked).length;
+      progress.value = count;
+      label.textContent = `${count} / ${inputs.length} ${section.dataset.completedLabel}`;
+    }
+    function save() {
+      try { localStorage.setItem(key, JSON.stringify(inputs.filter((input) => input.checked).map((input) => input.dataset.task))); }
+      catch { warning(); }
+      update();
+    }
+    read();
+    inputs.forEach((input) => input.addEventListener('change', save));
+    section.querySelector('button')!.addEventListener('click', () => { inputs.forEach((input) => { input.checked = false; }); save(); });
+    window.addEventListener('storage', (event) => { if (event.key === key || event.key === null) read(); });
+  });
+</script>

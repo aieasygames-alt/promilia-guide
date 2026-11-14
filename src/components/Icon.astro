@@ -1,0 +1,19 @@
+---
+interface Props { name?: string; size?: number; class?: string }
+const { name = 'star', size = 24, class: className } = Astro.props;
+const paths: Record<string, string> = {
+  star: 'M12 2 14.8 9.2 22 12 14.8 14.8 12 22 9.2 14.8 2 12 9.2 9.2Z',
+  search: 'M21 21 16.4 16.4M19 10.5a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0Z',
+  arrow: 'M5 12h14M13 6l6 6-6 6',
+  book: 'M12 5v16M3 3l9 2 9-2v16l-9 2-9-2Z',
+  compass: 'M16 8 14 14 8 16 10 10ZM22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z',
+  leaf: 'M20 3C8 1 1 8 5 15s14 7 15-12ZM4 21 15 10',
+  person: 'M20 22v-3a8 8 0 0 0-16 0v3M16 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
+  shield: 'M12 2 21 6v6c0 5-9 10-9 10S3 17 3 12V6ZM8 12l3 3 5-6',
+  globe: 'M2 12h20M12 2c7 7 7 13 0 20-7-7-7-13 0-20ZM22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z',
+  monitor: 'M9 22h6M12 17v5M3 3h18v14H3Z',
+  clock: 'M12 6v6l4 2M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z',
+  check: 'm5 12 4 4L19 6',
+};
+---
+<svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class={className} aria-hidden="true"><path d={paths[name] || paths.star}/></svg>

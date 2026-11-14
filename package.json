@@ -1,0 +1,40 @@
+{
+  "name": "promilia-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "CONTENT_PREVIEW=true astro dev --host 127.0.0.1",
+    "check": "astro check",
+    "validate:content": "node scripts/validate-content.mjs",
+    "content:status": "node scripts/content-report.mjs status",
+    "content:impact": "node scripts/content-report.mjs impact",
+    "content:readiness": "node scripts/check-release.mjs",
+    "release:check": "node scripts/check-release.mjs --require-ready",
+    "build:release": "npm run release:check && npm run build",
+    "build:pages": "node scripts/build-pages.mjs",
+    "review:bundle": "node scripts/package-review.mjs",
+    "site:verify": "node scripts/verify-site.mjs",
+    "build": "npm run validate:content && astro build && pagefind --site dist && node scripts/verify-build.mjs",
+    "build:preview": "CONTENT_PREVIEW=true npm run build",
+    "preview": "astro preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test"
+  },
+  "dependencies": {
+    "astro": "7.4.12",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.20.5",
+    "cheerio": "^1.1.2",
+    "pagefind": "1.6.0",
+    "typescript": "^5.9.3",
+    "yaml": "^2.9.1"
+  }
+}

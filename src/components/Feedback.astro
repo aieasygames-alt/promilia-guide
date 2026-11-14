@@ -1,0 +1,39 @@
+---
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const ja = locale === 'ja';
+const endpoint = import.meta.env.PUBLIC_FEEDBACK_URL;
+---
+<div class="notice">{ja ? 'お問い合わせ先はまだ設定されていません。下のフォームは内容をコピー・保存するためのもので、送信は行いません。' : '站点接收渠道尚未配置。下方表单可整理、复制或下载纠错内容，不会自动发送。'}{endpoint && <a href={endpoint} target="_blank" rel="noopener noreferrer">{ja ? '設定済みのお問い合わせ窓口を開く' : '打开已配置的反馈渠道'} ↗</a>}</div>
+<form class="feedback-form" data-locale={locale}>
+  <label for="feedback-page">{ja ? '該当ページの URL' : '相关页面 URL'}</label><input id="feedback-page" name="page" type="text" maxlength="2000" placeholder="https://promiliaguide.com/…"/>
+  <label for="feedback-kind">{ja ? '内容の種類' : '问题类型'}</label><select id="feedback-kind" name="kind">{(ja ? ['情報の誤り', '古い情報', '出典の補足', '翻訳・用語', '不具合・その他'] : ['事实错误', '版本过期', '补充来源', '翻译与术语', '功能或其他问题']).map((kind) => <option>{kind}</option>)}</select>
+  <label for="feedback-body">{ja ? '問題の説明と根拠となる資料' : '问题说明与可核对来源'}</label><textarea id="feedback-body" name="body" required minlength="5" maxlength="6000" placeholder={ja ? '変更が必要な箇所、対象地域・バージョン、公式発表の URL などを記入してください。' : '请说明具体问题、适用地区与版本，并附原始公告或可复核记录。'}></textarea>
+  <div class="feedback-actions"><button class="button" type="submit">{ja ? '内容をコピー' : '复制纠错内容'}</button><button class="button secondary" type="button" data-download>{ja ? 'テキストを保存' : '下载文本'}</button><span role="status" aria-live="polite"></span></div>
+</form>
+<script>
+  const form = document.querySelector<HTMLFormElement>('.feedback-form');
+  if (form) {
+    const ja = form.dataset.locale === 'ja';
+    const page = form.querySelector<HTMLInputElement>('[name="page"]')!;
+    page.value = new URLSearchParams(location.search).get('page') || '';
+    const report = () => {
+      const data = new FormData(form);
+      return `Promilia Guide — ${ja ? '修正メモ' : '纠错记录'}\n\n${ja ? 'ページ' : '页面'}: ${data.get('page')}\n${ja ? '種類' : '类型'}: ${data.get('kind')}\n\n${data.get('body')}\n`;
+    };
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const status = form.querySelector<HTMLElement>('[role="status"]')!;
+      try { await navigator.clipboard.writeText(report()); status.textContent = ja ? 'コピーしました。送信は行っていません。' : '已复制，尚未发送。'; }
+      catch { status.textContent = ja ? 'コピーできませんでした。テキストを保存してください。' : '无法访问剪贴板，可使用下载文本。'; }
+    });
+    form.querySelector('[data-download]')!.addEventListener('click', () => {
+      if (!form.reportValidity()) return;
+      const url = URL.createObjectURL(new Blob([report()], { type: 'text/plain;charset=utf-8' }));
+      const link = document.createElement('a'); link.href = url; link.download = 'promilia-guide-feedback.txt'; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      form.querySelector<HTMLElement>('[role="status"]')!.textContent = ja ? 'テキストを保存しました。送信は行っていません。' : '已下载文本，尚未发送。';
+    });
+  }
+</script>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "game",
+    "zh": "蓝色星原：旅谣",
+    "ja": "アズールプロミリア",
+    "jaStatus": "verified",
+    "aliases": [
+      "蓝色星原",
+      "藍色星原",
+      "藍色星原旅謠",
+      "azurpromilia",
+      "azure promilia",
+      "azur promillia",
+      "アズールプロミリア",
+      "蓝色星源"
+    ],
+    "sourceRefs": [
+      "jp-official-home-2026-11-14",
+      "jp-publishing-2025-12-15"
+    ]
+  },
+  {
+    "id": "kibo",
+    "zh": "奇波",
+    "ja": "キボ",
+    "jaStatus": "verified",
+    "aliases": [
+      "kibo",
+      "伙伴",
+      "パートナー"
+    ],
+    "sourceRefs": [
+      "jp-official-home-2026-11-14",
+      "jp-publishing-2025-12-15"
+    ]
+  },
+  {
+    "id": "homestead",
+    "zh": "家园",
+    "ja": "拠点システム（仮称）",
+    "jaStatus": "pending",
+    "aliases": [
+      "家園",
+      "homestead"
+    ]
+  }
+]

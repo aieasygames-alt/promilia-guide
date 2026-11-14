@@ -1,0 +1,499 @@
+[
+  {
+    "id": "cn-launch-date",
+    "revision": 2,
+    "text": "国服官网公告：2026 年 11 月 26 日开启公测。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服官网公告：2026 年 11 月 26 日开启公测。",
+        "detail": "原文发布日期为 2026-10-23；该结论限于国服公告，不包含具体开服小时。"
+      },
+      "ja": {
+        "summary": "中国本土公式の告知では、2026年11月26日にサービス開始予定です。",
+        "detail": "原文の掲載日は2026年10月23日です。開始時刻や日本向けの日程はこの告知から確定しません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-announcement-2026-10-23"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "launch",
+      "global-release",
+      "download",
+      "getting-started",
+      "platforms"
+    ],
+    "conflicts": [],
+    "value": {
+      "date": "2026-11-26"
+    },
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-official-entry",
+    "revision": 1,
+    "text": "国服官网保留“立即预约”入口，可从官网核对预约状态。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服官网保留“立即预约”入口，可从官网核对预约状态。",
+        "detail": "进入后核对地区、账号与活动条款；本站不代办预约。"
+      },
+      "ja": {
+        "summary": "中国本土公式サイトに事前登録の入口があります。",
+        "detail": "地域・アカウント・規約を確認してください。当サイトでは登録を代行しません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-official-home-2026-11-14"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "launch",
+      "download",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {
+      "url": "https://azurpromilia.manjuu.com/home/"
+    },
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-ios-store",
+    "revision": 2,
+    "text": "国服官网链接中国区 App Store；商店标注预计 2026 年 11 月 26 日推出。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服官网链接中国区 App Store；商店标注预计 2026 年 11 月 26 日推出。",
+        "detail": "商店展示预约与预计推出状态，不代表现在已可下载或登录。"
+      },
+      "ja": {
+        "summary": "公式サイトから中国本土向けApp Storeへのリンクを確認。ストアは2026年11月26日の配信予定と表示しています。",
+        "detail": "ストアの予約・配信予定の表示であり、現時点でダウンロードやログインが可能と確定したものではありません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-official-home-2026-11-14",
+      "cn-app-store-2026-11-14"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "url": "https://apps.apple.com/cn/app/%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F-%E6%97%85%E8%B0%A3/id6754017631",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "availability": "reservation"
+    },
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-ios-compatibility",
+    "revision": 1,
+    "text": "中国区 App Store 兼容性：iOS 15.0 / iPadOS 15.0 或更高版本。",
+    "localized": {
+      "zh-hans": {
+        "summary": "中国区 App Store 兼容性：iOS 15.0 / iPadOS 15.0 或更高版本。",
+        "detail": "这只是商店兼容条件；不是推荐设备、帧率保证或完整磁盘空间要求。"
+      },
+      "ja": {
+        "summary": "中国本土向けApp Storeの互換性表示はiOS 15.0 / iPadOS 15.0以降です。",
+        "detail": "ストア上の互換性条件です。推奨端末、フレームレート、必要な空き容量を示すものではありません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-app-store-2026-11-14"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "requirements",
+      "platforms",
+      "download"
+    ],
+    "conflicts": [],
+    "value": {
+      "minimumOS": "iOS 15.0 / iPadOS 15.0"
+    },
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-opening-time",
+    "revision": 1,
+    "text": "具体开服时刻尚未在本次核验的定档公告中找到。",
+    "localized": {
+      "zh-hans": {
+        "summary": "具体开服时刻尚未在本次核验的定档公告中找到。"
+      },
+      "ja": {
+        "summary": "今回確認した日程告知では、具体的な開始時刻を確認できていません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-announcement-2026-10-23"
+    ],
+    "type": "pending",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "pending",
+    "affectedPages": [
+      "launch",
+      "global-release",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-platform-details",
+    "revision": 1,
+    "text": "PC、Android 公测客户端入口及跨端互通规则仍待逐项核验。",
+    "localized": {
+      "zh-hans": {
+        "summary": "PC、Android 公测客户端入口及跨端互通规则仍待逐项核验。"
+      },
+      "ja": {
+        "summary": "PC・Androidの正式配布先と端末間のデータ共有条件は、引き続き確認が必要です。"
+      }
+    },
+    "sourceRefs": [
+      "cn-official-home-2026-11-14"
+    ],
+    "type": "pending",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前",
+    "verification": "pending",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "jp-release-status",
+    "revision": 2,
+    "text": "日本官方独立公告：2026年11月26日正式发行，具体开服小时仍待核验。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本官方独立公告：2026 年 11 月 26 日正式发行。",
+        "detail": "依据日本官方X原帖，非套用国服日期；该帖没有列出具体开服小时，也不证明已开放下载或登录。"
+      },
+      "ja": {
+        "summary": "日本公式の発表では、2026年11月26日（木）に正式リリース予定です。",
+        "detail": "日本向け公式Xの原文を確認済みです。この投稿には具体的な開始時刻の記載はなく、ダウンロードやログインの開始を示すものでもありません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-launch-announcement-2026-10-23"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "launch",
+      "global-release",
+      "platforms",
+      "download",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {
+      "date": "2026-11-26"
+    },
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "tc-official-announcement",
+    "revision": 1,
+    "text": "繁中官网标题与公告列表也出现 11 月 26 日公测信息；发行范围仍需独立核对。",
+    "localized": {
+      "zh-hans": {
+        "summary": "繁中官网标题与公告列表也出现 11 月 26 日公测信息；发行范围仍需独立核对。",
+        "detail": "不据此推断全球同步、服务器互通或日本发行。"
+      },
+      "ja": {
+        "summary": "繁体字公式サイトにも11月26日の案内があります。対象地域と運営条件は別途確認が必要です。",
+        "detail": "世界共通の配信日、サーバー共有、日本向け配信の根拠にはしません。"
+      }
+    },
+    "sourceRefs": [
+      "tc-official-home-2026-11-14"
+    ],
+    "type": "official",
+    "gameRegion": "繁中官网，地区与服务器范围未完全核验",
+    "gameVersion": "公测前",
+    "verification": "verified",
+    "affectedPages": [
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "tc",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "cn-test-client-history",
+    "revision": 1,
+    "text": "9月的旅迹测试预下载仅面向获资格账号，官方已公告该测试于10月7日结束；旧测试入口与规则不能作为公测依据。",
+    "localized": {
+      "zh-hans": {
+        "summary": "9月的旅迹测试预下载仅面向获资格账号，该测试已于10月7日结束。",
+        "detail": "历史公告提及PC（Windows）、安卓、iOS及测试设备绑定规则；不能据此确认11月公测客户端或互通规则。"
+      },
+      "ja": {
+        "summary": "9月の「旅迹测试」の事前ダウンロードは参加資格者向けで、テストは10月7日に終了しています。",
+        "detail": "過去の告知にはPC（Windows）・Android・iOSと端末制限が記載されていますが、11月の正式配布やデータ共有の根拠にはしません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-test-preload-2026-09-15",
+      "cn-test-ended-2026-10-07"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆旅迹测试",
+    "gameVersion": "旅迹测试（历史测试）",
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "cn",
+      "release": "historical-test"
+    }
+  },
+  {
+    "id": "cn-preload-status",
+    "revision": 1,
+    "text": "本轮核验的页面尚未确认11月公测预下载安排；9月测试预下载不作为当前公测入口。",
+    "localized": {
+      "zh-hans": {
+        "summary": "本轮核验的页面尚未确认11月公测预下载安排。",
+        "detail": "官网仍列出9月测试预下载历史公告，需核对标题、日期与版本，不能当作当前公测入口。"
+      },
+      "ja": {
+        "summary": "今回確認したページでは、11月の正式サービス用の事前ダウンロード案内を確認できていません。",
+        "detail": "公式サイトに残る9月のテスト用告知と区別し、タイトル・日付・対象バージョンを確認してください。"
+      }
+    },
+    "sourceRefs": [
+      "cn-official-home-2026-11-14",
+      "cn-test-preload-2026-09-15",
+      "cn-test-ended-2026-10-07"
+    ],
+    "type": "pending",
+    "gameRegion": "中国大陆",
+    "gameVersion": "11月公测前",
+    "verification": "pending",
+    "affectedPages": [
+      "download",
+      "platforms"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
+  },
+  {
+    "revision": 1,
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "conflicts": [],
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "id": "jp-official-entry",
+    "text": "日本官网已提供iOS与Android事前注册页，预约不等于可下载安装。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本官网提供 App Store / Google Play 事前注册入口。",
+        "detail": "先进入日本官方事前注册页，再按设备核对商店地区与账号条件；本站未代办注册，也未确认已开放安装。"
+      },
+      "ja": {
+        "summary": "日本公式サイトでApp Store・Google Playの事前登録先を案内しています。",
+        "detail": "公式の事前登録ページで利用するストアを選び、地域・アカウントの条件を確認してください。登録済みでも、すぐにインストールできるとは限りません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-official-home-2026-11-14",
+      "jp-pre-register-2026-11-14"
+    ],
+    "type": "official",
+    "verification": "verified",
+    "affectedPages": [
+      "launch",
+      "global-release",
+      "download",
+      "platforms",
+      "getting-started"
+    ],
+    "value": {
+      "url": "https://azurpromilia.jp/pre-register/",
+      "availability": "reservation",
+      "platforms": [
+        "iOS",
+        "Android"
+      ]
+    }
+  },
+  {
+    "revision": 1,
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "conflicts": [],
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "id": "jp-platform-plan",
+    "text": "Yostar日本地区公告列出iOS、Android、Windows为计划平台，不证明当前安装器开放。",
+    "localized": {
+      "zh-hans": {
+        "summary": "Yostar 日本地区公告列出 iOS / Android / Windows（计划）。",
+        "detail": "2025-12-15公告的平台计划与当前下载入口分开核对；不据此增加主机平台或确认跨端互通。"
+      },
+      "ja": {
+        "summary": "Yostarの日本向け告知には、iOS・Android・Windows（予定）と記載されています。",
+        "detail": "対応予定と現在の配布状況は別の情報です。家庭用ゲーム機への対応や端末間のデータ共有は、この記載からは確定できません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-publishing-2025-12-15"
+    ],
+    "type": "official",
+    "verification": "verified",
+    "affectedPages": [
+      "global-release",
+      "download",
+      "platforms",
+      "requirements"
+    ],
+    "value": {
+      "platforms": [
+        "iOS",
+        "Android",
+        "Windows"
+      ]
+    }
+  },
+  {
+    "revision": 1,
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "conflicts": [],
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "id": "jp-platform-details",
+    "text": "日本PC正式安装器、完整设备要求及跨端互通规则仍待核验。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本 PC 正式安装器与跨端互通条件仍待核验。",
+        "detail": "官方已列出计划平台，但本轮没有确认可直接下载的PC安装器；不把手机事前注册页标为PC下载入口。"
+      },
+      "ja": {
+        "summary": "日本向けPC版の正式な配布先と、端末間のデータ共有条件は確認中です。",
+        "detail": "対応予定の記載は確認済みですが、今回、PC版のインストーラーは確認できていません。スマートフォン向け事前登録をPC版のダウンロードとして案内しません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-publishing-2025-12-15",
+      "jp-official-home-2026-11-14"
+    ],
+    "type": "pending",
+    "verification": "pending",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements"
+    ],
+    "value": {}
+  },
+  {
+    "revision": 1,
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "conflicts": [],
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "id": "jp-preload-status",
+    "text": "本轮日本官网、事前注册页及日程原帖未确认正式预下载日程。",
+    "localized": {
+      "zh-hans": {
+        "summary": "本轮日本官方页面核对尚未确认正式预下载日程。",
+        "detail": "只描述本轮读到的页面；不能写成官方从未公布，也不把旧CBT入口当作正式客户端下载。"
+      },
+      "ja": {
+        "summary": "今回確認した日本公式ページでは、正式サービス用の事前ダウンロード日程を確認できていません。",
+        "detail": "今回の確認範囲での記録です。未発表とは断定せず、過去のCBT用ページとも区別します。"
+      }
+    },
+    "sourceRefs": [
+      "jp-pre-register-2026-11-14",
+      "jp-launch-announcement-2026-10-23"
+    ],
+    "type": "pending",
+    "verification": "pending",
+    "affectedPages": [
+      "launch",
+      "download",
+      "platforms",
+      "getting-started"
+    ],
+    "value": {}
+  }
+]
