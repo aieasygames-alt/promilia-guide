@@ -48,6 +48,17 @@ test('missing translation goes to explicit target language home', async ({ page 
   await expect(page).toHaveURL(/\/ja\/$/);
 });
 
+test('combat preview provides a bilingual, actionable first-run record and links from home', async ({ page }) => {
+  for (const [locale, title] of [['zh-hans', '战斗与元素入门'], ['ja', '戦闘と元素の入門']]) {
+    await page.goto(`/${locale}/systems/combat/`);
+    await expect(page.locator('h1')).toContainText(title);
+    await expect(page.locator('.prose')).toContainText(/记录|記録/);
+    await expect(page.locator('[data-checklist="combat"] input')).toHaveCount(5);
+    await page.goto(`/${locale}/`);
+    await expect(page.locator('.toolkit-grid a').nth(2)).toHaveAttribute('href', `/${locale}/systems/combat/`);
+  }
+});
+
 test('Pagefind searches Chinese, Japanese and aliases within the current locale', async ({ page }) => {
   for (const [locale, query] of [['zh-hans', '设备'], ['ja', '端末'], ['zh-hans', '藍色星原'], ['ja', 'アズールプロミリア'], ['zh-hans', 'azure promilia']]) {
     await page.goto(`/${locale}/search/?q=${encodeURIComponent(query)}`);

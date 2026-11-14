@@ -16,7 +16,7 @@ const root = `/${locale}/`;
 const guideLink = (id: string) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? articlePath(entry.data) : root + 'guides/'; };
 const featured = ['launch', 'global-release', 'download', 'getting-started'].flatMap((id) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? [entry] : []; });
 const alternates = [...locales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/` })), { lang: 'x-default', href: origin + '/' }];
-const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'kibo/' }, { icon: 'shield', path: 'systems/' }, { icon: 'compass', path: 'systems/' }];
+const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'kibo/' }, { icon: 'shield', path: guideLink('combat').replace(root, '') }, { icon: 'compass', path: 'systems/' }];
 ---
 <Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア 攻略・配信情報' : '星原旅伴 · 蓝色星原：旅谣攻略'} description={c.intro} alternates={alternates}>
   <section class="hero">
