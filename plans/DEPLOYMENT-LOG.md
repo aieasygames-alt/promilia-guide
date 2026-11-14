@@ -43,4 +43,16 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 
 主域名 canonical 固定为 `https://promiliaguide.com`。主域名完整线上验收 35/35 通过，包含 12 篇审核文章、双语首页、索引策略、canonical、安全响应头、robots、Sitemap、Pagefind、工作台隔离和真实 404；报告为 `artifacts/domain-production-verification.json`。GitHub 远程验收成功：[Verify hosted site #43568808353](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43568808353)。`http://promiliaguide.com/zh-hans/guides/download/` 返回 301，保留路径跳转到同一主域名的 HTTPS 地址。
 
-`www.promiliaguide.com` 尚无 DNS 解析，本次仅切换已明确确认的根域名。生产 pages.dev 仍可直接访问；www/pages.dev 向主域名的跳转、真实目标网络和回滚演练保留为后续任务。未更改其他现有 Cloudflare 项目。
+此处为根域名首次切换时记录：当时 www 无 DNS、生产 pages.dev 可直接访问；后续归一配置见下文。未更改其他现有 Cloudflare 项目。
+
+## 下一阶段第 1 轮：域名归一与发布验收
+
+2026-11-14 已新增 `CNAME www promilia-guide.pages.dev`，根域名与 www 均显示 Active、SSL enabled。账户级专用 Bulk Redirects 列表 `promilia_canonical` 和规则 `Promilia canonical domains` 已启用：生产 pages.dev 与 www 以 301 跳转到主域名，保留子路径、路径后缀、查询字符串，不包含子域名。具体 ID 与设置见 `DOMAIN-AND-PAGES.md` 第 10 节。
+
+旧正式站加上跳转链的验收 50/50 通过，包含 HTTP/HTTPS、中文/日语深层路径和重复查询参数。旧分支预览仍为 noindex、空 Sitemap，44/44 通过。根域名和 www 证书截图保存在忽略目录 `artifacts/round1-domains-active.jpg`。
+
+代码提交 `eee3f1a4b6ce456d077c3508443778e3c281dbdc` 实际推送到 `editorial/deployment-check`，生成预览 https://7d39d9da.promilia-guide.pages.dev 。清单返回相同 SHA、editorial-preview、16 篇稿件；线上 44/44 通过，未被别名规则跳入主域名。[分支质量检查 #43571583697](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43571583697) 成功，生产验收 job 按分支条件跳过。随后将双语更新页加入常规验收路径，最终预览/生产检查数将相应增加。
+
+双语公开更新页已修正为首批 12 篇稿件审核完成与主域名上线。新增 manifest SHA、部署 check 等待、主域名版本传播等待、永久跳转检查和失败报告；本次 main 发布会首次实际触发自动生产验收，结果待发布后补记。类型检查、46 项单元测试、生产/预览构建与 28 项浏览器检查已通过。
+
+恢复手册见 `ROLLBACK-RUNBOOK.md`。旧成功生产候选 `738c5a9f-31dd-4c1a-9e26-49cf7a99e590` 对应 `6e5b9df`，不可变 URL 仍可访问，但该地址带 Cloudflare noindex 响应头，不能记作正式索引验收成功。正式站回滚后的完整验收须使用主域名。没有为演练执行生产回滚切换。

@@ -19,7 +19,9 @@
 | 不可变 URL | https://738c5a9f.promilia-guide.pages.dev |
 | 当时验收 | 主域名 35/35；12 篇审核文章、34 个 HTML |
 
-该候选早于 manifest 的 `commitSha` 功能，回滚到它时须在控制台核对部署 SHA，并使用不带 `--commit` 的技术验收。此后的版本必须同时检查 manifest SHA。历史来源和游戏信息可能随时间过期，回滚前需检查是否适合恢复公开。
+该候选早于 manifest 的 `commitSha` 功能，回滚到它时须在控制台核对部署 SHA，并在正式主域名使用不带 `--commit` 的技术验收。此后的版本必须同时检查 manifest SHA。历史来源和游戏信息可能随时间过期，回滚前需检查是否适合恢复公开。
+
+2026-11-14 复核：历史不可变 URL 仍返回 production 清单、12 篇正文和 200，但 Cloudflare 在该地址加 `X-Robots-Tag: noindex`。直接将此地址当作可索引正式入口运行 production 验收会失败，这是正确拦截；不能将它记为生产索引验收通过。回滚后的索引策略必须在正式主域名复核。
 
 ## 站点故障时回滚
 

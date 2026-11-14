@@ -74,7 +74,7 @@ test('site CLI validates observed routes and rejects false HTTP 404 responses', 
     if (route === '/robots.txt') return response.end('User-agent: *\nDisallow: /\n');
     if (route === '/sitemap.xml') return response.end('<urlset/>');
     if (route === '/pagefind/pagefind.js') return response.end('/* fixture */');
-    if (['/zh-hans/', '/ja/', '/editorial/'].includes(route)) return response.end(html(route, true));
+    if (['/zh-hans/', '/ja/', '/zh-hans/updates/', '/ja/updates/', '/editorial/'].includes(route)) return response.end(html(route, true));
     response.statusCode = fallback ? 200 : 404; response.end('Unknown route');
   }).listen(0, '127.0.0.1');
   await once(server, 'listening');
