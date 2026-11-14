@@ -1,0 +1,55 @@
+---
+import type { Locale } from '../lib/content';
+
+type FeatureId = 'public-beta' | 'kibo-showcase';
+
+interface Props {
+  id: FeatureId;
+  locale: Locale;
+}
+
+const { id, locale } = Astro.props;
+const copy = {
+  'public-beta': {
+    src: '/images/feature/public-beta.webp',
+    width: 1920,
+    height: 1080,
+    alt: {
+      'zh-hans': '蓝色星原：旅谣 11 月 26 日正式公测宣传图，展示角色、奇波与野外场景。',
+      ja: '「アズールプロミリア」11月26日正式サービス開始の告知ビジュアル。キャラクター、キボ、フィールドを描いている。',
+    },
+    caption: {
+      'zh-hans': '公测宣传图 · 2026-11-26 · 用户提供素材',
+      ja: '正式サービス開始ビジュアル · 2026-11-26 · ユーザー提供素材',
+    },
+  },
+  'kibo-showcase': {
+    src: '/images/feature/kibo-showcase.webp',
+    width: 800,
+    height: 449,
+    alt: {
+      'zh-hans': '蓝色星原角色与奇波同框宣传图，画面中央写有星宠结伴。',
+      ja: 'キャラクターとキボが描かれた「アズールプロミリア」のビジュアル。中央に「星宠结伴」と書かれている。',
+    },
+    caption: {
+      'zh-hans': '角色与奇波宣传图 · 用户提供素材',
+      ja: 'キャラクターとキボのビジュアル · ユーザー提供素材',
+    },
+  },
+} as const;
+
+const visual = copy[id];
+---
+
+<figure class={`site-visual site-visual-${id}`} data-visual-id={id}>
+  <img
+    src={visual.src}
+    alt={visual.alt[locale]}
+    width={visual.width}
+    height={visual.height}
+    loading="eager"
+    decoding="async"
+    fetchpriority="high"
+  />
+  <figcaption>{visual.caption[locale]}</figcaption>
+</figure>

@@ -534,6 +534,31 @@
   gap: 65px;
   align-items: start;
 }
+.site-visual {
+  width: 100%;
+  margin: 28px 0 32px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+.site-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.site-visual figcaption {
+  padding: 9px 14px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.site-visual-public-beta {
+  max-width: 960px;
+}
+.site-visual-kibo-showcase {
+  max-width: 800px;
+}
 .article-grid aside {
   position: sticky;
   top: 120px;

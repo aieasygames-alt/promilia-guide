@@ -9,6 +9,7 @@ test('home renders, mobile navigation works, and layout fits viewport', async ({
   await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
   await expect(page.locator('.brand-logo')).toHaveAttribute('alt', '蓝色星原：旅谣（Azur Promilia）');
   await expect(page.locator('.footer-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
+  await expect(page.locator('.hero-visual > img')).toHaveAttribute('src', '/images/feature/home-world.webp');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   if (isMobile) {
     await page.locator('.mobile-menu summary').click();
@@ -84,6 +85,22 @@ test('official character and kibo catalogs render bilingual source-backed entrie
     await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[0]);
     await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[4]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+});
+
+test('provided feature visuals appear on the intended bilingual pages', async ({ page }) => {
+  for (const [locale, betaAlt, kiboAlt] of [
+    ['zh-hans', '蓝色星原', '蓝色星原'],
+    ['ja', 'アズールプロミリア', 'アズールプロミリア'],
+  ] as const) {
+    await page.goto(`/${locale}/guides/launch/`);
+    await expect(page.locator('[data-visual-id="public-beta"] img')).toHaveAttribute('src', '/images/feature/public-beta.webp');
+    await expect(page.locator('[data-visual-id="public-beta"] img')).toHaveAttribute('alt', new RegExp(betaAlt));
+    await expect(page.locator('[data-visual-id="public-beta"] figcaption')).toContainText(locale === 'ja' ? 'ユーザー提供素材' : '用户提供素材');
+
+    await page.goto(`/${locale}/kibo/`);
+    await expect(page.locator('[data-visual-id="kibo-showcase"] img')).toHaveAttribute('src', '/images/feature/kibo-showcase.webp');
+    await expect(page.locator('[data-visual-id="kibo-showcase"] img')).toHaveAttribute('alt', new RegExp(kiboAlt));
   }
 });
 
