@@ -74,3 +74,9 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 提交 `bb808f00ad5cd2bad0ea97e640d5af5235ff8922` 已推送到 `main`，正式主域名的 `build-info.json` 已返回相同 SHA。Cloudflare Pages 生产部署检查对应部署 ID `1ff693bb-55d2-4209-a525-344b65faeef6`，不可变地址为 https://1ff693bb.promilia-guide.pages.dev；该不可变 pages.dev 地址按既有规则带 `noindex`，正式可索引入口仍为 https://promiliaguide.com。
 
 本次更新从用户提供的白底标志生成完整透明 `public/images/logo.png` 与导航横版 `public/images/logo-wordmark.png`，替换头部、页脚及 Organization JSON-LD logo。生产构建继续包含 12 篇已审核文章，战斗草稿未进入正式页面。预览与正式构建、46 项单元测试、30 项桌面/手机测试和线上 48 项检查均已通过。
+
+## 首批角色与奇波目录上线
+
+提交 `0d8b665e20ec7981a329a5a09e46ee8ff51fed39` 已推送到 `main`，新增 4 名角色与 5 种奇波的中日文官方目录、来源记录、Sitemap、Pagefind 索引和移动端回归。GitHub 质量检查与部署验收运行 [Validate site #43601028099](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43601028099) 成功；`verify`、`Cloudflare Pages` 和 `Verify production deployment` 均为 success。
+
+Cloudflare Pages 生产部署 ID 为 `f33aa3cd-2de1-4ce5-9905-87f0fb8e9805`，不可变地址为 https://f33aa3cd.promilia-guide.pages.dev；正式可索引入口仍为 https://promiliaguide.com。正式域名验收报告确认同一 SHA，54/54 通过，生产构建包含 34 个 HTML 和 12 篇已审核文章。线上直接核对 `/zh-hans/characters/`、`/ja/characters/`、`/zh-hans/kibo/`、`/ja/kibo/` 均返回 200、`index,follow` 和正确 canonical，目录数量分别为 4、4、5、5。
