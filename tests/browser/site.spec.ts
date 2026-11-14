@@ -68,13 +68,19 @@ test('official character and kibo catalogs render bilingual source-backed entrie
     ['ja', ['アニス', 'キャスベル', 'シンフォーリア', 'テララ'], ['メテオール', 'モフリーネ', 'キャバード', 'ブルーダ', 'ナイトフォール']],
   ] as const) {
     await page.goto(`/${locale}/characters/`);
-    await expect(page.locator('[data-entity-catalog="character"] [data-entity-id]')).toHaveCount(4);
+    const characters = page.locator('[data-entity-catalog="character"] [data-entity-id]');
+    await expect(characters).toHaveCount(4);
+    await expect(characters.locator('.entity-image')).toHaveCount(4);
+    await expect(characters.first().locator('.entity-image')).toHaveAttribute('alt', new RegExp(characterNames[0]));
     await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[0]);
     await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[3]);
     await expect(page.locator('.entity-card').first().locator('.entity-card-footer a')).toHaveAttribute('href', locale === 'ja' ? 'https://azurpromilia.jp/character' : 'https://azurpromilia.manjuu.com/home/');
 
     await page.goto(`/${locale}/kibo/`);
-    await expect(page.locator('[data-entity-catalog="kibo"] [data-entity-id]')).toHaveCount(5);
+    const kibo = page.locator('[data-entity-catalog="kibo"] [data-entity-id]');
+    await expect(kibo).toHaveCount(5);
+    await expect(kibo.locator('.entity-image')).toHaveCount(5);
+    await expect(kibo.first().locator('.entity-image')).toHaveAttribute('alt', new RegExp(kiboNames[0]));
     await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[0]);
     await expect(page.locator('[data-entity-catalog="kibo"]')).toContainText(kiboNames[4]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);

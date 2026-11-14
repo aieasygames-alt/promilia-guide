@@ -759,6 +759,40 @@
   flex-direction: column;
   gap: 13px;
 }
+.entity-media {
+  position: relative;
+  aspect-ratio: 1;
+  margin: -24px -24px 5px;
+  overflow: hidden;
+  background: #e9eee7;
+  border-bottom: 1px solid var(--line);
+}
+.entity-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.entity-media-character .entity-image {
+  object-fit: cover;
+}
+.entity-media-kibo {
+  padding: 18px;
+  background: #f0f2eb;
+}
+.entity-media-kibo .entity-image {
+  object-fit: contain;
+}
+.entity-media figcaption {
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+  padding: 2px 6px;
+  color: #fff;
+  background: rgb(35 61 55 / 72%);
+  font-size: 9px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
 .entity-card-character {
   border-top: 3px solid #6e9478;
 }
@@ -1389,6 +1423,12 @@
   }
   .entity-card {
     padding: 18px;
+  }
+  .entity-media {
+    margin: -18px -18px 5px;
+  }
+  .entity-media-kibo {
+    padding: 14px;
   }
   .entity-card h2 {
     font-size: 22px;

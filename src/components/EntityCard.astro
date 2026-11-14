@@ -13,11 +13,24 @@ interface Props {
 const { entity, locale, source, index } = Astro.props;
 const ja = locale === 'ja';
 const sourceLabel = ja ? '公式ページ' : '官方页面';
+const imageSourceLabel = entity.imageSource === 'official' ? (ja ? '公式画像' : '官方图片') : (ja ? '第三者画像' : '第三方图片');
 const classificationLabel = ja ? '分類' : '分类';
 const originLabel = ja ? '所属・ゆかりの地' : '所属与相关地区';
 ---
 
 <article class={`entity-card entity-card-${entity.kind}`} data-entity-id={entity.id} data-entity-kind={entity.kind}>
+  <figure class={`entity-media entity-media-${entity.kind}`} data-image-source={entity.imageSource}>
+    <img
+      class="entity-image"
+      src={entity.image}
+      alt={entity.imageAlt[locale]}
+      width="1500"
+      height="1500"
+      loading={index === 0 ? 'eager' : 'lazy'}
+      decoding="async"
+    />
+    <figcaption>{imageSourceLabel}</figcaption>
+  </figure>
   <div class="entity-card-topline">
     <span class="entity-number">0{index + 1}</span>
     <span class="pill">{ja ? '公式発表' : '官方已公布'}</span>
