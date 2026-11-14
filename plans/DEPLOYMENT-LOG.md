@@ -60,3 +60,11 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 最终预览验收已用包含双语更新页的新脚本重跑：48/48 通过，仍对应预览提交 `eee3f1a4b6ce456d077c3508443778e3c281dbdc`。以上记录为本轮功能发布实证；后续文档维护提交仍自动触发相同验收，可在最新 main Actions 查看。
 
 恢复手册见 `ROLLBACK-RUNBOOK.md`。旧成功生产候选 `738c5a9f-31dd-4c1a-9e26-49cf7a99e590` 对应 `6e5b9df`，不可变 URL 仍可访问，但该地址带 Cloudflare noindex 响应头，不能记作正式索引验收成功。正式站回滚后的完整验收须使用主域名。没有为演练执行生产回滚切换。
+
+## 下一阶段第 2 轮：双语战斗入门预览
+
+提交 `d3fbf8038cb7d3c037822b60a49cf7f2b7ec6517` 已推送到 `editorial/deployment-check`，Cloudflare Pages 部署 ID 为 `dd3ee6ce-38ef-40b1-ae21-4591e0da8e91`，预览地址为 https://dd3ee6ce.promilia-guide.pages.dev 。GitHub 质量检查 [Validate site #43573686466](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43573686466) 成功；预览分支的生产验收 job 按分支条件跳过。
+
+本轮本地 `npm run check`、46 项单元测试、预览构建、30 项桌面/手机浏览器测试和正式构建均通过。预览构建为 39 个 HTML、16 篇稿件；正式构建为 34 个 HTML、12 篇已审核文章，战斗稿未进入正式产物。对上述预览地址执行 `site:verify --mode preview --commit d3fbf8038cb7d3c037822b60a49cf7f2b7ec6517` 重试后 48/48 通过：两篇中日文战斗页面可访问，提交清单一致，预览保持 `X-Robots-Tag: noindex`、空 Sitemap、正确 canonical、Pagefind 和真实 404，未跳转到正式主域名。
+
+战斗中日文稿仍为 `status: draft` / `translationStatus: draft`，没有审核人或审核日期。预览交付不等于正式发布；下一步是逐语言真实人工审核，取得可复核战斗证据后再评估正式收录。CMS、站内账号、评论仍不在范围内。
