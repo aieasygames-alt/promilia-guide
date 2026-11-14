@@ -24,4 +24,10 @@
 
 ## 云端进展
 
-私有仓库已创建。Pages Git 集成配置与首次线上验收进行中；在获得实际部署结果前，不把本地构建成功写作云端成功。
+私有仓库已创建并推送至 `main`，初始提交为 `e75b4a71e2692cf092678d89650cbb722d94a8ad`。已通过 GitHub API 核对 `isPrivate=true`。
+
+GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43566196278)。该流程完成类型/内容/单元检查、生产构建、显式 Pages 预览构建及 Chromium 浏览器检查。
+
+Cloudflare 控制台已进入 Pages Git 导入流程，并登录 GitHub `aieasygames-alt`。目前停在 **Cloudflare Workers and Pages 的 GitHub 应用最终“授权”页**，未点击授权，尚未创建 Pages 项目或触发云端构建。浏览器操作规则对授予持续账户访问的步骤要求当下单独确认；待用户确认后继续，并优先将仓库访问范围限定为 `promilia-guide`。
+
+本次尚未更改域名、DNS 或其他现有 Cloudflare 项目。首次线上部署及响应头、HTTPS 等验收待集成授权后继续。
