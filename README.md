@@ -183,7 +183,7 @@ CF_PAGES=1 CF_PAGES_BRANCH=main PAGES_PRODUCTION_BRANCH=main PAGES_BUILD_MODE=pr
 
 私有 GitHub 仓库为 [aieasygames-alt/promilia-guide](https://github.com/aieasygames-alt/promilia-guide)。GitHub Actions 运行质量检查；Cloudflare Pages Git 集成负责在推送生产分支或其他分支后分别构建生产/预览。实际部署与验收记录见 `plans/DEPLOYMENT-LOG.md`。
 
-上线顺序：建立仓库并连接 Pages → 检查分支预览默认 noindex → 在 Pages 关联自定义域名 → 完成根域名 DNS/HTTPS → 配置生产 pages.dev 与可选 www 到主域名的重定向 → 验证正式响应与回滚。实际 Pages 项目名和账号尚未提供，因此不写入猜测的重定向主机名。具体操作以 `plans/DOMAIN-AND-PAGES.md` 为准。
+Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promilia-guide.pages.dev](https://promilia-guide.pages.dev)，分支验收预览为 [6e004931.promilia-guide.pages.dev](https://6e004931.promilia-guide.pages.dev)；两者线上验收均通过，分支预览默认 noindex。主域名现有两条 A 记录尚待确认替换，随后完成 DNS/HTTPS、生产 pages.dev 与可选 www 重定向及回滚验收。具体操作以 `plans/DOMAIN-AND-PAGES.md` 为准。
 
 首批正文与日语人工审核已由项目负责人确认。仍需补充真实反馈入口、各地区客户端下载与游戏账号规则核验、真机/目标网络验收。目录内规划的内容数量是目标，不以空页面或未经审核译文补齐。
 

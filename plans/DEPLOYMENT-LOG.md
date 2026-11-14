@@ -28,6 +28,17 @@
 
 GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43566196278)。该流程完成类型/内容/单元检查、生产构建、显式 Pages 预览构建及 Chromium 浏览器检查。
 
-Cloudflare 控制台已进入 Pages Git 导入流程，并登录 GitHub `aieasygames-alt`。目前停在 **Cloudflare Workers and Pages 的 GitHub 应用最终“授权”页**，未点击授权，尚未创建 Pages 项目或触发云端构建。浏览器操作规则对授予持续账户访问的步骤要求当下单独确认；待用户确认后继续，并优先将仓库访问范围限定为 `promilia-guide`。
+用户完成 GitHub 授权后，已创建并连接 Cloudflare Pages 项目 `promilia-guide`，生产与分支自动部署均启用。
 
-本次尚未更改域名、DNS 或其他现有 Cloudflare 项目。首次线上部署及响应头、HTTPS 等验收待集成授权后继续。
+- 正式部署：https://promilia-guide.pages.dev
+- 首次生产版本：https://e0b7757a.promilia-guide.pages.dev ，对应 `ee26e41`。
+- 实际推送 `editorial/deployment-check` 分支触发预览：https://6e004931.promilia-guide.pages.dev ，同样对应 `ee26e41`。
+- Production / Preview 的三项变量已分别保存；预览模式已改为 `preview`，没有共享手动 `CONTENT_PREVIEW`。
+- 本地对两个 HTTPS 云端地址执行 `site:verify` 均通过：生产包含 12 篇审核稿；预览包含 16 篇及工作台，禁止索引，Sitemap 为空。canonical、安全响应头、搜索资源与真实 404 检查通过。
+- GitHub 远程正式站验收成功：[Verify hosted site #43567296436](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43567296436)。本地报告保存在忽略目录 `artifacts/pages-production-verification.json` 和 `artifacts/pages-preview-verification.json`。
+
+## 自定义域名待切换
+
+已在 Pages 准备 `promiliaguide.com` 的 DNS 变更预览。根域名现有 A 记录指向 `54.149.79.189` 与 `34.216.117.25`；激活会将它们替换为 `CNAME @ promilia-guide.pages.dev`。由于会改变现有域名流量，当前未点击 Activate domain，等待用户确认此项具体切换。
+
+主域名 canonical 仍固定为 `https://promiliaguide.com`；在 DNS 切换前，通过 pages.dev 访问已部署站点。自定义域名的 HTTPS、www/pages.dev 跳转、真实目标网络和回滚演练尚未验收。未更改其他现有 Cloudflare 项目。

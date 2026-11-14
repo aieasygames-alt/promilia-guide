@@ -1,6 +1,6 @@
 # 主域名与 Cloudflare Pages 部署方案
 
-价格核查日期：2026-11-13；决策更新：2026-11-14。用户已确认购买 **promiliaguide.com**，正式站点 origin 固定为 **https://promiliaguide.com**。部署目标为 Cloudflare Pages；本次更新未执行 DNS、Pages 绑定或云端部署，状态不可由域名购买推断。
+价格核查日期：2026-11-13；决策更新：2026-11-14。用户已确认购买 **promiliaguide.com**，正式站点 origin 固定为 **https://promiliaguide.com**。Cloudflare Pages 项目 `promilia-guide` 已通过私有 GitHub 仓库完成正式及分支预览部署，云端验收通过。主域名已有两条 A 记录，替换解析尚待确认；实际记录见 `DEPLOYMENT-LOG.md`。
 
 ## 1. 已确认主域名与历史比价
 
@@ -144,7 +144,7 @@ npm run site:verify -- --url https://promiliaguide.com --mode production
 
 工具检查构建模式、双语首页与清单中的全部文章、canonical、索引策略、安全响应头、robots、Sitemap、Pagefind包、编辑工作台及随机未知路由真实404。错误会返回非零退出码；`--json` 可保留逐项报告。它不会执行部署或更改DNS。
 
-GitHub 中可手动运行 `.github/workflows/verify-deployment.yml`，填写真实部署地址及预期模式后下载报告。工作流不会猜测 Pages 项目名，亦不会自动创建项目；当前尚无远程仓库，配置尚未在 GitHub 运行。
+GitHub 中可手动运行 `.github/workflows/verify-deployment.yml`，填写真实部署地址及预期模式后下载报告。工作流不会猜测 Pages 项目名，亦不会自动创建项目；已使用正式 pages.dev 地址完成远程验收。
 
 本地验证可运行 `npm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local`。本地 Astro 不应用 Pages `_headers`，因此本地模式明确跳过相关响应头、DNS与HTTPS检查，报告不能作为云端验收。域名跳转链、回滚演练及真实目标网络仍需在站点部署后单独检查。
 
@@ -152,4 +152,4 @@ GitHub 中可手动运行 `.github/workflows/verify-deployment.yml`，填写真�
 
 `npm run review:bundle` 会重新构建草稿预览、验证输入指纹及报告、打包至 `artifacts/review-bundles/`。审核包包含静态站点、稿件、事实与来源、研究记录、人工审核说明和逐文件校验清单；不包含本机凭证或项目依赖。解压后按包内 README 用 Python 3 在本机提供 HTTP 服务，即可验证正文、搜索和工作台，不必先接通 Pages。
 
-本轮检查未发现远程 Git 仓库、Cloudflare CLI 或 `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` 环境配置。尚未创建远程仓库、Pages 项目或 DNS 配置，也未验证浏览器内的账户登录状态。审核交接包和本地构建配置可先完成；云端地址、实际响应头、HTTPS 和回滚仍需在连接真实项目后验收。
+此前无云端连接时使用审核包交接；目前已连接私有仓库 `aieasygames-alt/promilia-guide` 和同名 Pages 项目。正式站 `https://promilia-guide.pages.dev` 与分支预览 `https://6e004931.promilia-guide.pages.dev` 的 HTTPS 响应及验收脚本已通过。CLI 无需保存本机 Cloudflare 凭证；部署由 Pages Git 集成负责。自定义域名切换与回滚演练仍待完成。
