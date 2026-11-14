@@ -1,17 +1,21 @@
 import { parseArgs } from 'node:util';
 import { randomUUID } from 'node:crypto';
-import { inspectHtml, inspectDiscovery, inspectManifest, normalizeTarget } from './site-verification.mjs';
+import { inspectHtml, inspectDiscovery, inspectManifest, inspectRedirect, normalizeTarget } from './site-verification.mjs';
 
+let jsonOutput = false;
 try {
   const { values } = parseArgs({ options: {
     url: { type: 'string' }, mode: { type: 'string' }, local: { type: 'boolean' }, json: { type: 'boolean' }, help: { type: 'boolean' },
+    commit: { type: 'string' }, redirects: { type: 'boolean' },
   } });
+  jsonOutput = values.json;
   if (values.help) {
-    console.log('npm run site:verify -- --url https://YOUR-PREVIEW.pages.dev --mode preview\nnpm run site:verify -- --url https://promiliaguide.com --mode production\nnpm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local [--json]');
+    console.log('npm run site:verify -- --url https://YOUR-PREVIEW.pages.dev --mode preview [--commit FULL_SHA]\nnpm run site:verify -- --url https://promiliaguide.com --mode production --redirects [--commit FULL_SHA]\nnpm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local [--json]');
     process.exit(0);
   }
   if (!values.url || !['production', 'preview'].includes(values.mode)) throw new Error('Specify --url ORIGIN and --mode production|preview');
   const target = normalizeTarget(values.url, values.local);
+  if (values.redirects && (target !== 'https://promiliaguide.com' || values.mode !== 'production' || values.local)) throw new Error('--redirects requires the hosted production canonical origin');
   const checks = [];
   async function request(path, expected = 200) {
     try {
@@ -26,7 +30,7 @@ try {
   }
   const manifestResponse = await request('/build-info.json');
   if (!manifestResponse || manifestResponse.status !== 200) throw new Error('Build manifest is unavailable; deploy the current build before checking');
-  const manifest = inspectManifest(JSON.parse(manifestResponse.body), values.mode);
+  const manifest = inspectManifest(JSON.parse(manifestResponse.body), values.mode, values.commit);
   const paths = ['/zh-hans/', '/ja/', ...manifest.articlePaths, ...(values.mode === 'preview' ? ['/editorial/'] : [])];
   for (let index = 0; index < paths.length; index += 4) {
     const batch = await Promise.all(paths.slice(index, index + 4).map(async (path) => {
@@ -42,8 +46,22 @@ try {
     const issues = inspectDiscovery({ robots: robots.body, sitemap: sitemap.body, mode: values.mode });
     checks.push({ path: '/robots.txt + /sitemap.xml', check: 'discovery', passed: issues.length === 0, detail: issues.join('; ') || 'Robots and sitemap passed' });
   }
+  if (values.redirects) {
+    const sources = ['https://promilia-guide.pages.dev', 'https://www.promiliaguide.com', 'http://promilia-guide.pages.dev', 'http://www.promiliaguide.com', 'http://promiliaguide.com'];
+    const routes = ['/', '/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95', '/ja/guides/global-release/?utm_source=redirect-check&lang=ja'];
+    for (const source of sources) {
+      await Promise.all(routes.map(async (path) => {
+        try {
+          const hops = await inspectRedirect(source + path);
+          checks.push({ path: source + path, check: 'canonical-redirect', passed: true, detail: 'Permanent redirects preserve path and query', hops });
+        } catch (error) {
+          checks.push({ path: source + path, check: 'canonical-redirect', passed: false, detail: error.message });
+        }
+      }));
+    }
+  }
   const passed = checks.every((check) => check.passed);
-  const result = { target, mode: values.mode, environment: values.local ? 'local-astro-preview' : 'hosted', passed, generatedAt: new Date().toISOString(), articleCount: manifest.articlePaths.length, notes: values.local ? ['Local validation skips Pages response headers, HTTPS and DNS verification.'] : [], checks };
+  const result = { target, mode: values.mode, commitSha: manifest.commitSha || null, expectedCommit: values.commit || null, environment: values.local ? 'local-astro-preview' : 'hosted', passed, generatedAt: new Date().toISOString(), articleCount: manifest.articlePaths.length, notes: values.local ? ['Local validation skips Pages response headers, HTTPS and DNS verification.'] : [], checks };
   if (values.json) console.log(JSON.stringify(result, null, 2));
   else {
     console.log(`${passed ? 'PASS' : 'FAIL'} · ${target} · ${result.environment} · ${result.articleCount} articles`);
@@ -53,6 +71,7 @@ try {
   }
   if (!passed) process.exitCode = 1;
 } catch (error) {
-  console.error(error.message);
+  if (jsonOutput) console.log(JSON.stringify({ passed: false, error: error.message }, null, 2));
+  else console.error(error.message);
   process.exitCode = 1;
 }

@@ -144,12 +144,27 @@ npm run site:verify -- --url https://promiliaguide.com --mode production
 
 工具检查构建模式、双语首页与清单中的全部文章、canonical、索引策略、安全响应头、robots、Sitemap、Pagefind包、编辑工作台及随机未知路由真实404。错误会返回非零退出码；`--json` 可保留逐项报告。它不会执行部署或更改DNS。
 
-GitHub 中可手动运行 `.github/workflows/verify-deployment.yml`，填写真实部署地址及预期模式后下载报告。工作流不会猜测 Pages 项目名，亦不会自动创建项目；已使用正式 pages.dev 地址完成远程验收。
+main 推送后的 `Validate site / Verify production deployment` 自动等待同 SHA 的 Cloudflare Pages 生产检查，并核对主域名 `build-info.json` 的 `commitSha`，然后执行正式站与 15 组别名跳转验收。部署失败、版本不符、跳转异常均返回失败；报告以 Actions artifact 保留，无需 Cloudflare API Token。
 
-本地验证可运行 `npm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local`。本地 Astro 不应用 Pages `_headers`，因此本地模式明确跳过相关响应头、DNS与HTTPS检查，报告不能作为云端验收。域名跳转链、回滚演练及真实目标网络仍需在站点部署后单独检查。
+GitHub 中也可手动运行 `.github/workflows/verify-deployment.yml`，填写真实部署地址、预期模式及可选的完整提交 SHA；`verify_redirects` 仅用于正式主域名。回滚后手动使用目标旧 SHA 验收，操作说明见 `ROLLBACK-RUNBOOK.md`。
+
+本地验证可运行 `npm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local`。本地 Astro 不应用 Pages `_headers`，因此本地模式明确跳过相关响应头、DNS与HTTPS检查，报告不能作为云端验收。域名跳转链由 `--redirects` 检查；真实目标网络仍需单独检查。
 
 ## 9. 无云端连接时的审核交接
 
 `npm run review:bundle` 会重新构建草稿预览、验证输入指纹及报告、打包至 `artifacts/review-bundles/`。审核包包含静态站点、稿件、事实与来源、研究记录、人工审核说明和逐文件校验清单；不包含本机凭证或项目依赖。解压后按包内 README 用 Python 3 在本机提供 HTTP 服务，即可验证正文、搜索和工作台，不必先接通 Pages。
 
-此前无云端连接时使用审核包交接；目前已连接私有仓库 `aieasygames-alt/promilia-guide` 和同名 Pages 项目。正式主域名 `https://promiliaguide.com`、默认地址 `https://promilia-guide.pages.dev` 与分支预览 `https://6e004931.promilia-guide.pages.dev` 的 HTTPS 响应及验收脚本已通过。CLI 无需保存本机 Cloudflare 凭证；部署由 Pages Git 集成负责。主域名 HTTP 已按路径 301 到 HTTPS；www/pages.dev 归一跳转、真实目标网络与回滚演练仍待完成。
+此前无云端连接时使用审核包交接；目前已连接私有仓库 `aieasygames-alt/promilia-guide` 和同名 Pages 项目。正式主域名、默认地址与分支预览的 HTTPS 响应及验收脚本已通过。CLI 无需保存本机 Cloudflare 凭证；部署由 Pages Git 集成负责。主域名 HTTP 已按路径 301 到 HTTPS；www/pages.dev 已归一到主域名。真实目标网络和正式环境切换回滚未在本轮模拟；预览、回退候选与恢复步骤见 `ROLLBACK-RUNBOOK.md`。
+
+## 10. 正式域名归一规则
+
+Pages `_redirects` 不支持域名级重定向，本项目使用账户级 Bulk Redirects。2026-11-14 新增专用列表 `promilia_canonical`（ID `8bedbe7c2638499daac4bbfc3021d5dd`），规则 `Promilia canonical domains`（ID `cf57347f3ad9435a9bc79893080128cf`）已启用。
+
+| Source URL | Target URL | 状态 | 保留查询参数 | 子路径匹配 | 保留路径后缀 | 包含子域名 |
+| --- | --- | --- | --- | --- | --- | --- |
+| `promilia-guide.pages.dev/` | `https://promiliaguide.com/` | 301 | 是 | 是 | 是 | 否 |
+| `www.promiliaguide.com/` | `https://promiliaguide.com/` | 301 | 是 | 是 | 是 | 否 |
+
+源地址省略协议以匹配 HTTP 与 HTTPS。主域名本身不在列表中；禁止打开 Include subdomains，避免匹配 `分支或部署ID.promilia-guide.pages.dev`。www 先在 Pages Custom domains 关联，再新增 `CNAME www promilia-guide.pages.dev`，没有替换其他服务记录。规则独立于 Git 构建产物，回滚站点不会回滚此列表或 DNS。
+
+已按当前官方 [Redirects](https://developers.cloudflare.com/pages/configuration/redirects/)、[Bulk Redirects](https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/create-dashboard/) 与 [URL components](https://developers.cloudflare.com/rules/url-forwarding/bulk-redirects/reference/url-components/) 实施；最终以线上响应为验收依据。

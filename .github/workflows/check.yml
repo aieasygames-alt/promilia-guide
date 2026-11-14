@@ -1,4 +1,6 @@
 name: Validate site
+permissions:
+  contents: read
 on:
   push:
   pull_request:
@@ -44,3 +46,47 @@ jobs:
         with:
           name: browser-failures
           path: test-results/
+  production:
+    name: Verify production deployment
+    needs: verify
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions:
+      contents: read
+      checks: read
+    concurrency:
+      group: production-verification
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Wait for this commit's Pages production deployment
+        id: pages
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/wait-pages-deployment.mjs
+      - name: Verify canonical origin and permanent redirects
+        if: steps.pages.outputs.status == 'success'
+        run: node scripts/verify-site.mjs --url https://promiliaguide.com --mode production --commit "$GITHUB_SHA" --redirects --json > site-verification.json
+      - name: Summarize observed verification
+        if: always()
+        run: |
+          node --input-type=module <<'JS'
+          import { readFile, appendFile } from 'node:fs/promises';
+          try {
+            const report = JSON.parse(await readFile('site-verification.json', 'utf8'));
+            await appendFile(process.env.GITHUB_STEP_SUMMARY, `\n### Hosted verification\n\n**${report.passed ? 'PASS' : 'FAIL'}** · ${report.commitSha || report.error}\n\n${report.checks?.filter(c => c.passed).length || 0}/${report.checks?.length || 0} checks passed.\n`);
+          } catch { /* Deployment errors are reported by the preceding step. */ }
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-deployment-verification
+          path: |
+            pages-deployment.json
+            site-verification.json

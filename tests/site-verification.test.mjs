@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { once } from 'node:events';
 import { promisify } from 'node:util';
 import { execFile } from 'node:child_process';
-import { normalizeTarget, inspectHtml, inspectDiscovery, inspectManifest } from '../scripts/site-verification.mjs';
+import { normalizeTarget, inspectHtml, inspectDiscovery, inspectManifest, inspectRedirect } from '../scripts/site-verification.mjs';
 const origin = 'https://promiliaguide.com';
 const html = (path, preview) => `<html><head><link rel="canonical" href="${origin}${path}"><meta name="robots" content="${preview ? 'noindex,follow' : 'index,follow'}"></head><body${path === '/editorial/' ? ' data-pagefind-ignore="all"' : ''}><h1>Fixture</h1></body></html>`;
 const headers = { 'x-robots-tag': 'noindex', 'x-content-type-options': 'nosniff', 'x-frame-options': 'DENY' };
@@ -34,6 +34,36 @@ test('discovery checks distinguish an empty editorial sitemap from an indexable 
   const sitemap = `<urlset><url><loc>${origin}/zh-hans/</loc></url><url><loc>${origin}/ja/</loc></url></urlset>`;
   assert.deepEqual(inspectDiscovery({ robots: `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml`, sitemap, mode: 'production' }), []);
   assert.ok(inspectDiscovery({ ...preview, sitemap }).some((issue) => issue.includes('empty')));
+});
+
+test('expected commit rejects stale or missing manifests even when production mode matches', () => {
+  const sha = 'a'.repeat(40);
+  assert.throws(() => inspectManifest(manifest(false), 'production', sha), /commit mismatch/);
+  assert.throws(() => inspectManifest({ ...manifest(false), commitSha: 'b'.repeat(40) }, 'production', sha), /commit mismatch/);
+  assert.equal(inspectManifest({ ...manifest(false), commitSha: sha }, 'production', sha).commitSha, sha);
+  assert.throws(() => inspectManifest(manifest(false), 'production', 'short'), /full Git SHA/);
+});
+
+test('canonical redirects preserve deep paths and repeated encoded query values', async () => {
+  const suffix = '/ja/guides/download/?tag=a&tag=b&note=%E6%B5%8B%E8%AF%95';
+  const start = 'http://www.promiliaguide.com' + suffix;
+  const hops = await inspectRedirect(start, async (url) => url === start
+    ? new Response(null, { status: 301, headers: { location: 'https://www.promiliaguide.com' + suffix } })
+    : url.startsWith('https://www.') ? new Response(null, { status: 301, headers: { location: origin + suffix } })
+      : new Response('OK'));
+  assert.equal(hops.length, 3);
+  assert.equal(hops.at(-1).url, origin + suffix);
+});
+
+test('redirect verifier rejects loops, foreign hosts, temporary redirects and lost queries', async () => {
+  const start = 'https://promilia-guide.pages.dev/zh-hans/?a=1&a=2';
+  for (const [status, location, message] of [
+    [301, start, /loop/],
+    [301, 'https://example.com/zh-hans/?a=1&a=2', /approved/],
+    [302, origin + '/zh-hans/?a=1&a=2', /permanent/],
+    [301, origin + '/zh-hans/?a=1', /query/],
+    [301, origin + '/?a=1&a=2', /path/],
+  ]) await assert.rejects(inspectRedirect(start, async () => new Response(null, { status, headers: { location } })), message);
 });
 
 test('site CLI validates observed routes and rejects false HTTP 404 responses', async () => {

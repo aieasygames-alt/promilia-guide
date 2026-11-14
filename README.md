@@ -183,7 +183,7 @@ CF_PAGES=1 CF_PAGES_BRANCH=main PAGES_PRODUCTION_BRANCH=main PAGES_BUILD_MODE=pr
 
 私有 GitHub 仓库为 [aieasygames-alt/promilia-guide](https://github.com/aieasygames-alt/promilia-guide)。GitHub Actions 运行质量检查；Cloudflare Pages Git 集成负责在推送生产分支或其他分支后分别构建生产/预览。实际部署与验收记录见 `plans/DEPLOYMENT-LOG.md`。
 
-Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promiliaguide.com](https://promiliaguide.com)，默认地址为 [promilia-guide.pages.dev](https://promilia-guide.pages.dev)，分支验收预览为 [6e004931.promilia-guide.pages.dev](https://6e004931.promilia-guide.pages.dev)。主域名 DNS 与 SSL 已生效，线上验收 35/35 通过，HTTP 按路径 301 到 HTTPS；分支预览默认 noindex。生产 pages.dev 与可选 www 归一重定向及回滚演练仍为后续任务。具体操作以 `plans/DOMAIN-AND-PAGES.md` 为准。
+Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promiliaguide.com](https://promiliaguide.com)，默认地址为 [promilia-guide.pages.dev](https://promilia-guide.pages.dev)，历史分支验收预览为 [6e004931.promilia-guide.pages.dev](https://6e004931.promilia-guide.pages.dev)。主域名 DNS 与 SSL 已生效，HTTP 按路径 301 到 HTTPS。生产 pages.dev 和 www 已通过 Cloudflare Bulk Redirects 归一到主域名，保留路径和查询参数；分支预览保持 noindex。最新验收见 `plans/DEPLOYMENT-LOG.md`，域名规则见 `plans/DOMAIN-AND-PAGES.md`，恢复步骤见 `plans/ROLLBACK-RUNBOOK.md`。
 
 首批正文与日语人工审核已由项目负责人确认。仍需补充真实反馈入口、各地区客户端下载与游戏账号规则核验、真机/目标网络验收。目录内规划的内容数量是目标，不以空页面或未经审核译文补齐。
 
@@ -199,7 +199,7 @@ Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promiliaguide.com]
 
 ## 部署后的技术验收
 
-每次构建验证成功后生成 `dist/build-info.json`，记录构建模式、正式 origin 和本次实际输出的文章路由。验收命令会先核对模式，防止把草稿预览当作正式产物，再读取实际页面与响应：
+每次构建验证成功后生成 `dist/build-info.json`，记录构建模式、正式 origin、Pages/GitHub 注入的完整提交 SHA 和本次实际输出的文章路由；无 Git 环境的本地构建 SHA 为 null。验收命令会先核对模式，防止把草稿预览当作正式产物，再读取实际页面与响应：
 
 ```sh
 # 本地静态预览；明确跳过 Pages 响应头、DNS 和 HTTPS 验收
@@ -209,9 +209,11 @@ npm run site:verify -- --url http://127.0.0.1:4321 --mode preview --local
 npm run site:verify -- --url https://YOUR-PREVIEW.pages.dev --mode preview
 
 # 正式站点部署后运行
-npm run site:verify -- --url https://promiliaguide.com --mode production
+npm run site:verify -- --url https://promiliaguide.com --mode production --redirects
 ```
 
 增加 `--json` 可导出报告。检查包含双语首页、构建清单中的全部文章、canonical、noindex、Pages 安全响应头、robots、Sitemap、搜索包、随机未知路由404，以及编辑工作台的预览存在/正式排除。
 
-`.github/workflows/verify-deployment.yml` 提供手动 Actions 入口，填写实际地址和预期模式后运行并保留验收报告；此流程只发出读取请求，不创建部署、不修改 DNS。它不能替代人工正文/日语审核、真实设备与目标网络验收，也不检查尚未配置的域名重定向链。实际执行结果见 `plans/DEPLOYMENT-LOG.md`。
+推送 main 后，`Validate site / Verify production deployment` 在质量检查通过后自动等待本次 SHA 的 Cloudflare Pages 生产检查成功，并等待主域名提供相同 SHA 的 production 清单，再检查全部页面和 15 组域名跳转。不以固定延时或旧站 200 判断部署成功；失败会使 Actions 失败，并保留部署信息与逐项报告。main 已前进时旧任务会跳过或被新任务取消。
+
+`.github/workflows/verify-deployment.yml` 保留手动入口，可填写完整 `expected_commit` 和启用 `verify_redirects`，用于重查与回滚验收。CLI 对应 `--commit FULL_SHA`、`--redirects`；后者只接受正式主域名 production 模式。验收均只读取站点，不创建部署或更改 DNS，也不能替代人工正文/日语审核、真实设备与目标网络验收。实际执行结果见 `plans/DEPLOYMENT-LOG.md`。

@@ -22,6 +22,8 @@ const pages = new Map();
 const errors = [];
 const fail = (message) => errors.push(message);
 const isPreview = process.env.CONTENT_PREVIEW === 'true';
+const commitSha = process.env.CF_PAGES_COMMIT_SHA || process.env.GITHUB_SHA || null;
+if (commitSha && !/^[a-f0-9]{40}$/.test(commitSha)) fail('Build commit must be a full Git SHA');
 for (const file of htmlFiles) {
   const $ = load(await readFile(file, 'utf8'));
   const path = file === 'dist/404.html' ? '/404/' : file.replace(/^dist/, '').replace(/index\.html$/, '');
@@ -90,6 +92,7 @@ await writeFile('dist/build-info.json', JSON.stringify({
   schemaVersion: 1,
   mode: isPreview ? 'editorial-preview' : 'production',
   origin,
+  commitSha,
   generatedAt: new Date().toISOString(),
   articlePaths: entries.filter(({ data }) => isPreview || isPublishable(data, context)).map(({ data }) => articlePath(data)).sort(),
 }, null, 2) + '\n');

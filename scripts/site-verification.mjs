@@ -46,10 +46,40 @@ export function inspectDiscovery({ robots, sitemap, mode }) {
   return issues;
 }
 
-export function inspectManifest(manifest, mode) {
+export function inspectManifest(manifest, mode, commit) {
   const expected = mode === 'preview' ? 'editorial-preview' : 'production';
   if (manifest?.schemaVersion !== 1 || manifest?.mode !== expected || manifest?.origin !== origin || !Array.isArray(manifest?.articlePaths)) throw new Error(`Expected a ${expected} build manifest from this project`);
   if (manifest.articlePaths.length > 500 || !manifest.articlePaths.every((path) => /^\/(zh-hans|ja)\/(guides|systems)\/[a-z0-9-]+\/$/.test(path))) throw new Error('Build manifest contains invalid article paths');
   if (new Set(manifest.articlePaths).size !== manifest.articlePaths.length) throw new Error('Build manifest contains duplicate article paths');
+  if (commit && !/^[a-f0-9]{40}$/.test(commit)) throw new Error('Expected commit must be a full Git SHA');
+  if (commit && manifest.commitSha !== commit) throw new Error(`Build commit mismatch: expected ${commit}, received ${manifest.commitSha || 'missing'}`);
   return manifest;
+}
+
+/** Follow only permanent redirects among this project's public entry points. */
+export async function inspectRedirect(source, fetcher = fetch) {
+  const initial = new URL(source);
+  const destination = origin + initial.pathname + initial.search;
+  const hosts = ['promiliaguide.com', 'www.promiliaguide.com', 'promilia-guide.pages.dev'];
+  const visited = new Set();
+  const hops = [];
+  let current = initial.href;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    if (visited.has(current)) throw new Error('Redirect loop');
+    visited.add(current);
+    const response = await fetcher(current, { redirect: 'manual', signal: AbortSignal.timeout(12000) });
+    const location = response.headers.get('location');
+    hops.push({ url: current, status: response.status, location });
+    await response.body?.cancel();
+    if (current === destination) {
+      if (response.status !== 200) throw new Error(`Canonical destination returned ${response.status}`);
+      return hops;
+    }
+    if (![301, 308].includes(response.status) || !location) throw new Error(`Expected permanent redirect, received ${response.status} at ${current}`);
+    const next = new URL(location, current);
+    if (next.protocol !== 'https:' || !hosts.includes(next.hostname) || next.port || next.username || next.password || next.hash) throw new Error('Redirect left the approved HTTPS origins');
+    if (next.pathname !== initial.pathname || next.search !== initial.search) throw new Error('Redirect changed the path or query parameters');
+    current = next.href;
+  }
+  throw new Error('Redirect chain exceeded 4 requests');
 }

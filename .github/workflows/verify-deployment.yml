@@ -6,6 +6,14 @@ on:
         description: 'HTTPS origin to check (Pages preview or production)'
         type: string
         required: true
+      expected_commit:
+        description: 'Optional full commit SHA (also use for rollback verification)'
+        type: string
+        required: false
+      verify_redirects:
+        description: 'Check public aliases; requires canonical production origin'
+        type: boolean
+        default: false
       deployment_mode:
         description: 'Expected build and indexing mode'
         type: choice
@@ -30,7 +38,14 @@ jobs:
         env:
           DEPLOYMENT_URL: ${{ inputs.deployment_url }}
           DEPLOYMENT_MODE: ${{ inputs.deployment_mode }}
-        run: node scripts/verify-site.mjs --url "$DEPLOYMENT_URL" --mode "$DEPLOYMENT_MODE" --json > site-verification.json
+          EXPECTED_COMMIT: ${{ inputs.expected_commit }}
+          VERIFY_REDIRECTS: ${{ inputs.verify_redirects }}
+        shell: bash
+        run: |
+          args=(--url "$DEPLOYMENT_URL" --mode "$DEPLOYMENT_MODE" --json)
+          if [ -n "$EXPECTED_COMMIT" ]; then args+=(--commit "$EXPECTED_COMMIT"); fi
+          if [ "$VERIFY_REDIRECTS" = true ]; then args+=(--redirects); fi
+          node scripts/verify-site.mjs "${args[@]}" > site-verification.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
