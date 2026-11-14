@@ -15,6 +15,8 @@ const c = t(locale);
 const root = `/${locale}/`;
 const other = locale === 'zh-hans' ? 'ja' : 'zh-hans';
 const canonical = origin + Astro.url.pathname;
+const logoAlt = locale === 'ja' ? 'アズールプロミリア（Azur Promilia）' : '蓝色星原：旅谣（Azur Promilia）';
+const logoUrl = origin + '/images/logo.png';
 const nav = [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['updates/', c.updates]];
 const active = (href: string) => href === '' ? Astro.url.pathname === root : Astro.url.pathname.startsWith(root + href);
 const indexable = !noindex && !preview;
@@ -22,7 +24,7 @@ const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
 const metadata = schema || {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'Organization', '@id': origin + '/#organization', name: 'Promilia Guide', url: origin, logo: origin + '/favicon.svg' },
+    { '@type': 'Organization', '@id': origin + '/#organization', name: 'Promilia Guide', url: origin, logo: logoUrl },
     { '@type': isHome ? 'WebSite' : 'WebPage', name: title, url: canonical, inLanguage: languageTag[locale], description, publisher: { '@id': origin + '/#organization' } },
   ],
 };
@@ -57,8 +59,7 @@ const metadata = schema || {
     <header class="site-header" data-pagefind-ignore>
       <div class="header-inner">
         <a class="brand" href={root} aria-label={`Promilia Guide — ${c.home}`}>
-          <span class="brand-symbol"><Icon name="star" size={30}/></span>
-          <span><strong>Promilia<span>Guide</span></strong><small>{c.tagline}</small></span>
+          <span class="brand-identity"><img class="brand-logo" src="/images/logo-wordmark.png" alt={logoAlt} width="777" height="320" /><small>{c.tagline}</small></span>
         </a>
         <nav class="desktop-nav" aria-label={c.menu}>
           {nav.map(([href, label]) => <a href={root + href} aria-current={active(href) ? 'page' : undefined}>{label}</a>)}
@@ -75,7 +76,7 @@ const metadata = schema || {
     </header>
     <main id="main"><slot /></main>
     <footer class="site-footer" data-pagefind-ignore>
-      <div class="footer-inner"><div><a class="footer-brand" href={root}><Icon name="star" size={22}/>Promilia Guide</a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
+      <div class="footer-inner"><div><a class="footer-brand" href={root} aria-label={`Promilia Guide — ${c.home}`}><img class="footer-logo" src="/images/logo-wordmark.png" alt="" width="777" height="320" /></a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
       <div class="footer-bottom"><span>© 2026 Promilia Guide</span><span>MADE FOR THE JOURNEY <span aria-hidden="true">✧</span></span></div>
     </footer>
     <script>

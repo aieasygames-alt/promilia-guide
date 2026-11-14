@@ -6,6 +6,9 @@ test('home renders, mobile navigation works, and layout fits viewport', async ({
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/zh-hans/');
   await expect(page.locator('h1')).toContainText('每一步都有方向');
+  await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
+  await expect(page.locator('.brand-logo')).toHaveAttribute('alt', '蓝色星原：旅谣（Azur Promilia）');
+  await expect(page.locator('.footer-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   if (isMobile) {
     await page.locator('.mobile-menu summary').click();
