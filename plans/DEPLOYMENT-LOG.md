@@ -30,15 +30,17 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 
 用户完成 GitHub 授权后，已创建并连接 Cloudflare Pages 项目 `promilia-guide`，生产与分支自动部署均启用。
 
-- 正式部署：https://promilia-guide.pages.dev
+- 正式主域名：https://promiliaguide.com ，Pages 默认地址：https://promilia-guide.pages.dev
 - 首次生产版本：https://e0b7757a.promilia-guide.pages.dev ，对应 `ee26e41`。
 - 实际推送 `editorial/deployment-check` 分支触发预览：https://6e004931.promilia-guide.pages.dev ，同样对应 `ee26e41`。
 - Production / Preview 的三项变量已分别保存；预览模式已改为 `preview`，没有共享手动 `CONTENT_PREVIEW`。
 - 本地对两个 HTTPS 云端地址执行 `site:verify` 均通过：生产包含 12 篇审核稿；预览包含 16 篇及工作台，禁止索引，Sitemap 为空。canonical、安全响应头、搜索资源与真实 404 检查通过。
 - GitHub 远程正式站验收成功：[Verify hosted site #43567296436](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43567296436)。本地报告保存在忽略目录 `artifacts/pages-production-verification.json` 和 `artifacts/pages-preview-verification.json`。
 
-## 自定义域名待切换
+## 自定义域名已切换
 
-已在 Pages 准备 `promiliaguide.com` 的 DNS 变更预览。根域名现有 A 记录指向 `54.149.79.189` 与 `34.216.117.25`；激活会将它们替换为 `CNAME @ promilia-guide.pages.dev`。由于会改变现有域名流量，当前未点击 Activate domain，等待用户确认此项具体切换。
+用户对具体 DNS 替换再次回复“确认”后，已在 Pages 激活 `promiliaguide.com`，将原有根域名 A 记录 `54.149.79.189` 与 `34.216.117.25` 替换为 `CNAME @ promilia-guide.pages.dev`。Cloudflare 控制台已显示 Active、SSL enabled，浏览器已打开主域名中文首页并确认正文正常呈现。
 
-主域名 canonical 仍固定为 `https://promiliaguide.com`；在 DNS 切换前，通过 pages.dev 访问已部署站点。自定义域名的 HTTPS、www/pages.dev 跳转、真实目标网络和回滚演练尚未验收。未更改其他现有 Cloudflare 项目。
+主域名 canonical 固定为 `https://promiliaguide.com`。主域名完整线上验收 35/35 通过，包含 12 篇审核文章、双语首页、索引策略、canonical、安全响应头、robots、Sitemap、Pagefind、工作台隔离和真实 404；报告为 `artifacts/domain-production-verification.json`。GitHub 远程验收成功：[Verify hosted site #43568808353](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43568808353)。`http://promiliaguide.com/zh-hans/guides/download/` 返回 301，保留路径跳转到同一主域名的 HTTPS 地址。
+
+`www.promiliaguide.com` 尚无 DNS 解析，本次仅切换已明确确认的根域名。生产 pages.dev 仍可直接访问；www/pages.dev 向主域名的跳转、真实目标网络和回滚演练保留为后续任务。未更改其他现有 Cloudflare 项目。

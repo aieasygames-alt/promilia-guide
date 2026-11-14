@@ -1,6 +1,6 @@
 # 主域名与 Cloudflare Pages 部署方案
 
-价格核查日期：2026-11-13；决策更新：2026-11-14。用户已确认购买 **promiliaguide.com**，正式站点 origin 固定为 **https://promiliaguide.com**。Cloudflare Pages 项目 `promilia-guide` 已通过私有 GitHub 仓库完成正式及分支预览部署，云端验收通过。主域名已有两条 A 记录，替换解析尚待确认；实际记录见 `DEPLOYMENT-LOG.md`。
+价格核查日期：2026-11-13；决策更新：2026-11-14。用户已确认购买 **promiliaguide.com**，正式站点 origin 固定为 **https://promiliaguide.com**。Cloudflare Pages 项目 `promilia-guide` 已通过私有 GitHub 仓库完成正式及分支预览部署。用户确认后已替换根域名原有两条 A 记录，主域名 Active、SSL enabled，线上验收 35/35 通过；实际记录见 `DEPLOYMENT-LOG.md`。
 
 ## 1. 已确认主域名与历史比价
 
@@ -152,4 +152,4 @@ GitHub 中可手动运行 `.github/workflows/verify-deployment.yml`，填写真�
 
 `npm run review:bundle` 会重新构建草稿预览、验证输入指纹及报告、打包至 `artifacts/review-bundles/`。审核包包含静态站点、稿件、事实与来源、研究记录、人工审核说明和逐文件校验清单；不包含本机凭证或项目依赖。解压后按包内 README 用 Python 3 在本机提供 HTTP 服务，即可验证正文、搜索和工作台，不必先接通 Pages。
 
-此前无云端连接时使用审核包交接；目前已连接私有仓库 `aieasygames-alt/promilia-guide` 和同名 Pages 项目。正式站 `https://promilia-guide.pages.dev` 与分支预览 `https://6e004931.promilia-guide.pages.dev` 的 HTTPS 响应及验收脚本已通过。CLI 无需保存本机 Cloudflare 凭证；部署由 Pages Git 集成负责。自定义域名切换与回滚演练仍待完成。
+此前无云端连接时使用审核包交接；目前已连接私有仓库 `aieasygames-alt/promilia-guide` 和同名 Pages 项目。正式主域名 `https://promiliaguide.com`、默认地址 `https://promilia-guide.pages.dev` 与分支预览 `https://6e004931.promilia-guide.pages.dev` 的 HTTPS 响应及验收脚本已通过。CLI 无需保存本机 Cloudflare 凭证；部署由 Pages Git 集成负责。主域名 HTTP 已按路径 301 到 HTTPS；www/pages.dev 归一跳转、真实目标网络与回滚演练仍待完成。
