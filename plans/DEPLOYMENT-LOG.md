@@ -53,6 +53,10 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 
 代码提交 `eee3f1a4b6ce456d077c3508443778e3c281dbdc` 实际推送到 `editorial/deployment-check`，生成预览 https://7d39d9da.promilia-guide.pages.dev 。清单返回相同 SHA、editorial-preview、16 篇稿件；线上 44/44 通过，未被别名规则跳入主域名。[分支质量检查 #43571583697](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43571583697) 成功，生产验收 job 按分支条件跳过。随后将双语更新页加入常规验收路径，最终预览/生产检查数将相应增加。
 
-双语公开更新页已修正为首批 12 篇稿件审核完成与主域名上线。新增 manifest SHA、部署 check 等待、主域名版本传播等待、永久跳转检查和失败报告；本次 main 发布会首次实际触发自动生产验收，结果待发布后补记。类型检查、46 项单元测试、生产/预览构建与 28 项浏览器检查已通过。
+双语公开更新页已修正为首批 12 篇稿件审核完成与主域名上线，并已在正式主域名浏览器核对。新增 manifest SHA、部署 check 等待、主域名版本传播等待、永久跳转检查和失败报告。类型检查、46 项单元测试、生产/预览构建与 28 项浏览器检查已通过。
+
+首次自动验收已实际完成：[Validate site #43571973304](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43571973304) 的质量检查与 `Verify production deployment` 均成功。该 main 提交为 `0d36aefecbcf3b9e9844c1a7ae9224a86d5782bf`，Pages 生产部署为 `d4d8a0f7-0014-481a-9de3-51d8bc40aec5`（不可变 URL https://d4d8a0f7.promilia-guide.pages.dev ）。自动流程读取 Cloudflare App check `132378210625`、main suite `117980067470`，确认成功后在正式主域名核对同 SHA，54/54 通过，12 篇审核文章。报告已下载到忽略目录 `artifacts/round1-auto-production/`；GitHub artifact 为 `production-deployment-verification`。
+
+最终预览验收已用包含双语更新页的新脚本重跑：48/48 通过，仍对应预览提交 `eee3f1a4b6ce456d077c3508443778e3c281dbdc`。以上记录为本轮功能发布实证；后续文档维护提交仍自动触发相同验收，可在最新 main Actions 查看。
 
 恢复手册见 `ROLLBACK-RUNBOOK.md`。旧成功生产候选 `738c5a9f-31dd-4c1a-9e26-49cf7a99e590` 对应 `6e5b9df`，不可变 URL 仍可访问，但该地址带 Cloudflare noindex 响应头，不能记作正式索引验收成功。正式站回滚后的完整验收须使用主域名。没有为演练执行生产回滚切换。
