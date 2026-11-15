@@ -8,6 +8,7 @@ import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
 import RedeemCodeBox from '../../../components/RedeemCodeBox.astro';
+import MobileActionBar from '../../../components/MobileActionBar.astro';
 import { allGuides, visibleGuides, articlePath, isPublished, type Guide } from '../../../lib/content';
 import { alternateLinks, origin } from '../../../lib/publication.mjs';
 import { t } from '../../../lib/i18n';
@@ -67,5 +68,6 @@ const schema = [
       <div class="metadata" data-pagefind-weight="0.2"><span>{locale === 'ja' ? '検索用の表記' : '搜索别名'}：{aliases.join(' · ')}</span></div>
       <a class="text-link" href={`/${locale}/contact/?page=${encodeURIComponent(articlePath(data))}`}>{c.contact}<Icon name="arrow" size={16}/></a>
     </article><ArticleToc locale={locale} items={toc}/></div>
+    <MobileActionBar locale={locale}/>
   </div>
 </Base>

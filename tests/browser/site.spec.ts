@@ -289,3 +289,32 @@ test('narrow article navigation collapses after a jump and leaves the target bel
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });
+
+test('lightweight UI enhancements: homepage quick navigation, catalog filters, callouts, and mobile bar', async ({ page }) => {
+  await page.goto('/zh-hans/');
+  const quickCards = page.locator('.quick-nav-card');
+  await expect(quickCards).toHaveCount(4);
+  await expect(quickCards.nth(0)).toHaveAttribute('href', '/zh-hans/guides/launch/');
+  await expect(quickCards.nth(1)).toHaveAttribute('href', '/zh-hans/guides/redeem-codes/');
+  await expect(quickCards.nth(2)).toHaveAttribute('href', '/zh-hans/guides/reroll/');
+  await expect(quickCards.nth(3)).toHaveAttribute('href', '/zh-hans/characters/');
+
+  await page.goto('/zh-hans/characters/');
+  const filterTabs = page.locator('.entity-filter-tab');
+  await expect(filterTabs).toHaveCount(5);
+  await filterTabs.filter({ hasText: '弗利斯' }).click();
+  await expect(page.locator('.entity-card:visible')).toHaveCount(3);
+  await filterTabs.filter({ hasText: '全部' }).click();
+  await expect(page.locator('.entity-card:visible')).toHaveCount(6);
+
+  await page.goto('/zh-hans/guides/redeem-codes/');
+  await expect(page.locator('.callout-warning')).toBeVisible();
+  await expect(page.locator('.callout-tip')).toBeVisible();
+
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto('/zh-hans/guides/redeem-codes/');
+  await expect(page.locator('.mobile-action-bar')).toBeVisible();
+  await expect(page.locator('#mobile-top-btn')).toBeVisible();
+  await expect(page.locator('#mobile-share-btn')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});

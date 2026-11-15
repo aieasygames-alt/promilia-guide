@@ -512,6 +512,48 @@ a:hover {
   display: block;
   margin-bottom: 5px;
 }
+/* Editorial Callout Boxes */
+.callout {
+  margin: 22px 0;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  font-size: 13.5px;
+  line-height: 1.75;
+}
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.callout p:last-child {
+  margin-bottom: 0;
+}
+.callout-tip {
+  border-left-color: #245447;
+  background: #f2f7f4;
+}
+.callout-tip .callout-title {
+  color: #1b493d;
+}
+.callout-warning {
+  border-left-color: #c97a2b;
+  background: #fdf8f0;
+}
+.callout-warning .callout-title {
+  color: #a85817;
+}
+.callout-info {
+  border-left-color: #2a6984;
+  background: #f0f6f9;
+}
+.callout-info .callout-title {
+  color: #1f536b;
+}
 .source-list {
   list-style: none;
   padding: 0;

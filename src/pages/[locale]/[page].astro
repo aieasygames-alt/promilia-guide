@@ -28,6 +28,19 @@ const entries = (await visibleGuides(locale)).filter((entry) => page === 'system
 const catalog = page === 'guides' || page === 'systems';
 const entityKind = page === 'characters' ? 'character' : page === 'kibo' ? 'kibo' : null;
 const entityEntries = entityKind ? entitiesFor(entityKind) : [];
+const characterFilters = [
+  { id: 'all', label: c.filter.all, count: entityEntries.length },
+  { id: 'fliss', label: c.filter.fliss, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('弗利斯')).length },
+  { id: 'roselansa', label: c.filter.roselansa, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('洛斯兰瑟')).length },
+  { id: 'charles', label: c.filter.charles, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('夏露露')).length },
+  { id: 'jiuzhou', label: c.filter.jiuzhou, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('九洲')).length },
+];
+const kiboFilters = [
+  { id: 'all', label: c.filter.all, count: entityEntries.length },
+  { id: 'heteromorphic', label: c.filter.heteromorphic, count: entityEntries.filter((e) => e.classification?.['zh-hans']?.includes('异生类')).length },
+  { id: 'phantom', label: c.filter.phantom, count: entityEntries.filter((e) => e.classification?.['zh-hans']?.includes('幻生类')).length },
+];
+const activeFilters = entityKind === 'character' ? characterFilters : entityKind === 'kibo' ? kiboFilters : [];
 const all = await allGuides();
 const noindex = ['search'].includes(page) || (catalog && entries.filter((e) => isPublished(e.data, all)).length < 2);
 const alternates = locales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/${page}/` })).concat([{ lang: 'x-default', href: origin + `/zh-hans/${page}/` }]);
@@ -39,7 +52,37 @@ const alternates = locales.map((l) => ({ lang: languageTag[l], href: origin + `/
     {entityKind && <section class="entity-catalog" data-entity-catalog={entityKind} data-pagefind-body>
       {entityKind === 'kibo' && <FeatureVisual id="kibo-showcase" locale={locale}/>}
       <div class="notice entity-notice">{ja ? '公式サイトで公開された名称と紹介文を、地域ごとの表記のまま掲載しています。技能倍率、育成素材、強さ、入手場所は公式根拠が確認できるまで追加しません。' : '以下内容来自官方站已公开的名称与介绍，并保留各地区原始表记。技能倍率、养成材料、强度和获取地点在有明确官方依据前不会补充。'}</div>
+      {activeFilters.length > 0 && <div class="entity-filter-bar" role="tablist" aria-label={ja ? 'フィルター' : '分类筛选'}>
+        {activeFilters.map((filter, i) => (
+          <button type="button" class={`entity-filter-tab ${i === 0 ? 'active' : ''}`} data-filter-target={filter.id} role="tab" aria-selected={i === 0 ? 'true' : 'false'}>
+            <span>{filter.label}</span>
+            <span class="filter-badge">{filter.count}</span>
+          </button>
+        ))}
+      </div>}
       <div class="entity-grid">{entityEntries.map((entity, index) => <EntityCard entity={entity} locale={locale} index={index} source={sources.find((source) => source.id === entity.sourceRefs[locale])}/>)}</div>
+      <script>
+        const tabs = document.querySelectorAll<HTMLButtonElement>('.entity-filter-tab');
+        const cards = document.querySelectorAll<HTMLElement>('.entity-card');
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const target = tab.dataset.filterTarget;
+            tabs.forEach((t) => {
+              const isActive = t === tab;
+              t.classList.toggle('active', isActive);
+              t.setAttribute('aria-selected', String(isActive));
+            });
+            cards.forEach((card) => {
+              const cat = card.dataset.entityCategory;
+              if (target === 'all' || cat === target) {
+                card.style.display = '';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+      </script>
       <div class="prose entity-editorial-note"><h2>{ja ? '出典と範囲' : '来源与范围'}</h2><p>{ja ? '名称・分類・短い紹介・声優は公式キャラクター／キボ一覧および公式PVを照合しました。各カードから個別の詳細プロフィールを確認できます。' : '名称、分类、简短介绍与声优已分别对照官方角色/奇波列表及正式PV核验，点击角色卡片可查看独立档案与详细资料。'}</p><a class="text-link" href={`/${locale}/updates/`}>{c.updates}<Icon name="arrow" size={17}/></a></div>
     </section>}
     {page === 'updates' && <div class="narrow"><div class="notice">{ja ? '公式ニュースは原文の掲載日、サイトの修訂は編集日で記録します。対象地域と確認範囲も明記します。' : '官方公告按原文发布日期记录，本站修订按编辑日期记录，并注明适用地区与核验范围。'}</div>{announcements.map((source) => <div class="archive-row"><time datetime={source.publishedAt!}>{source.publishedAt}</time><div><span class="pill">{ja ? '公式ニュース' : '官方公告'}</span><h2><a href={source.url!} target="_blank" rel="noopener noreferrer">{source.localized?.[locale]?.title || source.title} ↗</a></h2><p>{source.localized?.[locale]?.note || source.note}</p><small>{ja ? '出典確認日' : '来源核对'}：{source.checkedAt}</small></div></div>)}<div class="archive-row"><time datetime="2026-11-14">2026.11.14</time><div><span class="pill">{ja ? 'サイトの更新' : '本站修订'}</span><h2>{ja ? '初回記事の公開前確認を完了し、正式ドメインで公開' : '首批攻略完成审核，正式主域名上线'}</h2><p>{ja ? '配信日程、ダウンロード、動作環境、旅の準備、対応プラットフォームなど、6テーマの中国語・日本語記事、計12本の確認を完了しました。正式URLは promiliaguide.com です。今後の記事も出典・内容・言語の確認後に公開します。' : '发行日程、下载、配置、开服准备与平台等六个主题的中日文共 12 篇稿件已完成真实正文与语言审核，并在 promiliaguide.com 正式上线。后续新增内容仍按来源、正文与语言审核流程逐篇发布。'}</p></div></div><div class="prose"><h2>{ja ? '修正が必要な情報を見つけたら' : '发现需要修订的地方'}</h2><p>{ja ? '対象の記事、地域、バージョンと資料を添えて、修正メモを作成してください。' : '请附上相关页面、地区、版本与原始资料，整理为纠错记录。'}</p><a href={`/${locale}/contact/`}>{c.contact} →</a></div></div>}

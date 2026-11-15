@@ -18,9 +18,28 @@ const classificationLabel = ja ? '分類' : '分类';
 const originLabel = ja ? '所属・ゆかりの地' : '所属与相关地区';
 const cvLabel = ja ? '声優（CV）' : '声优（CV）';
 const featureLabel = ja ? '公開特徴・機能' : '公开特性与机能';
+
+const getCategory = () => {
+  if (entity.kind === 'character') {
+    const origin = entity.origin?.['zh-hans'] || '';
+    if (origin.includes('弗利斯')) return 'fliss';
+    if (origin.includes('洛斯兰瑟')) return 'roselansa';
+    if (origin.includes('夏露露')) return 'charles';
+    if (origin.includes('九洲')) return 'jiuzhou';
+    return 'other';
+  }
+  if (entity.kind === 'kibo') {
+    const cls = entity.classification?.['zh-hans'] || '';
+    if (cls.includes('异生类')) return 'heteromorphic';
+    if (cls.includes('幻生类')) return 'phantom';
+    return 'other';
+  }
+  return 'all';
+};
+const category = getCategory();
 ---
 
-<article class={`entity-card entity-card-${entity.kind}`} data-entity-id={entity.id} data-entity-kind={entity.kind}>
+<article class={`entity-card entity-card-${entity.kind}`} data-entity-id={entity.id} data-entity-kind={entity.kind} data-entity-category={category}>
   <figure class={`entity-media entity-media-${entity.kind}`} data-image-source={entity.imageSource}>
     <img
       class="entity-image"

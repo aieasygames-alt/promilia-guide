@@ -1,0 +1,80 @@
+---
+import Icon from './Icon.astro';
+import { t } from '../lib/i18n';
+import type { Locale } from '../lib/content';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const ja = locale === 'ja';
+---
+
+<aside class="mobile-action-bar" aria-label={ja ? 'クイック操作' : '快捷操作'}>
+  <div class="mobile-bar-inner">
+    <button type="button" class="mobile-bar-btn" id="mobile-toc-btn" aria-label={c.mobileBar.toc}>
+      <Icon name="toc" size={17} />
+      <span>{c.mobileBar.toc}</span>
+    </button>
+    <button type="button" class="mobile-bar-btn" id="mobile-share-btn" aria-label={c.mobileBar.share} data-copied={c.mobileBar.copied}>
+      <Icon name="share" size={17} />
+      <span class="share-text">{c.mobileBar.share}</span>
+    </button>
+    <button type="button" class="mobile-bar-btn" id="mobile-top-btn" aria-label={c.mobileBar.top}>
+      <Icon name="arrowUp" size={17} />
+      <span>{c.mobileBar.top}</span>
+    </button>
+  </div>
+</aside>
+
+<script>
+  const tocBtn = document.getElementById('mobile-toc-btn');
+  const shareBtn = document.getElementById('mobile-share-btn');
+  const topBtn = document.getElementById('mobile-top-btn');
+
+  if (tocBtn) {
+    tocBtn.addEventListener('click', () => {
+      const toc = document.querySelector('.article-toc') || document.querySelector('.prose h2');
+      if (toc) {
+        toc.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (topBtn) {
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      const textSpan = shareBtn.querySelector('.share-text');
+      const originalText = textSpan ? textSpan.textContent : '';
+      const feedback = shareBtn.dataset.copied || 'OK';
+
+      try {
+        if (navigator.clipboard) {
+          await navigator.clipboard.writeText(window.location.href);
+        } else {
+          const input = document.createElement('input');
+          input.value = window.location.href;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+        }
+        if (textSpan) textSpan.textContent = feedback;
+        shareBtn.classList.add('copied');
+        setTimeout(() => {
+          if (textSpan) textSpan.textContent = originalText;
+          shareBtn.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        console.error(err);
+      }
+    });
+  }
+</script>
