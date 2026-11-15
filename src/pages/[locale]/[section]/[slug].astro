@@ -7,6 +7,7 @@ import ClaimSummary from '../../../components/ClaimSummary.astro';
 import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
+import RedeemCodeBox from '../../../components/RedeemCodeBox.astro';
 import { allGuides, visibleGuides, articlePath, isPublished, type Guide } from '../../../lib/content';
 import { alternateLinks, origin } from '../../../lib/publication.mjs';
 import { t } from '../../../lib/i18n';
@@ -35,6 +36,7 @@ const aliases = [...new Set([...data.aliases, ...terms.find((term) => term.id ==
 const url = origin + articlePath(data);
 const sectionLabel = data.section === 'systems' ? c.systems : c.guides;
 const hasDistribution = ['download', 'platforms'].includes(data.contentId);
+const isRedeemCodes = data.contentId === 'redeem-codes';
 const featureVisual = data.contentId === 'launch' ? 'public-beta' : null;
 const toc = [
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
@@ -55,6 +57,7 @@ const schema = [
     {featureVisual && <FeatureVisual id={featureVisual} locale={locale}/>}
     <div class="article-grid"><article data-pagefind-body data-content-id={data.contentId} data-published={String(published)}>
       {hasDistribution && <DistributionMatrix locale={locale}/>}
+      {isRedeemCodes && <RedeemCodeBox locale={locale}/>}
       <ClaimSummary locale={locale} refs={data.claimRefs} revisions={data.claimRevisions}/>
       <div class="prose"><Content/></div>
       {data.checklist.length > 0 && <Checklist locale={locale} contentId={data.contentId} items={data.checklist}/>}

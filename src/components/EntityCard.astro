@@ -16,6 +16,8 @@ const sourceLabel = ja ? '公式ページ' : '官方页面';
 const imageSourceLabel = entity.imageSource === 'official' ? (ja ? '公式画像' : '官方图片') : (ja ? '第三者画像' : '第三方图片');
 const classificationLabel = ja ? '分類' : '分类';
 const originLabel = ja ? '所属・ゆかりの地' : '所属与相关地区';
+const cvLabel = ja ? '声優（CV）' : '声优（CV）';
+const featureLabel = ja ? '公開特徴・機能' : '公开特性与机能';
 ---
 
 <article class={`entity-card entity-card-${entity.kind}`} data-entity-id={entity.id} data-entity-kind={entity.kind}>
@@ -45,10 +47,15 @@ const originLabel = ja ? '所属・ゆかりの地' : '所属与相关地区';
   <p class="entity-aliases" data-pagefind-weight="0.4">{entity.aliases[locale]}</p>
   <p class="entity-summary">{entity.summary[locale]}</p>
   {entity.quote && <blockquote>{entity.quote[locale]}</blockquote>}
-  {(entity.classification || entity.origin) && <dl class="entity-facts">
+  {(entity.classification || entity.origin || entity.cv || entity.feature) && <dl class="entity-facts">
+    {entity.cv && <div><dt>{cvLabel}</dt><dd><b>{entity.cv[locale]}</b></dd></div>}
     {entity.classification && <div><dt>{classificationLabel}</dt><dd>{entity.classification[locale]}</dd></div>}
     {entity.origin && <div><dt>{originLabel}</dt><dd>{entity.origin[locale]}</dd></div>}
+    {entity.feature && <div><dt>{featureLabel}</dt><dd>{entity.feature[locale]}</dd></div>}
   </dl>}
+  <div class="entity-card-action" style="padding: 0 0 1rem;">
+    <a class="text-link" href={`/${locale}/${entity.kind === 'character' ? 'characters' : 'kibo'}/${entity.id}/`}>{ja ? '詳細プロフィール' : '查看完整档案'}<Icon name="arrow" size={14}/></a>
+  </div>
   <footer class="entity-card-footer">
     <span>{ja ? '資料確認日：2026-11-14' : '资料核对：2026-11-14'}</span>
     {source?.url && <a href={source.url} target="_blank" rel="noopener noreferrer">{sourceLabel}<Icon name="arrow" size={14}/></a>}

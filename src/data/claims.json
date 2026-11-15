@@ -25,7 +25,9 @@
       "global-release",
       "download",
       "getting-started",
-      "platforms"
+      "platforms",
+      "redeem-codes",
+      "reroll"
     ],
     "conflicts": [],
     "value": {
@@ -60,7 +62,9 @@
     "affectedPages": [
       "launch",
       "download",
-      "getting-started"
+      "getting-started",
+      "redeem-codes",
+      "reroll"
     ],
     "conflicts": [],
     "value": {
@@ -235,7 +239,9 @@
       "global-release",
       "platforms",
       "download",
-      "getting-started"
+      "getting-started",
+      "redeem-codes",
+      "reroll"
     ],
     "conflicts": [],
     "value": {
@@ -376,7 +382,9 @@
       "global-release",
       "download",
       "platforms",
-      "getting-started"
+      "getting-started",
+      "redeem-codes",
+      "reroll"
     ],
     "value": {
       "url": "https://azurpromilia.jp/pre-register/",

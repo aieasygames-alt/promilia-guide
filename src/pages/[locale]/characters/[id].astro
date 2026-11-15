@@ -1,0 +1,167 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import { entitiesFor, type Entity } from '../../../data/entities';
+import { locales, origin, languageTag } from '../../../lib/publication.mjs';
+import { t } from '../../../lib/i18n';
+import { sources } from '../../../lib/facts';
+
+export function getStaticPaths() {
+  return ['zh-hans', 'ja'].flatMap((locale) =>
+    entitiesFor('character').map((entity) => ({
+      params: { locale, id: entity.id },
+      props: { entity },
+    }))
+  );
+}
+
+interface Props {
+  entity: Entity;
+}
+
+const { entity } = Astro.props;
+const locale = Astro.params.locale as 'zh-hans' | 'ja';
+const c = t(locale);
+const ja = locale === 'ja';
+const other = ja ? 'zh-hans' : 'ja';
+const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
+
+const title = ja
+  ? `${entity.names.ja}（${entity.romanized}）- キャラクター図鑑・声優とプロフィール`
+  : `${entity.names['zh-hans']}（${entity.romanized}）- 角色图鉴 · 声优与背景档案`;
+
+const description = ja
+  ? `『アズールプロミリア』の公式キャラクター「${entity.names.ja}」（CV：${entity.cv?.ja || '未発表'}）。${entity.origin ? `所属・ゆかりの地：${entity.origin.ja}。` : ''}${entity.summary.ja}`
+  : `《蓝色星原：旅谣》官方公布角色「${entity.names['zh-hans']}」（CV：${entity.cv?.['zh-hans'] || '未公布'}）。${entity.origin ? `所属与相关地区：${entity.origin['zh-hans']}。` : ''}${entity.summary['zh-hans']}`;
+
+const alternates = locales
+  .map((l) => ({ lang: languageTag[l], href: `${origin}/${l}/characters/${entity.id}/` }))
+  .concat([{ lang: 'x-default', href: `${origin}/zh-hans/characters/${entity.id}/` }]);
+
+const canonical = `${origin}/${locale}/characters/${entity.id}/`;
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: entity.names[locale],
+    alternateName: [entity.romanized, entity.names[other]],
+    jobTitle: entity.cv ? `CV: ${entity.cv[locale]}` : undefined,
+    description: entity.summary[locale],
+    image: `${origin}${entity.image}`,
+    affiliation: {
+      '@type': 'Organization',
+      name: entity.origin?.[locale] || 'Azur Promilia',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: c.home, item: `${origin}/${locale}/` },
+      { '@type': 'ListItem', position: 2, name: c.characters, item: `${origin}/${locale}/characters/` },
+      { '@type': 'ListItem', position: 3, name: entity.names[locale], item: canonical },
+    ],
+  },
+];
+
+const allCharacters = entitiesFor('character').filter((e) => e.id !== entity.id);
+---
+
+<Base
+  locale={locale}
+  title={title}
+  description={description}
+  alternates={alternates}
+  languageTarget={`/${other}/characters/${entity.id}/`}
+  schema={schema}
+>
+  <div class="container">
+    <nav class="breadcrumb" aria-label={ja ? 'パンくずリスト' : '面包屑'}>
+      <a href={`/${locale}/`}>{c.home}</a>
+      <span>/</span>
+      <a href={`/${locale}/characters/`}>{c.characters}</a>
+      <span>/</span>
+      {entity.names[locale]}
+    </nav>
+
+    <header class="page-heading">
+      <div class="card-tags">
+        <span class="pill">{ja ? '公式発表' : '官方已公布'}</span>
+        <span class="pill">{entity.origin ? entity.origin[locale] : (ja ? '星原大陸' : '星原大陆')}</span>
+      </div>
+      <h1 data-pagefind-meta="title">{entity.names[locale]}</h1>
+      <p class="entity-romanized" data-pagefind-meta="description">{entity.romanized}</p>
+    </header>
+
+    <article class="article-grid" data-pagefind-body>
+      <div>
+        <div class="entity-card entity-card-character" style="margin-bottom: 2rem;">
+          <figure class="entity-media entity-media-character" data-image-source={entity.imageSource}>
+            <img
+              class="entity-image"
+              src={entity.image}
+              alt={entity.imageAlt[locale]}
+              width="1200"
+              height="1200"
+              fetchpriority="high"
+            />
+            <figcaption>{entity.imageSource === 'official' ? (ja ? '公式画像' : '官方图片') : (ja ? '第三者画像' : '第三方图片')}</figcaption>
+          </figure>
+
+          <div class="entity-card-topline">
+            <span class="pill">{ja ? 'キャラクター档案' : '角色档案'}</span>
+          </div>
+
+          <div class="prose" style="padding: 1.5rem 0;">
+            {entity.quote && <blockquote>{entity.quote[locale]}</blockquote>}
+            <p>{entity.summary[locale]}</p>
+          </div>
+
+          <dl class="entity-facts">
+            {entity.cv && <div><dt>{ja ? '声優（CV）' : '声优（CV）'}</dt><dd><b>{entity.cv[locale]}</b></dd></div>}
+            {entity.origin && <div><dt>{ja ? '所属・ゆかりの地' : '所属与相关地区'}</dt><dd>{entity.origin[locale]}</dd></div>}
+            <div><dt>{ja ? '英語表記' : '英文标识'}</dt><dd>{entity.romanized}</dd></div>
+            <div><dt>{ja ? '検索表記' : '别名索引'}</dt><dd>{entity.aliases[locale]}</dd></div>
+          </dl>
+
+          <footer class="entity-card-footer">
+            <span>{ja ? '出典確認日：2026-11-14' : '来源核对：2026-11-14'}</span>
+            {source?.url && <a href={source.url} target="_blank" rel="noopener noreferrer">{ja ? '公式サイトの紹介へ' : '官方页面'}<Icon name="arrow" size={14}/></a>}
+          </footer>
+        </div>
+
+        <section class="article-bottom">
+          <h2>{ja ? '関連する攻略情報' : '相关推荐指南'}</h2>
+          <div class="related-list">
+            <a href={`/${locale}/guides/launch/`}>{ja ? '配信日と事前登録・特典まとめ' : '公测时间与预约奖励全览'}<Icon name="arrow" size={18}/></a>
+            <a href={`/${locale}/guides/redeem-codes/`}>{ja ? '最新シリアルコード・引換コード一覧' : '最新兑换码与礼包码大全'}<Icon name="arrow" size={18}/></a>
+            <a href={`/${locale}/guides/getting-started/`}>{ja ? 'サービス開始準備チェックリスト' : '开服准备与新手行动清单'}<Icon name="arrow" size={18}/></a>
+          </div>
+        </section>
+
+        <section class="article-bottom">
+          <h2>{ja ? '他の公開キャラクター' : '其他已公布角色'}</h2>
+          <div class="related-list">
+            {allCharacters.map((char) => (
+              <a href={`/${locale}/characters/${char.id}/`}>
+                {char.names[locale]}（{char.romanized}）
+                <Icon name="arrow" size={18}/>
+              </a>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <aside class="article-aside">
+        <div class="notice">
+          <strong>{ja ? '公式根拠について' : '官方依据边界'}</strong>
+          <p>{ja ? '現在掲載している名称、所属、紹介文、声優は公式サイトおよび公式PVより照合した確定情報です。技能倍率や育成素材、強さランキングは公式実機または正式サービス開始後に検証・更新します。' : '当前展示的名称、所属地区、简介与声优来自官方网站与正式宣传片已核验的内容。技能倍率、养成材料及强度评级将在实测与官方深入资料发布后增补。'}</p>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a class="text-link" href={`/${locale}/characters/`}>← {ja ? 'キャラクター一覧へ戻る' : '返回角色图鉴总览'}</a>
+        </div>
+      </aside>
+    </article>
+  </div>
+</Base>

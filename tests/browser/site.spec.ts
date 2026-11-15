@@ -70,8 +70,8 @@ test('official character and kibo catalogs render bilingual source-backed entrie
   ] as const) {
     await page.goto(`/${locale}/characters/`);
     const characters = page.locator('[data-entity-catalog="character"] [data-entity-id]');
-    await expect(characters).toHaveCount(4);
-    await expect(characters.locator('.entity-image')).toHaveCount(4);
+    await expect(characters).toHaveCount(6);
+    await expect(characters.locator('.entity-image')).toHaveCount(6);
     await expect(characters.first().locator('.entity-image')).toHaveAttribute('alt', new RegExp(characterNames[0]));
     await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[0]);
     await expect(page.locator('[data-entity-catalog="character"]')).toContainText(characterNames[3]);
@@ -162,9 +162,9 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await page.goto('/editorial/');
   await expect(page.locator('h1')).toHaveText('内容审核工作台');
   await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(16);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(20);
   await page.locator('#impact-filter').selectOption('claim:cn-launch-date');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(10);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(14);
   const routes = await page.locator('[data-report-row]:visible').evaluateAll((rows) => rows.map((row) => row.getAttribute('data-route')));
   expect(routes.some((route) => route?.startsWith('/ja/'))).toBe(true);
   expect(routes.some((route) => route?.startsWith('/zh-hans/'))).toBe(true);
@@ -182,7 +182,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   const download = await pending;
   expect(download.suggestedFilename()).toMatch(/^promilia-editorial-status-\d{4}-\d{2}-\d{2}\.json$/);
   const result = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(result.summary).toMatchObject({ articles: 16, publishable: 12, verifiedSources: 14, verifiedClaims: 9 });
+  expect(result.summary).toMatchObject({ articles: 20, publishable: 16, verifiedSources: 14, verifiedClaims: 9 });
   await page.setViewportSize({ width: 320, height: 900 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
