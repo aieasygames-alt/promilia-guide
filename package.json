@@ -18,6 +18,7 @@
     "build:pages": "node scripts/build-pages.mjs",
     "review:bundle": "node scripts/package-review.mjs",
     "site:verify": "node scripts/verify-site.mjs",
+    "indexnow": "node scripts/submit-indexnow.mjs",
     "build": "npm run validate:content && ASTRO_TELEMETRY_DISABLED=1 astro build && pagefind --site dist && node scripts/verify-build.mjs",
     "build:preview": "CONTENT_PREVIEW=true npm run build",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
