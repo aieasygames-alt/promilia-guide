@@ -1,14 +1,16 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Icon from '../../../components/Icon.astro';
-import { entitiesFor, type Entity } from '../../../data/entities';
+import { type Entity } from '../../../data/entities';
 import { locales, origin, languageTag } from '../../../lib/publication.mjs';
 import { t } from '../../../lib/i18n';
 import { sources } from '../../../lib/facts';
+import { visibleEntitiesFor } from '../../../lib/content';
+import { isEntityDetailPublishable } from '../../../lib/entity-publication.mjs';
 
 export function getStaticPaths() {
   return ['zh-hans', 'ja'].flatMap((locale) =>
-    entitiesFor('kibo').map((entity) => ({
+    visibleEntitiesFor('kibo', locale as 'zh-hans' | 'ja').map((entity) => ({
       params: { locale, id: entity.id },
       props: { entity },
     }))
@@ -23,6 +25,7 @@ const { entity } = Astro.props;
 const locale = Astro.params.locale as 'zh-hans' | 'ja';
 const c = t(locale);
 const ja = locale === 'ja';
+const detailPublished = isEntityDetailPublishable(entity, locale, sources);
 const other = ja ? 'zh-hans' : 'ja';
 const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
 
@@ -60,7 +63,7 @@ const schema = [
   },
 ];
 
-const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
+const allKibo = visibleEntitiesFor('kibo', locale).filter((e) => e.id !== entity.id);
 ---
 
 <Base
@@ -70,6 +73,8 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
   alternates={alternates}
   languageTarget={`/${other}/kibo/${entity.id}/`}
   schema={schema}
+  noindex={!detailPublished}
+  searchable={detailPublished}
 >
   <div class="container">
     <nav class="breadcrumb" aria-label={ja ? 'パンくずリスト' : '面包屑'}>
@@ -82,14 +87,15 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
 
     <header class="page-heading">
       <div class="card-tags">
-        <span class="pill">{ja ? '公式発表' : '官方已公布'}</span>
+        <span class="pill">{entity.catalogStatus === 'verified' ? (ja ? '公式発表' : '官方已公布') : (ja ? '確認中' : '待核验')}</span>
         {entity.classification && <span class="pill">{entity.classification[locale]}</span>}
       </div>
       <h1 data-pagefind-meta="title">{entity.names[locale]}</h1>
       <p class="entity-romanized" data-pagefind-meta="description">{entity.romanized}</p>
     </header>
 
-    <article class="article-grid" data-pagefind-body>
+    {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公開紹介の要約です。実用的な詳細ガイドは本文・出典・翻訳レビュー待ちです。' : '此页保留已公开的资料摘要。完整用途指南仍待正文、来源与译文审核。'}</p>}
+    <article class="article-grid" data-pagefind-body={detailPublished || undefined}>
       <div>
         <div class="entity-card entity-card-kibo" style="margin-bottom: 2rem;">
           <figure class="entity-media entity-media-kibo" data-image-source={entity.imageSource}>
@@ -110,6 +116,7 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
 
           <div class="prose" style="padding: 1.5rem 0;">
             <p>{entity.summary[locale]}</p>
+            {detailPublished && <p>{entity.detailContent?.[locale]}</p>}
           </div>
 
           <dl class="entity-facts">
@@ -120,7 +127,7 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
           </dl>
 
           <footer class="entity-card-footer">
-            <span>{ja ? '出典確認日：2026-11-14' : '来源核对：2026-11-14'}</span>
+            <span>{ja ? '出典確認日：' : '来源核对：'}{source?.checkedAt || (ja ? '確認中' : '待核验')}</span>
             {source?.url && <a href={source.url} target="_blank" rel="noopener noreferrer">{ja ? '公式サイトの紹介へ' : '官方页面'}<Icon name="arrow" size={14}/></a>}
           </footer>
         </div>
@@ -128,8 +135,8 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
         <section class="article-bottom">
           <h2>{ja ? '関連する攻略情報' : '相关推荐指南'}</h2>
           <div class="related-list">
-            <a href={`/${locale}/guides/launch/`}>{ja ? '配信日と事前登録・特典まとめ' : '公测时间与预约奖励全览'}<Icon name="arrow" size={18}/></a>
-            <a href={`/${locale}/guides/redeem-codes/`}>{ja ? '最新シリアルコード・引換コード一覧' : '最新兑换码与礼包码大全'}<Icon name="arrow" size={18}/></a>
+            <a href={`/${locale}/guides/launch/`}>{ja ? '配信日と対象地域' : '公测日期与地区'}<Icon name="arrow" size={18}/></a>
+            <a href={`/${locale}/guides/download/`}>{ja ? '公式の配布先と端末' : '官方入口与设备速查'}<Icon name="arrow" size={18}/></a>
             <a href={`/${locale}/guides/getting-started/`}>{ja ? 'サービス開始準備チェックリスト' : '开服准备与新手行动清单'}<Icon name="arrow" size={18}/></a>
           </div>
         </section>
@@ -150,7 +157,7 @@ const allKibo = entitiesFor('kibo').filter((e) => e.id !== entity.id);
       <aside class="article-aside">
         <div class="notice">
           <strong>{ja ? 'キボの収集と生態について' : '奇波的生态与获取'}</strong>
-          <p>{ja ? 'キボは大世界での探索・騎乗（飛行や水上移動）、戦闘時の連携合撃、牧場・拠点での作業（水やりや伐採など）を担う仲間です。具体的な捕獲出現ポイントや孵化条件は、正式サービス開始後に検証・更新します。' : '奇波是《蓝色星原》中集海陆空立体坐骑、战斗连携合击与家园牧场基建于一体的星宠生物。具体捕捉分布点位与孵化繁育条件将在公测后持续实测更新。'}</p>
+          <p>{ja ? '公開されている生態紹介と、ゲーム内で実際に利用できる機能は区別します。捕獲地点、解放条件、戦闘や拠点の用途は、版と根拠を確認してから追加します。' : '公开生态简介与游戏内实际功能分别核验。捕捉地点、解锁条件、战斗或家园用途将在版本与证据明确后补充。'}</p>
         </div>
         <div style="margin-top: 1rem;">
           <a class="text-link" href={`/${locale}/kibo/`}>← {ja ? 'キボ一覧へ戻る' : '返回奇波图鉴总览'}</a>

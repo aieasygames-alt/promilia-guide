@@ -1,0 +1,6 @@
+---
+interface Props { schedule: { date: string; time: string | null; timeZone: string | null; instant: string | null } | null; locale: 'zh-hans' | 'ja' }
+const { schedule, locale } = Astro.props;
+const zone = schedule?.timeZone === 'Asia/Shanghai' ? 'UTC+8' : schedule?.timeZone === 'Asia/Tokyo' ? 'JST / UTC+9' : '';
+---
+{schedule ? <time datetime={schedule.instant || schedule.date}>{schedule.date}{schedule.time && ` ${schedule.time} (${zone})`}</time> : <span>{locale === 'ja' ? '確認中' : '待核验'}</span>}

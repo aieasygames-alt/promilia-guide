@@ -11,9 +11,11 @@ test('Pages explicitly selects gated production or noindex preview, including no
     const context = { CF_PAGES: '1', PAGES_PRODUCTION_BRANCH: productionBranch };
     const production = pagesBuildPlan({ ...context, CF_PAGES_BRANCH: productionBranch, PAGES_BUILD_MODE: 'production' });
     assert.equal(production.script, 'build:release');
+    assert.deepEqual(production.checks, ['check', 'test']);
     assert.equal(production.environment.CONTENT_PREVIEW, 'false');
     const preview = pagesBuildPlan({ ...context, CF_PAGES_BRANCH: 'editorial/ja', PAGES_BUILD_MODE: 'preview' });
     assert.equal(preview.script, 'build:preview');
+    assert.deepEqual(preview.checks, []);
     assert.equal(preview.environment.CONTENT_PREVIEW, 'true');
   }
 });
@@ -44,7 +46,7 @@ test('Pages dry runs and failed production release checks leave the existing pre
   await cp('src/content', join(root, 'src/content'), { recursive: true });
   const draft = join(root, 'src/content/guides/zh-hans/launch.md');
   await writeFile(draft, (await readFile(draft, 'utf8')).replace(/^status: .*$/m, 'status: "draft"'));
-  await writeFile(join(root, 'package.json'), JSON.stringify({ scripts: { 'build:release': `node ${JSON.stringify(resolve('scripts/check-release.mjs'))} --require-ready && node -e "throw Error('Unexpected build')"` } }));
+  await writeFile(join(root, 'package.json'), JSON.stringify({ scripts: { check: 'node -e "process.exit(0)"', test: 'node -e "process.exit(0)"', 'build:release': `node ${JSON.stringify(resolve('scripts/check-release.mjs'))} --require-ready && node -e "throw Error('Unexpected build')"` } }));
   await mkdir(join(root, 'dist'));
   await writeFile(join(root, 'dist/build-info.json'), JSON.stringify({ mode: 'editorial-preview' }));
   const env = { ...process.env, PAGES_BUILD_MODE: 'production', CF_PAGES: '1', CF_PAGES_BRANCH: 'main', PAGES_PRODUCTION_BRANCH: 'main' };
@@ -59,5 +61,29 @@ test('Pages dry runs and failed production release checks leave the existing pre
   assert.match(production.stdout, /首批内容尚未就绪/);
   assert.doesNotMatch(production.stderr, /Unexpected build/);
   assert.equal(await readFile(join(root, 'dist/build-info.json'), 'utf8'), before);
+  } finally { await rm(root, { recursive: true, force: true }); }
+});
+
+
+test('Pages production stops before replacing output when type or unit checks fail', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'promilia-pages-quality-'));
+  try {
+    await mkdir(join(root, 'dist'));
+    const manifest = join(root, 'dist/build-info.json');
+    await writeFile(manifest, JSON.stringify({ mode: 'production', previous: true }));
+    const before = await readFile(manifest, 'utf8');
+    for (const failed of ['check', 'test']) {
+      await writeFile(join(root, 'package.json'), JSON.stringify({ scripts: {
+        check: `node -e "process.exit(${failed === 'check' ? 7 : 0})"`,
+        test: 'node -e "process.exit(7)"',
+        'build:release': `node -e "throw Error('Unexpected build')"`,
+      } }));
+      const env = { ...process.env, PAGES_BUILD_MODE: 'production' };
+      delete env.CONTENT_PREVIEW; delete env.CF_PAGES; delete env.CF_PAGES_BRANCH;
+      const result = spawnSync(process.execPath, [resolve('scripts/build-pages.mjs')], { cwd: root, env, encoding: 'utf8' });
+      assert.equal(result.status, 7);
+      assert.doesNotMatch(result.stderr, /Unexpected build/);
+      assert.equal(await readFile(manifest, 'utf8'), before);
+    }
   } finally { await rm(root, { recursive: true, force: true }); }
 });

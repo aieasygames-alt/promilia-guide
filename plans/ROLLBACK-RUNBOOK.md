@@ -1,6 +1,6 @@
 # Cloudflare Pages 发布与恢复手册
 
-更新：2026-11-14。仅适用于私有仓库 `aieasygames-alt/promilia-guide`、Pages 项目 `promilia-guide`。站点为 Astro 静态输出；不涉及数据库迁移。
+更新：2026-11-21。仅适用于公开仓库 `aieasygames-alt/promilia-guide`、Pages 项目 `promilia-guide`。站点为 Astro 静态输出；不涉及数据库迁移。
 
 ## 发布前与发布后
 
@@ -54,3 +54,7 @@ Bulk Redirects 和 DNS 是独立配置，不随 Pages 产物回滚。若主域�
 本轮先以分支预览验证新产物、同 SHA 清单、草稿隔离和不可变预览 URL；保留旧生产候选并核对其仍可访问。生产切换回滚不为了演练而执行。实际预览与历史候选的核验结果记录在 `DEPLOYMENT-LOG.md`。这验证恢复前检查和验收路径，不等同于已经实操生产回滚按钮。
 
 官方依据：[Pages Rollbacks](https://developers.cloudflare.com/pages/configuration/rollbacks/)（2026-11-14 核对）。成功生产部署可作为回滚目标，预览部署不可作为目标。
+
+## 2026-11-21 发布前基线
+
+本批修复前生产提交为 `4cb45dec89ed0a358512cd0784489de0cba1ce30`。该版本含本轮已撤回的未经复核结论，不作为内容安全回退首选；优先评估已验证的 `0d8b665e20ec7981a329a5a09e46ee8ff51fed39`，回退前仍须检查当前证据与页面。新版本与线上验收见 DEPLOYMENT-LOG.md。

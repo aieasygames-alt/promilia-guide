@@ -1,3 +1,4 @@
+import { redeemCodeSchema, validateRedeemCodes } from '../src/lib/redeem-codes.mjs';
 import { readFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
@@ -19,7 +20,8 @@ try {
   const channels = z.array(distributionSchema).parse(rawChannels);
   const plan = releasePlanSchema.parse(rawPlan);
   const entries = rawEntries.map((entry) => ({ ...entry, data: guideSchema.parse(entry.data) }));
-  const validationIssues = [...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)];
+  const codes = z.array(redeemCodeSchema).parse(await read('redeem-codes'));
+  const validationIssues = [...validateRedeemCodes(codes, sources), ...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)];
   const report = createReleaseReport({ plan, entries, sources, claims, validationIssues });
   const gateIssues = values['require-ready'] ? releaseGateIssues(report, { preview: process.env.CONTENT_PREVIEW === 'true' }) : [];
   if (values.json) console.log(JSON.stringify({ ...report, gateIssues }, null, 2));

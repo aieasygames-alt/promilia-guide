@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import GuideCard from '../../components/GuideCard.astro';
+import LaunchActions from '../../components/LaunchActions.astro';
 import { visibleGuides, articlePath, type Locale } from '../../lib/content';
 import { t } from '../../lib/i18n';
 import { origin, locales, languageTag } from '../../lib/publication.mjs';
@@ -25,21 +26,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
   </section>
   <div class="container">
     {releases.map((release) => <section class="status-strip" aria-label={release.label} data-release-claim={release.claimId} data-release-revision={release.revision} data-release-verified={String(release.verified)}><span class="status-title"><span class="status-dot"></span>{release.label}</span><p>{release.detail}</p>{release.source?.url ? <a href={release.source.url} target="_blank" rel="noopener noreferrer">{locale === 'ja' ? '公式告知' : '官方原文'}<Icon name="arrow" size={15}/></a> : <a href={guideLink('global-release')}>{locale === 'ja' ? '配信状況' : '发行状态'}<Icon name="arrow" size={15}/></a>}</section>)}
-    <section class="countdown-banner" aria-label={locale === 'ja' ? '生放送・リリース情報' : '前瞻直播与公测倒计时'}>
-      <div class="countdown-banner-content">
-        <div class="countdown-banner-header">
-          <span class="countdown-tag">{locale === 'ja' ? '11/24 事前DL開始' : '11/24 开启预下载'}</span>
-          <span class="countdown-tag-milestone">{locale === 'ja' ? '80連すり抜けなし + 星5選択箱' : '80抽不歪 + 送自选5星'}</span>
-          <strong class="countdown-banner-title">{locale === 'ja' ? '公式特番発表：11月24日事前DL開始 · 11月26日 正式サービス開始まであと6日' : '前瞻重磅公布：11月24日开启预下载 · 距 11 月 26 日 10:00 公测仅剩 6 天'}</strong>
-        </div>
-        <p class="countdown-banner-desc">{locale === 'ja' ? '限定ガチャは80連ですり抜けなし確定！事前登録20連＆限定アニス＆星5交換箱が全員配布。特番限定シリアルコード3種も公開中、期限内にコピー！' : '限定角色UP池确认80抽完全不歪！开服全服邮件领免费20抽+限定「艾妮丝」+常驻5星自选箱。3组最新前瞻限时兑换码现已录入，请抓紧复制！'}</p>
-      </div>
-      <a class="countdown-banner-btn" href={guideLink('redeem-codes')}>
-        <Icon name="gift" size={15}/>
-        <span>{locale === 'ja' ? '特番コードを一括コピー' : '复制最新前瞻礼包码'}</span>
-        <Icon name="arrow" size={13}/>
-      </a>
-    </section>
+    <LaunchActions locale={locale}/>
     <section class="quick-nav-section" aria-label={c.quickNav.title}>
       <div class="quick-nav-grid">
         <a class="quick-nav-card" href={guideLink('launch')}>
@@ -49,25 +36,25 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
           </div>
           <strong class="quick-nav-title">{c.quickNav.launchTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.launchDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? '詳細を見る' : '查看奖励'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '日程を見る' : '核对日程'}</span><Icon name="arrow" size={14}/></div>
         </a>
-        <a class="quick-nav-card" href={guideLink('redeem-codes')}>
+        <a class="quick-nav-card" href={guideLink('download')}>
           <div class="quick-nav-header">
             <span class="quick-nav-icon"><Icon name="gift" size={20}/></span>
             <span class="quick-nav-badge badge-new">{c.quickNav.codesBadge}</span>
           </div>
           <strong class="quick-nav-title">{c.quickNav.codesTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.codesDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? 'コード一覧' : '一键复制'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '配布先を見る' : '核对官方入口'}</span><Icon name="arrow" size={14}/></div>
         </a>
-        <a class="quick-nav-card" href={guideLink('reroll')}>
+        <a class="quick-nav-card" href={guideLink('getting-started')}>
           <div class="quick-nav-header">
             <span class="quick-nav-icon"><Icon name="shield" size={20}/></span>
             <span class="quick-nav-badge badge-tier">{c.quickNav.rerollBadge}</span>
           </div>
           <strong class="quick-nav-title">{c.quickNav.rerollTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.rerollDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? 'ランキング' : '梯队速查'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '準備リスト' : '准备清单'}</span><Icon name="arrow" size={14}/></div>
         </a>
         <a class="quick-nav-card" href={root + 'characters/'}>
           <div class="quick-nav-header">

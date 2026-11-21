@@ -1,3 +1,5 @@
+import { entities } from '../src/data/entities.ts';
+import { isEntityCatalogPublishable, isEntityDetailPublishable } from '../src/lib/entity-publication.mjs';
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
@@ -80,6 +82,17 @@ for (const loc of sitemap('loc').toArray()) {
   if (!page) fail(`Sitemap points to nonexistent page ${url}`);
   else if (page.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`Sitemap contains noindex page ${url}`);
 }
+for (const entity of entities) for (const locale of ['zh-hans', 'ja']) {
+  const path = `/${locale}/${entity.kind === 'character' ? 'characters' : 'kibo'}/${entity.id}/`;
+  const page = pages.get(path);
+  if (!isPreview && !isEntityCatalogPublishable(entity, locale, sources) && page) fail(`Production contains pending entity ${path}`);
+  if (page && !isEntityDetailPublishable(entity, locale, sources)) {
+    if (!page.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`Unreviewed entity must be noindex ${path}`);
+    if (page.$('[data-pagefind-body]').length || page.$('body').attr('data-pagefind-ignore') !== 'all') fail(`Unreviewed entity must not be searchable ${path}`);
+    if (sitemapText.includes(origin + path + '<')) fail(`Unreviewed entity must not enter sitemap ${path}`);
+  }
+}
+if (!isPreview && [...pages.keys()].some(path => path.startsWith('/editorial/'))) fail('Editorial fixtures must not enter production');
 if (isPreview && sitemap('loc').length) fail('Preview sitemap must be empty');
 assert(allFiles.has('dist/404.html'), 'Cloudflare Pages requires a top-level 404.html');
 assert(allFiles.has('dist/pagefind/pagefind.js'), 'Pagefind bundle missing');

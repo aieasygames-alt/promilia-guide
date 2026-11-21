@@ -109,3 +109,11 @@ Cloudflare Pages 生产部署 ID 为 `f33aa3cd-2de1-4ce5-9905-87f0fb8e9805`，�
    - Cloudflare Pages 自动完成生产构建并实时生效，主域名 `https://promiliaguide.com/build-info.json` 确认匹配该 SHA 与 22 篇全部文章。
    - 执行 `scripts/verify-site.mjs` 针对正式线上环境验收：**74/74 项检查全部通过（PASS）**。覆盖 22 篇双语文章、更新页、双语首页、Sitemap、Robots、Pagefind 索引包、工作台严格 404 隔离及 5 条别名/HTTP 301 永久重定向。
    - 执行 `scripts/submit-indexnow.mjs`：向 IndexNow / Bing 成功推送全站 61 个有效 URL，均返回 HTTP 200 确认收录队列。
+
+## 2026-11-21 可信度修复与八篇重写内容发布
+
+本条取代上一节对旧前瞻来源、具体小时、卡池数值和礼包码的确定性表述。三条旧来源无法复核，相关结论已降级；新福利来源只支持国服公告范围，不能推断日本规则。
+
+项目负责人已确认八篇重写内容人工审核通过并明确授权上线。发布分支为 `codex/launch-trust-repair`，22/22 篇文章满足发布条件；6 个旧码待核验、0 个有效码，实体摘要详情 noindex，额外待核验角色仅预览可见。发布前生产基线为 `4cb45dec89ed0a358512cd0784489de0cba1ce30`。
+
+Node 22.23.4 本地完整检查通过：类型检查无错误／警告、55 项单元测试、46 项桌面／手机浏览器测试；预览 68 HTML／30 搜索页，正式 62 HTML／30 搜索页。后续远端 CI、不可变预览与生产同 SHA 验收以本次 PR 的检查和 Actions 产物为准；正在执行发布，未以本地构建代替线上验收。

@@ -7,30 +7,30 @@ title: "サービス開始前の準備チェックリスト"
 description: "地域・端末・アカウント・規約を順番に確認し、進捗をブラウザーに保存できます。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-20"
-gameVersion: "サービス開始前 / 2026-11-20 公式特番照合"
+updatedAt: "2026-11-21"
+gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "editorial"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-livestream-recap-2026-11-20"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
+sourceRevision: 5
 translationStatus: "published"
-aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
-related: ["launch", "requirements", "combat", "resources", "banner-rules"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+related: ["launch","requirements","combat","resources","banner-rules"]
 order: 6
 minutes: 5
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"}]
-translatedFromRevision: 4
-checklist: [{"id": "region", "text": "対象地域・サーバー・アカウントを確認する"}, {"id": "announcement", "text": "対象地域の公式発表を保存する"}, {"id": "device", "text": "端末・OS・空き容量を確認する"}, {"id": "download", "text": "公式クライアントの配布先を確認する"}, {"id": "account", "text": "アカウントと復旧手段を確認し、情報を保管する"}, {"id": "rules", "text": "現在の報酬・資源・ガチャの規約を読む"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":2,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":2}
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"}]
+translatedFromRevision: 5
+checklist: [{"id":"region","text":"対象地域・サーバー・アカウントを確認する"},{"id":"announcement","text":"対象地域の公式発表を保存する"},{"id":"device","text":"端末・OS・空き容量を確認する"},{"id":"download","text":"公式クライアントの配布先を確認する"},{"id":"account","text":"アカウントと復旧手段を確認し、情報を保管する"},{"id":"rules","text":"現在の報酬・資源・ガチャの規約を読む"}]
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":3,"jp-opening-time":1,"cn-preload-status":3}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-20"
+reviewedAt: "2026-11-14"
 ---
 
 ## 確認できる準備から始める
 
-中国本土と日本では、それぞれの公式日程を確認済みです。11月20日の公式特番により、両地域のサービス開始時刻（中国本土 10:00 / 日本 11:00 JST）と事前ダウンロード開始日（11月24日）が確定しました。まず対象地域を選び、原文と公式の入口を保存して端末を整えましょう。ガチャ、課金、育成素材の使い道を先に決める必要はありません。
+中国本土と日本では、それぞれの公式日程を確認済みですが、具体的な開始時刻は引き続き確認が必要です。まず対象地域を選び、原文と公式の入口を保存して端末を整えましょう。ガチャ、課金、育成素材の使い道を先に決める必要はありません。
 
 このリストは一般的な準備の提案です。進捗はゲームの利用資格、報酬、インストール権限を示しません。アカウントの項目はゲーム側のログイン・復旧方法を指しており、当サイトへの登録は不要です。
 

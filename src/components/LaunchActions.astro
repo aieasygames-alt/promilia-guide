@@ -1,0 +1,53 @@
+---
+import { claims as defaultClaims, sources as defaultSources } from '../lib/facts';
+import { regionalReleaseState } from '../lib/release-state.mjs';
+import { redeemCodes } from '../lib/redeem-data';
+import { redeemCodeRows } from '../lib/redeem-codes.mjs';
+import ScheduleTime from './ScheduleTime.astro';
+interface Props { locale: 'zh-hans' | 'ja'; claimData?: typeof defaultClaims; sourceData?: typeof defaultSources }
+const { locale, claimData: claims = defaultClaims, sourceData: sources = defaultSources } = Astro.props;
+const ja = locale === 'ja';
+const regions = (['cn', 'jp'] as const).map(region => regionalReleaseState({ claims, sources, region }));
+const codeCount = redeemCodeRows({ codes: redeemCodes, sources }).filter(code => code.status === 'active').length;
+---
+<section class="launch-actions" aria-labelledby="launch-actions-title" data-launch-actions>
+  <header><p class="eyebrow">YOUR NEXT STEP</p><h2 id="launch-actions-title">{ja ? '地域を確かめて、次の準備へ' : '选对地区，再走下一步'}</h2><p>{ja ? '予定日・事前ダウンロード・実際の稼働状況を別々に確認します。' : '计划日期、预下载与实际开放状态分别核对。'}</p></header>
+  <div class="launch-region-grid">
+    {regions.map(region => <article class="launch-region" data-launch-region={region.region} data-service-stage={region.stage}>
+      <h3>{region.region === 'cn' ? (ja ? '中国本土' : '中国大陆') : (ja ? '日本' : '日本地区')}</h3>
+      <dl>
+        <div><dt>{ja ? '開始予定' : '计划日程'}</dt><dd><ScheduleTime schedule={region.launch} locale={locale}/></dd></div>
+        <div><dt>{ja ? '事前ダウンロード予定' : '预下载计划'}</dt><dd><ScheduleTime schedule={region.preload} locale={locale}/></dd></div>
+      </dl>
+      {region.launch?.instant && <p class="launch-clock" data-launch-clock={region.launch.instant} data-clock-locale={locale} role="status" hidden></p>}
+      <p class="search-help">{region.stage === 'open' ? (ja ? '公式根拠で稼働を確認済み。利用条件は配布先で確認してください。' : '已根据独立依据确认开放，请在分发入口核对使用条件。') : region.stage === 'maintenance' ? (ja ? 'メンテナンスの公式情報を確認してください。' : '请核对当前维护公告。') : (ja ? '具体的な時刻とログイン可能な状態は、公式情報で別途確認します。' : '具体小时与是否可登录，仍需对应地区的独立官方依据。')}</p>
+      <a class="text-link" href={`/${locale}/guides/download/?region=${region.region}`}>{ja ? 'この地域の端末・公式入口' : '查看该地区的设备与官方入口'} →</a>
+    </article>)}
+  </div>
+  <p class="launch-code-note" data-home-code-count>{codeCount ? (ja ? `確認済みコードの有効期間は各記録でご確認ください（構築時点 ${codeCount} 件）。` : `已核验兑换码的有效期请逐条核对（构建时 ${codeCount} 组）。`) : (ja ? '現在、有効と確認できたシリアルコードはありません。' : '当前暂无可独立核验的有效兑换码。')}</p>
+</section>
+<script>
+  import { countdownText } from '../lib/release-state.mjs';
+  document.querySelectorAll<HTMLElement>('[data-launch-clock]').forEach(clock => {
+    const instant = clock.dataset.launchClock!;
+    const locale = clock.dataset.clockLocale === 'ja' ? 'ja' : 'zh-hans';
+    const update = () => { clock.textContent = countdownText(instant, new Date(), locale); clock.hidden = false; };
+    update();
+    window.setInterval(update, 60000);
+  });
+</script>
+<style>
+  .launch-actions { margin: 1.5rem 0 2rem; padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+  .launch-actions header h2 { margin: .3rem 0; font-size: 1.5rem; }
+  .launch-actions header p { color: var(--muted); }
+  .launch-region-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 1.3rem; }
+  .launch-region { padding: 1.2rem; border: 1px solid var(--line); border-radius: .6rem; min-width: 0; }
+  .launch-region h3 { margin: 0 0 .8rem; }
+  .launch-region dl { margin: 0; }
+  .launch-region dl div { display: flex; flex-wrap: wrap; gap: .3rem 1rem; justify-content: space-between; margin-bottom: .6rem; }
+  .launch-region dt { color: var(--muted); font-size: .85rem; }
+  .launch-region dd { margin: 0; }
+  .launch-clock { font-variant-numeric: tabular-nums; }
+  .launch-code-note { font-size: .85rem; color: var(--muted); margin: 1rem 0 0; }
+  @media (max-width: 640px) { .launch-region-grid { grid-template-columns: 1fr; } }
+</style>

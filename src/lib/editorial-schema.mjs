@@ -48,13 +48,24 @@ export const claimSchema = z.object({
   conflicts: z.array(nonempty).default([]),
   value: z.object({
     date: calendarDate.optional(),
-    time: z.string().regex(/^\d{2}:\d{2}$/).optional(),
+    time: z.string().regex(/^(?:[01]\d|2[0-3]):[0-5]\d$/).optional(),
     timeZone: z.enum(['Asia/Shanghai', 'Asia/Tokyo']).optional(),
     url: httpsUrl.optional(),
     availability: z.enum(['reservation', 'preload', 'download']).optional(),
     platforms: z.array(nonempty).optional(),
     minimumOS: nonempty.optional(),
-  }).default({}),
+    characterHardPity: z.number().int().positive().optional(),
+    characterRateUpProbability: z.enum(['100%', '50%']).optional(),
+    weaponHardPity: z.number().int().positive().optional(),
+    beginnerPity: z.number().int().positive().optional(),
+    pityCarryOver: z.boolean().optional(),
+    preRegisterPulls: z.number().int().nonnegative().optional(),
+    loginPulls: z.number().int().nonnegative().optional(),
+    explorationPullsMinimum: z.number().int().nonnegative().optional(),
+    freeCharacter: nonempty.optional(),
+    liveCodePulls: z.number().int().nonnegative().optional(),
+    serviceStatus: z.enum(['open', 'maintenance']).optional(),
+  }).strict().default({}),
 }).superRefine((claim, ctx) => {
   if (claim.verification === 'verified' && claim.conflicts.length) {
     ctx.addIssue({ code: 'custom', message: 'A verified claim cannot have unresolved conflicts' });
@@ -77,6 +88,7 @@ export const distributionSchema = z.object({
   entryClaim: nonempty,
   scheduleClaim: nonempty,
   preloadClaim: nonempty,
+  openingClaim: nonempty.optional(),
   compatibilityClaim: nonempty.optional(),
 });
 

@@ -7,20 +7,20 @@ title: "動作環境と端末の準備：公式の要件を読む"
 description: "中国本土のOS互換性と日本の対応予定を区別し、端末の仕様や空き容量の調べ方をまとめます。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
+updatedAt: "2026-11-21"
 gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
 sourceRefs: ["cn-app-store-2026-11-14","cn-official-home-2026-11-14","jp-publishing-2025-12-15","jp-official-home-2026-11-14"]
-sourceRevision: 3
+sourceRevision: 4
 translationStatus: "published"
-aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
-related: ["platforms", "getting-started"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+related: ["platforms","getting-started"]
 order: 5
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"}]
-translatedFromRevision: 3
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"}]
+translatedFromRevision: 4
 claimRefs: ["cn-ios-compatibility","cn-platform-details","jp-platform-plan","jp-platform-details"]
 claimRevisions: {"cn-ios-compatibility":1,"cn-platform-details":1,"jp-platform-plan":1,"jp-platform-details":1}
 reviewer: "项目负责人（会话确认）"

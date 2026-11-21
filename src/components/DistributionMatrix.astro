@@ -1,6 +1,7 @@
 ---
 import { channels, claims, sources } from '../lib/facts';
 import { distributionRows } from '../lib/distribution.mjs';
+import ScheduleTime from './ScheduleTime.astro';
 import type { Locale } from '../lib/content';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
@@ -18,7 +19,11 @@ const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => 
   <div class="distribution-grid">{rows.map((row) => <article class="distribution-card" data-channel={row.id} data-region={row.region} data-platform={row.platform} data-stage={row.stage || 'pending'}>
     <div class="distribution-card-top"><span class="distribution-region">{row.regionLabel}</span><span class={`pill ${row.stage ? '' : 'pending'}`}>{row.stageLabel}</span></div>
     <h3>{row.platformLabel}</h3><p class="distribution-summary">{row.entrySummary}</p>
-    <dl><div><dt>{row.region === 'cn' ? (ja ? '中国本土の告知日程' : '国服公告日期') : (ja ? '対象地域の配信日' : '地区发行日期')}</dt><dd>{row.date ? <time datetime={row.date}>{row.date}</time> : (ja ? '確認中' : '待核验')}</dd></div><div><dt>{ja ? '正式版の事前ダウンロード' : '公测预下载'}</dt><dd>{row.preloadUrl ? <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の案内を確認' : '查看官方安排'} ↗</a> : (ja ? '確認中' : '待核验')}</dd></div>{row.minimumOS && <div><dt>{ja ? 'ストアの互換性表示' : '商店兼容条件'}</dt><dd>{row.minimumOS}</dd></div>}</dl>
+    <dl>
+      <div><dt>{ja ? '対象地域の開始予定' : '地区计划日程'}</dt><dd><ScheduleTime schedule={row.launch} locale={locale}/></dd></div>
+      <div><dt>{ja ? '事前ダウンロード予定' : '预下载计划'}</dt><dd data-preload-schedule><ScheduleTime schedule={row.preload} locale={locale}/>{row.preload && <small>{ja ? '予定の確認です。現在の配布状況は別途確認してください。' : '此为计划，当前是否已开放须另行确认。'}</small>}{row.preloadUrl && <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の配布先' : '官方分发入口'} ↗</a>}</dd></div>
+      {row.minimumOS && <div><dt>{ja ? 'ストアの互換性表示' : '商店兼容条件'}</dt><dd>{row.minimumOS}</dd></div>}
+    </dl>
     {row.entryUrl ? <a class="distribution-action" href={row.entryUrl} target="_blank" rel="noopener noreferrer">{ja ? `${row.stageLabel}の入口を確認` : `查看${row.stageLabel}入口`} <span aria-hidden="true">↗</span></a> : <p class="distribution-pending">{ja ? '確認できた配布先を登録するまで、リンクは表示しません。' : '确认公开入口后补充链接。'}</p>}
     {row.evidence.length > 0 && <p class="distribution-source-note">{ja ? `出典 ${row.evidence.length} 件 · 確認日 ` : `${row.evidence.length} 份来源 · 核对日期 `}{[...new Set(row.evidence.map((source) => source.checkedAt))].join(' / ')}</p>}
   </article>)}</div>

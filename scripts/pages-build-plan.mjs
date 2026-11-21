@@ -16,6 +16,7 @@ export function pagesBuildPlan(env) {
     hosted,
     branch: branch || null,
     productionBranch: productionBranch || null,
+    checks: preview ? [] : ['check', 'test'],
     script: preview ? 'build:preview' : 'build:release',
     environment: { CONTENT_PREVIEW: String(preview) },
     outputDirectory: 'dist',

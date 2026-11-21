@@ -39,13 +39,15 @@ npm run preview
 - 首发五个核心主题的双语就绪检查、专用生产构建检查；编辑预览可查看和导出逐篇发布阻碍。
 - 发布、分发入口与部署验收规则测试、桌面/手机端浏览器流程测试、构建产物内链与元数据检查、GitHub Actions。
 
-现有 **9 篇简中 + 7 篇日语稿件**，其中六个核心主题的 **12 篇已根据项目负责人 2026-11-14 的会话确认记录人工审核完成并纳入发布**，首发五个主题的双语就绪检查为 **10/10**。审核署名为“项目负责人（会话确认）”，`reviewedAt` 记录确认日期。其余 4 篇战斗与资源/抽卡稿仍为资料待核验草稿，不进入正式构建。
+当前数量与待处理项以[当前交付状态](plans/CURRENT-STATUS.md)和 `npm run content:status` 为准。2026-11-21 项目负责人已确认兑换码、重抽、卡池规则和资源四个主题的中日文共 8 篇重写内容通过人工审核，并授权上线；当前 22/22 篇语言稿满足发布条件，待人工审核 0 篇。审核仅覆盖当前正文，不将待核验码、卡池数值或未知游戏规则转为已确认事实。
 
-已核对国服、繁中及日本官方资料，共 **14 个官方/商店来源**，登记 **14 个事实项，其中 9 个已核验**。12 篇核心语言稿已补入日本独立日程、手机事前注册与计划平台，并修订操作步骤和日语表达。人工审核完成不改变事实库中的未知项，也不意味着已经验证个人商店安装资格。
+来源修复过程见[核验记录](research/2026-11-21-evidence-repair.md)。国服福利新公告可支持登录 66 抽、探索与任务累计 510 抽以上；不能据此证明卡池保底、直播码、首日领取方式或日本规则。
 
 国服与日本分别有独立的 **2026-11-26** 官方日程，两份已读日期公告都未给出具体开服小时。中国区 App Store 的 iOS 15.0 / iPadOS 15.0 是该区兼容条件，不能用作推荐性能、完整空间或日本版要求。日本手机事前注册已确认；国服 PC/安卓和日本 PC 正式安装器、两地预下载、互通与完整配置仍待核验。详见[首轮官方来源记录](research/2026-11-14-official-sources.md)、[日本发行补证](research/2026-11-14-japan-release.md)及[人工审核交接清单](plans/CONTENT-REVIEW.md)。
 
-正式构建排除所有未审核文章；两种语言首页都分别显示中国大陆与日本的共享发行事实及对应原文，不根据阅读语言代选地区。日期到来后也不会自动显示已开服。日文正式游戏名「アズールプロミリア」和「キボ」已从日本官网核验；角色目录已收录 4 名官方公布角色，奇波目录已收录 5 种官方公布奇波，详情页、技能倍率、养成材料、强度与获取地点仍等待独立证据。
+正式构建排除所有未审核文章；两种语言首页都分别显示中国大陆与日本的共享发行事实及对应原文，不根据阅读语言代选地区。日期到来后也不会自动显示已开服。日文正式游戏名「アズールプロミリア」和「キボ」已从日本官网核验；角色目录已收录 4 名官方公布角色，奇波目录已收录 5 种官方公布奇波，资料摘要详情保持 noindex，完整用途、技能倍率、养成材料、强度与获取地点仍等待独立证据和审核。
+
+完整本地回归：`npm run verify:release`（类型检查、单元测试、预览构建、浏览器测试、严格正式构建）。首次运行前执行 `npx playwright install chromium`。最终 `dist/` 为正式模式。2026-11-21 按用户要求将仓库改为 public，原先受账单／额度阻止的 GitHub 托管 CI 已恢复启动；检查最终结果仍以对应提交的 Actions 为准，Pages 独立构建成功不等于 CI 已通过。
 
 ## 构建与正式发布检查
 
@@ -56,7 +58,7 @@ npm run preview
 | `npm run build:release` | 否 | 与普通正式模式一致 | 本地验证首发检查通过后才构建 |
 | `npm run build:pages` | 按显式环境设置 | 生产执行首发检查，分支预览全站 noindex | Pages 统一构建入口；配置见下文 |
 
-三个底层构建脚本都会执行内容检查 → Astro 静态生成 → Pagefind → 产物检查，`build:release` 另外在开始前执行首发检查，并拒绝 `CONTENT_PREVIEW=true`。**不要将带草稿的预览构建设为生产构建命令。** Pages 分支预览默认的 noindex 与这里的编辑预览模式是两层不同的机制。
+三个底层构建脚本都会执行内容检查 → Astro 静态生成 → Pagefind → 产物检查，`build:release` 另外在开始前执行首发检查，并拒绝 `CONTENT_PREVIEW=true`。**不要将带草稿的预览构建设为生产构建命令。** Pages 生产入口还会先运行类型检查与单元测试，任一失败均停止正式构建。Pages 分支预览默认的 noindex 与这里的编辑预览模式是两层不同的机制。
 
 `build:pages` 根据 `PAGES_BUILD_MODE` 选择 `build:release` 或 `build:preview`，在 Pages 上还核对当前分支与显式配置的生产分支。缺失配置、分支不匹配或继承了冲突的 `CONTENT_PREVIEW` 都会使构建失败，不根据 URL 猜测模式。
 
@@ -125,7 +127,7 @@ npm run release:check
 npm run review:bundle
 ```
 
-命令先重新构建编辑预览，再核对构建前后的源码与证据指纹，生成 `artifacts/review-bundles/` 中唯一命名的 `.tar.gz` 和同名 `.sha256`。需要本机有 `tar`；不会修改稿件审核状态或部署。包内包含完整预览、16 篇 Markdown、来源/事实/术语、核验记录、人工审核说明、同批状态报告和逐文件 SHA-256 清单；不复制 `.env`、Git 目录、项目依赖或部署凭证。源输入存在符号链接时拒绝打包。
+命令先重新构建编辑预览，再核对构建前后的源码与证据指纹，生成 `artifacts/review-bundles/` 中唯一命名的 `.tar.gz` 和同名 `.sha256`。需要本机有 `tar`；不会修改稿件审核状态或部署。包内包含完整预览、当前 Markdown 稿件、来源/事实/术语、核验记录、人工审核说明、同批状态报告和逐文件 SHA-256 清单；不复制 `.env`、Git 目录、项目依赖或部署凭证。源输入存在符号链接时拒绝打包。
 
 审核人员解压后，在包内 README 所在目录执行以下命令，需要 Python 3，无须安装项目依赖：
 
@@ -182,7 +184,7 @@ CF_PAGES=1 CF_PAGES_BRANCH=main PAGES_PRODUCTION_BRANCH=main PAGES_BUILD_MODE=pr
 
 该命令仅输出计划，不构建、不部署。本地单独测试预览入口可用 `PAGES_BUILD_MODE=preview npm run build:pages`。
 
-私有 GitHub 仓库为 [aieasygames-alt/promilia-guide](https://github.com/aieasygames-alt/promilia-guide)。GitHub Actions 运行质量检查；Cloudflare Pages Git 集成负责在推送生产分支或其他分支后分别构建生产/预览。实际部署与验收记录见 `plans/DEPLOYMENT-LOG.md`。
+公开 GitHub 仓库为 [aieasygames-alt/promilia-guide](https://github.com/aieasygames-alt/promilia-guide)，2026-11-21 按用户要求从 private 改为 public。GitHub Actions 运行质量检查；Cloudflare Pages Git 集成负责在推送生产分支或其他分支后分别构建生产/预览。实际部署与验收记录见 `plans/DEPLOYMENT-LOG.md`。
 
 Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promiliaguide.com](https://promiliaguide.com)，默认地址为 [promilia-guide.pages.dev](https://promilia-guide.pages.dev)，历史分支验收预览为 [6e004931.promilia-guide.pages.dev](https://6e004931.promilia-guide.pages.dev)。主域名 DNS 与 SSL 已生效，HTTP 按路径 301 到 HTTPS。生产 pages.dev 和 www 已通过 Cloudflare Bulk Redirects 归一到主域名，保留路径和查询参数；分支预览保持 noindex。最新验收见 `plans/DEPLOYMENT-LOG.md`，域名规则见 `plans/DOMAIN-AND-PAGES.md`，恢复步骤见 `plans/ROLLBACK-RUNBOOK.md`。
 

@@ -1,0 +1,80 @@
+[
+  {
+    "code": "PROMILIA1120LIVE",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [
+      "cn-livestream-recap-2026-11-20"
+    ],
+    "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "STARVOYAGE2026",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [
+      "cn-livestream-recap-2026-11-20"
+    ],
+    "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "AZUR1126READY",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [
+      "cn-livestream-recap-2026-11-20"
+    ],
+    "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "AZURPROMILIA2026",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [],
+    "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "STARAY1126",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [],
+    "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "WELCOMESTAR",
+    "region": "unconfirmed",
+    "verification": "pending",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": null,
+    "sourceRefs": [],
+    "checkedAt": "2026-11-21"
+  }
+]

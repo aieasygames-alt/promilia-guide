@@ -1,5 +1,11 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
+
+async function expectEvidence(page: Page, ids: string[]) {
+  const links = await page.locator('[data-evidence-channels]:visible > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+  expect(links.sort()).toEqual(ids.map(id => `#source-${id}`).sort());
+  expect(new Set(links).size).toBe(links.length);
+}
 
 test('home renders, mobile navigation works, and layout fits viewport', async ({ page, isMobile }) => {
   const errors: string[] = [];
@@ -44,7 +50,7 @@ test('both languages fit narrow phones and tablet widths', async ({ page }) => {
 });
 
 test('missing translation goes to explicit target language home', async ({ page }) => {
-  await page.goto('/zh-hans/guides/resources/');
+  await page.goto('/editorial/fixtures/trust/');
   const language = page.locator('.language-button');
   await expect(language).toHaveAttribute('aria-label', /暂无对应译文/);
   await expect(language).toHaveAttribute('href', '/ja/');
@@ -226,7 +232,7 @@ test('distribution facts and links are available without JavaScript', async ({ b
     await expect(page.locator('[data-distribution-controls]')).toBeHidden();
     await expect(page.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com/);
     await page.locator('[data-distribution-evidence] summary').click();
-    await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(9);
+    await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'jp-publishing-2025-12-15', 'jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14']);
     await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
     await expect(page.locator('[data-channel="jp-pc"] .distribution-action')).toHaveCount(0);
     await page.setViewportSize({ width: 320, height: 900 });
@@ -257,7 +263,7 @@ test('distribution selection survives reload and language switching with dedupli
   await page.goto('/zh-hans/guides/download/?region=cn&platform=ios#distribution-title');
   await expect(page.locator('[data-channel]:visible')).toHaveCount(1);
   await page.locator('[data-distribution-evidence] summary').click();
-  await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(5);
+  await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14']);
   await expect(page.locator('.distribution-card .distribution-evidence')).toHaveCount(0);
   await page.reload();
   await expect(page.locator('[data-platform-filter]')).toHaveValue('ios');
@@ -267,7 +273,7 @@ test('distribution selection survives reload and language switching with dedupli
   await page.locator('[data-region-filter]').selectOption('jp');
   await expect(page).toHaveURL(/region=jp&platform=ios/);
   await page.locator('[data-distribution-evidence] summary').click();
-  await expect(page.locator('[data-evidence-channels]:visible')).toHaveCount(3);
+  await expectEvidence(page, ['jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14']);
   await expect(page.locator('[data-no-evidence]')).toBeHidden();
   await page.goto('/zh-hans/guides/download/?region=unknown&platform=invalid');
   await expect(page.locator('[data-region-filter]')).toHaveValue('cn');
@@ -295,21 +301,21 @@ test('lightweight UI enhancements: homepage quick navigation, catalog filters, c
   const quickCards = page.locator('.quick-nav-card');
   await expect(quickCards).toHaveCount(4);
   await expect(quickCards.nth(0)).toHaveAttribute('href', '/zh-hans/guides/launch/');
-  await expect(quickCards.nth(1)).toHaveAttribute('href', '/zh-hans/guides/redeem-codes/');
-  await expect(quickCards.nth(2)).toHaveAttribute('href', '/zh-hans/guides/reroll/');
+  await expect(quickCards.nth(1)).toHaveAttribute('href', '/zh-hans/guides/download/');
+  await expect(quickCards.nth(2)).toHaveAttribute('href', '/zh-hans/guides/getting-started/');
   await expect(quickCards.nth(3)).toHaveAttribute('href', '/zh-hans/characters/');
 
   await page.goto('/zh-hans/characters/');
   const filterTabs = page.locator('.entity-filter-tab');
   await expect(filterTabs).toHaveCount(5);
   await filterTabs.filter({ hasText: '弗利斯' }).click();
-  await expect(page.locator('.entity-card:visible')).toHaveCount(3);
+  await expect(page.locator('.entity-card:visible')).toHaveCount(2);
   await filterTabs.filter({ hasText: '全部' }).click();
   await expect(page.locator('.entity-card:visible')).toHaveCount(6);
 
   await page.goto('/zh-hans/guides/redeem-codes/');
-  await expect(page.locator('.callout-warning')).toBeVisible();
-  await expect(page.locator('.callout-tip')).toBeVisible();
+  await expect(page.locator('[data-code-empty]')).toBeVisible();
+  await expect(page.locator('[data-copy-target]')).toHaveCount(0);
 
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto('/zh-hans/guides/redeem-codes/');
