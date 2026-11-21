@@ -128,3 +128,18 @@ Node 22.23.4 本地完整检查通过：类型检查无错误／警告、55 项�
 - 报告位于忽略目录 `artifacts/release-2026-11-21/`，包含 preview-verification.json、production-verification.json、production-boundaries.json 及下载的 GitHub 自动报告。远端报告归档在上述 main 运行的 `production-deployment-verification` artifact。
 
 本条记录功能发布及其已完成验收。后续仅文档维护的提交仍会自动部署，最新提交以线上清单和对应 Actions 为准；无需为本文自引用提交号继续生成记录提交。未执行生产回滚切换。
+
+
+## 2026-11-21 三轮扩充内容全量发布与生产验收
+
+项目负责人明确确认全部待审内容审核通过并授权发布所有开发内容、上线后验证。18篇当前语言修订/新稿记录真实会话审核，与8篇既有稿件合计26/26篇可发布；待审0、事实/译文过期0。逐篇版本和文件摘要见[approval.json](../research/2026-11-21-content-release/approval.json)。范围覆盖地区与下载入口、福利领取、卡池核验、首日准备、家园和奇波；未知规则保留未知，自动字幕没有升级为已核实游戏数值。
+
+- Node22.23.4完整本地发布检查通过：0错误/0警告（既有弃用提示1处），55项单元与46项桌面/手机浏览器测试。预览72 HTML/34搜索页，正式66 HTML/34搜索页，核心首批门槛10/10。
+- 发布提交`550b54288abba583554fa576f3923a9566eac1a1`的分支CI与PR CI成功。Pages预览`e6a3f3be-a1db-4560-ac38-992309ad4017`同SHA验收68/68，26篇文章，noindex且Sitemap为空。
+- [PR #3](https://github.com/aieasygames-alt/promilia-guide/pull/3)已合并，功能发布SHA为`6b165078973eb38ec3c5b07a980f5582fb3ade92`。[main CI #44901140973](https://github.com/aieasygames-alt/promilia-guide/actions/runs/44901140973)的verify及Verify production deployment均成功。
+- Pages生产部署ID`15d3ba17-d3c4-4968-ae66-936ad71182f4`，不可变地址https://15d3ba17.promilia-guide.pages.dev；正式索引验收使用https://promiliaguide.com。线上build-info.json确认完整SHA、production模式和全部26篇文章路径。
+- 自动主域名验收与本机独立验证均82/82通过：全部文章、canonical/hreflang、索引、安全头、robots、Sitemap、Pagefind、编辑工作台隔离、真实404及永久跳转。
+- 额外内容/索引边界107/107通过：26篇标题及正文匹配、本地当前发布/审核元数据有效、12个重点更新页面保留新内容与证据边界；两地系统目录入口、无待核验码复制、无未知小时倒计时；18个实体摘要语言页noindex且退出搜索，待核验实体与编辑夹具404；Sitemap和两种语言搜索数据正常。审核人字段保存在稿件元数据和审批记录中，公开模板不要求渲染该字段。
+- 浏览器线上核对中文福利、家园、日语家园与语言切换；日语搜索「キボ」返回12条，新奇波指南位列首项，家园与首日文章均可发现。桌面页面无明显布局异常；手机回归由前述46项浏览器测试覆盖。
+
+[验收摘要](../research/2026-11-21-content-release/verification.json)持久保存实际部署与验证结果；详细报告在忽略目录artifacts/content-release-2026-11-21/，远端报告在main运行的production-deployment-verification artifact。后续仅发布记录的维护提交会再次部署，最终版本以线上清单和对应Actions为准，不为本文自引用SHA继续生成提交。
