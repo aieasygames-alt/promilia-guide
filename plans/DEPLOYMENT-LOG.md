@@ -117,3 +117,14 @@ Cloudflare Pages 生产部署 ID 为 `f33aa3cd-2de1-4ce5-9905-87f0fb8e9805`，�
 项目负责人已确认八篇重写内容人工审核通过并明确授权上线。发布分支为 `codex/launch-trust-repair`，22/22 篇文章满足发布条件；6 个旧码待核验、0 个有效码，实体摘要详情 noindex，额外待核验角色仅预览可见。发布前生产基线为 `4cb45dec89ed0a358512cd0784489de0cba1ce30`。
 
 Node 22.23.4 本地完整检查通过：类型检查无错误／警告、55 项单元测试、46 项桌面／手机浏览器测试；预览 68 HTML／30 搜索页，正式 62 HTML／30 搜索页。后续远端 CI、不可变预览与生产同 SHA 验收以本次 PR 的检查和 Actions 产物为准；正在执行发布，未以本地构建代替线上验收。
+
+### 本批实际发布结果
+
+- 功能提交 `2e216c1a3a0f4f5fedaef33e82fb4efd863ec855` 的[分支 CI #44882885311](https://github.com/aieasygames-alt/promilia-guide/actions/runs/44882885311) 成功；Pages 不可变预览 https://aadaf5ef.promilia-guide.pages.dev 同 SHA 验收 60/60，通过 noindex、空 Sitemap 和 22 篇文章检查。
+- [PR #1](https://github.com/aieasygames-alt/promilia-guide/pull/1) 合并提交为 `2586ed07cbfc16e55dffd82bb6f2f7e70fd34491`。北京时间 2026-11-21 16:05 起正式主域名清单已返回该 SHA，22 篇文章全部在列。
+- [main CI #44883162734](https://github.com/aieasygames-alt/promilia-guide/actions/runs/44883162734) 的 `verify` 与 `Verify production deployment` 均 success。Cloudflare Pages 部署 `ec2c8436-bbab-4e00-9c83-2f6b634cd0e4`、check `136782789116`、suite `121479394686`，不可变地址 https://ec2c8436.promilia-guide.pages.dev 。生产索引检查使用正式域名 https://promiliaguide.com。
+- 自动主域名技术验收与本机独立重验均 74/74：同 SHA、22 篇文章、canonical/hreflang、索引、搜索包、真实 404、编辑工作台隔离以及主域名永久跳转通过。
+- 额外线上边界验收 47/47：八篇审核文章可索引，两地入口分别显示；无凭日期推断的已开服状态或未知小时倒计时；兑换码速查显示无有效码、不提供待核验码复制；4 名角色与 5 种奇波的双语摘要详情 noindex、不进入 Sitemap 或 Pagefind；两名待核验角色、编辑测试夹具返回 404；双语更新页反映本次八篇审核完成。旧码只保留在历史修订记录，不作为有效码提供。
+- 报告位于忽略目录 `artifacts/release-2026-11-21/`，包含 preview-verification.json、production-verification.json、production-boundaries.json 及下载的 GitHub 自动报告。远端报告归档在上述 main 运行的 `production-deployment-verification` artifact。
+
+本条记录功能发布及其已完成验收。后续仅文档维护的提交仍会自动部署，最新提交以线上清单和对应 Actions 为准；无需为本文自引用提交号继续生成记录提交。未执行生产回滚切换。
