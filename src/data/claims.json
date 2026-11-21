@@ -153,36 +153,34 @@
   },
   {
     "id": "cn-opening-time",
-    "revision": 2,
-    "text": "公测前瞻节目确认：2026 年 11 月 26 日上午 10:00（北京时间）开启全平台公测。",
+    "revision": 3,
+    "text": "中国大陆具体开服小时待重新核验。",
     "localized": {
       "zh-hans": {
-        "summary": "公测前瞻节目确认：2026 年 11 月 26 日上午 10:00（北京时间）开启全平台公测。",
-        "detail": "前瞻特别节目明确了开服时间与服务器开启顺序；中国大陆全平台统一于 10:00 开放登录。"
+        "summary": "中国大陆具体开服小时待重新核验。",
+        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
       },
       "ja": {
-        "summary": "公式特番にて、中国本土では2026年11月26日 10:00（CST）にサービス開始と発表。",
-        "detail": "公式特別番組にて確定発表されました。"
+        "summary": "中国本土の具体的なサービス開始時刻は再確認中です。",
+        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
       }
     },
     "sourceRefs": [
       "cn-livestream-recap-2026-11-20"
     ],
-    "type": "official",
+    "type": "pending",
     "gameRegion": "中国大陆",
     "gameVersion": "公测前瞻版本",
-    "verification": "verified",
+    "verification": "pending",
     "affectedPages": [
       "launch",
       "global-release",
-      "getting-started"
+      "getting-started",
+      "download",
+      "platforms"
     ],
     "conflicts": [],
-    "value": {
-      "date": "2026-11-26",
-      "time": "10:00",
-      "timeZone": "Asia/Shanghai"
-    },
+    "value": {},
     "distributionScope": {
       "region": "cn",
       "release": "public-launch"
@@ -324,35 +322,34 @@
   },
   {
     "id": "cn-preload-status",
-    "revision": 2,
-    "text": "公测前瞻特别节目确认：2026 年 11 月 24 日上午 10:00 开启全平台预下载。",
+    "revision": 3,
+    "text": "中国大陆公测预下载计划与开放状态待重新核验。",
     "localized": {
       "zh-hans": {
-        "summary": "公测前瞻特别节目确认：2026 年 11 月 24 日上午 10:00 开启全平台预下载。",
-        "detail": "届时可在官网 PC 启动器、iOS App Store 及各大安卓渠道预先下载完整游戏包体。"
+        "summary": "中国大陆公测预下载计划与开放状态待重新核验。",
+        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
       },
       "ja": {
-        "summary": "公式特番にて、中国本土では2026年11月24日 10:00（CST）より全プラットフォーム事前ダウンロード開始と発表。",
-        "detail": "PCランチャー、App Store、主要Androidストアにて事前ダウンロードが実施されます。"
+        "summary": "中国本土の事前ダウンロード予定と配布状況は再確認中です。",
+        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
       }
     },
     "sourceRefs": [
       "cn-livestream-recap-2026-11-20"
     ],
-    "type": "official",
+    "type": "pending",
     "gameRegion": "中国大陆",
     "gameVersion": "公测前瞻版本",
-    "verification": "verified",
+    "verification": "pending",
     "affectedPages": [
       "download",
-      "platforms"
+      "platforms",
+      "launch",
+      "global-release",
+      "getting-started"
     ],
     "conflicts": [],
-    "value": {
-      "date": "2026-11-24",
-      "time": "10:00",
-      "timeZone": "Asia/Shanghai"
-    },
+    "value": {},
     "distributionScope": {
       "region": "cn",
       "release": "public-launch"
@@ -479,37 +476,34 @@
   },
   {
     "id": "jp-preload-status",
-    "revision": 2,
-    "text": "日本公式特番発表：2026年11月24日 11:00（JST）より事前ダウンロード開始予定。",
+    "revision": 3,
+    "text": "日本地区事前下载计划与开放状态待重新核验。",
     "localized": {
       "zh-hans": {
-        "summary": "日本官方特番确认：2026 年 11 月 24 日 11:00（东京时间）开启事前下载。",
-        "detail": "日本地区 App Store、Google Play 与 PC 版同步开放预下载。"
+        "summary": "日本地区事前下载计划与开放状态待重新核验。",
+        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
       },
       "ja": {
-        "summary": "日本公式特番にて、2026年11月24日 11:00（JST）より事前ダウンロード開始予定と発表。",
-        "detail": "各ストアおよびPC版にて事前ダウンロードが実施されます。"
+        "summary": "日本向け事前ダウンロード予定と配布状況は再確認中です。",
+        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
       }
     },
     "sourceRefs": [
       "jp-livestream-recap-2026-11-20"
     ],
-    "type": "official",
+    "type": "pending",
     "gameRegion": "日本",
     "gameVersion": "正式发行前",
-    "verification": "verified",
+    "verification": "pending",
     "affectedPages": [
       "launch",
       "download",
       "platforms",
-      "getting-started"
+      "getting-started",
+      "global-release"
     ],
     "conflicts": [],
-    "value": {
-      "date": "2026-11-24",
-      "time": "11:00",
-      "timeZone": "Asia/Tokyo"
-    },
+    "value": {},
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
@@ -517,25 +511,25 @@
   },
   {
     "id": "cn-special-livestream-program",
-    "revision": 2,
-    "text": "2026 年 11 月 20 日前瞻特别节目播出：公布开服时刻 11-26 10:00、预下载 11-24 10:00、限定池 80 抽完全不歪、赠送自选 5 星与 3 组限时礼包码。",
+    "revision": 3,
+    "text": "此前前瞻节目记录无法从登记原文复核，具体节目结论待重新核验。",
     "localized": {
       "zh-hans": {
-        "summary": "前瞻直播定案：11月26日 10:00 开服，11月24日预下载，限定UP池 80 抽完全不歪，全服送自选 5 星角色。",
-        "detail": "3组前瞻限时码（PROMILIA1120LIVE、STARVOYAGE2026、AZUR1126READY）已发放，有效期至 11月23日 23:59。"
+        "summary": "此前前瞻节目记录无法从登记原文复核，具体节目结论待重新核验。",
+        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
       },
       "ja": {
-        "summary": "公式特番放送完了：11/26 10:00正式サービス開始、11/24事前DL、80連すり抜けなし限定ガチャ、星5交換券配布。",
-        "detail": "特番限定シリアルコード3種が配布中（有効期限：11月23日 23:59まで）。"
+        "summary": "以前の特番記録を登録済みの原文で照合できないため、内容を再確認中です。",
+        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
       }
     },
     "sourceRefs": [
       "cn-livestream-recap-2026-11-20"
     ],
-    "type": "official",
+    "type": "pending",
     "gameRegion": "中国大陆",
     "gameVersion": "公测前瞻版本",
-    "verification": "verified",
+    "verification": "pending",
     "affectedPages": [
       "launch",
       "redeem-codes",
@@ -543,65 +537,56 @@
       "resources"
     ],
     "conflicts": [],
-    "value": {
-      "date": "2026-11-20"
-    }
+    "value": {}
   },
   {
     "id": "cn-banner-rules-system",
-    "revision": 1,
-    "text": "公测前瞻特别节目确定卡池规则：角色限定池 80 抽 100% 获得当期 UP 角色（无 50/50 歪机制），灵质武器池 60 抽大保底，新手池 50 抽八折必出 5 星，保底跨期继承。",
+    "revision": 2,
+    "text": "中国大陆公测抽卡概率、保底与继承规则待逐项核验。",
     "localized": {
       "zh-hans": {
-        "summary": "公测卡池规则：角色限定池 80 抽 100% 当期 UP（无 50/50 歪卡），灵质武器池 60 抽保底，新手池 50 抽八折必出 5 星，同类卡池保底跨期继承。",
-        "detail": "官方 11·20 前瞻特别节目正式公布；同类型卡池抽数跨期完全继承，开服赠送常驻 5 星自选箱。"
+        "summary": "中国大陆公测抽卡概率、保底与继承规则待逐项核验。",
+        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
       },
       "ja": {
-        "summary": "正式リリースガチャ仕様：キャラ限定80連100%ピックアップ（すり抜けなし）、霊質・武器60連天井、初心者50連星5確定、天井引き継ぎ。",
-        "detail": "11月20日公式特番にて発表。同種ガチャ間での天井カウント完全引き継ぎ、星5キャラ交換箱の配布も確定。"
+        "summary": "中国本土の正式版ガチャ確率・天井・引き継ぎ条件は個別に確認中です。",
+        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
       }
     },
     "sourceRefs": [
       "cn-livestream-recap-2026-11-20",
       "jp-livestream-recap-2026-11-20"
     ],
-    "type": "official",
-    "gameRegion": "中国大陆 / 日本",
+    "type": "pending",
+    "gameRegion": "中国大陆",
     "gameVersion": "公测前瞻版本",
-    "verification": "verified",
+    "verification": "pending",
     "affectedPages": [
       "banner-rules",
       "reroll"
     ],
     "conflicts": [],
-    "value": {
-      "characterHardPity": 80,
-      "characterRateUpProbability": "100%",
-      "weaponHardPity": 60,
-      "beginnerPity": 50,
-      "pityCarryOver": true
-    }
+    "value": {}
   },
   {
     "id": "cn-opening-rewards-resource",
-    "revision": 1,
-    "text": "公测首日全服发放资源：全球 3000 万预约 20 抽 + 5 星角色艾妮丝 + 奇波，公测赠送 5 星自选箱，11·20 前瞻直播码折合 3 抽道具。",
+    "revision": 2,
+    "text": "国服11月20日公测福利公告：登录即送66抽，探索与任务累计可得510抽以上，指定任务可得五星角色与五星灵子。",
     "localized": {
       "zh-hans": {
-        "summary": "开服全服奖励：3000 万预约 20 抽 + 5 星角色艾妮丝 + 奇波，公测赠送 5 星自选箱，前瞻直播码折合 3 抽。",
-        "detail": "直播码有效期至 11-23 23:59；预约奖励在开服后通过游戏内邮件发放。"
+        "summary": "国服官方公告分别列出登录66抽、探索与任务累计510抽以上，以及指定任务的五星角色与五星灵子。",
+        "detail": "领取门槛与完整活动条款仍需核对，不把两种抽数口径相加，不推广到日本地区。"
       },
       "ja": {
-        "summary": "リリース初日配布報酬：3000万人事前登録で20連+星5エニス+キボ、星5選択箱、特番コード3連分相当。",
-        "detail": "生放送コードは11月23日23:59まで有効。事前登録報酬はゲーム内メールにて配布。"
+        "summary": "中国本土公式の特典案内には、ログイン66連・探索と任務で累計510連以上・指定任務で星5キャラと星5霊子と記載。",
+        "detail": "受取条件と活動規約は別途確認が必要です。各区分を合算せず、日本向けには適用しません。"
       }
     },
     "sourceRefs": [
-      "cn-livestream-recap-2026-11-20",
-      "cn-livestream-30m-2026-11-17"
+      "cn-launch-benefits-2026-11-20"
     ],
     "type": "official",
-    "gameRegion": "中国大陆 / 日本",
+    "gameRegion": "中国大陆",
     "gameVersion": "公测前瞻版本",
     "verification": "verified",
     "affectedPages": [
@@ -611,9 +596,71 @@
     ],
     "conflicts": [],
     "value": {
-      "preRegisterPulls": 20,
-      "freeCharacter": "艾妮丝",
-      "liveCodePulls": 3
+      "loginPulls": 66,
+      "explorationPullsMinimum": 510
+    }
+  },
+  {
+    "id": "jp-opening-time",
+    "revision": 1,
+    "text": "日本地区具体开服小时待独立核验。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本地区具体开服小时待独立核验。"
+      },
+      "ja": {
+        "summary": "日本向けの具体的な開始時刻は独立した公式根拠を確認中です。"
+      }
+    },
+    "sourceRefs": [
+      "jp-official-home-2026-11-14"
+    ],
+    "type": "pending",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "verification": "pending",
+    "affectedPages": [
+      "launch",
+      "global-release",
+      "download",
+      "platforms",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "jp-banner-rules-system",
+    "revision": 1,
+    "text": "日本地区抽卡概率、保底与继承规则待独立核验。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本地区抽卡概率、保底与继承规则待独立核验。"
+      },
+      "ja": {
+        "summary": "日本向けガチャの確率・天井・引き継ぎ条件は独立した公式根拠を確認中です。"
+      }
+    },
+    "sourceRefs": [
+      "jp-official-home-2026-11-14"
+    ],
+    "type": "pending",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前",
+    "verification": "pending",
+    "affectedPages": [
+      "banner-rules",
+      "reroll"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
     }
   }
 ]

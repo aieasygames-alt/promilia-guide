@@ -1,0 +1,15 @@
+---
+import Base from '../../../layouts/Base.astro';
+import LaunchActions from '../../../components/LaunchActions.astro';
+import RedeemCodeBox from '../../../components/RedeemCodeBox.astro';
+import { preview } from '../../../lib/content';
+import { sourceSchema, claimSchema } from '../../../lib/editorial-schema.mjs';
+import { redeemCodeSchema } from '../../../lib/redeem-codes.mjs';
+export function getStaticPaths() { return preview ? [{ params: { name: 'trust' } }] : []; }
+const source = sourceSchema.parse({ id: 'fixture-official', title: 'Synthetic browser fixture', publisher: 'Fixture', kind: 'official', url: 'https://example.com/fixture', publishedAt: '2049-12-31', checkedAt: '2049-12-31', gameVersion: 'fixture', gameRegion: 'fixture', status: 'verified', note: 'Synthetic test data only', excerpt: 'Synthetic test data only' });
+const claim = claimSchema.parse({ id: 'cn-opening-time', revision: 1, text: 'Synthetic schedule', localized: { 'zh-hans': { summary: '测试数据' }, ja: { summary: 'テストデータ' } }, sourceRefs: [source.id], type: 'official', gameRegion: 'fixture', gameVersion: 'fixture', distributionScope: { region: 'cn', release: 'public-launch' }, verification: 'verified', affectedPages: ['launch'], value: { date: '2050-01-01', time: '00:01', timeZone: 'Asia/Shanghai' } });
+const code = redeemCodeSchema.parse({ code: 'FIXTURE_ONLY', region: 'cn', verification: 'verified', reward: { 'zh-hans': '测试奖励', ja: 'テスト報酬' }, availableAt: '2050-01-01T00:00:00+08:00', expiresAt: '2050-01-01T00:02:00+08:00', timeZone: 'Asia/Shanghai', redemptionMethod: { 'zh-hans': '仅供自动化测试', ja: '自動テスト専用' }, sourceRefs: [source.id], checkedAt: '2049-12-31' });
+---
+<Base title="预览交互测试夹具" description="仅预览生成的合成数据，不是游戏事实。" noindex searchable={false} missingTranslation languageTarget="/ja/">
+  <div class="container"><h1>预览交互测试夹具</h1><p>本页全部日程、代码与来源均为合成测试数据，不可用于游戏。</p><LaunchActions locale="zh-hans" claimData={[claim]} sourceData={[source]} /><RedeemCodeBox locale="zh-hans" codeData={[code]} sourceData={[source]} /></div>
+</Base>

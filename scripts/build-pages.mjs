@@ -11,11 +11,14 @@ try {
     const plan = pagesBuildPlan(process.env);
     if (values['dry-run']) console.log(JSON.stringify(plan, null, 2));
     else {
-      console.log(`Pages ${plan.mode}: npm run ${plan.script}${plan.branch ? ` (branch: ${plan.branch})` : ''}`);
-      const child = spawnSync('npm', ['run', plan.script], { stdio: 'inherit', env: { ...process.env, ...plan.environment } });
-      if (child.error) throw child.error;
-      if (child.status !== 0) process.exitCode = child.status || 1;
-      else {
+      let succeeded = true;
+      for (const script of [...plan.checks, plan.script]) {
+        console.log(`Pages ${plan.mode}: npm run ${script}${plan.branch ? ` (branch: ${plan.branch})` : ''}`);
+        const child = spawnSync('npm', ['run', script], { stdio: 'inherit', env: { ...process.env, ...plan.environment } });
+        if (child.error) throw child.error;
+        if (child.status !== 0) { process.exitCode = child.status || 1; succeeded = false; break; }
+      }
+      if (succeeded) {
         const info = JSON.parse(await readFile('dist/build-info.json', 'utf8'));
         if (info.mode !== (plan.mode === 'preview' ? 'editorial-preview' : 'production')) throw new Error('Build output mode does not match the resolved Pages environment.');
         console.log(`Pages build verified: ${info.mode}. This command builds locally; it does not deploy.`);

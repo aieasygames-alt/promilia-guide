@@ -7,19 +7,19 @@ title: "配置与设备准备：如何读懂官方要求"
 description: "区分中国区OS兼容条件与日本平台计划，整理设备参数、空余空间及正式配置的核对方法。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
+updatedAt: "2026-11-21"
 gameVersion: "公测前 / 2026-11-14 官方页面核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
 sourceRefs: ["cn-app-store-2026-11-14","cn-official-home-2026-11-14","jp-publishing-2025-12-15","jp-official-home-2026-11-14"]
-sourceRevision: 3
+sourceRevision: 4
 translationStatus: "published"
-aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
-related: ["platforms", "getting-started"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+related: ["platforms","getting-started"]
 order: 5
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"}]
 claimRefs: ["cn-ios-compatibility","cn-platform-details","jp-platform-plan","jp-platform-details"]
 claimRevisions: {"cn-ios-compatibility":1,"cn-platform-details":1,"jp-platform-plan":1,"jp-platform-details":1}
 reviewer: "项目负责人（会话确认）"

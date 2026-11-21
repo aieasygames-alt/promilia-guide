@@ -3,6 +3,7 @@ import { articlePath } from './publication.mjs';
 import { isPublishable, publicationIssues } from './editorial.mjs';
 import { sources, claims } from './facts';
 import { entities, entitiesFor } from '../data/entities';
+import { isEntityCatalogPublishable } from './entity-publication.mjs';
 
 export type Locale = 'zh-hans' | 'ja';
 export type Guide = CollectionEntry<'guides'>;
@@ -24,3 +25,4 @@ export async function visibleGuides(locale?: Locale) {
 }
 export { articlePath };
 export { entities, entitiesFor };
+export const visibleEntitiesFor = (kind: 'character' | 'kibo', locale: Locale) => entitiesFor(kind).filter((entity) => preview || isEntityCatalogPublishable(entity, locale, sources));

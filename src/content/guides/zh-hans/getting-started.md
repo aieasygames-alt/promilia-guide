@@ -7,29 +7,29 @@ title: "开服前准备清单：把下一步留在手边"
 description: "按地区、设备、账号与规则整理准备事项，用本地清单记录进度。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-20"
-gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
+updatedAt: "2026-11-21"
+gameVersion: "公测前 / 2026-11-14 官方页面核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-livestream-recap-2026-11-20"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
+sourceRevision: 5
 translationStatus: "published"
-aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
-related: ["launch", "requirements", "combat", "resources", "banner-rules"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+related: ["launch","requirements","combat","resources","banner-rules"]
 order: 6
 minutes: 5
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。"}]
-checklist: [{"id": "region", "text": "确认目标地区、服务器与账号渠道"}, {"id": "announcement", "text": "保存对应地区的原始发行公告"}, {"id": "device", "text": "核对设备、系统与可用空间"}, {"id": "download", "text": "确认官方客户端下载入口"}, {"id": "account", "text": "核对账号与恢复方式，妥善保管凭证"}, {"id": "rules", "text": "阅读当期奖励、资源与卡池规则"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":2,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":2}
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"}]
+checklist: [{"id":"region","text":"确认目标地区、服务器与账号渠道"},{"id":"announcement","text":"保存对应地区的原始发行公告"},{"id":"device","text":"核对设备、系统与可用空间"},{"id":"download","text":"确认官方客户端下载入口"},{"id":"account","text":"核对账号与恢复方式，妥善保管凭证"},{"id":"rules","text":"阅读当期奖励、资源与卡池规则"}]
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":3,"jp-opening-time":1,"cn-preload-status":3}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-20"
+reviewedAt: "2026-11-14"
 ---
 
 ## 先完成能确认的准备
 
-国服与日本均已核验独立日程，11 月 20 日前瞻节目已明确两地具体开服时刻（国服 11-26 10:00 / 日服 11:00 JST）与全平台预下载开放时间（11-24 10:00）。先选择目标地区，保存该地区原始公告与官方入口，再整理设备；无需先决定抽卡、充值或资源分配。
+国服与日本均已核验独立日程，具体开服小时仍需继续确认。先选择目标地区，保存该地区原始公告与官方入口，再整理设备；无需先决定抽卡、充值或资源分配。
 
 这是一份通用准备建议，清单进度不代表已获得游戏资格、奖励或安装权限。账号项指游戏官方的账号与恢复方式，本站无需注册账号。
 

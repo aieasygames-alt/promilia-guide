@@ -1,4 +1,8 @@
 ---
+import { redeemCodes } from '../../lib/redeem-data';
+import { validateRedeemCodes } from '../../lib/redeem-codes.mjs';
+import { entities } from '../../data/entities';
+import { entityImpact } from '../../lib/entity-publication.mjs';
 import Base from '../../layouts/Base.astro';
 import { allGuides, preview } from '../../lib/content';
 import { sources, claims, channels } from '../../lib/facts';
@@ -12,7 +16,7 @@ export function getStaticPaths() { return preview ? [{ params: { path: undefined
 const entries = (await allGuides()).map((entry) => ({ ...entry, path: `src/content/guides/${entry.id}.md` }));
 const context = { entries, sources, claims };
 const report = createEditorialReport(context);
-const releaseReport = createReleaseReport({ ...context, plan: releasePlanSchema.parse(rawPlan), validationIssues: [...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)] });
+const releaseReport = createReleaseReport({ ...context, plan: releasePlanSchema.parse(rawPlan), validationIssues: [...validateRedeemCodes(redeemCodes, sources), ...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)] });
 const topics = [...new Set(entries.map((entry) => entry.data.contentId))];
 const selections = [
   ...sources.map((source) => ({ key: `source:${source.id}`, label: source.id, group: '来源', query: { sourceId: source.id } })),
@@ -32,6 +36,7 @@ const impactRoutes = Object.fromEntries(selections.map((selection) => [selection
       <p id="report-status" class="search-help" role="status"></p>
     </section>
     <section class="editorial-section"><div class="section-head"><div><h2>来源核验记录</h2><p>来源核对日期与文章实质更新时间分开记录。</p></div></div><div class="editorial-sources">{sources.map((source) => <article><span class={`pill ${source.status === 'verified' ? '' : 'pending'}`}>{source.status === 'verified' ? '来源已核验' : '仅作规划线索'}</span><h3>{source.url ? <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a> : source.title}</h3><p>{source.note}</p><small>{source.id}<br/>原文发布：{source.publishedAt || '未注明'} · 来源核对：{source.checkedAt || '未核验'}</small>{source.excerpt && <blockquote>{source.excerpt}</blockquote>}<button class="text-link" type="button" data-source-impact={`source:${source.id}`}>查看受影响稿件 →</button></article>)}</div></section>
+    <section class="editorial-section"><h2>资料页来源影响</h2><p>详情正文与双语审核完成前，资料摘要页保持 noindex，并退出站点地图和搜索。</p>{sources.filter(source => entityImpact(entities, source.id).length).map(source => <details><summary>{source.id} · {entityImpact(entities, source.id).length} 页</summary><ul>{entityImpact(entities, source.id).map((path: string) => <li><a href={path}>{path}</a></li>)}</ul></details>)}</section>
     <section class="editorial-section prose"><h2>完成审核后如何发布</h2><ol><li>逐条确认正文与事实摘要、原始来源、适用地区及版本一致。</li><li>将正文引用的 <code>claimRevisions</code> 更新为已复查的事实修订号；事实变动时同步审阅中日文稿件。</li><li>完成真实人工审核后记录 <code>reviewer</code>、<code>reviewedAt</code>，并设置文章与译文的发布状态。</li><li>运行内容检查与正式构建。任何来源、事实或译文修订冲突都会阻止错误发布。</li></ol><p>此工作台只读取本地文件。筛选、报告导出和查看稿件不会改写审核字段或向外部发送内容。</p></section>
   </div>
   <script id="editorial-report-data" type="application/json" is:inline set:html={JSON.stringify({ report, impactRoutes, releaseReport }).replace(/</g, '\\u003c')}/>

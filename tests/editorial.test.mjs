@@ -97,6 +97,7 @@ test('report CLI emits JSON, rejects invalid IDs and leaves editorial files unch
   const status = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'status', '--json', '--at', '2026-11-14'], { encoding: 'utf8' }));
   assert.equal(status.summary.articles, 22);
   assert.equal(status.summary.publishable, 22);
+  assert.equal(status.articles.filter(article => article.blockers.some(issue => issue.code === 'manual-review')).length, 0);
   const impact = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'impact', '--claim', claim.id, '--json'], { encoding: 'utf8' }));
   assert.ok(impact.articles.some((article) => article.locale === 'ja'));
   const invalid = spawnSync(process.execPath, ['scripts/content-report.mjs', 'impact', '--claim', 'missing', '--json'], { encoding: 'utf8' });

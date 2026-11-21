@@ -1,3 +1,5 @@
+import { entities } from '../src/data/entities.ts';
+import { entityImpact, isEntityCatalogPublishable, isEntityDetailPublishable } from '../src/lib/entity-publication.mjs';
 import { parseArgs } from 'node:util';
 import { readFile } from 'node:fs/promises';
 import { z } from 'zod';
@@ -21,12 +23,14 @@ try {
   if (!['status', 'impact'].includes(mode)) throw new Error(`Unknown report mode: ${mode}`);
   const result = mode === 'impact' ? findContentImpact({ ...context, sourceId: values.source, claimId: values.claim, contentId: values.content })
     : createEditorialReport({ ...context, ...(values.at ? { asOf: calendarDate.parse(values.at) } : {}) });
+  result.entityPages = mode === 'impact' ? (values.source ? entityImpact(entities, values.source) : []) : entities.flatMap(entity => ['zh-hans', 'ja'].map(locale => ({ id: entity.id, locale, catalogPublishable: isEntityCatalogPublishable(entity, locale, sources), detailPublishable: isEntityDetailPublishable(entity, locale, sources) })));
   if (values.json) console.log(JSON.stringify(result, null, 2));
   else {
     if (mode === 'status') {
       const s = result.summary;
       console.log(`内容状态（${result.asOf}，北京时间）\n文章 ${s.articles} · 可发布 ${s.publishable} · 待人工审核 ${s.awaitingReview} · 需同步 ${s.staleArticles}\n来源 ${s.verifiedSources}/${s.sources} 已核验 · 事实 ${s.verifiedClaims}/${s.claims} 已核验\n`);
     } else console.log(`影响范围：${result.claims.length} 个事实、${result.articles.length} 篇语言稿（包括同主题译文）。\n`);
+    if (mode === 'impact' && result.entityPages.length) console.log(`资料页影响：${result.entityPages.join('、')}`);
     console.table(result.articles.map((article) => ({
       主题: article.contentId, 语言: article.locale, 状态: article.translationStatus,
       原稿: article.sourceRevision, 译自: article.translatedFromRevision ?? '—',
