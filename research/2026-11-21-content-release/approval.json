@@ -1,0 +1,336 @@
+{
+  "date": "2026-11-21",
+  "authorization": "需要审核的内容均已审核通过，发布所有开发的内容到线上，上线后做好线上验证",
+  "reviewer": "项目负责人（会话确认）",
+  "scope": "本批18篇语言稿的当前正文及译文；不将未知游戏规则、缺少正文的实体详情或待核验兑换码改为已核实",
+  "articles": [
+    {
+      "file": "src/content/guides/ja/banner-rules.md",
+      "contentId": "banner-rules",
+      "locale": "ja",
+      "sourceRevision": 6,
+      "translatedFromRevision": 6,
+      "claimRevisions": {
+        "cn-banner-rules-system": 2,
+        "jp-banner-rules-system": 1,
+        "cn-rewards-conditions": 1,
+        "jp-replay-rule-coverage": 1
+      },
+      "sha256": "5806efa8455b14a97f426c088ff50a630c6ea6207790f8d0ab706bbf103d8b16"
+    },
+    {
+      "file": "src/content/guides/ja/download.md",
+      "contentId": "download",
+      "locale": "ja",
+      "sourceRevision": 9,
+      "translatedFromRevision": 9,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-ios-store": 2,
+        "cn-platform-details": 1,
+        "cn-preload-status": 4,
+        "cn-test-client-history": 1,
+        "jp-release-status": 2,
+        "cn-ios-compatibility": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 1,
+        "jp-preload-status": 4,
+        "cn-opening-time": 3,
+        "jp-opening-time": 1
+      },
+      "sha256": "ec8c5ac724e0e1cdca818768ba37f9a9c538a2d5ac168c41d1f7d4bbb18f9c4c"
+    },
+    {
+      "file": "src/content/guides/ja/getting-started.md",
+      "contentId": "getting-started",
+      "locale": "ja",
+      "sourceRevision": 8,
+      "translatedFromRevision": 8,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "jp-official-entry": 1,
+        "jp-preload-status": 4,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1
+      },
+      "sha256": "225d98a6409a13b4ca425402225e01e1fb1854930548bbcbbaecd1ea65b8656e"
+    },
+    {
+      "file": "src/content/guides/ja/global-release.md",
+      "contentId": "global-release",
+      "locale": "ja",
+      "sourceRevision": 8,
+      "translatedFromRevision": 8,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-ios-store": 2,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "tc-official-announcement": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4,
+        "jp-preload-status": 4
+      },
+      "sha256": "e3cc00022e7e8c19774d34c6927a3f2c9ebc28613a096035206ae192be7d2abf"
+    },
+    {
+      "file": "src/content/guides/ja/home.md",
+      "contentId": "home",
+      "locale": "ja",
+      "sourceRevision": 2,
+      "translatedFromRevision": 2,
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sha256": "5da1c5a2d82a4b501fd1febe39e26ca2375992d137534feb0b9c702daa1c4d26"
+    },
+    {
+      "file": "src/content/guides/ja/kibo-guide.md",
+      "contentId": "kibo-guide",
+      "locale": "ja",
+      "sourceRevision": 3,
+      "translatedFromRevision": 3,
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sha256": "ea6e7ae7c6f11f2dcab00addac793cd5d0fa8edabe93e3515efbc82fc7d2f130"
+    },
+    {
+      "file": "src/content/guides/ja/launch.md",
+      "contentId": "launch",
+      "locale": "ja",
+      "sourceRevision": 8,
+      "translatedFromRevision": 8,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "jp-official-entry": 1,
+        "jp-preload-status": 4,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4
+      },
+      "sha256": "a40bf6cedb87da70d01f2339c4517c41b23622ef24e7acae1b6d36c66084bf93"
+    },
+    {
+      "file": "src/content/guides/ja/platforms.md",
+      "contentId": "platforms",
+      "locale": "ja",
+      "sourceRevision": 8,
+      "translatedFromRevision": 8,
+      "claimRevisions": {
+        "cn-ios-store": 2,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 1,
+        "jp-release-status": 2,
+        "cn-launch-date": 2,
+        "cn-preload-status": 4,
+        "cn-test-client-history": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 1,
+        "jp-preload-status": 4,
+        "cn-opening-time": 3,
+        "jp-opening-time": 1
+      },
+      "sha256": "a994f7c358a5ce390f25e95003f1a376727d8260c826f61444242463ac22b324"
+    },
+    {
+      "file": "src/content/guides/ja/resources.md",
+      "contentId": "resources",
+      "locale": "ja",
+      "sourceRevision": 6,
+      "translatedFromRevision": 6,
+      "claimRevisions": {
+        "cn-opening-rewards-resource": 2,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-benefit-preview-milestones": 1
+      },
+      "sha256": "04379f04ae5193875f887a6656738655546a9f34a94da6de57718532ce56b9c2"
+    },
+    {
+      "file": "src/content/guides/zh-hans/banner-rules.md",
+      "contentId": "banner-rules",
+      "locale": "zh-hans",
+      "sourceRevision": 6,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-banner-rules-system": 2,
+        "jp-banner-rules-system": 1,
+        "cn-rewards-conditions": 1,
+        "jp-replay-rule-coverage": 1
+      },
+      "sha256": "70b2e6d88abc8f38ba0d2c02e7caf093d3a18a0e23a6729859bd1a4aa3f14aa9"
+    },
+    {
+      "file": "src/content/guides/zh-hans/download.md",
+      "contentId": "download",
+      "locale": "zh-hans",
+      "sourceRevision": 9,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-ios-store": 2,
+        "cn-platform-details": 1,
+        "cn-preload-status": 4,
+        "cn-test-client-history": 1,
+        "jp-release-status": 2,
+        "cn-ios-compatibility": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 1,
+        "jp-preload-status": 4,
+        "cn-opening-time": 3,
+        "jp-opening-time": 1
+      },
+      "sha256": "6c91a65bab7ea34af493e3d3ddbe5ced2389fbb177179f3096d9322a8c55e5e6"
+    },
+    {
+      "file": "src/content/guides/zh-hans/getting-started.md",
+      "contentId": "getting-started",
+      "locale": "zh-hans",
+      "sourceRevision": 8,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "jp-official-entry": 1,
+        "jp-preload-status": 4,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1
+      },
+      "sha256": "5eb9ccb8bde7f7157f6b33c9065443fd9f05524052376af79c4e8b062e412ebb"
+    },
+    {
+      "file": "src/content/guides/zh-hans/global-release.md",
+      "contentId": "global-release",
+      "locale": "zh-hans",
+      "sourceRevision": 8,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-ios-store": 2,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "tc-official-announcement": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4,
+        "jp-preload-status": 4
+      },
+      "sha256": "b4ae2dcef43ad76068c82a563f982d1b389c08d8ddd15e5d50924739d2d3b36c"
+    },
+    {
+      "file": "src/content/guides/zh-hans/home.md",
+      "contentId": "home",
+      "locale": "zh-hans",
+      "sourceRevision": 2,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sha256": "227547615a02b00343a56cdbba414bbe9b76853f16c378841ea55f696ed1d29b"
+    },
+    {
+      "file": "src/content/guides/zh-hans/kibo-guide.md",
+      "contentId": "kibo-guide",
+      "locale": "zh-hans",
+      "sourceRevision": 3,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sha256": "5c064436e3179762e6c0cac9173b5ecad0655cdd87069e11565da32263b12e2d"
+    },
+    {
+      "file": "src/content/guides/zh-hans/launch.md",
+      "contentId": "launch",
+      "locale": "zh-hans",
+      "sourceRevision": 8,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 3,
+        "jp-release-status": 2,
+        "jp-official-entry": 1,
+        "jp-preload-status": 4,
+        "jp-opening-time": 1,
+        "cn-preload-status": 4
+      },
+      "sha256": "7c79084e71d8f108e89debbe1cad489e80887175832a44fd4a0bd54c204dec4e"
+    },
+    {
+      "file": "src/content/guides/zh-hans/platforms.md",
+      "contentId": "platforms",
+      "locale": "zh-hans",
+      "sourceRevision": 8,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-ios-store": 2,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 1,
+        "jp-release-status": 2,
+        "cn-launch-date": 2,
+        "cn-preload-status": 4,
+        "cn-test-client-history": 1,
+        "jp-official-entry": 1,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 1,
+        "jp-preload-status": 4,
+        "cn-opening-time": 3,
+        "jp-opening-time": 1
+      },
+      "sha256": "ec87588a29af4bf962e5a20811e558ec55934d893ca4b96b182b3088b3bb9f28"
+    },
+    {
+      "file": "src/content/guides/zh-hans/resources.md",
+      "contentId": "resources",
+      "locale": "zh-hans",
+      "sourceRevision": 6,
+      "translatedFromRevision": null,
+      "claimRevisions": {
+        "cn-opening-rewards-resource": 2,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-benefit-preview-milestones": 1
+      },
+      "sha256": "ca5901f4584e9e91c70df93c72e358c5132a5125450c8bac7230b874328e19a5"
+    }
+  ]
+}

@@ -11,18 +11,20 @@ updatedAt: "2026-11-21"
 gameVersion: "正式配信前／2026-11-21 両地域イベント規約を照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
-status: "draft"
+status: "published"
 sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
 sourceRevision: 8
-translationStatus: "draft"
+translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["global-release","download","getting-started"]
 order: 1
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"},{"date":"2026-11-20","note":"公式特別番組に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日11:00 JST）を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"},{"date":"2026-11-20","note":"公式特別番組に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日11:00 JST）を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
 translatedFromRevision: 8
 claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status"]
 claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4}
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-21"
 ---
 
 ## 地域を選んでから日程を確認

@@ -11,18 +11,20 @@ updatedAt: "2026-11-21"
 gameVersion: "正式配信前／操作手順は正式版で確認予定"
 gameRegion: "中国本土・日本（地域別明記）"
 verification: "editorial"
-status: "draft"
+status: "published"
 sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
 sourceRevision: 3
-translationStatus: "draft"
+translationStatus: "published"
 aliases: ["奇波获取","キボ 入手","キボ 育成"]
 related: ["getting-started","resources","home"]
 order: 13
 minutes: 7
-revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
 claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
 claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
 translatedFromRevision: 3
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-21"
 ---
 
 ## Web特典とゲーム内入手を分ける

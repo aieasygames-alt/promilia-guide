@@ -11,18 +11,20 @@ updatedAt: "2026-11-21"
 gameVersion: "正式版の個別条件は確認中"
 gameRegion: "中国本土・日本（地域別明記）"
 verification: "official"
-status: "draft"
+status: "published"
 sourceRefs: ["cn-launch-benefits-2026-11-20","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","jp-contact-instructions-2026-11-21"]
 sourceRevision: 6
-translationStatus: "draft"
+translationStatus: "published"
 translatedFromRevision: 6
 aliases: ["リソース計画","スタミナ優先度","行動力配分","序盤攻略","配布報酬","星原石","純粋な記憶の痕跡","初心者注意点"]
 related: ["getting-started","banner-rules","reroll","redeem-codes","home","kibo-guide"]
 order: 8
 minutes: 13
-revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番と3000万人登録達成報酬を反映し、初日配布リソース・スタミナ優先度・注意点ガイドをまとめて正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番と3000万人登録達成報酬を反映し、初日配布リソース・スタミナ優先度・注意点ガイドをまとめて正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
 claimRefs: ["cn-opening-rewards-resource","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-benefit-preview-milestones"]
 claimRevisions: {"cn-opening-rewards-resource":2,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-benefit-preview-milestones":1}
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-21"
 ---
 
 ## 地域と受取条件から確認する

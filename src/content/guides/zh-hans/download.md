@@ -11,17 +11,19 @@ updatedAt: "2026-11-21"
 gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
-status: "draft"
+status: "published"
 sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21"]
 sourceRevision: 9
-translationStatus: "draft"
+translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["platforms","requirements","getting-started"]
 order: 3
 minutes: 6
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载将于11月24日开放，更新预下载核验状态与日程说明。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载将于11月24日开放，更新预下载核验状态与日程说明。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
 claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
 claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":4,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-21"
 ---
 
 ## 先在速查中选择地区与设备

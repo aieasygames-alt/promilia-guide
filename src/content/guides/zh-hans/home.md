@@ -11,17 +11,19 @@ updatedAt: "2026-11-21"
 gameVersion: "公测前 / 操作流程待正式版验证"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
-status: "draft"
+status: "published"
 sourceRefs: ["cn-launch-benefits-images-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
 sourceRevision: 2
-translationStatus: "draft"
+translationStatus: "published"
 aliases: ["家园","ホーム","派遣"]
 related: ["getting-started","resources","kibo-guide"]
 order: 12
 minutes: 8
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"}]
+revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
 claimRefs: ["cn-rewards-conditions","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
 claimRevisions: {"cn-rewards-conditions":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-21"
 ---
 
 ## 家园先解决哪一个问题
