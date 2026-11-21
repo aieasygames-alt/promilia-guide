@@ -104,3 +104,8 @@ Cloudflare Pages 生产部署 ID 为 `f33aa3cd-2de1-4ce5-9905-87f0fb8e9805`，�
    - `npm run check`：69 个文件，0 错误、0 警告。
    - 单元测试：39/39 项测试全部通过。
    - 正式构建：66 个 HTML 静态页面，Pagefind 索引 52 个主体页面，无 broken links，静态发布准备就绪。
+5. **线上部署与全量验收**：
+   - 代码推送至 `main`（Commit: `879412ff57b76cb4628fbdc4b66a2713cf66db43`）。
+   - Cloudflare Pages 自动完成生产构建并实时生效，主域名 `https://promiliaguide.com/build-info.json` 确认匹配该 SHA 与 22 篇全部文章。
+   - 执行 `scripts/verify-site.mjs` 针对正式线上环境验收：**74/74 项检查全部通过（PASS）**。覆盖 22 篇双语文章、更新页、双语首页、Sitemap、Robots、Pagefind 索引包、工作台严格 404 隔离及 5 条别名/HTTP 301 永久重定向。
+   - 执行 `scripts/submit-indexnow.mjs`：向 IndexNow / Bing 成功推送全站 61 个有效 URL，均返回 HTTP 200 确认收录队列。
