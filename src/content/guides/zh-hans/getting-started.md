@@ -12,24 +12,24 @@ gameVersion: "公测前 / 2026-11-21 规则核对，正式路线待验证"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 6
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 7
 translationStatus: "draft"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["launch","requirements","combat","resources","banner-rules","home","kibo-guide"]
 order: 6
 minutes: 7
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"}]
 checklist: [{"id":"region","text":"确认目标地区、服务器与账号渠道"},{"id":"announcement","text":"保存对应地区的原始发行公告"},{"id":"device","text":"核对设备、系统与可用空间"},{"id":"download","text":"确认官方客户端下载入口"},{"id":"account","text":"核对账号与恢复方式，妥善保管凭证"},{"id":"rules","text":"阅读当期奖励、资源与卡池规则"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":3,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1}
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
 ---
 
 ## 先完成能确认的准备
 
 先选择目标地区、设备和账号渠道，保存官方入口，再核对客户端、服务器和奖励。国服与日本有独立日期证据；开服小时继续看各自最新公告。准备清单是记录工具，不代表获得安装权限或奖励。
 
-日本官方网页活动已列出11月24日16:00（日本时间，北京时间15:00）的预下载计划。它不等于现在已开放，也不能套给国服或代替各平台安装器。
+国服活动规则列出11月24日15:00（UTC+8），日本活动规则列出同日16:00（日本时间）的预下载计划。两地各有原文；具体设备安装器与实际开放另核。
 
 ## 六项任务怎样算完成
 
@@ -37,7 +37,7 @@ claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"j
 2. 公告：保存该地区的原始日期与预下载说明；开服小时及其时区单独核对。
 3. 设备：记录型号、系统和可用空间，对照[设备准备](/zh-hans/guides/requirements/)，不把商店包体当完整占用。
 4. 下载：用[地区与设备速查](/zh-hans/guides/download/)找官方入口，区分预约、预下载与已可安装。
-5. 账号：确认登录与恢复方式。日本巢穴探索奖励绑定参加Yostar ID最初创建的角色；重开前先读具体活动规则。
+5. 账号：确认登录与恢复方式。国服巢穴探索奖励绑定参加蛮啾通行证下首个角色，日本绑定参加Yostar ID最初创建角色；先核对账号，再创角或重开。
 6. 规则：阅读奖励条件和目标池条款。七日签到、等级奖励和主线奖励分别记录，不把总量当登录即领。
 
 清单进度保存在当前浏览器，同篇中日文共享任务编号。清除数据、更换设备或隐私模式可能丢失记录；保存失败会提示。它不会替你预约、登录或核验事实。

@@ -429,13 +429,55 @@
     "gameVersion": "正式发行前网页活动规则",
     "gameRegion": "日本",
     "status": "verified",
-    "note": "由日本官网进入活动页，未登录读取イベントルール；预下载计划不等于当前已开放或全部平台均可安装。",
+    "note": "由日本官网进入活动页，未登录读取イベントルール；本轮复读完整任务、奖励清单与助力计数，原日程/绑定未变。预下载计划不等于当前已开放或全部平台均可安装。",
     "excerpt": "2026年11月20日21:00～2026年12月31日13:00（日本時間）。2026年11月24日16:00（日本時間）の事前ダウンロード開始後は、任務②と⑥に参加できるようになり、任務①には参加できなくなります。探索報酬はイベントに参加したYostar IDで最初に作成したゲームキャラクターに配布。",
-    "evidenceFile": "research/2026-11-21-content-implementation/evidence.md",
+    "evidenceFile": "research/2026-11-21-next-round/evidence.md",
     "localized": {
       "ja": {
         "title": "日本公式「集まれ！キボの巣穴探索」イベントルール",
         "note": "イベント期間、11月24日16時の事前DL予定、参加Yostar IDで最初に作成したキャラへの配布を確認。現在のインストール可否や他地域の根拠にはしません。"
+      }
+    }
+  },
+  {
+    "id": "cn-kibo-adventure-rules-2026-11-21",
+    "title": "国服官方：集结，勇闯奇波巢穴活动规则",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-21",
+    "gameVersion": "公测前网页活动",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "2026年11月24日15:00（UTC+8）开启游戏预下载后星临者可以参与任务②至⑥，无法再参与任务①。探索奖励将默认发放至参与活动的蛮啾通行证账号下首个创建的游戏角色；游戏首次登录后的365个自然日之内领取。",
+    "note": "从官网点击「集结，勇闯奇波巢穴」后读取「活动规则」，未登录或参与。国服原文写②至⑥，日本原文仅写②和⑥；保留差异，不据此推断当前③至⑤不可参加。预下载计划不证明已开放或全设备安装器可用。",
+    "evidenceFile": "research/2026-11-21-next-round/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：キボの巣穴探索イベント規約",
+        "note": "公式トップの「集结，勇闯奇波巢穴」→「活动规则」で確認。11月24日15時（UTC+8）の事前DL予定、参加した蛮啾通行证の最初のキャラへの配布を記録。機種別配布や日本向けの根拠にはしません。"
+      }
+    }
+  },
+  {
+    "id": "jp-contact-instructions-2026-11-21",
+    "title": "日本官方FAQ・お問い合わせ：联系与邮件接收说明",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/contact",
+    "publishedAt": null,
+    "checkedAt": "2026-11-21",
+    "gameVersion": "正式发行前客服页面",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "お問い合わせは日本語で受け付けております。ドメイン指定受信を設定している場合「@azurpromilia.jp」のドメインからのメールの受信を許可に設定してください。お電話でのサポートは行っておりません。",
+    "note": "只读取公开页面；没有填写、选择联系类别或发送表单。页面未提供可用于确认卡池、互通或客户端配置的实质FAQ。",
+    "evidenceFile": "research/2026-11-21-next-round/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式FAQ・お問い合わせの受付案内",
+        "note": "日本語での受付と受信設定を確認。問い合わせの送信や個人情報の入力はしていません。ガチャ・データ共有・動作環境の根拠には使用しません。"
       }
     }
   }

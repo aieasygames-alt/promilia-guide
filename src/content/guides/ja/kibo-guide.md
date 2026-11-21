@@ -12,17 +12,17 @@ gameVersion: "正式配信前／操作手順は正式版で確認予定"
 gameRegion: "中国本土・日本（地域別明記）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 1
+sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 2
 translationStatus: "draft"
 aliases: ["奇波获取","キボ 入手","キボ 育成"]
 related: ["getting-started","resources","home"]
 order: 13
 minutes: 6
-revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1}
-translatedFromRevision: 1
+revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
+claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
+claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
+translatedFromRevision: 2
 ---
 
 ## Web特典とゲーム内入手を分ける
@@ -35,6 +35,7 @@ translatedFromRevision: 1
 | --- | --- | --- |
 | 中国本土の予約・SNS達成報酬 | 星彩·浮云 | 中国本土画像にログイン受取と記載。入口・期限は別途確認 |
 | 中国本土のログイン特典 | 星彩·耶罗达 | 画像に入手を記載。配布時の色は実際の案内による |
+| 中国本土の巣穴探索 | 星彩·小星喵 | 探索報酬の一つ。参加した蛮啾通行证の最初のキャラへメール配布 |
 | 日本の巣穴探索 | 星彩・キラミィ | 探索報酬の一つ。参加Yostar IDで最初に作ったキャラへメール配布 |
 
 地域別名称を自動的に同一個体へ統合せず、野外捕獲も同時に可能だとは判断しません。日本イベントは12月31日13:00まで（日本時間）。獲得済み探索報酬はゲームへの初回ログインから365日以内に受け取ります。任務切替と協力条件は[報酬案内](/ja/guides/resources/)へ。

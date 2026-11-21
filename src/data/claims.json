@@ -322,25 +322,25 @@
   },
   {
     "id": "cn-preload-status",
-    "revision": 3,
-    "text": "中国大陆公测预下载计划与开放状态待重新核验。",
+    "revision": 4,
+    "text": "国服官网巢穴探索规则列出预下载计划：2026年11月24日15:00（UTC+8）。",
     "localized": {
       "zh-hans": {
-        "summary": "中国大陆公测预下载计划与开放状态待重新核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "国服预下载计划为2026年11月24日15:00（北京时间）。",
+        "detail": "依据国服巢穴探索活动规则；具体设备、当前安装器及实际开放另核，不作为开服小时。"
       },
       "ja": {
-        "summary": "中国本土の事前ダウンロード予定と配布状況は再確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "中国本土の事前ダウンロードは2026年11月24日15:00（UTC+8、日本時間16:00）の予定。",
+        "detail": "中国本土の巣穴探索イベント規約が根拠です。機種別の配布、現在のインストール可否、ゲーム開始時刻は別途確認します。"
       }
     },
     "sourceRefs": [
-      "cn-livestream-recap-2026-11-20"
+      "cn-kibo-adventure-rules-2026-11-21"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前瞻版本",
-    "verification": "pending",
+    "gameVersion": "公测前网页活动规则",
+    "verification": "verified",
     "affectedPages": [
       "download",
       "platforms",
@@ -349,7 +349,11 @@
       "getting-started"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-24",
+      "time": "15:00",
+      "timeZone": "Asia/Shanghai"
+    },
     "distributionScope": {
       "region": "cn",
       "release": "public-launch"
@@ -718,6 +722,35 @@
     "type": "official",
     "gameRegion": "日本",
     "gameVersion": "正式发行前网页活动",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-kibo-web-rewards",
+    "revision": 1,
+    "text": "国服巢穴探索活动至2026年12月31日12:00（UTC+8），奖励绑定参与蛮啾通行证账号下首个创建角色。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服巢穴探索活动至2026年12月31日12:00（北京时间），探索奖励发给参与账号首个创建的角色。",
+        "detail": "最多9次探索；探索背包保存，正式上线后经游戏邮件发放，首次登录游戏后365个自然日内领取。仅为本活动条款。"
+      },
+      "ja": {
+        "summary": "中国本土の巣穴探索は2026年12月31日12:00（UTC+8）まで。参加アカウントで最初に作成したキャラに探索報酬を配布。",
+        "detail": "最大9回。探索バッグに保管後、正式配信後にゲーム内メールで配布し、初回ログインから365暦日以内に受取。本イベントのみの規約です。"
+      }
+    },
+    "sourceRefs": [
+      "cn-kibo-adventure-rules-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前网页活动",
     "verification": "verified",
     "affectedPages": [
       "resources",

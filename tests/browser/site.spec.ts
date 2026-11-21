@@ -211,10 +211,14 @@ test('distribution filters keep unverified and historical clients out of actiona
     await matrix.locator('[data-platform-filter]').selectOption('ios');
     await expect(matrix.locator('[data-channel]:visible')).toHaveCount(1);
     await expect(matrix.locator('[data-channel="cn-ios"]')).toHaveAttribute('data-stage', 'reservation');
+    await expect(matrix.locator('[data-channel="cn-ios"] [data-preload-schedule] time')).toHaveAttribute('datetime', '2026-11-24T15:00:00+08:00');
+    await expect(matrix.locator('[data-channel="cn-ios"] [data-preload-schedule] a')).toHaveCount(0);
     await expect(matrix.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com\/cn\//);
     await matrix.locator('[data-platform-filter]').selectOption('android');
     await expect(matrix.locator('[data-channel]:visible')).toHaveCount(1);
     await expect(matrix.locator('[data-channel="cn-android"] .distribution-action')).toHaveCount(0);
+    await expect(matrix.locator('[data-channel="cn-android"] [data-preload-schedule] time')).toContainText('2026-11-24 15:00');
+    await expect(matrix.locator('[data-channel="cn-android"] [data-preload-schedule] a')).toHaveCount(0);
     await matrix.locator('[data-region-filter]').selectOption('jp');
     await expect(matrix.locator('[data-channel="jp-android"]')).toBeVisible();
     await expect(matrix.locator('[data-channel="jp-android"] time[datetime="2026-11-26"]')).toHaveText('2026-11-26');
@@ -243,7 +247,7 @@ test('distribution facts and links are available without JavaScript', async ({ b
     await expect(page.locator('[data-distribution-controls]')).toBeHidden();
     await expect(page.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com/);
     await page.locator('[data-distribution-evidence] summary').click();
-    await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'jp-publishing-2025-12-15', 'jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14', 'jp-kibo-adventure-rules-2026-11-21']);
+    await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'cn-kibo-adventure-rules-2026-11-21', 'jp-publishing-2025-12-15', 'jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14', 'jp-kibo-adventure-rules-2026-11-21']);
     await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
     await expect(page.locator('[data-channel="jp-pc"] .distribution-action')).toHaveCount(0);
     await page.setViewportSize({ width: 320, height: 900 });
@@ -276,7 +280,7 @@ test('distribution selection survives reload and language switching with dedupli
   await page.goto('/zh-hans/guides/download/?region=cn&platform=ios#distribution-title');
   await expect(page.locator('[data-channel]:visible')).toHaveCount(1);
   await page.locator('[data-distribution-evidence] summary').click();
-  await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14']);
+  await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'cn-kibo-adventure-rules-2026-11-21']);
   await expect(page.locator('.distribution-card .distribution-evidence')).toHaveCount(0);
   await page.reload();
   await expect(page.locator('[data-platform-filter]')).toHaveValue('ios');

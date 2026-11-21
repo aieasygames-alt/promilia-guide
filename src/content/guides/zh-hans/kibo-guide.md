@@ -12,16 +12,16 @@ gameVersion: "公测前 / 操作流程待正式版验证"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 1
+sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 2
 translationStatus: "draft"
 aliases: ["奇波获取","キボ 入手","キボ 育成"]
 related: ["getting-started","resources","home"]
 order: 13
 minutes: 6
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1}
+revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"}]
+claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
+claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
 ---
 
 ## 先分清活动领取与游戏内获取
@@ -34,6 +34,7 @@ claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1}
 | --- | --- | --- |
 | 国服预约及社媒里程碑 | 星彩·浮云 | 国服福利图列登录领取；具体入口和期限继续核对 |
 | 国服登录有礼 | 星彩·耶罗达 | 福利图列登录获得，发放颜色以实际为准 |
+| 国服巢穴探索活动 | 星彩·小星喵 | 探索奖励之一，参与蛮啾通行证账号下首个创建角色接收邮件 |
 | 日本巢穴探索活动 | 星彩・キラミィ | 活动探索奖励之一，参加Yostar ID最初创建角色接收邮件 |
 
 不同地区名称不在此自动合并为同一只，也不能推断活动获取与野外捕获会同时开放。日本活动至12月31日13:00（日本时间），初次登录游戏后365日内领取已获探索奖励；任务切换和邀请条件见[资源说明](/zh-hans/guides/resources/)。

@@ -12,25 +12,25 @@ gameVersion: "正式配信前／2026-11-21 規約照合、正式ルートは未�
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 6
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 7
 translationStatus: "draft"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["launch","requirements","combat","resources","banner-rules","home","kibo-guide"]
 order: 6
 minutes: 7
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"}]
-translatedFromRevision: 6
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
+translatedFromRevision: 7
 checklist: [{"id":"region","text":"対象地域・サーバー・アカウントを確認する"},{"id":"announcement","text":"対象地域の公式発表を保存する"},{"id":"device","text":"端末・OS・空き容量を確認する"},{"id":"download","text":"公式クライアントの配布先を確認する"},{"id":"account","text":"アカウントと復旧手段を確認し、情報を保管する"},{"id":"rules","text":"現在の報酬・資源・ガチャの規約を読む"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":3,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1}
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
 ---
 
 ## 地域と端末を決めてから準備する
 
 対象地域、端末、アカウントの利用先を決め、公式入口、クライアント、サーバー、報酬を順に確認します。中国本土と日本の日程には独立した根拠がありますが、ゲーム開始時刻は各地域の続報で確認してください。
 
-日本のWebイベント規約では、11月24日16:00（日本時間）の事前ダウンロードを予定しています。現在の配布開始、中国本土の予定、各端末のインストーラーとは別の情報です。
+中国本土の規約は11月24日15:00（UTC+8）、日本の規約は同日16:00（日本時間）の事前DLを記載しています。各地域の独立した根拠です。機種別の配布先と実際の開始は別途確認します。
 
 ## 6項目の完了条件
 
@@ -38,7 +38,7 @@ claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"j
 2. 告知：対象地域の配信日・事前DL原文を保存。ゲーム開始時刻とタイムゾーンは別途確認します。
 3. 端末：型番、OS、空き容量を記録し、[動作条件](/ja/guides/requirements/)と照合。ストア容量を全占有量としません。
 4. 配布先：[地域・端末別案内](/ja/guides/download/)で、登録、事前DL、実際のインストールを区別します。
-5. アカウント：ログイン・復旧方法を確認。日本の巣穴探索報酬は参加Yostar IDで最初に作成したキャラに配布されるため、作り直す前に規約を確認します。
+5. アカウント：ログイン・復旧方法を確認。中国本土の巣穴探索は参加した蛮啾通行证、日本は参加Yostar IDの最初のキャラに配布。ID確認後にキャラ作成・作り直しを判断します。
 6. 規約：報酬と対象ガチャの説明を読みます。7日間ログイン、レベル、メイン任務を別々に記録してください。
 
 チェックリストは現在のブラウザーに保存され、同じ記事の中国語・日本語で項目IDを共有します。データ削除、別端末、プライベートモードでは失われる場合があります。登録やログイン、事実確認を代行する機能ではありません。

@@ -1,0 +1,72 @@
+{
+  "asOf": "2026-11-21",
+  "version": "prelaunch",
+  "items": [
+    {
+      "id": "R01",
+      "priority": "P0",
+      "topic": "网页探索奖励领取",
+      "regions": ["cn", "jp"],
+      "status": "rules-drafted-awaiting-review",
+      "evidence": ["cn-kibo-adventure-rules-2026-11-21", "jp-kibo-adventure-rules-2026-11-21"],
+      "implemented": ["六任务次数与总上限", "探索背包与首个角色绑定", "活动结束和365日领取区分", "完整探索奖励原名", "未到账分阶段排查"],
+      "missing": ["登录后各任务实际完成路径", "正式版邮件入口和到达时刻", "异常账号的真实客服处理"],
+      "nextAction": "正式服务可用后记录自有测试账号领取路径；不请求或保存玩家登录凭证"
+    },
+    {
+      "id": "R02",
+      "priority": "P0",
+      "topic": "国服登录签到、等级、主线奖励",
+      "regions": ["cn"],
+      "status": "partial-official-images",
+      "evidence": ["cn-launch-benefits-images-2026-11-21"],
+      "implemented": ["按八类来源分条件", "七日签到、月度2轮与一次性口径"],
+      "missing": ["各星识等级门槛", "逐任务完整前置", "补签和漏领奖励规则", "单项活动与邮件期限"],
+      "nextAction": "取得各活动完整原文或正式版界面后，逐行补门槛，不将网页探索365日推广"
+    },
+    {
+      "id": "R03",
+      "priority": "P0",
+      "topic": "完整正式卡池",
+      "regions": ["cn", "jp"],
+      "status": "awaiting-primary-rules",
+      "evidence": [],
+      "implemented": ["票券区别", "逐池规则核验", "切池、提前获取、到期和自选记录示例"],
+      "missing": ["卡池完整名称与期限", "票券适用及兑换率", "基础与综合概率", "保底与重置", "共享计数与跨期例外", "自选候选及期限"],
+      "nextAction": "每地区独立取得完整概率/详情原文；历史三测和搜索摘要仅作线索"
+    },
+    {
+      "id": "R04",
+      "priority": "P0",
+      "topic": "预下载计划",
+      "regions": ["cn", "jp"],
+      "status": "official-plan-drafted-awaiting-review",
+      "evidence": ["cn-kibo-adventure-rules-2026-11-21", "jp-kibo-adventure-rules-2026-11-21"],
+      "implemented": ["国服11/24 15:00 Asia/Shanghai", "日本11/24 16:00 Asia/Tokyo", "共享事实与五主题双语同步", "无安装器链接时不产生预下载按钮"],
+      "missing": ["各设备实际开放"],
+      "nextAction": "在正式分发出现时按设备验证真实入口；日期到来不自动标已开放"
+    },
+    {
+      "id": "R05",
+      "priority": "P0",
+      "topic": "客户端与登录条件",
+      "regions": ["cn", "jp"],
+      "status": "partial-entry-evidence",
+      "evidence": ["cn-official-home-2026-11-14", "jp-official-home-2026-11-14"],
+      "implemented": ["现有官方商店身份", "六阶段下载/登录排查表"],
+      "missing": ["国服PC/安卓与日本PC正式安装器", "正式系统与存储要求", "开服小时", "账号/渠道/进度/付费货币互通原文"],
+      "nextAction": "先核验公开原始分发说明，再按本人设备和账号验证，不猜安装器URL或登录错误含义"
+    },
+    {
+      "id": "R06",
+      "priority": "P1",
+      "topic": "正式版首日、家园与奇波",
+      "regions": ["cn", "jp"],
+      "status": "awaiting-release-observation",
+      "evidence": [],
+      "implemented": ["首日行动框架", "家园/奇波现有双语准备稿", "测试至公测差异登记表"],
+      "missing": ["实际任务链与解锁", "设施和岗位", "捕获路径", "成本和耗时", "完整日周周期与PvP可选性"],
+      "nextAction": "正式版取得可复核步骤后补充；不把旧测试和编辑框架记作实测"
+    }
+  ]
+}

@@ -8,20 +8,20 @@ description: "逐项确认平台支持、地区开放和账号互通，避免用
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-21"
-gameVersion: "公测前 / 2026-11-21 日本活动规则补核"
+gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "draft"
-sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 7
+sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 8
 translationStatus: "draft"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["requirements","download"]
 order: 4
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载（11-24）与公测开服（11-26）日程，更新平台事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载（11-24）与公测开服（11-26）日程，更新平台事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"}]
 claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":3,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
+claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":4,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
 ---
 
 ## 先区分地区与计划平台
@@ -59,10 +59,15 @@ claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details"
 
 国服 9 月「旅迹测试」仅面向获资格者，官方已公告 10 月 7 日结束。日本官网也保留过去 CBT 的入口。查资料时先看标题、日期、地区与版本，再判断适用范围。
 
-日本预下载时间由下节独立规则补核，具体设备分发仍须确认。国服正式预下载、国服PC/安卓与日本PC当前安装器继续待核。入口集中在[下载说明](/zh-hans/guides/download/)。
+两地预下载时间由下节各自规则补核；国服PC/安卓与日本PC当前安装器、具体设备分发仍须确认。入口集中在[下载说明](/zh-hans/guides/download/)。
 
-## 11月21日补核：日本预下载计划
+## 两地预下载计划分别有原文依据
 
-日本官方「集まれ！キボの巣穴探索」规则写明，预下载计划为2026年11月24日16:00（日本时间），即北京时间15:00。届时网页活动下载任务开放，预约任务停止。
+| 地区 | 原规则计划时刻 | 依据 |
+| --- | --- | --- |
+| 中国大陆 | 2026年11月24日15:00（UTC+8，北京时间） | 国服官网「集结，勇闯奇波巢穴」→「活动规则」 |
+| 日本 | 2026年11月24日16:00（日本时间，即北京时间15:00） | 日本「集まれ！キボの巣穴探索」→「イベントルール」 |
 
-这是日本地区的计划依据，不能作为当前已安装、所有设备同时开放或服务器开服小时的证明。进入日本官网核对届时的设备分发；国服另查自己的公告。活动奖励的截止与角色绑定见[资源说明](/zh-hans/guides/resources/)。
+两行来自各自地区原文。计划时间不证明当前已开放、所有设备同时可安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
+
+具体设备入口以对应地区届时分发为准。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
