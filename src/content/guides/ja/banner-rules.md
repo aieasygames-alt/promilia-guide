@@ -12,17 +12,17 @@ gameVersion: "正式版の個別条件は確認中"
 gameRegion: "中国本土・日本（地域別明記）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["project-roadmap-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 5
+sourceRefs: ["project-roadmap-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","jp-release-special-2026-11-20"]
+sourceRevision: 6
 translationStatus: "draft"
-translatedFromRevision: 5
+translatedFromRevision: 6
 aliases: ["ガチャ仕様","天井","アズールプロミリア ガチャ","すり抜けなし","星5選択","天井引き継ぎ","80連確定"]
 related: ["resources","reroll","getting-started"]
 order: 9
-minutes: 7
-revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番に基づきガチャ仕様（80連限定すり抜けなし、霊質60連天井、初心者ガチャ、星5選択箱）を確認し正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
-claimRefs: ["cn-banner-rules-system","jp-banner-rules-system","cn-rewards-conditions"]
-claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewards-conditions":1}
+minutes: 8
+revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番に基づきガチャ仕様（80連限定すり抜けなし、霊質60連天井、初心者ガチャ、星5選択箱）を確認し正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+claimRefs: ["cn-banner-rules-system","jp-banner-rules-system","cn-rewards-conditions","jp-replay-rule-coverage"]
+claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewards-conditions":1,"jp-replay-rule-coverage":1}
 ---
 
 ## アイテムと対象ガチャを照合する
@@ -30,6 +30,15 @@ claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewar
 中国本土の特典画像には「纯粹忆痕」「璀璨忆痕」「析光忆痕」「秘虹晶」が別名で記載されています。名称と数量は画像で確認できますが、色や配布総数だけでは使えるガチャを確定できません。
 
 今回も、中国本土・日本の全正式ガチャについて確率、天井、引き継ぎを確認できる原文はそろっていません。以前の80回確定、装備60回、新規割引、永久引き継ぎなど、照合できない数値は予算計算に使いません。
+
+## 地域別の資料はどこまでそろったか
+
+| 対象 | 得られた資料 | 完全な規約に必要なもの |
+| --- | --- | --- |
+| 中国本土 | 特典画像のアイテム名。今回は公式ニュース一覧3ページを確認 | 中国本土の正式なガチャ詳細・確率原文。過去のテスト版案内で代用しない |
+| 日本 | [公式配信](https://www.youtube.com/watch?v=W9lqk5hI2VI&t=4612s)の説明文と自動字幕。1:16:52～1:19:22に限定キャラ・限定アニマ・恒常キャラ・恒常アニマ・初心者の5種類を説明 | 正式名称、候補、期間、全確率、リセットの例外。字幕の数値も画面との照合が必要 |
+
+今回の環境では字幕は読めましたが、映像は再生できませんでした。自動認識には固有名や日付の明らかな誤りがあるため、数値を確認済みの天井や予算へ戻しません。説明文にはYostar公開用の編集版で一部がオリジナルと異なるとあり、中国本土の仕様の根拠にはできません。
 
 ## 消費前の3段階
 

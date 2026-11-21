@@ -13,16 +13,16 @@ gameRegion: "中国本土・日本（地域別明記）"
 verification: "official"
 status: "draft"
 sourceRefs: ["cn-launch-benefits-2026-11-20","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","jp-contact-instructions-2026-11-21"]
-sourceRevision: 5
+sourceRevision: 6
 translationStatus: "draft"
-translatedFromRevision: 5
+translatedFromRevision: 6
 aliases: ["リソース計画","スタミナ優先度","行動力配分","序盤攻略","配布報酬","星原石","純粋な記憶の痕跡","初心者注意点"]
 related: ["getting-started","banner-rules","reroll","redeem-codes","home","kibo-guide"]
 order: 8
-minutes: 12
-revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番と3000万人登録達成報酬を反映し、初日配布リソース・スタミナ優先度・注意点ガイドをまとめて正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
-claimRefs: ["cn-opening-rewards-resource","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
-claimRevisions: {"cn-opening-rewards-resource":2,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
+minutes: 13
+revisions: [{"date":"2026-11-14","note":"編集草稿を作成。ゲーム仕様と正式名称の確認待ち。"},{"date":"2026-11-20","note":"11月20日公式特番と3000万人登録達成報酬を反映し、初日配布リソース・スタミナ優先度・注意点ガイドをまとめて正式公開。"},{"date":"2026-11-21","note":"根拠を照合できない確定仕様を撤回し、確認範囲と判断条件へ再構成。以前の公開署名を再利用せず、本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"ユーザーが本会話で、再構成した中国語・日本語計8本の人手レビュー完了と公開を明示的に確認。現在の本文と未確認事項の明記を承認済みとして記録。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+claimRefs: ["cn-opening-rewards-resource","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-benefit-preview-milestones"]
+claimRevisions: {"cn-opening-rewards-resource":2,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-benefit-preview-milestones":1}
 ---
 
 ## 地域と受取条件から確認する
@@ -47,6 +47,18 @@ claimRevisions: {"cn-opening-rewards-resource":2,"cn-rewards-conditions":1,"jp-k
 | 新芽初萌之旅 | 纯粹忆痕合計×40 | メイン任務を進行・達成。ログインのみの報酬ではない |
 
 公式の「登录就送」の集計にも7日間サインインが含まれます。メールで受け取った数だけで全特典の受取不足を判断せず、未達成の条件と受取済みの項目を照合してください。
+
+## 特典プレビューで読める段階
+
+以下は中国本土の公式画像で明瞭に見える部分です。活動規約全体や、当サイトのアカウントで受け取った結果ではありません。
+
+| 中国語名 | 画像で確認した条件 | 未確認の内容 |
+| --- | --- | --- |
+| 星临旅记 | 2～7日目の璀璨忆痕は順に×1・×2・×1・×1・×1・×3。説明文は7日合計×10 | 1日目は受取済みマークで数量が隠れるため逆算しない。連続ログイン要否、取り逃し、開催・受取期限 |
+| 星光初拾 | 星識レベル10・20・30・40の段階が明瞭。下部は一部しか表示されていない | 全段階、各段階のアイテム・個数、追加前提。40を最終段階とはしない |
+| 新芽初萌之旅 | メイン任務の報酬4行に纯粹忆痕各×10。説明文は合計×40 | 各任務の正式名と前提。前提なしの受取とはしない |
+
+実画面では活動名を照合し、条件達成、受取可能、受取成功、所持数の増加を分けて確認します。宣伝画像内の受取済み・未サインイン表示は、自分のアカウントの進捗を示しません。
 
 ## 期間限定・月次交換・恒常を分ける
 

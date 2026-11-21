@@ -12,16 +12,16 @@ gameVersion: "正式版具体条件待核验"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["project-roadmap-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 5
+sourceRefs: ["project-roadmap-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","jp-release-special-2026-11-20"]
+sourceRevision: 6
 translationStatus: "draft"
 aliases: ["抽卡规则","保底机制","抽卡概率","80抽不歪","自选5星","保底继承","ガチャ仕様","天井","アズールプロミリア ガチャ"]
 related: ["resources","reroll","getting-started"]
 order: 9
-minutes: 7
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-20","note":"依据11·20公测前瞻特别节目核实公测卡池规则：80抽限定不歪、60抽灵质保底、新手池与自选箱，转为正式发布。"},{"date":"2026-11-21","note":"撤回无法复核的确定规则，按已知范围与判断条件重写；不沿用旧稿发布署名，新正文与译文待真实审核。"},{"date":"2026-11-21","note":"用户在本会话明确确认重写后的中日文共8篇内容已通过人工审核，并授权上线；记录当前正文及其已知／未知边界的审核通过状态。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"}]
-claimRefs: ["cn-banner-rules-system","jp-banner-rules-system","cn-rewards-conditions"]
-claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewards-conditions":1}
+minutes: 8
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-20","note":"依据11·20公测前瞻特别节目核实公测卡池规则：80抽限定不歪、60抽灵质保底、新手池与自选箱，转为正式发布。"},{"date":"2026-11-21","note":"撤回无法复核的确定规则，按已知范围与判断条件重写；不沿用旧稿发布署名，新正文与译文待真实审核。"},{"date":"2026-11-21","note":"用户在本会话明确确认重写后的中日文共8篇内容已通过人工审核，并授权上线；记录当前正文及其已知／未知边界的审核通过状态。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"}]
+claimRefs: ["cn-banner-rules-system","jp-banner-rules-system","cn-rewards-conditions","jp-replay-rule-coverage"]
+claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewards-conditions":1,"jp-replay-rule-coverage":1}
 ---
 
 ## 先确认道具，再确认目标卡池
@@ -29,6 +29,15 @@ claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-rewar
 国服福利配图已分别列出「纯粹忆痕」「璀璨忆痕」「析光忆痕」和「秘虹晶」。这些名称与数量可由配图核对，但图片不是完整卡池规则，不能只凭颜色或福利总量判断能否用于目标池。
 
 本轮仍未读到足以核实国服和日本全部正式卡池的概率、保底与继承原文。此前无法复核的80抽不歪、武器60抽、新手折扣或永久继承继续保留为未确认，不进入预算计算。
+
+## 两地卡池材料现在齐到哪一步
+
+| 地区 | 已取得材料 | 距离完整规则还缺什么 |
+| --- | --- | --- |
+| 国服 | 福利图中的道具名称；本次逐页检查官网3页资讯列表 | 同地区正式卡池详情与概率原文；旧旅迹测试安装说明不能补足 |
+| 日本 | [官方回放](https://www.youtube.com/watch?v=W9lqk5hI2VI&t=4612s)的说明与自动字幕；1:16:52–1:19:22讲解限定角色、限定アニマ、常驻角色、常驻アニマ、新手5类 | 逐池正式名称、候选、期限、完整概率和重置例外；字幕数值仍需画面核对 |
+
+日本回放目前能读取字幕，但本次浏览环境无法播放画面。自动识别存在明显的专名和日期错误，因此不把字幕中的数字恢复为已核实的保底，也不用于计算预算。节目说明还明确日本版本经过Yostar编辑、部分内容与原版不同，不能据此确认国服同规则。
 
 ## 消耗前完成三步检查
 

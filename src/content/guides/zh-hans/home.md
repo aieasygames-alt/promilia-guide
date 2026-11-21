@@ -12,16 +12,16 @@ gameVersion: "公测前 / 操作流程待正式版验证"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21"]
-sourceRevision: 1
+sourceRefs: ["cn-launch-benefits-images-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
+sourceRevision: 2
 translationStatus: "draft"
 aliases: ["家园","ホーム","派遣"]
 related: ["getting-started","resources","kibo-guide"]
 order: 12
-minutes: 6
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"}]
-claimRefs: ["cn-rewards-conditions"]
-claimRevisions: {"cn-rewards-conditions":1}
+minutes: 8
+revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"}]
+claimRefs: ["cn-rewards-conditions","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
+claimRevisions: {"cn-rewards-conditions":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
 ---
 
 ## 家园先解决哪一个问题
@@ -29,6 +29,21 @@ claimRevisions: {"cn-rewards-conditions":1}
 家园的解锁任务、设施操作和正式版岗位规则尚未完成核验。本页先帮助你区分奖励、产出与派遣条件，留下第一次解锁和生产记录；不提供未经验证的建筑顺序或“毕业”效率表。
 
 国服11月20日福利图把家园等级和家园商店列入“永久可取”，各列纯粹忆痕×8。这证明公告列了这些资源来源，不证明登录即送、商店免费、无限兑换或设施每小时能产出票券。日本地区另核。
+
+## 官方已经说明的家园玩法
+
+国服App Store的开发者介绍列出开垦土地、种植孵化和制作装备，并说明奇波可以入驻家园，协助种植、采集、制作与生产。这里确认的是玩法类别，具体设施名、投入与岗位能力仍需正式客户端核对；不表示每只奇波都能做所有工作。
+
+日本Google Play独立说明与「キボ」协作管理「農園」并战斗。本页日语标题暂沿用导航中的「ホーム」，讲解日本官方资料时保留「農園」；国服的工种清单不直接当作日本全部设施规则。
+
+| 想先体验什么 | 开放后先验证的一个结果 | 需要留下的依据 |
+| --- | --- | --- |
+| 开垦与种植 | 完成一次实际可用的种植并收取 | 解锁任务、种子/材料、开始与收取前后库存 |
+| 孵化 | 完成一次当前可用的孵化 | 蛋的来源、装置、成本、时间和结果 |
+| 装备制作 | 做出一件已解锁配方的装备 | 配方来源、材料消耗、制作与任务奖励分别记录 |
+| 奇波协作 | 对比一次分配前后的状态 | 个体能力、岗位要求、产出与停止提示 |
+
+以上是正式服可用后的验证目标，未填入虚构任务名或固定建造顺序。日本节目1:10:14起还有农园说明，但自动字幕尚未与画面对照，不据此补效率、交易价格或设施等级。
 
 ## 奖励与生产分开记录
 

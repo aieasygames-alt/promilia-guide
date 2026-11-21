@@ -12,18 +12,18 @@ gameVersion: "正式配信前／2026-11-21 規約照合、正式ルートは未�
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 7
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21"]
+sourceRevision: 8
 translationStatus: "draft"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["launch","requirements","combat","resources","banner-rules","home","kibo-guide"]
 order: 6
-minutes: 7
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
-translatedFromRevision: 7
+minutes: 8
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+translatedFromRevision: 8
 checklist: [{"id":"region","text":"対象地域・サーバー・アカウントを確認する"},{"id":"announcement","text":"対象地域の公式発表を保存する"},{"id":"device","text":"端末・OS・空き容量を確認する"},{"id":"download","text":"公式クライアントの配布先を確認する"},{"id":"account","text":"アカウントと復旧手段を確認し、情報を保管する"},{"id":"rules","text":"現在の報酬・資源・ガチャの規約を読む"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
+claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1}
 ---
 
 ## 地域と端末を決めてから準備する
@@ -57,6 +57,18 @@ claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"j
 | 6 | 終了前に次の任務と期限を残す | 次回すぐ再開できる。地図の全消化は求めない |
 
 ダウンロードやログインの異常は、インストール、追加リソース、サーバーに分けて確認。バージョン、エラー、時刻を記録し、原因不明のまま再インストールや退会、キャラ再作成を繰り返さないでください。
+
+## 正式版では3つの小さな完了結果から確認
+
+中国本土ストアは星结、栽培・孵化、装備製作、キボとの協力を紹介していますが、初日の解放順は記載していません。正式版では一つの結果を確認してからルートへ追記し、全機能が初日に開くとは仮定しません。
+
+| 目標 | 完了の判断 | 未解放の場合 |
+| --- | --- | --- |
+| 特典1件の受取 | 条件を満たし、受取成功と所持数増加を確認 | 活動名、条件、期限を[特典の段階](/ja/guides/resources/)に沿って記録 |
+| ホームで初回生産 | 前提を確認し、栽培または製作を一度終え受取 | ロック表示を残し、建築順を推測しない。[ホーム](/ja/systems/home/)へ |
+| キボ1体の実際の用途 | 入手元を記録し、探索・戦闘・配置の課題を一度解決 | 能力原文と停止条件を残す。Web報酬を野外入手の完了としない。[キボ](/ja/systems/kibo/)へ |
+
+本ページは配信前の準備稿です。任務名、地域差、クライアントのビルド、消費、時間を記録してから、再現可能な正式版の操作手順へ置き換えます。
 
 ## 時間が少ない場合の優先順位
 

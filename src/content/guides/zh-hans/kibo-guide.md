@@ -12,16 +12,16 @@ gameVersion: "公测前 / 操作流程待正式版验证"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 2
+sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
+sourceRevision: 3
 translationStatus: "draft"
 aliases: ["奇波获取","キボ 入手","キボ 育成"]
 related: ["getting-started","resources","home"]
 order: 13
-minutes: 6
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
+minutes: 7
+revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"}]
+claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
+claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
 ---
 
 ## 先分清活动领取与游戏内获取
@@ -38,6 +38,14 @@ claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-
 | 日本巢穴探索活动 | 星彩・キラミィ | 活动探索奖励之一，参加Yostar ID最初创建角色接收邮件 |
 
 不同地区名称不在此自动合并为同一只，也不能推断活动获取与野外捕获会同时开放。日本活动至12月31日13:00（日本时间），初次登录游戏后365日内领取已获探索奖励；任务切换和邀请条件见[资源说明](/zh-hans/guides/resources/)。
+
+## 已确认的伙伴关系与用途
+
+国服开发者商店介绍把与奇波相互认可、建立伙伴关系称为「星结」，并说明伙伴可参与探索、对敌和家园协作。家园明确列出的协作类别为种植、采集、制作与生产；不能按类别介绍推定某一只奇波的具体适性。
+
+日本Google Play也独立说明与キボ结缘、共同管理農園和战斗。日本节目52:42–54:06的自动字幕进一步出现卡片获取和蛋孵化线索，但道具专名、成功率、具体入口与必要条件仍待画面和正式版核对，本页暂不将其写成已跑通的捕获路线。
+
+因此，先把“网页奖励接收”“野外建立伙伴关系”“孵化”“家园分配”分别记录。国服商店提到孵化，不足以证明任意地图蛋的位置、孵化时长或日本同名操作。
 
 ## 先选用途，再比较能力
 

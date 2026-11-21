@@ -12,17 +12,17 @@ gameVersion: "正式配信前／操作手順は正式版で確認予定"
 gameRegion: "中国本土・日本（地域別明記）"
 verification: "editorial"
 status: "draft"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 2
+sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
+sourceRevision: 3
 translationStatus: "draft"
 aliases: ["奇波获取","キボ 入手","キボ 育成"]
 related: ["getting-started","resources","home"]
 order: 13
-minutes: 6
-revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1}
-translatedFromRevision: 2
+minutes: 7
+revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"}]
+claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
+claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
+translatedFromRevision: 3
 ---
 
 ## Web特典とゲーム内入手を分ける
@@ -39,6 +39,14 @@ translatedFromRevision: 2
 | 日本の巣穴探索 | 星彩・キラミィ | 探索報酬の一つ。参加Yostar IDで最初に作ったキャラへメール配布 |
 
 地域別名称を自動的に同一個体へ統合せず、野外捕獲も同時に可能だとは判断しません。日本イベントは12月31日13:00まで（日本時間）。獲得済み探索報酬はゲームへの初回ログインから365日以内に受け取ります。任務切替と協力条件は[報酬案内](/ja/guides/resources/)へ。
+
+## 確認できた絆と用途
+
+中国本土の開発元ストア説明では、キボと互いに認め合い仲間になる関係を「星结」と呼び、探索、敵との戦い、ホームでの協力を紹介しています。協力作業は栽培・採集・製作・生産。作業の種類から特定個体の適性までは判断できません。
+
+日本向けGoogle Playも、キボと絆を結び、農園を管理し、敵と戦うと説明しています。日本配信52:42～54:06の自動字幕にはカードで仲間にする方法や卵の孵化の手掛かりがありますが、名称・成功率・操作場所・前提は映像と正式版での照合待ちです。検証済みの捕獲ルートにはしません。
+
+Web報酬の受取、野外で仲間にする方法、孵化、農園への配置を分けて記録します。中国本土の孵化紹介だけで、卵の場所、所要時間、日本版の操作名を確定しないでください。
 
 ## 用途を選んで能力を比較する
 

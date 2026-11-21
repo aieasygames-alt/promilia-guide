@@ -480,5 +480,68 @@
         "note": "日本語での受付と受信設定を確認。問い合わせの送信や個人情報の入力はしていません。ガチャ・データ共有・動作環境の根拠には使用しません。"
       }
     }
+  },
+  {
+    "id": "cn-store-gameplay-2026-11-21",
+    "title": "中国区App Store：玩法介绍与当前客户端展示",
+    "publisher": "App Store / 开发者：蛮啾游戏",
+    "kind": "official-store",
+    "url": "https://apps.apple.com/cn/app/%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F-%E6%97%85%E8%B0%A3/id6754017631",
+    "publishedAt": null,
+    "checkedAt": "2026-11-21",
+    "gameVersion": "公测前 / 2026-11-21商店展示",
+    "gameRegion": "中国区App Store",
+    "status": "verified",
+    "note": "核对开发者介绍中的星结、家园和奇波协作类别；不是正式客户端实测。预计推出、展示包体与既有兼容记录复核一致，不刷新历史11/14记录或推定完整安装空间。",
+    "excerpt": "寻找可靠的伙伴，彼此认可进行星结；开垦土地、种植孵化和制作装备；奇波帮助进行种植、采集、制作与生产。预计2026年11月26日推出，大小3.9GB。",
+    "evidenceFile": "research/2026-11-21-formal-rules/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土App Store：遊び方と配信前の表示",
+        "note": "開発元の説明で星结、ホーム、キボの協力作業を確認。正式版の操作検証や必要な空き容量の根拠ではありません。"
+      }
+    }
+  },
+  {
+    "id": "jp-google-play-2026-11-21",
+    "title": "Google Play日本向け表示：アズールプロミリア再核",
+    "publisher": "Google Play / Yostar Limited.",
+    "kind": "official-store",
+    "url": "https://play.google.com/store/apps/details?id=com.Yostar.AzurpromiliaJP&hl=ja&gl=JP",
+    "publishedAt": null,
+    "checkedAt": "2026-11-21",
+    "gameVersion": "正式配信前 / 2026-11-21商店展示",
+    "gameRegion": "日本向けアプリ、日本語・日本向け表示指定",
+    "status": "verified",
+    "note": "公开页面与游戏介绍弹窗可读，最新更新日显示11/17；不改写11/14所见11/8历史记录。未见可确认安装按钮、Android最低OS、完整容量或构建号；语言/地区参数不证明个人账号有日本安装资格。",
+    "excerpt": "アズールプロミリア；Yostar Limited.；com.Yostar.AzurpromiliaJP；最終更新日2026/11/17；キボと絆を結び、協力して農園を管理し、世界を脅かす敵と戦い。",
+    "evidenceFile": "research/2026-11-21-formal-rules/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "Google Play：日本向け表示を再確認（11月21日）",
+        "note": "11月17日の更新表示とキボ・農園の説明を確認。更新日は配信開始日ではなく、今回の表示ではインストール、最低OS、全容量を確認できていません。"
+      }
+    }
+  },
+  {
+    "id": "jp-release-special-2026-11-20",
+    "title": "日本官方YouTube：リリース直前スペシャル！说明与自动字幕线索",
+    "publisher": "アズールプロミリア-Azur Promilia- / Manjuu・Yostar",
+    "kind": "official",
+    "url": "https://www.youtube.com/watch?v=W9lqk5hI2VI",
+    "publishedAt": "2026-11-20",
+    "checkedAt": "2026-11-21",
+    "gameVersion": "正式配信前 / 日本向け特別番組",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "已读官方频道、展开说明和页面自动字幕面板；播放器不可播放，字幕导出两次超时。verified仅指来源身份、说明和可见字幕记录，不代表自动识别数值、专名、期限已完成画面对照；相关卡池及开服事实继续pending。说明明确日本节目经过Yostar编辑，部分内容与原版不同，不用于推定国服规则。",
+    "excerpt": "特別番組はManjuu社制作のリリース記念特別番組を、Yostar公開用に編集した内容；一部パートでオリジナルの番組内容と異なる。页面字幕定位卡池1:16:52–1:19:22、农园1:10:14–1:11:55、开服3:11:52–3:12:31，数值待画面对照。",
+    "evidenceFile": "research/2026-11-21-formal-rules/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "公式YouTube：リリース直前スペシャル！説明文と自動字幕",
+        "note": "公式の説明と表示された自動字幕を記録。映像を再生できず、数値・固有名・期間は画面との照合待ちです。日本公開用の編集版であり、中国本土の仕様へ転用しません。"
+      }
+    }
   }
 ]
