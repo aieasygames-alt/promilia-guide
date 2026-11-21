@@ -1,5 +1,10 @@
 import { test, expect, type Page } from '@playwright/test';
 import { readFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
+
+// Compare the dashboard/export with the current report rather than a past review milestone.
+const editorialStatus = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'status', '--json'], { encoding: 'utf8' }));
+const releaseStatus = JSON.parse(execFileSync(process.execPath, ['scripts/check-release.mjs', '--json'], { encoding: 'utf8' }));
 
 async function expectEvidence(page: Page, ids: string[]) {
   const links = await page.locator('[data-evidence-channels]:visible > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
@@ -43,8 +48,10 @@ test('both languages fit narrow phones and tablet widths', async ({ page }) => {
   for (const width of [320, 768]) {
     await page.setViewportSize({ width, height: 900 });
     for (const locale of ['zh-hans', 'ja']) {
-      await page.goto(`/${locale}/`);
-      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${locale} at ${width}px`).toBe(true);
+      for (const path of ['', 'guides/resources/', 'guides/banner-rules/', 'guides/getting-started/', 'systems/home/', 'systems/kibo/']) {
+        await page.goto(`/${locale}/${path}`);
+        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${locale}/${path} at ${width}px`).toBe(true);
+      }
     }
   }
 });
@@ -168,7 +175,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await page.goto('/editorial/');
   await expect(page.locator('h1')).toHaveText('内容审核工作台');
   await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(22);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(editorialStatus.summary.articles);
   await page.locator('#impact-filter').selectOption('claim:cn-launch-date');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(14);
   const routes = await page.locator('[data-report-row]:visible').evaluateAll((rows) => rows.map((row) => row.getAttribute('data-route')));
@@ -179,16 +186,18 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await page.locator('#impact-filter').selectOption('content:launch');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
   await page.locator('#state-filter').selectOption('publishable');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
-  await expect(page.locator('#filtered-count')).toHaveText('显示 2 篇稿件');
+  const publishedLaunch = editorialStatus.articles.filter((article: { contentId: string; publishable: boolean }) => article.contentId === 'launch' && article.publishable).length;
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(publishedLaunch);
+  await expect(page.locator('#filtered-count')).toHaveText(`显示 ${publishedLaunch} 篇稿件`);
   await page.locator('#state-filter').selectOption('review');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(0);
+  const unreviewedLaunch = editorialStatus.articles.filter((article: { contentId: string; blockers: { code: string }[] }) => article.contentId === 'launch' && article.blockers.some(issue => issue.code === 'manual-review')).length;
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(unreviewedLaunch);
   const pending = page.waitForEvent('download');
   await page.getByRole('button', { name: '下载状态报告' }).click();
   const download = await pending;
   expect(download.suggestedFilename()).toMatch(/^promilia-editorial-status-\d{4}-\d{2}-\d{2}\.json$/);
   const result = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(result.summary).toMatchObject({ articles: 22, publishable: 22 });
+  expect(result.summary).toEqual(editorialStatus.summary);
   await page.setViewportSize({ width: 320, height: 900 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
@@ -208,7 +217,9 @@ test('distribution filters keep unverified and historical clients out of actiona
     await expect(matrix.locator('[data-channel="cn-android"] .distribution-action')).toHaveCount(0);
     await matrix.locator('[data-region-filter]').selectOption('jp');
     await expect(matrix.locator('[data-channel="jp-android"]')).toBeVisible();
-    await expect(matrix.locator('[data-channel="jp-android"] time')).toHaveText('2026-11-26');
+    await expect(matrix.locator('[data-channel="jp-android"] time[datetime="2026-11-26"]')).toHaveText('2026-11-26');
+    await expect(matrix.locator('[data-channel="jp-android"] [data-preload-schedule] time')).toContainText('2026-11-24 16:00');
+    await expect(matrix.locator('[data-channel="jp-android"] [data-preload-schedule] a')).toHaveCount(0);
     await expect(matrix.locator('[data-channel="jp-android"]')).toHaveAttribute('data-stage', 'reservation');
     await expect(matrix.locator('[data-channel="jp-android"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
     await matrix.locator('[data-platform-filter]').selectOption('pc');
@@ -232,7 +243,7 @@ test('distribution facts and links are available without JavaScript', async ({ b
     await expect(page.locator('[data-distribution-controls]')).toBeHidden();
     await expect(page.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com/);
     await page.locator('[data-distribution-evidence] summary').click();
-    await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'jp-publishing-2025-12-15', 'jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14']);
+    await expectEvidence(page, ['cn-launch-announcement-2026-10-23', 'cn-official-home-2026-11-14', 'cn-app-store-2026-11-14', 'jp-publishing-2025-12-15', 'jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14', 'jp-kibo-adventure-rules-2026-11-21']);
     await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
     await expect(page.locator('[data-channel="jp-pc"] .distribution-action')).toHaveCount(0);
     await page.setViewportSize({ width: 320, height: 900 });
@@ -241,19 +252,21 @@ test('distribution facts and links are available without JavaScript', async ({ b
   } finally { await context.close(); }
 });
 
-test('first release dashboard shows the ten reviewed articles and exports readiness', async ({ page }) => {
+test('first release dashboard reflects current review state and exports readiness', async ({ page }) => {
   await page.goto('/editorial/#release-readiness');
-  await expect(page.locator('[data-release-ready]')).toHaveAttribute('data-release-ready', 'true');
-  await expect(page.locator('[data-release-count]')).toHaveText('10 / 10');
-  await expect(page.locator('[data-release-article]')).toHaveCount(10);
+  await expect(page.locator('[data-release-ready]')).toHaveAttribute('data-release-ready', String(releaseStatus.ready));
+  await expect(page.locator('[data-release-count]')).toHaveText(`${releaseStatus.summary.ready} / ${releaseStatus.summary.required}`);
+  await expect(page.locator('[data-release-article]')).toHaveCount(releaseStatus.summary.required);
   const row = page.locator('[data-release-article="launch:ja"]');
   await row.locator('summary').click();
-  await expect(row).not.toContainText('缺少真实审核人与审核日期');
+  const launch = releaseStatus.articles.find((article: { contentId: string; locale: string }) => article.contentId === 'launch' && article.locale === 'ja');
+  if (launch.blockers.some((issue: { code: string }) => issue.code === 'manual-review')) await expect(row).toContainText('缺少真实审核人与审核日期');
+  else await expect(row).not.toContainText('缺少真实审核人与审核日期');
   const pending = page.waitForEvent('download');
   await page.getByRole('button', { name: '下载首发报告' }).click();
   const download = await pending;
   const report = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(report.summary).toMatchObject({ required: 10, ready: 10, missing: 0, awaitingReview: 0 });
+  expect(report.summary).toEqual(releaseStatus.summary);
   expect(report.validationIssues).toEqual([]);
   await page.setViewportSize({ width: 320, height: 900 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -273,7 +286,7 @@ test('distribution selection survives reload and language switching with dedupli
   await page.locator('[data-region-filter]').selectOption('jp');
   await expect(page).toHaveURL(/region=jp&platform=ios/);
   await page.locator('[data-distribution-evidence] summary').click();
-  await expectEvidence(page, ['jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14']);
+  await expectEvidence(page, ['jp-launch-announcement-2026-10-23', 'jp-official-home-2026-11-14', 'jp-pre-register-2026-11-14', 'jp-kibo-adventure-rules-2026-11-21']);
   await expect(page.locator('[data-no-evidence]')).toBeHidden();
   await page.goto('/zh-hans/guides/download/?region=unknown&platform=invalid');
   await expect(page.locator('[data-region-filter]')).toHaveValue('cn');

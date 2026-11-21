@@ -8,23 +8,21 @@ description: "対応端末、地域ごとの配信、データ共有を分けて
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-21"
-gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
+gameVersion: "正式配信前／2026-11-21 日本イベント規約を照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
-status: "published"
-sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15"]
-sourceRevision: 6
-translationStatus: "published"
+status: "draft"
+sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 7
+translationStatus: "draft"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["requirements","download"]
 order: 4
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、全プラットフォーム事前ダウンロード（11月24日）および配信日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"}]
-translatedFromRevision: 6
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、全プラットフォーム事前ダウンロード（11月24日）および配信日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"}]
+translatedFromRevision: 7
 claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":3,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":3,"cn-opening-time":3,"jp-opening-time":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":3,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
 ---
 
 ## 地域と対応予定を先に確認
@@ -62,4 +60,10 @@ reviewedAt: "2026-11-14"
 
 中国本土の9月の「旅迹测试」は参加資格者向けで、公式は10月7日の終了を告知しています。日本公式にも過去のCBTの案内が残っています。タイトル、日付、地域、対象バージョンを確認してから資料を使ってください。
 
-両地域の正式サービス用事前ダウンロード、中国本土のPC・Androidと日本のPC版の配布先は、今回の確認が未完了です。入口は[ダウンロードの説明](/ja/guides/download/)にまとめ、新たな原文を確認できた範囲で更新します。
+日本の事前ダウンロード日時は下記の規約で確認し、機種別の配布先は別途照合します。中国本土の事前ダウンロード、中国本土PC・Androidと日本PCの正式配布先は確認中です。[配布先の案内](/ja/guides/download/)も確認してください。
+
+## 11月21日追記：日本の事前ダウンロード予定
+
+日本公式「集まれ！キボの巣穴探索」の規約には、2026年11月24日16:00（日本時間）の事前ダウンロード開始予定が記載されています。その後はダウンロード任務が参加可能となり、事前登録任務は終了します。
+
+日本向けの日程の根拠であり、現在のインストール可否、全機種同時配布、ゲーム開始時刻は証明しません。対象端末の入口は当日の公式案内で確認します。中国本土の日程と混同しないでください。報酬の期限・配布先は[報酬案内](/ja/guides/resources/)へ。

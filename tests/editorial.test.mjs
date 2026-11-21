@@ -4,6 +4,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import { isPublishable, publicationIssues, isVerifiedClaim, releaseSummary, findContentImpact, createEditorialReport, beijingDate } from '../src/lib/editorial.mjs';
 import { sourceSchema, claimSchema, calendarDate } from '../src/lib/editorial-schema.mjs';
+import { readEntries } from '../scripts/content-validation.mjs';
 
 const sources = [JSON.parse(await readFile('src/data/sources.json', 'utf8'))[1]];
 const claim = JSON.parse(await readFile('src/data/claims.json', 'utf8'))[0];
@@ -95,9 +96,12 @@ test('report CLI emits JSON, rejects invalid IDs and leaves editorial files unch
   const file = 'src/data/claims.json';
   const before = await readFile(file, 'utf8');
   const status = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'status', '--json', '--at', '2026-11-14'], { encoding: 'utf8' }));
-  assert.equal(status.summary.articles, 22);
-  assert.equal(status.summary.publishable, 22);
-  assert.equal(status.articles.filter(article => article.blockers.some(issue => issue.code === 'manual-review')).length, 0);
+  const entries = await readEntries();
+  assert.equal(status.summary.articles, entries.length);
+  const awaitingReview = entries.filter(({ data }) => !data.reviewer?.trim() || !data.reviewedAt).length;
+  assert.equal(status.summary.awaitingReview, awaitingReview);
+  assert.equal(status.articles.filter(article => article.blockers.some(issue => issue.code === 'manual-review')).length, awaitingReview);
+  assert.equal(status.summary.publishable, status.articles.filter(article => article.publishable).length);
   const impact = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'impact', '--claim', claim.id, '--json'], { encoding: 'utf8' }));
   assert.ok(impact.articles.some((article) => article.locale === 'ja'));
   const invalid = spawnSync(process.execPath, ['scripts/content-report.mjs', 'impact', '--claim', 'missing', '--json'], { encoding: 'utf8' });

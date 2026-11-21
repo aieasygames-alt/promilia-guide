@@ -1,0 +1,2829 @@
+{
+  "stats": {
+    "engineCount": 6,
+    "autocompleteOccurrences": 103,
+    "excludedOccurrences": 2,
+    "usableOccurrences": 101,
+    "uniqueKeywords": 77,
+    "dedupRule": "NFKC + lowercase + strip outer whitespace; internal spaces, spelling and intent variants retained",
+    "metrics": "No search-volume or difficulty data acquired; null does not mean zero demand."
+  },
+  "clusters": {
+    "release": {
+      "label": "发行日期与开放状态",
+      "target": "guides/launch"
+    },
+    "regional": {
+      "label": "地区与全球发行",
+      "target": "guides/global-release"
+    },
+    "entry": {
+      "label": "官网、下载与预约",
+      "target": "guides/download"
+    },
+    "platform": {
+      "label": "平台支持与互通",
+      "target": "guides/platforms"
+    },
+    "requirements": {
+      "label": "设备配置",
+      "target": "guides/requirements"
+    },
+    "characters": {
+      "label": "角色、声优与人物资料",
+      "target": "characters"
+    },
+    "banner": {
+      "label": "抽卡规则与付费",
+      "target": "guides/banner-rules"
+    },
+    "community": {
+      "label": "社区与Wiki导航",
+      "target": "guides/getting-started"
+    },
+    "identity": {
+      "label": "游戏身份、厂商与类型",
+      "target": "guides/getting-started"
+    },
+    "event": {
+      "label": "网页活动与奖励",
+      "target": "guides/resources"
+    },
+    "beta": {
+      "label": "历史测试与资格",
+      "target": "guides/download"
+    },
+    "news": {
+      "label": "资讯与舆情",
+      "target": "guides/global-release"
+    }
+  },
+  "occurrences": [
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 1,
+      "text": "蓝色星原旅谣",
+      "normalized": "蓝色星原旅谣",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 2,
+      "text": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 3,
+      "text": "蓝色星原wiki",
+      "normalized": "蓝色星原wiki",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 4,
+      "text": "蓝色星原旅谣测试资格",
+      "normalized": "蓝色星原旅谣测试资格",
+      "cluster": "beta",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 5,
+      "text": "蓝色星原官网内测资格",
+      "normalized": "蓝色星原官网内测资格",
+      "cluster": "beta",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 6,
+      "text": "蓝色星原旅谣吧",
+      "normalized": "蓝色星原旅谣吧",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 7,
+      "text": "蓝色星原旅谣下载",
+      "normalized": "蓝色星原旅谣下载",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 8,
+      "text": "蓝色星原什么时候公测",
+      "normalized": "蓝色星原什么时候公测",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 9,
+      "text": "蓝色星原官网下载",
+      "normalized": "蓝色星原官网下载",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 10,
+      "text": "蓝色星原测试",
+      "normalized": "蓝色星原测试",
+      "cluster": "beta",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A02",
+      "engine": "bing",
+      "language": "zh",
+      "rank": 11,
+      "text": "蓝色星原旅谣什么时候上线",
+      "normalized": "蓝色星原旅谣什么时候上线",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 1,
+      "text": "アズールプロミリア",
+      "normalized": "アズールプロミリア",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 2,
+      "text": "アズールプロミリア リリース日",
+      "normalized": "アズールプロミリア リリース日",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 3,
+      "text": "アズールプロミリア いつ",
+      "normalized": "アズールプロミリア いつ",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 4,
+      "text": "アズールプロミリア pc",
+      "normalized": "アズールプロミリア pc",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 5,
+      "text": "アズールプロミリア ベータテスト",
+      "normalized": "アズールプロミリア ベータテスト",
+      "cluster": "beta",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 6,
+      "text": "アズールプロミリア ps5",
+      "normalized": "アズールプロミリア ps5",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 7,
+      "text": "アズールプロミリア スペック",
+      "normalized": "アズールプロミリア スペック",
+      "cluster": "requirements",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 8,
+      "text": "アズールプロミリア 事前登録",
+      "normalized": "アズールプロミリア 事前登録",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 9,
+      "text": "アズールプロミリア キャラ",
+      "normalized": "アズールプロミリア キャラ",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 10,
+      "text": "アズールプロミリア 声優",
+      "normalized": "アズールプロミリア 声優",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 11,
+      "text": "アズールプロミリア cbt",
+      "normalized": "アズールプロミリア cbt",
+      "cluster": "beta",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A05",
+      "engine": "bing",
+      "language": "ja",
+      "rank": 12,
+      "text": "アズールプロミリア プラットフォーム",
+      "normalized": "アズールプロミリア プラットフォーム",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 1,
+      "text": "azur promilia",
+      "normalized": "azur promilia",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 2,
+      "text": "azur promilia release date",
+      "normalized": "azur promilia release date",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 3,
+      "text": "azur promilia download",
+      "normalized": "azur promilia download",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 4,
+      "text": "azur promilia reddit",
+      "normalized": "azur promilia reddit",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 5,
+      "text": "azur promilia sea",
+      "normalized": "azur promilia sea",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 6,
+      "text": "azur promilia jp",
+      "normalized": "azur promilia jp",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 7,
+      "text": "azur promilia global",
+      "normalized": "azur promilia global",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 8,
+      "text": "azur promilia download pc",
+      "normalized": "azur promilia download pc",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 9,
+      "text": "azur promilia characters",
+      "normalized": "azur promilia characters",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 10,
+      "text": "azur promilia wiki",
+      "normalized": "azur promilia wiki",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 11,
+      "text": "azur promilia news",
+      "normalized": "azur promilia news",
+      "cluster": "news",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 12,
+      "text": "azur promilia storyline",
+      "normalized": "azur promilia storyline",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A08",
+      "engine": "bing",
+      "language": "en",
+      "rank": 13,
+      "text": "azur promilia spec requirements",
+      "normalized": "azur promilia spec requirements",
+      "cluster": "requirements",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 1,
+      "text": "蓝色星原",
+      "normalized": "蓝色星原",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 2,
+      "text": "蓝色星原:旅谣",
+      "normalized": "蓝色星原:旅谣",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 3,
+      "text": "蓝色星原旅遥官网",
+      "normalized": "蓝色星原旅遥官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 4,
+      "text": "蓝色星原:旅谣官网",
+      "normalized": "蓝色星原:旅谣官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 5,
+      "text": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 6,
+      "text": "蓝色星原旅谣下载",
+      "normalized": "蓝色星原旅谣下载",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 7,
+      "text": "蓝色星原米砂",
+      "normalized": "蓝色星原米砂",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 8,
+      "text": "蓝色星原美图",
+      "normalized": "蓝色星原美图",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 9,
+      "text": "蓝色星原旅遥",
+      "normalized": "蓝色星原旅遥",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A10",
+      "engine": "baidu",
+      "language": "zh",
+      "rank": 10,
+      "text": "蓝色星原网页活动",
+      "normalized": "蓝色星原网页活动",
+      "cluster": "event",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 1,
+      "text": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 2,
+      "text": "蓝色星原:旅谣官网",
+      "normalized": "蓝色星原:旅谣官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 3,
+      "text": "蓝色星原旅遥",
+      "normalized": "蓝色星原旅遥",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 4,
+      "text": "蓝色星原旅遥官网",
+      "normalized": "蓝色星原旅遥官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 5,
+      "text": "蓝色星原旅遥官方",
+      "normalized": "蓝色星原旅遥官方",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 6,
+      "text": "蓝色星原:旅谣",
+      "normalized": "蓝色星原:旅谣",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 7,
+      "text": "蓝色星原旅谣下载",
+      "normalized": "蓝色星原旅谣下载",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 8,
+      "text": "蓝色星原官网入口",
+      "normalized": "蓝色星原官网入口",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 9,
+      "text": "蓝色星原网页活动",
+      "normalized": "蓝色星原网页活动",
+      "cluster": "event",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A11",
+      "engine": "sogou",
+      "language": "zh",
+      "rank": 10,
+      "text": "蓝色星原wiki",
+      "normalized": "蓝色星原wiki",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 1,
+      "text": "蓝色星原旅谣",
+      "normalized": "蓝色星原旅谣",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 2,
+      "text": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 3,
+      "text": "蓝色星原:旅谣官网",
+      "normalized": "蓝色星原:旅谣官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 4,
+      "text": "蓝色星原旅谣官网",
+      "normalized": "蓝色星原旅谣官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 5,
+      "text": "蓝色星原wiki",
+      "normalized": "蓝色星原wiki",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 6,
+      "text": "蓝色星原官网什么时候出",
+      "normalized": "蓝色星原官网什么时候出",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 7,
+      "text": "蓝色星原是哪个公司的",
+      "normalized": "蓝色星原是哪个公司的",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 8,
+      "text": "蓝色星原什么时候上线",
+      "normalized": "蓝色星原什么时候上线",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 9,
+      "text": "蓝色星原是什么游戏",
+      "normalized": "蓝色星原是什么游戏",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "A12",
+      "engine": "360",
+      "language": "zh",
+      "rank": 10,
+      "text": "蓝色星原什么时候内测",
+      "normalized": "蓝色星原什么时候内测",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 1,
+      "text": "azur promilia characters",
+      "normalized": "azur promilia characters",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 2,
+      "text": "azur promilia pc",
+      "normalized": "azur promilia pc",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 3,
+      "text": "azur promilia publisher",
+      "normalized": "azur promilia publisher",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 4,
+      "text": "azur promilia official website",
+      "normalized": "azur promilia official website",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 5,
+      "text": "azur promilia sea server",
+      "normalized": "azur promilia sea server",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 6,
+      "text": "azur promilia release date",
+      "normalized": "azur promilia release date",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 7,
+      "text": "azur promilia ps5",
+      "normalized": "azur promilia ps5",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 8,
+      "text": "azur promilia developer",
+      "normalized": "azur promilia developer",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 9,
+      "text": "azur promilia steam",
+      "normalized": "azur promilia steam",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U01",
+      "engine": "google",
+      "language": "en",
+      "rank": 10,
+      "text": "azur promilia sea release date",
+      "normalized": "azur promilia sea release date",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 1,
+      "text": "蓝色星原",
+      "normalized": "蓝色星原",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 2,
+      "text": "蓝色星原 旅谣",
+      "normalized": "蓝色星原 旅谣",
+      "cluster": "identity",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 3,
+      "text": "蓝色星原什么时候上线",
+      "normalized": "蓝色星原什么时候上线",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 4,
+      "text": "蓝色星原公测时间",
+      "normalized": "蓝色星原公测时间",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 5,
+      "text": "蓝色星原有国际服吗",
+      "normalized": "蓝色星原有国际服吗",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 6,
+      "text": "蓝色星原旅谣国际服",
+      "normalized": "蓝色星原旅谣国际服",
+      "cluster": "regional",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 7,
+      "text": "蓝色星原旅谣什么时候出",
+      "normalized": "蓝色星原旅谣什么时候出",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 8,
+      "text": "蓝色星原上线时间",
+      "normalized": "蓝色星原上线时间",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 9,
+      "text": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U02",
+      "engine": "google",
+      "language": "zh",
+      "rank": 10,
+      "text": "蓝色星原 nga",
+      "normalized": "蓝色星原 nga",
+      "cluster": "community",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 1,
+      "text": "アズールプロミリア」",
+      "normalized": "アズールプロミリア」",
+      "cluster": "identity",
+      "excluded": true,
+      "exclusionReason": "stray punctuation"
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 2,
+      "text": "アズールプロミリア itu",
+      "normalized": "アズールプロミリア itu",
+      "cluster": "release",
+      "excluded": true,
+      "exclusionReason": "mixed-language noise"
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 3,
+      "text": "アズールプロミリアいつ",
+      "normalized": "アズールプロミリアいつ",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 4,
+      "text": "アズールプロミリアリリース日",
+      "normalized": "アズールプロミリアリリース日",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 5,
+      "text": "アズールプロミリア炎上",
+      "normalized": "アズールプロミリア炎上",
+      "cluster": "news",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 6,
+      "text": "アズールプロミリア ps5",
+      "normalized": "アズールプロミリア ps5",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 7,
+      "text": "アズールプロミリア 正式",
+      "normalized": "アズールプロミリア 正式",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 8,
+      "text": "アズールプロミリア公式",
+      "normalized": "アズールプロミリア公式",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 9,
+      "text": "アズールプロミリア事前登録",
+      "normalized": "アズールプロミリア事前登録",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U03",
+      "engine": "google",
+      "language": "ja",
+      "rank": 10,
+      "text": "アズールプロミリアキャラ",
+      "normalized": "アズールプロミリアキャラ",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 1,
+      "text": "アズールプロミリア ps5",
+      "normalized": "アズールプロミリア ps5",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 2,
+      "text": "アズールプロミリア 公式",
+      "normalized": "アズールプロミリア 公式",
+      "cluster": "entry",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 3,
+      "text": "アズールプロミリア スペック",
+      "normalized": "アズールプロミリア スペック",
+      "cluster": "requirements",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 4,
+      "text": "アズールプロミリア pc",
+      "normalized": "アズールプロミリア pc",
+      "cluster": "platform",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 5,
+      "text": "アズールプロミリア キャラ",
+      "normalized": "アズールプロミリア キャラ",
+      "cluster": "characters",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 6,
+      "text": "アズールプロミリア ガチャ",
+      "normalized": "アズールプロミリア ガチャ",
+      "cluster": "banner",
+      "excluded": false,
+      "exclusionReason": null
+    },
+    {
+      "observationId": "U04",
+      "engine": "yahoo-japan",
+      "language": "ja",
+      "rank": 7,
+      "text": "アズールプロミリア リリース",
+      "normalized": "アズールプロミリア リリース",
+      "cluster": "release",
+      "excluded": false,
+      "exclusionReason": null
+    }
+  ],
+  "keywords": [
+    {
+      "keywordId": "K001",
+      "keyword": "蓝色星原旅谣",
+      "normalized": "蓝色星原旅谣",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 1,
+          "text": "蓝色星原旅谣"
+        },
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 1,
+          "text": "蓝色星原旅谣"
+        }
+      ]
+    },
+    {
+      "keywordId": "K002",
+      "keyword": "蓝色星原官网",
+      "normalized": "蓝色星原官网",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 2,
+          "text": "蓝色星原官网"
+        },
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 5,
+          "text": "蓝色星原官网"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 1,
+          "text": "蓝色星原官网"
+        },
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 2,
+          "text": "蓝色星原官网"
+        },
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 9,
+          "text": "蓝色星原官网"
+        }
+      ]
+    },
+    {
+      "keywordId": "K003",
+      "keyword": "蓝色星原wiki",
+      "normalized": "蓝色星原wiki",
+      "cluster": "community",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 3,
+          "text": "蓝色星原wiki"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 10,
+          "text": "蓝色星原wiki"
+        },
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 5,
+          "text": "蓝色星原wiki"
+        }
+      ]
+    },
+    {
+      "keywordId": "K004",
+      "keyword": "蓝色星原旅谣测试资格",
+      "normalized": "蓝色星原旅谣测试资格",
+      "cluster": "beta",
+      "target": "/{locale}/guides/download/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 4,
+          "text": "蓝色星原旅谣测试资格"
+        }
+      ]
+    },
+    {
+      "keywordId": "K005",
+      "keyword": "蓝色星原官网内测资格",
+      "normalized": "蓝色星原官网内测资格",
+      "cluster": "beta",
+      "target": "/{locale}/guides/download/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 5,
+          "text": "蓝色星原官网内测资格"
+        }
+      ]
+    },
+    {
+      "keywordId": "K006",
+      "keyword": "蓝色星原旅谣吧",
+      "normalized": "蓝色星原旅谣吧",
+      "cluster": "community",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 6,
+          "text": "蓝色星原旅谣吧"
+        }
+      ]
+    },
+    {
+      "keywordId": "K007",
+      "keyword": "蓝色星原旅谣下载",
+      "normalized": "蓝色星原旅谣下载",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 7,
+          "text": "蓝色星原旅谣下载"
+        },
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 6,
+          "text": "蓝色星原旅谣下载"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 7,
+          "text": "蓝色星原旅谣下载"
+        }
+      ]
+    },
+    {
+      "keywordId": "K008",
+      "keyword": "蓝色星原什么时候公测",
+      "normalized": "蓝色星原什么时候公测",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 8,
+          "text": "蓝色星原什么时候公测"
+        }
+      ]
+    },
+    {
+      "keywordId": "K009",
+      "keyword": "蓝色星原官网下载",
+      "normalized": "蓝色星原官网下载",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 9,
+          "text": "蓝色星原官网下载"
+        }
+      ]
+    },
+    {
+      "keywordId": "K010",
+      "keyword": "蓝色星原测试",
+      "normalized": "蓝色星原测试",
+      "cluster": "beta",
+      "target": "/{locale}/guides/download/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 10,
+          "text": "蓝色星原测试"
+        }
+      ]
+    },
+    {
+      "keywordId": "K011",
+      "keyword": "蓝色星原旅谣什么时候上线",
+      "normalized": "蓝色星原旅谣什么时候上线",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A02",
+          "engine": "bing",
+          "language": "zh",
+          "rank": 11,
+          "text": "蓝色星原旅谣什么时候上线"
+        }
+      ]
+    },
+    {
+      "keywordId": "K012",
+      "keyword": "アズールプロミリア",
+      "normalized": "アズールプロミリア",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 1,
+          "text": "アズールプロミリア"
+        }
+      ]
+    },
+    {
+      "keywordId": "K013",
+      "keyword": "アズールプロミリア リリース日",
+      "normalized": "アズールプロミリア リリース日",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 2,
+          "text": "アズールプロミリア リリース日"
+        }
+      ]
+    },
+    {
+      "keywordId": "K014",
+      "keyword": "アズールプロミリア いつ",
+      "normalized": "アズールプロミリア いつ",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 3,
+          "text": "アズールプロミリア いつ"
+        }
+      ]
+    },
+    {
+      "keywordId": "K015",
+      "keyword": "アズールプロミリア pc",
+      "normalized": "アズールプロミリア pc",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 4,
+          "text": "アズールプロミリア pc"
+        },
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 4,
+          "text": "アズールプロミリア pc"
+        }
+      ]
+    },
+    {
+      "keywordId": "K016",
+      "keyword": "アズールプロミリア ベータテスト",
+      "normalized": "アズールプロミリア ベータテスト",
+      "cluster": "beta",
+      "target": "/{locale}/guides/download/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 5,
+          "text": "アズールプロミリア ベータテスト"
+        }
+      ]
+    },
+    {
+      "keywordId": "K017",
+      "keyword": "アズールプロミリア ps5",
+      "normalized": "アズールプロミリア ps5",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 6,
+          "text": "アズールプロミリア ps5"
+        },
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 6,
+          "text": "アズールプロミリア ps5"
+        },
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 1,
+          "text": "アズールプロミリア ps5"
+        }
+      ]
+    },
+    {
+      "keywordId": "K018",
+      "keyword": "アズールプロミリア スペック",
+      "normalized": "アズールプロミリア スペック",
+      "cluster": "requirements",
+      "target": "/{locale}/guides/requirements/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 7,
+          "text": "アズールプロミリア スペック"
+        },
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 3,
+          "text": "アズールプロミリア スペック"
+        }
+      ]
+    },
+    {
+      "keywordId": "K019",
+      "keyword": "アズールプロミリア 事前登録",
+      "normalized": "アズールプロミリア 事前登録",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 8,
+          "text": "アズールプロミリア 事前登録"
+        }
+      ]
+    },
+    {
+      "keywordId": "K020",
+      "keyword": "アズールプロミリア キャラ",
+      "normalized": "アズールプロミリア キャラ",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 9,
+          "text": "アズールプロミリア キャラ"
+        },
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 5,
+          "text": "アズールプロミリア キャラ"
+        }
+      ]
+    },
+    {
+      "keywordId": "K021",
+      "keyword": "アズールプロミリア 声優",
+      "normalized": "アズールプロミリア 声優",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 10,
+          "text": "アズールプロミリア 声優"
+        }
+      ]
+    },
+    {
+      "keywordId": "K022",
+      "keyword": "アズールプロミリア cbt",
+      "normalized": "アズールプロミリア cbt",
+      "cluster": "beta",
+      "target": "/{locale}/guides/download/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 11,
+          "text": "アズールプロミリア cbt"
+        }
+      ]
+    },
+    {
+      "keywordId": "K023",
+      "keyword": "アズールプロミリア プラットフォーム",
+      "normalized": "アズールプロミリア プラットフォーム",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A05",
+          "engine": "bing",
+          "language": "ja",
+          "rank": 12,
+          "text": "アズールプロミリア プラットフォーム"
+        }
+      ]
+    },
+    {
+      "keywordId": "K024",
+      "keyword": "azur promilia",
+      "normalized": "azur promilia",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 1,
+          "text": "azur promilia"
+        }
+      ]
+    },
+    {
+      "keywordId": "K025",
+      "keyword": "azur promilia release date",
+      "normalized": "azur promilia release date",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 2,
+          "text": "azur promilia release date"
+        },
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 6,
+          "text": "azur promilia release date"
+        }
+      ]
+    },
+    {
+      "keywordId": "K026",
+      "keyword": "azur promilia download",
+      "normalized": "azur promilia download",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 3,
+          "text": "azur promilia download"
+        }
+      ]
+    },
+    {
+      "keywordId": "K027",
+      "keyword": "azur promilia reddit",
+      "normalized": "azur promilia reddit",
+      "cluster": "community",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 4,
+          "text": "azur promilia reddit"
+        }
+      ]
+    },
+    {
+      "keywordId": "K028",
+      "keyword": "azur promilia sea",
+      "normalized": "azur promilia sea",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 5,
+          "text": "azur promilia sea"
+        }
+      ]
+    },
+    {
+      "keywordId": "K029",
+      "keyword": "azur promilia jp",
+      "normalized": "azur promilia jp",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 6,
+          "text": "azur promilia jp"
+        }
+      ]
+    },
+    {
+      "keywordId": "K030",
+      "keyword": "azur promilia global",
+      "normalized": "azur promilia global",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 7,
+          "text": "azur promilia global"
+        }
+      ]
+    },
+    {
+      "keywordId": "K031",
+      "keyword": "azur promilia download pc",
+      "normalized": "azur promilia download pc",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 8,
+          "text": "azur promilia download pc"
+        }
+      ]
+    },
+    {
+      "keywordId": "K032",
+      "keyword": "azur promilia characters",
+      "normalized": "azur promilia characters",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 9,
+          "text": "azur promilia characters"
+        },
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 1,
+          "text": "azur promilia characters"
+        }
+      ]
+    },
+    {
+      "keywordId": "K033",
+      "keyword": "azur promilia wiki",
+      "normalized": "azur promilia wiki",
+      "cluster": "community",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 10,
+          "text": "azur promilia wiki"
+        }
+      ]
+    },
+    {
+      "keywordId": "K034",
+      "keyword": "azur promilia news",
+      "normalized": "azur promilia news",
+      "cluster": "news",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 11,
+          "text": "azur promilia news"
+        }
+      ]
+    },
+    {
+      "keywordId": "K035",
+      "keyword": "azur promilia storyline",
+      "normalized": "azur promilia storyline",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 12,
+          "text": "azur promilia storyline"
+        }
+      ]
+    },
+    {
+      "keywordId": "K036",
+      "keyword": "azur promilia spec requirements",
+      "normalized": "azur promilia spec requirements",
+      "cluster": "requirements",
+      "target": "/{locale}/guides/requirements/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A08",
+          "engine": "bing",
+          "language": "en",
+          "rank": 13,
+          "text": "azur promilia spec requirements"
+        }
+      ]
+    },
+    {
+      "keywordId": "K037",
+      "keyword": "蓝色星原",
+      "normalized": "蓝色星原",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 1,
+          "text": "蓝色星原"
+        },
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 1,
+          "text": "蓝色星原"
+        }
+      ]
+    },
+    {
+      "keywordId": "K038",
+      "keyword": "蓝色星原:旅谣",
+      "normalized": "蓝色星原:旅谣",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 2,
+          "text": "蓝色星原:旅谣"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 6,
+          "text": "蓝色星原:旅谣"
+        }
+      ]
+    },
+    {
+      "keywordId": "K039",
+      "keyword": "蓝色星原旅遥官网",
+      "normalized": "蓝色星原旅遥官网",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 3,
+          "text": "蓝色星原旅遥官网"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 4,
+          "text": "蓝色星原旅遥官网"
+        }
+      ]
+    },
+    {
+      "keywordId": "K040",
+      "keyword": "蓝色星原:旅谣官网",
+      "normalized": "蓝色星原:旅谣官网",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 4,
+          "text": "蓝色星原:旅谣官网"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 2,
+          "text": "蓝色星原:旅谣官网"
+        },
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 3,
+          "text": "蓝色星原:旅谣官网"
+        }
+      ]
+    },
+    {
+      "keywordId": "K041",
+      "keyword": "蓝色星原米砂",
+      "normalized": "蓝色星原米砂",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 7,
+          "text": "蓝色星原米砂"
+        }
+      ]
+    },
+    {
+      "keywordId": "K042",
+      "keyword": "蓝色星原美图",
+      "normalized": "蓝色星原美图",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 8,
+          "text": "蓝色星原美图"
+        }
+      ]
+    },
+    {
+      "keywordId": "K043",
+      "keyword": "蓝色星原旅遥",
+      "normalized": "蓝色星原旅遥",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 9,
+          "text": "蓝色星原旅遥"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 3,
+          "text": "蓝色星原旅遥"
+        }
+      ]
+    },
+    {
+      "keywordId": "K044",
+      "keyword": "蓝色星原网页活动",
+      "normalized": "蓝色星原网页活动",
+      "cluster": "event",
+      "target": "/{locale}/guides/resources/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A10",
+          "engine": "baidu",
+          "language": "zh",
+          "rank": 10,
+          "text": "蓝色星原网页活动"
+        },
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 9,
+          "text": "蓝色星原网页活动"
+        }
+      ]
+    },
+    {
+      "keywordId": "K045",
+      "keyword": "蓝色星原旅遥官方",
+      "normalized": "蓝色星原旅遥官方",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 5,
+          "text": "蓝色星原旅遥官方"
+        }
+      ]
+    },
+    {
+      "keywordId": "K046",
+      "keyword": "蓝色星原官网入口",
+      "normalized": "蓝色星原官网入口",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A11",
+          "engine": "sogou",
+          "language": "zh",
+          "rank": 8,
+          "text": "蓝色星原官网入口"
+        }
+      ]
+    },
+    {
+      "keywordId": "K047",
+      "keyword": "蓝色星原旅谣官网",
+      "normalized": "蓝色星原旅谣官网",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 4,
+          "text": "蓝色星原旅谣官网"
+        }
+      ]
+    },
+    {
+      "keywordId": "K048",
+      "keyword": "蓝色星原官网什么时候出",
+      "normalized": "蓝色星原官网什么时候出",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 6,
+          "text": "蓝色星原官网什么时候出"
+        }
+      ]
+    },
+    {
+      "keywordId": "K049",
+      "keyword": "蓝色星原是哪个公司的",
+      "normalized": "蓝色星原是哪个公司的",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 7,
+          "text": "蓝色星原是哪个公司的"
+        }
+      ]
+    },
+    {
+      "keywordId": "K050",
+      "keyword": "蓝色星原什么时候上线",
+      "normalized": "蓝色星原什么时候上线",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 8,
+          "text": "蓝色星原什么时候上线"
+        },
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 3,
+          "text": "蓝色星原什么时候上线"
+        }
+      ]
+    },
+    {
+      "keywordId": "K051",
+      "keyword": "蓝色星原是什么游戏",
+      "normalized": "蓝色星原是什么游戏",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 9,
+          "text": "蓝色星原是什么游戏"
+        }
+      ]
+    },
+    {
+      "keywordId": "K052",
+      "keyword": "蓝色星原什么时候内测",
+      "normalized": "蓝色星原什么时候内测",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "A12",
+          "engine": "360",
+          "language": "zh",
+          "rank": 10,
+          "text": "蓝色星原什么时候内测"
+        }
+      ]
+    },
+    {
+      "keywordId": "K053",
+      "keyword": "azur promilia pc",
+      "normalized": "azur promilia pc",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 2,
+          "text": "azur promilia pc"
+        }
+      ]
+    },
+    {
+      "keywordId": "K054",
+      "keyword": "azur promilia publisher",
+      "normalized": "azur promilia publisher",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 3,
+          "text": "azur promilia publisher"
+        }
+      ]
+    },
+    {
+      "keywordId": "K055",
+      "keyword": "azur promilia official website",
+      "normalized": "azur promilia official website",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 4,
+          "text": "azur promilia official website"
+        }
+      ]
+    },
+    {
+      "keywordId": "K056",
+      "keyword": "azur promilia sea server",
+      "normalized": "azur promilia sea server",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 5,
+          "text": "azur promilia sea server"
+        }
+      ]
+    },
+    {
+      "keywordId": "K057",
+      "keyword": "azur promilia ps5",
+      "normalized": "azur promilia ps5",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 7,
+          "text": "azur promilia ps5"
+        }
+      ]
+    },
+    {
+      "keywordId": "K058",
+      "keyword": "azur promilia developer",
+      "normalized": "azur promilia developer",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 8,
+          "text": "azur promilia developer"
+        }
+      ]
+    },
+    {
+      "keywordId": "K059",
+      "keyword": "azur promilia steam",
+      "normalized": "azur promilia steam",
+      "cluster": "platform",
+      "target": "/{locale}/guides/platforms/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 9,
+          "text": "azur promilia steam"
+        }
+      ]
+    },
+    {
+      "keywordId": "K060",
+      "keyword": "azur promilia sea release date",
+      "normalized": "azur promilia sea release date",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U01",
+          "engine": "google",
+          "language": "en",
+          "rank": 10,
+          "text": "azur promilia sea release date"
+        }
+      ]
+    },
+    {
+      "keywordId": "K061",
+      "keyword": "蓝色星原 旅谣",
+      "normalized": "蓝色星原 旅谣",
+      "cluster": "identity",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 2,
+          "text": "蓝色星原 旅谣"
+        }
+      ]
+    },
+    {
+      "keywordId": "K062",
+      "keyword": "蓝色星原公测时间",
+      "normalized": "蓝色星原公测时间",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 4,
+          "text": "蓝色星原公测时间"
+        }
+      ]
+    },
+    {
+      "keywordId": "K063",
+      "keyword": "蓝色星原有国际服吗",
+      "normalized": "蓝色星原有国际服吗",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 5,
+          "text": "蓝色星原有国际服吗"
+        }
+      ]
+    },
+    {
+      "keywordId": "K064",
+      "keyword": "蓝色星原旅谣国际服",
+      "normalized": "蓝色星原旅谣国际服",
+      "cluster": "regional",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 6,
+          "text": "蓝色星原旅谣国际服"
+        }
+      ]
+    },
+    {
+      "keywordId": "K065",
+      "keyword": "蓝色星原旅谣什么时候出",
+      "normalized": "蓝色星原旅谣什么时候出",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 7,
+          "text": "蓝色星原旅谣什么时候出"
+        }
+      ]
+    },
+    {
+      "keywordId": "K066",
+      "keyword": "蓝色星原上线时间",
+      "normalized": "蓝色星原上线时间",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 8,
+          "text": "蓝色星原上线时间"
+        }
+      ]
+    },
+    {
+      "keywordId": "K067",
+      "keyword": "蓝色星原 nga",
+      "normalized": "蓝色星原 nga",
+      "cluster": "community",
+      "target": "/{locale}/guides/getting-started/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U02",
+          "engine": "google",
+          "language": "zh",
+          "rank": 10,
+          "text": "蓝色星原 nga"
+        }
+      ]
+    },
+    {
+      "keywordId": "K068",
+      "keyword": "アズールプロミリアいつ",
+      "normalized": "アズールプロミリアいつ",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 3,
+          "text": "アズールプロミリアいつ"
+        }
+      ]
+    },
+    {
+      "keywordId": "K069",
+      "keyword": "アズールプロミリアリリース日",
+      "normalized": "アズールプロミリアリリース日",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 4,
+          "text": "アズールプロミリアリリース日"
+        }
+      ]
+    },
+    {
+      "keywordId": "K070",
+      "keyword": "アズールプロミリア炎上",
+      "normalized": "アズールプロミリア炎上",
+      "cluster": "news",
+      "target": "/{locale}/guides/global-release/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 5,
+          "text": "アズールプロミリア炎上"
+        }
+      ]
+    },
+    {
+      "keywordId": "K071",
+      "keyword": "アズールプロミリア 正式",
+      "normalized": "アズールプロミリア 正式",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 7,
+          "text": "アズールプロミリア 正式"
+        }
+      ]
+    },
+    {
+      "keywordId": "K072",
+      "keyword": "アズールプロミリア公式",
+      "normalized": "アズールプロミリア公式",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 8,
+          "text": "アズールプロミリア公式"
+        }
+      ]
+    },
+    {
+      "keywordId": "K073",
+      "keyword": "アズールプロミリア事前登録",
+      "normalized": "アズールプロミリア事前登録",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 9,
+          "text": "アズールプロミリア事前登録"
+        }
+      ]
+    },
+    {
+      "keywordId": "K074",
+      "keyword": "アズールプロミリアキャラ",
+      "normalized": "アズールプロミリアキャラ",
+      "cluster": "characters",
+      "target": "/{locale}/characters/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U03",
+          "engine": "google",
+          "language": "ja",
+          "rank": 10,
+          "text": "アズールプロミリアキャラ"
+        }
+      ]
+    },
+    {
+      "keywordId": "K075",
+      "keyword": "アズールプロミリア 公式",
+      "normalized": "アズールプロミリア 公式",
+      "cluster": "entry",
+      "target": "/{locale}/guides/download/",
+      "intent": "navigation",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 2,
+          "text": "アズールプロミリア 公式"
+        }
+      ]
+    },
+    {
+      "keywordId": "K076",
+      "keyword": "アズールプロミリア ガチャ",
+      "normalized": "アズールプロミリア ガチャ",
+      "cluster": "banner",
+      "target": "/{locale}/guides/banner-rules/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 6,
+          "text": "アズールプロミリア ガチャ"
+        }
+      ]
+    },
+    {
+      "keywordId": "K077",
+      "keyword": "アズールプロミリア リリース",
+      "normalized": "アズールプロミリア リリース",
+      "cluster": "release",
+      "target": "/{locale}/guides/launch/",
+      "intent": "informational",
+      "monthlySearchVolume": null,
+      "keywordDifficulty": null,
+      "occurrences": [
+        {
+          "observationId": "U04",
+          "engine": "yahoo-japan",
+          "language": "ja",
+          "rank": 7,
+          "text": "アズールプロミリア リリース"
+        }
+      ]
+    }
+  ]
+}

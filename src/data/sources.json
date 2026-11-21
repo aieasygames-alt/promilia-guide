@@ -47,13 +47,13 @@
     "kind": "official",
     "url": "https://azurpromilia.manjuu.com/home/",
     "publishedAt": null,
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-21",
     "gameVersion": "公测前 / 2026-11-14 页面状态",
     "gameRegion": "中国大陆官网",
     "status": "verified",
-    "note": "记录官网当前可见的预约与商店入口，不把预约按钮当成已开放客户端下载。",
+    "note": "记录官网当前可见的预约与商店入口，不把预约按钮当成已开放客户端下载。 2026-11-21再核首页，仍为预约/事前注册展示；原始11/14记录保留在research/2026-11-14-official-sources.md。",
     "excerpt": "标题：11月26日正式公测；页面按钮：立即预约；页面链接指向中国区 App Store 应用 id6754017631。",
-    "evidenceFile": "research/2026-11-14-official-sources.md",
+    "evidenceFile": "research/2026-11-21-content-implementation/evidence.md",
     "localized": {
       "ja": {
         "title": "中国本土公式サイトと事前登録の入口",
@@ -189,10 +189,10 @@
   },
   {
     "kind": "official",
-    "checkedAt": "2026-11-14",
+    "checkedAt": "2026-11-21",
     "gameVersion": "正式发行前 / 2026-11-14 页面核对",
     "status": "verified",
-    "evidenceFile": "research/2026-11-14-japan-release.md",
+    "evidenceFile": "research/2026-11-21-content-implementation/evidence.md",
     "id": "jp-official-home-2026-11-14",
     "title": "日本官方网站与官方名称",
     "publisher": "Manjuu・Yostar / アズールプロミリア公式サイト",
@@ -200,7 +200,7 @@
     "publishedAt": null,
     "gameRegion": "日本",
     "excerpt": "『アズールプロミリア』（Azur Promilia）；星霊「キボ」；App Store・Google Play・事前登録；© Manjuu Co., Ltd. © Yostar, Inc.",
-    "note": "核对日语游戏名称、キボ用语、事前注册及商店链接。商店链接存在不证明当前账号可安装或服务器已开放。",
+    "note": "核对日语游戏名称、キボ用语、事前注册及商店链接。商店链接存在不证明当前账号可安装或服务器已开放。 2026-11-21再核首页，仍为预约/事前注册展示；原始11/14记录保留在research/2026-11-14-official-sources.md。",
     "localized": {
       "ja": {
         "title": "アズールプロミリア公式サイト",
@@ -394,6 +394,48 @@
       "ja": {
         "title": "中国本土公式：正式サービス開始時の特典案内",
         "note": "本文のログイン66連・探索と任務で累計510連以上という区分を確認。即時一括受取、ガチャ確率、コードや日本向け特典はこの告知から確定しません。"
+      }
+    }
+  },
+  {
+    "id": "cn-launch-benefits-images-2026-11-21",
+    "title": "国服公测福利配图：领取条件与资源分类",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/910292500302925824/",
+    "publishedAt": "2026-11-20",
+    "checkedAt": "2026-11-21",
+    "gameVersion": "1.0公测前公告",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "本轮读取原文及配图，具体使用范围和未核项见证据记录。",
+    "excerpt": "星临旅记：完成七日签到活动，总计可领取璀璨忆痕×10；星光初拾达到指定星识等级，可领析光忆痕×20、纯粹忆痕×50；星轨兑换每月刷新，此处计算2轮；家园等级与家园商店各列纯粹忆痕×8。",
+    "evidenceFile": "research/2026-11-21-content-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土の配布特典画像：受取条件と区分",
+        "note": "7日間のログイン、指定レベル、月次交換2回分などを画像で確認。中国本土向けの資料で、日本には適用しません。"
+      }
+    }
+  },
+  {
+    "id": "jp-kibo-adventure-rules-2026-11-21",
+    "title": "日本官方：集まれ！キボの巣穴探索活动规则",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://kiboadventure.azurpromilia.jp/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-21",
+    "gameVersion": "正式发行前网页活动规则",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "由日本官网进入活动页，未登录读取イベントルール；预下载计划不等于当前已开放或全部平台均可安装。",
+    "excerpt": "2026年11月20日21:00～2026年12月31日13:00（日本時間）。2026年11月24日16:00（日本時間）の事前ダウンロード開始後は、任務②と⑥に参加できるようになり、任務①には参加できなくなります。探索報酬はイベントに参加したYostar IDで最初に作成したゲームキャラクターに配布。",
+    "evidenceFile": "research/2026-11-21-content-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式「集まれ！キボの巣穴探索」イベントルール",
+        "note": "イベント期間、11月24日16時の事前DL予定、参加Yostar IDで最初に作成したキャラへの配布を確認。現在のインストール可否や他地域の根拠にはしません。"
       }
     }
   }

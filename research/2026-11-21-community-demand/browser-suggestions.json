@@ -1,0 +1,161 @@
+[
+  {
+    "id": "U01",
+    "engine": "google",
+    "queryLanguage": "en",
+    "seed": "Azur Promilia",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "zh-CN",
+    "enforcedGeolocation": false,
+    "kind": "autocomplete",
+    "url": "https://www.google.com/search?q=Azur+Promilia",
+    "suggestions": [
+      "azur promilia characters",
+      "azur promilia pc",
+      "azur promilia publisher",
+      "azur promilia official website",
+      "azur promilia sea server",
+      "azur promilia release date",
+      "azur promilia ps5",
+      "azur promilia developer",
+      "azur promilia steam",
+      "azur promilia sea release date"
+    ]
+  },
+  {
+    "id": "U02",
+    "engine": "google",
+    "queryLanguage": "zh",
+    "seed": "蓝色星原",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "zh-CN",
+    "enforcedGeolocation": false,
+    "kind": "autocomplete",
+    "url": "https://www.google.com/search?q=Azur+Promilia",
+    "suggestions": [
+      "蓝色星原",
+      "蓝色星原 旅谣",
+      "蓝色星原什么时候上线",
+      "蓝色星原公测时间",
+      "蓝色星原有国际服吗",
+      "蓝色星原旅谣国际服",
+      "蓝色星原旅谣什么时候出",
+      "蓝色星原上线时间",
+      "蓝色星原官网",
+      "蓝色星原 nga"
+    ]
+  },
+  {
+    "id": "U03",
+    "engine": "google",
+    "queryLanguage": "ja",
+    "seed": "アズールプロミリア",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "zh-CN",
+    "enforcedGeolocation": false,
+    "kind": "autocomplete",
+    "url": "https://www.google.com/search?q=Azur+Promilia",
+    "suggestions": [
+      "アズールプロミリア」",
+      "アズールプロミリア itu",
+      "アズールプロミリアいつ",
+      "アズールプロミリアリリース日",
+      "アズールプロミリア炎上",
+      "アズールプロミリア ps5",
+      "アズールプロミリア 正式",
+      "アズールプロミリア公式",
+      "アズールプロミリア事前登録",
+      "アズールプロミリアキャラ"
+    ]
+  },
+  {
+    "id": "U04",
+    "engine": "yahoo-japan",
+    "queryLanguage": "ja",
+    "seed": "アズールプロミリア ",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "ja-JP",
+    "enforcedGeolocation": false,
+    "kind": "autocomplete",
+    "url": "https://search.yahoo.co.jp/search?p=アズールプロミリア",
+    "suggestions": [
+      "アズールプロミリア ps5",
+      "アズールプロミリア 公式",
+      "アズールプロミリア スペック",
+      "アズールプロミリア pc",
+      "アズールプロミリア キャラ",
+      "アズールプロミリア ガチャ",
+      "アズールプロミリア リリース"
+    ]
+  },
+  {
+    "id": "U05",
+    "engine": "google",
+    "queryLanguage": "en",
+    "seed": "Azur Promilia",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "zh-CN",
+    "enforcedGeolocation": false,
+    "kind": "people-also-ask",
+    "url": "https://www.google.com/search?q=Azur+Promilia",
+    "suggestions": [
+      "Is Azur Promilia released?",
+      "Is Azur Promilia related to Azur Lane?",
+      "Is Azur Promilia coming to global?",
+      "Is Azur Promilia a gacha game?"
+    ]
+  },
+  {
+    "id": "U06",
+    "engine": "yahoo-japan",
+    "queryLanguage": "ja",
+    "seed": "アズールプロミリア ",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "ja-JP",
+    "enforcedGeolocation": false,
+    "kind": "ai-prompt-suggestion",
+    "url": "https://search.yahoo.co.jp/search?p=アズールプロミリア",
+    "suggestions": [
+      "アズールプロミリアのリリース日はいつですか？",
+      "アズールプロミリアのキャラは？",
+      "アズールプロミリアの公式サイトは？"
+    ]
+  },
+  {
+    "id": "U07",
+    "engine": "yahoo-japan",
+    "queryLanguage": "ja",
+    "seed": "アズールプロミリア",
+    "collectedOn": "2026-11-21",
+    "timePrecision": "date only; browser observation not independently timestamped",
+    "method": "manually transcribed visible browser suggestions; not a full saved page snapshot",
+    "interfaceLocale": "ja-JP",
+    "enforcedGeolocation": false,
+    "kind": "related-search",
+    "url": "https://search.yahoo.co.jp/search?p=アズールプロミリア",
+    "suggestions": [
+      "アズールプロミリア ps5",
+      "アズールプロミリア pc",
+      "アズールプロミリア 速報",
+      "アズールプロミリア ガチャ",
+      "アズールプロミリア ios",
+      "アズールプロミリア 課金",
+      "アズールプロミリア まとめ",
+      "アズールプロミリア リリース",
+      "アズールプロミリア リリィ",
+      "アズールプロミリア 5ch"
+    ]
+  }
+]

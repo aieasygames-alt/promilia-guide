@@ -1,5 +1,9 @@
 # 当前交付状态
 
+## 2026-11-21 内容扩充分支补充
+
+生产基线仍为此前已发布的22篇语言稿。本地`codex/community-content-expansion`已形成 [18篇语言修订/新稿及审核预览](../research/2026-11-21-content-implementation/README.md)：总稿件26篇，8篇沿用原已审状态，18篇当前修订待审，过期事实/译文0。福利图与日本活动规则新增证据已落地；日本预下载计划为11/24 16:00 JST，当前安装器/开服小时另核。本分支未执行生产发布；下方上线状态记录仍用于既有生产版本。
+
 更新：2026-11-21，北京时间。本批可信度修复与八篇重写内容已上线，功能发布提交为 `2586ed07cbfc16e55dffd82bb6f2f7e70fd34491`（[PR #1](https://github.com/aieasygames-alt/promilia-guide/pull/1)）。[main CI 与生产部署验收](https://github.com/aieasygames-alt/promilia-guide/actions/runs/44883162734) 均成功，正式域名同 SHA 技术检查 74/74、额外内容与索引边界检查 47/47 通过。本文为该已验证发布的记录；后续文档维护提交的最新部署结果以对应 main Actions 和线上 `build-info.json` 为准。
 
 项目负责人已确认 8 篇重写内容人工审核通过并授权上线；当前 22/22 篇语言稿满足发布条件。仓库为 PUBLIC，托管 CI 已恢复正常；main 分支保护尚未配置。接下来从执行队列 T2、T3 推进，T1 发布和 T4 本次人工审核已完成。

@@ -476,25 +476,25 @@
   },
   {
     "id": "jp-preload-status",
-    "revision": 3,
-    "text": "日本地区事前下载计划与开放状态待重新核验。",
+    "revision": 4,
+    "text": "日本官方网页活动规则列出事前下载计划：2026年11月24日16:00（日本时间）。",
     "localized": {
       "zh-hans": {
-        "summary": "日本地区事前下载计划与开放状态待重新核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "日本预下载计划为2026年11月24日16:00（日本时间），即北京时间15:00。",
+        "detail": "依据日本巢穴探索活动规则；未确认当前已开放、全部平台范围或正式安装器，不作为开服小时。"
       },
       "ja": {
-        "summary": "日本向け事前ダウンロード予定と配布状況は再確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "日本向け事前ダウンロードは2026年11月24日16:00（日本時間）の予定。",
+        "detail": "キボの巣穴探索の公式ルールに記載。現在の配布開始、全機種の対応やゲーム開始時刻は別途確認します。"
       }
     },
     "sourceRefs": [
-      "jp-livestream-recap-2026-11-20"
+      "jp-kibo-adventure-rules-2026-11-21"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "日本",
     "gameVersion": "正式发行前",
-    "verification": "pending",
+    "verification": "verified",
     "affectedPages": [
       "launch",
       "download",
@@ -503,7 +503,11 @@
       "global-release"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-24",
+      "time": "16:00",
+      "timeZone": "Asia/Tokyo"
+    },
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
@@ -662,5 +666,65 @@
       "region": "jp",
       "release": "public-launch"
     }
+  },
+  {
+    "id": "cn-rewards-conditions",
+    "revision": 1,
+    "text": "国服福利图按登录、签到、任务与等级列出奖励，家园等级和商店各列纯粹忆痕8个。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服福利图按登录、签到、任务与等级列出奖励，家园等级和商店各列纯粹忆痕8个。",
+        "detail": "七日签到并非首日全部领取；星轨兑换按两轮统计；票券名称和数量不证明卡池适用或兑换率。"
+      },
+      "ja": {
+        "summary": "中国本土の配布画像はログイン・サインイン・任務・レベルを区別し、ホームレベルとホームショップに中国語名「纯粹忆痕」各8個を記載。",
+        "detail": "7日間ログインは初日の一括配布とは別です。月次交換は2回分の集計。チケット名・枚数だけで対象ガチャや交換率は確定しません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-benefits-images-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "1.0公测前公告",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "banner-rules",
+      "getting-started",
+      "home",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "jp-kibo-web-rewards",
+    "revision": 1,
+    "text": "日本巢穴探索活动至2026年12月31日13:00（日本时间），奖励发给参加活动的Yostar ID最初创建的角色。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本巢穴探索活动至2026年12月31日13:00（日本时间），奖励发给参加活动的Yostar ID最初创建的角色。",
+        "detail": "探索最多9次；游戏内邮件发放，首次登录游戏起365日内领取；限本活动，非通用账号互通条款。"
+      },
+      "ja": {
+        "summary": "日本の巣穴探索イベントは2026年12月31日13:00（日本時間）まで。探索報酬は参加Yostar IDで最初に作成したキャラクターに配布。",
+        "detail": "探索は最大9回。ゲーム内メールで配布され、初回ログインから365日以内に受け取ります。本イベントの条件であり、一般的なデータ共有規約ではありません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-kibo-adventure-rules-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前网页活动",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
   }
 ]
