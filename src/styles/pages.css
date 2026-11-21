@@ -1727,3 +1727,81 @@
     padding-bottom: 50px;
   }
 }
+
+.countdown-banner {
+  margin-top: 18px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #f4f7ee 0%, #edf2e4 100%);
+  border: 1px solid #d5dec8;
+  border-left: 4px solid #6d8b5d;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.countdown-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.countdown-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.countdown-banner-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2c3527;
+}
+.countdown-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #6d8b5d;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+.countdown-tag-milestone {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #c28b26;
+  color: #fff;
+}
+.countdown-banner-desc {
+  font-size: 11px;
+  color: #5c6753;
+  line-height: 1.5;
+}
+.countdown-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #3e4b37;
+  color: #f7faf4;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.countdown-banner-btn:hover {
+  background: #2b3526;
+}
+@media (max-width: 640px) {
+  .countdown-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .countdown-banner-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

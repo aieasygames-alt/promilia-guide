@@ -7,23 +7,23 @@ title: "平台支持与 PC 状态：支持、开放与互通分开看"
 description: "逐项确认平台支持、地区开放和账号互通，避免用一个结论代替全部条件。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
-gameVersion: "公测前 / 2026-11-14 官方页面核对"
+updatedAt: "2026-11-20"
+gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15"]
-sourceRevision: 4
+sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","cn-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["requirements", "download"]
 order: 4
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载（11-24）与公测开服（11-26）日程，更新平台事实修订号。"}]
 claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status"]
-claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":1,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":1}
+claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":2,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 先区分地区与计划平台

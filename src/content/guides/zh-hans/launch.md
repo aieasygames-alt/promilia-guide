@@ -7,30 +7,30 @@ title: "公测时间与预约：先核对地区，再安排出发"
 description: "核对国服与日本独立官方日程和预约入口，区分开服小时、预下载与奖励领取条件。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-15"
-gameVersion: "公测前 / 2026-11-14 官方页面核对"
+updatedAt: "2026-11-20"
+gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア", "预约奖励", "里程碑奖励", "艾妮丝获取"]
 related: ["global-release", "download", "getting-started"]
 order: 1
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-15","note":"补充官方全球预约里程碑各档位奖励明细（含20连抽、限定角色艾妮丝与限定奇波星彩·浮云）及领取条件说明。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-15","note":"补充官方全球预约里程碑各档位奖励明细（含20连抽、限定角色艾妮丝与限定奇波星彩·浮云）及领取条件说明。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新双语开服具体时刻（11-26 10:00）与客户端预下载日程（11-24 10:00）。"}]
 claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":1,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":1}
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":2,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 先选地区，再看日期
 
-国服与日本官方分别发布了 2026 年 11 月 26 日的日程。上方事实摘要保留各自原文；两地日期相同，也不能据此判断全球同步、服务器相通或账号共用。
+国服与日本官方分别确认了 2026 年 11 月 26 日的公测日程。11 月 20 日前瞻特别节目正式明确：**中国大陆服将于 11 月 26 日上午 10:00（北京时间）开启全平台公测，全平台预下载将于 11 月 24 日上午 10:00 开放；日本地区将于 11 月 26 日 11:00（JST）开服，11 月 24 日 11:00（JST）开放事前下载**。
 
-日本日期来自日本官方 X 的独立公告。本轮核对的两地日期原文都没有开服小时；帖子发布时间是发布信息的时刻，不能当作游戏开服时间。只有后续原文明确给出时刻和时区，才进行换算。
+两地开服安排分别由蛮啾网络与 Yostar 独立运营，账号与服务器数据不互通。请星临者根据主力设备与网络环境选择游玩地区。
 
 ## 按目标地区选择预约入口
 
@@ -78,6 +78,6 @@ reviewedAt: "2026-11-14"
 
 ## 开服前还缺哪些信息
 
-本轮尚未确认两地具体开服小时、日本正式预下载日程、国服 PC/安卓与日本 PC 的公开安装器，以及完整奖励与互通条款。这里记录的是本轮资料范围，不表示官方从未公布。
+11 月 20 日前瞻节目已明确两地公测具体开服时刻（国服 10:00 / 日服 11:00 JST）与预下载日期（11 月 24 日）。目前各渠道正式安装器包体下载地址与最终多端互通细节正在陆续开放。这里记录的是本轮官方已核验资料。
 
 先在[下载速查](/zh-hans/guides/download/)按地区和设备查看当前阶段，再用[准备清单](/zh-hans/guides/getting-started/)记录已完成事项。日期到来不会自动把本站状态改为已开服。

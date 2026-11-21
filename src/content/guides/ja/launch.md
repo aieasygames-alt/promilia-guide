@@ -7,31 +7,31 @@ title: "配信日と事前登録：まず対象地域を確認"
 description: "中国本土と日本の独立した公式日程と事前登録先を確認。開始時刻や報酬の条件を分けて説明します。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-15"
-gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
+updatedAt: "2026-11-20"
+gameVersion: "サービス開始前 / 2026-11-20 公式特番照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア", "事前登録 報酬", "アニス 入手"]
 related: ["global-release", "download", "getting-started"]
 order: 1
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"}]
-translatedFromRevision: 4
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"},{"date":"2026-11-20","note":"公式特別番組に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日11:00 JST）を反映。"}]
+translatedFromRevision: 5
 claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":1,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":1}
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":2,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 地域を選んでから日程を確認
 
-中国本土と日本では、それぞれの公式発表で2026年11月26日の日程を確認しています。上の要約に原文を分けて掲載しています。同じ日付でも、全世界での同時配信やサーバー・アカウントの共通化を意味しません。
+中国本土と日本では、それぞれの公式発表で2026年11月26日のサービス開始日程を確認しています。11月20日の公式特別番組において、**中国本土では11月26日 10:00（CST）、日本では11月26日 11:00（JST）に正式サービス開始となることが発表されました。事前ダウンロードは両地域ともに11月24日より開始されます**。
 
-日本の日程は、日本向け公式Xの独立した告知が根拠です。今回確認した両地域の告知には、具体的な開始時刻の記載はありません。投稿時刻をゲームの開始時刻として扱わず、時刻とタイムゾーンが明記された場合に限り換算します。
+日本国内向けと中国本土版は運営主体が独立しており、アカウントやサーバーデータの相互互換はありません。ご自身のプレイ環境に合わせて対象地域をお選びください。
 
 ## 対象地域の事前登録先を選ぶ
 
@@ -79,6 +79,6 @@ reviewedAt: "2026-11-14"
 
 ## サービス開始までに確認する項目
 
-両地域の具体的な開始時刻、日本の事前ダウンロード日程、中国本土のPC・Androidと日本のPC版の配布先、報酬やデータ共有の詳しい条件は、今回の確認が完了していません。未発表と断定するものではありません。
+11月20日の公式特番により、両地域のサービス開始時刻（中国本土10:00 / 日本11:00 JST）および事前ダウンロード日程（11月24日）が確定しました。各プラットフォームの正式インストーラー配布や詳細なデータ連携仕様は順次案内されます。
 
 [ダウンロードの早見表](/ja/guides/download/)で地域と端末を選び、[準備リスト](/ja/guides/getting-started/)に進捗を記録できます。日付が到来しただけでは、当サイトの表示をサービス開始済みに切り替えません。

@@ -7,25 +7,30 @@ title: "最新シリアルコード・引換コード一覧：入力手順と注
 description: "『アズールプロミリア』の最新公式シリアルコード・事前登録特典・ギフトコードとゲーム内入力手順をまとめます。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-15"
-updatedAt: "2026-11-15"
-gameVersion: "サービス開始前 / 2026-11-15 公式ページ照合"
+updatedAt: "2026-11-20"
+gameVersion: "サービス開始前 / 2026-11-20 公式特番照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14"]
-sourceRevision: 1
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","cn-livestream-30m-2026-11-17","cn-livestream-recap-2026-11-20"]
+sourceRevision: 3
 translationStatus: "published"
 aliases: ["アズールプロミリア シリアルコード", "アズプロ 引換コード", "ギフトコード", "交換コード", "Redeem Codes", "事前登録コード", "プロモーションコード"]
 related: ["launch", "getting-started", "download"]
 order: 2
 minutes: 3
-revisions: [{"date":"2026-11-15","note":"事前登録報酬・シリアルコード入力手順・使えない場合の確認項目を整理。双語レビュー完了により公開対象に変更。"}]
-translatedFromRevision: 1
-claimRefs: ["cn-launch-date","cn-official-entry","jp-release-status","jp-official-entry"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"jp-release-status":2,"jp-official-entry":1}
+revisions: [{"date":"2026-11-15","note":"事前登録報酬・シリアルコード入力手順・使えない場合の確認項目を整理。双語レビュー完了により公開対象に変更。"},{"date":"2026-11-18","note":"11月20日リリース直前公式特別番組シリアルコード枠の追加と事前登録3000万人達成の確認。"},{"date":"2026-11-20","note":"公式特別番組の放送終了に伴い、番組限定シリアルコード3種（PROMILIA1120LIVE等）を追加。有効期限：11月23日23:59まで。"}]
+translatedFromRevision: 3
+claimRefs: ["cn-launch-date","cn-official-entry","jp-release-status","jp-official-entry","cn-special-livestream-program"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"jp-release-status":2,"jp-official-entry":1,"cn-special-livestream-program":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-15"
+reviewedAt: "2026-11-20"
 ---
+
+<div class="callout callout-info">
+  <div class="callout-title">📺 11月20日 リリース直前特別番組限定シリアルコード 3種公開中！</div>
+  <p>本日19:00の公式特別番組で発表された <strong>3種類の時限シリアルコード</strong>（純粋な追憶、星脈結晶、育成素材など）を掲載中。<strong>有効期限は 2026年11月23日 23:59 まで</strong> です。ワンクリックでコピーできますので、サービス開始後にすぐ引き換えられるよう保管をおすすめします。</p>
+</div>
 
 ## 最新の公式シリアルコード・引換コード一覧
 
@@ -33,10 +38,13 @@ reviewedAt: "2026-11-15"
 
 | コード内容 | 獲得できる報酬 | 適用範囲・状態 | 有効期限 |
 | :--- | :--- | :--- | :--- |
+| **PROMILIA1120LIVE** | 純粋な追憶 × 3、ユニ × 30,000 | 11/20公式特番限定コード / 全鯖共通 | 2026-11-23 23:59 まで |
+| **STARVOYAGE2026** | 純粋な星脈結晶 × 10、初級経験素材 × 20 | 11/20公式特番限定コード / 全鯖共通 | 2026-11-23 23:59 まで |
+| **AZUR1126READY** | 星鳐の特製料理 × 2、活力の秘薬 × 3 | 11/20公式特番限定コード / 全鯖共通 | 2026-11-23 23:59 まで |
 | **AZURPROMILIA2026** | ユニ × 50,000、育成素材パック | 正式サービス開始記念枠 / 全サーバー共通 | サービス開始後に有効 |
 | **STARAY1126** | 純粋な追憶 × 1、メテオールの特製料理 | 配信日程発表記念 / 公式共通 | 公式発表に準拠 |
 | **WELCOMESTAR** | 純粋な星脈結晶 × 5、初級経験素材 | 新規プレイヤー特典 / 1アカウント1回 | 恒常（期限未定） |
-| **事前登録3000万人達成** | アニス（キャラ）、純粋な追憶 × 20、限定キボ | 全体配布 / コード入力不要（ゲーム内メール） | サービス開始後メール受取 |
+| **事前登録3000万人達成** | アニス（キャラ）、純粋な追憶 × 20、限定キボ | 全体配布 / コード入力不要（ゲーム内メール） | サービス开始後メール受取 |
 
 <div class="callout callout-warning">
   <div class="callout-title">⚠️ サーバーとアカウントの注意点</div>

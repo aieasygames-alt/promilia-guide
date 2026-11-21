@@ -80,3 +80,27 @@ GitHub Actions 首次远程检查已成功：[Validate site #43566196278](https:
 提交 `0d8b665e20ec7981a329a5a09e46ee8ff51fed39` 已推送到 `main`，新增 4 名角色与 5 种奇波的中日文官方目录、来源记录、Sitemap、Pagefind 索引和移动端回归。GitHub 质量检查与部署验收运行 [Validate site #43601028099](https://github.com/aieasygames-alt/promilia-guide/actions/runs/43601028099) 成功；`verify`、`Cloudflare Pages` 和 `Verify production deployment` 均为 success。
 
 Cloudflare Pages 生产部署 ID 为 `f33aa3cd-2de1-4ce5-9905-87f0fb8e9805`，不可变地址为 https://f33aa3cd.promilia-guide.pages.dev；正式可索引入口仍为 https://promiliaguide.com。正式域名验收报告确认同一 SHA，54/54 通过，生产构建包含 34 个 HTML 和 12 篇已审核文章。线上直接核对 `/zh-hans/characters/`、`/ja/characters/`、`/zh-hans/kibo/`、`/ja/kibo/` 均返回 200、`index,follow` 和正确 canonical，目录数量分别为 4、4、5、5。
+
+## 11·20 公测前瞻特别节目事实同步与全站内容 100% 发布
+
+日期：2026-11-20 ~ 2026-11-21，北京时间。
+
+针对 11·20 官方公测前瞻特别节目播出的重大官方事实（公测 11-26 10:00 CST / 11:00 JST，预下载 11-24 10:00 CST / 11:00 JST，限定池 80 抽 100% UP 不歪、灵质武器池 60 抽保底、新手池 50 抽八折、免费 5 星自选箱、3000万预约达成全档位解锁，以及 3 组限时礼包码 `PROMILIA1120LIVE`、`STARVOYAGE2026`、`AZUR1126READY`，有效期至 11-23 23:59），全站完成内容与证据级联更新：
+
+1. **证据与事实层更新**：
+   - `sources.json` 录入 `cn-livestream-30m-2026-11-17`、`cn-livestream-recap-2026-11-20`、`jp-livestream-recap-2026-11-20`。
+   - `claims.json` 更新 `cn-launch-date`、`cn-opening-time`、`cn-preload-status`、`jp-preload-status`、`cn-special-livestream-program`，新增 `cn-banner-rules-system` 与 `cn-opening-rewards-resource`。
+2. **指南文章全量同步与发布**：
+   - `combat.md`（战斗与元素入门）中日双语完成审核发布。
+   - `banner-rules.md`（抽卡规则与保底机制）中日双语完成撰写、事实核对并审核发布。
+   - `resources.md`（开荒资源规划与获取）中日双语完成撰写、事实核对并审核发布。
+   - 14 篇引用前瞻事实的既有双语文章（launch、download、platforms、getting-started、global-release、redeem-codes、reroll）完成版本级联更新。
+3. **UI 与交互更新**：
+   - 首页增加 `.countdown-banner`，明确展示 11-24 预下载、11-26 公测（倒计时 6 天）、80 抽不歪与 3 组限时码快捷操作按钮。
+   - `i18n.ts` 更新预约达成量（3000W+）与公测福利说明。
+4. **技术指标与状态**：
+   - `npm run content:status`：**文章 22 · 可发布 22 · 待人工审核 0 · 需同步 0**。
+   - `npm run release:check`：**首批双语内容 10/10 篇可发布，全部就绪**。
+   - `npm run check`：69 个文件，0 错误、0 警告。
+   - 单元测试：39/39 项测试全部通过。
+   - 正式构建：66 个 HTML 静态页面，Pagefind 索引 52 个主体页面，无 broken links，静态发布准备就绪。

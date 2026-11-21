@@ -5,16 +5,18 @@ slug: "combat"
 section: "systems"
 title: "战斗与元素入门：先把一次战斗记录清楚"
 description: "用教程、操作条件和可复核记录建立战斗判断，不把测试版倍率当成正式服结论。"
-author: "Promilia Guide 编辑草稿"
+author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
+updatedAt: "2026-11-18"
 gameVersion: "公测前 / 战斗机制待实测"
 gameRegion: "各地区与版本分别核验"
 verification: "editorial"
-status: "draft"
+status: "published"
 sourceRefs: ["project-roadmap-2026-11-14"]
 sourceRevision: 2
-translationStatus: "draft"
+translationStatus: "published"
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-18"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["getting-started", "requirements", "download"]
 order: 7

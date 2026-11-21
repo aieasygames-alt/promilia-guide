@@ -7,34 +7,34 @@ title: "中国本土・日本・その他の地域の配信状況"
 description: "記事の言語と対象サーバーを区別し、地域ごとの発表を確認します。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
-gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
+updatedAt: "2026-11-20"
+gameVersion: "サービス開始前 / 2026-11-20 公式特番照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["launch", "platforms", "download"]
 order: 2
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ストア情報の改訂番号を同期し、事前登録の段階と明記。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"}]
-translatedFromRevision: 4
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ストア情報の改訂番号を同期し、事前登録の段階と明記。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特別番組に基づき、両地域の配信開始時刻および事前DL日程を反映。"}]
+translatedFromRevision: 5
 claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan"]
-claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":1,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1}
+claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":2,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 地域ごとに確認した配信状況
 
-中国本土と日本では、それぞれの公式発表で2026年11月26日の日程を確認しています。繁体字公式サイトにも日程の表示がありますが、対象地域、ストアの条件、サーバーの範囲は個別に確認が必要です。全世界共通のサービスとしては扱いません。
+中国本土と日本では、それぞれの公式発表で2026年11月26日の日程を確認しています。11月20日の特番により、中国本土は10:00（CST）、日本は11:00（JST）のサービス開始および11月24日の事前ダウンロード開始が確定しました。ストアの条件やサーバーの範囲は個別に確認が必要です。全世界共通のサービスとしては扱いません。
 
 | 対象 | 確認した内容 | 別途確認が必要なこと |
 | --- | --- | --- |
-| 中国本土 | 日程告知、公式の事前登録、中国本土向けApp Store | 開始時刻、PC・Androidの正式配布先、データ共有 |
-| 日本 | 日本公式の日程告知、スマートフォン向け事前登録、対応予定プラットフォーム | 開始時刻、PC版の配布先、動作環境、データ共有 |
+| 中国本土 | 日程告知、公式の事前登録、11-26 10:00開始・11-24事前DL | PC・Androidの正式配布サイズ、データ共有 |
+| 日本 | 日本公式日程告知、事前登録、11-26 11:00(JST)開始・11-24事前DL | PC版の配布先、動作環境、データ共有 |
 | 繁体字公式 | ホームと告知一覧の日程表示 | 運営地域全体、ストアの条件、対象サーバー |
 | その他 | 今回は対象地域の原文確認が未完了 | 上記の日程や配布先、課金条件は適用しません |
 

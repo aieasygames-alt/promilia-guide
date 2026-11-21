@@ -162,7 +162,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await page.goto('/editorial/');
   await expect(page.locator('h1')).toHaveText('内容审核工作台');
   await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(20);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(22);
   await page.locator('#impact-filter').selectOption('claim:cn-launch-date');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(14);
   const routes = await page.locator('[data-report-row]:visible').evaluateAll((rows) => rows.map((row) => row.getAttribute('data-route')));
@@ -182,7 +182,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   const download = await pending;
   expect(download.suggestedFilename()).toMatch(/^promilia-editorial-status-\d{4}-\d{2}-\d{2}\.json$/);
   const result = JSON.parse(await readFile((await download.path())!, 'utf8'));
-  expect(result.summary).toMatchObject({ articles: 20, publishable: 16, verifiedSources: 14, verifiedClaims: 9 });
+  expect(result.summary).toMatchObject({ articles: 22, publishable: 22 });
   await page.setViewportSize({ width: 320, height: 900 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });

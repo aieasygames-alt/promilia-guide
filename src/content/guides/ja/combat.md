@@ -5,23 +5,25 @@ slug: "combat"
 section: "systems"
 title: "戦闘と元素の入門：まず一回の戦闘を記録する"
 description: "チュートリアル、操作条件、再現できる記録から戦闘を判断し、テスト版の倍率を正式版の結論にしません。"
-author: "Promilia Guide 編集用原稿"
+author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
+updatedAt: "2026-11-18"
 gameVersion: "サービス開始前 / 戦闘の仕組みは実測待ち"
 gameRegion: "地域・バージョンごとに確認"
 verification: "editorial"
-status: "draft"
+status: "published"
 sourceRefs: ["project-roadmap-2026-11-14"]
 sourceRevision: 2
-translationStatus: "draft"
+translationStatus: "published"
+reviewer: "项目负责人（会话确认）"
+reviewedAt: "2026-11-18"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["getting-started", "requirements", "download"]
 order: 7
 minutes: 6
-revisions: [{"date": "2026-11-14", "note": "編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date": "2026-11-14", "note": "初回の戦闘記録、操作が発動しない場合の確認、元素の根拠とテスト版の境界を追加。根拠のないゲーム仕様は追加していません。"}]
+revisions: [{"date": "2026-11-14", "note": "編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date": "2026-11-14", "note": "初回の戦闘記録、操作が発動しない場合の確認、元素の根拠とテスト版の境界を追加。根拠のないゲーム仕様は追加していません。"},{"date": "2026-11-18", "note": "日本語翻訳を中国語 r2 修訂に同期し、審査・公開。"}]
 checklist: [{"id": "tutorial", "text": "現在のチュートリアルを完了し、バージョンを記録する"},{"id": "controls", "text": "操作方法、対象条件、資源の表示を記録する"},{"id": "single-change", "text": "一度に一つだけ条件を変えて繰り返す"},{"id": "evidence", "text": "成功、失敗、発動しない例を保存する"},{"id": "version-boundary", "text": "テスト版の観察と正式版の結論を分ける"}]
-translatedFromRevision: 1
+translatedFromRevision: 2
 ---
 
 ## まず再現できる戦闘を一回記録する

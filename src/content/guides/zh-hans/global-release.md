@@ -7,33 +7,33 @@ title: "国服与全球发行状态：语言不等于服务器"
 description: "把中国大陆、日本及其他地区的日期、账号和客户端分开确认。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
-gameVersion: "公测前 / 2026-11-14 官方页面核对"
+updatedAt: "2026-11-20"
+gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","cn-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["launch", "platforms", "download"]
 order: 2
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认两地开服时刻与预下载日程，更新地区发行状态与事实修订号。"}]
 claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan"]
-claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":1,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1}
+claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":2,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 本轮分别确认了哪些地区
 
-国服、日本均有独立的 2026 年 11 月 26 日官方日程。繁中官网也展示日期信息，但完整发行范围、商店资格与服务器规则需要逐项确认，不能合并为“全球服统一开放”。
+国服、日本均有独立的 2026 年 11 月 26 日官方日程。前瞻直播已明确中国大陆将于 10:00 开服、11月24日预下载；日本地区将于 11:00（JST）开服、11月24日预下载。商店资格与多端互通规则需要逐项确认，不能合并为“全球服统一规则”。
 
 | 信息范围 | 本次确认的内容 | 仍需独立核对 |
 | --- | --- | --- |
-| 中国大陆 | 国服定档原文、官网预约及中国区 App Store | 开服小时、PC/安卓公测安装器、互通 |
-| 日本 | 日本官方日期原帖、手机事前注册入口、计划平台 | 开服小时、PC安装器、完整配置和跨端条件 |
+| 中国大陆 | 国服定档原文、官网预约、11-26 10:00开服与11-24预下载 | PC/安卓公测安装器包体大小、互通 |
+| 日本 | 日本官方日期原帖、手机事前注册入口、11-26 11:00(JST)开服与11-24预下载 | PC正式安装器、日服互通细节 |
 | 繁中官网 | 首页与公告列表的日期表述 | 完整运营地区、商店条款、服务器范围 |
 | 其他地区 | 本轮没有完成对应原始公告核验 | 不套用上述日期、下载渠道或付费条件 |
 

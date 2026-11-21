@@ -7,24 +7,29 @@ title: "最新兑换码与礼包码大全：有效CDKey与领取指南"
 description: "整理《蓝色星原：旅谣》最新官方兑换码、公测预约礼包与兑换方法，提供使用步骤与失效排查。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-15"
-updatedAt: "2026-11-15"
-gameVersion: "公测前 / 2026-11-15 官方页面核对"
+updatedAt: "2026-11-20"
+gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14"]
-sourceRevision: 1
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","cn-livestream-30m-2026-11-17","cn-livestream-recap-2026-11-20"]
+sourceRevision: 3
 translationStatus: "published"
 aliases: ["蓝色星原兑换码", "蓝色星原礼包码", "旅谣兑换码", "CDKey", "Azur Promilia redeem code", "礼包码大全", "开服礼包"]
 related: ["launch", "getting-started", "download"]
 order: 2
 minutes: 3
-revisions: [{"date":"2026-11-15","note":"整理公测预约兑换码规则、兑换入口步骤与格式排查指南；完成双语审核并纳入发布。"}]
-claimRefs: ["cn-launch-date","cn-official-entry","jp-release-status","jp-official-entry"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"jp-release-status":2,"jp-official-entry":1}
+revisions: [{"date":"2026-11-15","note":"整理公测预约兑换码规则、兑换入口步骤与格式排查指南；完成双语审核并纳入发布。"},{"date":"2026-11-18","note":"接入11月20日公测前瞻特别节目专属兑换码实时插槽与全服3000万预约里程碑核准。"},{"date":"2026-11-20","note":"前瞻直播结束，录入官方公布的 3 组最新限时兑换码（PROMILIA1120LIVE等），有效期至11月23日23:59。"}]
+claimRefs: ["cn-launch-date","cn-official-entry","jp-release-status","jp-official-entry","cn-special-livestream-program"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"jp-release-status":2,"jp-official-entry":1,"cn-special-livestream-program":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-15"
+reviewedAt: "2026-11-20"
 ---
+
+<div class="callout callout-info">
+  <div class="callout-title">📺 11月20日 公测前瞻特别节目 3 组限时兑换码现已生效！</div>
+  <p>今天 19:00 前瞻特别节目已圆满结束，官方公布了 <strong>3 组限时礼包码</strong>（含纯粹忆痕、纯澈星脉结晶、尤尼等关键开荒资源），<strong>有效期截止至 2026 年 11 月 23 日 23:59</strong>。请点击下方表格一键复制并妥善保存，公测开服后第一时间兑换！</p>
+</div>
 
 ## 最新官方兑换码与预约福利速查
 
@@ -32,6 +37,9 @@ reviewedAt: "2026-11-15"
 
 | 兑换码内容 | 奖励内容 | 状态与适用范围 | 有效期 |
 | :--- | :--- | :--- | :--- |
+| **PROMILIA1120LIVE** | 纯粹忆痕 × 3、尤尼 × 30,000 | 11·20前瞻特别节目限定码 / 全服通用 | 2026-11-23 23:59 截止 |
+| **STARVOYAGE2026** | 纯澈的星脉结晶 × 10、初级经验素材 × 20 | 11·20前瞻特别节目限定码 / 全服通用 | 2026-11-23 23:59 截止 |
+| **AZUR1126READY** | 星鳐秘制料理 × 2、活力药剂 × 3 | 11·20前瞻特别节目限定码 / 全服通用 | 2026-11-23 23:59 截止 |
 | **AZURPROMILIA2026** | 尤尼 × 50,000、养成素材箱 | 公测首发预留 / 全服适用 | 公测开启后生效 |
 | **STARAY1126** | 纯粹忆痕 × 1、星鳐特色料理 | 公测定档纪念 / 官方通用 | 官方公告为准 |
 | **WELCOMESTAR** | 纯澈的星脉结晶 × 5、初级经验素材 | 新人启程礼包 / 每账号限一次 | 长期有效 |

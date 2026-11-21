@@ -7,23 +7,23 @@ title: "官方下载与预约入口：国服、日本分地区核对"
 description: "按地区和设备核对国服与日本官方入口，区分预约、预下载与实际可安装状态。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-14"
-gameVersion: "公测前 / 2026-11-14 官方页面核对"
+updatedAt: "2026-11-20"
+gameVersion: "公测前 / 2026-11-20 前瞻特别节目核对"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14"]
-sourceRevision: 4
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","cn-livestream-recap-2026-11-20"]
+sourceRevision: 5
 translationStatus: "published"
 aliases: ["蓝色星原", "藍色星原", "Azur Promilia", "azurpromilia", "azure promilia", "azur promillia", "アズールプロミリア"]
 related: ["platforms", "requirements", "getting-started"]
 order: 3
 minutes: 5
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载将于11月24日开放，更新预下载核验状态与日程说明。"}]
 claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":1,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":1}
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":2,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":2}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-20"
 ---
 
 ## 先在速查中选择地区与设备
@@ -62,9 +62,9 @@ reviewedAt: "2026-11-14"
 
 ## 历史测试与正式预下载分开核对
 
-国服 2026 年 9 月 15 日「旅迹测试」预下载仅面向获资格者，10 月 7 日的官方结束公告确认测试服务器关闭。其 Windows、Android、iOS 与设备绑定条件不能用于证明 11 月公测下载或互通。
+国服 2026 年 9 月 15 日「旅迹测试」预下载仅面向获资格者，10 月 7 日官方已确认测试结束。其历史下载包与绑定条件不能用于公测。
 
-日本官网也保留过去 CBT 的导航。本轮未确认两地正式预下载安排；查到链接时，先核对标题、发布日期、地区与版本，再判断它是否仍适用。
+11 月 20 日前瞻特别节目正式明确：**公测客户端全平台预下载将于 2026 年 11 月 24 日开放（国服 10:00 / 日服 11:00 JST）**。届时官方 PC 启动器、App Store 与应用商店将陆续开启下载包体推送。查到链接时，先核对标题、发布日期、地区与版本，再判断它是否仍适用。
 
 ## 下载或登录遇到问题
 
