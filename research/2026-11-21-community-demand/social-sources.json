@@ -1,0 +1,503 @@
+{
+  "collectedOn": "2026-11-21",
+  "scope": "Purposeful selected public sample, not population sampling or exhaustive platform rankings.",
+  "metricPolicy": "Counters are observation-time displays; no cross-platform sum, no unique-user inference, no whole-platform sentiment score.",
+  "sources": [
+    {
+      "id": "O01",
+      "platform": "CN official",
+      "url": "https://azurpromilia.manjuu.com/home/news/detail/910292500302925824/",
+      "title": "《蓝色星原：旅谣》公测福利资源获取一览",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-official-body-refreshed",
+      "signal": "登录66抽、探索与任务累计510抽以上、指定任务免费五星角色与五星灵子",
+      "metrics": {},
+      "publishedLabel": "2026-11-20",
+      "official": true,
+      "shortExcerpt": "登录即送66抽，探索与任务累计可得510抽+，完成指定任务还可免费获得五星角色与五星灵子。",
+      "limitations": "只核正文，未逐张解析图片细则；不得66+510相加、推断首日全部领取或套用日本地区。",
+      "repoSourceId": "cn-launch-benefits-2026-11-20",
+      "repoClaimId": "cn-opening-rewards-resource",
+      "repoClaimRevision": 2
+    },
+    {
+      "id": "S01",
+      "platform": "Zhihu",
+      "url": "https://www.zhihu.com/question/2106152174262800609",
+      "title": "如何评价《蓝色星原：旅谣》公测前瞻节目？",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-question-and-three-visible-answers",
+      "signal": "宣传抽数是否即时可得、任务负担、不同票券对应卡池",
+      "metrics": {
+        "views": 179340,
+        "followers": 62,
+        "answersDisplayed": 50,
+        "answersRead": 3
+      },
+      "independentDiscussionGroup": "zhihu-preview-question",
+      "children": [
+        {
+          "url": "https://www.zhihu.com/question/2106152174262800609/answer/2107295390533939755",
+          "publishedLabel": "2026-11-21 02:12",
+          "upvotes": 179,
+          "comments": 10,
+          "summary": "比较开服免费抽数的宣传口径"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2106152174262800609/answer/2107240407365112015",
+          "publishedLabel": "2026-11-20 22:34",
+          "upvotes": 167,
+          "comments": 52,
+          "summary": "质疑总量包含成就、活动和持续获取，不能等于登录到账"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2106152174262800609/answer/2107241204530274393",
+          "publishedLabel": "2026-11-20 22:37",
+          "upvotes": 131,
+          "comments": 17,
+          "summary": "关心探索与月度兑换、票券类型和日周常负担"
+        }
+      ],
+      "limitations": "只读3个可见回答；3个回答属于1个讨论；精确资源、时间与票券数字未作规则核实。"
+    },
+    {
+      "id": "S02",
+      "platform": "TapTap",
+      "url": "https://www.taptap.cn/moment/872963338311567249",
+      "title": "蓝原公测最后一次爆料！开服510抽+不歪卡池",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-post",
+      "signal": "福利和抽卡规则解释需求",
+      "metrics": {
+        "views": 1445,
+        "comments": 5,
+        "likes": 7,
+        "pollParticipants": 174
+      },
+      "publishedLabel": "昨天22:04",
+      "limitations": "二手规则有未核实数值，不作为正式保底证据。"
+    },
+    {
+      "id": "S03",
+      "platform": "TapTap",
+      "url": "https://www.taptap.cn/moment/872198861999833996",
+      "title": "润了，这游戏有pvp？！",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-post",
+      "signal": "是否必须参加PvP、非竞技玩家能否轻松玩",
+      "metrics": {
+        "views": 4153,
+        "comments": 34,
+        "likes": 17
+      },
+      "publishedLabel": "修改于前天11:48",
+      "limitations": "反映玩家疑问，未证明PvP存在、强制或奖励绑定。"
+    },
+    {
+      "id": "S04",
+      "platform": "TapTap",
+      "url": "https://www.taptap.cn/moment/872939550660366021",
+      "title": "平均期望58抽，50%人73抽，99%人85抽",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-and-view-count",
+      "signal": "抽卡概率、期望成本和保底的区别",
+      "metrics": {
+        "views": 1660,
+        "likesOnRecommendationCard": 5,
+        "repliesOnRecommendationCard": 47
+      },
+      "publishedLabel": "昨天20:30",
+      "limitations": "标题数值未核实；点赞回复来自推荐卡，不是完整评论正文。"
+    },
+    {
+      "id": "S05",
+      "platform": "TapTap",
+      "url": "https://www.taptap.cn/moment/872100017337274264",
+      "title": "开服家园奇波推荐",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-post",
+      "signal": "家园、工种与奇波用途",
+      "metrics": {
+        "views": 209,
+        "likes": 1
+      },
+      "publishedLabel": "11-18",
+      "limitations": "转发攻略图片；小样本，只能支持需求方向。"
+    },
+    {
+      "id": "S06",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/video/BV1Nbs26TEtj/",
+      "title": "蓝色星原新人开荒攻略！开服保送养老，入坑抄我就好！",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-description-and-counters",
+      "signal": "开荒流程、低跑图负担、家园奇波工种、牧场、养成与自选",
+      "metrics": {
+        "viewsDisplay": "19.6万",
+        "likesDisplay": "1.3万",
+        "coins": 1913,
+        "favorites": 9063,
+        "shares": 1592,
+        "secondaryCounterDisplay": "488"
+      },
+      "creator": "丸子",
+      "creatorGroup": "bili-wanzi",
+      "publishedLabel": "2026-11-18 11:05:00",
+      "limitations": "简介明确基于三测；未完整观看视频及评论。第二计数不作为评论数。收藏为有用性代理，不等于成功采用攻略。"
+    },
+    {
+      "id": "S07",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/video/BV1VmyszWEyX/",
+      "title": "蓝色星原公测前瞻总结！总计510抽，卡池优化规则一览…",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-description-and-counters",
+      "signal": "抽卡变更、资源汇总、活动与角色展示",
+      "metrics": {
+        "viewsDisplay": "7万",
+        "likes": 5916,
+        "coins": 670,
+        "favorites": 1126,
+        "shares": 635,
+        "secondaryCounterDisplay": "168"
+      },
+      "creator": "丸子",
+      "creatorGroup": "bili-wanzi",
+      "publishedLabel": "2026-11-20 22:12:52",
+      "limitations": "与S06同作者，不能当两个独立作者投票；未完整观看；标题机制仍需官方原文。"
+    },
+    {
+      "id": "S08",
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/video/BV1zhypzxE5a/",
+      "title": "蓝色星原公测前瞻直播省流版，看我这个就够了",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-and-counters",
+      "signal": "快速了解前瞻",
+      "metrics": {
+        "views": 89,
+        "likes": 8,
+        "coins": 6,
+        "favorites": 5,
+        "shares": 1
+      },
+      "publishedLabel": "2026-11-20 20:30:00",
+      "limitations": "最初88播放、复核89；关注低，不用于热门排序；自动连播曾跳到无关视频，无关内容排除。"
+    },
+    {
+      "id": "S09",
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=8Xp-Hhh443Q",
+      "title": "Is Azur Promilia Worth The Hype? | 30+ Hour First Impressions",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-description-and-counters",
+      "signal": "开放世界体验、是否值得玩、与同类玩法比较",
+      "metrics": {
+        "viewsDisplay": "1.3万",
+        "likes": 258
+      },
+      "creator": "Chaotik",
+      "publishedLabel": "页面1个月前；Google索引2026-09-25",
+      "limitations": "测试期历史体验；没有完整观看或评论阅读；30小时为作者自述。"
+    },
+    {
+      "id": "S10",
+      "platform": "Reddit via Google",
+      "url": "https://www.reddit.com/r/gachagaming/comments/1x4w1za/azur_promilia_english_dev_letter_the_english/",
+      "title": "Azur Promilia English dev letter…",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "search-index-only",
+      "signal": "英语地区发行进度与等待时间",
+      "metrics": {
+        "indexCommentsDisplay": "650+",
+        "indexAge": "1 month ago"
+      },
+      "limitations": "原帖受网络安全拦截，评论未读；索引提及的2027不能作为已核实发行日期。"
+    },
+    {
+      "id": "S11",
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/AzurPromilia/hot/",
+      "title": "AzurPromilia hot",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "captcha-no-body",
+      "signal": "社区入口，正文不可用",
+      "metrics": {},
+      "limitations": "遇到Prove your humanity；未解验证码；不进入热门正文主题计数。"
+    },
+    {
+      "id": "S12",
+      "platform": "X official EN",
+      "url": "https://x.com/AzurPromilia_EN/status/2117965094319501598",
+      "title": "Abby character introduction",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "official-profile-visible-post",
+      "signal": "角色与世界观官方传播",
+      "metrics": {
+        "replies": 43,
+        "reposts": 149,
+        "likes": 1550,
+        "views": 27997
+      },
+      "publishedLabel": "Nov 4",
+      "official": true,
+      "limitations": "只看到官方帖与计数，未读回复；不能作为独立玩家讨论或情绪证据。"
+    },
+    {
+      "id": "S13",
+      "platform": "X official EN",
+      "url": "https://x.com/AzurPromilia_EN/status/2118720057991627116",
+      "title": "Terara character introduction",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "official-profile-visible-post",
+      "signal": "角色与世界观官方传播",
+      "metrics": {
+        "replies": 18,
+        "reposts": 82,
+        "likes": 764,
+        "views": 15508
+      },
+      "publishedLabel": "Nov 6",
+      "official": true,
+      "limitations": "只看到官方帖与计数，未读回复；不能作为独立玩家讨论或情绪证据。"
+    },
+    {
+      "id": "S14",
+      "platform": "X official EN",
+      "url": "https://x.com/AzurPromilia_EN/status/2121256773755531522",
+      "title": "Star Vessel introduction",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "official-profile-visible-post",
+      "signal": "角色与世界观官方传播",
+      "metrics": {
+        "replies": 21,
+        "reposts": 32,
+        "likes": 346,
+        "views": 11992
+      },
+      "publishedLabel": "Nov 13",
+      "official": true,
+      "limitations": "只看到官方帖与计数，未读回复；不能作为独立玩家讨论或情绪证据。"
+    },
+    {
+      "id": "S15",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/NaNo_public/status/2124056613527187856",
+      "title": "偏爱源千代，角色外观与偏好",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "偏爱源千代，角色外观与偏好",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": "同作者重复发言只保留一个需求样本。"
+    },
+    {
+      "id": "S16",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/exuhai1022/status/2124055009377820759",
+      "title": "不擅长开放世界，希望能长期轻松玩",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "不擅长开放世界，希望能长期轻松玩",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": null
+    },
+    {
+      "id": "S17",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/ArkNm39/status/2124052562773262372",
+      "title": "不确定能否玩、朋友是否也玩",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "不确定能否玩、朋友是否也玩",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": null
+    },
+    {
+      "id": "S18",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/SoraGemini_DQFF/status/2124051271619620980",
+      "title": "想先用手机玩，关心以后换PS5的可能性",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "想先用手机玩，关心以后换PS5的可能性",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": null
+    },
+    {
+      "id": "S19",
+      "platform": "X",
+      "url": "https://x.com/ReveFill/status/2124043139384275171",
+      "title": "キボの巣穴探索イベントが始まってることを今知った…",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-post-read",
+      "signal": "活动发现太晚，担心合作条件与截止时间",
+      "metrics": {
+        "views": 144,
+        "replies": 0,
+        "reposts": 0,
+        "likes": 0
+      },
+      "publishedLabel": "2026-11-21 15:32",
+      "shortExcerpt": "報酬を獲得する前にイベント終了になる人が出てきそう",
+      "limitations": "已由Yahoo聚合追至原帖；属于活动分享后的担忧，不能推断所有人必须邀请；奖励条件需活动原文。"
+    },
+    {
+      "id": "S20",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/BB_the_devotee/status/2124048622392390132",
+      "title": "偏爱碧蓝航线2D风格，仍考虑尝试3D开放世界",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "偏爱碧蓝航线2D风格，仍考虑尝试3D开放世界",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": null
+    },
+    {
+      "id": "S21",
+      "platform": "X via Yahoo Japan realtime",
+      "url": "https://x.com/Kagerutn/status/2124045031573258626",
+      "title": "想放松游玩，对皮肤感兴趣",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-selected-post",
+      "signal": "想放松游玩，对皮肤感兴趣",
+      "metrics": {},
+      "aggregationUrl": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア",
+      "limitations": "不是原帖回复样本；无可靠互动计数；不验证玩家所提平台或机制。",
+      "dedupNote": null
+    },
+    {
+      "id": "S22",
+      "platform": "YouTube JP",
+      "url": "https://www.youtube.com/watch?v=SMo9pH6hXAU",
+      "title": "【アズプロ】最重要！戦闘システムと各クラスの役割を徹底解説！",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-and-counters",
+      "signal": "战斗机制与职业角色",
+      "metrics": {
+        "views": 23,
+        "likes": 2
+      },
+      "creator": "RiSE",
+      "publishedLabel": "26分钟前",
+      "limitations": "新小样本，不称热门；同作者X重复分享不再另计。"
+    },
+    {
+      "id": "S23",
+      "platform": "YouTube JP",
+      "url": "https://www.youtube.com/watch?v=xUMVTdRwxSM",
+      "title": "【アズプロ】11月20日公式放送まとめ｜初心者ガチャ・限定ガチャ・天井引き継ぎの仕様",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "primary-title-description-and-counters",
+      "signal": "普通票券、新手池、限定池与保底继承解释",
+      "metrics": {
+        "views": 1641,
+        "likes": 20
+      },
+      "creator": "ALE",
+      "publishedLabel": "6小时前",
+      "limitations": "推荐卡曾显示2124播放，原页复核1641，保留原页计数且不平均；规则仍是二手概述，视频无法播放，未读完整转录。"
+    },
+    {
+      "id": "S24",
+      "platform": "X official JP via Yahoo realtime",
+      "url": "https://x.com/AzurPromilia_JP/status/2124027566495547806",
+      "title": "声优签名抽奖活动",
+      "observedOn": "2026-11-21",
+      "observationMethod": "selected visible DOM/AX observations, manually summarized; not a full page archive",
+      "accessLevel": "public-aggregation-official-campaign",
+      "signal": "声优与角色宣传",
+      "metrics": {
+        "replies": 13,
+        "reposts": 2203,
+        "likes": 1203
+      },
+      "publishedLabel": "活动11月21—27日",
+      "official": true,
+      "incentivized": true,
+      "limitations": "抽奖激励传播，排除有机讨论热度与情绪比较。"
+    }
+  ],
+  "carriedForwardEvidence": [
+    {
+      "id": "C01",
+      "path": "src/content/guides/zh-hans/launch.md",
+      "claim": "国服、日本分别有2026-11-26日期证据；具体小时仍待本轮后续原文核验",
+      "refreshedThisRun": false
+    },
+    {
+      "id": "C02",
+      "path": "src/content/guides/zh-hans/platforms.md",
+      "claim": "日本计划iOS/Android/Windows；平台开放与互通需另核",
+      "refreshedThisRun": false
+    },
+    {
+      "id": "C03",
+      "path": "src/content/guides/zh-hans/download.md",
+      "claim": "官网和商店身份、历史测试/预约/正式下载的区别",
+      "refreshedThisRun": false
+    }
+  ],
+  "excludedOrLimited": [
+    {
+      "platform": "Weibo / Xiaohongshu / Douyin",
+      "status": "not sampled",
+      "reason": "本轮范围未覆盖，不宣称访问受限"
+    },
+    {
+      "platform": "NGA",
+      "status": "discovery only",
+      "reason": "发现论坛链接但未读正文，不计入主题证据"
+    },
+    {
+      "platform": "Bilibili",
+      "url": "https://www.bilibili.com/video/BV1ftypztEzL/",
+      "status": "unavailable",
+      "reason": "索引4273播放的结果原页缺失并跳首页，排除当前热度"
+    },
+    {
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/gachagaming/comments/1bj57gl/manjuu_azur_promilia_12_minutes_of_gameplay/",
+      "status": "historical excluded",
+      "reason": "2024旧帖不纳入近期排序"
+    },
+    {
+      "platform": "Yahoo realtime sentiment widget",
+      "status": "excluded",
+      "reason": "84%/16%及176帖图的窗口不明，不冒充本次情绪统计"
+    }
+  ]
+}

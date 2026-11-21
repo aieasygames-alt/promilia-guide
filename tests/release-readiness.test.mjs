@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { readFile } from 'node:fs/promises';
 import { createReleaseReport, releasePlanSchema, releaseGateIssues } from '../src/lib/release-readiness.mjs';
+import { readEntries } from '../scripts/content-validation.mjs';
 
 const plan = { id: 'fixture-release', title: 'Fixture release', locales: ['zh-hans', 'ja'], topics: [{ contentId: 'launch', label: '日期', requiredClaims: ['date'] }] };
 const source = { id: 'original', kind: 'official', status: 'verified', url: 'https://example.com/original', checkedAt: '2026-11-14', excerpt: 'Official fixture.' };
@@ -64,16 +65,20 @@ test('preview mode cannot pass the release gate even when all fixture articles a
   assert.equal(releasePlanSchema.safeParse({ ...plan, locales: ['ja', 'ja'] }).success, false);
 });
 
-test('readiness CLI reports reviewed content, rejects preview release, and leaves editorial files unchanged', async () => {
+test('readiness CLI reflects current reviews, enforces the gate, and leaves editorial files unchanged', async () => {
   const file = 'src/content/guides/zh-hans/download.md';
   const before = await readFile(file, 'utf8');
   const report = spawnSync(process.execPath, ['scripts/check-release.mjs', '--json'], { encoding: 'utf8' });
   assert.equal(report.status, 0, report.stderr);
   const result = JSON.parse(report.stdout);
-  assert.equal(result.summary.required, 10);
-  assert.equal(result.summary.ready, 10);
+  const currentPlan = JSON.parse(await readFile('src/data/release-plan.json', 'utf8'));
+  const requiredEntries = (await readEntries()).filter(({ data }) => currentPlan.locales.includes(data.locale) && currentPlan.topics.some(topic => topic.contentId === data.contentId));
+  assert.equal(result.summary.required, currentPlan.locales.length * currentPlan.topics.length);
+  assert.equal(result.summary.ready, result.articles.filter(article => article.ready).length);
   assert.equal(result.summary.missing, 0);
-  assert.equal(result.summary.awaitingReview, 0);
+  assert.equal(result.summary.awaitingReview, requiredEntries.filter(({ data }) => !data.reviewer?.trim() || !data.reviewedAt).length);
+  const productionGate = spawnSync(process.execPath, ['scripts/check-release.mjs', '--require-ready', '--json'], { encoding: 'utf8', env: { ...process.env, CONTENT_PREVIEW: 'false' } });
+  assert.equal(productionGate.status, result.ready ? 0 : 1);
   const gate = spawnSync(process.execPath, ['scripts/check-release.mjs', '--require-ready', '--json'], { encoding: 'utf8', env: { ...process.env, CONTENT_PREVIEW: 'true' } });
   assert.equal(gate.status, 1);
   assert.ok(JSON.parse(gate.stdout).gateIssues.some((issue) => issue.includes('CONTENT_PREVIEW')));

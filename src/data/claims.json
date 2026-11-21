@@ -322,25 +322,25 @@
   },
   {
     "id": "cn-preload-status",
-    "revision": 3,
-    "text": "中国大陆公测预下载计划与开放状态待重新核验。",
+    "revision": 4,
+    "text": "国服官网巢穴探索规则列出预下载计划：2026年11月24日15:00（UTC+8）。",
     "localized": {
       "zh-hans": {
-        "summary": "中国大陆公测预下载计划与开放状态待重新核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "国服预下载计划为2026年11月24日15:00（北京时间）。",
+        "detail": "依据国服巢穴探索活动规则；具体设备、当前安装器及实际开放另核，不作为开服小时。"
       },
       "ja": {
-        "summary": "中国本土の事前ダウンロード予定と配布状況は再確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "中国本土の事前ダウンロードは2026年11月24日15:00（UTC+8、日本時間16:00）の予定。",
+        "detail": "中国本土の巣穴探索イベント規約が根拠です。機種別の配布、現在のインストール可否、ゲーム開始時刻は別途確認します。"
       }
     },
     "sourceRefs": [
-      "cn-livestream-recap-2026-11-20"
+      "cn-kibo-adventure-rules-2026-11-21"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前瞻版本",
-    "verification": "pending",
+    "gameVersion": "公测前网页活动规则",
+    "verification": "verified",
     "affectedPages": [
       "download",
       "platforms",
@@ -349,7 +349,11 @@
       "getting-started"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-24",
+      "time": "15:00",
+      "timeZone": "Asia/Shanghai"
+    },
     "distributionScope": {
       "region": "cn",
       "release": "public-launch"
@@ -476,25 +480,25 @@
   },
   {
     "id": "jp-preload-status",
-    "revision": 3,
-    "text": "日本地区事前下载计划与开放状态待重新核验。",
+    "revision": 4,
+    "text": "日本官方网页活动规则列出事前下载计划：2026年11月24日16:00（日本时间）。",
     "localized": {
       "zh-hans": {
-        "summary": "日本地区事前下载计划与开放状态待重新核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "日本预下载计划为2026年11月24日16:00（日本时间），即北京时间15:00。",
+        "detail": "依据日本巢穴探索活动规则；未确认当前已开放、全部平台范围或正式安装器，不作为开服小时。"
       },
       "ja": {
-        "summary": "日本向け事前ダウンロード予定と配布状況は再確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "日本向け事前ダウンロードは2026年11月24日16:00（日本時間）の予定。",
+        "detail": "キボの巣穴探索の公式ルールに記載。現在の配布開始、全機種の対応やゲーム開始時刻は別途確認します。"
       }
     },
     "sourceRefs": [
-      "jp-livestream-recap-2026-11-20"
+      "jp-kibo-adventure-rules-2026-11-21"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "日本",
     "gameVersion": "正式发行前",
-    "verification": "pending",
+    "verification": "verified",
     "affectedPages": [
       "launch",
       "download",
@@ -503,7 +507,11 @@
       "global-release"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-24",
+      "time": "16:00",
+      "timeZone": "Asia/Tokyo"
+    },
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
@@ -662,5 +670,205 @@
       "region": "jp",
       "release": "public-launch"
     }
+  },
+  {
+    "id": "cn-rewards-conditions",
+    "revision": 1,
+    "text": "国服福利图按登录、签到、任务与等级列出奖励，家园等级和商店各列纯粹忆痕8个。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服福利图按登录、签到、任务与等级列出奖励，家园等级和商店各列纯粹忆痕8个。",
+        "detail": "七日签到并非首日全部领取；星轨兑换按两轮统计；票券名称和数量不证明卡池适用或兑换率。"
+      },
+      "ja": {
+        "summary": "中国本土の配布画像はログイン・サインイン・任務・レベルを区別し、ホームレベルとホームショップに中国語名「纯粹忆痕」各8個を記載。",
+        "detail": "7日間ログインは初日の一括配布とは別です。月次交換は2回分の集計。チケット名・枚数だけで対象ガチャや交換率は確定しません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-benefits-images-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "1.0公测前公告",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "banner-rules",
+      "getting-started",
+      "home",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "jp-kibo-web-rewards",
+    "revision": 1,
+    "text": "日本巢穴探索活动至2026年12月31日13:00（日本时间），奖励发给参加活动的Yostar ID最初创建的角色。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本巢穴探索活动至2026年12月31日13:00（日本时间），奖励发给参加活动的Yostar ID最初创建的角色。",
+        "detail": "探索最多9次；游戏内邮件发放，首次登录游戏起365日内领取；限本活动，非通用账号互通条款。"
+      },
+      "ja": {
+        "summary": "日本の巣穴探索イベントは2026年12月31日13:00（日本時間）まで。探索報酬は参加Yostar IDで最初に作成したキャラクターに配布。",
+        "detail": "探索は最大9回。ゲーム内メールで配布され、初回ログインから365日以内に受け取ります。本イベントの条件であり、一般的なデータ共有規約ではありません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-kibo-adventure-rules-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前网页活动",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-kibo-web-rewards",
+    "revision": 1,
+    "text": "国服巢穴探索活动至2026年12月31日12:00（UTC+8），奖励绑定参与蛮啾通行证账号下首个创建角色。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服巢穴探索活动至2026年12月31日12:00（北京时间），探索奖励发给参与账号首个创建的角色。",
+        "detail": "最多9次探索；探索背包保存，正式上线后经游戏邮件发放，首次登录游戏后365个自然日内领取。仅为本活动条款。"
+      },
+      "ja": {
+        "summary": "中国本土の巣穴探索は2026年12月31日12:00（UTC+8）まで。参加アカウントで最初に作成したキャラに探索報酬を配布。",
+        "detail": "最大9回。探索バッグに保管後、正式配信後にゲーム内メールで配布し、初回ログインから365暦日以内に受取。本イベントのみの規約です。"
+      }
+    },
+    "sourceRefs": [
+      "cn-kibo-adventure-rules-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前网页活动",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-benefit-preview-milestones",
+    "revision": 1,
+    "text": "国服福利预览中，星临旅记第2至7日可见数量为1、2、1、1、1、3；星光初拾可清楚辨认10/20/30/40级档位。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服福利预览中，星临旅记第2至7日可见数量为1、2、1、1、1、3；星光初拾可清楚辨认10/20/30/40级档位。",
+        "detail": "仅为原图可见部分；第1日遮挡、完整等级清单、逐档道具和全部领取条款未核实，不从总量反推。"
+      },
+      "ja": {
+        "summary": "中国本土の特典プレビューでは星临旅记の2～7日目に1・2・1・1・1・3個、星光初拾に10・20・30・40レベルの段階を確認。",
+        "detail": "画像の見える部分のみ。1日目の数量、全段階、段階別アイテム、受取規約全体は未照合。合計から逆算しません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-benefits-images-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "正式发行前 / 2026-11-21资料核对",
+    "verification": "verified",
+    "affectedPages": [
+      "resources"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-store-home-kibo-overview",
+    "revision": 1,
+    "text": "国服开发者商店介绍确认星结伙伴、家园开垦、种植孵化、装备制作，以及奇波协助种植、采集、制作与生产。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服开发者商店介绍确认星结伙伴、家园开垦、种植孵化、装备制作，以及奇波协助种植、采集、制作与生产。",
+        "detail": "玩法类别已确认，具体任务、设施、岗位、消耗、时间与每只奇波适性尚非实测。"
+      },
+      "ja": {
+        "summary": "中国本土の開発元ストア説明に星结、開墾、栽培・孵化、装備製作、キボによる栽培・採集・製作・生産の協力を記載。",
+        "detail": "遊び方の区分を確認したもので、任務・施設・配置・費用・時間・個体ごとの適性は未検証です。"
+      }
+    },
+    "sourceRefs": [
+      "cn-store-gameplay-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "正式发行前 / 2026-11-21资料核对",
+    "verification": "verified",
+    "affectedPages": [
+      "home",
+      "kibo-guide",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "jp-store-home-kibo-overview",
+    "revision": 1,
+    "text": "日本Google Play介绍确认与奇波结缘、协作管理农园及战斗；不提供完整解锁或客户端设备条件。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本Google Play介绍确认与奇波结缘、协作管理农园及战斗；不提供完整解锁或客户端设备条件。",
+        "detail": "不将国服工种、设施或名称直接推广到日本，也不由商店更新日推定已正式开放。"
+      },
+      "ja": {
+        "summary": "日本向けGoogle Playの説明に、キボと絆を結び、協力して農園を管理し、敵と戦う内容を記載。",
+        "detail": "中国本土の作業分類・施設・名称をそのまま適用せず、ストア更新日から正式配信開始を判断しません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-google-play-2026-11-21"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前 / 2026-11-21资料核对",
+    "verification": "verified",
+    "affectedPages": [
+      "home",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "jp-replay-rule-coverage",
+    "revision": 1,
+    "text": "日本官方回放已定位五类卡池讲解与开服字幕段落；完整概率、专名、期限和数值仍待画面对照。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本官方回放已定位五类卡池讲解与开服字幕段落；完整概率、专名、期限和数值仍待画面对照。",
+        "detail": "自动字幕存在日期和专名误识别；不暴露可行动卡池或时间数值，不作为国服证据。"
+      },
+      "ja": {
+        "summary": "日本公式配信の自動字幕で5種類のガチャ説明と開始時刻の段落を特定。確率全体、名称、期間、数値は映像との照合待ち。",
+        "detail": "日付・固有名の誤認識があるため、数値を行動判断や中国本土の根拠に使いません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-release-special-2026-11-20"
+    ],
+    "type": "pending",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前 / 2026-11-21资料核对",
+    "verification": "pending",
+    "affectedPages": [
+      "banner-rules"
+    ],
+    "conflicts": [],
+    "value": {}
   }
 ]

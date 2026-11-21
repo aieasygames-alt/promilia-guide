@@ -8,23 +8,23 @@ description: "中国本土と日本の独立した公式日程と事前登録先
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-21"
-gameVersion: "サービス開始前 / 2026-11-14 公式ページ照合"
+gameVersion: "正式配信前／2026-11-21 両地域イベント規約を照合"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14"]
-sourceRevision: 6
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 8
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["global-release","download","getting-started"]
 order: 1
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"},{"date":"2026-11-20","note":"公式特別番組に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日11:00 JST）を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"}]
-translatedFromRevision: 6
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-15","note":"事前登録の達成目標と報酬内訳（限定キャラ「アニス」や限定キボ「星彩·浮雲」）および受取条件の案内を拡充。"},{"date":"2026-11-20","note":"公式特別番組に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日11:00 JST）を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
+translatedFromRevision: 8
 claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":3,"jp-opening-time":1,"cn-preload-status":3}
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-21"
 ---
 
 ## 地域を選んでから日程を確認
@@ -58,6 +58,17 @@ reviewedAt: "2026-11-14"
 
 ## サービス開始までに確認する項目
 
-両地域の具体的な開始時刻、日本の事前ダウンロード日程、中国本土のPC・Androidと日本のPC版の配布先、報酬やデータ共有の詳しい条件は、今回の確認が完了していません。未発表と断定するものではありません。
+両地域の事前ダウンロード予定は下記の各地域のイベント規約で確認できました。両地域のゲーム開始時刻、中国本土のPC・Androidと日本のPCの正式配布先、詳しいデータ共有条件は引き続き確認中です。
 
 [ダウンロードの早見表](/ja/guides/download/)で地域と端末を選び、[準備リスト](/ja/guides/getting-started/)に進捗を記録できます。日付が到来しただけでは、当サイトの表示をサービス開始済みに切り替えません。
+
+## 両地域の事前ダウンロード予定
+
+| 対象 | 公式規約の予定時刻 | 根拠 |
+| --- | --- | --- |
+| 中国本土 | 2026年11月24日15:00（UTC+8、日本時間16:00） | 中国本土公式トップの「集结，勇闯奇波巢穴」→「活动规则」 |
+| 日本 | 2026年11月24日16:00（日本時間） | 日本公式「集まれ！キボの巣穴探索」→「イベントルール」 |
+
+各地域の独立した原文で確認した予定です。現時点の配布開始、全機種同時配布、ゲーム開始時刻は別途確認します。両規約とも、その時点で事前登録任務が終了するため、イベント全体の締切と区別してください。
+
+報酬の配布先と受取期限は[報酬案内](/ja/guides/resources/)で確認できます。

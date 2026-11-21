@@ -1,0 +1,735 @@
+{
+  "asOf": "2026-11-21",
+  "status": "research and editorial drafts only",
+  "phasePolicy": "D0 is actual opening of each region, not a globally shared date; future windows are planning labels.",
+  "items": [
+    {
+      "id": "F01",
+      "stage": "公测前",
+      "question": "什么时候公测？几点能进入？",
+      "japaneseDraft": "リリース日はいつ？何時から遊べますか？",
+      "answerDraft": "项目已登记国服、日本各自的2026年11月26日官方日期。具体开服小时需分别查该地区新公告及其时区；不要把帖子发布时间、下载开放或倒计时结束当成服务器可登录。",
+      "questionOrigin": "搜索联想归纳",
+      "sourceRefs": [
+        "C01"
+      ],
+      "keywordClusters": [
+        "release"
+      ],
+      "targetPath": "/zh-hans/guides/launch/",
+      "targetState": "existing",
+      "answerStatus": "official-summary-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "重新核对两地最新开服公告、小时与时区。"
+    },
+    {
+      "id": "F02",
+      "stage": "公测前",
+      "question": "国际服、东南亚和日本是不是同一天上线？",
+      "japaneseDraft": "日本版とグローバル版は同時リリースですか？",
+      "answerDraft": "国服与日本各有独立日期证据，不能据此扩展为全球同步。其他地区先确认当地运营方、公告和商店；英语社区的等待时间讨论不作为正式档期。",
+      "questionOrigin": "搜索联想与索引线索",
+      "sourceRefs": [
+        "C01",
+        "S10"
+      ],
+      "keywordClusters": [
+        "regional"
+      ],
+      "targetPath": "/zh-hans/guides/global-release/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "各地区独立原始发行公告；不沿用未读Reddit摘要中的年份。"
+    },
+    {
+      "id": "F03",
+      "stage": "公测前",
+      "question": "官网在哪里，哪里下载才是对应地区版本？",
+      "japaneseDraft": "公式サイトとダウンロード先はどこですか？",
+      "answerDraft": "先选游戏地区，再从对应官网进入商店或客户端页。现有下载指南登记了国服与日本的官方入口；核对应用名称、开发/发行方及应用ID，再看当前按钮是预约还是安装。",
+      "questionOrigin": "搜索联想归纳",
+      "sourceRefs": [
+        "C03"
+      ],
+      "keywordClusters": [
+        "entry"
+      ],
+      "targetPath": "/zh-hans/guides/download/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式客户端入口及版本、设备条件。"
+    },
+    {
+      "id": "F04",
+      "stage": "公测前",
+      "question": "现在能预下载吗？旧测试客户端能直接用吗？",
+      "japaneseDraft": null,
+      "answerDraft": "先读当前地区的正式预下载公告，记录适用设备与版本。历史CBT和旅迹测试入口只能说明历史测试；旧客户端是否升级沿用，要由正式说明或当前启动器确认。",
+      "questionOrigin": "搜索联想归纳",
+      "sourceRefs": [
+        "C03"
+      ],
+      "keywordClusters": [
+        "beta",
+        "entry"
+      ],
+      "targetPath": "/zh-hans/guides/download/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式预下载日程、入口及旧包处理说明。"
+    },
+    {
+      "id": "F05",
+      "stage": "公测前",
+      "question": "支持PC、手机、PS5或Steam吗？",
+      "japaneseDraft": "PC・スマホ・PS5・Steamに対応していますか？",
+      "answerDraft": "支持计划、客户端下载和跨端进度要分开核对。项目登记的日本计划平台为iOS、Android、Windows；搜索里出现PS5和Steam只能说明有人查，不能作为支持证据。",
+      "questionOrigin": "搜索联想归纳",
+      "sourceRefs": [
+        "C02"
+      ],
+      "keywordClusters": [
+        "platform"
+      ],
+      "targetPath": "/zh-hans/guides/platforms/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "分地区现行平台清单及各平台正式分发页。"
+    },
+    {
+      "id": "F06",
+      "stage": "公测前",
+      "question": "先用手机玩，以后换PC或主机会保留进度吗？",
+      "japaneseDraft": "スマホで始めて、後から別の機種へ引き継げますか？",
+      "answerDraft": "换设备前逐项核对地区、账号登录方式、渠道、服务器、角色进度及付费货币规则。仅能用同一账号登录不足以证明全部共用；主机支持本身也需先核实。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S18",
+        "C02"
+      ],
+      "keywordClusters": [
+        "platform"
+      ],
+      "targetPath": "/zh-hans/guides/platforms/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "当前地区跨端及跨渠道说明；主机支持证据。"
+    },
+    {
+      "id": "F07",
+      "stage": "公测前",
+      "question": "我的设备能玩吗，要留多大空间？",
+      "japaneseDraft": "必要スペックと空き容量は？",
+      "answerDraft": "先记录型号、系统、CPU/GPU、内存与可用存储，再对照目标地区正式配置。商店包体不等于完整占用；无正式空间或同条件实测时，不用固定倍数估算，也不据此急着换设备。",
+      "questionOrigin": "搜索联想归纳",
+      "sourceRefs": [],
+      "keywordClusters": [
+        "requirements"
+      ],
+      "targetPath": "/zh-hans/guides/requirements/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "对应地区配置原文、追加资源与实测条件。"
+    },
+    {
+      "id": "F08",
+      "stage": "公测前",
+      "question": "网页奇波活动现在参加还来得及吗？必须邀请吗？",
+      "japaneseDraft": "キボのWebイベントは今からでも間に合いますか？",
+      "answerDraft": "以目标地区活动页为准，先记截止时间及其时区，再逐项看个人任务、合作任务、奖励绑定和兑换窗口。玩家担忧邀请条件只能提供核查方向；不承诺无邀请拿满或奖励自动到账。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S19"
+      ],
+      "keywordClusters": [
+        "event"
+      ],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "中日活动各自任务表、截止时区、兑换与绑定条款。"
+    },
+    {
+      "id": "F09",
+      "stage": "公测前",
+      "question": "预约成功就能自动获得所有奖励吗？",
+      "japaneseDraft": null,
+      "answerDraft": "预约、创建角色、账号绑定与领取是不同步骤。保存预约成功提示，并核对奖励对象、地区、任务要求、发放渠道和有效期；没有条款就不承诺自动到账。",
+      "questionOrigin": "搜索联想与活动主题归纳",
+      "sourceRefs": [
+        "C01",
+        "S19"
+      ],
+      "keywordClusters": [
+        "entry",
+        "event"
+      ],
+      "targetPath": "/zh-hans/guides/launch/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "各奖励发放条件与领取窗口。"
+    },
+    {
+      "id": "F10",
+      "stage": "公测前",
+      "question": "不喜欢开放世界或每天时间很少，适合玩吗？",
+      "japaneseDraft": "オープンワールドが苦手でも無理なく遊べますか？",
+      "answerDraft": "可以先按低负担方案尝试：完成当前引导、检查有期限奖励、选择一个想体验的系统，避免把全地图清空当成首日目标。日常实际耗时和强制任务尚需正式版记录，暂不承诺固定分钟数。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S16",
+        "S06",
+        "S09"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式版最小日常、可选内容和实际耗时。"
+    },
+    {
+      "id": "F11",
+      "stage": "公测前",
+      "question": "有兑换码吗？前瞻里的福利都靠输码领取吗？",
+      "japaneseDraft": null,
+      "answerDraft": "当前项目没有可核实的有效兑换码清单。登录、任务、预约、网页活动与兑换码应分别核对来源和领取方式；优先看原公告的适用地区、期限和官方兑换入口。",
+      "questionOrigin": "由福利讨论扩展的编辑问题",
+      "sourceRefs": [
+        "O01",
+        "S02"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/redeem-codes/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "有效码原始发布记录、期限、地区和真实兑换结果。"
+    },
+    {
+      "id": "F12",
+      "stage": "公测前",
+      "question": "是碧蓝航线续作吗？游戏主要玩什么？",
+      "japaneseDraft": null,
+      "answerDraft": "名称、同厂关联和玩法不能互相替代。现有讨论关注3D开放世界、角色与奇波；介绍页应引用官方产品定位，再分别解释战斗、探索与家园的已确认范围，不凭同厂推断剧情或账号继承。",
+      "questionOrigin": "搜索问答与社区主题归纳",
+      "sourceRefs": [
+        "S09",
+        "S20"
+      ],
+      "keywordClusters": [
+        "identity"
+      ],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "官方产品定位、世界观与系列关系原文。",
+      "auxiliaryObservationRefs": [
+        "U05"
+      ]
+    },
+    {
+      "id": "F13",
+      "stage": "开服D0—D3",
+      "question": "510抽是登录就能全部领到吗？66抽和510抽要相加吗？",
+      "japaneseDraft": "510連分はログインだけでもらえますか？",
+      "answerDraft": "国服11月20日官方正文分别写“登录即送66抽”和“探索与任务累计可得510抽+”。这不能证明所有资源首日到账，也不能把66与510直接相加。应继续按来源、领取条件、票券和期限核对明细。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "O01",
+        "S01",
+        "S02",
+        "S07"
+      ],
+      "keywordClusters": [
+        "event"
+      ],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "official-summary-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "图片明细、口径重叠、领取门槛和时间分布；日本规则另核。"
+    },
+    {
+      "id": "F14",
+      "stage": "开服D0—D3",
+      "question": "免费五星角色和五星灵子怎么拿？",
+      "japaneseDraft": null,
+      "answerDraft": "国服官方正文确认完成指定任务可免费获得五星角色与五星灵子；当前这段正文不足以确定任务名、天数或自选范围。先核对游戏内对应活动的任务列表和领取按钮，再补完整步骤。",
+      "questionOrigin": "由官方公告与社区主题归纳",
+      "sourceRefs": [
+        "O01",
+        "S02"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "official-summary-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "指定任务、解锁条件、对象范围和期限。"
+    },
+    {
+      "id": "F15",
+      "stage": "开服D0—D3",
+      "question": "普通票和限定票能通用吗？福利能都投进想抽的池吗？",
+      "japaneseDraft": "通常ガチャ券と限定ガチャ券は共通ですか？",
+      "answerDraft": "先打开道具详情和卡池详情，逐项核对可用票券、替代货币、兑换比例与到期时间。总福利不要先换算成限定池抽数；不同名称、图标或说明的票券分别记录。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S01",
+        "S23"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/banner-rules/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式服票券名称、适用池和转换规则。"
+    },
+    {
+      "id": "F16",
+      "stage": "开服D0—D3",
+      "question": "保底多少抽？会歪吗？换池后继承吗？",
+      "japaneseDraft": "天井は何回で、次のガチャに引き継がれますか？",
+      "answerDraft": "以当前地区、当前卡池的概率与规则详情为准，分别记录五星/目标角色门槛、计数范围、跨期继承和例外。社区标题里的“不歪”或旧测试数值不能替代正式池说明。",
+      "questionOrigin": "社区主题转写与搜索联想",
+      "sourceRefs": [
+        "S02",
+        "S04",
+        "S23"
+      ],
+      "keywordClusters": [
+        "banner"
+      ],
+      "targetPath": "/zh-hans/guides/banner-rules/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "各池官方详情、概率表、保底及继承示例。"
+    },
+    {
+      "id": "F17",
+      "stage": "开服D0—D3",
+      "question": "平均抽数是不是保证抽数？能据此算预算吗？",
+      "japaneseDraft": null,
+      "answerDraft": "平均值描述一组结果的期望，不能保证个人在该次数内获得目标。先确认概率模型与保底，再区分期望、分位数和最坏上限；当前没有核实完整规则，暂不采用社区计算结果作预算承诺。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S04"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/banner-rules/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式概率、保底机制与可复算模型。"
+    },
+    {
+      "id": "F18",
+      "stage": "开服D0—D3",
+      "question": "要刷初始吗？怎么避免删错号或浪费预约奖励？",
+      "japaneseDraft": null,
+      "answerDraft": "先核实账号创建、绑定、注销、游客登录与奖励发放规则，再决定是否考虑重开。无法确认账号或奖励能否恢复时，先保留现有账号记录；不按旧测试教程执行注销或清数据。",
+      "questionOrigin": "由新手与抽卡主题扩展的编辑问题",
+      "sourceRefs": [
+        "S06",
+        "S02"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/reroll/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式版账号与奖励规则；操作可恢复性。"
+    },
+    {
+      "id": "F19",
+      "stage": "开服D0—D3",
+      "question": "自选角色现在就用，还是先留着？",
+      "japaneseDraft": null,
+      "answerDraft": "先确认自选道具的可选名单、有效期和使用后能否撤回，再看现有角色能否覆盖当前任务。尚未核实正式版角色表现时，可先记录需求，避免用未注明版本的排行替代选择依据。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/reroll/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式自选名单、期限、角色功能与测试条件。"
+    },
+    {
+      "id": "F20",
+      "stage": "开服D0—D3",
+      "question": "第一天任务该按什么顺序做？",
+      "japaneseDraft": "初日は何から進めればよいですか？",
+      "answerDraft": "准备稿的建议顺序是：确认地区与账号→完成当前引导→检查有期限的奖励→根据任务解锁系统→记录遇到的阻塞。正式路线还需补任务名、前置、用时与分岔；目前不承诺具体等级或一日毕业。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S06",
+        "S16"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式任务链、系统解锁与最低可执行路线。"
+    },
+    {
+      "id": "F21",
+      "stage": "开服D0—D3",
+      "question": "家园是否必须先开，晚开就落后吗？",
+      "japaneseDraft": "ホームは最優先で解放するべきですか？",
+      "answerDraft": "先确认家园解锁任务、产出用途、储存上限和是否影响主线。三测攻略强调家园不等于正式服必须照搬；未核实前，可随引导解锁并记录实际作用，不必因“晚开亏损”口号盲目投入。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S05",
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式解锁条件、强制性、产出与投入回报。"
+    },
+    {
+      "id": "F22",
+      "stage": "开服D0—D3",
+      "question": "奇波先抓哪只？战斗和家园用途一样吗？",
+      "japaneseDraft": "最初に捕まえるキボはどう選びますか？",
+      "answerDraft": "先按当前遇到的问题区分探索、战斗和家园岗位需求，再读奇波的游戏内能力说明。暂不把外观、稀有度或三测工种排行作为正式版优先级；确认获取条件后再补路线。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S05",
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/kibo/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式能力、获取条件、岗位匹配与替代方案。"
+    },
+    {
+      "id": "F23",
+      "stage": "开服D0—D3",
+      "question": "有PvP吗？不参加会错过核心养成资源吗？",
+      "japaneseDraft": "PvPは必須ですか？参加しないと不利になりますか？",
+      "answerDraft": "已采到玩家对此的担忧，但还没有足够正式规则来回答强制性。应分别核对玩法开放条件、参与方式、奖励类型与替代来源；在这些项目查明前，不承诺必须参加或完全无影响。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S03"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式玩法说明、奖励表与替代获取路径。"
+    },
+    {
+      "id": "F24",
+      "stage": "开服D0—D3",
+      "question": "下载完却不能登录，应该怎么排查？",
+      "japaneseDraft": null,
+      "answerDraft": "先确认同地区服务器状态，再区分商店、安装、追加资源与登录四个环节。记录设备、系统、客户端版本、错误码及发生时刻，查官方维护/客服；未定位原因前避免反复重装和注销账号。",
+      "questionOrigin": "由入口搜索扩展的编辑问题",
+      "sourceRefs": [
+        "C03"
+      ],
+      "keywordClusters": [
+        "entry"
+      ],
+      "targetPath": "/zh-hans/guides/download/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "开服实况、错误码对应原文与复现条件。"
+    },
+    {
+      "id": "F25",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "每天时间少，日常最少做什么？",
+      "japaneseDraft": null,
+      "answerDraft": "先把实际任务分成有期限奖励、影响解锁的任务和可延后探索，再按自己可用时间选择。编辑将记录每项用时、前置和漏做影响；正式版数据不足时不发布“每日必做N件”硬清单。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S01",
+        "S06",
+        "S16"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式日常列表、刷新时区、用时与漏做影响。"
+    },
+    {
+      "id": "F26",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "体力先用在哪，能否先存着？",
+      "japaneseDraft": null,
+      "answerDraft": "先确认是否存在相应消耗资源、恢复方式、上限和当前可挑战内容，再比较任务需求。当前未核实本作主线、材料或装备的具体消耗，不套用其他游戏的刷本等级和固定分配比例。",
+      "questionOrigin": "三测选题转写，正式版待验证",
+      "sourceRefs": [
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式资源名称、上限、消耗、可延后程度与奖励。"
+    },
+    {
+      "id": "F27",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "家园离线多久收一次？派遣如何搭配？",
+      "japaneseDraft": null,
+      "answerDraft": "查看正式版设施的计时、储存上限、岗位要求和奇波能力，记录上线前后产出。先判断是否已经满仓或缺岗位，再调整；不凭三测表填离线效率和最优周期。",
+      "questionOrigin": "三测选题转写，正式版待验证",
+      "sourceRefs": [
+        "S05",
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/kibo/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "设施、岗位、仓储、离线结算规则与实测。"
+    },
+    {
+      "id": "F28",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "角色和奇波都能养，资源该集中还是分散？",
+      "japaneseDraft": null,
+      "answerDraft": "先为当前阻塞列出需要的功能，再记录现有角色/奇波、升级成本和可替代选项。建议只为明确目标投入，但这属于通用决策方法；不预设队伍人数、固定阵容或角色梯度。",
+      "questionOrigin": "三测选题转写，正式版待验证",
+      "sourceRefs": [
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式角色功能、队伍规则和养成成本。"
+    },
+    {
+      "id": "F29",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "战斗打不过，是操作、职业还是养成问题？",
+      "japaneseDraft": null,
+      "answerDraft": "先记关卡、队伍、等级、技能触发条件和失败表现，再区分生存不足、机制未处理与输出不足。根据可复核记录一次改一个变量；具体职业职责和循环需正式教程及实测补齐。",
+      "questionOrigin": "社区创作者主题转写",
+      "sourceRefs": [
+        "S22",
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/systems/combat/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式教程、技能描述、关卡机制和复现片段。"
+    },
+    {
+      "id": "F30",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "漏做登录或网页活动还能补领吗？",
+      "japaneseDraft": null,
+      "answerDraft": "先找对应活动的累计/连续登录说明、补签规则、领取期限和邮件有效期。未读到补领条款时不承诺可补；如果已满足条件却没到账，带活动名和去敏截图联系官方客服。",
+      "questionOrigin": "由活动担忧扩展的编辑问题",
+      "sourceRefs": [
+        "S19"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "每项活动补领条款与发放状态。"
+    },
+    {
+      "id": "F31",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "新手任务、限时活动和跑图先做哪一个？",
+      "japaneseDraft": null,
+      "answerDraft": "先比对结束时间与解锁依赖，优先处理接近截止且能完成的事项，其余按游玩目标安排。先记录真实任务链再形成时间表；“长期探索”奖励不与一次性活动混成同一日进度要求。",
+      "questionOrigin": "社区主题转写",
+      "sourceRefs": [
+        "S01",
+        "S06",
+        "S19"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "任务依赖、活动时限、实际用时与可回补范围。"
+    },
+    {
+      "id": "F32",
+      "stage": "开服D4—D7（待正式版验证）",
+      "question": "测试攻略和公测不一致，该信哪个？",
+      "japaneseDraft": null,
+      "answerDraft": "先对比地区、版本、发布日期和作者勘误，以当前正式公告或可复核客户端规则确认变化。发现差异时记录旧结论、新证据与影响页面；三测路线只作历史参考。",
+      "questionOrigin": "由三测攻略明确限制归纳",
+      "sourceRefs": [
+        "S06",
+        "S23"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式版本差异表及当期规则截图。"
+    },
+    {
+      "id": "F33",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "一个卡池周期零氪能攒多少抽？",
+      "japaneseDraft": null,
+      "answerDraft": "分开记录一次性、每日、每周、活动和付费来源，标明票券类型、时间窗口与完成条件。只有完整周期实际数据才能估算持续收入；开服总福利不能直接当作每月收入。",
+      "questionOrigin": "编辑假设，来自福利口径主题延伸",
+      "sourceRefs": [
+        "S01",
+        "S02"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "完整周期、刷新规则、零氪边界和每项来源。"
+    },
+    {
+      "id": "F34",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "月卡预算够不够抽下一个目标？",
+      "japaneseDraft": null,
+      "answerDraft": "先确认当前地区商品条款、领取天数、缺勤处理及目标池期限，再分别计算付费与免费所得；不要把所有票券当成限定资源。未核实价格与周期前不给付费性价比结论。",
+      "questionOrigin": "编辑假设，付费与周期规划",
+      "sourceRefs": [],
+      "keywordClusters": [
+        "banner"
+      ],
+      "targetPath": "/zh-hans/guides/banner-rules/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "地区价格、商品规则、目标池日程与资源适用范围。"
+    },
+    {
+      "id": "F35",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "什么时候值得刷装备，旧装备要保留吗？",
+      "japaneseDraft": null,
+      "answerDraft": "先读正式版装备获取、强化、回收和继承规则，记录当前卡关与替换成本。没有确认不可逆操作前保留稀缺件；不发布某等级前绝不刷或某词条必留的固定结论。",
+      "questionOrigin": "编辑假设，中期养成",
+      "sourceRefs": [],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式装备规则、成本、回收及继承实测。"
+    },
+    {
+      "id": "F36",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "家园扩建和角色提升，哪个更值得投入？",
+      "japaneseDraft": null,
+      "answerDraft": "列出两条投入路径分别解决的问题、前置、成本、产出和回收周期，再按当前目标比较。若家园产出有上限或新版本改变效率，旧最优表需重新测量。",
+      "questionOrigin": "编辑假设，家园与养成取舍",
+      "sourceRefs": [
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/resources/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式成本、产出、上限与可替代路径。"
+    },
+    {
+      "id": "F37",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "哪些奇波值得长期保留？重复的怎么处理？",
+      "japaneseDraft": null,
+      "answerDraft": "先查能力、用途、养成/回收规则以及是否有不可逆损失。整理战斗、家园与探索的独立需求，再决定留用；未核实前不建议批量放生、分解或按稀有度清空。",
+      "questionOrigin": "编辑假设，奇波管理",
+      "sourceRefs": [
+        "S05",
+        "S06"
+      ],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/kibo/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "重复处理、回收、能力差异和不可逆规则。"
+    },
+    {
+      "id": "F38",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "探索卡住或地图没清完，会错过永久奖励吗？",
+      "japaneseDraft": null,
+      "answerDraft": "先核对具体目标是长期探索、前置未满足还是限时活动。记录区域、任务名、交互提示与版本，找出缺失条件；未验证不把所有地图点位归为必做，也不承诺永久可补。",
+      "questionOrigin": "编辑假设，探索与补完",
+      "sourceRefs": [],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式地图/任务依赖、限时边界和补做规则。"
+    },
+    {
+      "id": "F39",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "新版本来了，旧配队和资源表还适用吗？",
+      "japaneseDraft": null,
+      "answerDraft": "先核版本更新是否影响技能、卡池、奖励或获取方式，再对照文章适用版本。保留变更前后证据与测量条件，受影响条目重新验证，未受影响的内容也不自动改日期。",
+      "questionOrigin": "编辑假设，版本维护",
+      "sourceRefs": [],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/systems/combat/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "正式更新公告、字段影响及复测。"
+    },
+    {
+      "id": "F40",
+      "stage": "开服D8—D30（编辑预设问题）",
+      "question": "中期卡关该提供哪些信息，才能得到有用解答？",
+      "japaneseDraft": null,
+      "answerDraft": "整理目标/关卡、地区/版本、阵容或奇波、关键资源、尝试过的方法和失败表现，附去除账号隐私的截图。编辑先复现再回答；充值和账号问题交由对应官方客服。",
+      "questionOrigin": "编辑假设，反馈收集",
+      "sourceRefs": [],
+      "keywordClusters": [],
+      "targetPath": "/zh-hans/guides/getting-started/",
+      "targetState": "existing",
+      "answerStatus": "conditional-procedure-draft",
+      "publicationStatus": "editorial draft; not human reviewed",
+      "verificationNeeded": "真实问题样本与复现步骤；可用的接收渠道。"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "asOf": "2026-11-21",
+  "version": "prelaunch",
+  "items": [
+    {
+      "id": "R01",
+      "priority": "P0",
+      "topic": "网页探索奖励领取",
+      "regions": [
+        "cn",
+        "jp"
+      ],
+      "status": "rules-drafted-awaiting-review",
+      "evidence": [
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21"
+      ],
+      "implemented": [
+        "六任务次数与总上限",
+        "探索背包与首个角色绑定",
+        "活动结束和365日领取区分",
+        "完整探索奖励原名",
+        "未到账分阶段排查"
+      ],
+      "missing": [
+        "登录后各任务实际完成路径",
+        "正式版邮件入口和到达时刻",
+        "异常账号的真实客服处理"
+      ],
+      "nextAction": "正式服务可用后记录自有测试账号领取路径；不请求或保存玩家登录凭证"
+    },
+    {
+      "id": "R02",
+      "priority": "P0",
+      "topic": "国服登录签到、等级、主线奖励",
+      "regions": [
+        "cn"
+      ],
+      "status": "partial-official-images",
+      "evidence": [
+        "cn-launch-benefits-images-2026-11-21"
+      ],
+      "implemented": [
+        "按八类来源分条件",
+        "七日签到、月度2轮与一次性口径",
+        "星临旅记第2–7日可见数量",
+        "星光初拾10/20/30/40可见档位（非最终清单）",
+        "新芽4行各10，任务小字不猜"
+      ],
+      "missing": [
+        "完整星识等级清单与逐档奖励",
+        "逐主线任务名称与前置",
+        "连续/累计要求与补签",
+        "单项活动与邮件期限"
+      ],
+      "nextAction": "取得各活动完整原文或正式版界面后，逐行补门槛，不将网页探索365日推广"
+    },
+    {
+      "id": "R03",
+      "priority": "P0",
+      "topic": "完整正式卡池",
+      "regions": [
+        "cn",
+        "jp"
+      ],
+      "status": "partial-jp-transcript-awaiting-visual-rules",
+      "evidence": [
+        "jp-release-special-2026-11-20"
+      ],
+      "implemented": [
+        "票券区别",
+        "逐池规则核验",
+        "切池、提前获取、到期和自选记录示例",
+        "日本官方回放五类卡池时间戳1:16:52–1:19:22",
+        "自动字幕数字单独存研究，不恢复旧保底"
+      ],
+      "missing": [
+        "卡池完整名称与期限",
+        "票券适用及兑换率",
+        "基础与综合概率",
+        "保底与重置",
+        "共享计数与跨期例外",
+        "自选候选及期限"
+      ],
+      "nextAction": "日本先对照回放画面/正式详情校正名称、数字与期限，再补概率全文；国服独立取得原始规则，不能套日本编辑版"
+    },
+    {
+      "id": "R04",
+      "priority": "P0",
+      "topic": "预下载计划",
+      "regions": [
+        "cn",
+        "jp"
+      ],
+      "status": "official-plan-drafted-awaiting-review",
+      "evidence": [
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21"
+      ],
+      "implemented": [
+        "国服11/24 15:00 Asia/Shanghai",
+        "日本11/24 16:00 Asia/Tokyo",
+        "共享事实与五主题双语同步",
+        "无安装器链接时不产生预下载按钮"
+      ],
+      "missing": [
+        "各设备实际开放"
+      ],
+      "nextAction": "在正式分发出现时按设备验证真实入口；日期到来不自动标已开放"
+    },
+    {
+      "id": "R05",
+      "priority": "P0",
+      "topic": "客户端与登录条件",
+      "regions": [
+        "cn",
+        "jp"
+      ],
+      "status": "partial-entry-evidence",
+      "evidence": [
+        "cn-official-home-2026-11-14",
+        "jp-official-home-2026-11-14",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20"
+      ],
+      "implemented": [
+        "现有官方商店身份",
+        "六阶段下载/登录排查表",
+        "11/21商店状态复核，日本Play更新日11/17单独留存",
+        "日本开服自动字幕3:11:52线索，待画面/明确时区，不生成倒计时"
+      ],
+      "missing": [
+        "国服PC/安卓与日本PC正式安装器",
+        "正式系统与存储要求",
+        "开服小时",
+        "账号/渠道/进度/付费货币互通原文"
+      ],
+      "nextAction": "公开安装器出现后核对构建/追加数据；日本开服先复核3:11:52画面及明确时区。预约页验证码和营地登录不绕过"
+    },
+    {
+      "id": "R06",
+      "priority": "P1",
+      "topic": "正式版首日、家园与奇波",
+      "regions": [
+        "cn",
+        "jp"
+      ],
+      "status": "awaiting-release-observation",
+      "evidence": [
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20"
+      ],
+      "implemented": [
+        "首日行动框架",
+        "家园/奇波现有双语准备稿",
+        "测试至公测差异登记表",
+        "两地商店独立确认家园/農園与奇波玩法类别",
+        "种植/孵化/制作/岗位的结果验证表",
+        "日本捕获52:42、农园1:10:14字幕线索（非实测）"
+      ],
+      "missing": [
+        "实际任务链与解锁",
+        "设施和岗位",
+        "捕获路径",
+        "成本和耗时",
+        "完整日周周期与PvP可选性"
+      ],
+      "nextAction": "正式版取得可复核步骤后补充；不把旧测试和编辑框架记作实测"
+    }
+  ],
+  "lastResearch": "research/2026-11-21-formal-rules/evidence.md"
+}

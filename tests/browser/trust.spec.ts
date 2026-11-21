@@ -68,7 +68,8 @@ test('absolute schedules and regional links remain useful with JavaScript disabl
     await expect(page.locator('[data-launch-region="cn"] time')).toContainText('UTC+8');
     await expect(page.locator('[data-copy-target]')).toBeDisabled();
     await page.goto('http://127.0.0.1:4321/zh-hans/');
-    await expect(page.locator('[data-launch-region="cn"] time')).toHaveText('2026-11-26');
+    await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-26"]')).toHaveText('2026-11-26');
+    await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-24T15:00:00+08:00"]')).toHaveText('2026-11-24 15:00 (UTC+8)');
     await page.locator('[data-launch-region="jp"] a').click();
     await expect(page.locator('[data-channel]')).toHaveCount(6);
     await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');

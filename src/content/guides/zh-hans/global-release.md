@@ -8,22 +8,22 @@ description: "把中国大陆、日本及其他地区的日期、账号和客户
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-21"
-gameVersion: "公测前 / 2026-11-14 官方页面核对"
+gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15"]
-sourceRevision: 6
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
+sourceRevision: 8
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["launch","platforms","download"]
 order: 2
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认两地开服时刻与预下载日程，更新地区发行状态与事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"}]
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认两地开服时刻与预下载日程，更新地区发行状态与事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
 claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan","jp-opening-time","cn-preload-status","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":3,"jp-preload-status":3}
+claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":4,"jp-preload-status":4}
 reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-14"
+reviewedAt: "2026-11-21"
 ---
 
 ## 本轮分别确认了哪些地区
@@ -62,3 +62,14 @@ Yostar 在 2025 年 12 月的公告中确认日本共同发行，并列出 iOS�
 同地区的后续或更正公告应记录日期与适用版本，跨地区资料分别维护。只有原文给出具体小时和时区时才换算时间；预约、历史测试、预下载和正式开放分别记录。
 
 尚未查证的范围会继续明确写为待核验。“本站本轮未确认”是核验进度，不能用来断言官方从未发布。
+
+## 两地预下载计划分别有原文依据
+
+| 地区 | 原规则计划时刻 | 依据 |
+| --- | --- | --- |
+| 中国大陆 | 2026年11月24日15:00（UTC+8，北京时间） | 国服官网「集结，勇闯奇波巢穴」→「活动规则」 |
+| 日本 | 2026年11月24日16:00（日本时间，即北京时间15:00） | 日本「集まれ！キボの巣穴探索」→「イベントルール」 |
+
+两行来自各自地区原文。计划时间不证明当前已开放、所有设备同时可安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
+
+具体设备入口以对应地区届时分发为准。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
