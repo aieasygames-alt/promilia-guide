@@ -1,0 +1,37 @@
+{
+  "origin": "https://promiliaguide.com",
+  "functionalReleaseCommit": "6b165078973eb38ec3c5b07a980f5582fb3ade92",
+  "pullRequest": "https://github.com/aieasygames-alt/promilia-guide/pull/3",
+  "workflow": "https://github.com/aieasygames-alt/promilia-guide/actions/runs/44901140973",
+  "deployment": {
+    "status": "success",
+    "checkId": 136837261211,
+    "suiteId": 121526265100,
+    "commitSha": "6b165078973eb38ec3c5b07a980f5582fb3ade92",
+    "deploymentId": "15d3ba17-d3c4-4968-ae66-936ad71182f4",
+    "deploymentUrl": "https://15d3ba17.promilia-guide.pages.dev",
+    "logsUrl": "https://dash.cloudflare.com/?to=/e6472b6c6172a3ac1e1596ef100543ae/pages/view/promilia-guide/15d3ba17-d3c4-4968-ae66-936ad71182f4"
+  },
+  "articleCount": 26,
+  "technical": {
+    "passed": true,
+    "checks": 82,
+    "generatedAt": "2026-11-21T11:55:11.673Z"
+  },
+  "contentAndIndexBoundaries": {
+    "passed": true,
+    "checks": 107,
+    "generatedAt": "2026-11-21T11:56:15.930Z"
+  },
+  "browser": {
+    "origin": "https://promiliaguide.com",
+    "pages": [
+      "/zh-hans/guides/resources/",
+      "/zh-hans/systems/home/",
+      "/ja/systems/home/",
+      "/ja/search/?q=%E3%82%AD%E3%83%9C"
+    ],
+    "observed": "Desktop rendering and language switch correct; Japanese search for キボ returned 12 results, with the new Kibo guide first and home/first-day guides included."
+  },
+  "note": "Records the functional release. Documentation-only follow-ups use the latest main workflow and live manifest; no approval is implied for unknown game rules."
+}
