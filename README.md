@@ -89,6 +89,8 @@ research/                      官方原始来源核验与结论边界
 
 ## 内容编辑与发布
 
+已发布文章需要实质重写时，可以在`src/content/revisions/{locale}/`准备同URL的待审修订。生产仍读取`guides/`中的已审稿；`CONTENT_PREVIEW=true`时，Astro、CLI和审核包统一选择新修订。新修订必须递增`sourceRevision`、清空旧审核人及日期，并保留draft状态。使用`CONTENT_PREVIEW=true npm run content:status`查看本批待审状态。真实确认后再将修订提升到`guides/`并移除待审文件。见[本轮优化与复查方案](plans/GSC-REFRESH-2026-11-23.md)。
+
 1. 在 `sources.json` 中录入原始资料。填写稳定 `id`、标题、发布者、来源类型 `kind`、HTTPS 原文 URL、发布日期、核对日期、地区/版本、状态及短摘录 `excerpt`；视频另记时间点。来源核验完成才设 `status: "verified"`。`planning-only` 的项目文档不能作为官方游戏事实。
 2. 为具体事实更新 `claims.json`，记录证据类型、地区/版本、中日文说明、冲突和 `affectedPages`。稿件通过 `sourceRefs` 关联来源，通过 `claimRefs` 引用事实，并在 `claimRevisions` 固定已复查的事实修订号。待核验事实不可填写确定日期、URL、平台等可执行值。
 3. 中文和日语文章共享 `contentId`；语言与 `gameRegion` 分开。路径由 `locale + section + slug` 组成，Astro 集合 ID 使用完整的 `locale/filename`，防止同 slug 覆盖语言稿。

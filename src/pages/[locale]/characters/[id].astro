@@ -5,7 +5,7 @@ import { type Entity } from '../../../data/entities';
 import { locales, origin, languageTag } from '../../../lib/publication.mjs';
 import { t } from '../../../lib/i18n';
 import { sources } from '../../../lib/facts';
-import { visibleEntitiesFor } from '../../../lib/content';
+import { preview, visibleEntitiesFor } from '../../../lib/content';
 import { isEntityDetailPublishable } from '../../../lib/entity-publication.mjs';
 
 export function getStaticPaths() {
@@ -26,6 +26,7 @@ const locale = Astro.params.locale as 'zh-hans' | 'ja';
 const c = t(locale);
 const ja = locale === 'ja';
 const detailPublished = isEntityDetailPublishable(entity, locale, sources);
+const showDetail = detailPublished || (preview && Boolean(entity.detailContent?.[locale]?.trim()));
 const other = ja ? 'zh-hans' : 'ja';
 const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
 
@@ -115,13 +116,13 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
           </figure>
 
           <div class="entity-card-topline">
-            <span class="pill">{ja ? 'キャラクター档案' : '角色档案'}</span>
+            <span class="pill">{ja ? 'キャラクター資料' : '角色档案'}</span>
           </div>
 
           <div class="prose" style="padding: 1.5rem 0;">
             {entity.quote && <blockquote>{entity.quote[locale]}</blockquote>}
             <p>{entity.summary[locale]}</p>
-            {detailPublished && <p>{entity.detailContent?.[locale]}</p>}
+            {showDetail && <section data-entity-detail data-detail-status={detailPublished ? 'published' : 'draft'}><h2>{ja ? '人物紹介とゲーム内情報' : '人物介绍与游戏信息'}</h2>{entity.detailContent![locale]!.split(/\n{2,}/).map((paragraph) => <p>{paragraph}</p>)}</section>}
           </div>
 
           <dl class="entity-facts">
@@ -143,6 +144,7 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
             <a href={`/${locale}/guides/launch/`}>{ja ? '配信日と対象地域' : '公测日期与地区'}<Icon name="arrow" size={18}/></a>
             <a href={`/${locale}/guides/download/`}>{ja ? '公式の配布先と端末' : '官方入口与设备速查'}<Icon name="arrow" size={18}/></a>
             <a href={`/${locale}/guides/getting-started/`}>{ja ? 'サービス開始準備チェックリスト' : '开服准备与新手行动清单'}<Icon name="arrow" size={18}/></a>
+            <a href={`/${locale}/guides/reroll/`}>{ja ? 'リセマラの判断材料と注意点' : '刷初始的判断依据与注意事项'}<Icon name="arrow" size={18}/></a>
           </div>
         </section>
 

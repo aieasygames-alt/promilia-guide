@@ -56,18 +56,49 @@ test('unreviewed details are explicitly excluded from indexing and CV claims', a
     const schemas = await page.locator('script[type="application/ld+json"]').allTextContents();
     expect(schemas.join(' ')).not.toContain('jobTitle');
     await page.goto(`/${locale}/characters/`);
-    await expect(page.locator('[data-entity-id="metsa"]')).toContainText(/待核验|確認中/);
+    await expect(page.locator('[data-entity-id="hanyouyou"]')).toContainText(/待核验|確認中/);
   }
 });
 
-test('absolute schedules and regional links remain useful with JavaScript disabled', async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
+test('pending entity revisions are readable in preview while remaining outside search', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja']) {
+    for (const path of ['characters/metsa', 'kibo/cabbird']) {
+      await page.goto(`/${locale}/${path}/`);
+      await expect(page.locator('[data-entity-detail][data-detail-status="draft"]')).toBeVisible();
+      await expect(page.locator('[data-entity-detail] p')).toHaveCount(3);
+      await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+      await expect(page.locator('[data-pagefind-body]')).toHaveCount(0);
+      await expect(page.locator('.entity-card-footer a')).toHaveAttribute('href', /azurpromilia\.(jp|manjuu\.com)/);
+    }
+  }
+});
+
+test('core guide answers precede expandable evidence with JavaScript disabled', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false, baseURL: test.info().project.use.baseURL });
   try {
     const page = await context.newPage();
-    await page.goto('http://127.0.0.1:4321/editorial/fixtures/trust/');
+    for (const locale of ['ja', 'zh-hans']) {
+      for (const topic of ['requirements', 'reroll']) {
+        await page.goto(`/${locale}/guides/${topic}/`);
+        const evidence = page.locator('#claim-summary-details');
+        await expect(evidence).not.toHaveAttribute('open');
+        await expect(page.locator('.prose h2').first()).toBeVisible();
+        await evidence.locator('summary').click();
+        await expect(evidence).toHaveAttribute('open', '');
+        await expect(evidence.locator('#claim-summary-title')).toBeVisible();
+      }
+    }
+  } finally { await context.close(); }
+});
+
+test('absolute schedules and regional links remain useful with JavaScript disabled', async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false, baseURL: test.info().project.use.baseURL });
+  try {
+    const page = await context.newPage();
+    await page.goto('/editorial/fixtures/trust/');
     await expect(page.locator('[data-launch-region="cn"] time')).toContainText('UTC+8');
     await expect(page.locator('[data-copy-target]')).toBeDisabled();
-    await page.goto('http://127.0.0.1:4321/zh-hans/');
+    await page.goto('/zh-hans/');
     await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-26"]')).toHaveText('2026-11-26');
     await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-24T15:00:00+08:00"]')).toHaveText('2026-11-24 15:00 (UTC+8)');
     await page.locator('[data-launch-region="jp"] a').click();

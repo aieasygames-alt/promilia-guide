@@ -19,7 +19,7 @@ try {
     if (child.error) throw child.error;
     if (child.status !== 0) throw new Error('Preview build failed; no review archive was created.');
     if (inputDigest !== await reviewInputDigest(root)) throw new Error('Project inputs changed during the build; rerun review:bundle for a consistent snapshot.');
-    const report = (script, args) => JSON.parse(execFileSync(process.execPath, [script, ...args, '--json'], { cwd: root, encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }));
+    const report = (script, args) => JSON.parse(execFileSync(process.execPath, [script, ...args, '--json'], { cwd: root, encoding: 'utf8', env: { ...process.env, CONTENT_PREVIEW: 'true' }, maxBuffer: 10 * 1024 * 1024 }));
     const release = report('scripts/check-release.mjs', []);
     const status = report('scripts/content-report.mjs', ['status']);
     staging = await mkdtemp(join(tmpdir(), 'promilia-review-'));

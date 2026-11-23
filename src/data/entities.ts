@@ -232,41 +232,54 @@ export const entities: readonly Entity[] = [
     "kind": "character",
     "order": 5,
     "names": {
-      "zh-hans": "梅茨娅",
+      "zh-hans": "メーツァ",
       "ja": "メーツァ"
     },
     "romanized": "Metsa",
     "aliases": {
-      "zh-hans": "Metsa",
+      "zh-hans": "Metsa · メーツァ",
       "ja": "Metsa"
     },
     "image": "/images/entities/characters/metsa.webp",
     "imageAlt": {
-      "zh-hans": "梅茨娅的官方角色形象",
+      "zh-hans": "メーツァ（Metsa）的日本官方角色形象",
       "ja": "メーツァの公式キャラクタービジュアル"
     },
     "imageSource": "official",
     "summary": {
-      "zh-hans": "此条名称与人物设定仍待补充独立来源，暂不进入正式目录。",
-      "ja": "名称と人物設定の独立した出典を確認中のため、正式な一覧には含めません。"
+      "zh-hans": "日本官网公开人物：エヴァーガーデン的园丁，愿与旅伴同行直到鲜花盛开。中文官方姓名尚待核验，此处保留日文名称。",
+      "ja": "エヴァーガーデンのガーデナー。花々が美しく咲き誇る時まで、ともに歩むことを願う。"
     },
     "sourceRefs": {
-      "zh-hans": "cn-official-home-2026-11-14",
-      "ja": "jp-official-character-2026-11-14"
+      "zh-hans": "jp-metsa-profile-2026-11-23",
+      "ja": "jp-metsa-profile-2026-11-23"
     },
-    "revision": 1,
-    "catalogStatus": "pending",
+    "revision": 2,
+    "catalogStatus": "verified",
     "detailReview": {
       "zh-hans": {
         "status": "draft",
-        "revision": 1,
-        "sourceChecks": {}
+        "revision": 2,
+        "sourceChecks": {
+          "jp-metsa-profile-2026-11-23": "2026-11-23"
+        }
       },
       "ja": {
         "status": "draft",
-        "revision": 1,
-        "sourceChecks": {}
+        "revision": 2,
+        "translatedFromRevision": 2,
+        "sourceChecks": {
+          "jp-metsa-profile-2026-11-23": "2026-11-23"
+        }
       }
+    },
+    "origin": {
+      "zh-hans": "ローズランサ（日本官网表记）",
+      "ja": "ローズランサ"
+    },
+    "detailContent": {
+      "ja": "メーツァ（Metsa）は、日本公式サイトのキャラクター一覧と独立した人物紹介で確認できます。紹介ではエヴァーガーデンのガーデナーとされ、所属・ゆかりの地はローズランサと記載されています。中国本土での正式な名前や実装条件は、この日本向け紹介からは判断できません。\n\n花々が咲き誇る時まで旅をともにしたい、というメッセージが人物像の手がかりです。「ガーデナー」は公開された設定であり、農園の効率、特定作物への適性、回復役といったゲーム内性能を意味するものではありません。\n\n今回の紹介原文からは、正式版の技能、数値、育成素材、声優、入手方法を確定できません。編成やリセマラの判断には対象地域・バージョンの技能説明と比較条件が必要です。まず公式紹介で人物を確認し、関連ガイドでアカウント条件やサービス開始の準備を進めてください。",
+      "zh-hans": "メーツァ（Metsa）可在日本官网角色列表及独立人物页核对。官网介绍其为エヴァーガーデン的园丁，所属或相关地区为ローズランサ。当前保留日文姓名与地区原文，不将旧稿中文译名当作官方确认，也不由日本介绍推断国服实装条件。\n\n希望陪伴旅者直到鲜花盛开，是人物留言提供的性格线索。“园丁”是公开设定，不能据此认定农园效率、作物适性或治疗定位。\n\n本次人物原文不足以确认正式技能、倍率、养成材料、声优和获取方式。编队或刷初始判断需要对应地区及版本的技能说明与统一比较条件；可先阅读官方人物介绍，再从相关指南核对账号规则和开服准备。"
     }
   },
   {
@@ -426,7 +439,7 @@ export const entities: readonly Entity[] = [
     },
     "sourceRefs": {
       "zh-hans": "cn-official-character-kibo-2026-11-14",
-      "ja": "jp-official-kibo-2026-11-14"
+      "ja": "jp-cabbird-profile-2026-11-23"
     },
     "image": "/images/entities/kibo/cabbird.webp",
     "imageAlt": {
@@ -434,19 +447,30 @@ export const entities: readonly Entity[] = [
       "ja": "キャバードの公式キボビジュアル"
     },
     "imageSource": "official",
-    "revision": 1,
+    "revision": 2,
     "catalogStatus": "verified",
     "detailReview": {
       "zh-hans": {
         "status": "draft",
-        "revision": 1,
-        "sourceChecks": {}
+        "revision": 2,
+        "sourceChecks": {
+          "cn-official-character-kibo-2026-11-14": "2026-11-14",
+          "jp-cabbird-profile-2026-11-23": "2026-11-23"
+        }
       },
       "ja": {
         "status": "draft",
-        "revision": 1,
-        "sourceChecks": {}
+        "revision": 2,
+        "translatedFromRevision": 2,
+        "sourceChecks": {
+          "cn-official-character-kibo-2026-11-14": "2026-11-14",
+          "jp-cabbird-profile-2026-11-23": "2026-11-23"
+        }
       }
+    },
+    "detailContent": {
+      "ja": "キャバード（CABBIRD）は、日本公式のキボ一覧と独立した生態紹介に掲載されています。分類は「異生類-翼形族」。中国本土の公式表示にある「菜鸡」と同じ英文識別子を使っていますが、日本語名と分類は日本の原文を参照します。\n\n紹介によると、知的種族に人気があり、警戒心が薄く温和なキボです。頭の葉っぱを引っ張られるのは嫌がり、撫でられると尾羽を広げて喜びます。これは公開された生態描写であり、正式クライアントに同じ操作ボタンや効果があることを確認した記録ではありません。\n\n捕獲地点、出現条件、必要な道具、家園で担当できる仕事、作業速度は今回の個別紹介では確認できません。キボ全体の協力作業が案内されていても、すべての仕事をキャバードに割り当てられるとは限りません。役割を調べるときはキボ指南とホームの解説を参照し、ゲーム内での確認条件を分けて記録してください。",
+      "zh-hans": "菜鸡（CABBIRD）可在国服官网奇波展示及日本官网独立生态页核对，日本名为キャバード。日本官网分类为“異生類-翼形族”；本站中文分类继续保留国服的“异生类・羽形族”，不把两地表记改成同一个译名。\n\n官方介绍其受到智慧种族喜爱，警戒心较弱、性格温和；不喜欢被揪头上的叶片，被抚摸时会展开尾羽。这些是公开生态描述，不是正式客户端互动按钮或效果的实测记录。\n\n本次个体介绍未能确认捕捉地点、出现条件、所需工具、具体家园岗位及工作速度。奇波整体拥有协作玩法，不能证明菜鸡能承担所有工作。可结合奇波指南和家园说明，分别记录后续游戏内验证条件。"
     }
   },
   {

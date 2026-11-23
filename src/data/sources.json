@@ -543,5 +543,68 @@
         "note": "公式の説明と表示された自動字幕を記録。映像を再生できず、数値・固有名・期間は画面との照合待ちです。日本公開用の編集版であり、中国本土の仕様へ転用しません。"
       }
     }
+  },
+  {
+    "id": "cn-ios-capacity-2026-11-23",
+    "title": "中国区App Store：当前分发大小与OS兼容条件",
+    "url": "https://apps.apple.com/cn/app/id6754017631",
+    "publisher": "App Store / 蛮啾游戏",
+    "gameRegion": "中国区App Store",
+    "excerpt": "蓝色星原：旅谣；开发者：蛮啾游戏；预计于2026年11月26日推出；大小3.9 GB；iOS 15.0或更高版本，iPadOS 15.0或更高版本。",
+    "note": "2026-11-23读取应用正文。大小是商店分发字段，不能作为日本版或完整安装空间；商店预计日期与营销文字不证明当前可安装或服务器开放。",
+    "kind": "official-store",
+    "localized": {
+      "ja": {
+        "title": "中国区App Store：配布サイズとOS互換性（11月23日）",
+        "note": "中国本土向けアプリ本文の3.9 GB・最低OSを確認。日本版の要件やインストール後の全容量には適用しません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
+  },
+  {
+    "id": "jp-metsa-profile-2026-11-23",
+    "title": "日本官方：メーツァ（Metsa）人物介绍",
+    "url": "https://azurpromilia.jp/character/metsa",
+    "publisher": "アズールプロミリア日本公式 / Manjuu・Yostar",
+    "gameRegion": "日本官网人物介绍",
+    "excerpt": "メーツァ（Metsa）；エヴァーガーデンのガーデナー。花々が美しく咲き誇る時まで、ともに歩むことを願う。所属・ゆかりの地：ローズランサ。",
+    "note": "从日本官网角色列表交叉进入独立详情。中文正文为日语资料译述，未取得中文官方名称；人物身份不证明职业技能、声优、强度或获取方式。",
+    "kind": "official",
+    "localized": {
+      "ja": {
+        "title": "日本公式：メーツァ（Metsa）の人物紹介",
+        "note": "公式一覧から詳細ページを照合。名前、ガーデナーという設定、ゆかりの地を確認。技能・CV・入手方法の根拠にはしません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
+  },
+  {
+    "id": "jp-cabbird-profile-2026-11-23",
+    "title": "日本官方：キャバード（CABBIRD）分类与生态",
+    "url": "https://azurpromilia.jp/kibo/cabbird",
+    "publisher": "アズールプロミリア日本公式 / Manjuu・Yostar",
+    "gameRegion": "日本官网奇波介绍",
+    "excerpt": "キャバード（CABBIRD）；異生類-翼形族。知的種族に人気があり、よく飼育されている。頭の葉っぱを引っ張られるのは嫌がるが、撫でられれば尾羽を広げて喜ぶ。",
+    "note": "从日本官网奇波列表交叉核对独立详情。生态反应不证明正式客户端中的互动按钮、捕捉位置、家园工作或数值收益。",
+    "kind": "official",
+    "localized": {
+      "ja": {
+        "title": "日本公式：キャバード（CABBIRD）の生態と分類",
+        "note": "公式一覧と詳細を照合。分類と紹介文の反応を確認。捕獲地点、操作方法、作業適性や数値は追加しません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
   }
 ]
