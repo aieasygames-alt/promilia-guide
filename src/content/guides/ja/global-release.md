@@ -3,28 +3,28 @@ contentId: "global-release"
 locale: "ja"
 slug: "global-release"
 section: "guides"
-title: "中国本土・日本・その他の地域の配信状況"
-description: "記事の言語と対象サーバーを区別し、地域ごとの発表を確認します。"
+title: "アズールプロミリアの日本・中国本土・繁体字版｜公式入口の違い"
+description: "日本・中国本土・繁体字公式の入口とアプリIDを対照。台湾App Storeリンク、配信日、登録・インストール・地域間共有を分けて確認します。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "正式配信前／2026-11-21 両地域イベント規約を照合"
-gameRegion: "中国本土・日本（地域別に記載）"
+updatedAt: "2026-11-23"
+gameVersion: "サービス開始前 / 2026-11-23 情報・導線改訂"
+gameRegion: "中国本土・日本・繁体字公式（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 8
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","tc-mobile-entry-2026-11-23"]
+sourceRevision: 9
 translationStatus: "published"
-aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア","アズプロ 日本版","アズールプロミリア 海外版"]
 related: ["launch","platforms","download"]
 order: 2
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ストア情報の改訂番号を同期し、事前登録の段階と明記。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特別番組に基づき、両地域の配信開始時刻および事前DL日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
-translatedFromRevision: 8
-claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan","jp-opening-time","cn-preload-status","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":4,"jp-preload-status":4}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ストア情報の改訂番号を同期し、事前登録の段階と明記。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特別番組に基づき、両地域の配信開始時刻および事前DL日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"},{"date":"2026-11-23","note":"事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。"},{"date":"2026-11-23","note":"プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。"}]
+translatedFromRevision: 9
+claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan","jp-opening-time","cn-preload-status","jp-preload-status","tc-mobile-official-entry"]
+claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":4,"jp-preload-status":4,"tc-mobile-official-entry":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 地域ごとに確認した配信状況
@@ -35,8 +35,32 @@ reviewedAt: "2026-11-21"
 | --- | --- | --- |
 | 中国本土 | 日程告知、公式の事前登録、中国本土向けApp Store | 開始時刻、PC・Androidの正式配布先、データ共有 |
 | 日本 | 日本公式の日程告知、スマートフォン向け事前登録、対応予定プラットフォーム | 開始時刻、PC版の配布先、動作環境、データ共有 |
-| 繁体字公式 | ホームと告知一覧の日程表示 | 運営地域全体、ストアの条件、対象サーバー |
+| 繁体字公式 | 日程と台湾App Store・独立Google Playの登録リンク | 全運営地域、利用資格、動作環境、対象サーバー |
 | その他 | 今回は対象地域の原文確認が未完了 | 上記の日程や配布先、課金条件は適用しません |
+
+
+## 日本・中国本土・繁体字公式のアプリID対照
+
+| 対象 | 公式入口 | 照合したアプリID | 確認範囲 |
+| --- | --- | --- | --- |
+| 中国本土 | [中国本土公式](https://azurpromilia.manjuu.com/home/) | 中国本土App Store `6754017631` | アプリ本文を確認済み。現在のインストールを保証しない |
+| 日本 | [日本公式](https://azurpromilia.jp/) | App Storeリンク `6787982572`、Google Play `com.Yostar.AzurpromiliaJP` | 公式リンクを照合。iOSの対象本文は未取得 |
+| 繁体字公式 | [繁体字公式入口](https://azurpromilia.jimi-global.com/home/) | 台湾App Storeリンク `6789139052`、Google Play `com.jimi.azurpromilia` | 11月23日に予約・事前登録リンクを確認。ストア本文と利用資格は別途確認 |
+
+繁体字の行はホームにあるリンクの記録で、運営地域全体の一覧ではありません。アプリIDが異なることだけで、アカウントや進行の共有可否も確定しません。
+
+## 「グローバル版」「国際服」は一つのサービス？
+
+検索上の「国际服／國際服」だけでは公式サービスを特定できません。対象地域、運営元、アプリID、サーバーを確認し、その版の日程・特典・課金規約を読みます。日本・繁体字・英語の紹介ページを一つの共通サービスにまとめないでください。
+
+### 台湾向けリンクを使う場合、どの登録規約を読む？
+
+繁体字公式が案内するクライアントを利用するなら、同サイトの登録・イベント原文を確認します。中国本土の蛮啾通行证や日本のYostar IDの巣穴報酬規約は、自動で適用できません。
+
+### 台湾App Storeのリンクがあれば、今すぐインストールできる？
+
+今回確認したのは公式ホームの予約リンクです。対象URLの取得先はTodayで、アプリ本文を読めていません。動作環境、全容量、個人の利用資格と実際のインストールは別途確認します。
+
 
 ## 日本の日程情報を更新した根拠
 

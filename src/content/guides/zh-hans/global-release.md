@@ -3,27 +3,27 @@ contentId: "global-release"
 locale: "zh-hans"
 slug: "global-release"
 section: "guides"
-title: "国服与全球发行状态：语言不等于服务器"
-description: "把中国大陆、日本及其他地区的日期、账号和客户端分开确认。"
+title: "蓝色星原日服、国际服与繁中版：官方入口和应用ID"
+description: "区分国服、日本与繁中官网，列出台湾App Store及各地区应用ID。说明“国际服”搜索词、账号、服务器与发行地区分别需要哪些依据。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
-gameRegion: "中国大陆、日本（分地区说明）"
+updatedAt: "2026-11-23"
+gameVersion: "公测前 / 2026-11-23 信息与行动入口修订"
+gameRegion: "中国大陆、日本、繁中官网（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 8
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","tc-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","tc-mobile-entry-2026-11-23"]
+sourceRevision: 9
 translationStatus: "published"
-aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
+aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア","蓝色星原日服","蓝色星原国际服","藍色星原日服","藍色星原國際服","藍色星原預約"]
 related: ["launch","platforms","download"]
 order: 2
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认两地开服时刻与预下载日程，更新地区发行状态与事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
-claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan","jp-opening-time","cn-preload-status","jp-preload-status"]
-claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":4,"jp-preload-status":4}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"同步商店事实修订号，明确入口处于预约阶段；保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认两地开服时刻与预下载日程，更新地区发行状态与事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"},{"date":"2026-11-23","note":"按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。"},{"date":"2026-11-23","note":"项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。"}]
+claimRefs: ["cn-launch-date","cn-ios-store","cn-opening-time","jp-release-status","tc-official-announcement","jp-official-entry","jp-platform-plan","jp-opening-time","cn-preload-status","jp-preload-status","tc-mobile-official-entry"]
+claimRevisions: {"cn-launch-date":2,"cn-ios-store":2,"cn-opening-time":3,"jp-release-status":2,"tc-official-announcement":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-opening-time":1,"cn-preload-status":4,"jp-preload-status":4,"tc-mobile-official-entry":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 本轮分别确认了哪些地区
@@ -34,8 +34,32 @@ reviewedAt: "2026-11-21"
 | --- | --- | --- |
 | 中国大陆 | 国服定档原文、官网预约及中国区 App Store | 开服小时、PC/安卓公测安装器、互通 |
 | 日本 | 日本官方日期原帖、手机事前注册入口、计划平台 | 开服小时、PC安装器、完整配置和跨端条件 |
-| 繁中官网 | 首页与公告列表的日期表述 | 完整运营地区、商店条款、服务器范围 |
+| 繁中官网 | 首页日期及台湾App Store、独立Google Play预约链接 | 完整运营地区、商店资格、配置、服务器范围 |
 | 其他地区 | 本轮没有完成对应原始公告核验 | 不套用上述日期、下载渠道或付费条件 |
+
+
+## 国服、日服与繁中版的应用ID对照
+
+| 官网范围 | 从哪里进入 | 已核对的应用身份 | 核验范围 |
+| --- | --- | --- | --- |
+| 中国大陆 | [国服官网](https://azurpromilia.manjuu.com/home/) | 中国区App Store `6754017631` | 已有应用正文，不代表当前可安装 |
+| 日本 | [日本官网](https://azurpromilia.jp/) | App Store链接 `6787982572`；Google Play `com.Yostar.AzurpromiliaJP` | 官网链接已核对；iOS目标正文未取得 |
+| 繁中官网 | [繁中官方入口](https://azurpromilia.jimi-global.com/home/) | 台湾App Store链接 `6789139052`；Google Play `com.jimi.azurpromilia` | 11月23日官网标“App Store預訂／Google Play預先註冊”；商店本文与个人资格另核 |
+
+繁中行记录的是官网实际提供的链接，不是完整运营国家或地区清单。不同应用身份也不能单独证明账号或进度一定不互通；互通仍需对应规则。
+
+## 搜索「国际服」时，应该核对哪一版？
+
+“国际服／國際服”是搜索表达，不能直接确定唯一官方服务。先确定目标地区、运营方、应用ID及服务器，再查该版本的日期、活动和付费条款。不要将日本、繁中或英文介绍页统称为同一个全球服。
+
+### 台湾玩家要看哪一份预约规则？
+
+计划使用繁中官网所链接的客户端时，先从该官网阅读对应预约和活动原文。国服蛮啾通行证、日本Yostar ID的巢穴奖励绑定规则，不能自动套给繁中活动。
+
+### 台湾App Store链接能打开，就说明现在能安装吗？
+
+不能。本次读取的是官网上的“预订”链接；直接获取商店目标时跳转到Today，未取得该应用正文。系统、完整空间、个人账号资格及实际安装均需另核。
+
 
 ## 日本日期的证据为什么更新了
 

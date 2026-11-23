@@ -1,0 +1,240 @@
+{
+  "asOf": "2026-11-23",
+  "method": "Browser-visible manual transcription; inspected Top 50 and Rising 50; selected actionable excerpts only; not a CSV export",
+  "filters": {
+    "query": "/g/11vysqzgty",
+    "queryType": "video-game-topic",
+    "region": "Worldwide",
+    "period": "Past month",
+    "category": "All categories",
+    "property": "Web Search"
+  },
+  "url": "https://trends.google.com/explore?date=today%201-m&q=%2Fg%2F11vysqzgty",
+  "topicChange": {
+    "precedingMonth": "+140%",
+    "previousYear": "+2,800%"
+  },
+  "volume": null,
+  "difficulty": null,
+  "top": [
+    {
+      "query": "アズール プロ ミリア",
+      "rank": 1,
+      "index": 100,
+      "change": "+20%"
+    },
+    {
+      "query": "azur promilia",
+      "rank": 5,
+      "index": 85,
+      "change": "-40%"
+    },
+    {
+      "query": "藍 色 星原",
+      "rank": 7,
+      "index": 49,
+      "change": "+20%"
+    },
+    {
+      "query": "アズプロ",
+      "rank": 8,
+      "index": 37,
+      "change": "+60%"
+    },
+    {
+      "query": "azur promilia release date",
+      "rank": 11,
+      "index": 12,
+      "change": "-50%"
+    },
+    {
+      "query": "アズール プロ ミリア pc",
+      "rank": 13,
+      "index": 6,
+      "change": "+140%"
+    },
+    {
+      "query": "藍 色 星原 旅 謠",
+      "rank": 15,
+      "index": 5,
+      "change": "+20%"
+    },
+    {
+      "query": "アズール プロ ミリア ps5",
+      "rank": 18,
+      "index": 4,
+      "change": "+60%"
+    },
+    {
+      "query": "azurpromilia",
+      "rank": 22,
+      "index": 3,
+      "change": "-40%"
+    },
+    {
+      "query": "azur promilia pc",
+      "rank": 23,
+      "index": 3,
+      "change": "+40%"
+    },
+    {
+      "query": "アズール プロ ミリア 公式",
+      "rank": 26,
+      "index": 3,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズプロ リリース 日",
+      "rank": 38,
+      "index": 2,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズール プロ ミリア 事前 登録",
+      "rank": 50,
+      "index": 1,
+      "change": "BREAKOUT"
+    }
+  ],
+  "rising": [
+    {
+      "query": "アズール プロ ミリア 公式",
+      "rank": 3,
+      "index": 3,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズプロ リリース 日",
+      "rank": 6,
+      "index": 2,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズール プロ ミリア 事前 登録",
+      "rank": 9,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズプロ pc",
+      "rank": 12,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "蓝 色 星原 国际 服",
+      "rank": 13,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "蓝 色 星原 日 服",
+      "rank": 14,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズール プロ ミリア 公式 サイト",
+      "rank": 15,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "藍 色 星原 日 服",
+      "rank": 16,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "藍 色 星原 預約",
+      "rank": 19,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズプロ ps5",
+      "rank": 23,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "藍 色 星原 角色",
+      "rank": 27,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "azur promilia เปิด วัน ไหน",
+      "rank": 30,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "藍 色 星原 國際 服",
+      "rank": 31,
+      "index": 1,
+      "change": "BREAKOUT"
+    },
+    {
+      "query": "アズール プロ ミリア pc 版",
+      "rank": 34,
+      "index": 1,
+      "change": "BREAKOUT"
+    }
+  ],
+  "screenshotQuery": {
+    "query": "AzurPromilia",
+    "queryType": "search-term",
+    "url": "https://trends.google.com/explore?geo=Worldwide&date=today%201-m&q=AzurPromilia",
+    "changeVsPrecedingMonth": ">5,000%",
+    "regions": [
+      [
+        "Thailand",
+        100
+      ],
+      [
+        "Taiwan",
+        56
+      ],
+      [
+        "Vietnam",
+        36
+      ],
+      [
+        "Japan",
+        14
+      ],
+      [
+        "Brazil",
+        6
+      ]
+    ],
+    "associatedTop": [
+      [
+        "azur promilia",
+        100
+      ],
+      [
+        "蓝 色 星原",
+        30
+      ]
+    ],
+    "associatedRising": [
+      [
+        "azur promilia",
+        100
+      ],
+      [
+        "蓝 色 星原",
+        30
+      ]
+    ]
+  },
+  "limitations": [
+    "Query and topic indexes are normalized separately; do not divide or compare them as search counts.",
+    "Rising index is not percentage growth; BREAKOUT is kept as a label.",
+    "Spaced strings are preserved from Trends, not recommended title typography.",
+    "No per-country related-query report was collected; do not call the global Chinese excerpts Taiwan-only queries.",
+    "Unrelated games and generic terms excluded from page creation."
+  ]
+}

@@ -726,7 +726,9 @@
     "affectedPages": [
       "resources",
       "getting-started",
-      "kibo-guide"
+      "kibo-guide",
+      "reroll",
+      "redeem-codes"
     ],
     "conflicts": [],
     "value": {}
@@ -755,7 +757,9 @@
     "affectedPages": [
       "resources",
       "getting-started",
-      "kibo-guide"
+      "kibo-guide",
+      "reroll",
+      "redeem-codes"
     ],
     "conflicts": [],
     "value": {}
@@ -870,5 +874,72 @@
     ],
     "conflicts": [],
     "value": {}
+  },
+  {
+    "id": "jp-play-registration-display",
+    "revision": 1,
+    "text": "11月23日日本Google Play应用页显示事前登録按钮，不作为已可安装证明。",
+    "localized": {
+      "zh-hans": {
+        "summary": "11月23日日本Google Play显示事前注册按钮。",
+        "detail": "包名com.Yostar.AzurpromiliaJP、发行者Yostar Limited.；未执行注册或安装，不确认账号资格、系统和完整空间。"
+      },
+      "ja": {
+        "summary": "11月23日の日本向けGoogle Playに「事前登録」ボタンを確認。",
+        "detail": "アプリIDはcom.Yostar.AzurpromiliaJP、配信元はYostar Limited.。登録・インストールは実行せず、利用資格・動作環境・全容量は別途確認します。"
+      }
+    },
+    "sourceRefs": [
+      "jp-play-registration-2026-11-23"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前 / 2026-11-23 商店展示",
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "tc-mobile-official-entry",
+    "revision": 1,
+    "text": "繁中官网提供台湾App Store应用ID6789139052与Google Play包名com.jimi.azurpromilia的预约链接。",
+    "localized": {
+      "zh-hans": {
+        "summary": "繁中官网提供台湾App Store与独立Google Play预约链接。",
+        "detail": "官网展示App Store预订、Google Play预先注册；不确认个人资格、全部发行地区、配置、预下载或跨服互通。"
+      },
+      "ja": {
+        "summary": "繁体字公式サイトに台湾App Storeと独立したGoogle Playの登録リンクを確認。",
+        "detail": "アプリIDは6789139052とcom.jimi.azurpromilia。全運営地域・利用資格・動作環境・事前DL・地域間共有は別途確認します。"
+      }
+    },
+    "sourceRefs": [
+      "tc-mobile-entry-2026-11-23"
+    ],
+    "type": "official",
+    "gameRegion": "繁中官网；链接指向台湾区App Store",
+    "gameVersion": "正式发行前 / 2026-11-23 官网展示",
+    "distributionScope": {
+      "region": "tc",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "url": "https://azurpromilia.jimi-global.com/home/",
+      "availability": "reservation",
+      "platforms": [
+        "iOS",
+        "Android"
+      ]
+    }
   }
 ]

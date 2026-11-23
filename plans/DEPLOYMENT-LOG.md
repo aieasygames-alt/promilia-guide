@@ -143,3 +143,10 @@ Node 22.23.4 本地完整检查通过：类型检查无错误／警告、55 项�
 - 浏览器线上核对中文福利、家园、日语家园与语言切换；日语搜索「キボ」返回12条，新奇波指南位列首项，家园与首日文章均可发现。桌面页面无明显布局异常；手机回归由前述46项浏览器测试覆盖。
 
 [验收摘要](../research/2026-11-21-content-release/verification.json)持久保存实际部署与验证结果；详细报告在忽略目录artifacts/content-release-2026-11-21/，远端报告在main运行的production-deployment-verification artifact。后续仅发布记录的维护提交会再次部署，最终版本以线上清单和对应Actions为准，不为本文自引用SHA继续生成提交。
+
+
+## 2026-11-23 Trends与GSC内容发布
+
+用户在18篇修订预览交付后明确要求“部署到线上”，本批9主题中日文18篇已按本次会话发布确认转入正式稿。授权原文、范围与逐篇前后指纹见[发布确认](../research/2026-11-23-trends-content/release-approval.json)，保留授权前研究快照。Metsa/Cabbird详情继续草稿与noindex，未取得证据的游戏规则保持未知。
+
+正式化后的完整本地发布检查已通过：Node22.23.4、类型检查0错误/0警告、57单元与50浏览器测试、预览72 HTML及正式68 HTML，34搜索页，26篇攻略可发布，首批门槛10/10。通过[PR #5](https://github.com/aieasygames-alt/promilia-guide/pull/5)进入main；最终部署SHA、Pages与主域名同版本验收结果以该PR关联main Actions及`/build-info.json`为准。
