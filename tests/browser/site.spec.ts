@@ -239,10 +239,10 @@ test('distribution filters keep unverified and historical clients out of actiona
 });
 
 test('distribution facts and links are available without JavaScript', async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
+  const context = await browser.newContext({ javaScriptEnabled: false, baseURL: test.info().project.use.baseURL });
   try {
     const page = await context.newPage();
-    await page.goto('http://127.0.0.1:4321/zh-hans/guides/platforms/');
+    await page.goto('/zh-hans/guides/platforms/');
     await expect(page.locator('[data-channel]')).toHaveCount(6);
     await expect(page.locator('[data-distribution-controls]')).toBeHidden();
     await expect(page.locator('[data-channel="cn-ios"] .distribution-action')).toHaveAttribute('href', /apps\.apple\.com/);

@@ -3,28 +3,28 @@ contentId: "platforms"
 locale: "ja"
 slug: "platforms"
 section: "guides"
-title: "対応プラットフォームと PC 版の確認方法"
-description: "対応端末、地域ごとの配信、データ共有を分けて調べます。"
+title: "アズールプロミリアのPC版・対応機種｜PS5・Steam・データ共有"
+description: "アズプロの日本向け予定はiOS・Android・Windows。PC配布先、PS5・Steamの確認状況、進行や有償通貨の共有を分けて案内します。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "正式配信前／2026-11-21 両地域イベント規約を照合"
+updatedAt: "2026-11-23"
+gameVersion: "サービス開始前 / 2026-11-23 情報・導線改訂"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 8
+sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","jp-play-registration-2026-11-23"]
+sourceRevision: 9
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["requirements","download"]
 order: 4
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、全プラットフォーム事前ダウンロード（11月24日）および配信日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
-translatedFromRevision: 8
-claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":4,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、全プラットフォーム事前ダウンロード（11月24日）および配信日程を反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"},{"date":"2026-11-23","note":"事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。"},{"date":"2026-11-23","note":"プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。"}]
+translatedFromRevision: 9
+claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time","jp-play-registration-display"]
+claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":4,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1,"jp-play-registration-display":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 地域と対応予定を先に確認
@@ -74,3 +74,21 @@ reviewedAt: "2026-11-21"
 各地域の独立した原文で確認した予定です。現時点の配布開始、全機種同時配布、ゲーム開始時刻は別途確認します。両規約とも、その時点で事前登録任務が終了するため、イベント全体の締切と区別してください。
 
 報酬の配布先と受取期限は[報酬案内](/ja/guides/resources/)で確認できます。
+
+## PC・PS5・Steamのよくある質問
+
+### PC版はSteam版という意味ですか？
+
+同じ条件ではありません。YostarのWindows対応予定はプラットフォームの案内で、今回、Steam配信を確定できる原文や製品ページは確認できていません。[公式ダウンロード案内](/ja/guides/download/)で配布元を個別に確認します。
+
+### PS5・PS4などの家庭用ゲーム機で遊べますか？
+
+本ページの日本向け公式計画はiOS・Android・Windowsです。家庭用ゲーム機への対応を確定する資料は今回未確認です。検索にPS5が出ることを公式発表とせず、未確認を将来も発売しないという意味にも扱いません。
+
+### 「アズプロ PC」は別のゲームですか？
+
+本ページでは「アズプロ」をアズールプロミリアの検索上の略称として扱います。インストーラーを選ぶときは、正式な作品名、対象地域の公式サイトと配信元を確認してください。
+
+### スマホで登録すればPCでもそのまま続けられますか？
+
+対象地域の正式PC配布先を確認し、ログイン、サーバー、進行、購入履歴、有償通貨を分けて照合します。11月23日の日本Google Playの登録表示は、PCの利用資格やデータ共有を証明しません。

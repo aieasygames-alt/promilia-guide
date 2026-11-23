@@ -1,0 +1,56 @@
+[
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "sha256": "610f6f038f8c0ee61c150cf5f1da22682f6ea7a20c8772f61b96f1223fe627a0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 4,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "sha256": "ce889b4deb47bbffa4396e8908ac0aecc4ec02838e8517f2ea1f7129dd1f6413",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "redeem-codes",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/redeem-codes.md",
+    "sha256": "0a7690dada898198330b5876cfd2b14018514e63dce870d9398ffd82d5f3ea30",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/requirements.md",
+    "sha256": "3d1b7a00b27117d56d5121426020d070a634b28fcd36d4832cdde0d336fd8cf9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 4,
+    "file": "src/content/revisions/ja/reroll.md",
+    "sha256": "727efb155d396bb6a51578e5189fe75f4cc9a70c2ce6cdc384a3daadb8a26e53",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "redeem-codes",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/redeem-codes.md",
+    "sha256": "ff411e8b20af6993c4050a3e5491dc46edd482fa14c5c341612f362a7a8e2e60",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

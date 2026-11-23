@@ -543,5 +543,152 @@
         "note": "公式の説明と表示された自動字幕を記録。映像を再生できず、数値・固有名・期間は画面との照合待ちです。日本公開用の編集版であり、中国本土の仕様へ転用しません。"
       }
     }
+  },
+  {
+    "id": "cn-ios-capacity-2026-11-23",
+    "title": "中国区App Store：当前分发大小与OS兼容条件",
+    "url": "https://apps.apple.com/cn/app/id6754017631",
+    "publisher": "App Store / 蛮啾游戏",
+    "gameRegion": "中国区App Store",
+    "excerpt": "蓝色星原：旅谣；开发者：蛮啾游戏；预计于2026年11月26日推出；大小3.9 GB；iOS 15.0或更高版本，iPadOS 15.0或更高版本。",
+    "note": "2026-11-23读取应用正文。大小是商店分发字段，不能作为日本版或完整安装空间；商店预计日期与营销文字不证明当前可安装或服务器开放。",
+    "kind": "official-store",
+    "localized": {
+      "ja": {
+        "title": "中国区App Store：配布サイズとOS互換性（11月23日）",
+        "note": "中国本土向けアプリ本文の3.9 GB・最低OSを確認。日本版の要件やインストール後の全容量には適用しません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
+  },
+  {
+    "id": "jp-metsa-profile-2026-11-23",
+    "title": "日本官方：メーツァ（Metsa）人物介绍",
+    "url": "https://azurpromilia.jp/character/metsa",
+    "publisher": "アズールプロミリア日本公式 / Manjuu・Yostar",
+    "gameRegion": "日本官网人物介绍",
+    "excerpt": "メーツァ（Metsa）；エヴァーガーデンのガーデナー。花々が美しく咲き誇る時まで、ともに歩むことを願う。所属・ゆかりの地：ローズランサ。",
+    "note": "从日本官网角色列表交叉进入独立详情。中文正文为日语资料译述，未取得中文官方名称；人物身份不证明职业技能、声优、强度或获取方式。",
+    "kind": "official",
+    "localized": {
+      "ja": {
+        "title": "日本公式：メーツァ（Metsa）の人物紹介",
+        "note": "公式一覧から詳細ページを照合。名前、ガーデナーという設定、ゆかりの地を確認。技能・CV・入手方法の根拠にはしません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
+  },
+  {
+    "id": "jp-cabbird-profile-2026-11-23",
+    "title": "日本官方：キャバード（CABBIRD）分类与生态",
+    "url": "https://azurpromilia.jp/kibo/cabbird",
+    "publisher": "アズールプロミリア日本公式 / Manjuu・Yostar",
+    "gameRegion": "日本官网奇波介绍",
+    "excerpt": "キャバード（CABBIRD）；異生類-翼形族。知的種族に人気があり、よく飼育されている。頭の葉っぱを引っ張られるのは嫌がるが、撫でられれば尾羽を広げて喜ぶ。",
+    "note": "从日本官网奇波列表交叉核对独立详情。生态反应不证明正式客户端中的互动按钮、捕捉位置、家园工作或数值收益。",
+    "kind": "official",
+    "localized": {
+      "ja": {
+        "title": "日本公式：キャバード（CABBIRD）の生態と分類",
+        "note": "公式一覧と詳細を照合。分類と紹介文の反応を確認。捕獲地点、操作方法、作業適性や数値は追加しません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 原文核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-gsc-refresh/evidence.md"
+  },
+  {
+    "id": "cn-distribution-home-2026-11-23",
+    "title": "国服官网：预约与商店入口复核（11月23日）",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "gameRegion": "中国大陆",
+    "excerpt": "11月26日 正式公测；立即预约；App Store 预订；官网链接应用ID6754017631。资讯列表可见11月20日公测福利公告。",
+    "note": "浏览器读取动态正文。仅证明本次首页可见状态；没有据此断言所有官方渠道均无安装器。未下载、安装或登录游戏。",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：登録・ストア入口の再確認（11月23日）",
+        "note": "ホームで事前登録とApp Store予約リンクを確認。全配布先を網羅した調査やインストールの実測ではありません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-trends-content/evidence.md"
+  },
+  {
+    "id": "jp-distribution-home-2026-11-23",
+    "title": "日本官网：手机事前注册与官方链接复核（11月23日）",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/",
+    "gameRegion": "日本",
+    "excerpt": "アズールプロミリアの事前登録ページへ；App Storeリンクのredirect先id6787982572；Google Playリンクのredirect先com.Yostar.AzurpromiliaJP。",
+    "note": "读取官网HTML及实际链接，保留原始响应。日本App Store目标仍重定向到中国区Today，未取得目标应用配置正文。未由手机入口推定PC安装器状态。",
+    "localized": {
+      "ja": {
+        "title": "日本公式：事前登録とストアリンク（11月23日）",
+        "note": "公式ホームの登録先とリンクのアプリIDを照合。App Storeの対象本文は取得できず、iOS条件の根拠にしません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-trends-content/evidence.md"
+  },
+  {
+    "id": "jp-play-registration-2026-11-23",
+    "title": "日本Google Play：可见事前注册按钮（11月23日）",
+    "publisher": "Google Play / Yostar Limited.",
+    "kind": "official-store",
+    "url": "https://play.google.com/store/apps/details?id=com.Yostar.AzurpromiliaJP&hl=ja&gl=JP",
+    "gameRegion": "日本向けアプリ、日本語・日本向け表示指定",
+    "excerpt": "アズールプロミリア；Yostar Limited.；事前登録；最終更新日2026/11/17；日本（日本語）。",
+    "note": "HTTP请求连接重置后，浏览器读取对应应用页，实际看到事前登録按钮。未点击注册、未安装；按钮不证明个人账号资格、预下载已开放、最低OS或全部安装空间。",
+    "localized": {
+      "ja": {
+        "title": "Google Play：事前登録表示を確認（11月23日）",
+        "note": "アプリIDと配信元、事前登録ボタンを確認。登録やインストールは実行せず、利用資格・動作環境・全容量は確定しません。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-trends-content/evidence.md"
+  },
+  {
+    "id": "tc-mobile-entry-2026-11-23",
+    "title": "繁中官网：台湾商店链接与预约状态（11月23日）",
+    "publisher": "藍色星原：旅謠繁中官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.jimi-global.com/home/",
+    "gameRegion": "繁中官网；链接指向台湾区App Store",
+    "excerpt": "11月26日 正式公測；公測預約；App Store 預訂：https://apps.apple.com/tw/app/id6789139052；Google Play 預先註冊：com.jimi.azurpromilia；页脚Nijigen Games、JIMI。",
+    "note": "浏览器读取动态官网并核对链接。台湾App Store目标HTTP取得Today，未读应用正文；仅核验官网提供的商店身份，不确认完整运营地区、账号资格、服务器互通、配置或实际安装。",
+    "localized": {
+      "ja": {
+        "title": "繁体字公式：台湾向けストアリンク（11月23日）",
+        "note": "ホームの登録表示と台湾App Store・Google PlayのアプリIDを確認。ストア本文、全運営地域、インストール可否は未確認です。"
+      }
+    },
+    "publishedAt": null,
+    "checkedAt": "2026-11-23",
+    "gameVersion": "正式发行前 / 2026-11-23 页面核对",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-23-trends-content/evidence.md"
   }
 ]

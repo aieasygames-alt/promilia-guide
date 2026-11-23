@@ -3,27 +3,27 @@ contentId: "download"
 locale: "zh-hans"
 slug: "download"
 section: "guides"
-title: "官方下载与预约入口：国服、日本分地区核对"
-description: "按地区和设备核对国服与日本官方入口，区分预约、预下载与实际可安装状态。"
+title: "蓝色星原官方下载与预下载：国服、日本PC和手机入口"
+description: "按地区与设备查找官方入口，核对11月24日预下载计划。11月23日日本Google Play显示事前注册；PC安装器、当前安装权限和全资源容量分别确认。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
+updatedAt: "2026-11-23"
+gameVersion: "公测前 / 2026-11-23 信息与行动入口修订"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21"]
-sourceRevision: 9
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","cn-distribution-home-2026-11-23","jp-distribution-home-2026-11-23","jp-play-registration-2026-11-23","cn-ios-capacity-2026-11-23"]
+sourceRevision: 10
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["platforms","requirements","getting-started"]
 order: 3
 minutes: 6
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载将于11月24日开放，更新预下载核验状态与日程说明。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":4,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载将于11月24日开放，更新预下载核验状态与日程说明。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"},{"date":"2026-11-23","note":"按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。"},{"date":"2026-11-23","note":"项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。"}]
+claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time","jp-play-registration-display"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":4,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1,"jp-play-registration-display":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 先在速查中选择地区与设备
@@ -38,6 +38,18 @@ reviewedAt: "2026-11-21"
 
 筛选后的链接可以收藏。切换文章语言仍保留地区与设备；阅读日语不会自动转成日本下载目标。关闭 JavaScript 时，全部设备记录仍可阅读。
 
+
+## 两地预下载计划分别有原文依据
+
+| 地区 | 原规则计划时刻 | 依据 |
+| --- | --- | --- |
+| 中国大陆 | 2026年11月24日15:00（UTC+8，北京时间） | 国服官网「集结，勇闯奇波巢穴」→「活动规则」 |
+| 日本 | 2026年11月24日16:00（日本时间，即北京时间15:00） | 日本「集まれ！キボの巣穴探索」→「イベントルール」 |
+
+两行来自各自地区原文。计划时间不证明当前已开放、所有设备同时可安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
+
+具体设备入口以对应地区届时分发为准。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
+
 ## 中国大陆 iPhone 与 iPad
 
 1. 从国服官网进入中国区 App Store，核对应用 ID `6754017631` 和开发者「蛮啾游戏」。
@@ -50,19 +62,20 @@ reviewedAt: "2026-11-21"
 
 从速查卡片进入日本官方事前注册页，再按设备选择 App Store 或 Google Play。官网链接的应用身份可与发行方及应用 ID 交叉比对：日本 App Store 链接含 `6787982572`，Google Play 为 `com.Yostar.AzurpromiliaJP`。
 
-本轮日本 App Store 目标跳转到其他地区的 Today 页面，未读到应用正文；Google Play 可读取应用身份，但当前浏览环境没有可确认的注册或安装按钮。因此只提供官方注册页入口，不承诺个人账号能直接安装，也不代填日本 iOS 配置。
+11月23日，日本Google Play可读取应用身份及「事前登録」按钮，尚不能据此确认已可安装。日本App Store目标仍跳转到Today，未读到应用正文。请从官方注册页进入，不将这次按钮展示作为个人账号资格或日本iOS配置的证明。
 
 遇到地区不符、未出现按钮或跳转异常时，先回官方注册页核对。不要把中国区应用、第三方 APK 或旧 CBT 客户端当作日本正式版本。
 
-## 11月21日客户端资料复核
+## 11月23日客户端与商店状态
 
-| 地区与商店 | 本次实际读到的状态 | 还缺的正式资料 |
+| 地区与入口 | 本次实际看到什么 | 下一步 |
 | --- | --- | --- |
-| 国服App Store | 应用ID `6754017631`、开发者蛮啾游戏、预计11月26日推出；展示3.9GB，与此前记录一致 | 正式构建号、完整追加资源与空间；商店展示不能证明已安装 |
-| 日本Google Play | 包名 `com.Yostar.AzurpromiliaJP`、Yostar Limited.；日语页面显示最后更新2026年11月17日 | 最低Android系统、完整空间、构建号与实际安装状态 |
-| 日本App Store与预约页 | App Store仍跳到其他地区Today；本次预约页出现验证码，未继续注册 | 日本iOS正文、兼容条件及本人账号可用状态 |
+| 国服官网及中国区App Store | 官网“立即预约／App Store预订”；商店预计11月26日、3.9 GB、iOS 15.0 / iPadOS 15.0及以上 | 当前展示仍不能证明实际安装成功；完整资源空间见[容量说明](/zh-hans/guides/requirements/) |
+| 日本官网及Google Play | 官方手机链接；包名`com.Yostar.AzurpromiliaJP`，Yostar Limited.，可见「事前登録」按钮 | 按商店实际状态操作；预约不等于预下载，最低系统和全容量另核 |
+| 日本App Store | 官网链接应用ID`6787982572`；本次目标仍跳到Today | 返回日本官方入口核对，不能用Today页补配置 |
+| 国服PC／Android、日本PC | 本次查看的首页没有取得可复核的正式安装器 | 继续查看对应地区正式分发公告，不推测下载地址 |
 
-11月17日是本次看到的Google Play更新日，不是开服或可安装日期；11月14日所见11月8日记录保留为历史。正式安装器出现后还要核对版本与追加资源，不能用网页更新时间代替客户端版本。
+Google Play显示的2026年11月17日是商店更新日，不是本次核对日期，也不是开服日。本次未安装或登录游戏；本表只记录上述页面的实际可见状态。
 
 ## PC 与中国大陆 Android
 
@@ -95,13 +108,12 @@ reviewedAt: "2026-11-21"
 
 截图中隐藏手机号、验证码、订单和登录凭证。本站不接收游戏密码；纠错页只能帮助整理资料，不能代替游戏客服。
 
-## 两地预下载计划分别有原文依据
+## 下载入口常见问题
 
-| 地区 | 原规则计划时刻 | 依据 |
-| --- | --- | --- |
-| 中国大陆 | 2026年11月24日15:00（UTC+8，北京时间） | 国服官网「集结，勇闯奇波巢穴」→「活动规则」 |
-| 日本 | 2026年11月24日16:00（日本时间，即北京时间15:00） | 日本「集まれ！キボの巣穴探索」→「イベントルール」 |
+### 预约按钮没变成下载按钮，先查哪里？
 
-两行来自各自地区原文。计划时间不证明当前已开放、所有设备同时可安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
+先核对目标地区、设备和应用ID，再看当前显示的是预约还是下载。确认正式分发确已开放后，再核对商店账号和设备条件；不要用旧测试版或其他地区同名应用代替。
 
-具体设备入口以对应地区届时分发为准。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
+### 台湾玩家应该选国服还是日本入口？
+
+先确认自己计划使用的发行版本。繁中官网有独立的商店链接，详见[地区与应用ID对照](/zh-hans/guides/global-release/)。本站速查目前只覆盖国服和日本，不能把其中任一行默认当作繁中入口。

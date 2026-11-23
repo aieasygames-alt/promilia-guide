@@ -3,28 +3,28 @@ contentId: "download"
 locale: "ja"
 slug: "download"
 section: "guides"
-title: "公式ダウンロード・事前登録：中国本土と日本の入口"
-description: "中国本土と日本の公式入口を地域・端末別に確認。事前登録、事前ダウンロード、インストールの可否を区別します。"
+title: "アズールプロミリアのダウンロード｜事前DL・PC・スマホ公式入口"
+description: "アズプロの公式入口を地域・端末別に整理。11月24日の事前DL予定と、11月23日に確認した登録表示、PC配布先、インストールできない場合の確認順を案内。"
 author: "Promilia Guide 編集部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "正式配信前／2026-11-21 両地域イベント規約を照合"
+updatedAt: "2026-11-23"
+gameVersion: "サービス開始前 / 2026-11-23 情報・導線改訂"
 gameRegion: "中国本土・日本（地域別に記載）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21"]
-sourceRevision: 9
+sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","cn-app-store-2026-11-14","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-google-play-2026-11-14","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","cn-distribution-home-2026-11-23","jp-distribution-home-2026-11-23","jp-play-registration-2026-11-23","cn-ios-capacity-2026-11-23"]
+sourceRevision: 10
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["platforms","requirements","getting-started"]
 order: 3
 minutes: 6
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特別番組に基づき、事前ダウンロード日程（11月24日）の確定および検証状況を更新。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
-translatedFromRevision: 9
-claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":4,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"過去のテスト用告知と終了告知を照合し、正式配布と区別。地域・端末の早見表を追加。公開前レビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特別番組に基づき、事前ダウンロード日程（11月24日）の確定および検証状況を更新。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"},{"date":"2026-11-23","note":"事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。"},{"date":"2026-11-23","note":"プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。"}]
+translatedFromRevision: 10
+claimRefs: ["cn-launch-date","cn-official-entry","cn-ios-store","cn-platform-details","cn-preload-status","cn-test-client-history","jp-release-status","cn-ios-compatibility","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time","jp-play-registration-display"]
+claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-ios-store":2,"cn-platform-details":1,"cn-preload-status":4,"cn-test-client-history":1,"jp-release-status":2,"cn-ios-compatibility":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1,"jp-play-registration-display":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 早見表で地域と端末を選ぶ
@@ -39,6 +39,18 @@ reviewedAt: "2026-11-21"
 
 選択後のURLは保存できます。記事の言語を切り替えても地域と端末は引き継がれ、日本語を選ぶだけでダウンロード先が日本向けに変わることはありません。JavaScriptが無効でも全端末の記録を読めます。
 
+
+## 両地域の事前ダウンロード予定
+
+| 対象 | 公式規約の予定時刻 | 根拠 |
+| --- | --- | --- |
+| 中国本土 | 2026年11月24日15:00（UTC+8、日本時間16:00） | 中国本土公式トップの「集结，勇闯奇波巢穴」→「活动规则」 |
+| 日本 | 2026年11月24日16:00（日本時間） | 日本公式「集まれ！キボの巣穴探索」→「イベントルール」 |
+
+各地域の独立した原文で確認した予定です。現時点の配布開始、全機種同時配布、ゲーム開始時刻は別途確認します。両規約とも、その時点で事前登録任務が終了するため、イベント全体の締切と区別してください。
+
+報酬の配布先と受取期限は[報酬案内](/ja/guides/resources/)で確認できます。
+
 ## 中国本土のiPhone・iPad
 
 1. 中国本土公式サイトからApp Storeへ進み、アプリID `6754017631` と開発元「蛮啾游戏」を照合します。
@@ -51,19 +63,20 @@ reviewedAt: "2026-11-21"
 
 早見表のリンクから日本公式の事前登録ページへ進み、端末に合うApp StoreまたはGoogle Playを選びます。公式が案内するアプリIDは、App Storeが `6787982572`、Google Playが `com.Yostar.AzurpromiliaJP` です。配信元の表記も併せて照合してください。
 
-今回、App Storeのリンク先は他地域のTodayへ移動し、対象アプリの本文を確認できませんでした。Google Playではアプリを確認できましたが、この閲覧環境では登録・インストールボタンを確認できていません。公式登録ページを案内し、個人の利用可否や日本向けiOSの動作条件は断定しません。
+11月23日の日本向けGoogle Playでは、アプリの情報と「事前登録」ボタンを確認しました。インストール可能だという意味ではありません。日本App Storeの対象URLは今回もTodayへ移動し、本文を取得できませんでした。個人の利用資格や日本向けiOS条件は別途確認します。
 
 地域の不一致、ボタンがない、別ページへ移動する場合は、公式の登録ページに戻って確認してください。中国本土向けアプリ、非公式APK、過去のCBTクライアントで代用しないようにしましょう。
 
-## 11月21日に確認したクライアント資料
+## 11月23日のクライアント・ストア表示
 
-| 地域・ストア | 今回読めた表示 | 未確認の正式資料 |
+| 対象 | 今回読めた表示 | 次の確認 |
 | --- | --- | --- |
-| 中国本土App Store | ID `6754017631`、開発元「蛮啾游戏」、11月26日配信予定、表示3.9GB。以前の記録と一致 | 正式ビルド番号、追加データ全体、空き容量、実際のインストール |
-| 日本Google Play | ID `com.Yostar.AzurpromiliaJP`、Yostar Limited.。日本語表示の最終更新日は2026年11月17日 | Android最低OS、全容量、ビルド番号、実際のインストール |
-| 日本App Store・登録ページ | App Storeは他地域のTodayへ移動。登録ページは今回は画像認証で先へ進まず | 日本向けiOS本文、互換性、本人アカウントでの利用可否 |
+| 中国本土公式・App Store | 公式は登録・予約表示。ストアは11月26日予定、3.9 GB、iOS 15.0 / iPadOS 15.0以降 | 実際のインストールと全データ容量は別。詳しくは[容量の説明](/ja/guides/requirements/) |
+| 日本公式・Google Play | 公式のスマホリンク、`com.Yostar.AzurpromiliaJP`、Yostar Limited.、事前登録ボタン | 現在の表示に従う。登録は事前DLとは別で、最低OS・全容量も別途確認 |
+| 日本App Store | 公式リンクのアプリIDは`6787982572`。対象URLは今回もTodayへ移動 | 公式入口へ戻って照合。Todayの本文を本作の動作条件にしない |
+| 中国本土PC・Android、日本PC | 今回のホーム閲覧では正式インストーラーを取得・照合できず | 地域別の正式配布告知で確認し、URLを推測しない |
 
-11月17日はGoogle Playで表示された更新日で、配信開始日ではありません。11月14日に見た11月8日という表示は履歴として保持します。配布後はビルドと追加データを確認し、Webページの更新日をクライアントの版に置き換えないでください。
+Google Playの2026年11月17日はストア更新日で、今回の確認日やサービス開始日ではありません。今回はゲームのインストール・ログインを行っておらず、表は閲覧ページの表示記録です。
 
 ## PCと中国本土のAndroid
 
@@ -96,13 +109,12 @@ reviewedAt: "2026-11-21"
 
 画面を共有するときは、電話番号、認証コード、注文情報、ログイン情報を隠します。当サイトはパスワードを受け取りません。修正メモは資料の整理用であり、ゲームのサポート窓口ではありません。
 
-## 両地域の事前ダウンロード予定
+## ダウンロード先のよくある質問
 
-| 対象 | 公式規約の予定時刻 | 根拠 |
-| --- | --- | --- |
-| 中国本土 | 2026年11月24日15:00（UTC+8、日本時間16:00） | 中国本土公式トップの「集结，勇闯奇波巢穴」→「活动规则」 |
-| 日本 | 2026年11月24日16:00（日本時間） | 日本公式「集まれ！キボの巣穴探索」→「イベントルール」 |
+### 登録ボタンがダウンロードに変わらないときは？
 
-各地域の独立した原文で確認した予定です。現時点の配布開始、全機種同時配布、ゲーム開始時刻は別途確認します。両規約とも、その時点で事前登録任務が終了するため、イベント全体の締切と区別してください。
+対象地域、端末、アプリIDを確認し、登録段階か配布段階かを分けます。正式配布が始まった根拠を確認してから、アカウントや端末の条件を調べてください。旧テスト版や別地域の同名アプリで代用しないでください。
 
-報酬の配布先と受取期限は[報酬案内](/ja/guides/resources/)で確認できます。
+### 繁体字版の入口もこの早見表で選べますか？
+
+現在の早見表は中国本土と日本が対象です。繁体字公式の独立したストアリンクは[地域・アプリIDの対照](/ja/guides/global-release/)で案内します。記事の言語だけで利用地域を決めないでください。

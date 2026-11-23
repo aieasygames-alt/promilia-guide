@@ -3,27 +3,27 @@ contentId: "platforms"
 locale: "zh-hans"
 slug: "platforms"
 section: "guides"
-title: "平台支持与 PC 状态：支持、开放与互通分开看"
-description: "逐项确认平台支持、地区开放和账号互通，避免用一个结论代替全部条件。"
+title: "蓝色星原PC与手机平台：Windows、PS5、Steam和互通核对"
+description: "日本官方计划平台为iOS、Android、Windows；分别核对PC安装器、PS5与Steam依据、跨端进度及付费货币共享，不把搜索词当作支持证明。"
 author: "Promilia Guide 编辑部"
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-21"
-gameVersion: "公测前 / 2026-11-21 两地活动规则补核"
+updatedAt: "2026-11-23"
+gameVersion: "公测前 / 2026-11-23 信息与行动入口修订"
 gameRegion: "中国大陆、日本（分地区说明）"
 verification: "official"
 status: "published"
-sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21"]
-sourceRevision: 8
+sourceRefs: ["cn-official-home-2026-11-14","cn-app-store-2026-11-14","jp-launch-announcement-2026-10-23","cn-launch-announcement-2026-10-23","cn-test-preload-2026-09-15","cn-test-ended-2026-10-07","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","jp-publishing-2025-12-15","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","jp-play-registration-2026-11-23"]
+sourceRevision: 9
 translationStatus: "published"
 aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
 related: ["requirements","download"]
 order: 4
 minutes: 4
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载（11-24）与公测开服（11-26）日程，更新平台事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
-claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time"]
-claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":4,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"核对旅迹测试预下载及结束原文，区分历史测试与公测入口；补充地区和设备速查，保留待审状态。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"前瞻直播确认全平台预下载（11-24）与公测开服（11-26）日程，更新平台事实修订号。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"},{"date":"2026-11-23","note":"按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。"},{"date":"2026-11-23","note":"项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。"}]
+claimRefs: ["cn-ios-store","cn-ios-compatibility","cn-platform-details","jp-release-status","cn-launch-date","cn-preload-status","cn-test-client-history","jp-official-entry","jp-platform-plan","jp-platform-details","jp-preload-status","cn-opening-time","jp-opening-time","jp-play-registration-display"]
+claimRevisions: {"cn-ios-store":2,"cn-ios-compatibility":1,"cn-platform-details":1,"jp-release-status":2,"cn-launch-date":2,"cn-preload-status":4,"cn-test-client-history":1,"jp-official-entry":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-preload-status":4,"cn-opening-time":3,"jp-opening-time":1,"jp-play-registration-display":1}
+reviewer: "项目负责人（会话发布确认）"
+reviewedAt: "2026-11-23"
 ---
 
 ## 先区分地区与计划平台
@@ -73,3 +73,21 @@ reviewedAt: "2026-11-21"
 两行来自各自地区原文。计划时间不证明当前已开放、所有设备同时可安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
 
 具体设备入口以对应地区届时分发为准。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
+
+## PC、PS5与Steam常见问题
+
+### PC版就是Steam版吗？
+
+不是同一个判断。日本Yostar公告的Windows计划支持只说明计划平台，本页尚未取得可确认Steam发行的对应原文或产品页。先从[官方下载说明](/zh-hans/guides/download/)核对实际分发渠道。
+
+### PS5、PS4或其他主机能玩吗？
+
+本页已核验的日本平台计划只列iOS、Android与Windows，没有足以在本页确认主机版本的资料。查询中出现PS5不代表官方已公布支持；也不能把未确认写成永久不会推出。
+
+### 日语「アズプロ PC」是在找另一个游戏吗？
+
+本页将「アズプロ」作为アズールプロミリア的查询简称处理。核对安装器时仍以完整名称、对应地区官网和发行方为准，简称不能代替应用身份。
+
+### 手机预约成功，能直接在PC继续吗？
+
+先确认目标地区PC正式入口，再分别核对登录方式、服务器、角色进度、购买记录及付费货币。11月23日日本Google Play的事前注册按钮只证明手机商店展示，不能证明PC资格或互通。

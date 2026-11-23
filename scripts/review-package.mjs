@@ -5,7 +5,7 @@ import { join, relative, sep } from 'node:path';
 import { load } from 'cheerio';
 
 // Only editorial evidence and static assets belong in the handoff, never local configuration.
-export const reviewInputs = ['src/content/guides', 'src/data', 'research', 'plans/CONTENT-REVIEW.md', 'plans/LOCALIZATION-PLAN.md'];
+export const reviewInputs = ['src/content', 'src/data', 'research', 'plans/CONTENT-REVIEW.md', 'plans/LOCALIZATION-PLAN.md'];
 const buildInputs = ['src', 'public', 'scripts', 'astro.config.mjs', 'package.json', 'package-lock.json', 'tsconfig.json', '.nvmrc'];
 
 export async function regularFiles(path) {
@@ -86,7 +86,7 @@ ${routes}
 ## 审核材料
 
 - site/：已构建的完整 noindex 预览，含搜索、来源、目录与清单。
-- src/content/guides/：原稿与译稿，保留真实草稿和审核状态。
+- src/content/guides/：当前已审原稿与译稿；src/content/revisions/（如有）为预览中覆盖的待审修订。
 - src/data/：来源、事实、术语、分发及首发计划。
 - research/：原始来源核验记录及结论边界。
 - plans/CONTENT-REVIEW.md：逐篇交接与人工审核步骤；LOCALIZATION-PLAN.md 为语言规范。

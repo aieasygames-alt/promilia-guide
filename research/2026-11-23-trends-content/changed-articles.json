@@ -1,0 +1,164 @@
+[
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "sha256": "610f6f038f8c0ee61c150cf5f1da22682f6ea7a20c8772f61b96f1223fe627a0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 4,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "sha256": "ce889b4deb47bbffa4396e8908ac0aecc4ec02838e8517f2ea1f7129dd1f6413",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "redeem-codes",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/redeem-codes.md",
+    "sha256": "0a7690dada898198330b5876cfd2b14018514e63dce870d9398ffd82d5f3ea30",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/launch.md",
+    "sha256": "c95baad67fc6800759d6f3bde71047cb0230327c64ad772b1b2d6250c10d58c0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "zh-hans",
+    "revision": 10,
+    "file": "src/content/revisions/zh-hans/download.md",
+    "sha256": "f63dff977ee71f3220dc8c0c233a0fa3b955e8aa0b1ef4bfd3f66570ceed2ac8",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/platforms.md",
+    "sha256": "ca529dab7501f4bcba835d53b829d27d7603666e865db482dfc7767d285979ca",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/global-release.md",
+    "sha256": "b2a156d1abffad341dd33752b693318c71d9c84f925cfcdbf5b10212c5d91639",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "sha256": "b346698407831c8259e81897f79a6b37bcc3394288d137db69f196dd3ad492ca",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "sha256": "0f1881d9cb4fef607daff9c5fe4acf2d221bd4696ccc8e68163cb16f82e70b92",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/requirements.md",
+    "sha256": "3d1b7a00b27117d56d5121426020d070a634b28fcd36d4832cdde0d336fd8cf9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 4,
+    "file": "src/content/revisions/ja/reroll.md",
+    "sha256": "727efb155d396bb6a51578e5189fe75f4cc9a70c2ce6cdc384a3daadb8a26e53",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "redeem-codes",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/redeem-codes.md",
+    "sha256": "ff411e8b20af6993c4050a3e5491dc46edd482fa14c5c341612f362a7a8e2e60",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/launch.md",
+    "sha256": "6b133944df3aa63a6b17d5c1f63283f5da1e8765e2ae98e38322268cc2ecf511",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "ja",
+    "revision": 10,
+    "file": "src/content/revisions/ja/download.md",
+    "sha256": "100f7d76d84635db56c67005069ad3eee5f93e3f57d7602914303682c7daf2e3",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/platforms.md",
+    "sha256": "afdadb47e3892cefbad2564d78b1478dc906ee1180b0df3c1c0e25c215b29473",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/global-release.md",
+    "sha256": "fd66641cd03a0bf71e6cbcc6e4de350d53104d304287fbee240215012d75b840",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "sha256": "1f8c6b182c6131bfa985cf0a679b9b339a4e06a4baf6d495af0349a9a2f821eb",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/resources.md",
+    "sha256": "1605f378ea78c4449001cdcc9130426da03b96d659e9e5a0c30122233f90fa76",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]
