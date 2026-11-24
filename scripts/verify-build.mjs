@@ -7,8 +7,8 @@ import { load } from 'cheerio';
 import { readEntries } from './content-validation.mjs';
 import { articlePath, origin } from '../src/lib/publication.mjs';
 import { isPublishable } from '../src/lib/editorial.mjs';
-import { sourceSchema, claimSchema, guideSchema } from '../src/lib/editorial-schema.mjs';
-import { z } from 'zod';
+import { guideSchema } from '../src/lib/editorial-schema.mjs';
+import { readEditorialData } from './editorial-data.mjs';
 
 async function files(folder) {
   const result = [];
@@ -65,8 +65,7 @@ for (const [path, { $, file }] of pages) {
   }
 }
 const entries = (await readEntries()).map((entry) => ({ ...entry, data: guideSchema.parse(entry.data) }));
-const sources = z.array(sourceSchema).parse(JSON.parse(await readFile('src/data/sources.json', 'utf8')));
-const claims = z.array(claimSchema).parse(JSON.parse(await readFile('src/data/claims.json', 'utf8')));
+const { sources, claims } = await readEditorialData();
 const context = { entries, sources, claims };
 for (const { data } of entries) {
   if (!isPreview && !isPublishable(data, context) && pages.has(articlePath(data))) fail(`Production contains unpublished article ${articlePath(data)}`);

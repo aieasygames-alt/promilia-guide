@@ -1,34 +1,89 @@
 ---
-contentId: "reroll"
-locale: "zh-hans"
-slug: "reroll"
-section: "guides"
-title: "蓝色星原刷初始／刷首抽：是否需要、账号与奖励绑定"
-description: "整理刷初始所需的账号规则、卡池条件与实测记录。说明两地网页活动首个角色领取条件，正式重置操作、最快耗时与角色强度榜仍待验证。"
-author: "Promilia Guide 编辑部"
+contentId: reroll
+locale: zh-hans
+slug: reroll
+section: guides
+title: 蓝色星原刷初始／刷首抽：是否需要、账号与奖励绑定
+description: 国服限定角色池已公告90次保证、灵子池80次保证，但刷初始还需账号重置、首轮资源与耗时证据。说明网页奖励首个角色绑定和日服独立核验。
+author: Promilia Guide 编辑部
 publishedAt: "2026-11-15"
-updatedAt: "2026-11-23"
-gameVersion: "公测前 / 2026-11-23 信息与行动入口修订"
-gameRegion: "中国大陆、日本（分地区说明）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","jp-contact-instructions-2026-11-21"]
-sourceRevision: 4
-translationStatus: "published"
-aliases: ["刷初始","账号条件","蓝色星原","刷首抽","藍色星原刷首抽","藍色星原首抽"]
-related: ["requirements","redeem-codes","getting-started"]
+updatedAt: "2026-11-24"
+gameVersion: 公测前 / 2026-11-24 账号及返还领取核对
+gameRegion: 中国大陆、日本（分地区说明）
+verification: editorial
+status: published
+sourceRefs:
+  - jp-kibo-adventure-rules-2026-11-21
+  - cn-kibo-adventure-rules-2026-11-21
+  - jp-contact-instructions-2026-11-21
+  - cn-character-banner-2026-11-24
+  - cn-anima-banner-2026-11-24
+  - jp-launch-faq-2026-11-24
+  - jp-preregister-benefits-2026-11-24
+  - cn-launch-returns-rewards-2026-11-24
+  - jp-account-terms-2026-11-24
+sourceRevision: 7
+translationStatus: published
+aliases:
+  - 刷初始
+  - 账号条件
+  - 蓝色星原
+  - 刷首抽
+  - 藍色星原刷首抽
+  - 藍色星原首抽
+related:
+  - requirements
+  - redeem-codes
+  - getting-started
+  - recharge-return
 order: 3
-minutes: 6
-revisions: [{"date":"2026-11-15","note":"整理公测免费20抽规划、开荒角色评级、初始重置步骤与开局收手标准；双语审核发布。"},{"date":"2026-11-21","note":"撤回无法复核的确定规则，按已知范围与判断条件重写；不沿用旧稿发布署名，新正文与译文待真实审核。"},{"date":"2026-11-21","note":"用户在本会话明确确认重写后的中日文共8篇内容已通过人工审核，并授权上线；记录当前正文及其已知／未知边界的审核通过状态。"},{"date":"2026-11-23","note":"根据搜索需求补充直接回答、确认表、FAQ与相关链接；作为独立待审修订保留，不沿用此前人工审核署名。"},{"date":"2026-11-23","note":"按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。"},{"date":"2026-11-23","note":"项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。"}]
-claimRefs: ["cn-banner-rules-system","jp-banner-rules-system","cn-kibo-web-rewards","jp-kibo-web-rewards"]
-claimRevisions: {"cn-banner-rules-system":2,"jp-banner-rules-system":1,"cn-kibo-web-rewards":1,"jp-kibo-web-rewards":1}
-reviewer: "项目负责人（会话发布确认）"
-reviewedAt: "2026-11-23"
+minutes: 8
+revisions:
+  - date: "2026-11-15"
+    note: 整理公测免费20抽规划、开荒角色评级、初始重置步骤与开局收手标准；双语审核发布。
+  - date: "2026-11-21"
+    note: 撤回无法复核的确定规则，按已知范围与判断条件重写；不沿用旧稿发布署名，新正文与译文待真实审核。
+  - date: "2026-11-21"
+    note: 用户在本会话明确确认重写后的中日文共8篇内容已通过人工审核，并授权上线；记录当前正文及其已知／未知边界的审核通过状态。
+  - date: "2026-11-23"
+    note: 根据搜索需求补充直接回答、确认表、FAQ与相关链接；作为独立待审修订保留，不沿用此前人工审核署名。
+  - date: "2026-11-23"
+    note: 按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。
+  - date: "2026-11-23"
+    note: 项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。
+  - date: "2026-11-24"
+    note: 分别核对国服角色与灵子观测正式公告，补保证次数、递增门槛、同类继承和期限；日本规则独立待核。本次正文与译文待审，不继承旧稿确认。
+  - date: "2026-11-24"
+    note: 补核日本FAQ第3节及预约页人数奖励，分开预约特典与巢穴探索的邮件、角色和期限条件，补领取核对与首日衔接。本次正文和译文仍待审核。
+  - date: "2026-11-24"
+    note: 补国服预约／社媒邮箱、原测试充值账号与凭证期限分流，首抽页另引日本删除不可恢复条款；不继承旧审核，正文与译文仍待审。
+  - date: "2026-11-24"
+    note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+claimRefs:
+  - cn-banner-rules-system
+  - jp-banner-rules-system
+  - cn-kibo-web-rewards
+  - jp-kibo-web-rewards
+  - jp-preregister-benefits
+  - cn-test-recharge-return
+  - cn-preregister-mail-benefits
+  - jp-account-deletion-terms
+claimRevisions:
+  cn-banner-rules-system: 3
+  jp-banner-rules-system: 1
+  cn-kibo-web-rewards: 1
+  jp-kibo-web-rewards: 1
+  jp-preregister-benefits: 1
+  cn-test-recharge-return: 1
+  cn-preregister-mail-benefits: 1
+  jp-account-deletion-terms: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
 
 ## 蓝色星原需要刷初始或刷首抽吗？
 
-当前核对的资料还不足以判断是否值得刷初始。需要同时确认目标地区正式账号规则、卡池完整条款及可复核的实际耗时。可以先完成[开服准备](/zh-hans/guides/getting-started/)，再收集判断所需的信息。
+当前仍不能仅凭卡池保底判断是否值得刷初始。**国服已确认当期角色池「桃笺为契」90次必得限定五星、灵子池「绯影入怀」80次必得限定五星**；账号重置、首轮实际资源与单次耗时仍待验证，日本版卡池也需独立核验。先完成[开服准备](/zh-hans/guides/getting-started/)，再判断重开的收益与代价。
 
 ## 刷初始判断表
 
@@ -42,11 +97,45 @@ reviewedAt: "2026-11-23"
 
 国服与日本版分别核对，在一个地区确认的登录或招募规则不能直接套用到另一个地区。
 
+## 国服90／80次保证，怎样影响首抽判断？
+
+11月24日[角色池公告](https://azurpromilia.manjuu.com/home/news/detail/912104344520888320)确认「桃笺为契」连续70次未得限定五星后递增，第90次必得；[灵子池公告](https://azurpromilia.manjuu.com/home/news/detail/912105412612984832)确认「绯影入怀」连续60次未得限定五星后递增，第80次必得。两类保底分别共享、跨期继承，获得对应限定五星后重新计数，具体见[卡池规则](/zh-hans/guides/banner-rules/)。
+
+这补齐了国服两项当期规则，但不代表角色很容易首抽取得，也不能证明重开比持续推进更省时间。基础概率、券种用途与首轮可领资源尚未齐备，无法计算一次重开的目标获取率或期望耗时。
+
+| 目标 | 现在可用的依据 | 决定前还差什么 |
+| --- | --- | --- |
+| 取得国服涂山小玉 | 当期角色池限定五星90次保证、同类继承 | 实际可用券、账号重置成本、角色性能 |
+| 同时取得花之舞 | 灵子池是独立80次保证类别 | 独立资源能否覆盖，不把两池历史合并 |
+| 先保留当前账号继续推进 | 同类保底未得计数可继承；网页奖励绑定首个角色 | 后续可获资源与玩法体验仍需实际记录 |
+| 玩日本版 | 日本网页奖励绑定规则已确认 | 日服卡池全部独立核验，不套用国服数值 |
+
+两池公告均为开服后至12月17日03:59（UTC+8）。这是国服活动窗口，不是要求首日反复重开的截止线，也不是日本版期限。
+
 ## 先确认网页活动奖励绑定谁
 
 日本官方“集まれ！キボの巣穴探索”规则说明，探索奖励发往参与活动的Yostar ID下**首个创建的游戏角色**。国服活动规则也说明奖励默认发往参与活动的蛮啾通行证下首个创建的角色。
 
 这只是网页活动奖励的接收条件，不能证明重建角色后会重新发奖，也不能证明删除或重新绑定能转移奖励。确定领取账号前，阅读对应地区原文，并查看[福利与领取条件](/zh-hans/guides/resources/)。
+
+## 重开前先看：国服测试返还与日本账号删除
+
+国服[FAQ第3节](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)明确测试充值返还不支持跨账号领取或转移。若「旅迹测试」期间付过费，原账号可能有分段星虹与对应凭证，不能把这些算进新账号的首次可用资源。先读[返还比例与领取期限](/zh-hans/guides/recharge-return/)，再比较原账号继续推进与重开的实际条件。
+
+同份FAQ第4节确认国服预约／社媒里程碑已全部解锁，公测后邮箱解锁可领艾妮丝、星彩·浮云、纯粹忆痕×20等。它没有因此承诺每次重建、每个游客号都能重复领取；预约、测试返还、巢穴的归属与期限各自查证。
+
+日本[利用规约第4条第6项](https://azurpromilia.jp/terms/user)则说明：账号被删除时利用权消灭，即使误删也无法恢复。这是已核实的删除后果，**不能将“删号”当成已经验证可反复使用的首抽重置操作**。本轮没有核实删除菜单、游客重置、改绑方式或完成重建的耗时。
+
+这条日本条款不等于“忘记账号、登录报错都无法恢复”。遇到登录问题先按对应官方帮助处理；卸载游戏、退出登录、删除账号也不能混称为同一个动作。本文不执行或提供未经验证的账号删除步骤。
+
+
+## 日本预约20枚展示，不等于每轮重开可用20次限定抽
+
+日本[预约页](https://azurpromilia.jp/pre-register/)将「無垢な痕跡」分列为×3、×5、×12，列值合计20枚；另有「アニス×1」等人数奖励。[FAQ第3节](https://azurpromilia.jp/news/5190)说明预约特典开服后从游戏内邮件领取，包含「星彩・クロディーメ」「無垢な痕跡」等，但没有在这一节给出完整个人资格、每次重建可否重领或卡池适用。
+
+因此不能将展示合计直接作为每一轮首抽的可用资源，也不能以邮件发放推定“游客号都能领”或“新角色会重发”。巢穴探索的最初角色绑定只属于那项活动；它同样不能替预约特典补出一条未公布的绑定或改绑规则。
+
+先确认账号和网页奖励接收角色，再记录正式版实际首次领取、券种用途和招募解锁。只有这些条件与重置耗时都可复核后，才有依据比较重开和继续推进。[福利与未到账检查](/zh-hans/guides/resources/)已分开列出日本两种奖励。
 
 ## 如何记录一次实际耗时
 

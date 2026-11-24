@@ -17,10 +17,10 @@ const codeCount = redeemCodeRows({ codes: redeemCodes, sources }).filter(code =>
       <h3>{region.region === 'cn' ? (ja ? '中国本土' : '中国大陆') : (ja ? '日本' : '日本地区')}</h3>
       <dl>
         <div><dt>{ja ? '開始予定' : '计划日程'}</dt><dd><ScheduleTime schedule={region.launch} locale={locale}/></dd></div>
-        <div><dt>{ja ? '事前ダウンロード予定' : '预下载计划'}</dt><dd><ScheduleTime schedule={region.preload} locale={locale}/></dd></div>
+        <div><dt>{region.preloadAnnounced ? (ja ? '事前DL開始（公式発表）' : '预下载开始（官方公告）') : (ja ? '事前ダウンロード予定' : '预下载计划')}</dt><dd><ScheduleTime schedule={region.preload} locale={locale}/></dd></div>
       </dl>
       {region.launch?.instant && <p class="launch-clock" data-launch-clock={region.launch.instant} data-clock-locale={locale} role="status" hidden></p>}
-      <p class="search-help">{region.stage === 'open' ? (ja ? '公式根拠で稼働を確認済み。利用条件は配布先で確認してください。' : '已根据独立依据确认开放，请在分发入口核对使用条件。') : region.stage === 'maintenance' ? (ja ? 'メンテナンスの公式情報を確認してください。' : '请核对当前维护公告。') : (ja ? '具体的な時刻とログイン可能な状態は、公式情報で別途確認します。' : '具体小时与是否可登录，仍需对应地区的独立官方依据。')}</p>
+      <p class="search-help">{region.stage === 'open' ? (ja ? '公式根拠で稼働を確認済み。利用条件は配布先で確認してください。' : '已根据独立依据确认开放，请在分发入口核对使用条件。') : region.stage === 'maintenance' ? (ja ? 'メンテナンスの公式情報を確認してください。' : '请核对当前维护公告。') : region.launch?.time ? (ja ? '上記は公式の開始予定です。実際の稼働状況は当日のお知らせで確認してください。' : '以上为官方计划时刻，实际开放状态请核对当日公告。') : (ja ? '具体的な時刻とログイン可能な状態は、公式情報で別途確認します。' : '具体小时与是否可登录，仍需对应地区的独立官方依据。')}</p>
       <a class="text-link" href={`/${locale}/guides/download/?region=${region.region}`}>{ja ? 'この地域の端末・公式入口' : '查看该地区的设备与官方入口'} →</a>
     </article>)}
   </div>

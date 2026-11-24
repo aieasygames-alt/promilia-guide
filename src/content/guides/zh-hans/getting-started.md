@@ -1,31 +1,161 @@
 ---
-contentId: "getting-started"
-locale: "zh-hans"
-slug: "getting-started"
-section: "guides"
-title: "首日准备与低负担路线：先领取，再解锁与安排资源"
-description: "按地区完成设备与账号准备，区分有期限奖励和任务解锁，记录家园、奇波与资源安排的下一步。"
-author: "Promilia Guide 编辑部"
+contentId: getting-started
+locale: zh-hans
+slug: getting-started
+section: guides
+title: 蓝色星原新手准备：开服、领福利与首次抽卡检查
+description: 从本体和追加资源到创角、邮件领取、券种核对与首次抽卡，整理公测前可确认的准备顺序；日本预约特典和巢穴奖励分别检查。
+author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-23"
-gameVersion: "公测前 / 2026-11-23 信息与行动入口修订"
-gameRegion: "中国大陆、日本（分地区说明）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21"]
-sourceRevision: 9
-translationStatus: "published"
-aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
-related: ["launch","requirements","combat","resources","banner-rules","home","kibo-guide"]
+updatedAt: "2026-11-24"
+gameVersion: 公测前 / 2026-11-24 账号及返还领取核对
+gameRegion: 中国大陆、日本（分地区说明）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-announcement-2026-10-23
+  - cn-official-home-2026-11-14
+  - jp-launch-announcement-2026-10-23
+  - jp-official-home-2026-11-14
+  - jp-pre-register-2026-11-14
+  - cn-launch-benefits-images-2026-11-21
+  - jp-kibo-adventure-rules-2026-11-21
+  - cn-kibo-adventure-rules-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - cn-launch-faq-2026-11-24
+  - jp-launch-faq-2026-11-24
+  - cn-distribution-home-2026-11-24
+  - jp-distribution-home-2026-11-24
+  - jp-preload-open-2026-11-24
+  - cn-preload-open-2026-11-24
+  - jp-pc-download-page-2026-11-24
+  - jp-preregister-benefits-2026-11-24
+  - jp-support-page-2026-11-24
+  - cn-launch-returns-rewards-2026-11-24
+sourceRevision: 14
+translationStatus: published
+aliases:
+  - 蓝色星原
+  - 藍色星原
+  - Azur Promilia
+  - azurpromilia
+  - azure promilia
+  - azur promillia
+  - アズールプロミリア
+related:
+  - launch
+  - requirements
+  - combat
+  - resources
+  - banner-rules
+  - home
+  - kibo-guide
+  - recharge-return
 order: 6
-minutes: 8
-revisions: [{"date":"2026-11-14","note":"建立编辑草稿，游戏事实与正式名称待核验。"},{"date":"2026-11-14","note":"录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。"},{"date":"2026-11-14","note":"补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。"},{"date":"2026-11-14","note":"项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。"},{"date":"2026-11-20","note":"根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。"},{"date":"2026-11-21","note":"撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。"},{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"},{"date":"2026-11-23","note":"按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。"},{"date":"2026-11-23","note":"项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。"}]
-checklist: [{"id":"region","text":"确认目标地区、服务器与账号渠道"},{"id":"announcement","text":"保存对应地区的原始发行公告"},{"id":"device","text":"核对设备、系统与可用空间"},{"id":"download","text":"确认官方客户端下载入口"},{"id":"account","text":"核对账号与恢复方式，妥善保管凭证"},{"id":"rules","text":"阅读当期奖励、资源与卡池规则"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1}
-reviewer: "项目负责人（会话发布确认）"
-reviewedAt: "2026-11-23"
+minutes: 12
+revisions:
+  - date: "2026-11-14"
+    note: 建立编辑草稿，游戏事实与正式名称待核验。
+  - date: "2026-11-14"
+    note: 录入官方公告、官网与商店证据，并关联共享事实修订号；人工发布审核未完成。
+  - date: "2026-11-14"
+    note: 补核日本独立日期、注册入口和计划平台，完善操作步骤与地区边界；双语同步，仍待真实人工审核。
+  - date: "2026-11-14"
+    note: 项目负责人在会话中确认真实人工审核已完成，记录确认日期并纳入发布。
+  - date: "2026-11-20"
+    note: 根据公测前瞻特别节目更新开服时间（11-26 10:00）与全平台预下载时间（11-24 10:00）至准备清单。
+  - date: "2026-11-21"
+    note: 撤回无法复核的前瞻时刻与福利，恢复此前已审核正文；审核署名保留恢复版本的历史记录。
+  - date: "2026-11-21"
+    note: 按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。
+  - date: "2026-11-21"
+    note: 第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。
+  - date: "2026-11-21"
+    note: 第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。
+  - date: "2026-11-21"
+    note: 项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。
+  - date: "2026-11-23"
+    note: 按预下载、官方入口、地区差异与搜索意图补充内容；本次修订待正文和译文审核，不继承旧稿审核。
+  - date: "2026-11-23"
+    note: 项目负责人在本会话明确要求“部署到线上”，确认本批当前修订发布；记录本次发布授权，不另称独立语言审校，未核实的游戏信息仍保留限制。
+  - date: "2026-11-24"
+    note: 分别核对两地当日FAQ，补充建议预留空间、配置、开服计划、追加资源与进度互通边界。本次正文与译文待审，不继承旧稿发布确认。
+  - date: "2026-11-24"
+    note: 追加核对预下载开始公告、PC独立页面和商店版本变化；区分公告开放、文件取得与安装运行，本次修订仍待正文及译文确认。
+  - date: "2026-11-24"
+    note: 补核日本FAQ第3节及预约页人数奖励，分开预约特典与巢穴探索的邮件、角色和期限条件，补领取核对与首日衔接。本次正文和译文仍待审核。
+  - date: "2026-11-24"
+    note: 补核日本FAQ第4/5节与官方客服入口，按阶段区分校验、追加资源、慢启动和闪退；增加本地故障记录表，正文与译文仍待本批审核。
+  - date: "2026-11-24"
+    note: 补国服预约／社媒邮箱、原测试充值账号与凭证期限分流，首抽页另引日本删除不可恢复条款；不继承旧审核，正文与译文仍待审。
+  - date: "2026-11-24"
+    note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+checklist:
+  - id: region
+    text: 确认目标地区、服务器与账号渠道
+  - id: announcement
+    text: 保存对应地区的原始发行公告
+  - id: device
+    text: 核对设备、系统与可用空间
+  - id: download
+    text: 确认官方客户端下载入口
+  - id: account
+    text: 核对账号与恢复方式，妥善保管凭证
+  - id: rules
+    text: 阅读当期奖励、资源与卡池规则
+claimRefs:
+  - cn-launch-date
+  - cn-official-entry
+  - cn-opening-time
+  - jp-release-status
+  - jp-official-entry
+  - jp-preload-status
+  - jp-opening-time
+  - cn-preload-status
+  - cn-rewards-conditions
+  - jp-kibo-web-rewards
+  - cn-kibo-web-rewards
+  - cn-store-home-kibo-overview
+  - cn-public-launch-requirements
+  - jp-public-launch-requirements
+  - cn-public-launch-platform-rules
+  - jp-public-launch-platform-rules
+  - jp-preregister-benefits
+  - jp-launch-troubleshooting
+  - cn-test-recharge-return
+  - cn-preregister-mail-benefits
+claimRevisions:
+  cn-launch-date: 2
+  cn-official-entry: 1
+  cn-opening-time: 4
+  jp-release-status: 2
+  jp-official-entry: 2
+  jp-preload-status: 6
+  jp-opening-time: 2
+  cn-preload-status: 6
+  cn-rewards-conditions: 1
+  jp-kibo-web-rewards: 1
+  cn-kibo-web-rewards: 1
+  cn-store-home-kibo-overview: 1
+  cn-public-launch-requirements: 1
+  jp-public-launch-requirements: 1
+  cn-public-launch-platform-rules: 1
+  jp-public-launch-platform-rules: 1
+  jp-preregister-benefits: 1
+  jp-launch-troubleshooting: 1
+  cn-test-recharge-return: 1
+  cn-preregister-mail-benefits: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
+
+## 预下载已公告开始，先确认空间、账号和追加资源
+
+11月24日两地独立FAQ均建议PC预留120GB以上、Android/iOS55GB以上；国服鸿蒙同样建议55GB以上。后续公告已确认国服11月24日15:00（UTC+8）、日本同日16:00（日本时间）开始预下载。公测仍计划为国服26日10:00、日本26日11:00。官方开始公告与本机实际取得、可登录状态分别确认。
+
+国服官方服同账号PC/Android/iOS/鸿蒙进度同步，部分渠道服与官方服不互通；日本同账号PC/Android/iOS共享进度。先确认巢穴活动账号和首个角色的奖励绑定，再决定创角或重开，不从进度同步推导跨地区或付费权益通用。
+
+日本PC经Yostar官方启动器取得本体，随后在客户端追加数据；手机也需本体后追加资源。国服旧旅迹测试客户端不支持直接更新公测版，须按FAQ改装正式客户端。先用[下载步骤](/zh-hans/guides/download/)和[设备配置](/zh-hans/guides/requirements/)完成准备；下方未实测的正式任务链仍保留明确边界。
 
 ## 先按当前阶段选择下一步
 
@@ -35,7 +165,7 @@ reviewedAt: "2026-11-23"
 | 正式安装器实际开放后 | 从目标地区官方入口安装，核对版本和追加资源 | 客户端确已取得；未把预约成功当安装完成 |
 | 服务器实际开放后 | 使用确认的账号创角、完成引导，再核对奖励 | 能进入目标角色，按邮件或活动提示确认道具增加 |
 
-两地活动原文分别列出11月24日北京时间15:00、日本时间16:00的预下载计划。日期到来后仍要确认实际分发与服务器状态；这份准备表不是已实测的首日任务链。
+两地后续公告已确认预下载开始，但仍要确认本机取得结果与服务器状态；这份准备表不是已实测的首日任务链。
 
 参加巢穴探索时，先到[福利说明](/zh-hans/guides/resources/)检查预约任务的切换时刻与奖励接收角色，再决定是否重新创建。计划使用繁中版时，先核对[独立官方入口](/zh-hans/guides/global-release/)。
 
@@ -49,6 +179,46 @@ reviewedAt: "2026-11-23"
 6. 规则：阅读奖励条件和目标池条款。七日签到、等级奖励和主线奖励分别记录，不把总量当登录即领。
 
 清单进度保存在当前浏览器，同篇中日文共享任务编号。清除数据、更换设备或隐私模式可能丢失记录；保存失败会提示。它不会替你预约、登录或核验事实。
+
+## 登录前先卡住：启动、账号与服务状态分开查
+
+能安装不代表已经能登录。日本FAQ说明服务开始前不能登录；它确认同账号跨PC、Android、iOS共享进度，但没有因此确认游客号、第三方绑定、改绑或重置的操作。选定地区与原有活动参与账号后，按当前官方登录界面确认，不用重建账号作为通用修复手段。
+
+| 眼前问题 | 先做什么 | 接下来去哪 |
+| --- | --- | --- |
+| 校验／追加数据报错 | 分清启动器、本体和追加数据所处阶段，留下错误原文 | [分阶段下载排查](/zh-hans/guides/download/) |
+| PC读条慢或游玩中闪退 | 记录机型、OS与发生时间；日本FAQ的闪退步骤是重启设备后再开游戏 | [设备核对](/zh-hans/guides/requirements/)与[客服信息表](/zh-hans/guides/download/) |
+| 已有登录画面但无法进入 | 核对本地区当前开服／维护公告和报错；未开服不等于账号损坏 | [开服状态与计划](/zh-hans/guides/launch/) |
+| 忘记账号、需要绑定或改绑 | 使用对应地区官方帮助，先确认自己原有账号；本轮未验证恢复与改绑菜单 | 日本版可查[官方客服页](https://azurpromilia.jp/contact)，其他地区使用当地入口 |
+
+进入游戏后再继续下方邮件、附件和首抽核对。进不了游戏且尚无UID时，反馈中如实说明未取得，不能拿网页活动ID当作游戏UID。
+
+## 国服创角前：测试充值账号与预约邮件先分清
+
+国服[公测FAQ第3/4节](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)已给出两类邮件的不同条件，正式流程中应先确认自己属于哪一类：
+
+- **旅迹测试付费玩家**：使用原充值账号及对应渠道客户端，邮箱开放后领返还。不支持转给新账号；星虹、飞信订约与游记凭证分开核对。公测后365天内创角与邮件365天有效期另见[测试返还指南](/zh-hans/guides/recharge-return/)。
+- **预约／社媒里程碑奖励**：国服FAQ确认全部解锁，公测后登录并解锁邮箱，可领艾妮丝、星彩·浮云、纯粹忆痕×20等。渠道以对应规则为准，不把付费返还资格当作预约福利前置。
+- **巢穴探索奖励**：仍按参与ID、首个角色与网页实际获奖记录核对，不从上面两项邮件推定已经完成探索。
+
+先确定原账号，再考虑首抽。游戏本体重装与账号删除是两件事；FAQ要求替换旧测试客户端，不要求删除原账号。进入邮箱后按来源读附件与期限，飞信订约／游记凭证领到背包后需主动使用才激活，不将邮箱领取当成已经开启权益。
+
+
+## 从创角到首次抽卡，先完成奖励核对
+
+以下是依据公告整理的准备顺序，正式版菜单名称和解锁任务尚未实测。日本[FAQ第3节](https://azurpromilia.jp/news/5190)确认预约特典在开服后经游戏内邮件领取，包含「星彩・クロディーメ」「無垢な痕跡」等；巢穴活动的「星彩・キラミィ」另按活动规则处理。
+
+| 阶段 | 先完成什么 | 完成标志 |
+| --- | --- | --- |
+| 创角前 | 确认运营地区、登录账号及巢穴活动参与ID；考虑是否重开 | 清楚巢穴奖励绑定最初创建角色，不假设可改绑 |
+| 能进入游戏后 | 完成当前实际引导，按界面查邮件和活动 | 找到当前可领取项目；未解锁时记下实际前置 |
+| 打开邮件后 | 区分预约、登录、巢穴奖励；阅读附件、期限与条件 | 记录每项原名、数量、未领或已领状态 |
+| 领取附件后 | 对照对应道具实际增加；签到、等级和主线待完成项另外列 | 不用累计宣传总量判断首日少领 |
+| 第一次消耗前 | 在同地区当期池核对券种、消耗、计数、期限 | 用途清楚再决定投入，未确认资源暂不分配 |
+
+日本巢穴奖励的首个角色与初次登录后365日条件，不自动用于全部预约邮件。日本预约页展示的「無垢な痕跡」档位合计20枚，也不能在券种用途与个人领取资格未确认时写成首轮20次限定抽。
+
+用[奖励核对表](/downloads/launch-rewards-zh-hans.txt)按来源记录，具体档位与未到账排查见[福利领取](/zh-hans/guides/resources/)，消耗前读[卡池规则](/zh-hans/guides/banner-rules/)。重开条件另见[首抽判断](/zh-hans/guides/reroll/)。
 
 ## 首日按可执行的顺序推进
 
@@ -92,3 +262,7 @@ reviewedAt: "2026-11-23"
 ## 下次上线前留下五项记录
 
 目标任务、当前阻塞、需要核对的规则、未领取奖励及其期限、下一步操作。无需记录密码、验证码或订单。奖励对照见[资源页](/zh-hans/guides/resources/)，票券与计数见[卡池规则](/zh-hans/guides/banner-rules/)。
+
+## 预下载开始后，按官方入口完成追加资源
+
+[国服开始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)与[日本开始公告](https://azurpromilia.jp/news/5191)已独立核对。日本PC可用[官方Windows专页](https://azurpromilia.jp/PCdownload)，国服官网现有PC、Android按钮，但本轮点击未取得文件。各端安装本体后仍须增量资源，按[下载说明](/zh-hans/guides/download/)区分官网入口、文件取得和服务器登录。

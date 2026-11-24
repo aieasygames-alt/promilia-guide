@@ -1,0 +1,90 @@
+[
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "previousFile": "src/content/revisions/zh-hans/resources.md",
+    "previousSha256": "7a6a1a8e1bf2207e8115fc8a43878c41ef0294aafdfc60b1fa4021c156f7d3a1",
+    "sha256": "1beaaade31e3bbccd60c16808c99beba25e1f3ba2cbc347e1526c65d10f76291",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 12,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "previousFile": "src/content/revisions/zh-hans/getting-started.md",
+    "previousSha256": "5627f7f1116b3b5a3d447137cc693b325a608ac29bc1c8a5c81345c0b0be1a33",
+    "sha256": "01ca6a266bd9fcb1455a80efbac559b6c1cb4b2ee8917bc73abf634618341777",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "previousFile": "src/content/revisions/zh-hans/reroll.md",
+    "previousSha256": "2ce0b15a137437359a79d84b42023e928134a292d5b3a8837f4bb1a6e489ca2b",
+    "sha256": "d2c7f9f850f5a67cb6cf00dcfa289895fca7a953305f75abac560acd5f77347c",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "zh-hans",
+    "revision": 4,
+    "file": "src/content/revisions/zh-hans/kibo-guide.md",
+    "previousFile": "src/content/guides/zh-hans/kibo-guide.md",
+    "previousSha256": "5c064436e3179762e6c0cac9173b5ecad0655cdd87069e11565da32263b12e2d",
+    "sha256": "1ea4baaebb90cfa3f41c894c5cbe98a3d2964d4b06ca185242d2d4bede64e50f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/resources.md",
+    "previousFile": "src/content/revisions/ja/resources.md",
+    "previousSha256": "285338af6108cd753c85d86c59156ad334fd63d9d148ecb73ff7f9450c2e1988",
+    "sha256": "a21f9c84bb9ce09124ed95f0dcf7a2e7d4af6f029bbfd7580cd152d2272a83fe",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 12,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "previousFile": "src/content/revisions/ja/getting-started.md",
+    "previousSha256": "06814e9819b89b11039285b32d6fdcbe3956f3a93dd93eb08a8160452701bc57",
+    "sha256": "f979474b5b3db0e635db05b1e29acfe2e1af22fcdc277f2248c5600e1a040446",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/reroll.md",
+    "previousFile": "src/content/revisions/ja/reroll.md",
+    "previousSha256": "621d20f69ffef9ba2099d81171ae80ec0fd32d4ab57c19b9027573550c9ecb5c",
+    "sha256": "d665867f1c566373ce470200532398a581ad43f7fa728354353ef0087b7b442e",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "ja",
+    "revision": 4,
+    "file": "src/content/revisions/ja/kibo-guide.md",
+    "previousFile": "src/content/guides/ja/kibo-guide.md",
+    "previousSha256": "ea6e7ae7c6f11f2dcab00addac793cd5d0fa8edabe93e3515efbc82fc7d2f130",
+    "sha256": "b715ad07db5d124e22b1fe3cc3d9fec897d84a7300dacdd7eb67a40a35e5e0f0",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

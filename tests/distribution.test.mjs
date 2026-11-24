@@ -7,9 +7,16 @@ const read = async (file) => JSON.parse(await readFile(`src/data/${file}.json`, 
 const [claims, sources, channels] = await Promise.all(['claims', 'sources', 'distribution'].map(read));
 const rows = (overrides = {}) => distributionRows({ claims, sources, channels, locale: 'zh-hans', ...overrides });
 
-test('reservation, predownload and public clients remain separate across regions and locales', () => {
+test('reservation fixtures do not become predownload clients merely because a schedule exists', () => {
+  const reservationClaims = claims.map((claim) => {
+    if (['cn-platform-details', 'jp-platform-details'].includes(claim.id)) return { ...claim, verification: 'pending', value: {} };
+    if (claim.id === 'cn-ios-store') return { ...claim, value: { ...claim.value, availability: 'reservation' } };
+    if (claim.id === 'jp-official-entry') return { ...claim, value: { ...claim.value, availability: 'reservation', url: 'https://azurpromilia.jp/pre-register/' } };
+    if (['cn-preload-status', 'jp-preload-status'].includes(claim.id)) return { ...claim, value: { date: '2026-11-24' } };
+    return claim;
+  });
   for (const locale of ['zh-hans', 'ja']) {
-    const result = rows({ locale });
+    const result = rows({ locale, claims: reservationClaims });
     const ios = result.find((row) => row.id === 'cn-ios');
     assert.equal(ios.stage, 'reservation');
     assert.match(ios.entryUrl, /^https:\/\/apps\.apple\.com\/cn\//);
@@ -38,7 +45,7 @@ test('mobile registration cannot become a PC client and Japanese evidence fails 
     assert.equal(row.entryUrl, null);
     assert.equal(row.date, null);
   }
-  assert.equal(result.find((row) => row.id === 'cn-ios').stage, 'reservation');
+  assert.equal(result.find((row) => row.id === 'cn-ios').stage, 'preload');
   assert.equal(result.find((row) => row.id === 'cn-ios').date, '2026-11-26');
 });
 

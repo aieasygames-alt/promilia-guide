@@ -1,0 +1,182 @@
+[
+  {
+    "contentId": "banner-rules",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/banner-rules.md",
+    "sha256": "defe46046e1b13caa3a63816b01cb4eedc4be30abf58ee295d9b7cfd5883d459",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "zh-hans",
+    "revision": 12,
+    "file": "src/content/revisions/zh-hans/download.md",
+    "sha256": "701f150312e552d31acdd91cbb520393edf16c0ddea16781f00b73ed7ce1a34a",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 12,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "sha256": "01ca6a266bd9fcb1455a80efbac559b6c1cb4b2ee8917bc73abf634618341777",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/global-release.md",
+    "sha256": "2e5876de60ee643e601f725801bcd87e25be5956cdfa8d489f4e6d2ee5842474",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "zh-hans",
+    "revision": 4,
+    "file": "src/content/revisions/zh-hans/kibo-guide.md",
+    "sha256": "1ea4baaebb90cfa3f41c894c5cbe98a3d2964d4b06ca185242d2d4bede64e50f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/launch.md",
+    "sha256": "b2defd9ee5ed4474d3448b625dbdd81fdd911b9f566eb855d30f65e7af033708",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/platforms.md",
+    "sha256": "33045733d5366efccda4aabca48b217f5145330bd129f5726b22ed598aab24dc",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 8,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "sha256": "42e67d8d9b4af3780c83741e5d62097428decdc3f1f4e693921db980a1c152d0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 6,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "sha256": "d2c7f9f850f5a67cb6cf00dcfa289895fca7a953305f75abac560acd5f77347c",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "sha256": "1beaaade31e3bbccd60c16808c99beba25e1f3ba2cbc347e1526c65d10f76291",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "banner-rules",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/banner-rules.md",
+    "sha256": "f5915414534b335df61643bcc4597cbbffdbc35a3de2c7e2de4bd06b158f8ede",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "ja",
+    "revision": 12,
+    "file": "src/content/revisions/ja/download.md",
+    "sha256": "9420b30bfe125ed1bc51a71fd2f40f4eb50c7740e2321f7f68d4fdf51afe4e74",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 12,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "sha256": "f979474b5b3db0e635db05b1e29acfe2e1af22fcdc277f2248c5600e1a040446",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/global-release.md",
+    "sha256": "4e7e2167dacf185c810226b07a4c84f4dee6191d9546ac824277f1e58003d06f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "ja",
+    "revision": 4,
+    "file": "src/content/revisions/ja/kibo-guide.md",
+    "sha256": "b715ad07db5d124e22b1fe3cc3d9fec897d84a7300dacdd7eb67a40a35e5e0f0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/launch.md",
+    "sha256": "56282eee4ac1ab4fbcc0742f7fec85b485177d946c8cd128d1d061a8bda4f3cd",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/platforms.md",
+    "sha256": "cfd597c762e33dc1be4f853d430bfad9e02c927bcc8d2d51d6a8364d339aa80e",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 8,
+    "file": "src/content/revisions/ja/requirements.md",
+    "sha256": "259b32aa9c7fed6f5b76dee733dccb773f33f46ded72b1382c499cefedd72785",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 6,
+    "file": "src/content/revisions/ja/reroll.md",
+    "sha256": "d665867f1c566373ce470200532398a581ad43f7fa728354353ef0087b7b442e",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/resources.md",
+    "sha256": "a21f9c84bb9ce09124ed95f0dcf7a2e7d4af6f029bbfd7580cd152d2272a83fe",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

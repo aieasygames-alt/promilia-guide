@@ -21,7 +21,7 @@ const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => 
     <h3>{row.platformLabel}</h3><p class="distribution-summary">{row.entrySummary}</p>
     <dl>
       <div><dt>{ja ? '対象地域の開始予定' : '地区计划日程'}</dt><dd><ScheduleTime schedule={row.launch} locale={locale}/></dd></div>
-      <div><dt>{ja ? '事前ダウンロード予定' : '预下载计划'}</dt><dd data-preload-schedule><ScheduleTime schedule={row.preload} locale={locale}/>{row.preload && <small>{ja ? '予定の確認です。現在の配布状況は別途確認してください。' : '此为计划，当前是否已开放须另行确认。'}</small>}{row.preloadUrl && <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の配布先' : '官方分发入口'} ↗</a>}</dd></div>
+      <div><dt>{row.preloadUrl ? (ja ? '事前DL開始（公式発表）' : '预下载开始（官方公告）') : (ja ? '事前ダウンロード予定' : '预下载计划')}</dt><dd data-preload-schedule><ScheduleTime schedule={row.preload} locale={locale}/>{row.preload && <small>{row.preloadUrl ? (ja ? '公式が開始を発表。個別のファイル取得・インストール結果とは別です。' : '官方已公告开始；具体文件取得和安装结果另行确认。') : (ja ? '予定の確認です。現在の配布状況は別途確認してください。' : '此为计划，当前是否已开放须另行确认。')}</small>}{row.preloadUrl && <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の配布先' : '官方分发入口'} ↗</a>}</dd></div>
       {row.minimumOS && <div><dt>{ja ? 'ストアの互換性表示' : '商店兼容条件'}</dt><dd>{row.minimumOS}</dd></div>}
     </dl>
     {row.entryUrl ? <a class="distribution-action" href={row.entryUrl} target="_blank" rel="noopener noreferrer">{ja ? `${row.stageLabel}の入口を確認` : `查看${row.stageLabel}入口`} <span aria-hidden="true">↗</span></a> : <p class="distribution-pending">{ja ? '確認できた配布先を登録するまで、リンクは表示しません。' : '确认公开入口后补充链接。'}</p>}

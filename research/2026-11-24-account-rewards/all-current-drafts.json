@@ -1,0 +1,200 @@
+[
+  {
+    "contentId": "banner-rules",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/banner-rules.md",
+    "sha256": "defe46046e1b13caa3a63816b01cb4eedc4be30abf58ee295d9b7cfd5883d459",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "zh-hans",
+    "revision": 13,
+    "file": "src/content/revisions/zh-hans/download.md",
+    "sha256": "1602ce13ace0da296b4741716355af1d7f3b2b26fee182fe2c1d8dab939abde1",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 14,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "sha256": "207a19eb9bd4e8cb9f66248558b9aa1451fbeb3a6d8723d1cbefd552e1af45c9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/global-release.md",
+    "sha256": "2e5876de60ee643e601f725801bcd87e25be5956cdfa8d489f4e6d2ee5842474",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "zh-hans",
+    "revision": 4,
+    "file": "src/content/revisions/zh-hans/kibo-guide.md",
+    "sha256": "1ea4baaebb90cfa3f41c894c5cbe98a3d2964d4b06ca185242d2d4bede64e50f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/launch.md",
+    "sha256": "b2defd9ee5ed4474d3448b625dbdd81fdd911b9f566eb855d30f65e7af033708",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/platforms.md",
+    "sha256": "33045733d5366efccda4aabca48b217f5145330bd129f5726b22ed598aab24dc",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "sha256": "dafd88c878a1a5d6d746c4c92035a9fc204ff15b81cf4f3f42a2d3b30ae7d6c9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "sha256": "2092bd82b5c22c2f0fda1ec45775ddd3c5a7ede590c3ca9098ca89fa3d249775",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 10,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "sha256": "b10959d4669da048a897706a03927e86d2ba088de9d732d7694ca24b99ddd0f9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "recharge-return",
+    "locale": "zh-hans",
+    "revision": 1,
+    "file": "src/content/guides/zh-hans/recharge-return.md",
+    "sha256": "8a2437229fd06746df82a48a35a83589bdf06846fc5dbcc59b379bc5787d43ef",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "banner-rules",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/banner-rules.md",
+    "sha256": "f5915414534b335df61643bcc4597cbbffdbc35a3de2c7e2de4bd06b158f8ede",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "ja",
+    "revision": 13,
+    "file": "src/content/revisions/ja/download.md",
+    "sha256": "04db16e874967864f0a2eeb1ff6fa306862ca037f0daf93a84f006af2fa2e17a",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 14,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "sha256": "9d399887dbc759ee8a403f775bb121ed13d173a47e6f0c2565f5ac7d69602cf4",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/global-release.md",
+    "sha256": "4e7e2167dacf185c810226b07a4c84f4dee6191d9546ac824277f1e58003d06f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "kibo-guide",
+    "locale": "ja",
+    "revision": 4,
+    "file": "src/content/revisions/ja/kibo-guide.md",
+    "sha256": "b715ad07db5d124e22b1fe3cc3d9fec897d84a7300dacdd7eb67a40a35e5e0f0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/launch.md",
+    "sha256": "56282eee4ac1ab4fbcc0742f7fec85b485177d946c8cd128d1d061a8bda4f3cd",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/platforms.md",
+    "sha256": "cfd597c762e33dc1be4f853d430bfad9e02c927bcc8d2d51d6a8364d339aa80e",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/requirements.md",
+    "sha256": "348b69d7f4a6316b0f597ee6c4c3ac11734cf1ed9b75996971db6c230383365b",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/reroll.md",
+    "sha256": "b7811eb26f1c4f40e2e7f89018cdf2a342423f675c95dc55a32be7cd20b7ed23",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 10,
+    "file": "src/content/revisions/ja/resources.md",
+    "sha256": "3b9d697c6330405d5cbbc577916d3769097fe57c0b3e1d00ae4a5fc4082d97a5",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "recharge-return",
+    "locale": "ja",
+    "revision": 1,
+    "file": "src/content/guides/ja/recharge-return.md",
+    "sha256": "363ae52256148aa5a554e9d580acf541990884e41037ed16c91677d04b265171",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "contentId": "download",
+    "locale": "zh-hans",
+    "revision": 13,
+    "file": "src/content/revisions/zh-hans/download.md",
+    "previousSha256": "701f150312e552d31acdd91cbb520393edf16c0ddea16781f00b73ed7ce1a34a",
+    "sha256": "1602ce13ace0da296b4741716355af1d7f3b2b26fee182fe2c1d8dab939abde1",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 9,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "previousSha256": "42e67d8d9b4af3780c83741e5d62097428decdc3f1f4e693921db980a1c152d0",
+    "sha256": "dafd88c878a1a5d6d746c4c92035a9fc204ff15b81cf4f3f42a2d3b30ae7d6c9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 13,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "previousSha256": "01ca6a266bd9fcb1455a80efbac559b6c1cb4b2ee8917bc73abf634618341777",
+    "sha256": "eb6e8f222b8d69e2da6dee13ff17ebed73462aef307e6c618bb1253f776a4256",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "ja",
+    "revision": 13,
+    "file": "src/content/revisions/ja/download.md",
+    "previousSha256": "9420b30bfe125ed1bc51a71fd2f40f4eb50c7740e2321f7f68d4fdf51afe4e74",
+    "sha256": "04db16e874967864f0a2eeb1ff6fa306862ca037f0daf93a84f006af2fa2e17a",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 9,
+    "file": "src/content/revisions/ja/requirements.md",
+    "previousSha256": "259b32aa9c7fed6f5b76dee733dccb773f33f46ded72b1382c499cefedd72785",
+    "sha256": "348b69d7f4a6316b0f597ee6c4c3ac11734cf1ed9b75996971db6c230383365b",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 13,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "previousSha256": "f979474b5b3db0e635db05b1e29acfe2e1af22fcdc277f2248c5600e1a040446",
+    "sha256": "7aed79bbb23d77a6508a9148ac2d2e41bffc78df0757420ce7fcc8014b3b0627",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

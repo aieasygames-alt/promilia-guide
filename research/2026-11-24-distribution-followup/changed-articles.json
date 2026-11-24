@@ -1,0 +1,122 @@
+[
+  {
+    "contentId": "requirements",
+    "locale": "zh-hans",
+    "revision": 8,
+    "file": "src/content/revisions/zh-hans/requirements.md",
+    "previousDraftSha256": "e637e59854679832c757c7ed4cef2e7b3cdde828ceb9b85cce814174df7fb184",
+    "sha256": "42e67d8d9b4af3780c83741e5d62097428decdc3f1f4e693921db980a1c152d0",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "zh-hans",
+    "revision": 12,
+    "file": "src/content/revisions/zh-hans/download.md",
+    "previousDraftSha256": "ba73661d40212413c2e8cd31067eaca1f819018fab3ad73f8f1d8f55e6481afd",
+    "sha256": "701f150312e552d31acdd91cbb520393edf16c0ddea16781f00b73ed7ce1a34a",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/launch.md",
+    "previousDraftSha256": "a4459f1734caf3204236dfb7a46a637af827ea1f07bcfb9136723ed1e93f3b10",
+    "sha256": "b2defd9ee5ed4474d3448b625dbdd81fdd911b9f566eb855d30f65e7af033708",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/platforms.md",
+    "previousDraftSha256": "f5146de89a28e367026b8797d16dc9c069e84456f5b4a4ea43411f4846729f9e",
+    "sha256": "33045733d5366efccda4aabca48b217f5145330bd129f5726b22ed598aab24dc",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/global-release.md",
+    "previousDraftSha256": "d9063259e0b5e1615f863193f24e66bcab964bc4f8465036c6dd6c5400f09136",
+    "sha256": "2e5876de60ee643e601f725801bcd87e25be5956cdfa8d489f4e6d2ee5842474",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 11,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "previousDraftSha256": "95636e3db40dba944671c247129b7ee1f82c91c5ae2731f1e165bf5259c3b2a5",
+    "sha256": "5627f7f1116b3b5a3d447137cc693b325a608ac29bc1c8a5c81345c0b0be1a33",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "requirements",
+    "locale": "ja",
+    "revision": 8,
+    "file": "src/content/revisions/ja/requirements.md",
+    "previousDraftSha256": "84eab190d471725f7dbfb9eb8170a37788ff5a1f22676ec546402bd3eeaea13b",
+    "sha256": "259b32aa9c7fed6f5b76dee733dccb773f33f46ded72b1382c499cefedd72785",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "download",
+    "locale": "ja",
+    "revision": 12,
+    "file": "src/content/revisions/ja/download.md",
+    "previousDraftSha256": "d3fd1e7607865e7b3fa7e6f1e9f742efe8c8dd75e542273faca8ad0fa74e1c38",
+    "sha256": "9420b30bfe125ed1bc51a71fd2f40f4eb50c7740e2321f7f68d4fdf51afe4e74",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "launch",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/launch.md",
+    "previousDraftSha256": "1c361ae82cd7f9fd911da46ec05000f68e1655c083788a14d82e051dff8f1666",
+    "sha256": "56282eee4ac1ab4fbcc0742f7fec85b485177d946c8cd128d1d061a8bda4f3cd",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "platforms",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/platforms.md",
+    "previousDraftSha256": "e999329534346f22d1dd18fe7b31a02755964f907f752dbc990dea5787086c91",
+    "sha256": "cfd597c762e33dc1be4f853d430bfad9e02c927bcc8d2d51d6a8364d339aa80e",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "global-release",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/global-release.md",
+    "previousDraftSha256": "20659797693ae0e9e573683b15d3712aa7256a427557ba4ccbe7181a724662fb",
+    "sha256": "4e7e2167dacf185c810226b07a4c84f4dee6191d9546ac824277f1e58003d06f",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 11,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "previousDraftSha256": "79883579903e6c53c0dc7889748dc0f917fae11bd3d34fec521729e8a7df78dd",
+    "sha256": "06814e9819b89b11039285b32d6fdcbe3956f3a93dd93eb08a8160452701bc57",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

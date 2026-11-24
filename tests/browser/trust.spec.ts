@@ -5,7 +5,11 @@ test('home action cards use independent regions and do not promote unverified cl
     await page.goto(`/${locale}/`);
     const actions = page.locator('[data-launch-actions]');
     await expect(actions.locator('[data-launch-region]')).toHaveCount(2);
-    await expect(actions.locator('[data-launch-clock]')).toHaveCount(0);
+    await expect(actions.locator('[data-launch-clock]')).toHaveCount(2);
+    await expect(actions.locator('[data-launch-region="cn"] time[datetime="2026-11-26T10:00:00+08:00"]')).toHaveText('2026-11-26 10:00 (UTC+8)');
+    await expect(actions.locator('[data-launch-region="jp"] time[datetime="2026-11-26T11:00:00+09:00"]')).toHaveText('2026-11-26 11:00 (JST / UTC+9)');
+    await expect(actions.locator('[data-launch-region="cn"]')).toHaveAttribute('data-service-stage', /^(announced|awaiting-confirmation)$/);
+    await expect(actions.locator('[data-launch-region="jp"]')).toHaveAttribute('data-service-stage', /^(announced|awaiting-confirmation)$/);
     await expect(actions.locator('[data-home-code-count]')).toContainText(/暂无|ありません/);
     await expect(page.locator('body')).not.toContainText(/PROMILIA1120LIVE|STARVOYAGE2026|AZUR1126READY|仅剩 6 天|あと6日/);
     await actions.locator('[data-launch-region="jp"] a').click();
@@ -78,7 +82,7 @@ test('core guide answers precede expandable evidence with JavaScript disabled', 
   try {
     const page = await context.newPage();
     for (const locale of ['ja', 'zh-hans']) {
-      for (const topic of ['requirements', 'reroll']) {
+      for (const topic of ['requirements', 'reroll', 'banner-rules', 'resources']) {
         await page.goto(`/${locale}/guides/${topic}/`);
         const evidence = page.locator('#claim-summary-details');
         await expect(evidence).not.toHaveAttribute('open');
@@ -99,10 +103,10 @@ test('absolute schedules and regional links remain useful with JavaScript disabl
     await expect(page.locator('[data-launch-region="cn"] time')).toContainText('UTC+8');
     await expect(page.locator('[data-copy-target]')).toBeDisabled();
     await page.goto('/zh-hans/');
-    await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-26"]')).toHaveText('2026-11-26');
+    await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-26T10:00:00+08:00"]')).toHaveText('2026-11-26 10:00 (UTC+8)');
     await expect(page.locator('[data-launch-region="cn"] time[datetime="2026-11-24T15:00:00+08:00"]')).toHaveText('2026-11-24 15:00 (UTC+8)');
     await page.locator('[data-launch-region="jp"] a').click();
     await expect(page.locator('[data-channel]')).toHaveCount(6);
-    await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/pre-register/');
+    await expect(page.locator('[data-channel="jp-ios"] .distribution-action')).toHaveAttribute('href', 'https://azurpromilia.jp/');
   } finally { await context.close(); }
 });

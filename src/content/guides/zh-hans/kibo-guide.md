@@ -1,34 +1,77 @@
 ---
-contentId: "kibo-guide"
-locale: "zh-hans"
-slug: "kibo"
-section: "systems"
-title: "奇波入门：活动获取、用途与留用判断"
-description: "按地区核对奇波活动奖励与角色绑定，区分探索、战斗、家园用途和待验证的游戏内获取条件。"
-author: "Promilia Guide 编辑部"
+contentId: kibo-guide
+locale: zh-hans
+slug: kibo
+section: systems
+title: 蓝色星原奇波怎么获得：预约、巢穴奖励与游戏内来源
+description: 日本预约特典星彩・クロディーメ与巢穴星彩・キラミィ分开领取，核对国服活动来源、角色绑定和期限；野外捕获、技能与家园适性仍待正式版证据。
+author: Promilia Guide 编辑部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-21"
-gameVersion: "公测前 / 操作流程待正式版验证"
-gameRegion: "中国大陆、日本（分地区说明）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
-sourceRevision: 3
-translationStatus: "published"
-aliases: ["奇波获取","キボ 入手","キボ 育成"]
-related: ["getting-started","resources","home"]
+updatedAt: "2026-11-24"
+gameVersion: 公测前 / 2026-11-24 日本预约奖励及领取核对
+gameRegion: 中国大陆、日本（分地区说明）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-benefits-images-2026-11-21
+  - jp-kibo-adventure-rules-2026-11-21
+  - cn-kibo-adventure-rules-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - jp-google-play-2026-11-21
+  - jp-release-special-2026-11-20
+  - jp-launch-faq-2026-11-24
+  - jp-preregister-benefits-2026-11-24
+sourceRevision: 4
+translationStatus: published
+aliases:
+  - 奇波获取
+  - キボ 入手
+  - キボ 育成
+  - 蓝色星原奇波怎么获得
+  - 星彩・クロディーメ
+  - 星彩・キラミィ
+related:
+  - getting-started
+  - resources
+  - home
 order: 13
 minutes: 7
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions:
+  - date: "2026-11-21"
+    note: 按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。
+  - date: "2026-11-21"
+    note: 第二轮补核国服巢穴探索原文与预下载计划，完善领取流程、期限、卡池核验和下载排查；当前修订仍待正文与日语审核。
+  - date: "2026-11-21"
+    note: 第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。
+  - date: "2026-11-21"
+    note: 项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。
+  - date: "2026-11-24"
+    note: 补核日本FAQ第3节及预约页人数奖励，分开预约特典与巢穴探索的邮件、角色和期限条件，补领取核对与首日衔接。本次正文和译文仍待审核。
+  - date: "2026-11-24"
+    note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+claimRefs:
+  - cn-rewards-conditions
+  - jp-kibo-web-rewards
+  - cn-kibo-web-rewards
+  - cn-store-home-kibo-overview
+  - jp-store-home-kibo-overview
+  - jp-preregister-benefits
+claimRevisions:
+  cn-rewards-conditions: 1
+  jp-kibo-web-rewards: 1
+  cn-kibo-web-rewards: 1
+  cn-store-home-kibo-overview: 1
+  jp-store-home-kibo-overview: 1
+  jp-preregister-benefits: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
 
-## 先分清活动领取与游戏内获取
+## 奇波先按来源领取，不把活动当野外捕获
 
-官网展示的奇波、网页活动奖励和游戏内捕获不是同一获取流程。名称在目录出现，不能直接证明当前位置、捕获道具、岗位或正式版能力；本页先整理有原文的活动来源与选用方法。
+**日本预约特典的「星彩・クロディーメ」与巢穴探索的「星彩・キラミィ」是两个奖励项目。** 前者由日本FAQ说明正式服务后经游戏内邮件领取预约特典，后者须先完成网页探索并按参与Yostar ID的最初角色接收。国服来源另按当地公告核对。
+
+官网介绍、活动领取和游戏内捕获分别确认。奖励名称不能证明野外位置、捕获道具、技能或家园适性；本页保留原文名称，不自行把不同地区的奇波合并。
 
 ## 已核实的活动来源
 
@@ -37,9 +80,22 @@ reviewedAt: "2026-11-21"
 | 国服预约及社媒里程碑 | 星彩·浮云 | 国服福利图列登录领取；具体入口和期限继续核对 |
 | 国服登录有礼 | 星彩·耶罗达 | 福利图列登录获得，发放颜色以实际为准 |
 | 国服巢穴探索活动 | 星彩·小星喵 | 探索奖励之一，参与蛮啾通行证账号下首个创建角色接收邮件 |
+| 日本预约／社媒奖励 | 星彩・クロディーメ | 日本FAQ说明预约特典开服后经游戏内邮件领取；完整个人资格、数量和期限另查 |
 | 日本巢穴探索活动 | 星彩・キラミィ | 活动探索奖励之一，参加Yostar ID最初创建角色接收邮件 |
 
 不同地区名称不在此自动合并为同一只，也不能推断活动获取与野外捕获会同时开放。日本活动至12月31日13:00（日本时间），初次登录游戏后365日内领取已获探索奖励；任务切换和邀请条件见[资源说明](/zh-hans/guides/resources/)。
+
+## 日本两种星彩奇波，没收到时查哪里？
+
+[日本预约页](https://azurpromilia.jp/pre-register/)把「星彩・クロディーメ」与全球官方SNS总关注500万人条件一起展示；[正式服务FAQ第3节](https://azurpromilia.jp/news/5190)在预约特典中列出该奇波，说明开服后邮件领取。它不是巢穴活动每人最多9次探索中的同名奖励。
+
+| 想找的奇波 | 优先检查 | 不能套用的条件 |
+| --- | --- | --- |
+| 星彩・クロディーメ | 日本预约／SNS配布公告、游戏内邮件及附件 | 巢穴首个角色、365日领取期限、已探索次数 |
+| 星彩・キラミィ | 巢穴参与Yostar ID、探索バッグ、最初创建角色及邮件 | 仅凭预约成功就认为已取得巢穴奖励 |
+| 游戏内野外奇波 | 当前图鉴、任务、来源提示及前置 | 从活动奖励反推野外坐标或捕获必成 |
+
+收到邮件后，核对附件名称与道具增加；具体是直接获得伙伴还是经其他道具解锁，须以实际界面为准，本轮没有跑通操作。奇波的养成成本、战斗表现、岗位适性同样不能由“星彩”或免费领取推定。更多领取条件见[福利与未到账排查](/zh-hans/guides/resources/)。
 
 ## 已确认的伙伴关系与用途
 

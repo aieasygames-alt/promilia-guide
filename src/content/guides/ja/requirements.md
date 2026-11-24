@@ -1,93 +1,202 @@
 ---
-contentId: "requirements"
-locale: "ja"
-slug: "requirements"
-section: "guides"
-title: "アズールプロミリアの容量・推奨スペック｜スマホ・PC対応"
-description: "スマホ・PCの容量と推奨スペックを地域別に整理。日本版の必要空き容量は今回未確認。中国区App Storeの3.9 GBと最低OSを、日本版や全データ容量と区別して解説します。"
-author: "Promilia Guide 編集部"
+contentId: requirements
+locale: ja
+slug: requirements
+section: guides
+title: アズールプロミリアの容量・推奨スペック｜スマホ・PC対応
+description: 日本公式FAQはスマホ55GB以上・PC120GB以上の空き容量を推奨。最低・推奨スペック、iPhone・iPadの確認点、ストアサイズと追加データの違いを解説。
+author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-23"
-gameVersion: "サービス開始前 / 2026-11-23 情報・導線改訂"
-gameRegion: "中国本土・日本（地域別に記載）"
-verification: "official"
-status: "published"
-sourceRefs: ["cn-app-store-2026-11-14","cn-official-home-2026-11-14","jp-publishing-2025-12-15","jp-official-home-2026-11-14","cn-ios-capacity-2026-11-23","jp-play-registration-2026-11-23"]
-sourceRevision: 6
-translationStatus: "published"
-aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
-related: ["download","platforms","getting-started","reroll"]
+updatedAt: "2026-11-24"
+gameVersion: 正式サービス開始前 / 2026-11-24 日本FAQトラブル対処照合
+gameRegion: 中国本土・日本（地域別に記載）
+verification: official
+status: published
+sourceRefs:
+  - cn-app-store-2026-11-14
+  - cn-official-home-2026-11-14
+  - jp-publishing-2025-12-15
+  - jp-official-home-2026-11-14
+  - cn-ios-capacity-2026-11-23
+  - jp-play-registration-2026-11-23
+  - cn-launch-faq-2026-11-24
+  - jp-launch-faq-2026-11-24
+  - cn-distribution-home-2026-11-24
+  - jp-distribution-home-2026-11-24
+  - jp-apple-metadata-2026-11-24
+  - cn-preload-open-2026-11-24
+  - cn-download-home-followup-2026-11-24
+  - jp-preload-open-2026-11-24
+  - jp-pc-download-page-2026-11-24
+  - cn-ios-store-followup-2026-11-24
+  - jp-support-page-2026-11-24
+sourceRevision: 9
+translationStatus: published
+aliases:
+  - 蓝色星原
+  - 藍色星原
+  - Azur Promilia
+  - azurpromilia
+  - azure promilia
+  - azur promillia
+  - アズールプロミリア
+related:
+  - download
+  - platforms
+  - getting-started
+  - reroll
 order: 5
-minutes: 6
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-23","note":"検索需要に合わせて容量・判断表・FAQ・関連リンクを再構成。既存の公開版とは別のレビュー待ちの改訂稿で、以前の人手レビュー署名は継承しません。"},{"date":"2026-11-23","note":"事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。"},{"date":"2026-11-23","note":"プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。"}]
-translatedFromRevision: 6
-claimRefs: ["cn-ios-compatibility","cn-platform-details","jp-platform-plan","jp-platform-details","jp-play-registration-display"]
-claimRevisions: {"cn-ios-compatibility":1,"cn-platform-details":1,"jp-platform-plan":1,"jp-platform-details":1,"jp-play-registration-display":1}
-reviewer: "项目负责人（会话发布确认）"
-reviewedAt: "2026-11-23"
+minutes: 8
+revisions:
+  - date: "2026-11-14"
+    note: 編集用の下書きを作成。ゲーム情報と公式用語は確認中。
+  - date: "2026-11-14"
+    note: 公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。
+  - date: "2026-11-14"
+    note: 日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。
+  - date: "2026-11-14"
+    note: ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。
+  - date: "2026-11-21"
+    note: 照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。
+  - date: "2026-11-23"
+    note: 検索需要に合わせて容量・判断表・FAQ・関連リンクを再構成。既存の公開版とは別のレビュー待ちの改訂稿で、以前の人手レビュー署名は継承しません。
+  - date: "2026-11-23"
+    note: 事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。
+  - date: "2026-11-23"
+    note: プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。
+  - date: "2026-11-24"
+    note: 両地域の当日FAQを独立照合し、推奨空き容量・動作環境・開始予定・追加データ・データ共有の境界を更新。今回の本文・訳文はレビュー待ちで、過去の公開確認を継承しません。
+  - date: "2026-11-24"
+    note: 後続の事前DL開始公告、PC専用ページとストア表示を追加照合。開始発表・ファイル取得・実行を区別し、本改訂も本文・訳文レビュー待ち。
+  - date: "2026-11-24"
+    note: 日本FAQ第4・5節と公開窓口を照合。検証・追加データ・起動遅延・強制終了を分け、記録シートと導線を追加。本文・訳文は引き続きレビュー待ち。
+  - date: "2026-11-24"
+    note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
+translatedFromRevision: 9
+claimRefs:
+  - cn-opening-time
+  - jp-opening-time
+  - cn-ios-compatibility
+  - cn-platform-details
+  - jp-platform-plan
+  - jp-platform-details
+  - jp-play-registration-display
+  - cn-public-launch-requirements
+  - jp-public-launch-requirements
+  - cn-public-launch-platform-rules
+  - jp-public-launch-platform-rules
+  - jp-ios-store-metadata
+  - jp-launch-troubleshooting
+claimRevisions:
+  cn-opening-time: 4
+  jp-opening-time: 2
+  cn-ios-compatibility: 1
+  cn-platform-details: 3
+  jp-platform-plan: 1
+  jp-platform-details: 3
+  jp-play-registration-display: 1
+  cn-public-launch-requirements: 1
+  jp-public-launch-requirements: 1
+  cn-public-launch-platform-rules: 1
+  jp-public-launch-platform-rules: 1
+  jp-ios-store-metadata: 1
+  jp-launch-troubleshooting: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
 
-## スマホの容量は何GB必要？
+## スマホは55GB以上、PCは120GB以上の空き容量を推奨
 
-日本版のインストールに必要な空き容量は、今回確認できた資料では確定していません。中国本土向けApp Storeには **3.9 GB** と表示されていますが、これは同ストアの配布サイズです。日本版の容量や、インストール後の追加データを含む必要空き容量としては使えません。
+**11月24日の日本公式FAQは、Android・iOSで55GB以上、PCで120GB以上の空き容量を推奨しています。PCはSSDへのインストールを推奨。** これはインストール前に確保する空き容量の目安で、実際のダウンロード量やインストール後の占有量ではありません。
 
-まず対象地域と端末を選び、[公式の配布先](/ja/guides/download/)で該当するクライアントを確認してください。事前登録、事前ダウンロードの予定、実際のインストール可否はそれぞれ別の情報です。
+出典は[日本公式の正式サービスFAQ](https://azurpromilia.jp/news/5190)です。[中国本土の公測FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)も別途読み、地域ごとに記録しています。日本版の数値は日本の原文が根拠です。
 
-## スマホ・PCの推奨スペック確認表
+## 日本版の最低・推奨スペック
 
-「今回未確認」は、このページに掲載できる対象地域・正式版の根拠をまだ照合できていない項目です。
-
-| 対象地域・端末 | 確認できた条件 | 推奨性能・必要な空き容量 |
+| 項目 | 最低動作環境 | 推奨動作環境・空き容量 |
 | --- | --- | --- |
-| 日本・iPhone / iPad | iOSへの対応予定を公式が案内。iPad個別の対応条件は今回未確認 | 最低OS、対応機種、全データ容量は今回未確認 |
-| 日本・Android | Androidへの対応予定を公式が案内 | 最低OS、チップ、メモリー、全データ容量は今回未確認 |
-| 日本・Windows PC | Windowsへの対応予定を公式が案内 | CPU、GPU、メモリー、保存先の空き容量は今回未確認 |
-| 中国本土・iPhone / iPad | 中国区App StoreにiOS 15.0 / iPadOS 15.0以降と表示 | ストア表示3.9 GB。推奨機種や全データ容量の意味ではない |
-| 中国本土・Android | 正式版の端末要件は今回未確認 | 9月のテスト条件を正式版に流用しない |
-| 中国本土・Windows PC | 正式版のハードウェア要件は今回未確認 | CPU、GPU、メモリー、全データ容量を推測しない |
+| PCのOS・DirectX | Windows 10 64bit以降、DirectX 11.1以降 | SSDへのインストールを推奨 |
+| PCのCPU | Intel Core i5-9400Fまたは同等以上 | Intel Core i7-10700Kまたは同等以上 |
+| PCのGPU | NVIDIA GeForce GTX 1060または同等以上 | NVIDIA GeForce RTX 2060または同等以上 |
+| PCのメモリー | 16GB | 16GB以上 |
+| PCの空き容量 | FAQには最低値の個別記載なし | 120GB以上を推奨 |
+| AndroidのOS | Android 10.0以降 | — |
+| AndroidのSoC | Snapdragon 855、Dimensity 1000+、Kirin 990、または同等以上 | Snapdragon 8 Gen 1、Dimensity 9000+、または同等以上 |
+| Androidのメモリー | 6GB | 8GB以上 |
+| Androidの空き容量 | FAQには最低値の個別記載なし | 55GB以上を推奨 |
+| iOS | iOS 15.0以降 | — |
+| iPhone | iPhone 12 Pro | iPhone 13 Pro以降 |
+| iOSの空き容量 | FAQには最低値の個別記載なし | 55GB以上を推奨 |
 
-日本のプラットフォーム予定はYostarの告知、中国本土のOSとサイズは中国区App Storeを出典とします。日本向けApp Storeのリンクは公式サイトで確認できましたが、今回の取得先は対象アプリ本文を表示しなかったため、日本版のOS・容量の根拠にはしていません。
+日本FAQにはiPadの推奨機種やiOSのメモリー要件は個別に記載されていません。中国本土のメモリー条件を日本版の表に補っていません。最低条件を満たしても、特定のフレームレートや最高画質を保証するものではありません。
+
+## 中国本土の要件と鴻蒙版
+
+中国本土FAQを独立して確認したところ、PCのOS・DirectX・CPU・GPU・メモリー・推奨空き容量と、Androidの各条件は上表と同じ値でした。iOSも15.0以降、最低iPhone 12 Pro、推奨iPhone 13 Pro以降、推奨空き容量55GB以上と記載されています。
+
+次の項目は中国本土の原文にある追加条件です。日本版には適用しません。
+
+| 項目 | 中国本土FAQの記載 |
+| --- | --- |
+| iOSのメモリー | 最低6GB、推奨8GB以上 |
+| 鴻蒙のOS | HarmonyOS 5.0以降 |
+| 鴻蒙の端末 | Kirin 9020と同等以上のSoCを推奨 |
+| 鴻蒙のメモリー | 12GB以上を推奨 |
+| 鴻蒙の空き容量 | 55GB以上を推奨 |
+
+iOSの機種名とメモリーは原文の別々の項目をそのまま記載しています。機種から数値を推測して修正していません。中国区ストアのiPadOS 15.0という互換性表示も、ゲームの推奨機種とは別です。
+
+## ストアの約3.64GB・3.9GBと55GBの違い
+
+| 値・項目 | 出典と意味 | この値だけでは分からないこと |
+| --- | --- | --- |
+| 3,644,462,080バイト、約3.64GB（十進表記） | Appleの日本向けメタデータのfileSizeBytes、バージョン1.0.0 | 全データ容量、追加データ量、現在のインストール可否 |
+| 3.9GB | 中国区App Storeの配布サイズ | 日本版のサイズや全データ容量 |
+| スマホ55GB以上・PC120GB以上 | 各地域FAQが推奨する空き容量 | 実際のダウンロード量、占有量、最低空き容量 |
+| クライアント内の追加データ表示 | その時点で取得する資源の案内 | まだ案内されていない更新データ量 |
+
+両地域のFAQは、本体インストール後の追加データ取得が必要と説明しています。ストアのサイズだけ空けたり、55GBと配布サイズを足して総ダウンロード量にしたりしないでください。今回はインストールを実行しておらず、全ダウンロード量・一時領域・実際の占有量は測定していません。
+
+日本のApp Storeページは今回もTodayへ移動しました。上記メタデータは[Appleの日本向けlookup](https://itunes.apple.com/lookup?id=6787982572&country=jp)から取得し、アプリID6787982572・名称・Yostarの配信元を照合しています。releaseDateはサーバー開始時刻として使っていません。
 
 ## 端末の仕様と空き容量を調べる
 
-以下は一般的な確認方法です。メニュー名はOSやメーカーによって異なります。
+1. iPhone・iPadは「設定 → 一般 → 情報」で機種とOS、ストレージで空き容量を確認します。iPadの推奨機種は別途確認が必要です。
+2. Android・鴻蒙はOS、SoC、メモリー、ストレージを分けて記録します。RAMと保存容量は別の項目です。
+3. Windowsはシステム情報でCPUとメモリー、タスクマネージャーでGPU、エクスプローラーで実際のインストール先の空き容量を調べます。
+4. 最低条件との違いを記録します。ストアが開けることやダウンロードボタンがあることだけでは、ゲームの動作環境を満たすとは判断できません。
 
-1. **iPhone / iPad**：「設定 → 一般 → 情報」で機種とOS、「iPhoneストレージ」「iPadストレージ」で空き容量を確認します。
-2. **Android**：「設定」のデバイス情報とストレージから、機種、OS、空き容量を記録します。メモリーと保存容量は別の項目です。
-3. **Windows**：「設定 → システム → バージョン情報」でCPUとメモリー、タスクマネージャーでGPU、エクスプローラーで保存先の空き容量を確認します。
+## 空き容量があるのに遅い・強制終了する場合
 
-公式の正式要件が確認できたら、この記録と一項目ずつ比べます。最低OSを満たすことだけで、快適な画質やフレームレートまでは保証されません。
+[日本FAQ第4節](https://azurpromilia.jp/news/5190)は、容量不足、PCの読み込み遅延、プレイ中の強制終了を別の問題として案内しています。症状と環境を組み合わせて記録してください。
 
-## ダウンロードサイズとインストール容量の違い
-
-| 項目 | 分かること | 別途必要な確認 |
+| 症状 | 環境の確認 | 次の行動 |
 | --- | --- | --- |
-| ストアのサイズ | 掲載時点の配布サイズ | 追加データ、展開時の一時領域、インストール後の占有量 |
-| 端末の空き容量 | 現在保存できる容量 | 対象地域・バージョンの実際の必要量 |
-| クライアントの追加データ表示 | その時点で取得するデータの案内 | 更新後に必要になる追加領域 |
+| PCのインストール・更新で容量不足 | 実際の保存先の空きを確認。他ドライブの空きで判断しない | FAQは不要ファイルの整理または余裕のある別のインストール先を案内 |
+| PC起動・読み込みが遅い | SSDか、保存先の空き、上表のCPU・GPU・RAMを確認 | 公式はSSDと十分な空きを推奨。読み込み秒数の保証はなし |
+| プレイ中に繰り返し強制終了 | 機種・OS・日時と、起動前かプレイ中かを記録 | 端末再起動後にゲームを起動。繰り返すなら記録を添えて公式へ |
+| DL後にログインできない | 日本の開始・メンテナンス状況を確認 | サービス未開放と性能の問題を分ける |
 
-3.9 GBと同量だけ空ける、一定の倍率を掛けて最低容量を決める、といった計算はできません。安全に移動できるファイルを整理し、システムの動作に必要な余裕を残したうえで、公式クライアントの案内を確認します。
+最低要件は固定FPSや強制終了しないことの保証ではありません。FAQは最低未満で遅延・FPS低下・発熱が起こる可能性に触れていますが、症状だけで特定のハードウェアが原因とは断定できません。[段階別の対処・問い合わせ情報](/ja/guides/download/)か[トラブル記録シート](/downloads/launch-troubleshooting-ja.txt)へ進んでください。対処は日本向け原文の範囲で、中国本土版は現地の案内を確認します。
 
-## 容量・対応端末のよくある質問
+## 容量・iPad・データ共有のよくある質問
 
-### iPadでも遊べますか？
+### 日本版はiPadに対応していますか？
 
-中国区App StoreにはiPadOS 15.0以降の互換条件があります。日本版のiPad対応機種・最低OSは今回未確認です。中国区の条件を日本版に適用しないでください。
+日本FAQはiOS要件とiPhone機種を記載していますが、独立したiPad推奨機種表はありません。Appleメタデータの端末一覧やiPad用スクリーンショットも、快適な動作の保証には使っていません。
 
-### Androidの必要メモリーは何GBですか？
+### 55GBはメモリーですか？
 
-対象地域の正式版を裏付ける数値を今回確認できていません。RAMとストレージを分けて記録し、正式要件と照合してください。
+ストレージの推奨空き容量です。日本版Androidのメモリーは最低6GB・推奨8GB以上、PCは最低16GBです。55GBのRAMが必要という意味ではありません。
 
-### PC版はスマホとデータを共有できますか？
+### PCとスマホでデータを共有できますか？
 
-プラットフォームへの対応予定だけでは判断できません。アカウント、サーバー、進行状況、有償通貨の共有条件はそれぞれ確認が必要です。[対応プラットフォームの確認方法](/ja/guides/platforms/)も参照してください。
+日本FAQは同じアカウントでPC・Android・iOSの進行状況を共有できると案内しています。中国本土は公式サーバーのPC・Android・iOS・鴻蒙が対象で、一部チャネル版は公式サーバーと共有されません。地域間の共通アカウント、有償通貨、チャネル移動はこの説明から確定しません。[対応機種とデータ共有](/ja/guides/platforms/)も参照してください。
 
-端末を確認したら、[サービス開始準備](/ja/guides/getting-started/)で受取先やログイン方法の確認に進めます。
+### 容量を確保してダウンロードしたのに入れません。
 
-### 事前ダウンロード前の容量整理は何から始める？
+事前DLとサーバー開始は別です。日本は11月26日11:00、中国本土は同日10:00（UTC+8）の開始予定で、実際の状態は各地域のお知らせを確認します。[ダウンロード手順](/ja/guides/download/)で本体と追加データを確認したら、[開始前の準備](/ja/guides/getting-started/)へ進んでください。
 
-1. 空き容量とインストール先を記録し、再取得できるファイルやバックアップ済みの個人ファイルから整理します。
-2. 対象地域の公式入口で配布段階を確認します。11月24日の予定時刻だけで、現在のインストールボタンは確定しません。
-3. クライアントに配布サイズ・追加データ・必要容量が表示されたら、項目を分けて比較します。
+## 事前DL開始後、どこからPC版を取得する？
 
-11月23日の日本向けGoogle Playでは「事前登録」を確認しました。この表示だけでAndroidの最低OS、メモリー、全データ容量は分かりません。
+日本公式は[11月24日の開始公告](https://azurpromilia.jp/news/5191)で、[Windows専用ページ](https://azurpromilia.jp/PCdownload)を案内しています。本体の前にYostarランチャーを取得し、その後に本体・追加データを順に取得します。ページとリンクは確認済みですが、ファイル自体と実占有量は未検証です。[ダウンロードの段階別案内](/ja/guides/download/)へ進んでください。

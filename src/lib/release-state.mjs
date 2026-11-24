@@ -18,11 +18,12 @@ export function regionalReleaseState({ claims, sources, region, now = new Date()
   const opening = get(`${region}-opening-time`);
   const date = get(region === 'cn' ? 'cn-launch-date' : 'jp-release-status');
   const launch = scheduleValue(opening) || scheduleValue(date);
-  const preload = scheduleValue(get(`${region}-preload-status`));
+  const preloadClaim = get(`${region}-preload-status`);
+  const preload = scheduleValue(preloadClaim);
   const service = get(`${region}-service-status`);
   const asOf = new Intl.DateTimeFormat('en-CA', { timeZone: region === 'cn' ? 'Asia/Shanghai' : 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
   const reached = launch?.instant ? now.getTime() >= Date.parse(launch.instant) : launch && asOf >= launch.date;
-  return { region, launch, preload, stage: service?.value.serviceStatus || (reached ? 'awaiting-confirmation' : launch ? 'announced' : 'unconfirmed') };
+  return { region, launch, preload, preloadAnnounced: preloadClaim?.value.availability === 'preload', stage: service?.value.serviceStatus || (reached ? 'awaiting-confirmation' : launch ? 'announced' : 'unconfirmed') };
 }
 
 export function countdownText(instant, now, locale) {

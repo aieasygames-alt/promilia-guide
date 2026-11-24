@@ -1,10 +1,14 @@
 import { z } from 'zod';
 import rawSources from '../data/sources.json';
 import rawClaims from '../data/claims.json';
+import rawClaimRevisions from '../data/claim-revisions.json';
 import rawChannels from '../data/distribution.json';
 import { sourceSchema, claimSchema, distributionSchema } from './editorial-schema.mjs';
+import { selectClaimRevisions } from './claim-revisions.mjs';
 export const sources = z.array(sourceSchema).parse(rawSources);
-export const claims = z.array(claimSchema).parse(rawClaims);
+const approved = z.array(claimSchema).parse(rawClaims);
+const revisions = z.array(claimSchema).parse(rawClaimRevisions);
+export const claims = selectClaimRevisions(approved, revisions, __CONTENT_PREVIEW__) as typeof approved;
 export const channels = z.array(distributionSchema).parse(rawChannels);
 export type Source = z.infer<typeof sourceSchema>;
 export type Claim = z.infer<typeof claimSchema>;
