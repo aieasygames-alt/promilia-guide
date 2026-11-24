@@ -1,32 +1,162 @@
 ---
-contentId: "getting-started"
-locale: "ja"
-slug: "getting-started"
-section: "guides"
-title: "初日の準備と進め方：受取・解放・資源判断の順に確認"
-description: "地域・端末・アカウントを確認し、期限付き報酬と解放任務を分けて次の行動を残します。"
-author: "Promilia Guide 編集部"
+contentId: getting-started
+locale: ja
+slug: getting-started
+section: guides
+title: アズールプロミリア初心者向け準備：開始・特典・初回ガチャ
+description: 本体・追加データ、アカウント、初回メール受取、チケット用途を順に確認。日本の事前登録特典と巣穴探索の配布先・期限を分けて準備します。
+author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-23"
-gameVersion: "サービス開始前 / 2026-11-23 情報・導線改訂"
-gameRegion: "中国本土・日本（地域別に記載）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-announcement-2026-10-23","cn-official-home-2026-11-14","jp-launch-announcement-2026-10-23","jp-official-home-2026-11-14","jp-pre-register-2026-11-14","cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21"]
-sourceRevision: 9
-translationStatus: "published"
-aliases: ["蓝色星原","藍色星原","Azur Promilia","azurpromilia","azure promilia","azur promillia","アズールプロミリア"]
-related: ["launch","requirements","combat","resources","banner-rules","home","kibo-guide"]
+updatedAt: "2026-11-24"
+gameVersion: サービス開始前 / 2026-11-24 地域別アカウント・受取照合
+gameRegion: 中国本土・日本（地域別に記載）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-announcement-2026-10-23
+  - cn-official-home-2026-11-14
+  - jp-launch-announcement-2026-10-23
+  - jp-official-home-2026-11-14
+  - jp-pre-register-2026-11-14
+  - cn-launch-benefits-images-2026-11-21
+  - jp-kibo-adventure-rules-2026-11-21
+  - cn-kibo-adventure-rules-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - cn-launch-faq-2026-11-24
+  - jp-launch-faq-2026-11-24
+  - cn-distribution-home-2026-11-24
+  - jp-distribution-home-2026-11-24
+  - jp-preload-open-2026-11-24
+  - cn-preload-open-2026-11-24
+  - jp-pc-download-page-2026-11-24
+  - jp-preregister-benefits-2026-11-24
+  - jp-support-page-2026-11-24
+  - cn-launch-returns-rewards-2026-11-24
+sourceRevision: 14
+translationStatus: published
+aliases:
+  - 蓝色星原
+  - 藍色星原
+  - Azur Promilia
+  - azurpromilia
+  - azure promilia
+  - azur promillia
+  - アズールプロミリア
+related:
+  - launch
+  - requirements
+  - combat
+  - resources
+  - banner-rules
+  - home
+  - kibo-guide
+  - recharge-return
 order: 6
-minutes: 8
-revisions: [{"date":"2026-11-14","note":"編集用の下書きを作成。ゲーム情報と公式用語は確認中。"},{"date":"2026-11-14","note":"公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。"},{"date":"2026-11-14","note":"ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。"},{"date":"2026-11-20","note":"公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。"},{"date":"2026-11-21","note":"照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。"},{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"},{"date":"2026-11-23","note":"事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。"},{"date":"2026-11-23","note":"プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。"}]
-translatedFromRevision: 9
-checklist: [{"id":"region","text":"対象地域・サーバー・アカウントを確認する"},{"id":"announcement","text":"対象地域の公式発表を保存する"},{"id":"device","text":"端末・OS・空き容量を確認する"},{"id":"download","text":"公式クライアントの配布先を確認する"},{"id":"account","text":"アカウントと復旧手段を確認し、情報を保管する"},{"id":"rules","text":"現在の報酬・資源・ガチャの規約を読む"}]
-claimRefs: ["cn-launch-date","cn-official-entry","cn-opening-time","jp-release-status","jp-official-entry","jp-preload-status","jp-opening-time","cn-preload-status","cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview"]
-claimRevisions: {"cn-launch-date":2,"cn-official-entry":1,"cn-opening-time":3,"jp-release-status":2,"jp-official-entry":1,"jp-preload-status":4,"jp-opening-time":1,"cn-preload-status":4,"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1}
-reviewer: "项目负责人（会话发布确认）"
-reviewedAt: "2026-11-23"
+minutes: 12
+revisions:
+  - date: "2026-11-14"
+    note: 編集用の下書きを作成。ゲーム情報と公式用語は確認中。
+  - date: "2026-11-14"
+    note: 公式告知・公式サイト・ストアを照合し、共有情報の改訂番号を記録。公開前の人によるレビューは未完了。
+  - date: "2026-11-14"
+    note: 日本公式の日程・登録先・対応予定を補足し、手順と用語を修訂。中国語原稿と同期、公開前の人によるレビューは未完了。
+  - date: "2026-11-14"
+    note: ユーザーが本文・言語レビュー完了を確認。確認日を記録して公開対象に変更。
+  - date: "2026-11-20"
+    note: 公式特番に基づき、配信開始時刻（日本11:00 JST）および事前ダウンロード日程（11月24日）を準備リストに反映。
+  - date: "2026-11-21"
+    note: 照合できない特番由来の時刻・特典を撤回し、以前に確認済みの本文へ復元。レビュー署名は復元元の履歴を保持。
+  - date: "2026-11-21"
+    note: 需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。
+  - date: "2026-11-21"
+    note: 第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。
+  - date: "2026-11-21"
+    note: 第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。
+  - date: "2026-11-21"
+    note: プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。
+  - date: "2026-11-23"
+    note: 事前DL・公式入口・地域差と検索意図を整理。今回の改訂は本文・訳文レビュー待ちで、過去の承認を継承しません。
+  - date: "2026-11-23"
+    note: プロジェクト責任者が本会話で今回の改訂の本番公開を明示。今回の公開確認を記録し、別途の独立した言語校閲を実施したとは記録しません。未確認のゲーム情報は従来の制限を維持。
+  - date: "2026-11-24"
+    note: 両地域の当日FAQを独立照合し、推奨空き容量・動作環境・開始予定・追加データ・データ共有の境界を更新。今回の本文・訳文はレビュー待ちで、過去の公開確認を継承しません。
+  - date: "2026-11-24"
+    note: 後続の事前DL開始公告、PC専用ページとストア表示を追加照合。開始発表・ファイル取得・実行を区別し、本改訂も本文・訳文レビュー待ち。
+  - date: "2026-11-24"
+    note: 日本FAQ第3節と事前登録の人数別報酬を照合。事前登録特典と巣穴探索のメール・キャラ・期限を分け、受取確認と初日の導線を補完。本文・訳文は引き続きレビュー待ち。
+  - date: "2026-11-24"
+    note: 日本FAQ第4・5節と公開窓口を照合。検証・追加データ・起動遅延・強制終了を分け、記録シートと導線を追加。本文・訳文は引き続きレビュー待ち。
+  - date: "2026-11-24"
+    note: 中国本土の事前登録メール・元テスト課金アカウント・証票期限を分離。リセマラ稿は日本の削除後復旧不可条項も追加。旧承認を継承せず、本文・訳文レビュー待ち。
+  - date: "2026-11-24"
+    note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
+translatedFromRevision: 14
+checklist:
+  - id: region
+    text: 対象地域・サーバー・アカウントを確認する
+  - id: announcement
+    text: 対象地域の公式発表を保存する
+  - id: device
+    text: 端末・OS・空き容量を確認する
+  - id: download
+    text: 公式クライアントの配布先を確認する
+  - id: account
+    text: アカウントと復旧手段を確認し、情報を保管する
+  - id: rules
+    text: 現在の報酬・資源・ガチャの規約を読む
+claimRefs:
+  - cn-launch-date
+  - cn-official-entry
+  - cn-opening-time
+  - jp-release-status
+  - jp-official-entry
+  - jp-preload-status
+  - jp-opening-time
+  - cn-preload-status
+  - cn-rewards-conditions
+  - jp-kibo-web-rewards
+  - cn-kibo-web-rewards
+  - cn-store-home-kibo-overview
+  - cn-public-launch-requirements
+  - jp-public-launch-requirements
+  - cn-public-launch-platform-rules
+  - jp-public-launch-platform-rules
+  - jp-preregister-benefits
+  - jp-launch-troubleshooting
+  - cn-test-recharge-return
+  - cn-preregister-mail-benefits
+claimRevisions:
+  cn-launch-date: 2
+  cn-official-entry: 1
+  cn-opening-time: 4
+  jp-release-status: 2
+  jp-official-entry: 2
+  jp-preload-status: 6
+  jp-opening-time: 2
+  cn-preload-status: 6
+  cn-rewards-conditions: 1
+  jp-kibo-web-rewards: 1
+  cn-kibo-web-rewards: 1
+  cn-store-home-kibo-overview: 1
+  cn-public-launch-requirements: 1
+  jp-public-launch-requirements: 1
+  cn-public-launch-platform-rules: 1
+  jp-public-launch-platform-rules: 1
+  jp-preregister-benefits: 1
+  jp-launch-troubleshooting: 1
+  cn-test-recharge-return: 1
+  cn-preregister-mail-benefits: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
+
+## 事前DL開始後に必要な容量・アカウント・追加データ
+
+11月24日の日本公式FAQはPC120GB以上、Android/iOS55GB以上の空き容量を推奨。後続公告で日本は11月24日16:00、中国本土は同日15:00（UTC+8）の事前DL開始を確認。正式サービスは日本26日11:00、中国本土26日10:00（UTC+8）予定です。開始発表と実際のファイル取得・ログイン結果を分けます。
+
+日本は同一アカウントでPC・Android・iOSの進行を共有。中国本土は公式サーバーのPC・Android・iOS・鴻蒙が対象で、一部チャネル版は公式と共有されません。巣穴報酬を受け取るIDと最初のキャラクターを確認してから作成・やり直しを判断してください。
+
+日本PCはYostar公式ランチャー → 本体 → 起動後の追加データ、スマホも本体後に追加データが必要です。中国本土の旧「旅迹测试」クライアントは直接更新できません。[ダウンロード手順](/ja/guides/download/)と[動作環境](/ja/guides/requirements/)で準備し、正式任務の未検証部分は以下に残しています。
 
 ## 現在の段階から次の行動を選ぶ
 
@@ -36,7 +166,7 @@ reviewedAt: "2026-11-23"
 | 正式インストーラーの配布後 | 対象地域の公式から取得し、版と追加データを確認 | 実際に取得できたことを確認。登録成功で代用しない |
 | サーバーの開放後 | 確認したIDで作成・チュートリアルを進め、特典を確認 | 対象キャラへ入り、メールや任務の報酬増加を確認 |
 
-両地域の規約は事前DL予定を11月24日、日本16時・中国本土15時（UTC+8）と記載しています。予定日になっても配布とサーバーの状態を別途確認します。この表は正式版で実測済みの任務ルートではありません。
+両地域の後続公告で事前DL開始を確認済みです。自分の環境で本体と追加データを取得できたか、サーバーに入れるかは別途確認します。この表は正式版で実測済みの任務ルートではありません。
 
 巣穴探索に参加する場合、[特典の案内](/ja/guides/resources/)で登録任務の切替時刻と受取キャラを確認してから、再作成を判断します。繁体字版を使う場合は[独立した公式入口](/ja/guides/global-release/)を確認してください。
 
@@ -50,6 +180,46 @@ reviewedAt: "2026-11-23"
 6. 規約：報酬と対象ガチャの説明を読みます。7日間ログイン、レベル、メイン任務を別々に記録してください。
 
 チェックリストは現在のブラウザーに保存され、同じ記事の中国語・日本語で項目IDを共有します。データ削除、別端末、プライベートモードでは失われる場合があります。登録やログイン、事実確認を代行する機能ではありません。
+
+## ログイン前に止まったら：起動・アカウント・開放状況を分ける
+
+インストール完了だけでログイン可能とは判断できません。日本FAQは配信前のログイン不可と、同じアカウントでのPC・Android・iOS間の進行共有を案内しています。ゲスト、外部連携、連携変更、リセットの操作まで確認できたわけではありません。地域とWebイベントの参加アカウントを確認し、現在の公式ログイン画面に従ってください。再作成を一般的な修復手段にはしません。
+
+| 困っていること | 先に確認すること | 続き |
+| --- | --- | --- |
+| 検証・追加データのエラー | ランチャー・本体・追加データの段階とエラー原文 | [段階別ダウンロード対処](/ja/guides/download/) |
+| PC読み込み遅延・プレイ中の強制終了 | 機種・OS・日時を記録。日本FAQの強制終了への案内は端末再起動後にゲーム起動 | [動作環境](/ja/guides/requirements/)と[問い合わせ情報](/ja/guides/download/) |
+| ログイン画面から入れない | 日本の開始・メンテナンス告知とエラーを確認。未開放をアカウント破損と判断しない | [配信予定・状態](/ja/guides/launch/) |
+| アカウント不明・連携の変更 | 該当地域の公式ヘルプで元のアカウントを確認。復旧・変更メニューは未検証 | 日本版は[公式問い合わせページ](https://azurpromilia.jp/contact)。他地域は現地の窓口へ |
+
+ゲームに入れた後で、下のメール・添付・ガチャ確認へ進みます。入れずUIDも取得できない場合は問い合わせにその旨を記載し、WebイベントのIDをゲームUIDとして代用しないでください。
+
+## 中国本土版の作成前：テスト課金と予約メールを区別
+
+[中国本土FAQ第3・4節](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)は、次のメール条件を別々に案内しています。日本の開始手順へ流用せず、中国本土版で遊ぶ場合に確認します。
+
+- **旅迹测试で課金した場合**：元の課金アカウント・対応チャネルを使用し、メール解放後に返還を受取。新規アカウントへ移せません。星虹と各証票、作成・メールの365日期限は[テスト返還](/ja/guides/recharge-return/)へ。
+- **中国本土の予約・SNS報酬**：FAQは全解放を案内。配信後ログインしてメールを解放し、艾妮丝、星彩·浮云、纯粹忆痕×20などを受取。チャネルは個別案内を確認し、課金返還の資格を予約報酬の前提としません。
+- **巣穴探索の報酬**：参加ID・最初のキャラ・Webでの獲得記録を確認。上記メールがあるだけでは探索完了になりません。
+
+先に元のアカウントを確認してから、やり直すか判断してください。旧テストクライアントの入れ替えとアカウント削除は別です。受取後は添付・期限を入手元ごとに記録し、飞信订约・游记の証票はバッグで使用して初めて有効化される点も確認します。
+
+
+## キャラ作成から初回ガチャまでの特典確認
+
+次は公式案内に基づく準備順で、正式版メニューや解放任務を実測した手順ではありません。[日本FAQ第3節](https://azurpromilia.jp/news/5190)は事前登録特典を配信後にゲーム内メールで受け取れると説明し、「星彩・クロディーメ」「無垢な痕跡」などを記載。巣穴の「星彩・キラミィ」は別イベントです。
+
+| 段階 | 先に確認すること | 完了の目安 |
+| --- | --- | --- |
+| 作成前 | 地域、ログインID、巣穴の参加ID、やり直すか | 巣穴は最初のキャラに配布。変更可能とは仮定しない |
+| ゲームへ入れた後 | 実際のチュートリアルとメール・イベント表示 | 受取項目を確認。未解放なら前提を記録 |
+| メールを開いた後 | 事前登録、ログイン、巣穴を区別し、添付と期限を読む | 各アイテムの原名、数量、未受取・受取済みを記録 |
+| 添付受取後 | 対応するアイテムの増加を確認 | 累計特典を初日の所持数にしない。日数・レベル待ちは別記 |
+| 最初の消費前 | 日本版の対象ガチャ、券種、消費、カウント、期間 | 用途を確認してから判断。未確認資源は配分を保留 |
+
+巣穴の最初のキャラ・初回ログインから365日という規約は、事前登録メール全体の条件ではありません。事前登録ページの「無垢な痕跡」表示合計20個も、用途・個別資格を確認せず初回限定20連とは案内できません。
+
+[報酬確認シート](/downloads/launch-rewards-ja.txt)を入手元ごとに使い、[特典と未着時の確認](/ja/guides/resources/)、[ガチャ規約](/ja/guides/banner-rules/)、[リセマラの判断](/ja/guides/reroll/)へ進んでください。
 
 ## 初日は実行できる順に進める
 
@@ -93,3 +263,7 @@ reviewedAt: "2026-11-23"
 ## 次回のために残す5項目
 
 目標任務、詰まった点、確認する規約、未受取報酬と期限、次の行動を残します。パスワードや認証コードは不要です。入手条件は[報酬](/ja/guides/resources/)、チケットとカウントは[ガチャ](/ja/guides/banner-rules/)で確認してください。
+
+## 事前DL開始後の公式入口と確認範囲
+
+[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土ホームはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に差分資源を取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。

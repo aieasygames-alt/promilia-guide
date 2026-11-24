@@ -690,5 +690,362 @@
     "gameVersion": "正式发行前 / 2026-11-23 页面核对",
     "status": "verified",
     "evidenceFile": "research/2026-11-23-trends-content/evidence.md"
+  },
+  {
+    "id": "cn-launch-faq-2026-11-24",
+    "title": "《蓝色星原：旅谣》公测常见问题说明",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "中国大陆公测",
+    "status": "verified",
+    "excerpt": "预下载2026年11月24日15:00（UTC+8）；公测11月26日10:00（UTC+8）；PC/Android/iOS/鸿蒙。PC建议预留120GB，手机55GB；官方服同账号四端进度同步，部分渠道服不互通；旅迹测试客户端不支持直接更新。",
+    "note": "从国服首页当日资讯条目打开并读取动态全文。仅作为公告计划和操作说明，不证明已下载或已可登录；硬件各字段按原文保留。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：正式サービスFAQ（11月24日）",
+        "note": "中国本土向けの日時、動作環境、公式サーバーのデータ共有、旧テスト版の扱いを照合。日本には適用せず、実際のインストールやログインは未検証。"
+      }
+    }
+  },
+  {
+    "id": "jp-launch-faq-2026-11-24",
+    "title": "『アズールプロミリア』正式サービス開始に関するよくあるご質問",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/news/5190",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "事前DLは11月24日16:00、正式サービスは11月26日11:00（日本時間）予定。PC空き容量120GB以上、Android/iOS55GB以上を推奨。PC/Android/iOS間で同アカウントのプレイデータ共有。PCはYostar公式ランチャー経由、本体後に追加データが必要。",
+    "note": "从日本官网NEWS实际条目进入并读取全文，刷新直达URL后再次读到正文。普通HTTP本轮为404应用外壳，与浏览器动态正文不同；不将外壳作为证据。公告计划不是当前可安装或已开服证明。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式：正式サービス開始に関するFAQ（11月24日）",
+        "note": "公式NEWSから本文を読み、直達URLの再読み込み後も確認。通常のHTTP取得は404のアプリ外枠でした。日時は予定、空き容量は推奨値で、実測占有量ではありません。"
+      }
+    }
+  },
+  {
+    "id": "jp-apple-metadata-2026-11-24",
+    "title": "Apple日本区应用元数据：应用身份、最低OS与分发体积",
+    "publisher": "Apple / YOSTAR LIMITED",
+    "kind": "official-store",
+    "url": "https://itunes.apple.com/lookup?id=6787982572&country=jp",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "日本区App Store元数据",
+    "status": "verified",
+    "excerpt": "trackId=6787982572; trackName=アズールプロミリア; bundleId=com.Yostar.AzurpromiliaJP; sellerName=YOSTAR (HONG KONG) LIMITED; minimumOsVersion=15.0; fileSizeBytes=3644462080; version=1.0.0.",
+    "note": "取得Apple日本区lookup JSON，身份与官网链接相符；fileSizeBytes约3.64GB（十进制）不是完整安装空间。releaseDate字段不能作为服务器开服时刻，元数据也不证明已实际安装。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "Apple日本向けメタデータ：最低OSと配布サイズ",
+        "note": "日本向けアプリIDと配信元を照合。配布サイズ3,644,462,080バイトは全データ容量ではなく、releaseDateもサーバー開始時刻として使いません。"
+      }
+    }
+  },
+  {
+    "id": "cn-distribution-home-2026-11-24",
+    "title": "国服官网：11月24日可见入口与新公告",
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "首页仍可见立即预约、App Store预订及应用ID6754017631；资讯新增11月24日公测常见问题说明。",
+    "note": "记录本次浏览器可见状态，不据此断言全部渠道没有安装器。中国区App Store本日仍显示11月26日预计推出、3.9GB、iOS/iPadOS15.0。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：11月24日の入口表示",
+        "note": "今回のホームは登録・App Store予約表示で、当日FAQも確認。すべての配布先や個人のインストール可否を網羅した記録ではありません。"
+      }
+    }
+  },
+  {
+    "id": "jp-distribution-home-2026-11-24",
+    "title": "日本官网：11月24日手机入口与NEWS复核",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "事前登録；App Store目标id6787982572；Google Play目标com.Yostar.AzurpromiliaJP；NEWS出现11月24日正式サービス開始FAQ。",
+    "note": "官网仍显示事前注册入口；FAQ说明PC需官方启动器，但本次未取得并验证实际PC二进制或独立下载页URL。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式：11月24日の入口とNEWS",
+        "note": "ストアへのリンクと当日のFAQを照合。PC用ランチャーの手順はFAQにありますが、今回、実際の配布ファイルは照合していません。"
+      }
+    }
+  },
+  {
+    "id": "jp-play-display-2026-11-24",
+    "title": "日本Google Play：11月24日应用展示复核",
+    "publisher": "Google Play / Yostar Limited.",
+    "kind": "official-store",
+    "url": "https://play.google.com/store/apps/details?id=com.Yostar.AzurpromiliaJP&hl=ja&gl=JP",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 核对",
+    "gameRegion": "日本語・日本向け表示指定",
+    "status": "verified",
+    "excerpt": "アズールプロミリア；Yostar Limited.；最終更新日2026/11/17；日本（日本語）。本次未见可确认的安装或事前注册按钮。",
+    "note": "浏览器读取应用页；本次按钮未显示不能证明所有账号或设备均不可安装，不把11月23日按钮观察改写为本次所见。没有登录、注册或安装。",
+    "evidenceFile": "research/2026-11-24-preload-capacity/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "Google Play：11月24日のアプリ表示",
+        "note": "アプリIDと配信元を確認しましたが、今回の表示では登録・インストールボタンを確認できませんでした。すべてのアカウントや端末で利用不可とは判断しません。"
+      }
+    }
+  },
+  {
+    "id": "cn-preload-open-2026-11-24",
+    "title": "国服公告：预下载现已开启",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912088789906755584",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预下载公告后复核",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "预下载已于11月24日15:00（UTC+8）开启，PC、Android、iOS、鸿蒙四端同步开放。各端均需公测增量资源，无需重新下载完整客户端，实际大小以客户端提示为准。",
+    "note": "通过独立资讯列表进入并读取全文。官方已宣布开放，不是本机成功安装；公测仍为26日10:00计划。",
+    "evidenceFile": "research/2026-11-24-distribution-followup/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：事前DL開始のお知らせ",
+        "note": "4機種の事前DL開始を公式発表。追加資源は差分配信で、実際のサイズはクライアント表示。インストール実測ではありません。"
+      }
+    }
+  },
+  {
+    "id": "jp-preload-open-2026-11-24",
+    "title": "日本公告：事前下载开始与PC独立入口",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/news/5191",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预下载公告后复核",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "事前ダウンロードを2026年11月24日16:00より開始しました。PC/Android/iOS、本体後に追加データ。PC公式入口https://azurpromilia.jp/PCdownload。",
+    "note": "从/news/list点击公告图片进入并读取全文；首页标题点击未打开正文。正式服务仍为26日11:00计划，追加数据大小未给定固定数值。",
+    "evidenceFile": "research/2026-11-24-distribution-followup/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式：事前ダウンロード開始のご案内",
+        "note": "公式が3機種の事前DL開始とPC専用ページを案内。本体後に追加データを取得し、正式サービス開始前にはログインできません。"
+      }
+    }
+  },
+  {
+    "id": "jp-pc-download-page-2026-11-24",
+    "title": "日本官方Windows下载页与启动器链接",
+    "publisher": "アズールプロミリア日本公式 / Yostar",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/PCdownload",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预下载公告后复核",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "Windowsダウンロード页提供launcher-pkg-azupro-jp.yo-star.com上的AZUPRO_JP_Gamelauncher-1.8.1-setup.exe链接。",
+    "note": "从官方5191公告中的链接进入并读取页面链接；文件HEAD请求返回403，未下载、执行或安装。页面入口核验不能冒充文件签名、版本运行或全量资源验证。",
+    "evidenceFile": "research/2026-11-24-distribution-followup/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式：Windowsダウンロードページ",
+        "note": "公式告知から到達し、Yostarランチャー1.8.1のリンクを確認。ファイルへのHEAD取得は403で、ファイルの取得・署名確認・実行は未実施。"
+      }
+    }
+  },
+  {
+    "id": "cn-download-home-followup-2026-11-24",
+    "title": "国服首页后续：正式下载按钮已展示",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预下载公告后复核",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "页面显示官方PC下载、Android下载、App Store下载、TapTap下载；资讯出现预下载现已开启。",
+    "note": "本轮PC点击等待15秒未取得download事件或文件；Android亦未取得文件，未辨明原因。只确认官网按钮展示，不推广为所有渠道无法下载。",
+    "evidenceFile": "research/2026-11-24-distribution-followup/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：ダウンロードボタンの表示",
+        "note": "PC・Android・App Store・TapTapを表示。PCクリックではファイル取得を確認できず、個別の配布ファイルは引き続き未検証。"
+      }
+    }
+  },
+  {
+    "id": "cn-ios-store-followup-2026-11-24",
+    "title": "中国区App Store后续：1.0.1版本与3.9GB",
+    "publisher": "Apple / 蛮啾游戏",
+    "kind": "official-store",
+    "url": "https://apps.apple.com/cn/app/id6754017631",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预下载公告后复核",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "蓝色星原：旅谣；版本1.0.1；页面显示“1天前”；大小3.9GB；iOS15.0及以上；本轮未再见“预计推出”标签。",
+    "note": "从已知官网目标页面刷新读取。相对时间不换算成精确发布日期；商店展示及官方预下载公告不证明每个账号已完成安装。",
+    "evidenceFile": "research/2026-11-24-distribution-followup/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国区App Store：1.0.1の表示",
+        "note": "1.0.1、相対表記「1日前」、3.9GBを確認。前回の配信予定表示とは区別し、個別アカウントのインストール成功とは扱いません。"
+      }
+    }
+  },
+  {
+    "id": "cn-character-banner-2026-11-24",
+    "title": "弦定观测「桃笺为契」",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912104344520888320",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "公测正式服当期观测公告",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "2026年11月26日开服后至12月17日03:59（UTC+8）；限定五星涂山小玉；连续70次未得后概率递增，第90次必得；所有弦定观测共享限定五星角色保底，未得计数继承，获得后重新计数。",
+    "note": "四星枫糖、艾妮丝概率大幅提升。公告未列基础概率、递增幅度、票券、新手与常驻规则；更多详情指向游戏内。",
+    "evidenceFile": "research/2026-11-24-banner-rules/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土：キャラ「桃笺为契」の告知",
+        "note": "中国本土の限定星5キャラ保証は90回、連続70回未獲得後に確率上昇。同種内引き継ぎと獲得後リセットを明記。日本版は別確認。"
+      }
+    }
+  },
+  {
+    "id": "cn-anima-banner-2026-11-24",
+    "title": "羁点观测「绯影入怀」",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912105412612984832",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "公测正式服当期观测公告",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "2026年11月26日开服后至12月17日03:59（UTC+8）；限定五星灵子花之舞、限定四星灵子折纸寄情；连续60次未得限定五星后递增，第80次必得；所有羁点观测共享并继承该保底，获得限定五星后重新计数。",
+    "note": "四星折纸寄情、未来之星、一点都不痛概率大幅提升。60是递增门槛，不是硬保底；不将此条款套用到角色池或日本。",
+    "evidenceFile": "research/2026-11-24-banner-rules/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土：霊子「绯影入怀」の告知",
+        "note": "中国本土の限定星5霊子保証は80回、連続60回未獲得後に確率上昇。同種内引き継ぎと獲得後リセットを明記。日本版は別確認。"
+      }
+    }
+  },
+  {
+    "id": "jp-preregister-benefits-2026-11-24",
+    "title": "日本预约页：人数档位、预约奖励与SNS奇波",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/pre-register/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 预约页核对",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "500万人：ユニ×10,000；1,000万人：無垢な痕跡×3；1,500万人：清澄な星脈結晶×10；2,000万人：無垢な痕跡×5；2,500万人：アニス×1；3,000万人：無垢な痕跡×12。キボ「星彩・クロディーメ」旁列グローバル公式SNS総フォロワー数500万人。",
+    "note": "记录页面展示档位，不当作已实领或最终配布资格。3+5+12=20为列值算术合计，不等于20次限定抽；SNS条件与500万人ユニ档、巢穴探索分别记录。未注册或操作页面内验证码。",
+    "evidenceFile": "research/2026-11-24-jp-rewards/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本事前登録ページ：人数別報酬とSNSのキボ特典",
+        "note": "表示の人数別報酬を記録。無垢な痕跡3+5+12=20個は掲載数量の合計で、限定20回・実受取・再配布の保証ではありません。SNSと巣穴探索を分けます。"
+      }
+    }
+  },
+  {
+    "id": "jp-support-page-2026-11-24",
+    "title": "日本官方FAQ与客服入口：咨询流程、语言与回复说明",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/contact",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "正式发行前 / 2026-11-24 公开客服页",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "問い合わせ種類を選択してフォームへ進む。お問い合わせは日本語で受け付け、入力したメールアドレスに返信。電話サポートなし。@azurpromilia.jpの受信確認。問い合わせ状況等により時間がかかる場合あり。",
+    "note": "浏览器读取公开FAQ、类型选择框与咨询说明；未选择种类、填写或提交表单。入口存在不表示已取得受理回执，也没有固定回复时限。",
+    "evidenceFile": "research/2026-11-24-launch-troubleshooting/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式FAQ・問い合わせ窓口：受付言語と返信案内",
+        "note": "公開FAQ・種類選択・注意事項のみ確認。フォームへの入力や送信は未実施。窓口確認は受理済みや返信期限の証明ではありません。"
+      }
+    }
+  },
+  {
+    "id": "cn-launch-returns-rewards-2026-11-24",
+    "title": "国服公测FAQ第3/4节：测试充值返还与预约邮件",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/",
+    "publishedAt": "2026-11-24",
+    "checkedAt": "2026-11-24",
+    "gameVersion": "公测前 / 2026-11-24 FAQ第3/4节",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "excerpt": "旅迹测试同充值账号、邮箱开放后领取；1元折10星虹，分段200%／150%／125%；不跨账号，渠道用对应客户端；公测后365天内创角、邮件领取有效期365天。预约与社媒里程碑全部解锁，邮箱解锁后领艾妮丝、星彩·浮云、纯粹忆痕×20等。",
+    "note": "定向重读完整第三/四节并另核官网可见充值返利查询按钮；点击未取得结果页，无登录、账单查询或实机领取。分段数字不含赠送与凭证激活效果；国服规则不推广日本。",
+    "evidenceFile": "research/2026-11-24-account-rewards/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土FAQ第3・4節：テスト課金返還・事前登録メール",
+        "note": "中国本土の対象テストのみ。元の課金アカウントとチャネルを維持。ボタン確認のみで、個人の照会・受取は未実施。日本版の特典や返還条件へ流用しません。"
+      }
+    }
+  },
+  {
+    "id": "jp-account-terms-2026-11-24",
+    "title": "日本利用规约第4条：账号删除与恢复",
+    "publisher": "アズールプロミリア日本公式／Yostar",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/terms/user",
+    "publishedAt": null,
+    "checkedAt": "2026-11-24",
+    "gameVersion": "2026-11-24 公开利用规约第4条",
+    "gameRegion": "日本",
+    "status": "verified",
+    "excerpt": "第4条6項：アカウントが削除された時点で利用権は消滅。誤ってアカウントを削除した場合であっても、アカウントの復旧はできません。",
+    "note": "只引用删除后不可恢复条款，不推导账号删除菜单、重置流程、游客规则或所有登录问题均不可恢复。未进行账号操作。",
+    "evidenceFile": "research/2026-11-24-account-rewards/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本利用規約第4条：削除したアカウントの復旧",
+        "note": "第4条6項の削除後復旧不可に限定。削除の実操作、ゲスト、再作成・連携変更は未確認。ログイン不能すべてを復旧不可とは扱いません。"
+      }
+    }
   }
 ]

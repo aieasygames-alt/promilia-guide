@@ -3,9 +3,10 @@ import { readFile } from 'node:fs/promises';
 import { parseArgs } from 'node:util';
 import { z } from 'zod';
 import { readEntries, validateEntries } from './content-validation.mjs';
-import { sourceSchema, claimSchema, guideSchema, distributionSchema } from '../src/lib/editorial-schema.mjs';
+import { guideSchema, distributionSchema } from '../src/lib/editorial-schema.mjs';
 import { validateDistribution } from '../src/lib/distribution.mjs';
 import { createReleaseReport, releasePlanSchema, releaseGateIssues } from '../src/lib/release-readiness.mjs';
+import { readEditorialData } from './editorial-data.mjs';
 
 try {
   const { values } = parseArgs({ options: { json: { type: 'boolean' }, 'require-ready': { type: 'boolean' }, help: { type: 'boolean' } } });
@@ -14,9 +15,7 @@ try {
     process.exit(0);
   }
   const read = async (name) => JSON.parse(await readFile(`src/data/${name}.json`, 'utf8'));
-  const [rawSources, rawClaims, rawChannels, rawPlan, rawEntries] = await Promise.all([read('sources'), read('claims'), read('distribution'), read('release-plan'), readEntries()]);
-  const sources = z.array(sourceSchema).parse(rawSources);
-  const claims = z.array(claimSchema).parse(rawClaims);
+  const [{ sources, claims }, rawChannels, rawPlan, rawEntries] = await Promise.all([readEditorialData(), read('distribution'), read('release-plan'), readEntries()]);
   const channels = z.array(distributionSchema).parse(rawChannels);
   const plan = releasePlanSchema.parse(rawPlan);
   const entries = rawEntries.map((entry) => ({ ...entry, data: guideSchema.parse(entry.data) }));

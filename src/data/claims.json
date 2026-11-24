@@ -77,25 +77,23 @@
   },
   {
     "id": "cn-ios-store",
-    "revision": 2,
-    "text": "国服官网链接中国区 App Store；商店标注预计 2026 年 11 月 26 日推出。",
+    "revision": 3,
+    "text": "国服App Store已显示1.0.1、3.9GB，官方宣布iOS预下载开始；入口身份已核实，未实际安装。",
     "localized": {
       "zh-hans": {
-        "summary": "国服官网链接中国区 App Store；商店标注预计 2026 年 11 月 26 日推出。",
-        "detail": "商店展示预约与预计推出状态，不代表现在已可下载或登录。"
+        "summary": "国服App Store已显示1.0.1、3.9GB，官方宣布iOS预下载开始；入口身份已核实，未实际安装。"
       },
       "ja": {
-        "summary": "公式サイトから中国本土向けApp Storeへのリンクを確認。ストアは2026年11月26日の配信予定と表示しています。",
-        "detail": "ストアの予約・配信予定の表示であり、現時点でダウンロードやログインが可能と確定したものではありません。"
+        "summary": "中国区App Storeは1.0.1・3.9GBを表示。公式がiOS事前DL開始を案内していますが、実際のインストールは未実施です。"
       }
     },
     "sourceRefs": [
-      "cn-official-home-2026-11-14",
-      "cn-app-store-2026-11-14"
+      "cn-preload-open-2026-11-24",
+      "cn-ios-store-followup-2026-11-24"
     ],
     "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "verification": "verified",
     "affectedPages": [
       "download",
@@ -104,12 +102,13 @@
     ],
     "conflicts": [],
     "value": {
-      "url": "https://apps.apple.com/cn/app/%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F-%E6%97%85%E8%B0%A3/id6754017631",
+      "date": "2026-11-26",
+      "url": "https://apps.apple.com/cn/app/id6754017631",
+      "availability": "preload",
       "platforms": [
-        "iPhone",
-        "iPad"
-      ],
-      "availability": "reservation"
+        "iOS",
+        "iPadOS"
+      ]
     },
     "distributionScope": {
       "region": "cn",
@@ -153,34 +152,37 @@
   },
   {
     "id": "cn-opening-time",
-    "revision": 3,
-    "text": "中国大陆具体开服小时待重新核验。",
+    "revision": 4,
+    "text": "国服公测计划为2026年11月26日10:00（UTC+8），以当日官方调整为准；尚未实测服务器可登录。",
     "localized": {
       "zh-hans": {
-        "summary": "中国大陆具体开服小时待重新核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "国服公测计划为2026年11月26日10:00（UTC+8），以当日官方调整为准；尚未实测服务器可登录。"
       },
       "ja": {
-        "summary": "中国本土の具体的なサービス開始時刻は再確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "中国本土の正式サービスは2026年11月26日10:00（UTC+8、日本時間11:00）予定。実際のログイン可否は未検証です。"
       }
     },
     "sourceRefs": [
-      "cn-livestream-recap-2026-11-20"
+      "cn-launch-faq-2026-11-24"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前瞻版本",
-    "verification": "pending",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "verification": "verified",
     "affectedPages": [
       "launch",
       "global-release",
       "getting-started",
       "download",
-      "platforms"
+      "platforms",
+      "requirements"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-26",
+      "time": "10:00",
+      "timeZone": "Asia/Shanghai"
+    },
     "distributionScope": {
       "region": "cn",
       "release": "public-launch"
@@ -188,22 +190,23 @@
   },
   {
     "id": "cn-platform-details",
-    "revision": 1,
-    "text": "PC、Android 公测客户端入口及跨端互通规则仍待逐项核验。",
+    "revision": 3,
+    "text": "国服官网已显示PC、Android下载按钮，且公告确认预下载开启；本轮点击未取得安装器文件，具体文件仍待验证。",
     "localized": {
       "zh-hans": {
-        "summary": "PC、Android 公测客户端入口及跨端互通规则仍待逐项核验。"
+        "summary": "国服官网已显示PC、Android下载按钮，且公告确认预下载开启；本轮点击未取得安装器文件，具体文件仍待验证。"
       },
       "ja": {
-        "summary": "PC・Androidの正式配布先と端末間のデータ共有条件は、引き続き確認が必要です。"
+        "summary": "中国本土公式にPC・Androidのボタンが表示され、事前DL開始も発表済み。今回クリックで配布ファイルを取得できず、ファイル自体は未検証です。"
       }
     },
     "sourceRefs": [
-      "cn-official-home-2026-11-14"
+      "cn-preload-open-2026-11-24",
+      "cn-download-home-followup-2026-11-24"
     ],
     "type": "pending",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "verification": "pending",
     "affectedPages": [
       "download",
@@ -322,24 +325,22 @@
   },
   {
     "id": "cn-preload-status",
-    "revision": 4,
-    "text": "国服官网巢穴探索规则列出预下载计划：2026年11月24日15:00（UTC+8）。",
+    "revision": 6,
+    "text": "国服官方公告确认预下载于11月24日15:00（UTC+8）开始，PC/Android/iOS/鸿蒙同步开放；客户端及增量资源需分别完成。",
     "localized": {
       "zh-hans": {
-        "summary": "国服预下载计划为2026年11月24日15:00（北京时间）。",
-        "detail": "依据国服巢穴探索活动规则；具体设备、当前安装器及实际开放另核，不作为开服小时。"
+        "summary": "国服官方公告确认预下载于11月24日15:00（UTC+8）开始，PC/Android/iOS/鸿蒙同步开放；客户端及增量资源需分别完成。"
       },
       "ja": {
-        "summary": "中国本土の事前ダウンロードは2026年11月24日15:00（UTC+8、日本時間16:00）の予定。",
-        "detail": "中国本土の巣穴探索イベント規約が根拠です。機種別の配布、現在のインストール可否、ゲーム開始時刻は別途確認します。"
+        "summary": "中国本土公式が11月24日15:00（UTC+8）の4機種事前DL開始を発表。本体と差分資源を取得します。"
       }
     },
     "sourceRefs": [
-      "cn-kibo-adventure-rules-2026-11-21"
+      "cn-preload-open-2026-11-24"
     ],
     "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前网页活动规则",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "verification": "verified",
     "affectedPages": [
       "download",
@@ -352,7 +353,15 @@
     "value": {
       "date": "2026-11-24",
       "time": "15:00",
-      "timeZone": "Asia/Shanghai"
+      "timeZone": "Asia/Shanghai",
+      "availability": "preload",
+      "url": "https://azurpromilia.manjuu.com/home/",
+      "platforms": [
+        "Windows",
+        "Android",
+        "iOS",
+        "HarmonyOS"
+      ]
     },
     "distributionScope": {
       "region": "cn",
@@ -360,29 +369,27 @@
     }
   },
   {
-    "revision": 1,
+    "revision": 2,
     "gameRegion": "日本",
-    "gameVersion": "正式发行前",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "conflicts": [],
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
     },
     "id": "jp-official-entry",
-    "text": "日本官网已提供iOS与Android事前注册页，预约不等于可下载安装。",
+    "text": "日本官方已宣布手机预下载开始；官网App Store与Google Play入口身份已核实，当前账号可安装状态仍需商店确认。",
     "localized": {
       "zh-hans": {
-        "summary": "日本官网提供 App Store / Google Play 事前注册入口。",
-        "detail": "先进入日本官方事前注册页，再按设备核对商店地区与账号条件；本站未代办注册，也未确认已开放安装。"
+        "summary": "日本官方已宣布手机预下载开始；官网App Store与Google Play入口身份已核实，当前账号可安装状态仍需商店确认。"
       },
       "ja": {
-        "summary": "日本公式サイトでApp Store・Google Playの事前登録先を案内しています。",
-        "detail": "公式の事前登録ページで利用するストアを選び、地域・アカウントの条件を確認してください。登録済みでも、すぐにインストールできるとは限りません。"
+        "summary": "日本公式はスマホ事前DL開始を発表。公式サイトのApp Store・Google PlayのアプリIDを照合済みで、個別アカウントのインストール可否はストアで確認します。"
       }
     },
     "sourceRefs": [
-      "jp-official-home-2026-11-14",
-      "jp-pre-register-2026-11-14"
+      "jp-preload-open-2026-11-24",
+      "jp-distribution-home-2026-11-24"
     ],
     "type": "official",
     "verification": "verified",
@@ -396,8 +403,8 @@
       "reroll"
     ],
     "value": {
-      "url": "https://azurpromilia.jp/pre-register/",
-      "availability": "reservation",
+      "url": "https://azurpromilia.jp/",
+      "availability": "preload",
       "platforms": [
         "iOS",
         "Android"
@@ -445,59 +452,61 @@
     }
   },
   {
-    "revision": 1,
+    "revision": 3,
     "gameRegion": "日本",
-    "gameVersion": "正式发行前",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "conflicts": [],
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
     },
     "id": "jp-platform-details",
-    "text": "日本PC正式安装器、完整设备要求及跨端互通规则仍待核验。",
+    "text": "日本公告给出独立PC下载页，页面已核实并提供Yostar启动器1.8.1链接；文件HEAD返回403，未下载或运行。",
     "localized": {
       "zh-hans": {
-        "summary": "日本 PC 正式安装器与跨端互通条件仍待核验。",
-        "detail": "官方已列出计划平台，但本轮没有确认可直接下载的PC安装器；不把手机事前注册页标为PC下载入口。"
+        "summary": "日本公告给出独立PC下载页，页面已核实并提供Yostar启动器1.8.1链接；文件HEAD返回403，未下载或运行。"
       },
       "ja": {
-        "summary": "日本向けPC版の正式な配布先と、端末間のデータ共有条件は確認中です。",
-        "detail": "対応予定の記載は確認済みですが、今回、PC版のインストーラーは確認できていません。スマートフォン向け事前登録をPC版のダウンロードとして案内しません。"
+        "summary": "日本公式のPC専用ページとYostarランチャー1.8.1のリンクを確認。ファイルへのHEAD取得は403で、ダウンロード・実行は未実施です。"
       }
     },
     "sourceRefs": [
-      "jp-publishing-2025-12-15",
-      "jp-official-home-2026-11-14"
+      "jp-preload-open-2026-11-24",
+      "jp-pc-download-page-2026-11-24"
     ],
-    "type": "pending",
-    "verification": "pending",
+    "type": "official",
+    "verification": "verified",
     "affectedPages": [
       "download",
       "platforms",
       "requirements"
     ],
-    "value": {}
+    "value": {
+      "url": "https://azurpromilia.jp/PCdownload",
+      "availability": "preload",
+      "platforms": [
+        "Windows"
+      ]
+    }
   },
   {
     "id": "jp-preload-status",
-    "revision": 4,
-    "text": "日本官方网页活动规则列出事前下载计划：2026年11月24日16:00（日本时间）。",
+    "revision": 6,
+    "text": "日本官方公告确认11月24日16:00（日本时间）开始PC/Android/iOS预下载；本体后仍需追加数据，实际大小看客户端。",
     "localized": {
       "zh-hans": {
-        "summary": "日本预下载计划为2026年11月24日16:00（日本时间），即北京时间15:00。",
-        "detail": "依据日本巢穴探索活动规则；未确认当前已开放、全部平台范围或正式安装器，不作为开服小时。"
+        "summary": "日本官方公告确认11月24日16:00（日本时间）开始PC/Android/iOS预下载；本体后仍需追加数据，实际大小看客户端。"
       },
       "ja": {
-        "summary": "日本向け事前ダウンロードは2026年11月24日16:00（日本時間）の予定。",
-        "detail": "キボの巣穴探索の公式ルールに記載。現在の配布開始、全機種の対応やゲーム開始時刻は別途確認します。"
+        "summary": "日本公式は11月24日16:00のPC・Android・iOS事前DL開始を発表。本体後に追加データが必要で、容量はクライアント表示を確認します。"
       }
     },
     "sourceRefs": [
-      "jp-kibo-adventure-rules-2026-11-21"
+      "jp-preload-open-2026-11-24"
     ],
     "type": "official",
     "gameRegion": "日本",
-    "gameVersion": "正式发行前",
+    "gameVersion": "2026-11-24 预下载开始公告后",
     "verification": "verified",
     "affectedPages": [
       "launch",
@@ -510,7 +519,14 @@
     "value": {
       "date": "2026-11-24",
       "time": "16:00",
-      "timeZone": "Asia/Tokyo"
+      "timeZone": "Asia/Tokyo",
+      "availability": "preload",
+      "url": "https://azurpromilia.jp/",
+      "platforms": [
+        "Windows",
+        "Android",
+        "iOS"
+      ]
     },
     "distributionScope": {
       "region": "jp",
@@ -549,32 +565,35 @@
   },
   {
     "id": "cn-banner-rules-system",
-    "revision": 2,
-    "text": "中国大陆公测抽卡概率、保底与继承规则待逐项核验。",
+    "revision": 3,
+    "text": "国服当期「桃笺为契」角色池连续70次未得限定五星后递增、第90次必得；「绯影入怀」灵子池为60次后递增、第80次必得。同类观测内共享及继承，获得对应限定五星后重新计数；完整概率与票券用途仍待游戏内详情。",
     "localized": {
       "zh-hans": {
-        "summary": "中国大陆公测抽卡概率、保底与继承规则待逐项核验。",
-        "detail": "此前来源已暂停引用，未从日期、其他地区或其他游戏规则补推结论。"
+        "summary": "国服当期「桃笺为契」角色池连续70次未得限定五星后递增、第90次必得；「绯影入怀」灵子池为60次后递增、第80次必得。同类观测内共享及继承，获得对应限定五星后重新计数；完整概率与票券用途仍待游戏内详情。"
       },
       "ja": {
-        "summary": "中国本土の正式版ガチャ確率・天井・引き継ぎ条件は個別に確認中です。",
-        "detail": "以前の出典は参照を停止しています。他地域や他作品の仕様から補いません。"
+        "summary": "中国本土の当期キャラ「桃笺为契」は70回未獲得後に確率上昇・90回保証、霊子「绯影入怀」は60回後に上昇・80回保証。同種内で共有・引き継ぎ、限定星5獲得後にリセット。全確率・券種と日本版の条件は別確認。"
       }
     },
     "sourceRefs": [
-      "cn-livestream-recap-2026-11-20",
-      "jp-livestream-recap-2026-11-20"
+      "cn-character-banner-2026-11-24",
+      "cn-anima-banner-2026-11-24"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "公测前瞻版本",
-    "verification": "pending",
+    "gameVersion": "2026-11-24 公测当期两项观测公告",
+    "verification": "verified",
     "affectedPages": [
       "banner-rules",
-      "reroll"
+      "reroll",
+      "resources"
     ],
     "conflicts": [],
-    "value": {}
+    "value": {},
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    }
   },
   {
     "id": "cn-opening-rewards-resource",
@@ -610,32 +629,37 @@
   },
   {
     "id": "jp-opening-time",
-    "revision": 1,
-    "text": "日本地区具体开服小时待独立核验。",
+    "revision": 2,
+    "text": "日本正式服务计划为2026年11月26日11:00（日本时间，即北京时间10:00）；尚未实测可登录。",
     "localized": {
       "zh-hans": {
-        "summary": "日本地区具体开服小时待独立核验。"
+        "summary": "日本正式服务计划为2026年11月26日11:00（日本时间，即北京时间10:00）；尚未实测可登录。"
       },
       "ja": {
-        "summary": "日本向けの具体的な開始時刻は独立した公式根拠を確認中です。"
+        "summary": "日本の正式サービスは2026年11月26日11:00（日本時間）予定。実際のログイン可否は未検証です。"
       }
     },
     "sourceRefs": [
-      "jp-official-home-2026-11-14"
+      "jp-launch-faq-2026-11-24"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "日本",
-    "gameVersion": "正式发行前",
-    "verification": "pending",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "verification": "verified",
     "affectedPages": [
       "launch",
       "global-release",
       "download",
       "platforms",
-      "getting-started"
+      "getting-started",
+      "requirements"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "date": "2026-11-26",
+      "time": "11:00",
+      "timeZone": "Asia/Tokyo"
+    },
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
@@ -940,6 +964,354 @@
         "iOS",
         "Android"
       ]
+    }
+  },
+  {
+    "id": "cn-public-launch-requirements",
+    "revision": 1,
+    "text": "国服FAQ建议PC预留120GB以上、Android/iOS/鸿蒙55GB以上；PC推荐SSD。这些是建议预留空间，不是实测包体或安装占用。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服FAQ建议PC预留120GB以上、Android/iOS/鸿蒙55GB以上；PC推荐SSD。这些是建议预留空间，不是实测包体或安装占用。"
+      },
+      "ja": {
+        "summary": "中国本土FAQはPCに120GB以上、Android/iOS/鴻蒙に55GB以上の空き容量を推奨。PCはSSDを推奨。実測の配布・占有サイズではありません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-faq-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements",
+      "getting-started",
+      "launch",
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "jp-public-launch-requirements",
+    "revision": 1,
+    "text": "日本FAQ建议PC预留120GB以上、Android/iOS预留55GB以上，PC推荐SSD；并分别列出最低与推荐硬件。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本FAQ建议PC预留120GB以上、Android/iOS预留55GB以上，PC推荐SSD；并分别列出最低与推荐硬件。"
+      },
+      "ja": {
+        "summary": "日本FAQはPCに120GB以上、Android/iOSに55GB以上の空き容量を推奨。PCはSSDを推奨し、最低・推奨動作環境を分けて掲載しています。"
+      }
+    },
+    "sourceRefs": [
+      "jp-launch-faq-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements",
+      "getting-started",
+      "launch",
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-public-launch-platform-rules",
+    "revision": 1,
+    "text": "国服FAQ列PC、Android、iOS、鸿蒙；官方服务器同账号四端游戏进度同步，部分渠道服与官方服数据不互通。旧旅迹测试客户端不支持直接更新。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服FAQ列PC、Android、iOS、鸿蒙；官方服务器同账号四端游戏进度同步，部分渠道服与官方服数据不互通。旧旅迹测试客户端不支持直接更新。"
+      },
+      "ja": {
+        "summary": "中国本土FAQはPC・Android・iOS・鴻蒙を案内。公式サーバーの同一アカウントで進行状況を共有し、一部チャネル版は公式サーバーと共有されません。旧「旅迹测试」版から直接更新はできません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-launch-faq-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements",
+      "getting-started",
+      "launch",
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "platforms": [
+        "Windows",
+        "Android",
+        "iOS",
+        "HarmonyOS"
+      ]
+    }
+  },
+  {
+    "id": "jp-public-launch-platform-rules",
+    "revision": 1,
+    "text": "日本FAQ确认同账号在PC、Android、iOS间共享游戏进度；PC通过官网提供的Yostar官方启动器下载本体，随后按客户端提示追加数据。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本FAQ确认同账号在PC、Android、iOS间共享游戏进度；PC通过官网提供的Yostar官方启动器下载本体，随后按客户端提示追加数据。"
+      },
+      "ja": {
+        "summary": "日本FAQはPC・Android・iOS間の同一アカウントでのプレイデータ共有を案内。PCは公式サイトのYostar公式ランチャーから本体を取得し、起動後に追加データをダウンロードします。"
+      }
+    },
+    "sourceRefs": [
+      "jp-launch-faq-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "platforms",
+      "requirements",
+      "getting-started",
+      "launch",
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "platforms": [
+        "Windows",
+        "Android",
+        "iOS"
+      ]
+    }
+  },
+  {
+    "id": "jp-ios-store-metadata",
+    "revision": 1,
+    "text": "Apple日本区元数据：最低OS15.0、分发体积3,644,462,080字节（约3.64GB，十进制）；不能替代FAQ建议55GB预留空间。",
+    "localized": {
+      "zh-hans": {
+        "summary": "Apple日本区元数据：最低OS15.0、分发体积3,644,462,080字节（约3.64GB，十进制）；不能替代FAQ建议55GB预留空间。"
+      },
+      "ja": {
+        "summary": "Appleの日本向けメタデータは最低OS15.0、配布サイズ3,644,462,080バイト（約3.64GB、十進表記）。FAQの推奨空き容量55GBとは別の値です。"
+      }
+    },
+    "sourceRefs": [
+      "jp-apple-metadata-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "2026-11-24公测FAQ / 正式服开放前",
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "requirements",
+      "download"
+    ],
+    "conflicts": [],
+    "value": {
+      "minimumOS": "iOS 15.0"
+    }
+  },
+  {
+    "id": "jp-preregister-benefits",
+    "revision": 1,
+    "text": "日本FAQ确认预约特典在正式服务开始后经游戏内邮件领取，列出星彩・クロディーメ、無垢な痕跡等；预约页展示人数奖励。巢穴探索首个角色与365日期限不自动推广至预约特典。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本预约特典由FAQ说明在正式服务开始后经游戏内邮件领取，列出「星彩・クロディーメ」「無垢な痕跡」等。",
+        "detail": "预约页展示アニス×1等人数奖励；無垢な痕跡三个档位3+5+12合计20枚只是列值合计，不是限定抽数或个人已到账证明。巢穴的首个角色与365日期限不自动用于预约特典。"
+      },
+      "ja": {
+        "summary": "日本の事前登録特典は正式サービス開始後にゲーム内メールで受取。FAQは「星彩・クロディーメ」「無垢な痕跡」などを案内。",
+        "detail": "事前登録ページはアニス×1などの人数別報酬を表示。無垢な痕跡3+5+12=20個は表示数量の合計で、限定回数・個別配布の保証ではありません。巣穴の最初のキャラ・365日条件を流用しません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-launch-faq-2026-11-24",
+      "jp-preregister-benefits-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前 / 2026-11-24 FAQ第3节及预约页",
+    "verification": "verified",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "reroll",
+      "kibo-guide"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    }
+  },
+  {
+    "id": "jp-launch-troubleshooting",
+    "revision": 1,
+    "text": "日本FAQ第4节分别说明PC校验失败、追加数据失败与游玩中强制关闭的处理顺序，第5节列UID、机型、OS、问题、时间与截图；官网另有日语客服入口。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本FAQ区分重启启动器、游戏和设备：分别对应PC校验、追加数据与游玩中闪退的处理。",
+        "detail": "按原文顺序仍未解决时联系官方，记录UID、机型、OS、问题、发生时间与截图。官网日语受理并经填写的邮箱回复；不将该流程推广到国服。"
+      },
+      "ja": {
+        "summary": "日本FAQはPC検証・追加データ・プレイ中の強制終了を分け、ランチャー・ゲーム・端末それぞれの再起動を案内。",
+        "detail": "未解決ならUID、機種、OS、問題、日時、関連画像を添えて公式へ。サイト窓口は日本語受付・入力メールへ返信。他地域の案内へ流用しません。"
+      }
+    },
+    "sourceRefs": [
+      "jp-launch-faq-2026-11-24",
+      "jp-support-page-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "正式发行前 / 2026-11-24 FAQ第4・5节",
+    "verification": "verified",
+    "affectedPages": [
+      "download",
+      "requirements",
+      "getting-started"
+    ],
+    "conflicts": [],
+    "value": {},
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    }
+  },
+  {
+    "revision": 1,
+    "type": "official",
+    "verification": "verified",
+    "conflicts": [],
+    "value": {},
+    "id": "cn-test-recharge-return",
+    "sourceRefs": [
+      "cn-launch-returns-rewards-2026-11-24"
+    ],
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前 / 旅迹测试充值返还FAQ",
+    "affectedPages": [
+      "recharge-return",
+      "resources",
+      "getting-started",
+      "reroll"
+    ],
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    },
+    "text": "国服旅迹测试返还由原充值账号在公测后邮箱领取，不跨账号；1元折10星虹，2000元内200%、2000至5000元部分150%、5000以上部分125%，另按购买返凭证。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服测试充值按原账号邮件返还，分段200%／150%／125%；渠道使用对应客户端，不支持跨账号。",
+        "detail": "公测后365天内含第365天注册创角，另有邮件领取有效期365天；凭证领到背包后主动用、使用前不失效，不能套巢穴首次登录365日。"
+      },
+      "ja": {
+        "summary": "中国本土テスト課金は元のアカウントのメールへ返還。区間別200%・150%・125%、別アカウント移転不可。",
+        "detail": "公測後365日以内の登録・作成と、メール受取365日を区別。証票はバッグで使用し、有効化前は失効しない。日本版へ流用しません。"
+      }
+    }
+  },
+  {
+    "revision": 1,
+    "type": "official",
+    "verification": "verified",
+    "conflicts": [],
+    "value": {},
+    "id": "cn-preregister-mail-benefits",
+    "sourceRefs": [
+      "cn-launch-returns-rewards-2026-11-24"
+    ],
+    "gameRegion": "中国大陆",
+    "gameVersion": "公测前 / 2026-11-24 FAQ预约奖励",
+    "affectedPages": [
+      "resources",
+      "getting-started",
+      "reroll"
+    ],
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    },
+    "text": "国服FAQ确认全球预约与社媒里程碑全部解锁，公测后同账号邮箱解锁可领艾妮丝、星彩·浮云、纯粹忆痕×20等；渠道按原渠道账号及说明领取。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服FAQ确认预约／社媒里程碑已全部解锁：公测后邮箱解锁可领艾妮丝、星彩·浮云、纯粹忆痕×20等。",
+        "detail": "四端同账号可领取，渠道账号须对应客户端；完整活动规则仍按地区和渠道。预约、测试充值返还、巢穴来源及期限分开。"
+      },
+      "ja": {
+        "summary": "中国本土FAQは事前登録・SNS報酬の全解放を案内。配信後のメール解放で艾妮丝・星彩·浮云・纯粹忆痕×20などを受取。",
+        "detail": "同アカウントの4機種に対応、チャネルは対応クライアントへ。課金返還や巣穴の期限を流用せず、日本特典とも分けます。"
+      }
+    }
+  },
+  {
+    "revision": 1,
+    "type": "official",
+    "verification": "verified",
+    "conflicts": [],
+    "value": {},
+    "id": "jp-account-deletion-terms",
+    "sourceRefs": [
+      "jp-account-terms-2026-11-24"
+    ],
+    "gameRegion": "日本",
+    "gameVersion": "2026-11-24 利用规约第4条6项",
+    "affectedPages": [
+      "reroll"
+    ],
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "text": "日本利用规约第4条6项说明账号删除后利用权消灭，即使误删也无法恢复；此条款不是删除操作教程或游客重置规则。",
+    "localized": {
+      "zh-hans": {
+        "summary": "日本利用规约第4条6项说明：账号删除后无法恢复，即使误删也同样适用。",
+        "detail": "只说明删除后果，不代表所有登录异常都无法恢复，也不提供重置、游客、改绑或删除菜单。"
+      },
+      "ja": {
+        "summary": "日本利用規約第4条6項は、誤って削除した場合もアカウントを復旧できないと説明。",
+        "detail": "削除の結果に関する条項です。ログイン不能全般の復旧不可、ゲストのリセット、削除メニューを確認したわけではありません。"
+      }
     }
   }
 ]

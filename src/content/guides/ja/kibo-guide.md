@@ -1,35 +1,78 @@
 ---
-contentId: "kibo-guide"
-locale: "ja"
-slug: "kibo"
-section: "systems"
-title: "キボ入門：特典の受取・用途・育成前の確認"
-description: "地域ごとのWeb特典と配布先を確認し、探索・戦闘・ホームの用途とゲーム内入手の未確認条件を整理します。"
-author: "Promilia Guide 編集部"
+contentId: kibo-guide
+locale: ja
+slug: kibo
+section: systems
+title: アズールプロミリアのキボ入手：事前登録・巣穴特典の違い
+description: 日本の星彩・クロディーメは事前登録特典、星彩・キラミィは巣穴探索。メール・参加ID・期限を分け、野外入手や用途の未確認条件も整理します。
+author: Promilia Guide 編集部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-21"
-gameVersion: "正式配信前／操作手順は正式版で確認予定"
-gameRegion: "中国本土・日本（地域別明記）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","jp-kibo-adventure-rules-2026-11-21","cn-kibo-adventure-rules-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
-sourceRevision: 3
-translationStatus: "published"
-aliases: ["奇波获取","キボ 入手","キボ 育成"]
-related: ["getting-started","resources","home"]
+updatedAt: "2026-11-24"
+gameVersion: サービス開始前 / 2026-11-24 日本の事前登録報酬照合
+gameRegion: 中国本土・日本（地域別明記）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-benefits-images-2026-11-21
+  - jp-kibo-adventure-rules-2026-11-21
+  - cn-kibo-adventure-rules-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - jp-google-play-2026-11-21
+  - jp-release-special-2026-11-20
+  - jp-launch-faq-2026-11-24
+  - jp-preregister-benefits-2026-11-24
+sourceRevision: 4
+translationStatus: published
+aliases:
+  - 奇波获取
+  - キボ 入手
+  - キボ 育成
+  - アズプロ キボ 入手
+  - クロディーメ 入手
+  - キラミィ 入手
+related:
+  - getting-started
+  - resources
+  - home
 order: 13
 minutes: 7
-revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
-claimRefs: ["cn-rewards-conditions","jp-kibo-web-rewards","cn-kibo-web-rewards","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
-claimRevisions: {"cn-rewards-conditions":1,"jp-kibo-web-rewards":1,"cn-kibo-web-rewards":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
-translatedFromRevision: 3
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions:
+  - date: "2026-11-21"
+    note: 需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。
+  - date: "2026-11-21"
+    note: 第2ラウンド：中国本土の巣穴探索原文と事前DL予定を追加照合。受取手順・期限・ガチャ確認表を更新。本文・言語レビュー待ち。
+  - date: "2026-11-21"
+    note: 第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。
+  - date: "2026-11-21"
+    note: プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。
+  - date: "2026-11-24"
+    note: 日本FAQ第3節と事前登録の人数別報酬を照合。事前登録特典と巣穴探索のメール・キャラ・期限を分け、受取確認と初日の導線を補完。本文・訳文は引き続きレビュー待ち。
+  - date: "2026-11-24"
+    note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
+claimRefs:
+  - cn-rewards-conditions
+  - jp-kibo-web-rewards
+  - cn-kibo-web-rewards
+  - cn-store-home-kibo-overview
+  - jp-store-home-kibo-overview
+  - jp-preregister-benefits
+claimRevisions:
+  cn-rewards-conditions: 1
+  jp-kibo-web-rewards: 1
+  cn-kibo-web-rewards: 1
+  cn-store-home-kibo-overview: 1
+  jp-store-home-kibo-overview: 1
+  jp-preregister-benefits: 1
+translatedFromRevision: 4
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-24"
 ---
 
-## Web特典とゲーム内入手を分ける
+## キボは入手元ごとに確認：事前登録と巣穴は別
 
-公式の紹介、Webイベント特典、ゲーム内での捕獲は別の入手経路です。一覧に名前があるだけでは場所、必要アイテム、配置、正式版能力を確定できません。ここでは原文で確認できた特典と選び方を整理します。
+**日本の「星彩・クロディーメ」は事前登録特典、「星彩・キラミィ」は巣穴探索の報酬です。** 前者は日本FAQが正式サービス開始後のゲーム内メール受取を案内。後者はWebで探索して獲得し、参加Yostar IDの最初のキャラに配布されます。
+
+公式紹介、特典の受取、ゲーム内での捕獲は別の経路です。名前だけで野外の場所、必要アイテム、技能、ホーム適性を確定せず、地域別の原名を残して確認します。
 
 ## 確認できた特典経路
 
@@ -38,9 +81,22 @@ reviewedAt: "2026-11-21"
 | 中国本土の予約・SNS達成報酬 | 星彩·浮云 | 中国本土画像にログイン受取と記載。入口・期限は別途確認 |
 | 中国本土のログイン特典 | 星彩·耶罗达 | 画像に入手を記載。配布時の色は実際の案内による |
 | 中国本土の巣穴探索 | 星彩·小星喵 | 探索報酬の一つ。参加した蛮啾通行证の最初のキャラへメール配布 |
+| 日本の事前登録・SNS特典 | 星彩・クロディーメ | 日本FAQは配信後のゲーム内メール受取を案内。個別資格・数量・期限は別確認 |
 | 日本の巣穴探索 | 星彩・キラミィ | 探索報酬の一つ。参加Yostar IDで最初に作ったキャラへメール配布 |
 
 地域別名称を自動的に同一個体へ統合せず、野外捕獲も同時に可能だとは判断しません。日本イベントは12月31日13:00まで（日本時間）。獲得済み探索報酬はゲームへの初回ログインから365日以内に受け取ります。任務切替と協力条件は[報酬案内](/ja/guides/resources/)へ。
+
+## クロディーメとキラミィが届かないとき
+
+[日本事前登録ページ](https://azurpromilia.jp/pre-register/)は「星彩・クロディーメ」をグローバル公式SNS総フォロワー数500万人とともに表示。[FAQ第3節](https://azurpromilia.jp/news/5190)も事前登録特典に含め、配信後のメール受取を案内しています。巣穴探索の最大9回に含まれる「星彩・キラミィ」とは分けて確認します。
+
+| 探しているキボ | 優先確認 | 流用しない条件 |
+| --- | --- | --- |
+| 星彩・クロディーメ | 日本の事前登録・SNS配布告知、ゲーム内メール、添付 | 巣穴の最初のキャラ・365日・探索回数 |
+| 星彩・キラミィ | 巣穴の参加Yostar ID、探索バッグ、最初のキャラ、メール | 事前登録だけで巣穴の獲得完了と判断しない |
+| 野外のキボ | 現在の図鑑、任務、入手元、前提 | 特典から野外座標や捕獲成功を推測しない |
+
+受取時は添付の原名と所持数を確認してください。直接仲間になるのか、別アイテムから解放するのかは実画面で照合し、今回は操作済みとは扱いません。「星彩」や無料入手だけで戦闘性能、育成費、ホーム適性も判断しません。[特典・未着時の確認](/ja/guides/resources/)で条件を調べてください。
 
 ## 確認できた絆と用途
 

@@ -25,6 +25,8 @@ npm run preview
 
 `preview` 只读取上一次生成的 `dist/`。如需在开发服务器同时预览搜索，先 `build:preview`，再启动 `dev` 也不会自动提供 `dist/pagefind`；请使用上述静态预览流程。
 
+最新发布批次：[2026-11-24全部开发内容发布](research/2026-11-24-full-release/README.md)。用户已明确要求全部上线及线上验证，22篇当前新稿／修订与9项共享事实一起转为正式版本；现28/28篇可发布、待审0，部署与验收以该批记录和main Actions为准。
+
 ## 当前交付范围
 
 - 语言选择、双语首页、攻略/系统目录、正文与侧边目录、来源与修订、相关文章、关于/编辑规范/反馈/更新页、404。
@@ -43,7 +45,7 @@ npm run preview
 
 来源修复过程见[核验记录](research/2026-11-21-evidence-repair.md)。国服福利新公告可支持登录 66 抽、探索与任务累计 510 抽以上；不能据此证明卡池保底、直播码、首日领取方式或日本规则。
 
-国服与日本分别有独立的 **2026-11-26** 官方日程，两份已读日期公告都未给出具体开服小时。中国区 App Store 的 iOS 15.0 / iPadOS 15.0 是该区兼容条件，不能用作推荐性能、完整空间或日本版要求。日本手机事前注册已确认；国服 PC/安卓和日本 PC 正式安装器、两地预下载、互通与完整配置仍待核验。详见[首轮官方来源记录](research/2026-11-14-official-sources.md)、[日本发行补证](research/2026-11-14-japan-release.md)及[人工审核交接清单](plans/CONTENT-REVIEW.md)。
+11月24日已独立核对两地FAQ及后续预下载开始公告，新增开服计划小时、配置、建议空间与地区内进度共享说明。日本PC独立下载页已核实，国服官网已显示下载按钮，国服商店后续展示1.0.1。12篇当前修订及8项共享事实覆盖正在编辑预览中待审；生产仍为此前获确认版本。详见[最新内容与证据](research/2026-11-24-distribution-followup/README.md)及[人工审核交接清单](plans/CONTENT-REVIEW.md)。安装文件取得、完整下载/占用与可登录状态尚未验证；中国区条件不用于填补日本资料。
 
 正式构建排除所有未审核文章；两种语言首页都分别显示中国大陆与日本的共享发行事实及对应原文，不根据阅读语言代选地区。日期到来后也不会自动显示已开服。日文正式游戏名「アズールプロミリア」和「キボ」已从日本官网核验；角色目录已收录 4 名官方公布角色，奇波目录已收录 5 种官方公布奇波，资料摘要详情保持 noindex，完整用途、技能倍率、养成材料、强度与获取地点仍等待独立证据和审核。
 
@@ -70,6 +72,7 @@ src/content/guides/{locale}/    Markdown 原稿与译稿
 src/content.config.ts          Astro / Zod 元数据校验
 src/data/sources.json          来源、原文、核对日期与状态
 src/data/claims.json           结论、证据性质和影响主题
+src/data/claim-revisions.json  随待审文章进入预览的共享事实修订
 src/data/distribution.json     地区/设备与事实依赖（不另存下载地址）
 src/data/release-plan.json     首发核心主题、必要事实与语言要求
 src/data/terms.json            稳定术语 ID 与别名
@@ -90,6 +93,8 @@ research/                      官方原始来源核验与结论边界
 ## 内容编辑与发布
 
 已发布文章需要实质重写时，可以在`src/content/revisions/{locale}/`准备同URL的待审修订。生产仍读取`guides/`中的已审稿；`CONTENT_PREVIEW=true`时，Astro、CLI和审核包统一选择新修订。新修订必须递增`sourceRevision`、清空旧审核人及日期，并保留draft状态。使用`CONTENT_PREVIEW=true npm run content:status`查看本批待审状态。真实确认后再将修订提升到`guides/`并移除待审文件。见[本轮优化与复查方案](plans/GSC-REFRESH-2026-11-23.md)。
+
+已有共享事实需要随新稿复核时，将完整新事实暂存`src/data/claim-revisions.json`，ID必须存在且revision必须递增。生产保留`claims.json`原值，预览统一覆盖；两种模式均检查修订结构。发布时须将获确认的文章与对应事实一起提升，清除已提升的覆盖项，复查全部依赖，再运行完整发布检查。本批交接见[11月24日修订](research/2026-11-24-preload-capacity/README.md)。
 
 2026-11-23后续已按Trends与预下载需求补充9主题18篇中日文修订。用户在预览交付后明确要求上线，本批已转入正式稿并独立记录[当前发布确认](research/2026-11-23-trends-content/release-approval.json)，26篇攻略均满足发布条件。新增日本Play预约展示与繁中官网商店身份核验；完整空间、PC安装器及开服小时仍待依据。截图实为连写词AzurPromilia，另补游戏主题研究，见[本轮内容与研究交付](research/2026-11-23-trends-content/README.md)。
 
@@ -202,7 +207,7 @@ Pages 项目 `promilia-guide` 已连接仓库。正式站为 [promiliaguide.com]
 
 入口事实通过 `value.availability` 区分 `reservation`、`preload`、`download`，必须同时提供原始 URL。下载/平台稿件必须引用速查组件的全部事实，构建时校验依赖和引用修订号，防止组件已更新而正文/来源列表漏审。
 
-本轮另核对两份旅迹测试原文：9月预下载面向获资格者，官方确认10月7日测试结束。旧测试中的 Windows/Android/iOS 和设备绑定条款不推定为11月公测规则。目前仍未确认PC/安卓公开公测客户端下载和公测预下载安排。
+历史旅迹测试原文说明9月预下载面向获资格者、10月7日测试结束。旧测试的设备绑定条款不推定为11月公测规则。11月24日公测FAQ现已补核预下载计划、平台与配置；实际PC/安卓公开安装器仍未取得核对，相关新结论随本批待审修订进入预览。
 
 ## 部署后的技术验收
 

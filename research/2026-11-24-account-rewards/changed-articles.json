@@ -1,0 +1,82 @@
+[
+  {
+    "contentId": "recharge-return",
+    "locale": "zh-hans",
+    "revision": 1,
+    "file": "src/content/guides/zh-hans/recharge-return.md",
+    "previousSha256": null,
+    "sha256": "8a2437229fd06746df82a48a35a83589bdf06846fc5dbcc59b379bc5787d43ef",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 10,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "previousSha256": "1beaaade31e3bbccd60c16808c99beba25e1f3ba2cbc347e1526c65d10f76291",
+    "sha256": "b10959d4669da048a897706a03927e86d2ba088de9d732d7694ca24b99ddd0f9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "zh-hans",
+    "revision": 14,
+    "file": "src/content/revisions/zh-hans/getting-started.md",
+    "previousSha256": "eb6e8f222b8d69e2da6dee13ff17ebed73462aef307e6c618bb1253f776a4256",
+    "sha256": "207a19eb9bd4e8cb9f66248558b9aa1451fbeb3a6d8723d1cbefd552e1af45c9",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "previousSha256": "d2c7f9f850f5a67cb6cf00dcfa289895fca7a953305f75abac560acd5f77347c",
+    "sha256": "2092bd82b5c22c2f0fda1ec45775ddd3c5a7ede590c3ca9098ca89fa3d249775",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "recharge-return",
+    "locale": "ja",
+    "revision": 1,
+    "file": "src/content/guides/ja/recharge-return.md",
+    "previousSha256": null,
+    "sha256": "363ae52256148aa5a554e9d580acf541990884e41037ed16c91677d04b265171",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 10,
+    "file": "src/content/revisions/ja/resources.md",
+    "previousSha256": "a21f9c84bb9ce09124ed95f0dcf7a2e7d4af6f029bbfd7580cd152d2272a83fe",
+    "sha256": "3b9d697c6330405d5cbbc577916d3769097fe57c0b3e1d00ae4a5fc4082d97a5",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "getting-started",
+    "locale": "ja",
+    "revision": 14,
+    "file": "src/content/revisions/ja/getting-started.md",
+    "previousSha256": "7aed79bbb23d77a6508a9148ac2d2e41bffc78df0757420ce7fcc8014b3b0627",
+    "sha256": "9d399887dbc759ee8a403f775bb121ed13d173a47e6f0c2565f5ac7d69602cf4",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/reroll.md",
+    "previousSha256": "d665867f1c566373ce470200532398a581ad43f7fa728354353ef0087b7b442e",
+    "sha256": "b7811eb26f1c4f40e2e7f89018cdf2a342423f675c95dc55a32be7cd20b7ed23",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

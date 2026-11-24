@@ -1,0 +1,294 @@
+{
+  "date": "2026-11-24",
+  "authorization": "将所有开发内容全部推送到线上，并且做好线上验证",
+  "authorizationContext": "用户在当前全部开发内容预览交付后明确要求上线；记录本次当前稿的发布确认，不声称另行完成独立日语审校或正式版实机操作。",
+  "reviewer": "项目负责人（会话发布确认）",
+  "scope": "11主题22篇当前中日文新稿/修订、9项共享事实覆盖及本批代码、证据、下载材料；既有6篇已审稿保持原记录。实体详情现有索引门槛和游戏未知事项不变。",
+  "articles": [
+    {
+      "contentId": "banner-rules",
+      "locale": "zh-hans",
+      "sourceRevision": 7,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/banner-rules.md",
+      "reviewedDraftSha256": "defe46046e1b13caa3a63816b01cb4eedc4be30abf58ee295d9b7cfd5883d459",
+      "publishedFile": "src/content/guides/zh-hans/banner-rules.md",
+      "publishedSha256": "27ace08e9270055fc10d99d737e3609b68c91dab658db70a940a2c9761f13512",
+      "bodySha256": "f534e0f2c2c4bf6fceb918d594a7cf1cb7bea2a29b6dd2832cf778a6c6ccfb94"
+    },
+    {
+      "contentId": "download",
+      "locale": "zh-hans",
+      "sourceRevision": 13,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/download.md",
+      "reviewedDraftSha256": "1602ce13ace0da296b4741716355af1d7f3b2b26fee182fe2c1d8dab939abde1",
+      "publishedFile": "src/content/guides/zh-hans/download.md",
+      "publishedSha256": "709631754d39b28f91fed3d16d972232d4095ed136b1bf80fd95557afc2bd1ba",
+      "bodySha256": "74830b926b14612ea88e2e89ee2a8f6584841c54a8f0002a835ad8c512e05041"
+    },
+    {
+      "contentId": "getting-started",
+      "locale": "zh-hans",
+      "sourceRevision": 14,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/getting-started.md",
+      "reviewedDraftSha256": "207a19eb9bd4e8cb9f66248558b9aa1451fbeb3a6d8723d1cbefd552e1af45c9",
+      "publishedFile": "src/content/guides/zh-hans/getting-started.md",
+      "publishedSha256": "b46c9b8116c6a054e024f356fe31b845938bd7545e1de04c8c1023dde33170dd",
+      "bodySha256": "b01a732e20b9577e67cb671bd5d24c26f76eda04b8f630810ad521bbbc37dbd2"
+    },
+    {
+      "contentId": "global-release",
+      "locale": "zh-hans",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/global-release.md",
+      "reviewedDraftSha256": "2e5876de60ee643e601f725801bcd87e25be5956cdfa8d489f4e6d2ee5842474",
+      "publishedFile": "src/content/guides/zh-hans/global-release.md",
+      "publishedSha256": "6015ae77afec472d2682ceb7cc18ae9e5577654b2ccf7925760bff53118ddec3",
+      "bodySha256": "e73f9297facc10b9b6980a10f28a847c1dfddec985f4798bd1472aaf66f6fdab"
+    },
+    {
+      "contentId": "kibo-guide",
+      "locale": "zh-hans",
+      "sourceRevision": 4,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/kibo-guide.md",
+      "reviewedDraftSha256": "1ea4baaebb90cfa3f41c894c5cbe98a3d2964d4b06ca185242d2d4bede64e50f",
+      "publishedFile": "src/content/guides/zh-hans/kibo-guide.md",
+      "publishedSha256": "2c7a9a8ba1237f02f3e729277bd257110deadc4f7ad500f69a552c6e3034f67e",
+      "bodySha256": "b390161234c5472c30e2e9ddee85137d9726b88c064a7820115349bb84784866"
+    },
+    {
+      "contentId": "launch",
+      "locale": "zh-hans",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/launch.md",
+      "reviewedDraftSha256": "b2defd9ee5ed4474d3448b625dbdd81fdd911b9f566eb855d30f65e7af033708",
+      "publishedFile": "src/content/guides/zh-hans/launch.md",
+      "publishedSha256": "2299fc3fbe42c354c88c4c01955790879f7ae8a49fc55fab5894df99b5916bfe",
+      "bodySha256": "4b01191ed645f1e5d6248b1c51c28a50f1b2635e28a5ccb73c958731cb4ebbf3"
+    },
+    {
+      "contentId": "platforms",
+      "locale": "zh-hans",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/platforms.md",
+      "reviewedDraftSha256": "33045733d5366efccda4aabca48b217f5145330bd129f5726b22ed598aab24dc",
+      "publishedFile": "src/content/guides/zh-hans/platforms.md",
+      "publishedSha256": "fbdcb36b07ae0f6f546f4f3875194c75b902c845e86e1cbe9f03ceddedb2742e",
+      "bodySha256": "cc2db1f2c63e16cfddf806d314fce0704f499fcabf9e1d10bd1f2b6797481529"
+    },
+    {
+      "contentId": "requirements",
+      "locale": "zh-hans",
+      "sourceRevision": 9,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/requirements.md",
+      "reviewedDraftSha256": "dafd88c878a1a5d6d746c4c92035a9fc204ff15b81cf4f3f42a2d3b30ae7d6c9",
+      "publishedFile": "src/content/guides/zh-hans/requirements.md",
+      "publishedSha256": "0d1ff0dec3df75a4583976111a17b5a64b8085f92220e7e18433aebcfaa93905",
+      "bodySha256": "71a6a40a81483c0e1701c18ddc1c6ec0fad1bd8534b68510beea6a201790457b"
+    },
+    {
+      "contentId": "reroll",
+      "locale": "zh-hans",
+      "sourceRevision": 7,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/reroll.md",
+      "reviewedDraftSha256": "2092bd82b5c22c2f0fda1ec45775ddd3c5a7ede590c3ca9098ca89fa3d249775",
+      "publishedFile": "src/content/guides/zh-hans/reroll.md",
+      "publishedSha256": "acee21ef73699f2ad2c32dd4014c1ddde5904b4d1a00820314119745fde8fee3",
+      "bodySha256": "80ce28e0531a2b9e737c9964c5b51a0fac26e69fde604acd59766ea52826772f"
+    },
+    {
+      "contentId": "resources",
+      "locale": "zh-hans",
+      "sourceRevision": 10,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/resources.md",
+      "reviewedDraftSha256": "b10959d4669da048a897706a03927e86d2ba088de9d732d7694ca24b99ddd0f9",
+      "publishedFile": "src/content/guides/zh-hans/resources.md",
+      "publishedSha256": "168f574e08a1e8572af7604de9cfa6911f7251bc7d1fa5460bfaf1735303a6c9",
+      "bodySha256": "8b53906782a2bd01e3d67213fb3eede1fd892d40421914afcb6cface8ed90dc9"
+    },
+    {
+      "contentId": "recharge-return",
+      "locale": "zh-hans",
+      "sourceRevision": 1,
+      "reviewedDraftFile": "src/content/guides/zh-hans/recharge-return.md",
+      "reviewedDraftSha256": "8a2437229fd06746df82a48a35a83589bdf06846fc5dbcc59b379bc5787d43ef",
+      "publishedFile": "src/content/guides/zh-hans/recharge-return.md",
+      "publishedSha256": "0081ce4b284a564983bef1221f8c9b919f86b1b031343d480bcf66ee2d24e1ce",
+      "bodySha256": "7604050210d47366df6e24d569bdd74277b92e0c1deda609f9cd6b9dcc44e940"
+    },
+    {
+      "contentId": "banner-rules",
+      "locale": "ja",
+      "sourceRevision": 7,
+      "reviewedDraftFile": "src/content/revisions/ja/banner-rules.md",
+      "reviewedDraftSha256": "f5915414534b335df61643bcc4597cbbffdbc35a3de2c7e2de4bd06b158f8ede",
+      "publishedFile": "src/content/guides/ja/banner-rules.md",
+      "publishedSha256": "97c22ccb40179275e8de436d3f80382b42cf63bbcb98c45cc622d1cd56b07acd",
+      "bodySha256": "e489cbc0cbf6efa998868f4f12cc406c44fabfa94861d2f7f289f139b39a3fae"
+    },
+    {
+      "contentId": "download",
+      "locale": "ja",
+      "sourceRevision": 13,
+      "reviewedDraftFile": "src/content/revisions/ja/download.md",
+      "reviewedDraftSha256": "04db16e874967864f0a2eeb1ff6fa306862ca037f0daf93a84f006af2fa2e17a",
+      "publishedFile": "src/content/guides/ja/download.md",
+      "publishedSha256": "6b03d4eb5c11863e453a3644f63a0bc145efea7123e525dc5fd048b997afffe2",
+      "bodySha256": "22fcd07ca9b16ee2e61d8c1451f33381cf9d7c4e0bc66d42d108e2ac1639108c"
+    },
+    {
+      "contentId": "getting-started",
+      "locale": "ja",
+      "sourceRevision": 14,
+      "reviewedDraftFile": "src/content/revisions/ja/getting-started.md",
+      "reviewedDraftSha256": "9d399887dbc759ee8a403f775bb121ed13d173a47e6f0c2565f5ac7d69602cf4",
+      "publishedFile": "src/content/guides/ja/getting-started.md",
+      "publishedSha256": "963cde9edbf2bfdf2d56c2a46d675f52d399f552084abc5f56258188ff373df7",
+      "bodySha256": "f03ab4ed7825ac4b84d1496a19d8040cc8859c52ce514084dc804e313835be10"
+    },
+    {
+      "contentId": "global-release",
+      "locale": "ja",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/ja/global-release.md",
+      "reviewedDraftSha256": "4e7e2167dacf185c810226b07a4c84f4dee6191d9546ac824277f1e58003d06f",
+      "publishedFile": "src/content/guides/ja/global-release.md",
+      "publishedSha256": "bf1001cb6d7f613c97a8abcfb715d86d149cfed2797e9f4a67a141933816d68d",
+      "bodySha256": "a051a99b4203b806a6942911425eb6fd1957b5ae8694fccb6e96798875dfbec3"
+    },
+    {
+      "contentId": "kibo-guide",
+      "locale": "ja",
+      "sourceRevision": 4,
+      "reviewedDraftFile": "src/content/revisions/ja/kibo-guide.md",
+      "reviewedDraftSha256": "b715ad07db5d124e22b1fe3cc3d9fec897d84a7300dacdd7eb67a40a35e5e0f0",
+      "publishedFile": "src/content/guides/ja/kibo-guide.md",
+      "publishedSha256": "33caacb4b164175ceddf866d909e26f98f8adc928dcfce952d40fb4a9be8ec6b",
+      "bodySha256": "99b95e75bcde84a9b752805fd6bff380e8a8d9cc8cd288a63e22939f073108e3"
+    },
+    {
+      "contentId": "launch",
+      "locale": "ja",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/ja/launch.md",
+      "reviewedDraftSha256": "56282eee4ac1ab4fbcc0742f7fec85b485177d946c8cd128d1d061a8bda4f3cd",
+      "publishedFile": "src/content/guides/ja/launch.md",
+      "publishedSha256": "77c5b601cbca772d9b8e5f91a71582ca64df263374e121b293f0131ca98528ce",
+      "bodySha256": "0f3355c0936eb16fc2424609b46c96650b935f1c61f389f1d9cf2675701b06d5"
+    },
+    {
+      "contentId": "platforms",
+      "locale": "ja",
+      "sourceRevision": 11,
+      "reviewedDraftFile": "src/content/revisions/ja/platforms.md",
+      "reviewedDraftSha256": "cfd597c762e33dc1be4f853d430bfad9e02c927bcc8d2d51d6a8364d339aa80e",
+      "publishedFile": "src/content/guides/ja/platforms.md",
+      "publishedSha256": "6cd44f2607fa63d4d12f1d2366961c1a94c0b994a17de1d094bcfbcdd6fcb97f",
+      "bodySha256": "0d1dacab9ecd1427e03f843701e5b527887918c65b0c7284fe16e41ec1a49c75"
+    },
+    {
+      "contentId": "requirements",
+      "locale": "ja",
+      "sourceRevision": 9,
+      "reviewedDraftFile": "src/content/revisions/ja/requirements.md",
+      "reviewedDraftSha256": "348b69d7f4a6316b0f597ee6c4c3ac11734cf1ed9b75996971db6c230383365b",
+      "publishedFile": "src/content/guides/ja/requirements.md",
+      "publishedSha256": "70086a4262035e549b0fe0b800b1a17b1257795b1a3ab32e24a0932d9cd07067",
+      "bodySha256": "007db50c476f88008ee6929cef5609dea5abe1dbc2d5facbfd2c5e9865ba32cb"
+    },
+    {
+      "contentId": "reroll",
+      "locale": "ja",
+      "sourceRevision": 7,
+      "reviewedDraftFile": "src/content/revisions/ja/reroll.md",
+      "reviewedDraftSha256": "b7811eb26f1c4f40e2e7f89018cdf2a342423f675c95dc55a32be7cd20b7ed23",
+      "publishedFile": "src/content/guides/ja/reroll.md",
+      "publishedSha256": "d3366d12f53419b9474dc657d5530f0a57af331195c6f5ca8d876997faf50714",
+      "bodySha256": "7736950c1574ddbbd668fa6090fa9bf693aeab37f58b9cecf203f2f8e2bef50f"
+    },
+    {
+      "contentId": "resources",
+      "locale": "ja",
+      "sourceRevision": 10,
+      "reviewedDraftFile": "src/content/revisions/ja/resources.md",
+      "reviewedDraftSha256": "3b9d697c6330405d5cbbc577916d3769097fe57c0b3e1d00ae4a5fc4082d97a5",
+      "publishedFile": "src/content/guides/ja/resources.md",
+      "publishedSha256": "5a579acac53cae8dc58cd40f37c062bc68ff9f0b8e99f370a0879b02f4f61fb3",
+      "bodySha256": "26bdcce6a801ebea85e049e89dd75706c3f48c6a4ed5f38e3002d39df2378a0f"
+    },
+    {
+      "contentId": "recharge-return",
+      "locale": "ja",
+      "sourceRevision": 1,
+      "reviewedDraftFile": "src/content/guides/ja/recharge-return.md",
+      "reviewedDraftSha256": "363ae52256148aa5a554e9d580acf541990884e41037ed16c91677d04b265171",
+      "publishedFile": "src/content/guides/ja/recharge-return.md",
+      "publishedSha256": "d5fce32dae2d393740ad9b1c5d568be33ac49af44a3bccfc55b476ea6dfa6c23",
+      "bodySha256": "ad5c05189a012d9951b93c73e6019a56e03be338ea14ae0d79a0818a4d03d6a8"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cn-opening-time",
+      "previousRevision": 3,
+      "publishedRevision": 4,
+      "previousSha256": "168c0b2eacf81a3d35367f8dc7d1407338013baa40f7d7b4d95ea3743f30e81b",
+      "publishedSha256": "2e530f21cc7d43fb0ea8b8579439c042509dc6224f255859d1ce39d1710140e0"
+    },
+    {
+      "id": "jp-opening-time",
+      "previousRevision": 1,
+      "publishedRevision": 2,
+      "previousSha256": "830d0230311f7b4d597a5c5c7e7f3a95f2efd288ee21cc617f991c89522e5c50",
+      "publishedSha256": "d68c95b3e7d6d835ff8452170d8edb66cd6a59c1e98792a7233106300576d15c"
+    },
+    {
+      "id": "cn-preload-status",
+      "previousRevision": 4,
+      "publishedRevision": 6,
+      "previousSha256": "27aaf9e83cc6caeba5ae7bafb69b8ac31d61d227bf98e71aa7ad0f376dde156f",
+      "publishedSha256": "74522b809fc350e25b8f3cf30acf8561a8264a55848c195e5a73e5a3a5a4162a"
+    },
+    {
+      "id": "jp-preload-status",
+      "previousRevision": 4,
+      "publishedRevision": 6,
+      "previousSha256": "4527ac89c3f7f0ca6be119aa588a8ebda86c81e6ee877bdd25e616b37931ca3c",
+      "publishedSha256": "9bbcdf49d9d66e570feba5276c32fd84bcca8feb40161b75fb6210d3156bc7c4"
+    },
+    {
+      "id": "cn-platform-details",
+      "previousRevision": 1,
+      "publishedRevision": 3,
+      "previousSha256": "95759ea9d7df28c6409284047a0b36f944491ccf2532b2ad3a6f4e38df6cdfe9",
+      "publishedSha256": "8c8e032f193bbb7fedf0acbd6d052ffa2937fe679cc339d78adfc6bea379cd0c"
+    },
+    {
+      "id": "jp-platform-details",
+      "previousRevision": 1,
+      "publishedRevision": 3,
+      "previousSha256": "4993d79534bbd079dc5cd42edf9a85b081ad798b9b83341755903d1296399939",
+      "publishedSha256": "995fdbbb972e5fe82a2ffda67f84b89f237496e6aff0f9a26ed078354b00bd4e"
+    },
+    {
+      "id": "cn-ios-store",
+      "previousRevision": 2,
+      "publishedRevision": 3,
+      "previousSha256": "83759f2a7fb6009132660d01c7e2ec5161a67451462ed0532e76d532843539aa",
+      "publishedSha256": "2b060086bc60f954e7bc46f698e05e847582ad1451e731dfcd1a04882e8146df"
+    },
+    {
+      "id": "jp-official-entry",
+      "previousRevision": 1,
+      "publishedRevision": 2,
+      "previousSha256": "14dde4d6749bd76a965e841fd085e969258e33366ac203efba6bb1ba373b401e",
+      "publishedSha256": "b6fe4805f61e7b0f724ba638d815da4bc359fc8a86370cdfed773c591b414e36"
+    },
+    {
+      "id": "cn-banner-rules-system",
+      "previousRevision": 2,
+      "publishedRevision": 3,
+      "previousSha256": "851aad5742769a91efe8dc4ee995748e0fb40c53888f106d4e3d71c69f611a92",
+      "publishedSha256": "812ae42197084d8553ba6eb55bf34fbc114f21cea4de1e85fd8ca9aa9f89dd37"
+    }
+  ]
+}

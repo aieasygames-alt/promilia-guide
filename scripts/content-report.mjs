@@ -1,11 +1,10 @@
 import { entities } from '../src/data/entities.ts';
 import { entityImpact, isEntityCatalogPublishable, isEntityDetailPublishable } from '../src/lib/entity-publication.mjs';
 import { parseArgs } from 'node:util';
-import { readFile } from 'node:fs/promises';
-import { z } from 'zod';
 import { readEntries } from './content-validation.mjs';
-import { sourceSchema, claimSchema, guideSchema, calendarDate } from '../src/lib/editorial-schema.mjs';
+import { guideSchema, calendarDate } from '../src/lib/editorial-schema.mjs';
 import { createEditorialReport, findContentImpact } from '../src/lib/editorial.mjs';
+import { readEditorialData } from './editorial-data.mjs';
 
 try {
   const { values, positionals } = parseArgs({ allowPositionals: true, options: {
@@ -15,8 +14,7 @@ try {
     console.log('npm run content:status -- [--json] [--at YYYY-MM-DD]\nnpm run content:impact -- --source SOURCE_ID | --claim CLAIM_ID | --content CONTENT_ID [--json]');
     process.exit(0);
   }
-  const sources = z.array(sourceSchema).parse(JSON.parse(await readFile('src/data/sources.json', 'utf8')));
-  const claims = z.array(claimSchema).parse(JSON.parse(await readFile('src/data/claims.json', 'utf8')));
+  const { sources, claims } = await readEditorialData();
   const entries = (await readEntries()).map((entry) => ({ ...entry, data: guideSchema.parse(entry.data) }));
   const context = { entries, sources, claims };
   const mode = positionals[0] || 'status';

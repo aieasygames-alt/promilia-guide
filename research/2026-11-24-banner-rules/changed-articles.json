@@ -1,0 +1,62 @@
+[
+  {
+    "contentId": "banner-rules",
+    "locale": "zh-hans",
+    "revision": 7,
+    "file": "src/content/revisions/zh-hans/banner-rules.md",
+    "baselineSha256": "70b2e6d88abc8f38ba0d2c02e7caf093d3a18a0e23a6729859bd1a4aa3f14aa9",
+    "sha256": "defe46046e1b13caa3a63816b01cb4eedc4be30abf58ee295d9b7cfd5883d459",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "zh-hans",
+    "revision": 5,
+    "file": "src/content/revisions/zh-hans/reroll.md",
+    "baselineSha256": "487615854aa4499538e1ffe4789121c720f48e870936cb436f5fbc9384fc1708",
+    "sha256": "2ce0b15a137437359a79d84b42023e928134a292d5b3a8837f4bb1a6e489ca2b",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "zh-hans",
+    "revision": 8,
+    "file": "src/content/revisions/zh-hans/resources.md",
+    "baselineSha256": "859f312e2e391ae2ba281b9be9b269ca683513ccaba3e9a969a1ea8e4413b807",
+    "sha256": "7a6a1a8e1bf2207e8115fc8a43878c41ef0294aafdfc60b1fa4021c156f7d3a1",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "banner-rules",
+    "locale": "ja",
+    "revision": 7,
+    "file": "src/content/revisions/ja/banner-rules.md",
+    "baselineSha256": "5806efa8455b14a97f426c088ff50a630c6ea6207790f8d0ab706bbf103d8b16",
+    "sha256": "f5915414534b335df61643bcc4597cbbffdbc35a3de2c7e2de4bd06b158f8ede",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "reroll",
+    "locale": "ja",
+    "revision": 5,
+    "file": "src/content/revisions/ja/reroll.md",
+    "baselineSha256": "2a1c664d22bf27532f4b50041713a3c329d0adae6262b1689ed70827e9199220",
+    "sha256": "621d20f69ffef9ba2099d81171ae80ec0fd32d4ab57c19b9027573550c9ecb5c",
+    "status": "draft",
+    "humanReview": "pending"
+  },
+  {
+    "contentId": "resources",
+    "locale": "ja",
+    "revision": 8,
+    "file": "src/content/revisions/ja/resources.md",
+    "baselineSha256": "b77d6d868a4f25d8f9381428d6095e99f024573db405f23f121e178dbfd64c64",
+    "sha256": "285338af6108cd753c85d86c59156ad334fd63d9d148ecb73ff7f9450c2e1988",
+    "status": "draft",
+    "humanReview": "pending"
+  }
+]

@@ -38,7 +38,7 @@ const url = origin + articlePath(data);
 const sectionLabel = data.section === 'systems' ? c.systems : c.guides;
 const hasDistribution = ['download', 'platforms'].includes(data.contentId);
 const isRedeemCodes = data.contentId === 'redeem-codes';
-const compactFacts = ['requirements', 'reroll'].includes(data.contentId);
+const compactFacts = ['requirements', 'reroll', 'download', 'platforms', 'launch', 'global-release', 'getting-started', 'banner-rules', 'resources', 'kibo-guide', 'recharge-return'].includes(data.contentId);
 const featureVisual = data.contentId === 'launch' ? 'public-beta' : null;
 const toc = [
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
