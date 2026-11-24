@@ -1,0 +1,73 @@
+{
+  "verifiedAt": "2026-11-24T10:29:01.190Z",
+  "origin": "https://promiliaguide.com",
+  "functionalCommit": "23148a57814123a4a53e41561c0b96597023b5d0",
+  "pullRequest": "https://github.com/aieasygames-alt/promilia-guide/pull/6",
+  "ci": {
+    "url": "https://github.com/aieasygames-alt/promilia-guide/actions/runs/45374905079",
+    "verify": "success",
+    "productionDeploymentVerification": "success"
+  },
+  "deployment": {
+    "status": "success",
+    "commitSha": "23148a57814123a4a53e41561c0b96597023b5d0",
+    "deploymentId": "678b3c04-a6d0-44f9-8bed-46c27a2e10e7",
+    "deploymentUrl": "https://678b3c04.promilia-guide.pages.dev"
+  },
+  "scope": {
+    "publishedArticles": 28,
+    "promotedArticles": 22,
+    "promotedClaimRevisions": 9,
+    "downloadSheets": 4,
+    "pendingArticleReviews": 0,
+    "staleReferences": 0
+  },
+  "local": {
+    "node": "22.23.4",
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "unitTests": 61,
+    "browserTests": 50,
+    "previewHtmlPages": 74,
+    "productionHtmlPages": 70,
+    "searchPages": 36,
+    "passed": true
+  },
+  "hostedPreview": {
+    "url": "https://5cf1a4ca.promilia-guide.pages.dev",
+    "checks": 72,
+    "passed": true
+  },
+  "productionTechnical": {
+    "checks": 86,
+    "passed": true
+  },
+  "productionContentAndBoundaries": {
+    "checks": 132,
+    "passed": true,
+    "coverage": [
+      "28 complete article bodies, titles, publication states and current source summaries",
+      "4 exact downloadable byte hashes",
+      "regional launch and banner-rule boundaries",
+      "sitemap, language search data and noindex entity boundaries",
+      "editorial and pending entity 404 isolation"
+    ]
+  },
+  "productionBrowser": {
+    "passed": true,
+    "checks": [
+      "Chinese recharge-return article renders",
+      "Language switch opens corresponding Japanese article",
+      "Japanese recharge-return search returns 4 Japanese results, target article first",
+      "Chinese recharge-return search returns 8 Chinese results, target article first",
+      "Clicking Chinese target result opens current article"
+    ]
+  },
+  "limitations": [
+    "Publication confirmation comes from the project owner in this session; no independent language proofreading or gameplay testing is claimed.",
+    "Unknown Japanese banner rules and unverified codes remain unverified.",
+    "Entity summaries retain their current noindex policy."
+  ],
+  "detailedArtifacts": "artifacts/full-release-2026-11-24/ (ignored local reports); main CI production-deployment-verification artifact",
+  "maintenanceNote": "This records the functional release. Later documentation-only commits are automatically redeployed and verified by their own main Actions; read live build-info.json for the current deployment SHA."
+}

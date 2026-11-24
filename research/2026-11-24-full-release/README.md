@@ -11,3 +11,11 @@
 [release-approval.json](release-approval.json)保存22篇当前草稿和正式稿的前后SHA256、正文指纹与9项事实修订记录。此前各研究目录保存开发时的待审快照；那些状态不代表本次发布后的当前状态。
 
 发布前执行完整类型／单元／双语浏览器／预览与生产构建检查，再经GitHub分支CI和Pages生产部署。线上验证使用正式域名同提交清单，覆盖28篇正文、来源、4份下载材料、搜索、索引、真实404和预览隔离。实际结果以关联PR、main Actions的production-deployment-verification报告及线上build-info.json为准；未完成的检查不记作成功。
+
+## 已完成的线上验收
+
+[PR #6](https://github.com/aieasygames-alt/promilia-guide/pull/6)已合并，功能发布SHA为`23148a57814123a4a53e41561c0b96597023b5d0`。[main CI #45374905079](https://github.com/aieasygames-alt/promilia-guide/actions/runs/45374905079)的质量检查与生产部署验收均成功。Pages部署`678b3c04-a6d0-44f9-8bed-46c27a2e10e7`已在正式主域名返回同SHA、production和28篇文章。
+
+完整本地发布检查：61项单元、50项桌面/手机浏览器测试全部通过；类型检查0错误/0警告，预览74 HTML、正式70 HTML、两模式36搜索页。云端预览72/72、正式站技术及永久跳转86/86、正文和边界132/132通过。28篇完整正文及来源摘要逐篇匹配，4份下载材料逐字节匹配。浏览器验证中文正文、对应日语切换、日语「課金返還」4条和中文「充值返还」8条结果及结果跳转正常。
+
+实际结果保存在[verification.json](verification.json)；详细本机报告在忽略目录artifacts/full-release-2026-11-24/，云端报告在上述main运行的production-deployment-verification artifact。后续仅记录维护的提交仍由main自动部署并验收，当前线上提交以build-info.json及对应Actions为准，不为记录自身SHA继续生成提交。

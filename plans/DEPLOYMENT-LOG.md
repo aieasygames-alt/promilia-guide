@@ -155,3 +155,13 @@ Node 22.23.4 本地完整检查通过：类型检查无错误／警告、55 项�
 ## 2026-11-24 全部开发内容发布批次
 
 用户已明确要求全部开发内容上线和线上验证。22篇新稿／修订及9项共享事实按[本次发布确认](../research/2026-11-24-full-release/release-approval.json)转为正式状态，现28/28可发布；配套下载材料与技术改动一起发布。当前段落记录发布范围，实际部署与验收成功状态以后续关联PR、main Actions报告和线上同提交清单为准，不用本地构建代替线上结果。
+
+### 11月24日实际发布与验收结果
+
+- [PR #6](https://github.com/aieasygames-alt/promilia-guide/pull/6)已合并，功能发布SHA `23148a57814123a4a53e41561c0b96597023b5d0`；[main CI #45374905079](https://github.com/aieasygames-alt/promilia-guide/actions/runs/45374905079)的verify和Verify production deployment均success。
+- Pages生产部署`678b3c04-a6d0-44f9-8bed-46c27a2e10e7`，不可变地址https://678b3c04.promilia-guide.pages.dev；正式索引验收使用https://promiliaguide.com，build-info确认同SHA、production及28篇文章。分支预览https://5cf1a4ca.promilia-guide.pages.dev同功能提交72/72通过，保持noindex和空Sitemap。
+- Node22.23.4完整本地发布检查通过：0错误/0警告，61单元、50桌面/手机浏览器测试；预览74 HTML、正式70 HTML、36搜索页。
+- 正式主域名技术检查86/86通过，含28篇文章、canonical/hreflang、索引、安全头、robots、Sitemap、搜索、真实404、编辑隔离与HTTP/www/pages.dev永久跳转及参数保留。额外正文与发布边界132/132通过：28篇完整正文和来源摘要匹配，4份TXT文件字节匹配，重点新增规则正确，未核验码无复制，实体摘要保持noindex并退出搜索/Sitemap，待核验实体和编辑夹具404。
+- 浏览器实测中文返还正文、日语对应页与语言切换正常；日语「課金返還」返回4条，中文「充值返还」返回8条，目标新稿均首位，中文结果可正常进入正文。
+
+[verification.json](../research/2026-11-24-full-release/verification.json)保存本批实证；本机详细报告位于忽略目录artifacts/full-release-2026-11-24/，远端报告归档在上述main运行的production-deployment-verification artifact。该记录确认功能发布，后续文档维护提交仍会自动部署并验收，最新线上SHA由build-info.json和对应Actions确认，不为本文自引用SHA继续提交。
