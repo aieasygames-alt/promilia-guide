@@ -1,6 +1,6 @@
 ---
 import questions from '../data/faq.json';
-import type { Locale } from '../lib/content';
+import type { ReferenceLocale as Locale } from '../lib/content';
 interface Props { locale: Locale; contentId: string }
 const { locale, contentId } = Astro.props;
 const related = questions.flatMap<(typeof questions)[number]['questions'][number]>(group => group.questions).filter(question => question.contentId === contentId);

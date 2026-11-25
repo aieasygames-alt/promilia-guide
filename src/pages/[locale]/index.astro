@@ -3,12 +3,12 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import LaunchActions from '../../components/LaunchActions.astro';
-import { visibleGuides, articlePath, type Locale } from '../../lib/content';
+import { visibleGuides, articlePath, type ReferenceLocale as Locale } from '../../lib/content';
 import { t } from '../../lib/i18n';
-import { origin, locales, languageTag } from '../../lib/publication.mjs';
+import { origin, locales, referenceLocales, languageTag } from '../../lib/publication.mjs';
 import { claims, sources } from '../../lib/facts';
 import { releaseSummary } from '../../lib/editorial.mjs';
-export function getStaticPaths() { return locales.map((locale) => ({ params: { locale } })); }
+export function getStaticPaths() { return referenceLocales.map((locale) => ({ params: { locale } })); }
 const locale = Astro.params.locale as Locale;
 const c = t(locale);
 const releases = (['cn', 'jp'] as const).map((region) => releaseSummary({ claims, sources, locale, region }));

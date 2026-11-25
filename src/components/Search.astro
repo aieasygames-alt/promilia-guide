@@ -9,7 +9,7 @@ const c = t(locale);
 <div id="search-app" data-locale={locale} data-empty={c.searchEmpty} data-unavailable={c.searchUnavailable} data-loading={c.loading} data-count={c.resultCount}>
   <form class="search-form" role="search"><Icon name="search" size={21}/><label class="sr-only" for="search-input">{c.searchLabel}</label><input id="search-input" name="q" type="search" autocomplete="off" placeholder={c.search} maxlength="160"/><button type="submit">{c.searchButton}</button></form>
   <p class="search-help">{c.searchHelp}</p><p class="search-status" role="status" aria-live="polite"></p><div class="search-results" aria-label={c.results}></div>
-  <noscript><p class="notice">{locale === 'ja' ? '検索には JavaScript が必要です。ガイド一覧から記事を読むこともできます。' : '搜索需要启用 JavaScript，你也可以从攻略目录直接阅读。'}</p></noscript>
+  <noscript><p class="notice">{locale === 'en' ? 'Search requires JavaScript. You can also browse the English guides on the homepage.' : locale === 'ja' ? '検索には JavaScript が必要です。ガイド一覧から記事を読むこともできます。' : '搜索需要启用 JavaScript，你也可以从攻略目录直接阅读。'}</p></noscript>
 </div>
 <script>
   const app = document.getElementById('search-app');

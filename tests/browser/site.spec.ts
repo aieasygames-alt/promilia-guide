@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 
 // Compare the dashboard/export with the current report rather than a past review milestone.
 const editorialStatus = JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'status', '--json'], { encoding: 'utf8' }));
+const impactCount = (args: string[]) => JSON.parse(execFileSync(process.execPath, ['scripts/content-report.mjs', 'impact', ...args, '--json'], { encoding: 'utf8' })).articles.length;
 const releaseStatus = JSON.parse(execFileSync(process.execPath, ['scripts/check-release.mjs', '--json'], { encoding: 'utf8' }));
 
 async function expectEvidence(page: Page, ids: string[]) {
@@ -215,12 +216,12 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(editorialStatus.summary.articles);
   await page.locator('#impact-filter').selectOption('claim:cn-launch-date');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(14);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(impactCount(['--claim', 'cn-launch-date']));
   const routes = await page.locator('[data-report-row]:visible').evaluateAll((rows) => rows.map((row) => row.getAttribute('data-route')));
   expect(routes.some((route) => route?.startsWith('/ja/'))).toBe(true);
   expect(routes.some((route) => route?.startsWith('/zh-hans/'))).toBe(true);
   await page.locator('#impact-filter').selectOption('source:cn-app-store-2026-11-14');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(8);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(impactCount(['--source', 'cn-app-store-2026-11-14']));
   await page.locator('#impact-filter').selectOption('content:launch');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
   await page.locator('#state-filter').selectOption('publishable');

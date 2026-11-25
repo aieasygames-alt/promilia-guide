@@ -23,6 +23,7 @@ export const sourceSchema = z.object({
   localized: z.object({
     'zh-hans': z.object({ title: nonempty, note: nonempty }),
     ja: z.object({ title: nonempty, note: nonempty }),
+    en: z.object({ title: nonempty, note: nonempty, publisher: nonempty }),
   }).partial().optional(),
 }).superRefine((source, ctx) => {
   if (source.status === 'verified' && (!source.url || !source.checkedAt || !source.excerpt)) {
@@ -94,7 +95,7 @@ export const distributionSchema = z.object({
 
 export const guideSchema = z.object({
   contentId: nonempty,
-  locale: z.enum(['zh-hans', 'ja']),
+  locale: z.enum(['zh-hans', 'ja', 'en']),
   slug: z.string().regex(/^[a-z0-9-]+$/),
   section: z.enum(['guides', 'systems']),
   title: nonempty,

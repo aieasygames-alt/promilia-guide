@@ -1,7 +1,7 @@
 ---
 import { claims, sources } from '../lib/facts';
 import { isVerifiedClaim } from '../lib/editorial.mjs';
-import type { Locale } from '../lib/content';
+import type { ReferenceLocale as Locale } from '../lib/content';
 interface Props { locale: Locale; refs: string[]; revisions: Record<string, number> }
 const { locale, refs, revisions } = Astro.props;
 const ja = locale === 'ja';

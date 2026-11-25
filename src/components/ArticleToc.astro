@@ -7,7 +7,7 @@ const label = t(locale).articleIndex;
 ---
 <aside class="article-toc" data-pagefind-ignore>
   <div class="toc-desktop"><h2>{label}</h2><nav aria-label={label}>{items.map((item) => <a href={`#${item.id}`}>{item.text}</a>)}</nav></div>
-  <details class="toc-mobile" data-mobile-toc><summary>{label}<span>{locale === 'ja' ? '目次を開く' : '展开目录'}</span></summary><nav aria-label={label}>{items.map((item) => <a href={`#${item.id}`}>{item.text}</a>)}</nav></details>
+  <details class="toc-mobile" data-mobile-toc><summary>{label}<span>{locale === 'en' ? 'Open contents' : locale === 'ja' ? '目次を開く' : '展开目录'}</span></summary><nav aria-label={label}>{items.map((item) => <a href={`#${item.id}`}>{item.text}</a>)}</nav></details>
 </aside>
 <script>
   document.querySelectorAll<HTMLDetailsElement>('[data-mobile-toc]').forEach((toc) => {

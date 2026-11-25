@@ -37,6 +37,11 @@
       "ja": {
         "title": "中国本土公式：11月26日のサービス開始告知",
         "note": "原文の日付は2026/10/23。開始時刻や日本向け配信の確定情報としては扱いません。"
+      },
+      "en": {
+        "title": "China November 26 launch announcement (Chinese)",
+        "note": "Regional launch-date announcement; actual service status must be checked separately.",
+        "publisher": "Manjuu / China official site"
       }
     }
   },
@@ -58,6 +63,11 @@
       "ja": {
         "title": "中国本土公式サイトと事前登録の入口",
         "note": "公式サイトで事前登録と中国本土向けApp Storeへのリンクを確認。ダウンロード開始とは区別します。"
+      },
+      "en": {
+        "title": "China official homepage (Chinese)",
+        "note": "Regional homepage and official distribution entry.",
+        "publisher": "Manjuu / China official site"
       }
     }
   },
@@ -79,6 +89,11 @@
       "ja": {
         "title": "中国本土向けApp Store：蓝色星原：旅谣",
         "note": "公式サイトからリンクを確認。配信予定、OS互換性、ストア表示サイズを記録。実際の空き容量や快適な動作を保証する情報ではありません。"
+      },
+      "en": {
+        "title": "China App Store listing (Chinese)",
+        "note": "App identity and store compatibility; not a complete performance requirement or installation test.",
+        "publisher": "Apple App Store / Manjuu"
       }
     }
   },
@@ -100,6 +115,11 @@
       "ja": {
         "title": "繁体字公式サイト：11月26日の案内",
         "note": "繁体字サイトの表示を確認したものです。日本や世界共通の配信日、サーバーの共通化を意味しません。"
+      },
+      "en": {
+        "title": "Traditional Chinese official homepage",
+        "note": "Homepage date display; full operational regions and server rules need separate evidence.",
+        "publisher": "Traditional Chinese official site"
       }
     }
   },
@@ -163,6 +183,11 @@
       "ja": {
         "title": "Yostar：日本国内での共同サービス提供のお知らせ",
         "note": "日本向けの運営主体、公式サイト・X、対応予定プラットフォームを確認。掲載当時の配信時期未定という記述は、後の日程告知と区別します。"
+      },
+      "en": {
+        "title": "Yostar Japan co-publishing announcement (Japanese)",
+        "note": "Japan publishing arrangement and planned iOS, Android and Windows platforms.",
+        "publisher": "Yostar"
       }
     }
   },
@@ -184,6 +209,11 @@
       "ja": {
         "title": "日本公式X：2026年11月26日リリース決定",
         "note": "公式サイトとYostar告知から発信元を確認し、原文を照合。具体的なサービス開始時刻はこの投稿に記載されていません。"
+      },
+      "en": {
+        "title": "Japan November 26 launch announcement (Japanese)",
+        "note": "Original regional announcement on the official X account.",
+        "publisher": "Japan official account / Manjuu and Yostar"
       }
     }
   },
@@ -683,6 +713,11 @@
       "ja": {
         "title": "繁体字公式：台湾向けストアリンク（11月23日）",
         "note": "ホームの登録表示と台湾App Store・Google PlayのアプリIDを確認。ストア本文、全運営地域、インストール可否は未確認です。"
+      },
+      "en": {
+        "title": "Traditional Chinese mobile-store links (Chinese)",
+        "note": "Taiwan App Store and Google Play entry identities checked from the official site, which displayed preorder/preregistration.",
+        "publisher": "Traditional Chinese official site"
       }
     },
     "publishedAt": null,
@@ -709,6 +744,11 @@
       "ja": {
         "title": "中国本土公式：正式サービスFAQ（11月24日）",
         "note": "中国本土向けの日時、動作環境、公式サーバーのデータ共有、旧テスト版の扱いを照合。日本には適用せず、実際のインストールやログインは未検証。"
+      },
+      "en": {
+        "title": "China launch FAQ (Chinese)",
+        "note": "Regional opening schedule, device requirements, storage and official-server platform rules.",
+        "publisher": "Manjuu / China official site"
       }
     }
   },
@@ -730,6 +770,11 @@
       "ja": {
         "title": "日本公式：正式サービス開始に関するFAQ（11月24日）",
         "note": "公式NEWSから本文を読み、直達URLの再読み込み後も確認。通常のHTTP取得は404のアプリ外枠でした。日時は予定、空き容量は推奨値で、実測占有量ではありません。 旧/news/5190は今回404。公式ナビのFAQ・お問い合わせで各項目を照合し、参照URLを修正しました。"
+      },
+      "en": {
+        "title": "Japan launch FAQ (Japanese)",
+        "note": "Regional opening schedule, requirements, resource downloads and same-account progress rules.",
+        "publisher": "Japan official site"
       }
     }
   },
@@ -751,6 +796,11 @@
       "ja": {
         "title": "Apple日本向けメタデータ：最低OSと配布サイズ",
         "note": "日本向けアプリIDと配信元を照合。配布サイズ3,644,462,080バイトは全データ容量ではなく、releaseDateもサーバー開始時刻として使いません。"
+      },
+      "en": {
+        "title": "Apple Japan app metadata",
+        "note": "App identity, minimum OS and base-app payload; not a full-game size or an installation test.",
+        "publisher": "Apple / YOSTAR LIMITED"
       }
     }
   },
@@ -793,6 +843,11 @@
       "ja": {
         "title": "日本公式：11月24日の入口とNEWS",
         "note": "ストアへのリンクと当日のFAQを照合。PC用ランチャーの手順はFAQにありますが、今回、実際の配布ファイルは照合していません。"
+      },
+      "en": {
+        "title": "Japan homepage distribution links (Japanese)",
+        "note": "Mobile links and news checked on November 24; individual store eligibility remains separate.",
+        "publisher": "Japan official site"
       }
     }
   },
@@ -835,6 +890,11 @@
       "ja": {
         "title": "中国本土公式：事前DL開始のお知らせ",
         "note": "4機種の事前DL開始を公式発表。追加資源は差分配信で、実際のサイズはクライアント表示。インストール実測ではありません。"
+      },
+      "en": {
+        "title": "China pre-download start announcement (Chinese)",
+        "note": "Announcement of regional pre-download; it does not confirm a successful installation.",
+        "publisher": "Manjuu / China official site"
       }
     }
   },
@@ -856,6 +916,11 @@
       "ja": {
         "title": "日本公式：事前ダウンロード開始のご案内",
         "note": "公式が3機種の事前DL開始とPC専用ページを案内。本体後に追加データを取得し、正式サービス開始前にはログインできません。 完成度確認時、旧/news/5191は404。以前照合した告知の履歴を保持し、FAQの予定を新たな稼働確認とは扱いません。"
+      },
+      "en": {
+        "title": "Japan pre-download start announcement (Japanese)",
+        "note": "Announcement and official PC entry; not proof of a completed local installation or open servers.",
+        "publisher": "Japan official site"
       }
     }
   },
@@ -877,6 +942,11 @@
       "ja": {
         "title": "日本公式：Windowsダウンロードページ",
         "note": "公式告知から到達し、Yostarランチャー1.8.1のリンクを確認。ファイルへのHEAD取得は403で、ファイルの取得・署名確認・実行は未実施。"
+      },
+      "en": {
+        "title": "Japan Windows download page (Japanese)",
+        "note": "Official PC page and launcher link checked; installer acquisition and installation were not verified.",
+        "publisher": "Japan official site / Yostar"
       }
     }
   },
@@ -898,6 +968,11 @@
       "ja": {
         "title": "中国本土公式：ダウンロードボタンの表示",
         "note": "PC・Android・App Store・TapTapを表示。PCクリックではファイル取得を確認できず、個別の配布ファイルは引き続き未検証。"
+      },
+      "en": {
+        "title": "China homepage download-button check (Chinese)",
+        "note": "PC and Android download buttons were displayed; no installer file was acquired in this check.",
+        "publisher": "Manjuu / China official site"
       }
     }
   },
@@ -919,6 +994,11 @@
       "ja": {
         "title": "中国区App Store：1.0.1の表示",
         "note": "1.0.1、相対表記「1日前」、3.9GBを確認。前回の配信予定表示とは区別し、個別アカウントのインストール成功とは扱いません。"
+      },
+      "en": {
+        "title": "China App Store version and payload check (Chinese)",
+        "note": "Version 1.0.1 and 3.9GB distribution display; not complete resource size or final disk use.",
+        "publisher": "Apple / Manjuu"
       }
     }
   },
@@ -1003,6 +1083,11 @@
       "ja": {
         "title": "日本公式FAQ・問い合わせ窓口：受付言語と返信案内",
         "note": "公開FAQ・種類選択・注意事項のみ確認。フォームへの入力や送信は未実施。窓口確認は受理済みや返信期限の証明ではありません。"
+      },
+      "en": {
+        "title": "Japan FAQ and official contact instructions (Japanese)",
+        "note": "Contact form, Japanese-language inquiry requirement and email replies; not telephone support.",
+        "publisher": "Japan official site"
       }
     }
   },
@@ -1087,6 +1172,11 @@
       "ja": {
         "title": "中国本土公式FAQ：実名認証・不具合対処・窓口",
         "note": "第1・5・6節をブラウザーで読んだ記録。中国本土向けの手順で、日本のランチャー再起動と混同しません。問い合わせの送信やゲーム内操作は行っていません。"
+      },
+      "en": {
+        "title": "China launch FAQ: login and troubleshooting (Chinese)",
+        "note": "Real-name requirements, region-specific restart steps and support route.",
+        "publisher": "Manjuu / China official site"
       }
     }
   }

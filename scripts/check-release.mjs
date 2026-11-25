@@ -22,11 +22,14 @@ try {
   const codes = z.array(redeemCodeSchema).parse(await read('redeem-codes'));
   const validationIssues = [...validateRedeemCodes(codes, sources), ...validateEntries(entries, sources, claims), ...validateDistribution(channels, claims, entries)];
   const report = createReleaseReport({ plan, entries, sources, claims, validationIssues });
-  const gateIssues = values['require-ready'] ? releaseGateIssues(report, { preview: process.env.CONTENT_PREVIEW === 'true' }) : [];
-  if (values.json) console.log(JSON.stringify({ ...report, gateIssues }, null, 2));
+  const englishReport = createReleaseReport({ plan: await read('english-release-plan'), entries, sources, claims, validationIssues });
+  const additionalReleases = [englishReport];
+  const gateIssues = values['require-ready'] ? [report, ...additionalReleases].flatMap(item => releaseGateIssues(item, { preview: process.env.CONTENT_PREVIEW === 'true' }).map(issue => `${item.planId}: ${issue}`)) : [];
+  if (values.json) console.log(JSON.stringify({ ...report, additionalReleases, gateIssues }, null, 2));
   else {
     console.log(`${report.title}：${report.ready ? '就绪' : '待处理'} · ${report.summary.ready}/${report.summary.required} 篇可发布 · 缺稿 ${report.summary.missing} · 待人工审核 ${report.summary.awaitingReview} · 需同步 ${report.summary.stale}`);
     console.table(report.articles.map((article) => ({ 主题: article.label, 语言: article.locale, 状态: article.ready ? '可发布' : '待处理', 发布阻碍: article.blockers.map((issue) => issue.message).join('；') || '无', 核验提醒: article.warnings.map((issue) => issue.message).join('；') || '无' })));
+    console.log(`${englishReport.title}: ${englishReport.summary.ready}/${englishReport.summary.required} ready`);
     [...report.validationIssues, ...gateIssues].forEach((issue) => console.log(issue));
     console.log('只读检查，不自动填写审核人、修改文章状态或执行云端发布。');
   }

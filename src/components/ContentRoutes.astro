@@ -1,6 +1,6 @@
 ---
 import { contentRoutes, topicLabels } from '../data/content-routes';
-import { articlePath, type Guide, type Locale } from '../lib/content';
+import { articlePath, type Guide, type ReferenceLocale as Locale } from '../lib/content';
 interface Props { locale: Locale; entries: Guide[]; section?: 'guides' | 'systems' }
 const { locale, entries, section } = Astro.props;
 const groups = contentRoutes.filter(group => section === 'systems' ? group.id === 'play' : section === 'guides' ? group.id !== 'play' : true);

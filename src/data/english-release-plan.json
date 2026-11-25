@@ -1,0 +1,10 @@
+{
+  "id": "english-launch-essentials",
+  "title": "English launch essentials",
+  "locales": ["en"],
+  "topics": [
+    { "contentId": "global-release", "label": "Release dates and regions", "requiredClaims": ["cn-launch-date", "jp-release-status", "cn-opening-time", "jp-opening-time", "tc-mobile-official-entry"] },
+    { "contentId": "download", "label": "Official downloads", "requiredClaims": ["cn-preload-status", "jp-preload-status", "jp-official-entry", "cn-launch-troubleshooting", "jp-launch-troubleshooting"] },
+    { "contentId": "requirements", "label": "System requirements and storage", "requiredClaims": ["cn-public-launch-requirements", "jp-public-launch-requirements", "jp-ios-store-metadata"] }
+  ]
+}

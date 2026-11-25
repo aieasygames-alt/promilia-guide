@@ -49,7 +49,7 @@ export function inspectDiscovery({ robots, sitemap, mode }) {
 export function inspectManifest(manifest, mode, commit) {
   const expected = mode === 'preview' ? 'editorial-preview' : 'production';
   if (manifest?.schemaVersion !== 1 || manifest?.mode !== expected || manifest?.origin !== origin || !Array.isArray(manifest?.articlePaths)) throw new Error(`Expected a ${expected} build manifest from this project`);
-  if (manifest.articlePaths.length > 500 || !manifest.articlePaths.every((path) => /^\/(zh-hans|ja)\/(guides|systems)\/[a-z0-9-]+\/$/.test(path))) throw new Error('Build manifest contains invalid article paths');
+  if (manifest.articlePaths.length > 500 || !manifest.articlePaths.every((path) => /^\/(zh-hans|ja|en)\/(guides|systems)\/[a-z0-9-]+\/$/.test(path))) throw new Error('Build manifest contains invalid article paths');
   if (new Set(manifest.articlePaths).size !== manifest.articlePaths.length) throw new Error('Build manifest contains duplicate article paths');
   if (commit && !/^[a-f0-9]{40}$/.test(commit)) throw new Error('Expected commit must be a full Git SHA');
   if (commit && manifest.commitSha !== commit) throw new Error(`Build commit mismatch: expected ${commit}, received ${manifest.commitSha || 'missing'}`);

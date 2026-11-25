@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { visibleGuides } from '../../lib/content';
+import { locales, languageTag, origin } from '../../lib/publication.mjs';
+const entries = await visibleGuides('en');
+const alternates = [...locales.map(locale => ({ lang: languageTag[locale], href: `${origin}/${locale}/` })), { lang: 'x-default', href: origin + '/' }];
+---
+<Base locale="en" title="Azur Promilia Guide: Release Date, Download & Requirements" description="Prepare for Azur Promilia with English guides to Japan and China release dates, official PC and mobile downloads, system requirements and storage." alternates={alternates}>
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">AZUR PROMILIA · ENGLISH GUIDES</p><h1><span class="hero-game">Azur Promilia Guide</span>A new world.<br/><em>A clearer way in.</em></h1><p class="hero-intro">Looking for the Azur Promilia release date, a PC download or mobile requirements? Start with the right regional version, then get your device ready.</p><div class="hero-actions"><a class="button" href="/en/guides/global-release/">Release dates & regions<Icon name="arrow" size={18}/></a><a class="hero-secondary" href="#guides">Browse guides</a></div><div class="hero-note"><span class="note-rule"></span><span>Regional sources · Clear dates · Practical steps</span></div></div>
+    <div class="hero-visual"><img src="/images/feature/home-world.webp" width="1500" height="843" alt="Azur Promilia landscape artwork with mountains, flowers and characters, supplied by the site owner." fetchpriority="high" loading="eager" decoding="async"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>BEFORE YOU SET OUT</small><strong>A little preparation goes a long way.</strong></span></div></div>
+  </section>
+  <div class="container">
+    <section class="notice english-scope" aria-labelledby="regional-status"><h2 id="regional-status">Japan and China launch schedules, explained in English</h2><p>The regional November 24 FAQs schedule service for <strong>November 26, 2026 at 11:00 JST in Japan</strong> and <strong>10:00 UTC+8 in mainland China</strong>—both 02:00 UTC. This is the announced schedule; check regional notices for actual service status.</p><p>We have not verified a global English release date or English client support from the sources used here. The language of this guide does not change the region, account rules or language of the game client. <a href="/en/guides/global-release/">Compare the regional evidence →</a></p></section>
+    <section class="home-section" id="guides" aria-labelledby="guides-title"><div class="section-head"><div><p class="section-kicker">LAUNCH ESSENTIALS</p><h2 id="guides-title">Three guides to get ready</h2><p>Choose a region, check your device, then use the official download route.</p></div></div><div class="guide-grid">{entries.map((entry, index) => <GuideCard entry={entry} index={index}/>)}</div></section>
+    <section class="home-section english-info" id="about"><div><p class="section-kicker">ABOUT PROMILIA GUIDE</p><h2>An independent guide for your next journey</h2><p>Promilia Guide is an unofficial fan site maintained by an independent developer. It is not affiliated with Manjuu, Yostar or the regional publishers. Our English section currently covers release dates, downloads and device preparation. More reference material is available in <a href="/zh-hans/" lang="zh-Hans">简体中文</a> and <a href="/ja/" lang="ja">日本語</a>.</p></div><div id="editorial-policy"><h2>How we check information</h2><p>Each guide links to original regional sources and records when those sources were checked. Japan and China rules are kept separate. An official announcement, an accessible store listing, a downloaded installer and a successful game login are different checks.</p><p>Source checks for these launch guides were completed through November 24, 2026; the English edition was published on November 25. We have not completed installation or gameplay tests.</p></div><div id="corrections"><h2>Report a correction</h2><p>If you find an error, include the guide URL, the regional version, the affected passage and a link to the official announcement. You can <a href="https://github.com/aieasygames-alt/promilia-guide/issues/new" target="_blank" rel="noopener noreferrer">open a correction issue on GitHub</a> (a GitHub account is required). Please leave out account passwords, verification codes and other private information.</p><p>Search runs in your browser using the site's static index. Language choices are saved in local storage. This site has no game account login; official downloads and support links lead to external services with their own policies.</p></div></section>
+  </div>
+</Base>
+<style>
+  .english-scope { display: block; margin: 2rem 0; line-height: 1.9; }
+  .hero-game { display: block; font: 600 1rem/1.6 var(--font-body, sans-serif); color: var(--green); margin-bottom: 1rem; }
+  .english-scope p strong { display: inline; }
+  .english-scope h2 { font-size: 1.3rem; margin-bottom: .8rem; }
+  .english-scope p + p { margin-top: .8rem; }
+  .english-scope a, .english-info a { text-decoration: underline; text-underline-offset: .2em; }
+  .english-info { display: grid; gap: 2.5rem; max-width: 850px; padding-bottom: 3rem; line-height: 1.9; }
+  .english-info h2 { margin-bottom: .8rem; }
+  .english-info p + p { margin-top: .7rem; }
+  [id] { scroll-margin-top: 7rem; }
+</style>

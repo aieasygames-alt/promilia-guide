@@ -6,7 +6,7 @@ const uniqueIds = z.array(z.string().trim().min(1)).refine((values) => new Set(v
 export const releasePlanSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   title: z.string().trim().min(1),
-  locales: z.array(z.enum(['zh-hans', 'ja'])).min(1).refine((values) => new Set(values).size === values.length, 'Duplicate locales'),
+  locales: z.array(z.enum(['zh-hans', 'ja', 'en'])).min(1).refine((values) => new Set(values).size === values.length, 'Duplicate locales'),
   topics: z.array(z.object({ contentId: z.string().trim().min(1), label: z.string().trim().min(1), requiredClaims: uniqueIds.default([]) })).min(1),
 }).refine((plan) => new Set(plan.topics.map((topic) => topic.contentId)).size === plan.topics.length, 'Duplicate release topics');
 

@@ -1,12 +1,12 @@
 import type { APIRoute } from 'astro';
 import { allGuides, articlePath, isPublished, preview } from '../lib/content';
-import { origin, locales } from '../lib/publication.mjs';
+import { origin, referenceLocales as locales } from '../lib/publication.mjs';
 import { entities } from '../data/entities';
 import { sources } from '../lib/facts';
 import { isEntityDetailPublishable } from '../lib/entity-publication.mjs';
 
 export const GET: APIRoute = async () => {
-  const staticPaths = ['/', ...locales.flatMap((locale) => ['', 'about/', 'editorial-policy/', 'contact/', 'updates/', 'characters/', 'kibo/', 'database/', 'faq/'].map((path) => `/${locale}/${path}`))];
+  const staticPaths = ['/en/', '/', ...locales.flatMap((locale) => ['', 'about/', 'editorial-policy/', 'contact/', 'updates/', 'characters/', 'kibo/', 'database/', 'faq/'].map((path) => `/${locale}/${path}`))];
   const all = await allGuides();
   const entries = all.filter(({ data }) => isPublished(data, all));
   const catalogs = locales.flatMap((locale) => ['guides', 'systems'].filter((section) => entries.filter(({ data }) => data.locale === locale && data.section === section).length >= 2).map((section) => `/${locale}/${section}/`));

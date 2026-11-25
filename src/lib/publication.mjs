@@ -1,6 +1,8 @@
-/** @type {Array<'zh-hans' | 'ja'>} */
-export const locales = ['zh-hans', 'ja'];
-export const languageTag = { 'zh-hans': 'zh-Hans', ja: 'ja' };
+/** @type {Array<'zh-hans' | 'ja' | 'en'>} */
+export const locales = ['zh-hans', 'ja', 'en'];
+/** Full reference catalogs are currently available in these languages. */
+export const referenceLocales = /** @type {Array<'zh-hans' | 'ja'>} */ (['zh-hans', 'ja']);
+export const languageTag = { 'zh-hans': 'zh-Hans', ja: 'ja', en: 'en' };
 export const origin = 'https://promiliaguide.com';
 
 export function isPublished(data) {

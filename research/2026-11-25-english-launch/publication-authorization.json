@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-25",
+  "authorization": "按照你上面的规划来补充内容，补充完成后执行部署到线上",
+  "authorizationContext": "Project owner authorized creation and production deployment of the proposed English batch. No independent language review or gameplay testing is asserted.",
+  "scope": "English homepage and three launch guides, search, language navigation and technical SEO.",
+  "articles": [
+    {
+      "file": "src/content/guides/en/download.md",
+      "sha256": "280e7bc40a7990b37b04e4fc89e1347b9915b2ec20b2ebcd70cf7858c40c1649"
+    },
+    {
+      "file": "src/content/guides/en/global-release.md",
+      "sha256": "a772413c7f87712f9e81c68fcbb242b0d0748ea960178c63b413f22a0badd5c6"
+    },
+    {
+      "file": "src/content/guides/en/requirements.md",
+      "sha256": "90ba49b35a8f7e09d925032749a8cd771a5b0e5ee8415c5110834ca1300df8ef"
+    }
+  ]
+}

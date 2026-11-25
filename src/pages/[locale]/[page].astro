@@ -12,8 +12,8 @@ import CatalogHelp from '../../components/CatalogHelp.astro';
 import UpdateFeed from '../../components/UpdateFeed.astro';
 import { entityCategory } from '../../lib/entity-category.mjs';
 import { isEntityCatalogPublishable } from '../../lib/entity-publication.mjs';
-import { visibleGuides, allGuides, visibleEntitiesFor, isPublished, type Locale } from '../../lib/content';
-import { locales, origin, languageTag } from '../../lib/publication.mjs';
+import { visibleGuides, allGuides, visibleEntitiesFor, isPublished, type ReferenceLocale as Locale } from '../../lib/content';
+import { referenceLocales as locales, origin, languageTag } from '../../lib/publication.mjs';
 import { t } from '../../lib/i18n';
 import { sources } from '../../lib/facts';
 export function getStaticPaths() {
