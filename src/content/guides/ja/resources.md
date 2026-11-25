@@ -28,12 +28,8 @@ translationStatus: published
 translatedFromRevision: 10
 aliases:
   - リソース計画
-  - スタミナ優先度
-  - 行動力配分
   - 序盤攻略
   - 配布報酬
-  - 星原石
-  - 純粋な記憶の痕跡
   - 初心者注意点
   - 事前登録特典 受け取り方
   - 報酬 届かない

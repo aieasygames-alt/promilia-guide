@@ -17,9 +17,9 @@ test('home renders, mobile navigation works, and layout fits viewport', async ({
   page.on('pageerror', (error) => errors.push(error.message));
   await page.goto('/zh-hans/');
   await expect(page.locator('h1')).toContainText('每一步都有方向');
-  await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
+  await expect(page.locator('.brand-logo')).toHaveAttribute('src', '/images/logo-wordmark.webp');
   await expect(page.locator('.brand-logo')).toHaveAttribute('alt', '蓝色星原：旅谣（Azur Promilia）');
-  await expect(page.locator('.footer-logo')).toHaveAttribute('src', '/images/logo-wordmark.png');
+  await expect(page.locator('.footer-logo')).toHaveAttribute('src', '/images/logo-wordmark.webp');
   await expect(page.locator('.hero-visual > img')).toHaveAttribute('src', '/images/feature/home-world.webp');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   if (isMobile) {
@@ -42,6 +42,41 @@ test('checklist survives reload and preserves tasks across corresponding languag
   await expect(task).toBeChecked();
   await page.getByRole('button', { name: '進捗をリセット' }).click();
   await expect(task).not.toBeChecked();
+});
+
+test('launch questions lead to existing answers and support FAQ reaches troubleshooting', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja']) {
+    await page.goto(`/${locale}/`);
+    const links = page.locator('.launch-answers a');
+    await expect(links).toHaveCount(7);
+    const paths = await links.evaluateAll(nodes => nodes.map(node => node.getAttribute('href')));
+    expect(paths).toEqual(['download', 'requirements', 'resources', 'banner-rules', 'reroll', 'redeem-codes', 'support'].map(id => `/${locale}/guides/${id}/`));
+    await links.last().click();
+    await expect(page.locator('h1')).toContainText(locale === 'ja' ? 'ログイン' : '登录');
+    await page.goto(`/${locale}/faq/#q-support`);
+    const answer = page.locator('#q-support');
+    await expect(answer).toHaveAttribute('data-answer-current', 'true');
+    await expect(answer.locator('a')).toHaveAttribute('href', `/${locale}/guides/support/`);
+    await expect(answer.locator('p')).toBeVisible();
+  }
+});
+
+test('announced China banner characters connect catalogs to the exact rules section', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja']) {
+    for (const path of ['characters', 'database']) {
+      await page.goto(`/${locale}/${path}/`);
+      const roster = page.locator('[data-banner-characters]');
+      await expect(roster).toContainText('涂山小玉');
+      await expect(roster).toContainText('枫糖');
+      await expect(roster).toContainText('艾妮丝');
+      await expect(roster).toContainText(locale === 'ja' ? '日本版の名称・開催予定を示しません' : '国服');
+      expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      await roster.locator('.banner-links a').first().click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/guides/banner-rules/#`));
+      const target = await page.evaluate(() => document.getElementById(decodeURIComponent(location.hash.slice(1)))?.textContent);
+      expect(target).toContain(locale === 'ja' ? '中国本土' : '当期卡池');
+    }
+  }
 });
 
 test('both languages fit narrow phones and tablet widths', async ({ page }) => {

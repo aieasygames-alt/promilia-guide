@@ -15,16 +15,23 @@ const releases = (['cn', 'jp'] as const).map((region) => releaseSummary({ claims
 const entries = await visibleGuides(locale);
 const root = `/${locale}/`;
 const guideLink = (id: string) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? articlePath(entry.data) : root + 'guides/'; };
-const featured = ['launch', 'global-release', 'download', 'getting-started'].flatMap((id) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? [entry] : []; });
+const featured = ['getting-started', 'requirements', 'resources', 'banner-rules'].flatMap((id) => { const entry = entries.find((e) => e.data.contentId === id); return entry ? [entry] : []; });
+const launchLinks = [
+  ['download', '官方下载', '公式ダウンロード'], ['requirements', '容量与配置', '容量・推奨スペック'],
+  ['resources', '福利怎么领取', '特典の受け取り方'], ['banner-rules', '卡池与保底', 'ガチャ・天井'],
+  ['reroll', '首抽怎么判断', 'リセマラの判断'], ['redeem-codes', '兑换码核对', 'シリアルコード'],
+  ['support', '登录与故障排查', 'ログイン・不具合'],
+].flatMap(([id, zh, ja]) => { const entry = entries.find(e => e.data.contentId === id); return entry ? [{ href: articlePath(entry.data), label: locale === 'ja' ? ja : zh }] : []; });
 const alternates = [...locales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/` })), { lang: 'x-default', href: origin + '/' }];
 const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'kibo/' }, { icon: 'shield', path: guideLink('combat').replace(root, '') }, { icon: 'compass', path: 'systems/' }];
 ---
-<Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア 攻略・配信情報' : '星原旅伴 · 蓝色星原：旅谣攻略'} description={c.intro} alternates={alternates}>
+<Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア攻略｜ダウンロード・容量・特典' : '蓝色星原：旅谣攻略｜下载、开荒与福利'} description={c.intro} alternates={alternates}>
   <section class="hero">
-    <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? '出典を明記 · バージョンを区別 · 継続して更新' : '来源可追溯 · 版本有标注 · 内容持续修订'}</span></div></div>
+    <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1><span class="hero-game">{locale === 'ja' ? 'アズールプロミリア攻略' : '蓝色星原：旅谣攻略'}</span>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? '出典を明記 · バージョンを区別 · 継続して更新' : '来源可追溯 · 版本有标注 · 内容持续修订'}</span></div></div>
     <div class="hero-visual"><img src="/images/feature/home-world.webp" width="1500" height="843" alt={locale === 'ja' ? 'ユーザー提供の「アズールプロミリア」風景ビジュアル。山、花畑、キャラクターを描いている。' : '用户提供的蓝色星原：旅谣风景图，展示山地、花田与角色。'} fetchpriority="high" loading="eager" decoding="async"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-compass" aria-hidden="true"><span>N</span><Icon name="compass" size={50}/></div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>THE JOURNEY STARTS HERE</small><strong>{c.fieldnotesSub}</strong></span><span class="caption-index">01 / ∞</span></div></div>
   </section>
   <div class="container">
+    <nav class="launch-answers" aria-label={locale === 'ja' ? 'サービス開始の疑問から探す' : '公测问题快速查找'}><strong>{locale === 'ja' ? 'いま知りたいこと' : '公测先查这些'}</strong><div>{launchLinks.map(link => <a href={link.href}>{link.label}<Icon name="arrow" size={14}/></a>)}</div></nav>
     {releases.map((release) => <section class="status-strip" aria-label={release.label} data-release-claim={release.claimId} data-release-revision={release.revision} data-release-verified={String(release.verified)}><span class="status-title"><span class="status-dot"></span>{release.label}</span><p>{release.detail}</p>{release.source?.url ? <a href={release.source.url} target="_blank" rel="noopener noreferrer">{locale === 'ja' ? '公式告知' : '官方原文'}<Icon name="arrow" size={15}/></a> : <a href={guideLink('global-release')}>{locale === 'ja' ? '配信状況' : '发行状态'}<Icon name="arrow" size={15}/></a>}</section>)}
     <LaunchActions locale={locale}/>
     <section class="quick-nav-section" aria-label={c.quickNav.title}>
@@ -75,6 +82,12 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
   </div>
 </Base>
 <style>
+  .hero-game { display: block; font: 600 1rem/1.6 var(--font-body, sans-serif); letter-spacing: .04em; color: var(--green); margin-bottom: 1rem; }
+  .launch-answers { padding: 1.4rem 0; border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
+  .launch-answers > strong { color: var(--green); font-size: 1rem; }
+  .launch-answers > div { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; margin-top: .8rem; }
+  .launch-answers a { display: inline-flex; align-items: center; gap: .4rem; font-size: .95rem; line-height: 1.8; text-decoration: underline; text-underline-offset: .2em; }
+
   .home-reference { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
   .home-reference a { display: flex; align-items: center; gap: 1rem; padding: 1.6rem; border-top: 2px solid var(--green); border-bottom: 1px solid var(--line); color: var(--green); }
   .home-reference span { flex: 1; } .home-reference strong { font-size: 1.2rem; } .home-reference small { display: block; margin-top: .5rem; color: var(--muted); line-height: 1.8; }

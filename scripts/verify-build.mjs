@@ -75,11 +75,53 @@ if (pages.has('/editorial/') !== isPreview) fail('Editorial workspace must exist
 if (pages.get('/editorial/')?.$('[data-pagefind-body]').length) fail('Editorial workspace must not be searchable');
 const sitemapText = await readFile('dist/sitemap.xml', 'utf8');
 const sitemap = load(sitemapText, { xmlMode: true });
-for (const loc of sitemap('loc').toArray()) {
-  const url = sitemap(loc).text(); const page = pages.get(new URL(url).pathname);
-  if (new URL(url).pathname.startsWith('/editorial/')) fail('Editorial workspace must not enter sitemap');
+const articleUpdates = new Map(entries.filter(({ data }) => isPublishable(data, context)).map(({ data }) => [articlePath(data), data.updatedAt]));
+const sitemapPaths = new Set();
+for (const node of sitemap('url').toArray()) {
+  const item = sitemap(node);
+  const url = item.children('loc').text();
+  const path = new URL(url).pathname;
+  const page = pages.get(path);
+  if (sitemapPaths.has(path)) fail(`Sitemap repeats page ${path}`);
+  sitemapPaths.add(path);
+  if (path.startsWith('/editorial/')) fail('Editorial workspace must not enter sitemap');
   if (!page) fail(`Sitemap points to nonexistent page ${url}`);
   else if (page.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`Sitemap contains noindex page ${url}`);
+  const lastmod = item.children('lastmod');
+  if (articleUpdates.has(path)) {
+    if (lastmod.length !== 1 || lastmod.text() !== articleUpdates.get(path)) fail(`Sitemap lastmod must match the article's actual updatedAt ${path}`);
+  } else if (lastmod.length) fail(`Sitemap must not invent an update date for a non-article page ${path}`);
+}
+if (!isPreview) for (const path of articleUpdates.keys()) {
+  if (!sitemapPaths.has(path)) fail(`Published article missing from sitemap ${path}`);
+}
+
+// Check the generic crawler's longest matching rule, with Allow winning ties.
+function robotsAllows(robots, path) {
+  const groups = [];
+  let group = { agents: [], rules: [] };
+  for (const line of robots.split(/\r?\n/)) {
+    const match = line.replace(/#.*/, '').trim().match(/^(user-agent|allow|disallow)\s*:\s*(.*)$/i);
+    if (!match) continue;
+    const directive = match[1].toLowerCase(), value = match[2].trim();
+    if (directive === 'user-agent') {
+      if (group.rules.length) { groups.push(group); group = { agents: [], rules: [] }; }
+      group.agents.push(value.toLowerCase());
+    } else if (value) group.rules.push({ allow: directive === 'allow', pattern: value });
+  }
+  groups.push(group);
+  const matches = groups.filter(group => group.agents.includes('*')).flatMap(group => group.rules).filter(rule => {
+    const pattern = rule.pattern.replace(/[.+?^{}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*');
+    return new RegExp('^' + pattern).test(path);
+  }).sort((a, b) => b.pattern.length - a.pattern.length || Number(b.allow) - Number(a.allow));
+  return matches[0]?.allow ?? true;
+}
+const robots = await readFile('dist/robots.txt', 'utf8');
+for (const locale of ['zh-hans', 'ja']) {
+  const path = `/${locale}/search/`, page = pages.get(path);
+  if (!page?.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`Search page must remain noindex ${path}`);
+  if (sitemapPaths.has(path)) fail(`Search page must not enter sitemap ${path}`);
+  if (!isPreview && !robotsAllows(robots, path)) fail(`Production robots must allow crawlers to read the search page's noindex ${path}`);
 }
 for (const entity of entities) for (const locale of ['zh-hans', 'ja']) {
   const path = `/${locale}/${entity.kind === 'character' ? 'characters' : 'kibo'}/${entity.id}/`;
