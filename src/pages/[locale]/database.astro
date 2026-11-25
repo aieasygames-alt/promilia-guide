@@ -2,11 +2,11 @@
 import BannerCharacters from '../../components/BannerCharacters.astro';
 import Base from '../../layouts/Base.astro';
 import ContentRoutes from '../../components/ContentRoutes.astro';
-import { visibleEntitiesFor, visibleGuides, type Locale } from '../../lib/content';
+import { visibleEntitiesFor, visibleGuides, type ReferenceLocale as Locale } from '../../lib/content';
 import { sources } from '../../lib/facts';
 import { isEntityCatalogPublishable } from '../../lib/entity-publication.mjs';
 import { worldRegions } from '../../data/world-regions';
-import { locales, languageTag, origin } from '../../lib/publication.mjs';
+import { referenceLocales as locales, languageTag, origin } from '../../lib/publication.mjs';
 export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
 const locale = Astro.params.locale as Locale;
 const ja = locale === 'ja';

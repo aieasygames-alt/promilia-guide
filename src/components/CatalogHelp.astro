@@ -1,5 +1,5 @@
 ---
-import type { Locale } from '../lib/content';
+import type { ReferenceLocale as Locale } from '../lib/content';
 interface Props { locale: Locale; kind: 'character' | 'kibo'; count: number }
 const { locale, kind, count } = Astro.props;
 const ja = locale === 'ja';

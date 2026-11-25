@@ -1,4 +1,4 @@
-import type { Locale } from '../lib/content';
+import type { ReferenceLocale as Locale } from '../lib/content';
 
 export const contentRoutes = [
   { id: 'prepare', title: { 'zh-hans': '下载与开服准备', ja: 'ダウンロード・開始準備' }, note: { 'zh-hans': '先选地区，再核对设备与当前分发阶段。', ja: '地域を選び、端末と配布段階を確認。' }, topics: ['global-release', 'launch', 'download', 'requirements', 'platforms', 'support'] },

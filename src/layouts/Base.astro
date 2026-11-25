@@ -3,7 +3,7 @@ import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import { t } from '../lib/i18n';
 import { preview, type Locale } from '../lib/content';
-import { origin, languageTag } from '../lib/publication.mjs';
+import { origin, locales, languageTag } from '../lib/publication.mjs';
 interface Props {
   locale?: Locale; title: string; description: string; noindex?: boolean;
   alternates?: { lang: string; href: string }[];
@@ -15,9 +15,14 @@ const c = t(locale);
 const root = `/${locale}/`;
 const other = locale === 'zh-hans' ? 'ja' : 'zh-hans';
 const canonical = origin + Astro.url.pathname;
-const logoAlt = locale === 'ja' ? 'アズールプロミリア（Azur Promilia）' : '蓝色星原：旅谣（Azur Promilia）';
+const logoAlt = locale === 'en' ? 'Azur Promilia' : locale === 'ja' ? 'アズールプロミリア（Azur Promilia）' : '蓝色星原：旅谣（Azur Promilia）';
 const logoUrl = origin + '/images/logo.png';
-const nav = [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['database/', c.database], ['updates/', c.updates]];
+const nav = locale === 'en' ? [['', c.home], ['guides/global-release/', 'Release & regions'], ['guides/download/', 'Download'], ['guides/requirements/', 'Requirements']] : [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['database/', c.database], ['updates/', c.updates]];
+const languageNames = { 'zh-hans': '简体中文', ja: '日本語', en: 'English' };
+const languageOptions = locales.map((lang) => {
+  const exact = alternates.find(alt => alt.lang === languageTag[lang]);
+  return { locale: lang, name: languageNames[lang], href: exact ? new URL(exact.href).pathname : `/${lang}/`, fallback: !exact && Astro.url.pathname !== `/${lang}/` };
+});
 const active = (href: string) => href === '' ? Astro.url.pathname === root : Astro.url.pathname.startsWith(root + href);
 const indexable = !noindex && !preview;
 const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
@@ -46,7 +51,7 @@ const metadata = schema || {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:locale" content={locale === 'ja' ? 'ja_JP' : 'zh_CN'} />
+    <meta property="og:locale" content={locale === 'en' ? 'en_US' : locale === 'ja' ? 'ja_JP' : 'zh_CN'} />
     <meta property="og:image" content={origin + '/images/social.png'} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -55,7 +60,7 @@ const metadata = schema || {
   </head>
   <body data-pagefind-ignore={searchable ? undefined : 'all'}>
     <a class="skip-link" href="#main">{c.skip}</a>
-    {preview && <div class="preview-bar" data-pagefind-ignore><span>{c.preview}</span> {c.previewNote} <a href="/editorial/" style="text-decoration:underline;margin-left:12px">{locale === 'ja' ? '編集状況' : '编辑工作台'} ↗</a></div>}
+    {preview && <div class="preview-bar" data-pagefind-ignore><span>{c.preview}</span> {c.previewNote} <a href="/editorial/" style="text-decoration:underline;margin-left:12px">{locale === 'en' ? 'Editorial workspace' : locale === 'ja' ? '編集状況' : '编辑工作台'} ↗</a></div>}
     <header class="site-header" data-pagefind-ignore>
       <div class="header-inner">
         <a class="brand" href={root} aria-label={`Promilia Guide — ${c.home}`}>
@@ -66,17 +71,21 @@ const metadata = schema || {
         </nav>
         <div class="header-actions">
           <a class="search-shortcut" href={root + 'search/'} aria-label={c.searchLabel}><Icon name="search" size={19}/><span>{c.searchButton}</span><kbd>/</kbd></a>
-          <div class="language-wrap">
+          {locale !== 'en' && <div class="language-wrap">
             <a class="language-button" href={languageTarget || `/${other}/`} lang={languageTag[other]} aria-label={missingTranslation ? c.noTranslation + ' · ' + c.targetHome : c.language} data-language-choice={other}><Icon name="globe" size={17}/>{locale === 'zh-hans' ? '日本語' : '简中'}<span aria-hidden="true">↗</span></a>
             {missingTranslation && <span class="language-note">{c.noTranslation} · {c.targetHome}</span>}
-          </div>
+          </div>}
+          <details class="language-selector">
+            <summary aria-label={c.language}><Icon name="globe" size={17}/>{locale === 'en' && <span>EN</span>}<span aria-hidden="true">⌄</span></summary>
+            <nav aria-label={c.language}>{languageOptions.map(option => <a href={option.href} lang={languageTag[option.locale]} data-language-choice={option.locale} aria-current={option.locale === locale ? 'page' : undefined}>{option.name}{option.fallback && <small>{locale === 'en' ? 'Home' : locale === 'ja' ? 'ホーム' : '首页'}</small>}</a>)}</nav>
+          </details>
           <details class="mobile-menu"><summary aria-label={c.menu}><span></span><span></span><span></span></summary><nav aria-label={c.menu}>{nav.map(([href, label]) => <a href={root + href} aria-current={active(href) ? 'page' : undefined}>{label}</a>)}</nav></details>
         </div>
       </div>
     </header>
     <main id="main"><slot /></main>
     <footer class="site-footer" data-pagefind-ignore>
-      <div class="footer-inner"><div><a class="footer-brand" href={root} aria-label={`Promilia Guide — ${c.home}`}><img class="footer-logo" src="/images/logo-wordmark.webp" alt="" width="444" height="183" /></a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'faq/'}>{c.faq}</a><a href={root + 'database/'}>{c.database}</a><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
+      <div class="footer-inner"><div><a class="footer-brand" href={root} aria-label={`Promilia Guide — ${c.home}`}><img class="footer-logo" src="/images/logo-wordmark.webp" alt="" width="444" height="183" /></a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'en' ? 'Site information' : locale === 'ja' ? 'サイト情報' : '站点信息'}>{locale === 'en' ? <><a href="/en/#guides">{c.guides}</a><a href="/en/#about">{c.about}</a><a href="/en/#editorial-policy">{c.policy}</a><a href="/en/#corrections">{c.contact}</a></> : <><a href={root + 'faq/'}>{c.faq}</a><a href={root + 'database/'}>{c.database}</a><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a></>}<a href="/">简中 / 日本語 / English</a></nav></div>
       <div class="footer-bottom"><span>© 2026 Promilia Guide</span><span>MADE FOR THE JOURNEY <span aria-hidden="true">✧</span></span></div>
     </footer>
     <script>

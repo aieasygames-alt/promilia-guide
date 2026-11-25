@@ -31,6 +31,11 @@ const result = {
       missingTopics: topics.filter(id => !localized.some(entry => entry.data.contentId === id)),
       unpublishedTopics: topics.filter(id => localized.some(entry => entry.data.contentId === id) && !published.some(entry => entry.data.contentId === id)),
     }];
-  })),
+  }).concat([['en', {
+    scope: 'Launch essentials: release dates, downloads and requirements',
+    publishedGuides: entries.filter(({ data }) => data.locale === 'en' && isPublishable(data, { entries, sources, claims })).length,
+    missingTopics: ['global-release', 'download', 'requirements'].filter(id => !entries.some(({ data }) => data.locale === 'en' && data.contentId === id)),
+    unpublishedTopics: entries.filter(({ data }) => data.locale === 'en' && !isPublishable(data, { entries, sources, claims })).map(({ data }) => data.contentId),
+  }]])),
 };
 console.log(JSON.stringify(result, null, 2));

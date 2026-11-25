@@ -1,7 +1,7 @@
 ---
 import updates from '../data/site-updates.json';
 import { topicLabels } from '../data/content-routes';
-import { articlePath, type Guide, type Locale } from '../lib/content';
+import { articlePath, type Guide, type ReferenceLocale as Locale } from '../lib/content';
 import { officialAnnouncements } from '../lib/content-navigation.mjs';
 import type { Source } from '../lib/facts';
 interface Props { locale: Locale; entries: Guide[]; sources: Source[] }

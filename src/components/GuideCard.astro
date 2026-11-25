@@ -11,5 +11,5 @@ const icons = ['globe', 'compass', 'monitor', 'book'];
 ---
 <a class="guide-card" href={articlePath(data)}>
   <div class={`guide-card-art art-${index % 4}`} aria-hidden="true"><div class="art-orbit"></div><Icon name={icons[index % 4]} size={43}/><span class="card-number">FIELD NOTE / {String(index + 1).padStart(2, '0')}</span></div>
-  <div class="guide-card-body"><div class="card-tags"><span class={`pill ${data.verification === 'pending' ? 'pending' : ''}`}>{c[data.verification]}</span>{!published && <span class="draft-label">{c.draft}</span>}</div><h3>{data.title}</h3><p>{data.description}</p><div class="card-bottom"><span><Icon name="clock" size={12}/> {data.minutes} {data.locale === 'ja' ? '分' : '分钟'}</span><Icon name="arrow" size={17}/></div></div>
+  <div class="guide-card-body"><div class="card-tags"><span class={`pill ${data.verification === 'pending' ? 'pending' : ''}`}>{c[data.verification]}</span>{!published && <span class="draft-label">{c.draft}</span>}</div><h3>{data.title}</h3><p>{data.description}</p><div class="card-bottom"><span><Icon name="clock" size={12}/> {data.minutes} {data.locale === 'en' ? 'min read' : data.locale === 'ja' ? '分' : '分钟'}</span><Icon name="arrow" size={17}/></div></div>
 </a>

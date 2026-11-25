@@ -2,7 +2,7 @@
 import { channels, claims, sources } from '../lib/facts';
 import { distributionRows } from '../lib/distribution.mjs';
 import ScheduleTime from './ScheduleTime.astro';
-import type { Locale } from '../lib/content';
+import type { ReferenceLocale as Locale } from '../lib/content';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const ja = locale === 'ja';

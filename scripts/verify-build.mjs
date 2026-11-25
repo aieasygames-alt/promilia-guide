@@ -117,7 +117,7 @@ function robotsAllows(robots, path) {
   return matches[0]?.allow ?? true;
 }
 const robots = await readFile('dist/robots.txt', 'utf8');
-for (const locale of ['zh-hans', 'ja']) {
+for (const locale of ['zh-hans', 'ja', 'en']) {
   const path = `/${locale}/search/`, page = pages.get(path);
   if (!page?.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`Search page must remain noindex ${path}`);
   if (sitemapPaths.has(path)) fail(`Search page must not enter sitemap ${path}`);

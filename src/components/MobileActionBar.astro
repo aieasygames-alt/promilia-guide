@@ -12,7 +12,7 @@ const c = t(locale);
 const ja = locale === 'ja';
 ---
 
-<aside class="mobile-action-bar" aria-label={ja ? 'クイック操作' : '快捷操作'}>
+<aside class="mobile-action-bar" aria-label={locale === 'en' ? 'Quick actions' : ja ? 'クイック操作' : '快捷操作'}>
   <div class="mobile-bar-inner">
     <button type="button" class="mobile-bar-btn" id="mobile-toc-btn" aria-label={c.mobileBar.toc}>
       <Icon name="toc" size={17} />

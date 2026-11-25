@@ -31,7 +31,7 @@ try {
   const manifestResponse = await request('/build-info.json');
   if (!manifestResponse || manifestResponse.status !== 200) throw new Error('Build manifest is unavailable; deploy the current build before checking');
   const manifest = inspectManifest(JSON.parse(manifestResponse.body), values.mode, values.commit);
-  const paths = ['/zh-hans/', '/ja/', '/zh-hans/updates/', '/ja/updates/', '/zh-hans/database/', '/ja/database/', '/zh-hans/faq/', '/ja/faq/', ...manifest.articlePaths, ...(values.mode === 'preview' ? ['/editorial/'] : [])];
+  const paths = [...(manifest.articlePaths.some(path => path.startsWith('/en/')) ? ['/en/'] : []), '/zh-hans/', '/ja/', '/zh-hans/updates/', '/ja/updates/', '/zh-hans/database/', '/ja/database/', '/zh-hans/faq/', '/ja/faq/', ...manifest.articlePaths, ...(values.mode === 'preview' ? ['/editorial/'] : [])];
   for (let index = 0; index < paths.length; index += 4) {
     const batch = await Promise.all(paths.slice(index, index + 4).map(async (path) => {
       const response = await request(path);
