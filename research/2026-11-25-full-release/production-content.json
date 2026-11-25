@@ -1,0 +1,808 @@
+{
+  "origin": "https://promiliaguide.com",
+  "commitSha": "f8a3e5f3ab362c59bc59821699740075c486641b",
+  "generatedAt": "2026-11-25T00:58:15.893Z",
+  "passed": true,
+  "checks": [
+    {
+      "name": "same production SHA and complete manifest",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/banner-rules/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/banner-rules/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/banner-rules/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/combat/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/combat/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/combat/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/getting-started/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/getting-started/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/getting-started/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/download/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/download/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/download/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/kibo/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/kibo/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/kibo/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/launch/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/launch/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/launch/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/home/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/home/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/systems/home/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/global-release/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/global-release/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/global-release/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/platforms/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/platforms/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/platforms/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/recharge-return/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/recharge-return/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/recharge-return/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/redeem-codes/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/redeem-codes/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/redeem-codes/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/requirements/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/requirements/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/requirements/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/resources/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/resources/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/resources/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/reroll/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/reroll/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/reroll/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/banner-rules/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/banner-rules/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/banner-rules/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/support/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/support/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/support/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/global-release/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/global-release/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/global-release/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/combat/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/combat/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/combat/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/download/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/download/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/download/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/getting-started/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/getting-started/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/getting-started/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/kibo/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/kibo/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/kibo/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/platforms/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/platforms/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/platforms/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/home/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/home/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/systems/home/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/launch/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/launch/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/launch/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/recharge-return/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/recharge-return/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/recharge-return/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/requirements/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/requirements/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/requirements/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/reroll/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/reroll/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/reroll/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/redeem-codes/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/redeem-codes/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/redeem-codes/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/support/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/support/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/support/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/resources/ title and complete current body",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/resources/ publication and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/resources/ current source fact text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/banner-rules/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/banner-rules/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/recharge-return/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/recharge-return/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/resources/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/resources/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/download/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/support/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/support/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/download/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/guides/reroll/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/guides/reroll/ released additions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans regional launch state is not inferred open",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans official Japanese PC link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans unverified codes have no copy action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja regional launch state is not inferred open",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja official Japanese PC link",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja unverified codes have no copy action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/launch-rewards-ja.txt exact downloadable bytes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/launch-rewards-zh-hans.txt exact downloadable bytes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/launch-troubleshooting-ja.txt exact downloadable bytes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/downloads/launch-troubleshooting-zh-hans.txt exact downloadable bytes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "sitemap contains all 30 guides",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/characters/anais/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/characters/cathbelle/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/characters/metsa/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/characters/symphoria/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/characters/terara/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/kibo/bluda/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/kibo/cabbird/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/kibo/downybrinny/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/kibo/staray/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/kibo/vespervamp/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/anais/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/cathbelle/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/metsa/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/symphoria/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/terara/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/kibo/bluda/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/kibo/cabbird/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/kibo/downybrinny/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/kibo/staray/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/kibo/vespervamp/ summary remains outside indexing and search",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/editorial/ remains unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/editorial/fixtures/trust/ remains unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/characters/hanyouyou/ remains unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/database/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/database/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans verified profile and world coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/faq/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/faq/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans all 26 FAQ dependencies current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/updates/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/zh-hans/updates/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans latest release date and total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans Metsa belongs to correct region",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/database/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/database/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja verified profile and world coverage",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/faq/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/faq/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja all 26 FAQ dependencies current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/updates/ complete released main content",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "/ja/updates/ canonical and index state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja latest release date and total",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja Metsa belongs to correct region",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "two language search bundles",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ja search metadata delivered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "zh-hans search metadata delivered",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

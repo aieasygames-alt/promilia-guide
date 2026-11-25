@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-25",
+  "origin": "https://promiliaguide.com",
+  "featureCommitSha": "f8a3e5f3ab362c59bc59821699740075c486641b",
+  "pullRequest": "https://github.com/aieasygames-alt/promilia-guide/pull/7",
+  "actionsRun": "https://github.com/aieasygames-alt/promilia-guide/actions/runs/45521932954",
+  "local": {
+    "unitTests": 66,
+    "browserTests": 62,
+    "errors": 0,
+    "warnings": 0,
+    "productionHTML": 76,
+    "searchPages": 44
+  },
+  "production": {
+    "passed": true,
+    "technicalChecks": 98,
+    "contentAndBoundaryChecks": 160,
+    "articles": 30,
+    "downloadsByteMatched": 4,
+    "browserInteractionsPassed": true
+  },
+  "notes": [
+    "当前用户发布确认不等于独立日语审校或游戏实机验证。",
+    "后续仅记录维护的提交也会触发自动部署；最新线上SHA以build-info.json及对应Actions为准。"
+  ]
+}

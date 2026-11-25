@@ -8,4 +8,6 @@
 
 [覆盖率](coverage.json)、[文章状态](content-status.json)、[核心发布门槛](readiness.json)为本次发布前实际文件报告。上一日研究目录的待审和未部署说明保留为开发阶段历史。
 
-部署使用现有GitHub PR → main → Cloudflare Pages自动发布流程，最终线上结果和同SHA检查将在部署完成后记录。线上语义核验可复用本目录`verify-live.mjs`，参数为完整生产提交SHA。
+已通过[PR #7](https://github.com/aieasygames-alt/promilia-guide/pull/7)合并并由现有Git集成部署至Cloudflare Pages。功能发布SHA为`f8a3e5f3ab362c59bc59821699740075c486641b`，[main质量检查与生产部署验收](https://github.com/aieasygames-alt/promilia-guide/actions/runs/45521932954)均成功。主域名同SHA技术检查98/98，全文、发布状态与内容边界检查160/160通过，4份下载文件字节一致；双语标题搜索、同篇语言切换、320px问答深链接与角色筛选实际交互通过。
+
+[验收摘要](verification.json)、[技术检查明细](production-technical.json)、[正文及边界明细](production-content.json)、[浏览器点验记录](browser-verification.json)均保存。本目录`verify-live.mjs`可用完整生产SHA复验。后续记录维护提交同样触发部署；最新版本以线上`build-info.json`及对应main Actions为准，不将旧SHA验收冒充后续提交验收。

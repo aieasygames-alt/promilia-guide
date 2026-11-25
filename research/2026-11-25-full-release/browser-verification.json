@@ -1,0 +1,15 @@
+{
+  "origin": "https://promiliaguide.com",
+  "date": "2026-11-25",
+  "method": "CUA实际浏览器交互",
+  "passed": true,
+  "checks": [
+    "中文客服标题搜索返回新客服页并可进入",
+    "客服指南切换至同篇日文页面",
+    "日文問い合わせ先搜索返回客服页",
+    "320px日文FAQ深链接自动展开，26问存在，无横向溢出",
+    "FAQ答案链接进入家园系统指南且无横向溢出",
+    "320px角色洛斯兰瑟筛选aria-pressed为true，仅显示Symphoria和Metsa",
+    "验收结束恢复默认窗口尺寸"
+  ]
+}

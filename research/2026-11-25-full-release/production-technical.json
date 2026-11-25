@@ -1,0 +1,781 @@
+{
+  "target": "https://promiliaguide.com",
+  "mode": "production",
+  "commitSha": "f8a3e5f3ab362c59bc59821699740075c486641b",
+  "expectedCommit": "f8a3e5f3ab362c59bc59821699740075c486641b",
+  "environment": "hosted",
+  "passed": true,
+  "generatedAt": "2026-11-25T00:57:56.950Z",
+  "articleCount": 30,
+  "notes": [],
+  "checks": [
+    {
+      "path": "/build-info.json",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/updates/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/updates/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/updates/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/updates/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/database/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/database/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/database/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/database/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/faq/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/faq/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/faq/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/faq/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/getting-started/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/getting-started/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/download/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/download/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/banner-rules/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/banner-rules/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/global-release/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/global-release/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/redeem-codes/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/redeem-codes/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/launch/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/launch/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/platforms/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/platforms/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/recharge-return/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/recharge-return/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/requirements/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/requirements/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/reroll/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/reroll/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/support/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/support/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/guides/resources/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/guides/resources/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/systems/combat/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/systems/combat/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/banner-rules/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/banner-rules/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/systems/home/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/systems/home/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/ja/systems/kibo/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/ja/systems/kibo/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/launch/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/launch/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/global-release/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/global-release/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/getting-started/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/getting-started/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/download/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/download/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/redeem-codes/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/redeem-codes/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/recharge-return/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/recharge-return/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/platforms/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/platforms/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/requirements/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/requirements/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/reroll/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/reroll/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/resources/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/resources/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/guides/support/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/guides/support/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/systems/combat/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/systems/combat/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/systems/home/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/systems/home/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/zh-hans/systems/kibo/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/zh-hans/systems/kibo/",
+      "check": "html-and-headers",
+      "passed": true,
+      "detail": "Canonical, index policy and applicable headers passed"
+    },
+    {
+      "path": "/robots.txt",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/pagefind/pagefind.js",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/sitemap.xml",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 200, received 200"
+    },
+    {
+      "path": "/__site-verification-2bfc696b-34a8-42e7-ac32-d2233c9bfd1d/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 404, received 404"
+    },
+    {
+      "path": "/editorial/",
+      "check": "http",
+      "passed": true,
+      "detail": "Expected 404, received 404"
+    },
+    {
+      "path": "/robots.txt + /sitemap.xml",
+      "check": "discovery",
+      "passed": true,
+      "detail": "Robots and sitemap passed"
+    },
+    {
+      "path": "https://promilia-guide.pages.dev/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://promilia-guide.pages.dev/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 301,
+          "location": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja"
+        },
+        {
+          "url": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "https://promilia-guide.pages.dev/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://promilia-guide.pages.dev/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 301,
+          "location": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "url": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "https://promilia-guide.pages.dev/",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://promilia-guide.pages.dev/",
+          "status": 301,
+          "location": "https://promiliaguide.com/"
+        },
+        {
+          "url": "https://promiliaguide.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "https://www.promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://www.promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 301,
+          "location": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "url": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "https://www.promiliaguide.com/",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://www.promiliaguide.com/",
+          "status": 301,
+          "location": "https://promiliaguide.com/"
+        },
+        {
+          "url": "https://promiliaguide.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "https://www.promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "https://www.promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 301,
+          "location": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja"
+        },
+        {
+          "url": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promilia-guide.pages.dev/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promilia-guide.pages.dev/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 301,
+          "location": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "url": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promilia-guide.pages.dev/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promilia-guide.pages.dev/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 301,
+          "location": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja"
+        },
+        {
+          "url": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promilia-guide.pages.dev/",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promilia-guide.pages.dev/",
+          "status": 301,
+          "location": "https://promiliaguide.com/"
+        },
+        {
+          "url": "https://promiliaguide.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://www.promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://www.promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 301,
+          "location": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "url": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://www.promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://www.promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 301,
+          "location": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja"
+        },
+        {
+          "url": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://www.promiliaguide.com/",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://www.promiliaguide.com/",
+          "status": 301,
+          "location": "https://promiliaguide.com/"
+        },
+        {
+          "url": "https://promiliaguide.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promiliaguide.com/",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promiliaguide.com/",
+          "status": 301,
+          "location": "https://promiliaguide.com/"
+        },
+        {
+          "url": "https://promiliaguide.com/",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 301,
+          "location": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja"
+        },
+        {
+          "url": "https://promiliaguide.com/ja/guides/global-release/?utm_source=redirect-check&lang=ja",
+          "status": 200,
+          "location": null
+        }
+      ]
+    },
+    {
+      "path": "http://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+      "check": "canonical-redirect",
+      "passed": true,
+      "detail": "Permanent redirects preserve path and query",
+      "hops": [
+        {
+          "url": "http://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 301,
+          "location": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95"
+        },
+        {
+          "url": "https://promiliaguide.com/zh-hans/guides/download/?utm_source=redirect-check&tag=a&tag=b&note=%E6%B5%8B%E8%AF%95",
+          "status": 200,
+          "location": null
+        }
+      ]
+    }
+  ]
+}
