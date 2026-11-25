@@ -3,7 +3,7 @@ import type { Locale } from './content';
 export const copy = {
   'zh-hans': {
     site: '星原旅伴', tagline: '蓝色星原：旅谣 · 非官方攻略',
-    home: '首页', guides: '开荒攻略', characters: '角色', kibo: '奇波', systems: '系统', updates: '更新',
+    home: '首页', guides: '开荒攻略', characters: '角色', kibo: '奇波', systems: '系统', updates: '更新', database: '图鉴', faq: '常见问题',
     search: '搜索攻略、系统、关键词…', searchLabel: '站内搜索', searchButton: '搜索',
     menu: '导航菜单', language: '切换语言', skip: '跳转到正文',
     eyebrow: 'YOUR COMPANION TO THE UNKNOWN',
@@ -70,7 +70,7 @@ export const copy = {
   },
   ja: {
     site: 'Promilia Guide', tagline: 'Azur Promilia · 非公式ガイド',
-    home: 'ホーム', guides: '初心者ガイド', characters: 'キャラクター', kibo: 'キボ', systems: 'システム', updates: '更新情報',
+    home: 'ホーム', guides: '初心者ガイド', characters: 'キャラクター', kibo: 'キボ', systems: 'システム', updates: '更新情報', database: '図鑑', faq: 'よくある質問',
     search: '攻略・システム・キーワードを検索…', searchLabel: 'サイト内検索', searchButton: '検索',
     menu: 'ナビゲーション', language: '言語を切り替える', skip: '本文へスキップ',
     eyebrow: 'YOUR COMPANION TO THE UNKNOWN',

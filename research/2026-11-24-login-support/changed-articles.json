@@ -1,0 +1,70 @@
+[
+  {
+    "path": "src/content/revisions/zh-hans/getting-started.md",
+    "locale": "zh-hans",
+    "contentId": "getting-started",
+    "sourceRevision": 15,
+    "sha256": "7737cb8bca1e6f9506386b6660f0a912566dd6469a7f84200f3b9e50bc61c81e",
+    "productionPath": "src/content/guides/zh-hans/getting-started.md",
+    "productionSha256": "2841912eab9c1caf7a1af89280529582adca80250214a6c7e465e55706d6a12e"
+  },
+  {
+    "path": "src/content/revisions/ja/getting-started.md",
+    "locale": "ja",
+    "contentId": "getting-started",
+    "sourceRevision": 15,
+    "sha256": "143740df1ac2095d571ef177465b55251fe23dd3610c2b5e79e416797099bf37",
+    "productionPath": "src/content/guides/ja/getting-started.md",
+    "productionSha256": "e82a3710bc4a49bc04cc169f4209a6b529645e969384d00c0991ca83561cc762"
+  },
+  {
+    "path": "src/content/revisions/zh-hans/download.md",
+    "locale": "zh-hans",
+    "contentId": "download",
+    "sourceRevision": 14,
+    "sha256": "f86d68c4fb1f4a2eb5b9bbf5ace1a83df82a680dd596cd3f5813526996f42879",
+    "productionPath": "src/content/guides/zh-hans/download.md",
+    "productionSha256": "1c0bcbbdc58abe95bde5e2f994419ea7961f7d36c1fa0f9627be445668606c4c"
+  },
+  {
+    "path": "src/content/revisions/ja/download.md",
+    "locale": "ja",
+    "contentId": "download",
+    "sourceRevision": 14,
+    "sha256": "4ff33fe2ef4c0b70baafab9eb6d703a56493baa12fe59fa42470e168e2860d9d",
+    "productionPath": "src/content/guides/ja/download.md",
+    "productionSha256": "75e5e1382fb8e64389f4d3616f877de958c8ec361927bafc8c4a1aefc8101f5a"
+  },
+  {
+    "path": "src/content/revisions/zh-hans/requirements.md",
+    "locale": "zh-hans",
+    "contentId": "requirements",
+    "sourceRevision": 10,
+    "sha256": "21a0416a5bf4513ac273b67e1a2c44c8e8afe18865ba634071391191a484dfad",
+    "productionPath": "src/content/guides/zh-hans/requirements.md",
+    "productionSha256": "dbea47d8eeac9c297b2c9f90a6bd4ad9ff1839fffcb01e97547c625de985fe1b"
+  },
+  {
+    "path": "src/content/revisions/ja/requirements.md",
+    "locale": "ja",
+    "contentId": "requirements",
+    "sourceRevision": 10,
+    "sha256": "444f05cf3f26d0f1428caefc484ceca806e58caa041282e39977d73d828d43e6",
+    "productionPath": "src/content/guides/ja/requirements.md",
+    "productionSha256": "f38c8400096ecb2a3a18098a34adf109d11bd1a654663005dd8413234b9da394"
+  },
+  {
+    "path": "src/content/guides/zh-hans/support.md",
+    "locale": "zh-hans",
+    "contentId": "support",
+    "sourceRevision": 1,
+    "sha256": "7e8df4e64163f95d21fdee913c250362c5e2b1810edfb5dfba8782b3bf54974a"
+  },
+  {
+    "path": "src/content/guides/ja/support.md",
+    "locale": "ja",
+    "contentId": "support",
+    "sourceRevision": 1,
+    "sha256": "1fe27ee8286be5a1d35cb144921bcdb9ad6898770f27e3c69c96f26abc1e8a46"
+  }
+]

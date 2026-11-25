@@ -1207,7 +1207,8 @@
     "affectedPages": [
       "download",
       "requirements",
-      "getting-started"
+      "getting-started",
+      "support"
     ],
     "conflicts": [],
     "value": {},
@@ -1313,5 +1314,64 @@
         "detail": "削除の結果に関する条項です。ログイン不能全般の復旧不可、ゲストのリセット、削除メニューを確認したわけではありません。"
       }
     }
+  },
+  {
+    "id": "cn-login-support-rules",
+    "revision": 1,
+    "text": "国服需完成实名认证方可登录；FAQ提供游戏内与官网客服入口，渠道账号问题联系对应渠道客服。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服登录需实名；游戏内及官网可反馈，渠道账号问题找对应渠道。",
+        "detail": "路径为主页面→设置→账户→用户中心→联系客服，以实际入口为准；官方建议提供UID、设备、OS、问题与截图。未验证实名失败的具体原因或恢复操作。"
+      },
+      "ja": {
+        "summary": "中国本土は実名認証後にログイン。ゲーム内・公式サイトに窓口があり、チャネルのアカウント問題は該当チャネルへ。",
+        "detail": "公式FAQ記載の経路は主页面→设置→账户→用户中心→联系客服。実際の表示を優先。UID・機種・OS・問題・画像を用意します。日本の実名認証要件や同じメニューの根拠にはしていません。"
+      }
+    },
+    "sourceRefs": [
+      "cn-login-troubleshooting-support-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "2026-11-24公测FAQ第1、6节",
+    "verification": "verified",
+    "affectedPages": [
+      "support",
+      "getting-started",
+      "requirements",
+      "download"
+    ],
+    "conflicts": [],
+    "value": {}
+  },
+  {
+    "id": "cn-launch-troubleshooting",
+    "revision": 1,
+    "text": "国服FAQ按磁盘空间、PC文件校验、资源下载与闪退分别给出处理；校验和资源失败的重启对象为客户端，不替换为日本启动器。",
+    "localized": {
+      "zh-hans": {
+        "summary": "国服PC校验错误先重试，再重启客户端；资源失败先重启客户端。仍失败时FAQ允许重新下载客户端。",
+        "detail": "安装盘建议120GB以上；闪退先重启设备，反复发生提供机型、OS、时间与截图。官方建议不是本站修复实测。"
+      },
+      "ja": {
+        "summary": "中国本土のPC検証エラーは再試行→クライアント再起動。リソース失敗もクライアント再起動を案内。",
+        "detail": "改善しない場合はクライアントの再取得。容量は実際の保存先を確認し、強制終了は端末再起動後も続くなら機種・OS・日時・画像で相談。日本向けの手順とは分けます。"
+      }
+    },
+    "sourceRefs": [
+      "cn-login-troubleshooting-support-2026-11-24"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "2026-11-24公测FAQ第5节",
+    "verification": "verified",
+    "affectedPages": [
+      "support",
+      "download",
+      "requirements"
+    ],
+    "conflicts": [],
+    "value": {}
   }
 ]

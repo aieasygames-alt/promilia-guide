@@ -1,0 +1,3019 @@
+{
+  "asOf": "2026-11-25",
+  "summary": {
+    "articles": 30,
+    "publishable": 30,
+    "awaitingReview": 0,
+    "staleArticles": 0,
+    "sources": 52,
+    "verifiedSources": 48,
+    "claims": 40,
+    "verifiedClaims": 36
+  },
+  "articles": [
+    {
+      "contentId": "banner-rules",
+      "locale": "ja",
+      "title": "アズールプロミリアのガチャ天井・引き継ぎ：日本版と中国本土の確認状況",
+      "file": "src/content/guides/ja/banner-rules.md",
+      "url": "/ja/guides/banner-rules/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 7,
+      "translatedFromRevision": 7,
+      "claimRefs": [
+        "cn-banner-rules-system",
+        "jp-banner-rules-system",
+        "cn-rewards-conditions",
+        "jp-replay-rule-coverage"
+      ],
+      "claimRevisions": {
+        "cn-banner-rules-system": 3,
+        "jp-banner-rules-system": 1,
+        "cn-rewards-conditions": 1,
+        "jp-replay-rule-coverage": 1
+      },
+      "sourceRefs": [
+        "project-roadmap-2026-11-14",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "jp-release-special-2026-11-20",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-official-home-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "unverified-source",
+          "message": "来源尚未完成核验：project-roadmap-2026-11-14",
+          "severity": "warning"
+        },
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-banner-rules-system 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        },
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-replay-rule-coverage 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "banner-rules",
+      "locale": "zh-hans",
+      "title": "蓝色星原抽卡保底：国服角色90次、灵子80次与继承规则",
+      "file": "src/content/guides/zh-hans/banner-rules.md",
+      "url": "/zh-hans/guides/banner-rules/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 7,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-banner-rules-system",
+        "jp-banner-rules-system",
+        "cn-rewards-conditions",
+        "jp-replay-rule-coverage"
+      ],
+      "claimRevisions": {
+        "cn-banner-rules-system": 3,
+        "jp-banner-rules-system": 1,
+        "cn-rewards-conditions": 1,
+        "jp-replay-rule-coverage": 1
+      },
+      "sourceRefs": [
+        "project-roadmap-2026-11-14",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "jp-release-special-2026-11-20",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-official-home-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "unverified-source",
+          "message": "来源尚未完成核验：project-roadmap-2026-11-14",
+          "severity": "warning"
+        },
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-banner-rules-system 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        },
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-replay-rule-coverage 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "combat",
+      "locale": "ja",
+      "title": "戦闘と元素の入門：まず一回の戦闘を記録する",
+      "file": "src/content/guides/ja/combat.md",
+      "url": "/ja/systems/combat/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 2,
+      "translatedFromRevision": 2,
+      "claimRefs": [],
+      "claimRevisions": {},
+      "sourceRefs": [
+        "project-roadmap-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "unverified-source",
+          "message": "来源尚未完成核验：project-roadmap-2026-11-14",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "combat",
+      "locale": "zh-hans",
+      "title": "战斗与元素入门：先把一次战斗记录清楚",
+      "file": "src/content/guides/zh-hans/combat.md",
+      "url": "/zh-hans/systems/combat/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 2,
+      "translatedFromRevision": null,
+      "claimRefs": [],
+      "claimRevisions": {},
+      "sourceRefs": [
+        "project-roadmap-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "unverified-source",
+          "message": "来源尚未完成核验：project-roadmap-2026-11-14",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "download",
+      "locale": "ja",
+      "title": "アズールプロミリアのダウンロード｜事前DL・PC・スマホ公式入口",
+      "file": "src/content/guides/ja/download.md",
+      "url": "/ja/guides/download/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 14,
+      "translatedFromRevision": 14,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-ios-store",
+        "cn-platform-details",
+        "cn-preload-status",
+        "cn-test-client-history",
+        "jp-release-status",
+        "cn-ios-compatibility",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-preload-status",
+        "cn-opening-time",
+        "jp-opening-time",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-ios-store-metadata",
+        "jp-launch-troubleshooting",
+        "cn-launch-troubleshooting",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-ios-store": 3,
+        "cn-platform-details": 3,
+        "cn-preload-status": 6,
+        "cn-test-client-history": 1,
+        "jp-release-status": 2,
+        "cn-ios-compatibility": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-preload-status": 6,
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-ios-store-metadata": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-launch-troubleshooting": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "cn-test-preload-2026-09-15",
+        "cn-test-ended-2026-10-07",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-google-play-2026-11-14",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "cn-distribution-home-2026-11-23",
+        "jp-distribution-home-2026-11-23",
+        "jp-play-registration-2026-11-23",
+        "cn-ios-capacity-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "jp-play-display-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "download",
+      "locale": "zh-hans",
+      "title": "蓝色星原官方下载与预下载：国服、日本PC和手机入口",
+      "file": "src/content/guides/zh-hans/download.md",
+      "url": "/zh-hans/guides/download/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 14,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-ios-store",
+        "cn-platform-details",
+        "cn-preload-status",
+        "cn-test-client-history",
+        "jp-release-status",
+        "cn-ios-compatibility",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-preload-status",
+        "cn-opening-time",
+        "jp-opening-time",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-ios-store-metadata",
+        "jp-launch-troubleshooting",
+        "cn-launch-troubleshooting",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-ios-store": 3,
+        "cn-platform-details": 3,
+        "cn-preload-status": 6,
+        "cn-test-client-history": 1,
+        "jp-release-status": 2,
+        "cn-ios-compatibility": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-preload-status": 6,
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-ios-store-metadata": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-launch-troubleshooting": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "cn-test-preload-2026-09-15",
+        "cn-test-ended-2026-10-07",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-google-play-2026-11-14",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "cn-distribution-home-2026-11-23",
+        "jp-distribution-home-2026-11-23",
+        "jp-play-registration-2026-11-23",
+        "cn-ios-capacity-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "jp-play-display-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "getting-started",
+      "locale": "ja",
+      "title": "アズールプロミリア初心者向け準備：開始・特典・初回ガチャ",
+      "file": "src/content/guides/ja/getting-started.md",
+      "url": "/ja/guides/getting-started/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 15,
+      "translatedFromRevision": 15,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-opening-time",
+        "jp-release-status",
+        "jp-official-entry",
+        "jp-preload-status",
+        "jp-opening-time",
+        "cn-preload-status",
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-store-home-kibo-overview",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-preregister-benefits",
+        "jp-launch-troubleshooting",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "jp-official-entry": 2,
+        "jp-preload-status": 6,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-preregister-benefits": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "getting-started",
+      "locale": "zh-hans",
+      "title": "蓝色星原新手准备：开服、领福利与首次抽卡检查",
+      "file": "src/content/guides/zh-hans/getting-started.md",
+      "url": "/zh-hans/guides/getting-started/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 15,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-opening-time",
+        "jp-release-status",
+        "jp-official-entry",
+        "jp-preload-status",
+        "jp-opening-time",
+        "cn-preload-status",
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-store-home-kibo-overview",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-preregister-benefits",
+        "jp-launch-troubleshooting",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "jp-official-entry": 2,
+        "jp-preload-status": 6,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-preregister-benefits": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "global-release",
+      "locale": "ja",
+      "title": "アズールプロミリアの日本・中国本土・繁体字版｜公式入口の違い",
+      "file": "src/content/guides/ja/global-release.md",
+      "url": "/ja/guides/global-release/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": 11,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-ios-store",
+        "cn-opening-time",
+        "jp-release-status",
+        "tc-official-announcement",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-opening-time",
+        "cn-preload-status",
+        "jp-preload-status",
+        "tc-mobile-official-entry",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-ios-store": 3,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "tc-official-announcement": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "jp-preload-status": 6,
+        "tc-mobile-official-entry": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "tc-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "tc-mobile-entry-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "global-release",
+      "locale": "zh-hans",
+      "title": "蓝色星原日服、国际服与繁中版：官方入口和应用ID",
+      "file": "src/content/guides/zh-hans/global-release.md",
+      "url": "/zh-hans/guides/global-release/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-ios-store",
+        "cn-opening-time",
+        "jp-release-status",
+        "tc-official-announcement",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-opening-time",
+        "cn-preload-status",
+        "jp-preload-status",
+        "tc-mobile-official-entry",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-ios-store": 3,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "tc-official-announcement": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "jp-preload-status": 6,
+        "tc-mobile-official-entry": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "tc-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "tc-mobile-entry-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "home",
+      "locale": "ja",
+      "title": "ホーム入門：報酬の区分・解放記録・配置の確認",
+      "file": "src/content/guides/ja/home.md",
+      "url": "/ja/systems/home/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 2,
+      "translatedFromRevision": 2,
+      "claimRefs": [
+        "cn-rewards-conditions",
+        "cn-store-home-kibo-overview",
+        "jp-store-home-kibo-overview"
+      ],
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-images-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "home",
+      "locale": "zh-hans",
+      "title": "家园起步：奖励区分、解锁记录与派遣排查",
+      "file": "src/content/guides/zh-hans/home.md",
+      "url": "/zh-hans/systems/home/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 2,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-rewards-conditions",
+        "cn-store-home-kibo-overview",
+        "jp-store-home-kibo-overview"
+      ],
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-images-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "kibo-guide",
+      "locale": "ja",
+      "title": "アズールプロミリアのキボ入手：事前登録・巣穴特典の違い",
+      "file": "src/content/guides/ja/kibo-guide.md",
+      "url": "/ja/systems/kibo/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 4,
+      "translatedFromRevision": 4,
+      "claimRefs": [
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-store-home-kibo-overview",
+        "jp-store-home-kibo-overview",
+        "jp-preregister-benefits"
+      ],
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1,
+        "jp-preregister-benefits": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "kibo-guide",
+      "locale": "zh-hans",
+      "title": "蓝色星原奇波怎么获得：预约、巢穴奖励与游戏内来源",
+      "file": "src/content/guides/zh-hans/kibo-guide.md",
+      "url": "/zh-hans/systems/kibo/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 4,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-store-home-kibo-overview",
+        "jp-store-home-kibo-overview",
+        "jp-preregister-benefits"
+      ],
+      "claimRevisions": {
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-store-home-kibo-overview": 1,
+        "jp-store-home-kibo-overview": 1,
+        "jp-preregister-benefits": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-store-gameplay-2026-11-21",
+        "jp-google-play-2026-11-21",
+        "jp-release-special-2026-11-20",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "launch",
+      "locale": "ja",
+      "title": "アズールプロミリアは何時から？11月26日11時の開始予定",
+      "file": "src/content/guides/ja/launch.md",
+      "url": "/ja/guides/launch/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": 11,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-opening-time",
+        "jp-release-status",
+        "jp-official-entry",
+        "jp-preload-status",
+        "jp-opening-time",
+        "cn-preload-status",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "jp-official-entry": 2,
+        "jp-preload-status": 6,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-distribution-home-2026-11-23",
+        "jp-distribution-home-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "launch",
+      "locale": "zh-hans",
+      "title": "蓝色星原公测时间与预下载：国服、日本日期和时区",
+      "file": "src/content/guides/zh-hans/launch.md",
+      "url": "/zh-hans/guides/launch/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-launch-date",
+        "cn-official-entry",
+        "cn-opening-time",
+        "jp-release-status",
+        "jp-official-entry",
+        "jp-preload-status",
+        "jp-opening-time",
+        "cn-preload-status",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-launch-date": 2,
+        "cn-official-entry": 1,
+        "cn-opening-time": 4,
+        "jp-release-status": 2,
+        "jp-official-entry": 2,
+        "jp-preload-status": 6,
+        "jp-opening-time": 2,
+        "cn-preload-status": 6,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-launch-announcement-2026-10-23",
+        "cn-official-home-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "cn-distribution-home-2026-11-23",
+        "jp-distribution-home-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "platforms",
+      "locale": "ja",
+      "title": "アズールプロミリアのPC版・対応機種｜PS5・Steam・データ共有",
+      "file": "src/content/guides/ja/platforms.md",
+      "url": "/ja/guides/platforms/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": 11,
+      "claimRefs": [
+        "cn-ios-store",
+        "cn-ios-compatibility",
+        "cn-platform-details",
+        "jp-release-status",
+        "cn-launch-date",
+        "cn-preload-status",
+        "cn-test-client-history",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-preload-status",
+        "cn-opening-time",
+        "jp-opening-time",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-ios-store": 3,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 3,
+        "jp-release-status": 2,
+        "cn-launch-date": 2,
+        "cn-preload-status": 6,
+        "cn-test-client-history": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-preload-status": 6,
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "cn-launch-announcement-2026-10-23",
+        "cn-test-preload-2026-09-15",
+        "cn-test-ended-2026-10-07",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-play-registration-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "platforms",
+      "locale": "zh-hans",
+      "title": "蓝色星原PC与手机平台：Windows、PS5、Steam和互通核对",
+      "file": "src/content/guides/zh-hans/platforms.md",
+      "url": "/zh-hans/guides/platforms/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 11,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-ios-store",
+        "cn-ios-compatibility",
+        "cn-platform-details",
+        "jp-release-status",
+        "cn-launch-date",
+        "cn-preload-status",
+        "cn-test-client-history",
+        "jp-official-entry",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-preload-status",
+        "cn-opening-time",
+        "jp-opening-time",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ],
+      "claimRevisions": {
+        "cn-ios-store": 3,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 3,
+        "jp-release-status": 2,
+        "cn-launch-date": 2,
+        "cn-preload-status": 6,
+        "cn-test-client-history": 1,
+        "jp-official-entry": 2,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-preload-status": 6,
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1
+      },
+      "sourceRefs": [
+        "cn-official-home-2026-11-14",
+        "cn-app-store-2026-11-14",
+        "jp-launch-announcement-2026-10-23",
+        "cn-launch-announcement-2026-10-23",
+        "cn-test-preload-2026-09-15",
+        "cn-test-ended-2026-10-07",
+        "jp-official-home-2026-11-14",
+        "jp-pre-register-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-play-registration-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "recharge-return",
+      "locale": "ja",
+      "title": "アズールプロミリア中国本土テスト課金返還：割合・受取条件",
+      "file": "src/content/guides/ja/recharge-return.md",
+      "url": "/ja/guides/recharge-return/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 1,
+      "translatedFromRevision": 1,
+      "claimRefs": [
+        "cn-test-recharge-return"
+      ],
+      "claimRevisions": {
+        "cn-test-recharge-return": 1
+      },
+      "sourceRefs": [
+        "cn-launch-returns-rewards-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "recharge-return",
+      "locale": "zh-hans",
+      "title": "蓝色星原测试充值返还：比例、查询入口、凭证与领取期限",
+      "file": "src/content/guides/zh-hans/recharge-return.md",
+      "url": "/zh-hans/guides/recharge-return/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 1,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-test-recharge-return"
+      ],
+      "claimRevisions": {
+        "cn-test-recharge-return": 1
+      },
+      "sourceRefs": [
+        "cn-launch-returns-rewards-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "redeem-codes",
+      "locale": "ja",
+      "title": "アズールプロミリアのシリアルコード｜確認状況・交換方法",
+      "file": "src/content/guides/ja/redeem-codes.md",
+      "url": "/ja/guides/redeem-codes/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 6,
+      "translatedFromRevision": 6,
+      "claimRefs": [
+        "cn-kibo-web-rewards",
+        "jp-kibo-web-rewards"
+      ],
+      "claimRevisions": {
+        "cn-kibo-web-rewards": 1,
+        "jp-kibo-web-rewards": 1
+      },
+      "sourceRefs": [
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "redeem-codes",
+      "locale": "zh-hans",
+      "title": "蓝色星原兑换码：核验状态、兑换方法与领取条件",
+      "file": "src/content/guides/zh-hans/redeem-codes.md",
+      "url": "/zh-hans/guides/redeem-codes/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 6,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-kibo-web-rewards",
+        "jp-kibo-web-rewards"
+      ],
+      "claimRevisions": {
+        "cn-kibo-web-rewards": 1,
+        "jp-kibo-web-rewards": 1
+      },
+      "sourceRefs": [
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "requirements",
+      "locale": "ja",
+      "title": "アズールプロミリアの容量・推奨スペック｜スマホ・PC対応",
+      "file": "src/content/guides/ja/requirements.md",
+      "url": "/ja/guides/requirements/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 10,
+      "translatedFromRevision": 10,
+      "claimRefs": [
+        "cn-opening-time",
+        "jp-opening-time",
+        "cn-ios-compatibility",
+        "cn-platform-details",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-ios-store-metadata",
+        "jp-launch-troubleshooting",
+        "cn-launch-troubleshooting",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 3,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-ios-store-metadata": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-launch-troubleshooting": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-app-store-2026-11-14",
+        "cn-official-home-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-official-home-2026-11-14",
+        "cn-ios-capacity-2026-11-23",
+        "jp-play-registration-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "requirements",
+      "locale": "zh-hans",
+      "title": "蓝色星原容量与配置要求：手机、iPad和PC确认表",
+      "file": "src/content/guides/zh-hans/requirements.md",
+      "url": "/zh-hans/guides/requirements/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 10,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-opening-time",
+        "jp-opening-time",
+        "cn-ios-compatibility",
+        "cn-platform-details",
+        "jp-platform-plan",
+        "jp-platform-details",
+        "jp-play-registration-display",
+        "cn-public-launch-requirements",
+        "jp-public-launch-requirements",
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules",
+        "jp-ios-store-metadata",
+        "jp-launch-troubleshooting",
+        "cn-launch-troubleshooting",
+        "cn-login-support-rules"
+      ],
+      "claimRevisions": {
+        "cn-opening-time": 4,
+        "jp-opening-time": 2,
+        "cn-ios-compatibility": 1,
+        "cn-platform-details": 3,
+        "jp-platform-plan": 1,
+        "jp-platform-details": 3,
+        "jp-play-registration-display": 1,
+        "cn-public-launch-requirements": 1,
+        "jp-public-launch-requirements": 1,
+        "cn-public-launch-platform-rules": 1,
+        "jp-public-launch-platform-rules": 1,
+        "jp-ios-store-metadata": 1,
+        "jp-launch-troubleshooting": 1,
+        "cn-launch-troubleshooting": 1,
+        "cn-login-support-rules": 1
+      },
+      "sourceRefs": [
+        "cn-app-store-2026-11-14",
+        "cn-official-home-2026-11-14",
+        "jp-publishing-2025-12-15",
+        "jp-official-home-2026-11-14",
+        "cn-ios-capacity-2026-11-23",
+        "jp-play-registration-2026-11-23",
+        "cn-launch-faq-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "cn-distribution-home-2026-11-24",
+        "jp-distribution-home-2026-11-24",
+        "jp-apple-metadata-2026-11-24",
+        "cn-preload-open-2026-11-24",
+        "cn-download-home-followup-2026-11-24",
+        "jp-preload-open-2026-11-24",
+        "jp-pc-download-page-2026-11-24",
+        "cn-ios-store-followup-2026-11-24",
+        "jp-support-page-2026-11-24",
+        "cn-login-troubleshooting-support-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "reroll",
+      "locale": "ja",
+      "title": "アズールプロミリアのリセマラは必要？判断材料と注意点",
+      "file": "src/content/guides/ja/reroll.md",
+      "url": "/ja/guides/reroll/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 7,
+      "translatedFromRevision": 7,
+      "claimRefs": [
+        "cn-banner-rules-system",
+        "jp-banner-rules-system",
+        "cn-kibo-web-rewards",
+        "jp-kibo-web-rewards",
+        "jp-preregister-benefits",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits",
+        "jp-account-deletion-terms"
+      ],
+      "claimRevisions": {
+        "cn-banner-rules-system": 3,
+        "jp-banner-rules-system": 1,
+        "cn-kibo-web-rewards": 1,
+        "jp-kibo-web-rewards": 1,
+        "jp-preregister-benefits": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1,
+        "jp-account-deletion-terms": 1
+      },
+      "sourceRefs": [
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24",
+        "jp-account-terms-2026-11-24",
+        "jp-official-home-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-banner-rules-system 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "reroll",
+      "locale": "zh-hans",
+      "title": "蓝色星原刷初始／刷首抽：是否需要、账号与奖励绑定",
+      "file": "src/content/guides/zh-hans/reroll.md",
+      "url": "/zh-hans/guides/reroll/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 7,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-banner-rules-system",
+        "jp-banner-rules-system",
+        "cn-kibo-web-rewards",
+        "jp-kibo-web-rewards",
+        "jp-preregister-benefits",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits",
+        "jp-account-deletion-terms"
+      ],
+      "claimRevisions": {
+        "cn-banner-rules-system": 3,
+        "jp-banner-rules-system": 1,
+        "cn-kibo-web-rewards": 1,
+        "jp-kibo-web-rewards": 1,
+        "jp-preregister-benefits": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1,
+        "jp-account-deletion-terms": 1
+      },
+      "sourceRefs": [
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24",
+        "jp-account-terms-2026-11-24",
+        "jp-official-home-2026-11-14"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 jp-banner-rules-system 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "resources",
+      "locale": "ja",
+      "title": "アズールプロミリアの事前登録特典・報酬の受け取り方",
+      "file": "src/content/guides/ja/resources.md",
+      "url": "/ja/guides/resources/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 10,
+      "translatedFromRevision": 10,
+      "claimRefs": [
+        "cn-opening-rewards-resource",
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-benefit-preview-milestones",
+        "cn-banner-rules-system",
+        "jp-preregister-benefits",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits"
+      ],
+      "claimRevisions": {
+        "cn-opening-rewards-resource": 2,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-benefit-preview-milestones": 1,
+        "cn-banner-rules-system": 3,
+        "jp-preregister-benefits": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-2026-11-20",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "resources",
+      "locale": "zh-hans",
+      "title": "蓝色星原公测福利怎么领：国服奖励与日本预约特典",
+      "file": "src/content/guides/zh-hans/resources.md",
+      "url": "/zh-hans/guides/resources/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 10,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-opening-rewards-resource",
+        "cn-rewards-conditions",
+        "jp-kibo-web-rewards",
+        "cn-kibo-web-rewards",
+        "cn-benefit-preview-milestones",
+        "cn-banner-rules-system",
+        "jp-preregister-benefits",
+        "cn-test-recharge-return",
+        "cn-preregister-mail-benefits"
+      ],
+      "claimRevisions": {
+        "cn-opening-rewards-resource": 2,
+        "cn-rewards-conditions": 1,
+        "jp-kibo-web-rewards": 1,
+        "cn-kibo-web-rewards": 1,
+        "cn-benefit-preview-milestones": 1,
+        "cn-banner-rules-system": 3,
+        "jp-preregister-benefits": 1,
+        "cn-test-recharge-return": 1,
+        "cn-preregister-mail-benefits": 1
+      },
+      "sourceRefs": [
+        "cn-launch-benefits-2026-11-20",
+        "cn-launch-benefits-images-2026-11-21",
+        "jp-kibo-adventure-rules-2026-11-21",
+        "cn-kibo-adventure-rules-2026-11-21",
+        "jp-contact-instructions-2026-11-21",
+        "cn-character-banner-2026-11-24",
+        "cn-anima-banner-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-preregister-benefits-2026-11-24",
+        "cn-launch-returns-rewards-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "support",
+      "locale": "ja",
+      "title": "アズールプロミリアの問い合わせ先｜ログイン・不具合・アカウント",
+      "file": "src/content/guides/ja/support.md",
+      "url": "/ja/guides/support/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 1,
+      "translatedFromRevision": 1,
+      "claimRefs": [
+        "cn-login-support-rules",
+        "cn-launch-troubleshooting",
+        "jp-launch-troubleshooting"
+      ],
+      "claimRevisions": {
+        "cn-login-support-rules": 1,
+        "cn-launch-troubleshooting": 1,
+        "jp-launch-troubleshooting": 1
+      },
+      "sourceRefs": [
+        "cn-login-troubleshooting-support-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-support-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "support",
+      "locale": "zh-hans",
+      "title": "蓝色星原客服怎么联系：登录、渠道账号与问题反馈",
+      "file": "src/content/guides/zh-hans/support.md",
+      "url": "/zh-hans/guides/support/",
+      "status": "published",
+      "translationStatus": "published",
+      "sourceRevision": 1,
+      "translatedFromRevision": null,
+      "claimRefs": [
+        "cn-login-support-rules",
+        "cn-launch-troubleshooting",
+        "jp-launch-troubleshooting"
+      ],
+      "claimRevisions": {
+        "cn-login-support-rules": 1,
+        "cn-launch-troubleshooting": 1,
+        "jp-launch-troubleshooting": 1
+      },
+      "sourceRefs": [
+        "cn-login-troubleshooting-support-2026-11-24",
+        "jp-launch-faq-2026-11-24",
+        "jp-support-page-2026-11-24"
+      ],
+      "publishable": true,
+      "blockers": [],
+      "warnings": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "project-roadmap-2026-11-14",
+      "title": "项目实施方案（2026-11-14 修订）",
+      "status": "planning-only",
+      "checkedAt": null,
+      "daysSinceChecked": null,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/systems/combat/",
+        "/zh-hans/systems/combat/"
+      ]
+    },
+    {
+      "id": "cn-launch-announcement-2026-10-23",
+      "title": "《蓝色星原：旅谣》公测正式定档11月26日！",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "cn-official-home-2026-11-14",
+      "title": "国服官网首页与预约入口",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "cn-app-store-2026-11-14",
+      "title": "中国区 App Store：蓝色星原：旅谣",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "tc-official-home-2026-11-14",
+      "title": "繁中官网首页：11月26日正式公测",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/"
+      ]
+    },
+    {
+      "id": "cn-test-preload-2026-09-15",
+      "title": "《蓝色星原：旅谣》「旅迹测试」预下载现已开启",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/"
+      ]
+    },
+    {
+      "id": "cn-test-ended-2026-10-07",
+      "title": "《蓝色星原：旅谣》「旅迹测试」正式结束",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/"
+      ]
+    },
+    {
+      "id": "jp-publishing-2025-12-15",
+      "title": "Yostar：日本地区共同发行公告",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "jp-launch-announcement-2026-10-23",
+      "title": "日本官方X：2026年11月26日正式发行",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "jp-official-home-2026-11-14",
+      "title": "日本官方网站与官方名称",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "jp-pre-register-2026-11-14",
+      "title": "日本官方事前注册页面",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/"
+      ]
+    },
+    {
+      "id": "jp-google-play-2026-11-14",
+      "title": "Google Play：アズールプロミリア",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/"
+      ]
+    },
+    {
+      "id": "cn-official-character-kibo-2026-11-14",
+      "title": "国服官网首页角色与奇波展示",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": []
+    },
+    {
+      "id": "jp-official-character-2026-11-14",
+      "title": "日本公式キャラクター一覧",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": []
+    },
+    {
+      "id": "jp-official-kibo-2026-11-14",
+      "title": "日本公式キボ一覧",
+      "status": "verified",
+      "checkedAt": "2026-11-14",
+      "daysSinceChecked": 11,
+      "affectedArticles": []
+    },
+    {
+      "id": "cn-livestream-30m-2026-11-17",
+      "title": "《蓝色星原：旅谣》全球预约突破3000万，公测前瞻特别节目定档11月20日！",
+      "status": "unavailable",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": []
+    },
+    {
+      "id": "cn-livestream-recap-2026-11-20",
+      "title": "《蓝色星原：旅谣》公测前瞻特别节目官方回顾与公测定档公告",
+      "status": "unavailable",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-livestream-recap-2026-11-20",
+      "title": "『アズールプロミリア』リリース直前公式生放送・正式サービス開始情報まとめ",
+      "status": "unavailable",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": []
+    },
+    {
+      "id": "cn-launch-benefits-2026-11-20",
+      "title": "《蓝色星原：旅谣》公测福利资源获取一览",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "cn-launch-benefits-images-2026-11-21",
+      "title": "国服公测福利配图：领取条件与资源分类",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/systems/home/",
+        "/zh-hans/systems/home/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-kibo-adventure-rules-2026-11-21",
+      "title": "日本官方：集まれ！キボの巣穴探索活动规则",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "cn-kibo-adventure-rules-2026-11-21",
+      "title": "国服官方：集结，勇闯奇波巢穴活动规则",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-contact-instructions-2026-11-21",
+      "title": "日本官方FAQ・お問い合わせ：联系与邮件接收说明",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "cn-store-gameplay-2026-11-21",
+      "title": "中国区App Store：玩法介绍与当前客户端展示",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/systems/home/",
+        "/zh-hans/systems/home/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/"
+      ]
+    },
+    {
+      "id": "jp-google-play-2026-11-21",
+      "title": "Google Play日本向け表示：アズールプロミリア再核",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/systems/home/",
+        "/zh-hans/systems/home/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/"
+      ]
+    },
+    {
+      "id": "jp-release-special-2026-11-20",
+      "title": "日本官方YouTube：リリース直前スペシャル！说明与自动字幕线索",
+      "status": "verified",
+      "checkedAt": "2026-11-21",
+      "daysSinceChecked": 4,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/systems/home/",
+        "/zh-hans/systems/home/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/"
+      ]
+    },
+    {
+      "id": "cn-ios-capacity-2026-11-23",
+      "title": "中国区App Store：当前分发大小与OS兼容条件",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "jp-metsa-profile-2026-11-23",
+      "title": "日本官方：メーツァ（Metsa）人物介绍",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": []
+    },
+    {
+      "id": "jp-cabbird-profile-2026-11-23",
+      "title": "日本官方：キャバード（CABBIRD）分类与生态",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": []
+    },
+    {
+      "id": "cn-distribution-home-2026-11-23",
+      "title": "国服官网：预约与商店入口复核（11月23日）",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/"
+      ]
+    },
+    {
+      "id": "jp-distribution-home-2026-11-23",
+      "title": "日本官网：手机事前注册与官方链接复核（11月23日）",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/"
+      ]
+    },
+    {
+      "id": "jp-play-registration-2026-11-23",
+      "title": "日本Google Play：可见事前注册按钮（11月23日）",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "tc-mobile-entry-2026-11-23",
+      "title": "繁中官网：台湾商店链接与预约状态（11月23日）",
+      "status": "verified",
+      "checkedAt": "2026-11-23",
+      "daysSinceChecked": 2,
+      "affectedArticles": [
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/"
+      ]
+    },
+    {
+      "id": "cn-launch-faq-2026-11-24",
+      "title": "《蓝色星原：旅谣》公测常见问题说明",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "jp-launch-faq-2026-11-24",
+      "title": "『アズールプロミリア』正式サービス開始に関するよくあるご質問",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/",
+        "/ja/guides/support/",
+        "/zh-hans/guides/support/"
+      ]
+    },
+    {
+      "id": "jp-apple-metadata-2026-11-24",
+      "title": "Apple日本区应用元数据：应用身份、最低OS与分发体积",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "cn-distribution-home-2026-11-24",
+      "title": "国服官网：11月24日可见入口与新公告",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "jp-distribution-home-2026-11-24",
+      "title": "日本官网：11月24日手机入口与NEWS复核",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "jp-play-display-2026-11-24",
+      "title": "日本Google Play：11月24日应用展示复核",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/"
+      ]
+    },
+    {
+      "id": "cn-preload-open-2026-11-24",
+      "title": "国服公告：预下载现已开启",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "jp-preload-open-2026-11-24",
+      "title": "日本公告：事前下载开始与PC独立入口",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/redeem-codes/",
+        "/zh-hans/guides/redeem-codes/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "jp-pc-download-page-2026-11-24",
+      "title": "日本官方Windows下载页与启动器链接",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/launch/",
+        "/zh-hans/guides/launch/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "cn-download-home-followup-2026-11-24",
+      "title": "国服首页后续：正式下载按钮已展示",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "cn-ios-store-followup-2026-11-24",
+      "title": "中国区App Store后续：1.0.1版本与3.9GB",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/global-release/",
+        "/zh-hans/guides/global-release/",
+        "/ja/guides/platforms/",
+        "/zh-hans/guides/platforms/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/"
+      ]
+    },
+    {
+      "id": "cn-character-banner-2026-11-24",
+      "title": "弦定观测「桃笺为契」",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "cn-anima-banner-2026-11-24",
+      "title": "羁点观测「绯影入怀」",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/banner-rules/",
+        "/zh-hans/guides/banner-rules/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-preregister-benefits-2026-11-24",
+      "title": "日本预约页：人数档位、预约奖励与SNS奇波",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/systems/kibo/",
+        "/zh-hans/systems/kibo/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-support-page-2026-11-24",
+      "title": "日本官方FAQ与客服入口：咨询流程、语言与回复说明",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/support/",
+        "/zh-hans/guides/support/"
+      ]
+    },
+    {
+      "id": "cn-launch-returns-rewards-2026-11-24",
+      "title": "国服公测FAQ第3/4节：测试充值返还与预约邮件",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/recharge-return/",
+        "/zh-hans/guides/recharge-return/",
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/",
+        "/ja/guides/resources/",
+        "/zh-hans/guides/resources/"
+      ]
+    },
+    {
+      "id": "jp-account-terms-2026-11-24",
+      "title": "日本利用规约第4条：账号删除与恢复",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/reroll/",
+        "/zh-hans/guides/reroll/"
+      ]
+    },
+    {
+      "id": "jp-world-overview-2026-11-24",
+      "title": "日本官网：世界与地区介绍",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": []
+    },
+    {
+      "id": "cn-login-troubleshooting-support-2026-11-24",
+      "title": "国服公测FAQ：实名、故障处理与客服反馈",
+      "status": "verified",
+      "checkedAt": "2026-11-24",
+      "daysSinceChecked": 1,
+      "affectedArticles": [
+        "/ja/guides/download/",
+        "/zh-hans/guides/download/",
+        "/ja/guides/getting-started/",
+        "/zh-hans/guides/getting-started/",
+        "/ja/guides/requirements/",
+        "/zh-hans/guides/requirements/",
+        "/ja/guides/support/",
+        "/zh-hans/guides/support/"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "cn-launch-date",
+      "revision": 2,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "global-release",
+        "download",
+        "getting-started",
+        "platforms",
+        "redeem-codes",
+        "reroll"
+      ]
+    },
+    {
+      "id": "cn-official-entry",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "download",
+        "getting-started",
+        "redeem-codes",
+        "reroll"
+      ]
+    },
+    {
+      "id": "cn-ios-store",
+      "revision": 3,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "global-release"
+      ]
+    },
+    {
+      "id": "cn-ios-compatibility",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "requirements",
+        "platforms",
+        "download"
+      ]
+    },
+    {
+      "id": "cn-opening-time",
+      "revision": 4,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "global-release",
+        "getting-started",
+        "download",
+        "platforms",
+        "requirements"
+      ]
+    },
+    {
+      "id": "cn-platform-details",
+      "revision": 3,
+      "verification": "pending",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements"
+      ]
+    },
+    {
+      "id": "jp-release-status",
+      "revision": 2,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "global-release",
+        "platforms",
+        "download",
+        "getting-started",
+        "redeem-codes",
+        "reroll"
+      ]
+    },
+    {
+      "id": "tc-official-announcement",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "global-release"
+      ]
+    },
+    {
+      "id": "cn-test-client-history",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms"
+      ]
+    },
+    {
+      "id": "cn-preload-status",
+      "revision": 6,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "launch",
+        "global-release",
+        "getting-started"
+      ]
+    },
+    {
+      "id": "jp-official-entry",
+      "revision": 2,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "global-release",
+        "download",
+        "platforms",
+        "getting-started",
+        "redeem-codes",
+        "reroll"
+      ]
+    },
+    {
+      "id": "jp-platform-plan",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "global-release",
+        "download",
+        "platforms",
+        "requirements"
+      ]
+    },
+    {
+      "id": "jp-platform-details",
+      "revision": 3,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements"
+      ]
+    },
+    {
+      "id": "jp-preload-status",
+      "revision": 6,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "download",
+        "platforms",
+        "getting-started",
+        "global-release"
+      ]
+    },
+    {
+      "id": "cn-special-livestream-program",
+      "revision": 3,
+      "verification": "pending",
+      "affectedPages": [
+        "launch",
+        "redeem-codes",
+        "banner-rules",
+        "resources"
+      ]
+    },
+    {
+      "id": "cn-banner-rules-system",
+      "revision": 3,
+      "verification": "verified",
+      "affectedPages": [
+        "banner-rules",
+        "reroll",
+        "resources"
+      ]
+    },
+    {
+      "id": "cn-opening-rewards-resource",
+      "revision": 2,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "getting-started",
+        "redeem-codes"
+      ]
+    },
+    {
+      "id": "jp-opening-time",
+      "revision": 2,
+      "verification": "verified",
+      "affectedPages": [
+        "launch",
+        "global-release",
+        "download",
+        "platforms",
+        "getting-started",
+        "requirements"
+      ]
+    },
+    {
+      "id": "jp-banner-rules-system",
+      "revision": 1,
+      "verification": "pending",
+      "affectedPages": [
+        "banner-rules",
+        "reroll"
+      ]
+    },
+    {
+      "id": "cn-rewards-conditions",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "banner-rules",
+        "getting-started",
+        "home",
+        "kibo-guide"
+      ]
+    },
+    {
+      "id": "jp-kibo-web-rewards",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "getting-started",
+        "kibo-guide",
+        "reroll",
+        "redeem-codes"
+      ]
+    },
+    {
+      "id": "cn-kibo-web-rewards",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "getting-started",
+        "kibo-guide",
+        "reroll",
+        "redeem-codes"
+      ]
+    },
+    {
+      "id": "cn-benefit-preview-milestones",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources"
+      ]
+    },
+    {
+      "id": "cn-store-home-kibo-overview",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "home",
+        "kibo-guide",
+        "getting-started"
+      ]
+    },
+    {
+      "id": "jp-store-home-kibo-overview",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "home",
+        "kibo-guide"
+      ]
+    },
+    {
+      "id": "jp-replay-rule-coverage",
+      "revision": 1,
+      "verification": "pending",
+      "affectedPages": [
+        "banner-rules"
+      ]
+    },
+    {
+      "id": "jp-play-registration-display",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements"
+      ]
+    },
+    {
+      "id": "tc-mobile-official-entry",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "global-release"
+      ]
+    },
+    {
+      "id": "cn-public-launch-requirements",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements",
+        "getting-started",
+        "launch",
+        "global-release"
+      ]
+    },
+    {
+      "id": "jp-public-launch-requirements",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements",
+        "getting-started",
+        "launch",
+        "global-release"
+      ]
+    },
+    {
+      "id": "cn-public-launch-platform-rules",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements",
+        "getting-started",
+        "launch",
+        "global-release"
+      ]
+    },
+    {
+      "id": "jp-public-launch-platform-rules",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "platforms",
+        "requirements",
+        "getting-started",
+        "launch",
+        "global-release"
+      ]
+    },
+    {
+      "id": "jp-ios-store-metadata",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "requirements",
+        "download"
+      ]
+    },
+    {
+      "id": "jp-preregister-benefits",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "getting-started",
+        "reroll",
+        "kibo-guide"
+      ]
+    },
+    {
+      "id": "jp-launch-troubleshooting",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "download",
+        "requirements",
+        "getting-started",
+        "support"
+      ]
+    },
+    {
+      "id": "cn-test-recharge-return",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "recharge-return",
+        "resources",
+        "getting-started",
+        "reroll"
+      ]
+    },
+    {
+      "id": "cn-preregister-mail-benefits",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "resources",
+        "getting-started",
+        "reroll"
+      ]
+    },
+    {
+      "id": "jp-account-deletion-terms",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "reroll"
+      ]
+    },
+    {
+      "id": "cn-login-support-rules",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "support",
+        "getting-started",
+        "requirements",
+        "download"
+      ]
+    },
+    {
+      "id": "cn-launch-troubleshooting",
+      "revision": 1,
+      "verification": "verified",
+      "affectedPages": [
+        "support",
+        "download",
+        "requirements"
+      ]
+    }
+  ],
+  "entityPages": [
+    {
+      "id": "anais",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "anais",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "cathbelle",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "cathbelle",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "symphoria",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "symphoria",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "terara",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "terara",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "metsa",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "metsa",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "hanyouyou",
+      "locale": "zh-hans",
+      "catalogPublishable": false,
+      "detailPublishable": false
+    },
+    {
+      "id": "hanyouyou",
+      "locale": "ja",
+      "catalogPublishable": false,
+      "detailPublishable": false
+    },
+    {
+      "id": "staray",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "staray",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "downybrinny",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "downybrinny",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "cabbird",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "cabbird",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "bluda",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "bluda",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "vespervamp",
+      "locale": "zh-hans",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    },
+    {
+      "id": "vespervamp",
+      "locale": "ja",
+      "catalogPublishable": true,
+      "detailPublishable": false
+    }
+  ]
+}

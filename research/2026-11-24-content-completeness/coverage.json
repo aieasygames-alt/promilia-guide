@@ -1,0 +1,25 @@
+{
+  "mode": "production",
+  "locales": {
+    "zh-hans": {
+      "publishedGuides": 11,
+      "publishedSystemGuides": 3,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 26,
+      "missingTopics": []
+    },
+    "ja": {
+      "publishedGuides": 11,
+      "publishedSystemGuides": 3,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 26,
+      "missingTopics": []
+    }
+  }
+}

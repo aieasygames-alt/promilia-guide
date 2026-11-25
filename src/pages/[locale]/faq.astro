@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import questions from '../../data/faq.json';
+import { allGuides, type Locale } from '../../lib/content';
+import { claims, sources } from '../../lib/facts';
+import { resolveQuestions } from '../../lib/content-navigation.mjs';
+import { locales, languageTag, origin } from '../../lib/publication.mjs';
+export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
+const locale = Astro.params.locale as Locale;
+const ja = locale === 'ja';
+type ResolvedQuestion = (typeof questions)[number]['questions'][number] & { available: boolean; href: string | null };
+type ResolvedGroup = Omit<(typeof questions)[number], 'questions'> & { questions: ResolvedQuestion[] };
+const groups: ResolvedGroup[] = resolveQuestions(questions, locale, { entries: await allGuides(), sources, claims });
+const title = ja ? 'アズールプロミリア よくある質問：開始・報酬・攻略' : '蓝色星原常见问题：开服、福利、图鉴与玩法答疑';
+const description = ja ? 'ダウンロード、容量、アカウント、ガチャ、キャラクター、キボ、農園の疑問を整理。短い回答から地域別の詳しいガイドへ進めます。' : '汇总蓝色星原开服、下载、容量、账号、卡池、角色、奇波和家园常见问题，短答后直达对应指南，区分国服与日本版及待核实玩法。';
+const alternates = locales.map(l => ({ lang: languageTag[l], href: `${origin}/${l}/faq/` })).concat([{ lang: 'x-default', href: `${origin}/zh-hans/faq/` }]);
+---
+<Base locale={locale} title={title} description={description} alternates={alternates} languageTarget={`/${ja ? 'zh-hans' : 'ja'}/faq/`}>
+  <div class="container">
+    <nav class="breadcrumb" aria-label={ja ? 'パンくずリスト' : '面包屑'}><a href={`/${locale}/`}>{ja ? 'ホーム' : '首页'}</a><span>/</span>{ja ? 'よくある質問' : '常见问题'}</nav>
+    <header class="page-heading"><p class="eyebrow">ANSWERS FOR THE JOURNEY</p><h1>{title}</h1><p>{description}</p></header>
+    <div class="faq-layout" data-pagefind-body>
+      <nav class="faq-index" aria-label={ja ? '質問の分類' : '问题分类'}>{groups.map(group => <a href={`#${group.id}`}>{group.title[locale]} <span>{group.questions.length}</span></a>)}<a href={`/${locale}/database/`}>{ja ? '図鑑から探す' : '从图鉴查资料'} ↗</a></nav>
+      <div>
+        <p class="notice">{ja ? '中国本土と日本の情報は区別しています。正式版の実操作が未検証の項目は、その範囲を明記します。詳細・出典・更新日は各ガイドで確認できます。' : '国服与日本资料分别说明；未完成正式版实测的项目保留核验范围。完整步骤、来源和实质更新日期见对应指南。'}</p>
+        {groups.map(group => <section class="faq-section" aria-labelledby={group.id}><h2 id={group.id}>{group.title[locale]}</h2>{group.questions.map(question => <details class="faq-answer" id={`q-${question.id}`} data-faq-id={question.id} data-answer-current={String(question.available)}><summary>{question.question[locale]}</summary><div>{question.available ? <><p>{question.answer[locale]}</p><a href={question.href!}>{ja ? '詳しい条件・手順・出典を読む' : '查看完整条件、步骤与来源'} →</a></> : <p>{ja ? '関連ガイドまたは根拠を再確認中です。地域の公式情報を確認するか、ガイド一覧から現在の案内をご覧ください。' : '关联指南或依据正在复核，请核对对应地区官方信息，或从攻略目录查看当前可用说明。'} <a href={`/${locale}/guides/`}>{ja ? 'ガイド一覧' : '攻略目录'} →</a></p>}</div></details>)}</section>)}
+        <p class="faq-footer">{ja ? '解決しない場合は、関連ページと地域・バージョンを添えて修正メモを作成できます。' : '仍未解决时，可以附上相关页面、地区与版本整理纠错记录。'} <a href={`/${locale}/contact/?page=${encodeURIComponent(`/${locale}/faq/`)}`}>{ja ? '修正メモを作る' : '整理问题'} →</a></p>
+      </div>
+    </div>
+  </div>
+</Base>
+<script>
+  function revealQuestion() {
+    let id: string;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    if (!id.startsWith('q-')) return;
+    const question = document.getElementById(id);
+    if (question instanceof HTMLDetailsElement) question.open = true;
+  }
+  revealQuestion();
+  window.addEventListener('hashchange', revealQuestion);
+</script>
+<style>
+  .faq-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 3rem; margin-bottom: 5rem; }
+  .faq-index { align-self: start; position: sticky; top: 105px; display: grid; border-top: 2px solid var(--green); }
+  .faq-index a { display: flex; justify-content: space-between; gap: .5rem; padding: .9rem .2rem; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .faq-index span { color: var(--muted); }
+  .faq-section { margin: 2.5rem 0; } .faq-section h2 { margin-bottom: 1rem; font-size: 1.35rem; scroll-margin-top: 105px; }
+  .faq-answer { border-bottom: 1px solid var(--line); scroll-margin-top: 105px; }
+  summary { cursor: pointer; padding: 1.1rem .1rem; font-weight: 600; line-height: 1.7; }
+  .faq-answer div { padding: 0 1rem 1.3rem; }
+  .faq-answer p { margin: .2rem 0 .9rem; line-height: 1.9; }
+  .faq-answer a, .faq-footer a { color: var(--green); text-decoration: underline; text-underline-offset: .25em; }
+  .faq-answer a { font-size: .9rem; } .faq-footer { color: var(--muted); line-height: 1.9; }
+  @media (max-width: 820px) { .faq-layout { grid-template-columns: 1fr; gap: 1rem; } .faq-index { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; } }
+</style>

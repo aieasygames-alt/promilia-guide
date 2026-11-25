@@ -155,6 +155,9 @@ a:hover {
   display: block;
   color: var(--muted);
 }
+.entity-card[hidden] { display: none; }
+.catalog-support { margin: 0 0 2rem; font-size: .9rem; color: var(--green); line-height: 1.9; }
+.catalog-support a { text-decoration: underline; text-underline-offset: .25em; }
 .desktop-nav {
   display: flex;
   gap: 25px;

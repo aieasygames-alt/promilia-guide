@@ -11,6 +11,7 @@
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
     "validate:content": "node scripts/validate-content.mjs",
     "content:status": "node scripts/content-report.mjs status",
+    "content:coverage": "node scripts/content-coverage.mjs",
     "content:impact": "node scripts/content-report.mjs impact",
     "content:readiness": "node scripts/check-release.mjs",
     "release:check": "node scripts/check-release.mjs --require-ready",

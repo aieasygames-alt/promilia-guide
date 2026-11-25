@@ -8,7 +8,7 @@ description: 11月24日两地官方FAQ：手机建议预留55GB以上、PC120GB�
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 日本FAQ故障处理核对
+gameVersion: 公测前 / 国服实名、故障与客服分流核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -30,7 +30,8 @@ sourceRefs:
   - jp-pc-download-page-2026-11-24
   - cn-ios-store-followup-2026-11-24
   - jp-support-page-2026-11-24
-sourceRevision: 9
+  - cn-login-troubleshooting-support-2026-11-24
+sourceRevision: 10
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -45,6 +46,7 @@ related:
   - platforms
   - getting-started
   - reroll
+  - support
 order: 5
 minutes: 8
 revisions:
@@ -72,6 +74,10 @@ revisions:
     note: 补核日本FAQ第4/5节与官方客服入口，按阶段区分校验、追加资源、慢启动和闪退；增加本地故障记录表，正文与译文仍待本批审核。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-24"
+    note: 补核国服实名、故障顺序与客服入口，区分日本重启对象；当前正文与译文待本批确认，不继承旧稿审核。
+  - date: "2026-11-25"
+    note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -86,6 +92,8 @@ claimRefs:
   - jp-public-launch-platform-rules
   - jp-ios-store-metadata
   - jp-launch-troubleshooting
+  - cn-launch-troubleshooting
+  - cn-login-support-rules
 claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
@@ -100,15 +108,26 @@ claimRevisions:
   jp-public-launch-platform-rules: 1
   jp-ios-store-metadata: 1
   jp-launch-troubleshooting: 1
+  cn-launch-troubleshooting: 1
+  cn-login-support-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-25"
 ---
 
 ## 手机要留多少空间？PC要留多少？
 
 **11月24日国服和日本各自的公测FAQ均建议：Android、iOS预留55GB以上，PC预留120GB以上；PC推荐安装在SSD。** 国服FAQ另列鸿蒙端，建议同样预留55GB以上。它们是官方建议的安装前剩余空间，不能写成“实际下载55GB”或“安装后一定占120GB”。
 
-本页配置来自[国服公测FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)和[日本正式服务FAQ](https://azurpromilia.jp/news/5190)，均于11月24日发布并逐份读取。两地表格相似，各自适用范围仍分开保存；后续调整以对应地区原文为准。
+本页配置来自[国服公测FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)和[日本正式服务FAQ](https://azurpromilia.jp/contact)，均于11月24日发布并逐份读取。两地表格相似，各自适用范围仍分开保存；后续调整以对应地区原文为准。
+
+
+## 国服空间与闪退排查：先留下目标盘和发生阶段
+
+[国服FAQ第5节](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)对PC空间不足要求检查安装磁盘，建议120GB以上；不足时整理磁盘或换安装目录再尝试。不要把C盘和其他盘剩余相加当作安装盘可用空间，也不把120GB写成最终占用量。
+
+国服游玩中闪退的建议是**先重启设备，再启动游戏**，PC可重启电脑；仍频繁发生时走游戏内客服，并提供设备型号、系统版本、问题发生时间和相关截图。它没有保证换显卡、改画质或增加空间能解决所有闪退。
+
+若在登录之前停止，先区分客户端、资源、服务状态和账号要求；国服需完成实名认证才能登录，不把认证提示归因于RAM不足。按[国服下载排查](/zh-hans/guides/download/)选择对应动作，再用[客服说明模板](/zh-hans/guides/support/)记录一次可复述的故障。
 
 ## 日本版手机与PC配置
 
@@ -167,7 +186,7 @@ iOS机型与内存是公告分别列出的字段，本页按原文并列保留�
 
 ## 空间足够但读条慢、闪退，先核对什么？
 
-日本[FAQ第4节](https://azurpromilia.jp/news/5190)把容量不足、PC加载慢与游玩中强制关闭分成不同问题。排查时先记症状，再对应检查项：
+日本[FAQ第4节](https://azurpromilia.jp/contact)把容量不足、PC加载慢与游玩中强制关闭分成不同问题。排查时先记症状，再对应检查项：
 
 | 症状 | 设备与存储检查 | 后续动作 |
 | --- | --- | --- |

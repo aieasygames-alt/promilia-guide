@@ -8,7 +8,7 @@ description: 日本公式FAQはスマホ55GB以上・PC120GB以上の空き容�
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-24"
-gameVersion: 正式サービス開始前 / 2026-11-24 日本FAQトラブル対処照合
+gameVersion: 正式サービス開始前 / 中国本土の実名認証・不具合・窓口を照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -30,7 +30,8 @@ sourceRefs:
   - jp-pc-download-page-2026-11-24
   - cn-ios-store-followup-2026-11-24
   - jp-support-page-2026-11-24
-sourceRevision: 9
+  - cn-login-troubleshooting-support-2026-11-24
+sourceRevision: 10
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -45,6 +46,7 @@ related:
   - platforms
   - getting-started
   - reroll
+  - support
 order: 5
 minutes: 8
 revisions:
@@ -72,7 +74,11 @@ revisions:
     note: 日本FAQ第4・5節と公開窓口を照合。検証・追加データ・起動遅延・強制終了を分け、記録シートと導線を追加。本文・訳文は引き続きレビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
-translatedFromRevision: 9
+  - date: "2026-11-24"
+    note: 中国本土の実名認証・故障対処・窓口を補足。日本の再起動対象と区別し、本文・翻訳は今回の確認待ち。旧公開確認を継承しません。
+  - date: "2026-11-25"
+    note: プロジェクト責任者が本会話で全開発内容の本番公開と公開後検証を明示。現在の本文・訳文の公開確認を記録し、独立言語校閲やゲーム内実操作を完了したとは記録しません。
+translatedFromRevision: 10
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -87,6 +93,8 @@ claimRefs:
   - jp-public-launch-platform-rules
   - jp-ios-store-metadata
   - jp-launch-troubleshooting
+  - cn-launch-troubleshooting
+  - cn-login-support-rules
 claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
@@ -101,15 +109,26 @@ claimRevisions:
   jp-public-launch-platform-rules: 1
   jp-ios-store-metadata: 1
   jp-launch-troubleshooting: 1
+  cn-launch-troubleshooting: 1
+  cn-login-support-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-25"
 ---
 
 ## スマホは55GB以上、PCは120GB以上の空き容量を推奨
 
 **11月24日の日本公式FAQは、Android・iOSで55GB以上、PCで120GB以上の空き容量を推奨しています。PCはSSDへのインストールを推奨。** これはインストール前に確保する空き容量の目安で、実際のダウンロード量やインストール後の占有量ではありません。
 
-出典は[日本公式の正式サービスFAQ](https://azurpromilia.jp/news/5190)です。[中国本土の公測FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)も別途読み、地域ごとに記録しています。日本版の数値は日本の原文が根拠です。
+出典は[日本公式の正式サービスFAQ](https://azurpromilia.jp/contact)です。[中国本土の公測FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)も別途読み、地域ごとに記録しています。日本版の数値は日本の原文が根拠です。
+
+
+## 中国本土の容量不足・強制終了は保存先と発生段階から
+
+[中国本土FAQ第5節](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)はPCの容量不足時にインストール先を確認し、120GB以上の空きを推奨しています。不足時は不要ファイルの整理か保存先変更後に再試行。複数ドライブの空きを合算せず、120GBを最終占有量とも扱いません。
+
+プレイ中の強制終了は**端末を再起動し、ゲームを起動**、PCならPC再起動を案内。頻繁に続く場合は機種、OS、発生日時、画像を添えてゲーム内サポートへ。GPU交換、画質変更、空き容量の追加ですべて直るという説明ではありません。
+
+ログイン前に止まる場合は、クライアント、リソース、サービス状態、アカウント条件を分けます。中国本土は実名認証後にログインするという別条件もあり、認証表示をRAM不足の症状とは扱いません。[中国本土のダウンロード対処](/ja/guides/download/)と[問い合わせ説明テンプレート](/ja/guides/support/)で次の行動を確認できます。
 
 ## 日本版の最低・推奨スペック
 
@@ -168,7 +187,7 @@ iOSの機種名とメモリーは原文の別々の項目をそのまま記載�
 
 ## 空き容量があるのに遅い・強制終了する場合
 
-[日本FAQ第4節](https://azurpromilia.jp/news/5190)は、容量不足、PCの読み込み遅延、プレイ中の強制終了を別の問題として案内しています。症状と環境を組み合わせて記録してください。
+[日本FAQ第4節](https://azurpromilia.jp/contact)は、容量不足、PCの読み込み遅延、プレイ中の強制終了を別の問題として案内しています。症状と環境を組み合わせて記録してください。
 
 | 症状 | 環境の確認 | 次の行動 |
 | --- | --- | --- |

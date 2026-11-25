@@ -132,7 +132,7 @@ reviewedAt: "2026-11-24"
 | 日本 | PC（Windows）、Android、iOS | 同じアカウントで3機種間のプレイデータを共有 | 地域間の共通アカウント、有償通貨、実配布、個人のストア利用資格 |
 | 中国本土の公式サーバー | PC、Android、iOS、鴻蒙 | 同じアカウントで4機種の進行状況を共有 | 一部チャネル版は公式と共有されず、対象チャネルの説明が必要 |
 
-それぞれ[日本FAQ](https://azurpromilia.jp/news/5190)と[中国本土FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)を出典としています。今回はログインを行っておらず、実際の端末切り替えの成功記録ではありません。
+それぞれ[日本FAQ](https://azurpromilia.jp/contact)と[中国本土FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)を出典としています。今回はログインを行っておらず、実際の端末切り替えの成功記録ではありません。
 
 上の早見表は日本・中国本土のPC、Android、iPhone/iPadの6行です。中国本土FAQの鴻蒙は独立項目で、Android用リンクを代用しません。
 

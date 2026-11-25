@@ -17,7 +17,7 @@ const other = locale === 'zh-hans' ? 'ja' : 'zh-hans';
 const canonical = origin + Astro.url.pathname;
 const logoAlt = locale === 'ja' ? 'アズールプロミリア（Azur Promilia）' : '蓝色星原：旅谣（Azur Promilia）';
 const logoUrl = origin + '/images/logo.png';
-const nav = [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['updates/', c.updates]];
+const nav = [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['database/', c.database], ['updates/', c.updates]];
 const active = (href: string) => href === '' ? Astro.url.pathname === root : Astro.url.pathname.startsWith(root + href);
 const indexable = !noindex && !preview;
 const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
@@ -76,7 +76,7 @@ const metadata = schema || {
     </header>
     <main id="main"><slot /></main>
     <footer class="site-footer" data-pagefind-ignore>
-      <div class="footer-inner"><div><a class="footer-brand" href={root} aria-label={`Promilia Guide — ${c.home}`}><img class="footer-logo" src="/images/logo-wordmark.png" alt="" width="777" height="320" /></a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
+      <div class="footer-inner"><div><a class="footer-brand" href={root} aria-label={`Promilia Guide — ${c.home}`}><img class="footer-logo" src="/images/logo-wordmark.png" alt="" width="777" height="320" /></a><p>{c.footer}</p><small>{c.unofficial}</small></div><nav aria-label={locale === 'ja' ? 'サイト情報' : '站点信息'}><a href={root + 'faq/'}>{c.faq}</a><a href={root + 'database/'}>{c.database}</a><a href={root + 'about/'}>{c.about}</a><a href={root + 'editorial-policy/'}>{c.policy}</a><a href={root + 'contact/'}>{c.contact}</a><a href="/">简中 / 日本語</a></nav></div>
       <div class="footer-bottom"><span>© 2026 Promilia Guide</span><span>MADE FOR THE JOURNEY <span aria-hidden="true">✧</span></span></div>
     </footer>
     <script>

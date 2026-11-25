@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-25",
+  "authorization": "将所有开发内容都部署到线上，上线后做好线上验证，我是独立开发者内容可以先上线，后续验证有问题可以逐步修复。",
+  "authorizationContext": "当前用户明确授权全部当前开发上线；仅记录本次发布确认，不另称独立日语审校或正式版游戏实机验证。",
+  "reviewer": "项目负责人（会话发布确认）",
+  "scope": "当前全部栏目、导航、FAQ、图鉴、搜索、来源维护及8篇中日文新稿/修订。实体详情索引门槛与未验证游戏机制保持证据边界。",
+  "articles": [
+    {
+      "contentId": "getting-started",
+      "locale": "zh-hans",
+      "sourceRevision": 15,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/getting-started.md",
+      "reviewedDraftSha256": "7737cb8bca1e6f9506386b6660f0a912566dd6469a7f84200f3b9e50bc61c81e",
+      "publishedFile": "src/content/guides/zh-hans/getting-started.md",
+      "publishedSha256": "ae57131d85daae23bd242575edb8956bae2b72069d1624aae768c64c4c6ac3a5",
+      "bodySha256": "2f0ee6d5a5db985285c8782047b1c55669d65007d568dd748b73b1b0b9111279"
+    },
+    {
+      "contentId": "getting-started",
+      "locale": "ja",
+      "sourceRevision": 15,
+      "reviewedDraftFile": "src/content/revisions/ja/getting-started.md",
+      "reviewedDraftSha256": "143740df1ac2095d571ef177465b55251fe23dd3610c2b5e79e416797099bf37",
+      "publishedFile": "src/content/guides/ja/getting-started.md",
+      "publishedSha256": "d3e15b6ddcb1f366afbb540a4f632d6a076015b52573c71074fe8679af69c72c",
+      "bodySha256": "9029d5fbf0f5de9d632baa58ef98b15fd131ec4316427e22fb9c73bfa591866b"
+    },
+    {
+      "contentId": "download",
+      "locale": "zh-hans",
+      "sourceRevision": 14,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/download.md",
+      "reviewedDraftSha256": "f86d68c4fb1f4a2eb5b9bbf5ace1a83df82a680dd596cd3f5813526996f42879",
+      "publishedFile": "src/content/guides/zh-hans/download.md",
+      "publishedSha256": "e81cb3f0c8af35b6741d27b301afc66611ca04e9f845ef3fbe8a0e1276834c7b",
+      "bodySha256": "d4b52fbfa1237a0d39486d67a24948e287a138022921c44fce184559bb8ff82b"
+    },
+    {
+      "contentId": "download",
+      "locale": "ja",
+      "sourceRevision": 14,
+      "reviewedDraftFile": "src/content/revisions/ja/download.md",
+      "reviewedDraftSha256": "4ff33fe2ef4c0b70baafab9eb6d703a56493baa12fe59fa42470e168e2860d9d",
+      "publishedFile": "src/content/guides/ja/download.md",
+      "publishedSha256": "6261652fbbdfb44acdfcfd22950fe8ff1f83fc8b7a30bfd8bfc91a086f2b7db9",
+      "bodySha256": "8a74036c2a00f62f971fdf73d62844678d8f42b77514c5c89de36b5f99198751"
+    },
+    {
+      "contentId": "requirements",
+      "locale": "zh-hans",
+      "sourceRevision": 10,
+      "reviewedDraftFile": "src/content/revisions/zh-hans/requirements.md",
+      "reviewedDraftSha256": "21a0416a5bf4513ac273b67e1a2c44c8e8afe18865ba634071391191a484dfad",
+      "publishedFile": "src/content/guides/zh-hans/requirements.md",
+      "publishedSha256": "8d8a778064767d914c2e3a0652c253bf4a113b3827eccbf8945cf4b79d173592",
+      "bodySha256": "55e2490310a6c879d183023f3b7a02b68cf3f7b868e062d96073e50822e20396"
+    },
+    {
+      "contentId": "requirements",
+      "locale": "ja",
+      "sourceRevision": 10,
+      "reviewedDraftFile": "src/content/revisions/ja/requirements.md",
+      "reviewedDraftSha256": "444f05cf3f26d0f1428caefc484ceca806e58caa041282e39977d73d828d43e6",
+      "publishedFile": "src/content/guides/ja/requirements.md",
+      "publishedSha256": "3503dbb8cc40f1300905589fefca458b609507bac7a268789efbb55adfdd9c0f",
+      "bodySha256": "92cec5733a82b953b0ef920b084282d3b4bf42fa6ac4271f7397a831cfc74df3"
+    },
+    {
+      "contentId": "support",
+      "locale": "zh-hans",
+      "sourceRevision": 1,
+      "reviewedDraftFile": "src/content/guides/zh-hans/support.md",
+      "reviewedDraftSha256": "7e8df4e64163f95d21fdee913c250362c5e2b1810edfb5dfba8782b3bf54974a",
+      "publishedFile": "src/content/guides/zh-hans/support.md",
+      "publishedSha256": "df92685afd61cbf601ab6633556d73366e45e5a9f7e0025f27ce73a36b02a732",
+      "bodySha256": "034ae7f37487295a3eefe63af4f6364c2fa1730d92ef491cbf2262408a72498f"
+    },
+    {
+      "contentId": "support",
+      "locale": "ja",
+      "sourceRevision": 1,
+      "reviewedDraftFile": "src/content/guides/ja/support.md",
+      "reviewedDraftSha256": "1fe27ee8286be5a1d35cb144921bcdb9ad6898770f27e3c69c96f26abc1e8a46",
+      "publishedFile": "src/content/guides/ja/support.md",
+      "publishedSha256": "aa6b430e401757a8d0079626cba31397e0b9437fbd33495db6ef4a642405afe6",
+      "bodySha256": "5b18ccbc045cbcba29f123e60fabe7b6250b079f981bfbc2f5e09245c8724039"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale; kind: 'character' | 'kibo'; count: number }
+const { locale, kind, count } = Astro.props;
+const ja = locale === 'ja';
+const character = kind === 'character';
+const rows = character ? [
+  [ja ? '名前を照合したい' : '想确认角色叫什么', ja ? '地域別の名前・英文表記・紹介文を一覧で確認。' : '查看各地区姓名、英文标识与官方人物简介。'],
+  [ja ? '所属から探したい' : '想按所属地区找人', ja ? '下の地域フィルターで絞り込み。所属は性能や実装地域を示しません。' : '用下方地区筛选缩小范围；所属设定不代表性能或实装区服。'],
+  [ja ? '育成やリセマラを考えたい' : '想判断首抽或养成', ja ? '人物設定と技能を区別し、ガチャ・アカウント条件も確認。' : '人物设定与技能分开看，再核对目标卡池和账号奖励。'],
+] : [
+  [ja ? '名前・分類を照合したい' : '想确认名称与分类', ja ? '一覧で原文表記・生態・英文識別子を確認。' : '在目录核对地区原名、生态介绍与英文标识。'],
+  [ja ? '入手先を探したい' : '想找到获取方式', ja ? 'イベント受取・野外・孵化を区別。生態から座標は推定しません。' : '先区分活动领取、野外与孵化；生态介绍不等于捕获坐标。'],
+  [ja ? '農園へ配置したい' : '想安排家园岗位', ja ? '個体の能力と仕事の条件を確認。全キボがすべての仕事を担当するとは限りません。' : '核对个体能力与岗位要求；不能把所有工种套到每只奇波。'],
+];
+---
+<aside class="catalog-help" aria-label={ja ? '一覧の使い方' : '目录使用说明'}>
+  <div class="catalog-help-heading"><h2>{ja ? 'この一覧で分かること' : '这份目录能帮你查什么'}</h2><span class="pill">{count} {ja ? '件の確認済み紹介' : '项已核验介绍'}</span></div>
+  <dl>{rows.map(([title, note]) => <div><dt>{title}</dt><dd>{note}</dd></div>)}</dl>
+  <div class="catalog-help-links"><a href={`/${locale}/database/`}>{ja ? '図鑑の総合索引' : '图鉴总索引'} →</a><a href={`/${locale}/${character ? 'guides/reroll/' : 'systems/kibo/'}`}>{ja ? character ? 'リセマラの判断' : 'キボの入手と用途' : character ? '首抽与投入判断' : '奇波获取与用途'} →</a><a href={`/${locale}/${character ? 'guides/banner-rules/' : 'systems/home/'}`}>{ja ? character ? 'ガチャ規約' : '農園と配置' : character ? '卡池规则' : '家园与岗位'} →</a></div>
+</aside>
+<style>
+  .catalog-help { border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: var(--radius); padding: 1.5rem; margin: 0 0 2rem; }
+  .catalog-help-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  h2 { font-size: 1.15rem; margin: 0; }
+  dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+  dt { font-weight: 600; margin-bottom: .4rem; } dd { margin: 0; font-size: .9rem; color: var(--muted); line-height: 1.8; }
+  .catalog-help-links { display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; font-size: .9rem; color: var(--green); }
+  .catalog-help-links a { text-decoration: underline; text-underline-offset: .25em; }
+  @media (max-width: 650px) { dl { grid-template-columns: 1fr; gap: 1rem; } .catalog-help { padding: 1rem; } }
+</style>

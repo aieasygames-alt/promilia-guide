@@ -1,0 +1,163 @@
+{
+  "planId": "initial-bilingual",
+  "title": "首批双语内容",
+  "asOf": "2026-11-25",
+  "ready": true,
+  "summary": {
+    "required": 10,
+    "ready": 10,
+    "missing": 0,
+    "awaitingReview": 0,
+    "stale": 0
+  },
+  "locales": [
+    {
+      "locale": "zh-hans",
+      "required": 5,
+      "ready": 5
+    },
+    {
+      "locale": "ja",
+      "required": 5,
+      "ready": 5
+    }
+  ],
+  "validationIssues": [],
+  "articles": [
+    {
+      "contentId": "launch",
+      "label": "公测时间与预约",
+      "locale": "zh-hans",
+      "title": "蓝色星原公测时间与预下载：国服、日本日期和时区",
+      "file": "src/content/guides/zh-hans/launch.md",
+      "url": "/zh-hans/guides/launch/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "launch",
+      "label": "公测时间与预约",
+      "locale": "ja",
+      "title": "アズールプロミリアは何時から？11月26日11時の開始予定",
+      "file": "src/content/guides/ja/launch.md",
+      "url": "/ja/guides/launch/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "global-release",
+      "label": "发行地区",
+      "locale": "zh-hans",
+      "title": "蓝色星原日服、国际服与繁中版：官方入口和应用ID",
+      "file": "src/content/guides/zh-hans/global-release.md",
+      "url": "/zh-hans/guides/global-release/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "global-release",
+      "label": "发行地区",
+      "locale": "ja",
+      "title": "アズールプロミリアの日本・中国本土・繁体字版｜公式入口の違い",
+      "file": "src/content/guides/ja/global-release.md",
+      "url": "/ja/guides/global-release/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "download",
+      "label": "下载与预约入口",
+      "locale": "zh-hans",
+      "title": "蓝色星原官方下载与预下载：国服、日本PC和手机入口",
+      "file": "src/content/guides/zh-hans/download.md",
+      "url": "/zh-hans/guides/download/",
+      "ready": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "download",
+      "label": "下载与预约入口",
+      "locale": "ja",
+      "title": "アズールプロミリアのダウンロード｜事前DL・PC・スマホ公式入口",
+      "file": "src/content/guides/ja/download.md",
+      "url": "/ja/guides/download/",
+      "ready": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "requirements",
+      "label": "配置与兼容条件",
+      "locale": "zh-hans",
+      "title": "蓝色星原容量与配置要求：手机、iPad和PC确认表",
+      "file": "src/content/guides/zh-hans/requirements.md",
+      "url": "/zh-hans/guides/requirements/",
+      "ready": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "requirements",
+      "label": "配置与兼容条件",
+      "locale": "ja",
+      "title": "アズールプロミリアの容量・推奨スペック｜スマホ・PC対応",
+      "file": "src/content/guides/ja/requirements.md",
+      "url": "/ja/guides/requirements/",
+      "ready": true,
+      "blockers": [],
+      "warnings": [
+        {
+          "code": "pending-claim",
+          "message": "事实 cn-platform-details 仍待核验，公开展示时须保留未知说明",
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "contentId": "getting-started",
+      "label": "开服准备清单",
+      "locale": "zh-hans",
+      "title": "蓝色星原新手准备：开服、领福利与首次抽卡检查",
+      "file": "src/content/guides/zh-hans/getting-started.md",
+      "url": "/zh-hans/guides/getting-started/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "contentId": "getting-started",
+      "label": "开服准备清单",
+      "locale": "ja",
+      "title": "アズールプロミリア初心者向け準備：開始・特典・初回ガチャ",
+      "file": "src/content/guides/ja/getting-started.md",
+      "url": "/ja/guides/getting-started/",
+      "ready": true,
+      "blockers": [],
+      "warnings": []
+    }
+  ],
+  "gateIssues": []
+}

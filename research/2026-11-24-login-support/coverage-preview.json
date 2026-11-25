@@ -1,0 +1,41 @@
+{
+  "mode": "preview",
+  "locales": {
+    "zh-hans": {
+      "publishedGuides": 8,
+      "publishedSystemGuides": 3,
+      "awaitingReviewGuides": 4,
+      "awaitingReviewSystemGuides": 0,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 20,
+      "missingTopics": [],
+      "unpublishedTopics": [
+        "download",
+        "requirements",
+        "support",
+        "getting-started"
+      ]
+    },
+    "ja": {
+      "publishedGuides": 8,
+      "publishedSystemGuides": 3,
+      "awaitingReviewGuides": 4,
+      "awaitingReviewSystemGuides": 0,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 20,
+      "missingTopics": [],
+      "unpublishedTopics": [
+        "download",
+        "requirements",
+        "support",
+        "getting-started"
+      ]
+    }
+  }
+}
