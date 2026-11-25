@@ -8,7 +8,7 @@ description: 本体・追加データ、アカウント、初回メール受取�
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-24"
-gameVersion: サービス開始前 / 2026-11-24 地域別アカウント・受取照合
+gameVersion: 正式サービス開始前 / 中国本土の実名認証・不具合・窓口を照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: editorial
 status: published
@@ -32,7 +32,8 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - jp-support-page-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
-sourceRevision: 14
+  - cn-login-troubleshooting-support-2026-11-24
+sourceRevision: 15
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -51,6 +52,7 @@ related:
   - home
   - kibo-guide
   - recharge-return
+  - support
 order: 6
 minutes: 12
 revisions:
@@ -90,7 +92,11 @@ revisions:
     note: 中国本土の事前登録メール・元テスト課金アカウント・証票期限を分離。リセマラ稿は日本の削除後復旧不可条項も追加。旧承認を継承せず、本文・訳文レビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
-translatedFromRevision: 14
+  - date: "2026-11-24"
+    note: 中国本土の実名認証・故障対処・窓口を補足。日本の再起動対象と区別し、本文・翻訳は今回の確認待ち。旧公開確認を継承しません。
+  - date: "2026-11-25"
+    note: プロジェクト責任者が本会話で全開発内容の本番公開と公開後検証を明示。現在の本文・訳文の公開確認を記録し、独立言語校閲やゲーム内実操作を完了したとは記録しません。
+translatedFromRevision: 15
 checklist:
   - id: region
     text: 対象地域・サーバー・アカウントを確認する
@@ -125,6 +131,7 @@ claimRefs:
   - jp-launch-troubleshooting
   - cn-test-recharge-return
   - cn-preregister-mail-benefits
+  - cn-login-support-rules
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -146,8 +153,9 @@ claimRevisions:
   jp-launch-troubleshooting: 1
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
+  cn-login-support-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-25"
 ---
 
 ## 事前DL開始後に必要な容量・アカウント・追加データ
@@ -157,6 +165,20 @@ reviewedAt: "2026-11-24"
 日本は同一アカウントでPC・Android・iOSの進行を共有。中国本土は公式サーバーのPC・Android・iOS・鴻蒙が対象で、一部チャネル版は公式と共有されません。巣穴報酬を受け取るIDと最初のキャラクターを確認してから作成・やり直しを判断してください。
 
 日本PCはYostar公式ランチャー → 本体 → 起動後の追加データ、スマホも本体後に追加データが必要です。中国本土の旧「旅迹测试」クライアントは直接更新できません。[ダウンロード手順](/ja/guides/download/)と[動作環境](/ja/guides/requirements/)で準備し、正式任務の未検証部分は以下に残しています。
+
+
+## ログインで止まる時：実名認証・開始状態・チャネルを分ける
+
+中国本土の[公測FAQ第1節](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)は、**実名認証の完了後にログインできる**と説明し、未成年者の制限は関係規定に従うと記載しています。認証失敗の原因、変更メニュー、処理時間はこの条項では確認できません。日本版にも同じ要件があるとはしていません。
+
+| 現在の表示 | 次にすること | 確認できたと判断する目安 |
+| --- | --- | --- |
+| 対象地域が開始前・メンテナンス中 | その地域の最新告知とエラー・日時を確認 | サービス状態とアカウント問題を区別できた |
+| 中国本土で実名認証を求められる | 現在の公式画面に従い、不明点は公式窓口へ | 認証結果と実際のログイン結果で確認する |
+| チャネルのアカウントや返還先が違う | 元のチャネル、アカウント、クライアントを照合 | 公式サーバーへの入り違い・別アカウントを除外できた |
+| ゲームには入れるがメールや機能がロック中 | 現在の任務・ロック表示と報酬条件を確認 | 実際の前提を把握できた。未確認の解放レベルを使わない |
+
+中国本土のゲーム内経路は「主页面→设置→账户→用户中心→联系客服」（実際の入口を優先）。入れない場合は公式サイトの「客服中心」へ。日本は独立した窓口です。[問い合わせ先と説明のまとめ方](/ja/guides/support/)で分けて確認できます。
 
 ## 現在の段階から次の行動を選ぶ
 
@@ -207,7 +229,7 @@ reviewedAt: "2026-11-24"
 
 ## キャラ作成から初回ガチャまでの特典確認
 
-次は公式案内に基づく準備順で、正式版メニューや解放任務を実測した手順ではありません。[日本FAQ第3節](https://azurpromilia.jp/news/5190)は事前登録特典を配信後にゲーム内メールで受け取れると説明し、「星彩・クロディーメ」「無垢な痕跡」などを記載。巣穴の「星彩・キラミィ」は別イベントです。
+次は公式案内に基づく準備順で、正式版メニューや解放任務を実測した手順ではありません。[日本FAQ第3節](https://azurpromilia.jp/contact)は事前登録特典を配信後にゲーム内メールで受け取れると説明し、「星彩・クロディーメ」「無垢な痕跡」などを記載。巣穴の「星彩・キラミィ」は別イベントです。
 
 | 段階 | 先に確認すること | 完了の目安 |
 | --- | --- | --- |

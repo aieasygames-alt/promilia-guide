@@ -131,7 +131,7 @@ reviewedAt: "2026-11-24"
 | 日本 | PC（Windows）、Android、iOS | 同一账号可在三端继续游玩 | 跨地区账号、付费货币、实际安装器与个人商店资格 |
 | 中国大陆官方服 | PC、Android、iOS、鸿蒙 | 官方服务器同一账号四端进度同步 | 部分渠道与官方服不互通；跨渠道安排看对应说明 |
 
-两行分别来自[日本FAQ](https://azurpromilia.jp/news/5190)和[国服FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)。本轮没有登录验证，不把FAQ的支持说明改写为已成功跨端。
+两行分别来自[日本FAQ](https://azurpromilia.jp/contact)和[国服FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)。本轮没有登录验证，不把FAQ的支持说明改写为已成功跨端。
 
 上方设备速查仍覆盖国服/日本的PC、Android、iPhone/iPad六行；鸿蒙单列在国服FAQ，不使用Android操作链接代替它。
 

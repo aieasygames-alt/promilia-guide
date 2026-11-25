@@ -87,7 +87,7 @@ reviewedAt: "2026-11-24"
 
 ## 日本两种星彩奇波，没收到时查哪里？
 
-[日本预约页](https://azurpromilia.jp/pre-register/)把「星彩・クロディーメ」与全球官方SNS总关注500万人条件一起展示；[正式服务FAQ第3节](https://azurpromilia.jp/news/5190)在预约特典中列出该奇波，说明开服后邮件领取。它不是巢穴活动每人最多9次探索中的同名奖励。
+[日本预约页](https://azurpromilia.jp/pre-register/)把「星彩・クロディーメ」与全球官方SNS总关注500万人条件一起展示；[正式服务FAQ第3节](https://azurpromilia.jp/contact)在预约特典中列出该奇波，说明开服后邮件领取。它不是巢穴活动每人最多9次探索中的同名奖励。
 
 | 想找的奇波 | 优先检查 | 不能套用的条件 |
 | --- | --- | --- |

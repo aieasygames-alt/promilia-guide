@@ -6,6 +6,11 @@ import EntityCard from '../../components/EntityCard.astro';
 import Search from '../../components/Search.astro';
 import Feedback from '../../components/Feedback.astro';
 import FeatureVisual from '../../components/FeatureVisual.astro';
+import ContentRoutes from '../../components/ContentRoutes.astro';
+import CatalogHelp from '../../components/CatalogHelp.astro';
+import UpdateFeed from '../../components/UpdateFeed.astro';
+import { entityCategory } from '../../lib/entity-category.mjs';
+import { isEntityCatalogPublishable } from '../../lib/entity-publication.mjs';
 import { visibleGuides, allGuides, visibleEntitiesFor, isPublished, type Locale } from '../../lib/content';
 import { locales, origin, languageTag } from '../../lib/publication.mjs';
 import { t } from '../../lib/i18n';
@@ -17,7 +22,6 @@ const locale = Astro.params.locale as Locale;
 const page = Astro.params.page!;
 const c = t(locale);
 const ja = locale === 'ja';
-const announcements = sources.filter((source) => source.kind === 'official' && source.status === 'verified' && source.publishedAt && source.url);
 const labels: Record<string, string> = { guides: c.guides, systems: c.systems, characters: c.characters, kibo: c.kibo, updates: c.updates, about: c.about, 'editorial-policy': c.policy, contact: c.contact, search: c.searchLabel };
 const intros: Record<string, string> = ja ? {
   guides: '配信情報から旅の準備まで。必要なことを、行動の順番に沿って。', systems: '操作の条件と根拠を一つずつ確認し、ゲームの仕組みを理解しましょう。', characters: '公式に確認できた名称・紹介文と、資料の確認状況を整理します。', kibo: '公式サイトで紹介された5種のキボを、名前・分類・公開された特徴から整理します。', updates: '情報の変更点、対象範囲と確認状況を記録します。', about: '未知の世界を歩くための、プレイヤーによる非公式の道しるべ。', 'editorial-policy': '情報の根拠と対象範囲を示し、確認できていないことを区別します。', contact: '誤りや古い情報を見つけたら、根拠と一緒に修正メモを作成できます。', search: c.searchHelp,
@@ -30,31 +34,36 @@ const entityKind = page === 'characters' ? 'character' : page === 'kibo' ? 'kibo
 const entityEntries = entityKind ? visibleEntitiesFor(entityKind, locale) : [];
 const characterFilters = [
   { id: 'all', label: c.filter.all, count: entityEntries.length },
-  { id: 'fliss', label: c.filter.fliss, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('弗利斯')).length },
-  { id: 'roselansa', label: c.filter.roselansa, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('洛斯兰瑟')).length },
-  { id: 'charles', label: c.filter.charles, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('夏露露')).length },
-  { id: 'jiuzhou', label: c.filter.jiuzhou, count: entityEntries.filter((e) => e.origin?.['zh-hans']?.includes('九洲')).length },
+  { id: 'fliss', label: c.filter.fliss, count: entityEntries.filter((e) => entityCategory(e) === 'fliss').length },
+  { id: 'roselansa', label: c.filter.roselansa, count: entityEntries.filter((e) => entityCategory(e) === 'roselansa').length },
+  { id: 'charles', label: c.filter.charles, count: entityEntries.filter((e) => entityCategory(e) === 'charles').length },
+  { id: 'jiuzhou', label: c.filter.jiuzhou, count: entityEntries.filter((e) => entityCategory(e) === 'jiuzhou').length },
 ];
 const kiboFilters = [
   { id: 'all', label: c.filter.all, count: entityEntries.length },
-  { id: 'heteromorphic', label: c.filter.heteromorphic, count: entityEntries.filter((e) => e.classification?.['zh-hans']?.includes('异生类')).length },
-  { id: 'phantom', label: c.filter.phantom, count: entityEntries.filter((e) => e.classification?.['zh-hans']?.includes('幻生类')).length },
+  { id: 'heteromorphic', label: c.filter.heteromorphic, count: entityEntries.filter((e) => entityCategory(e) === 'heteromorphic').length },
+  { id: 'phantom', label: c.filter.phantom, count: entityEntries.filter((e) => entityCategory(e) === 'phantom').length },
 ];
-const activeFilters = entityKind === 'character' ? characterFilters : entityKind === 'kibo' ? kiboFilters : [];
+const activeFilters: { id: string; label: string; count: number }[] = (entityKind === 'character' ? characterFilters : entityKind === 'kibo' ? kiboFilters : []).filter(filter => filter.id === 'all' || filter.count > 0);
+const otherCount = entityEntries.filter(entity => entityCategory(entity) === 'other').length;
+if (otherCount) activeFilters.push({ id: 'other', label: ja ? 'その他・未分類' : '其他／未分类', count: otherCount });
 const all = await allGuides();
 const noindex = ['search'].includes(page) || (catalog && entries.filter((e) => isPublished(e.data, all)).length < 2);
 const alternates = locales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/${page}/` })).concat([{ lang: 'x-default', href: origin + `/zh-hans/${page}/` }]);
 ---
 <Base locale={locale} title={labels[page]} description={intros[page]} noindex={noindex} searchable={!['search', 'contact'].includes(page) && (!catalog || entries.length > 0)} alternates={alternates} languageTarget={`/${ja ? 'zh-hans' : 'ja'}/${page}/`}>
   <div class="container"><nav class="breadcrumb" aria-label={ja ? 'パンくずリスト' : '面包屑'}><a href={`/${locale}/`}>{c.home}</a><span>/</span>{labels[page]}</nav><header class="page-heading"><p class="eyebrow">PROMILIA FIELD NOTES</p><h1>{labels[page]}</h1><p>{intros[page]}</p></header>
+    {catalog && <ContentRoutes locale={locale} entries={entries} section={page === 'systems' ? 'systems' : 'guides'}/>}
+    {catalog && <p class="catalog-support"><a href={`/${locale}/faq/${page === 'systems' ? '#systems' : ''}`}>{ja ? 'よくある質問から探す' : '从常见问题找答案'} →</a> · <a href={`/${locale}/database/`}>{ja ? '図鑑の総合索引' : '图鉴总索引'} →</a></p>}
     {catalog && (entries.length ? <div class="catalog-list">{entries.map((entry, index) => <GuideCard entry={entry} index={index}/>)}</div> : <div class="empty-state"><Icon name="book" size={32}/><h2>{c.noContent}</h2><p>{c.noContentNote}</p><a class="text-link" href={`/${locale}/editorial-policy/`}>{c.policy}<Icon name="arrow" size={17}/></a></div>)}
     {page === 'search' && <><Search locale={locale}/><a class="text-link" href={`/${locale}/guides/`}>{c.browse}<Icon name="arrow" size={17}/></a></>}
     {entityKind && <section class="entity-catalog" data-entity-catalog={entityKind} data-pagefind-body>
+      <CatalogHelp locale={locale} kind={entityKind} count={entityEntries.filter(entity => isEntityCatalogPublishable(entity, locale, sources)).length}/>
       {entityKind === 'kibo' && <FeatureVisual id="kibo-showcase" locale={locale}/>}
       <div class="notice entity-notice">{ja ? '公式サイトで公開された名称と紹介文を、地域ごとの表記のまま掲載しています。技能倍率、育成素材、強さ、入手場所は公式根拠が確認できるまで追加しません。' : '以下内容来自官方站已公开的名称与介绍，并保留各地区原始表记。技能倍率、养成材料、强度和获取地点在有明确官方依据前不会补充。'}</div>
-      {activeFilters.length > 0 && <div class="entity-filter-bar" role="tablist" aria-label={ja ? 'フィルター' : '分类筛选'}>
+      {activeFilters.length > 0 && <div class="entity-filter-bar" role="group" aria-label={ja ? 'フィルター' : '分类筛选'}>
         {activeFilters.map((filter, i) => (
-          <button type="button" class={`entity-filter-tab ${i === 0 ? 'active' : ''}`} data-filter-target={filter.id} role="tab" aria-selected={i === 0 ? 'true' : 'false'}>
+          <button type="button" class={`entity-filter-tab ${i === 0 ? 'active' : ''}`} data-filter-target={filter.id} aria-pressed={i === 0 ? 'true' : 'false'}>
             <span>{filter.label}</span>
             <span class="filter-badge">{filter.count}</span>
           </button>
@@ -70,14 +79,14 @@ const alternates = locales.map((l) => ({ lang: languageTag[l], href: origin + `/
             tabs.forEach((t) => {
               const isActive = t === tab;
               t.classList.toggle('active', isActive);
-              t.setAttribute('aria-selected', String(isActive));
+              t.setAttribute('aria-pressed', String(isActive));
             });
             cards.forEach((card) => {
               const cat = card.dataset.entityCategory;
               if (target === 'all' || cat === target) {
-                card.style.display = '';
+                card.hidden = false;
               } else {
-                card.style.display = 'none';
+                card.hidden = true;
               }
             });
           });
@@ -85,7 +94,7 @@ const alternates = locales.map((l) => ({ lang: languageTag[l], href: origin + `/
       </script>
       <div class="prose entity-editorial-note"><h2>{ja ? '出典と範囲' : '来源与范围'}</h2><p>{ja ? '名称・分類・短い紹介を出典ごとに確認しています。実用的な詳細ガイドは、本文・出典・翻訳レビューがそろってから公開します。' : '名称、分类与简短介绍按来源核验；完整用途指南需另行完成正文、来源与译文审核。'}</p><a class="text-link" href={`/${locale}/updates/`}>{c.updates}<Icon name="arrow" size={17}/></a></div>
     </section>}
-    {page === 'updates' && <div class="narrow"><div class="notice">{ja ? '公式ニュースは原文の掲載日、サイトの修訂は編集日で記録します。対象地域と確認範囲も明記します。' : '官方公告按原文发布日期记录，本站修订按编辑日期记录，并注明适用地区与核验范围。'}</div><div class="archive-row"><time datetime="2026-11-21">2026.11.21</time><div><span class="pill">{ja ? 'サイトの更新' : '本站修订'}</span><h2>{ja ? '配布条件と地域別案内を拡充し、ホーム・キボの準備ガイドを追加' : '补充福利条件与地区入口，新增家园和奇波准备指南'}</h2><p>{ja ? '特典、ガチャの確認方法、配信・ダウンロード案内、初日の準備を更新し、ホームとキボのガイドを追加。今回の中国語・日本語18本は責任者によるレビューを完了し、公開記事は計26本になりました。正式版の全ガチャ規約、実際のクライアント配布、任務や入手ルートは確認できた範囲を明記しています。自動字幕の数値や未検証の操作を確定情報としては扱いません。' : '更新福利、卡池核验、发行下载与首日准备，新增家园和奇波指南。本批中日文18篇修订及新稿已获项目负责人审核确认，全站公开文章增至26篇。完整正式卡池、实际客户端分发、任务与获取路线仍按证据范围标注；自动字幕中的数值和未经实测的操作继续保留待核验说明。'}</p></div></div>{announcements.map((source) => <div class="archive-row"><time datetime={source.publishedAt!}>{source.publishedAt}</time><div><span class="pill">{ja ? '公式ニュース' : '官方公告'}</span><h2><a href={source.url!} target="_blank" rel="noopener noreferrer">{source.localized?.[locale]?.title || source.title} ↗</a></h2><p>{source.localized?.[locale]?.note || source.note}</p><small>{ja ? '出典確認日' : '来源核对'}：{source.checkedAt}</small></div></div>)}<div class="archive-row"><time datetime="2026-11-21">2026.11.21</time><div><span class="pill">{ja ? 'サイトの更新' : '本站修订'}</span><h2>{ja ? '出典を再確認し、地域別の準備導線を更新' : '复查来源并调整地区行动入口'}</h2><p>{ja ? '照合できなかった特番の記録を根拠から外し、コード・リセマラ・ガチャ・資源の記事を改稿し、中国語・日本語の計8本のレビューを完了しました。未確認のコードやルールは引き続き確認中です。中国本土と日本の日程・配布先を分け、具体時刻と稼働状況は個別に確認します。資料の詳細ガイドも本文と翻訳レビューがそろってから公開します。' : '暂停使用无法复核的前瞻记录，兑换码、重抽、卡池与资源已重写，中日文共 8 篇通过人工审核。未核验的码与规则继续明确标注未知。国服与日本分别核对日程和分发入口，具体小时与可登录状态单独确认；资料详情在正文与译文审核完成后再开放收录。'}</p></div></div><div class="archive-row"><time datetime="2026-11-14">2026.11.14</time><div><span class="pill">{ja ? 'サイトの更新' : '本站修订'}</span><h2>{ja ? '初回記事の公開前確認を完了し、正式ドメインで公開' : '首批攻略完成审核，正式主域名上线'}</h2><p>{ja ? '配信日程、ダウンロード、動作環境、旅の準備、対応プラットフォームなど、6テーマの中国語・日本語記事、計12本の確認を完了しました。正式URLは promiliaguide.com です。今後の記事も出典・内容・言語の確認後に公開します。' : '发行日程、下载、配置、开服准备与平台等六个主题的中日文共 12 篇稿件已完成真实正文与语言审核，并在 promiliaguide.com 正式上线。后续新增内容仍按来源、正文与语言审核流程逐篇发布。'}</p></div></div><div class="prose"><h2>{ja ? '修正が必要な情報を見つけたら' : '发现需要修订的地方'}</h2><p>{ja ? '対象の記事、地域、バージョンと資料を添えて、修正メモを作成してください。' : '请附上相关页面、地区、版本与原始资料，整理为纠错记录。'}</p><a href={`/${locale}/contact/`}>{c.contact} →</a></div></div>}
+    {page === 'updates' && <UpdateFeed locale={locale} entries={await visibleGuides(locale)} sources={sources}/>}
     {page === 'about' && <div class="narrow prose" data-pagefind-body><h2>{ja ? 'このサイトが目指すこと' : '我们希望解决的问题'}</h2><p>{ja ? 'Promilia Guide は、配信情報、準備の手順、ゲームの仕組みを探しやすくまとめる非公式ガイドです。読む人が「次に何をするか」と「どの地域・バージョンの情報か」を判断できるように整理します。' : 'Promilia Guide（星原旅伴）是面向简体中文和日语读者的非官方攻略站。我们整理发行信息、准备步骤与机制说明，希望你读完能知道下一步做什么，以及信息适用于哪个地区和版本。'}</p><h2>{ja ? '情報との向き合い方' : '我们如何对待信息'}</h2><p>{ja ? '公式発表、テスト版の記録、編集上の提案、確認中の内容を区別します。AI による編集補助や翻訳の下書きは、確認が終わるまで公開しません。架空のプレイ経験やレビュー担当者を記載しません。' : '官方已公布、测试观察、编辑建议和待核验内容分别标记。AI 可协助整理与翻译初稿；来源与语言审核完成前保留草稿。不虚构游玩经验、作者资历或审核人员。'}</p><h2>{ja ? '運営と権利について' : '非官方与版权说明'}</h2><p>{c.unofficial} {ja ? 'ゲーム名、商標、画像等の権利は各権利者に帰属します。サイト内の画像は、公式サイトで確認した素材とユーザー提供素材を分けて表示します。' : '游戏名称、商标及游戏素材权利属于相应权利人。站内图片会区分官网核对素材与用户提供素材，并分别标注。'}</p><h2>{ja ? 'プライバシー' : '隐私与本地记录'}</h2><p>{ja ? 'アカウント登録は不要です。チェックリストと手動の言語選択をブラウザーに保存します。現在、アクセス解析や広告用のトラッカーは導入していません。検索は配信済みの静的インデックスで処理します。' : '本站无需注册。清单进度和手动语言选择保存在浏览器本地；目前未接入统计、广告追踪或第三方字体。搜索在已部署的静态索引中执行。'}</p><p><a href={`/${locale}/editorial-policy/`}>{c.policy}</a> · <a href={`/${locale}/contact/`}>{c.contact}</a></p></div>}
     {page === 'editorial-policy' && <div class="narrow prose" data-pagefind-body><h2>{ja ? '結論の種類を明記する' : '先说明结论的性质'}</h2><ul><li><strong>{c.official}</strong> — {ja ? '原文と対象範囲を確認した公式発表。' : '回溯原始公告并核对适用范围的事实。'}</li><li><strong>{c.test}</strong> — {ja ? 'バージョンと条件を記録したテストの観察。正式版とは区別します。' : '有版本与复核条件的测试记录，不自动套用到公测。'}</li><li><strong>{c.editorial}</strong> — {ja ? '前提と理由を説明した手順や提案。ゲーム内の保証ではありません。' : '说明前提与原因的行动建议，不冒充官方规则。'}</li><li><strong>{c.pending}</strong> — {ja ? '原文未確認や矛盾が残る項目。確定情報として扱いません。' : '来源未录入、存在冲突或证据不足的内容。'}</li></ul><h2>{ja ? '出典と日付' : '来源和日期分别记录'}</h2><p>{ja ? '発表者、URL、掲載日、照合日、対象バージョンを記録します。動画は必要な時刻も記載します。出典を再確認した日だけでは、記事の内容更新日を変更しません。企画書や競合調査は、ゲームの公式根拠にはなりません。' : '来源记录发布者、原始链接、发布日期、核对日期和适用版本；视频保留相关时间点。仅检查来源没有实质变动时，不刷新文章更新时间。项目规划和竞品研究不能替代游戏官方证据。'}</p><h2>{ja ? '言語とサーバーを区別する' : '语言与服务器独立'}</h2><p>{ja ? '日本語の記事が日本向けサーバーを説明するとは限りません。各ページに地域とバージョンを表示します。翻訳には原稿の改訂番号を記録し、重要な変更があれば再レビューします。未公開の翻訳へのリンクは生成しません。' : '日语文章可以讨论中国大陆服，但必须标明地区和版本。译文记录原稿修订号；重大事实变化后重新审核。未发布的译文不会生成替代语言链接。'}</p><h2>{ja ? '公開前の確認' : '发布前的必要审核'}</h2><ol><li>{ja ? '見出しの疑問に本文が答え、読者が使える手順になっているか。' : '标题承诺的问题有答案，步骤与适用条件完整。'}</li><li>{ja ? '判断に影響する事実に、原文と対象範囲があるか。' : '关键事实有原始证据，冲突和未知项可见。'}</li><li>{ja ? '用語と自然な表現を確認した担当者・日付が記録されているか。' : '名称与语言完成审核，并记录真实审核人与日期。'}</li><li>{ja ? 'リンク、検索、モバイル表示、索引設定が正しいか。' : '构建、内链、搜索、手机展示和索引设置通过检查。'}</li></ol><h2>{ja ? '訂正と素材の相談' : '纠错与素材反馈'}</h2><p>{ja ? '誤りは根拠を確認して修正し、理由と影響範囲を履歴に残します。素材の権利に関する相談では、該当 URL と権利を確認できる資料を添えてください。' : '错误经过核对后修订，记录变更原因与影响范围。素材权利反馈请附具体 URL 与可确认权利关系的资料。'}</p><a href={`/${locale}/contact/`}>{c.contact} →</a></div>}
     {page === 'contact' && <div class="narrow"><Feedback locale={locale}/><p class="search-help">{ja ? 'パスワード、認証コード、個人を特定できる情報は記入しないでください。' : '请勿填写密码、验证码或不必要的个人信息。'}</p><a class="text-link" href={`/${locale}/editorial-policy/`}>{c.policy}<Icon name="arrow" size={17}/></a></div>}

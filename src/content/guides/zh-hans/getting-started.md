@@ -8,7 +8,7 @@ description: 从本体和追加资源到创角、邮件领取、券种核对与�
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 账号及返还领取核对
+gameVersion: 公测前 / 国服实名、故障与客服分流核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: editorial
 status: published
@@ -32,7 +32,8 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - jp-support-page-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
-sourceRevision: 14
+  - cn-login-troubleshooting-support-2026-11-24
+sourceRevision: 15
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -51,6 +52,7 @@ related:
   - home
   - kibo-guide
   - recharge-return
+  - support
 order: 6
 minutes: 12
 revisions:
@@ -90,6 +92,10 @@ revisions:
     note: 补国服预约／社媒邮箱、原测试充值账号与凭证期限分流，首抽页另引日本删除不可恢复条款；不继承旧审核，正文与译文仍待审。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-24"
+    note: 补核国服实名、故障顺序与客服入口，区分日本重启对象；当前正文与译文待本批确认，不继承旧稿审核。
+  - date: "2026-11-25"
+    note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
 checklist:
   - id: region
     text: 确认目标地区、服务器与账号渠道
@@ -124,6 +130,7 @@ claimRefs:
   - jp-launch-troubleshooting
   - cn-test-recharge-return
   - cn-preregister-mail-benefits
+  - cn-login-support-rules
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -145,8 +152,9 @@ claimRevisions:
   jp-launch-troubleshooting: 1
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
+  cn-login-support-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-25"
 ---
 
 ## 预下载已公告开始，先确认空间、账号和追加资源
@@ -156,6 +164,20 @@ reviewedAt: "2026-11-24"
 国服官方服同账号PC/Android/iOS/鸿蒙进度同步，部分渠道服与官方服不互通；日本同账号PC/Android/iOS共享进度。先确认巢穴活动账号和首个角色的奖励绑定，再决定创角或重开，不从进度同步推导跨地区或付费权益通用。
 
 日本PC经Yostar官方启动器取得本体，随后在客户端追加数据；手机也需本体后追加资源。国服旧旅迹测试客户端不支持直接更新公测版，须按FAQ改装正式客户端。先用[下载步骤](/zh-hans/guides/download/)和[设备配置](/zh-hans/guides/requirements/)完成准备；下方未实测的正式任务链仍保留明确边界。
+
+
+## 登录卡点：实名、开服与渠道分别处理
+
+国服[公测FAQ第1节](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)明确：**完成实名认证后方可登录**，未成年人防沉迷限制按有关规定执行。它没有在该条说明实名失败的具体原因、修改入口或处理时限；不能把所有登录失败归因于设备，也不能拿日本账号规则补国服实名步骤。
+
+| 现在看到什么 | 下一步 | 完成判断 |
+| --- | --- | --- |
+| 当前地区仍未开放服务或正在维护 | 先看本地区当期公告，保留时间与报错 | 服务状态与账号问题已分清；不因未开服反复重装 |
+| 国服界面要求完成实名 | 按当前官方界面操作，异常走官方帮助 | 以认证结果和实际登录反馈为准，不猜认证资格 |
+| 渠道账号登录或返还对象不对 | 核对原参与渠道、账号和客户端；账号问题联系该渠道客服 | 没有误进官方服或使用新账号；不把换设备当转服 |
+| 能进游戏，但邮件或系统尚未解锁 | 读取当前任务与锁定提示，再确认目标福利 | 实际前置已明；邮箱、家园等级不由本页推定 |
+
+国服游戏内反馈路径为「主页面→设置→账户→用户中心→联系客服」，以实际入口为准；无法登录时从官网「客服中心」进入。日本使用独立客服入口。详细分流和可直接填写的说明见[客服与问题反馈](/zh-hans/guides/support/)。
 
 ## 先按当前阶段选择下一步
 
@@ -206,7 +228,7 @@ reviewedAt: "2026-11-24"
 
 ## 从创角到首次抽卡，先完成奖励核对
 
-以下是依据公告整理的准备顺序，正式版菜单名称和解锁任务尚未实测。日本[FAQ第3节](https://azurpromilia.jp/news/5190)确认预约特典在开服后经游戏内邮件领取，包含「星彩・クロディーメ」「無垢な痕跡」等；巢穴活动的「星彩・キラミィ」另按活动规则处理。
+以下是依据公告整理的准备顺序，正式版菜单名称和解锁任务尚未实测。日本[FAQ第3节](https://azurpromilia.jp/contact)确认预约特典在开服后经游戏内邮件领取，包含「星彩・クロディーメ」「無垢な痕跡」等；巢穴活动的「星彩・キラミィ」另按活动规则处理。
 
 | 阶段 | 先完成什么 | 完成标志 |
 | --- | --- | --- |

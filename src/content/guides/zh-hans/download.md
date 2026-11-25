@@ -8,7 +8,7 @@ description: 两地官方已宣布预下载开始，列PC和手机入口；按�
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 日本FAQ故障处理核对
+gameVersion: 公测前 / 国服实名、故障与客服分流核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -43,7 +43,8 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
   - jp-support-page-2026-11-24
-sourceRevision: 13
+  - cn-login-troubleshooting-support-2026-11-24
+sourceRevision: 14
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -61,6 +62,7 @@ related:
   - platforms
   - requirements
   - getting-started
+  - support
 order: 3
 minutes: 11
 revisions:
@@ -98,6 +100,10 @@ revisions:
     note: 补核日本FAQ第4/5节与官方客服入口，按阶段区分校验、追加资源、慢启动和闪退；增加本地故障记录表，正文与译文仍待本批审核。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-24"
+    note: 补核国服实名、故障顺序与客服入口，区分日本重启对象；当前正文与译文待本批确认，不继承旧稿审核。
+  - date: "2026-11-25"
+    note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -120,6 +126,8 @@ claimRefs:
   - jp-public-launch-platform-rules
   - jp-ios-store-metadata
   - jp-launch-troubleshooting
+  - cn-launch-troubleshooting
+  - cn-login-support-rules
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -142,8 +150,10 @@ claimRevisions:
   jp-public-launch-platform-rules: 1
   jp-ios-store-metadata: 1
   jp-launch-troubleshooting: 1
+  cn-launch-troubleshooting: 1
+  cn-login-support-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-25"
 ---
 
 ## 两地官方已宣布预下载开始，日本PC有独立下载页
@@ -153,6 +163,22 @@ reviewedAt: "2026-11-24"
 国服公测计划11月26日10:00（UTC+8），日本为同日11:00（日本时间）。这是开服计划；本轮已确认预下载开始公告和分发页面，但未完成文件取得、安装或登录。服务器是否开放仍须独立核对。
 
 上方速查区分官方入口、预下载开始公告与本机下载结果。选地区后再选设备，语言切换不会替你换游戏地区；关闭JavaScript也可阅读全部记录。
+
+
+## 国服下载失败：客户端重启与日本启动器不要混写
+
+以下单独依据[国服FAQ第5节](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)。国服PC校验错误写的是“重启客户端”，不是上文日本条款的“重启启动器”。先看错误发生阶段，再执行对应建议；这些是官方处理顺序，尚未在本站设备验证修复结果。
+
+| 国服症状 | 官方建议顺序 | 再失败时保留什么 |
+| --- | --- | --- |
+| PC安装或更新显示空间不足 | 检查**实际安装磁盘**，建议预留120GB以上；整理不需文件或更换安装目录再试 | 目标盘、剩余空间、报错原文；不看所有盘空间合计 |
+| PC下载提示文件校验错误 | 按提示重试→仍失败重启**客户端**→仍未解决可重新下载客户端 | 每一步结果和发生时间；不直接跳到反复重装 |
+| 启动后提示资源下载失败 | 重启**客户端**再次下载→仍失败可重新下载客户端 | 停在本体还是公测增量资源，错误码与画面 |
+| 游玩中反复闪退 | 重启设备再启动游戏；PC可重启电脑→仍频繁发生走客服 | 机型、OS、时间及截图；尚未启动与游玩中退出分别写 |
+
+国服FAQ另列杀毒软件拦截问题，但没有给出具体解法；日本FAQ则要求先确认官方来源和警告。不能由两地不同文字推导出统一关闭保护或一键排除的步骤。
+
+能进入国服时按「主页面→设置→账户→用户中心→联系客服」反馈，以实际入口为准；进不去时用官网「客服中心」。**渠道账号问题找对应渠道客服**。按[客服分流与说明模板](/zh-hans/guides/support/)整理一次明确的失败，不把本站纠错入口当作游戏客服。
 
 ## 按地区与设备找到正确客户端
 
@@ -195,7 +221,7 @@ reviewedAt: "2026-11-24"
 
 ## 下载失败、启动慢或闪退，先判断卡在哪一步
 
-**先看问题发生在安装、文件校验、追加数据、启动还是登录。** 日本FAQ对这几种情况给出了不同处理顺序；其中“重启启动器”“重启游戏”“重启设备”针对的对象不同。以下日本版步骤来自[官方FAQ第4节](https://azurpromilia.jp/news/5190)，不是本站实机修复记录，也不自动作为国服处理方案。
+**先看问题发生在安装、文件校验、追加数据、启动还是登录。** 日本FAQ对这几种情况给出了不同处理顺序；其中“重启启动器”“重启游戏”“重启设备”针对的对象不同。以下日本版步骤来自[官方FAQ第4节](https://azurpromilia.jp/contact)，不是本站实机修复记录，也不自动作为国服处理方案。
 
 | 当前停在哪里 | 日本官方建议的顺序 | 仍未解决时 |
 | --- | --- | --- |

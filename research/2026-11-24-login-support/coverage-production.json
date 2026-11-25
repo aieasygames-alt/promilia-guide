@@ -1,0 +1,35 @@
+{
+  "mode": "production",
+  "locales": {
+    "zh-hans": {
+      "publishedGuides": 11,
+      "publishedSystemGuides": 3,
+      "awaitingReviewGuides": 1,
+      "awaitingReviewSystemGuides": 0,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 26,
+      "missingTopics": [],
+      "unpublishedTopics": [
+        "support"
+      ]
+    },
+    "ja": {
+      "publishedGuides": 11,
+      "publishedSystemGuides": 3,
+      "awaitingReviewGuides": 1,
+      "awaitingReviewSystemGuides": 0,
+      "verifiedCharacterProfiles": 5,
+      "verifiedKiboProfiles": 5,
+      "publishedPracticalEntityDetails": 0,
+      "questions": 26,
+      "currentAnswers": 26,
+      "missingTopics": [],
+      "unpublishedTopics": [
+        "support"
+      ]
+    }
+  }
+}

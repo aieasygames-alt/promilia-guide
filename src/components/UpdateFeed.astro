@@ -1,0 +1,25 @@
+---
+import updates from '../data/site-updates.json';
+import { topicLabels } from '../data/content-routes';
+import { articlePath, type Guide, type Locale } from '../lib/content';
+import { officialAnnouncements } from '../lib/content-navigation.mjs';
+import type { Source } from '../lib/facts';
+interface Props { locale: Locale; entries: Guide[]; sources: Source[] }
+const { locale, entries, sources } = Astro.props;
+const ja = locale === 'ja';
+const announcements = officialAnnouncements(sources);
+---
+<div class="updates-feed" data-pagefind-body>
+  <p class="notice">{ja ? 'サイトの公開済み更新と公式のお知らせを分けて掲載します。公式記事の掲載日、出典を照合した日、サイトの記事を改稿した日は別の記録です。' : '本站已发布更新与官方公告分别列出。官方原文发布日期、来源核对日期和本站正文实质更新日期是不同记录。'}</p>
+  <nav class="feed-nav" aria-label={ja ? '更新情報の分類' : '更新分类'}><a href="#site-updates">{ja ? 'サイトの公開履歴' : '本站发布记录'}</a><a href="#official-news">{ja ? '公式のお知らせ' : '官方公告索引'}</a></nav>
+  <section aria-labelledby="site-updates"><h2 id="site-updates">{ja ? 'サイトの公開履歴' : '本站发布记录'}</h2>{updates.map(update => <article class="archive-row" data-site-update={update.date}><time datetime={update.date}>{update.date}</time><div><span class="pill">{ja ? 'サイトの更新' : '本站修订'}</span><h3>{update.title[locale]}</h3><p>{update.note[locale]}</p><div class="update-links">{update.topics.flatMap(id => { const entry = entries.find(entry => entry.data.contentId === id); return entry ? [<a href={articlePath(entry.data)}>{topicLabels[id][locale]} →</a>] : []; })}</div></div></article>)}</section>
+  <section aria-labelledby="official-news"><h2 id="official-news">{ja ? '公式のお知らせ' : '官方公告索引'}</h2><p class="feed-note">{ja ? '当サイトの根拠として登録した告知を新しい掲載日から表示します。同じURLは一度だけ掲載し、個別の出典確認記録は各記事に残します。最新状況は地域の公式サイトで確認してください。' : '按原文发布日期倒序展示本站已登记的公告，同一网址只列一次，各次来源核对记录仍保留在文章中。最新服务状态请以对应地区官方信息为准。'}</p>{announcements.map(source => <article class="archive-row" data-announcement-url={source.url}><time datetime={source.publishedAt!}>{source.publishedAt}</time><div><span class="pill">{source.gameRegion}</span><h3><a href={source.url!} target="_blank" rel="noopener noreferrer">{source.localized?.[locale]?.title || source.title} ↗</a></h3><p>{source.localized?.[locale]?.note || source.note}</p><small>{ja ? '出典確認日' : '来源核对'}：{source.checkedAt}</small></div></article>)}</section>
+  <p class="feed-note">{ja ? '誤りや変更を見つけた場合は、地域と資料を添えて修正メモを作成できます。' : '发现错误或变化时，可附上地区与原始资料整理纠错记录。'} <a href={`/${locale}/contact/`}>{ja ? '修正・お問い合わせ' : '纠错与反馈'} →</a></p>
+</div>
+<style>
+  .updates-feed { max-width: 920px; margin: 0 auto 4rem; } h2[id] { scroll-margin-top: 105px; font-size: 1.4rem; margin: 2.5rem 0 1rem; }
+  h3 { font-size: 1.13rem; margin: .6rem 0; line-height: 1.7; } p { line-height: 1.9; }
+  .feed-nav, .update-links { display: flex; flex-wrap: wrap; gap: .6rem 1.3rem; } .feed-nav { margin: 1.5rem 0; }
+  .feed-nav a, .update-links a, .feed-note a { color: var(--green); text-decoration: underline; text-underline-offset: .25em; }
+  .update-links { font-size: .85rem; margin-top: .8rem; } .feed-note { font-size: .9rem; color: var(--muted); }
+</style>
