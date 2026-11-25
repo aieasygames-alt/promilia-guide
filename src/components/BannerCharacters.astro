@@ -1,0 +1,40 @@
+---
+import { allGuides, articlePath, isPublished, type Locale } from '../lib/content';
+import { claims, sources } from '../lib/facts';
+import { isVerifiedClaim } from '../lib/editorial.mjs';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const ja = locale === 'ja';
+const entries = await allGuides();
+const article = entries.find(entry => entry.data.locale === locale && entry.data.contentId === 'banner-rules' && isPublished(entry.data, entries));
+const claim = claims.find(claim => claim.id === 'cn-banner-rules-system');
+const source = sources.find(source => source.id === 'cn-character-banner-2026-11-24');
+// These names and rarities reproduce the approved article's revision 3 announcement.
+// A changed or withdrawn dependency hides this summary until it is checked again.
+const available = article && article.data.claimRevisions?.['cn-banner-rules-system'] === 3 && claim?.revision === 3 && isVerifiedClaim(claim, sources) && source?.status === 'verified';
+const rows = [
+  { name: '涂山小玉', note: ja ? '限定星5キャラ' : '限定五星角色' },
+  { name: '枫糖', note: ja ? '確率アップの星4キャラ' : '概率提升四星角色' },
+  { name: '艾妮丝', note: ja ? '確率アップの星4キャラ' : '概率提升四星角色' },
+];
+const anchor = ja ? '中国本土限定キャラと霊子の天井比較' : '当期卡池对象与结束时间';
+---
+{available && <section class="banner-characters" aria-labelledby="banner-characters-title" data-pagefind-body data-banner-characters data-claim-revision="3">
+  <p class="banner-region">{ja ? '中国本土の公式告知 · 2026年11月24日' : '国服官方公告 · 2026年11月24日'}</p>
+  <h2 id="banner-characters-title">{ja ? '中国本土の公測ガチャで告知されたキャラ' : '国服公测卡池已公告角色'}</h2>
+  <p>{ja ? '「桃笺为契」の対象です。名前は中国本土の原文表記で、日本版の名称・開催予定を示しません。' : '以下为「桃笺为契」公告列出的对象；与下方官网人物介绍分开查阅。'}</p>
+  <p>{ja ? '告知上の期間：2026年11月26日のサービス開始後〜12月17日03:59（UTC+8）。開催中かどうかは公式の実際のサービス状況をご確認ください。' : '公告时间：2026年11月26日开服后至12月17日03:59（UTC+8，北京时间）。是否已开放以实际服务状态为准。'}</p>
+  <ul>{rows.map(row => <li><strong>{row.name}</strong><span>{row.note}</span></li>)}</ul>
+  <div class="banner-links"><a href={`${articlePath(article!.data)}#${anchor}`}>{ja ? '対象・天井・引き継ぎの詳細' : '查看对象、保底与继承规则'} →</a><a href={source!.url!} target="_blank" rel="noopener noreferrer">{ja ? '中国本土の公式原文' : '国服官方原文'} ↗</a></div>
+</section>}
+<style>
+  .banner-characters { padding: 1.5rem; margin: 0 0 2rem; border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: var(--radius); }
+  .banner-region { color: var(--green); font-size: .8rem; letter-spacing: .04em; }
+  h2 { font-size: 1.3rem; line-height: 1.6; margin: .5rem 0; }
+  p { color: var(--muted); line-height: 1.9; font-size: .9rem; }
+  ul { list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  li { border-top: 1px solid var(--line); padding-top: .8rem; } li span { display: block; margin-top: .4rem; font-size: .85rem; color: var(--muted); }
+  .banner-links { display: flex; gap: .8rem 1.5rem; flex-wrap: wrap; font-size: .9rem; line-height: 1.8; color: var(--green); }
+  a { text-decoration: underline; text-underline-offset: .2em; }
+  @media (max-width: 650px) { .banner-characters { padding: 1rem; } ul { grid-template-columns: 1fr; gap: .8rem; } }
+</style>

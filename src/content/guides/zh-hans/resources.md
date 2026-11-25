@@ -27,14 +27,10 @@ sourceRevision: 10
 translationStatus: published
 aliases:
   - 开荒资源
-  - 体力分配
-  - 行动力规划
   - 新手避坑
   - 公测福利
-  - 星原石获取
   - 纯粹忆痕
   - リソース計画
-  - スタミナ優先度
   - 日本预约奖励
   - 公测奖励没到账
   - 星彩・クロディーメ
