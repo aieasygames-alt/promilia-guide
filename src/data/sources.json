@@ -1261,5 +1261,31 @@
         "note": "China-only original names, element labels, role labels and five-star display for two previews. The page does not establish Japan equivalents, skill values, build recommendations or character rankings."
       }
     }
+  },
+  {
+    "id": "cn-cloud-launch-2026-11-26",
+    "title": "《云·蓝色星原》正式上线",
+    "publisher": "蓝色星原：旅谣 / 蛮啾",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-26",
+    "gameVersion": "2026-11-26 云游戏上线公告",
+    "gameRegion": "中国大陆官方云游戏",
+    "status": "verified",
+    "note": "浏览器核对公告原文与公开入口。仅说明中国大陆官方云服务；未登录、排队、测量延迟或验证账号及跨端数据。",
+    "excerpt": "Android、iOS及网页端（仅PC）正式上线；网页配置分别列Windows与macOS浏览器。首次登录600分钟，每日登录15分钟，免费累积上限600分钟。指定商品附赠畅玩卡7／21／42／21天；移动端iOS 15及以上、Android 6.0及以上；高峰可能长时间排队。",
+    "evidenceFile": "research/2026-11-26-cloud-gaming/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土「云·蓝色星原」提供開始の告知",
+        "note": "中国本土の公式クラウド版。macOSを含むブラウザ、モバイルの条件、無料時間、指定商品特典を確認。日本版対応・ログイン・通信品質・データ共有は未検証。"
+      },
+      "en": {
+        "title": "China official cloud-service launch notice (Chinese)",
+        "note": "Checked the public China announcement and entry pages. Supports the stated browser/mobile and time-benefit rules; does not establish Japan or English-client support, successful login, latency or saved-progress compatibility.",
+        "publisher": "Manjuu / Azur Promilia China"
+      }
+    }
   }
 ]

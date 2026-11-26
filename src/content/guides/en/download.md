@@ -14,6 +14,7 @@ verification: official
 status: published
 sourceRefs:
   - jp-pc-download-page-2026-11-24
+  - cn-cloud-launch-2026-11-26
 claimRefs:
   - cn-ios-compatibility
   - cn-launch-date
@@ -36,6 +37,7 @@ claimRefs:
   - jp-launch-troubleshooting
   - cn-launch-troubleshooting
   - cn-login-support-rules
+  - cn-cloud-gaming-launch
 claimRevisions:
   cn-ios-compatibility: 1
   cn-launch-date: 2
@@ -58,8 +60,9 @@ claimRevisions:
   jp-launch-troubleshooting: 1
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
-sourceRevision: 14
-translatedFromRevision: 14
+  cn-cloud-gaming-launch: 1
+sourceRevision: 15
+translatedFromRevision: 15
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-26"
@@ -72,11 +75,14 @@ aliases:
 related:
   - global-release
   - requirements
+  - cloud-gaming
 revisions:
   - date: "2026-11-25"
     note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
   - date: "2026-11-26"
     note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
+  - date: "2026-11-26"
+    note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
 order: 2
 minutes: 8
 ---
@@ -96,6 +102,13 @@ These instructions are based on official pages and the November 24 regional FAQs
 | Mainland China | HarmonyOS | [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) and official site | Listed separately in the regional FAQ; do not assume the Android package is the HarmonyOS route |
 
 For Traditional Chinese store identities and the limits of regional availability, see [release dates and regions](/en/guides/global-release/).
+
+
+## Mac and low storage: the China cloud alternative
+
+The [November 26 China announcement](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) confirms an official cloud service with Windows and macOS browser recommendations and separate Android and iOS cloud apps. This is a mainland China service announcement; it does not establish a native Mac installer, a Japan cloud service or an English game client.
+
+See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements below. We have not tested cloud login, performance or saved-progress compatibility.
 
 ## How to download the Japan version on PC
 

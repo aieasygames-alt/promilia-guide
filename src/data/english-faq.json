@@ -25,5 +25,13 @@
       {"id":"login","contentId":"support","claimRevisions":{"jp-launch-troubleshooting":1,"cn-login-support-rules":1},"question":{"en":"The download finished. Why can I not log in?"},"answer":{"en":"Separate extra-data errors, server opening or maintenance, and account prompts. Check the current regional notice and client. China's FAQ additionally requires real-name verification; that is not a Japan requirement. Record the exact error and attempt time, then use the appropriate regional support route."}},
       {"id":"support-language","contentId":"support","question":{"en":"Does Japan support accept English or offer phone help?"},"answer":{"en":"The Japan contact page states that inquiries are accepted in Japanese, with replies to the email address supplied and no telephone support. Check spam folders and receipt settings for @azurpromilia.jp. The page does not promise a fixed response time; our guide includes Japanese field labels to help prepare a report."}}
     ]
+  },
+  {
+    "id": "cloud", "title": {"en":"Cloud gaming, Mac and free time"},
+    "questions": [
+      {"id":"cloud-mac","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Can I play Azur Promilia on Mac through cloud gaming?"},"answer":{"en":"The November 26 China cloud notice recommends macOS browsers, including Safari. This supports a China cloud browser route, not a native Mac installer, Japan cloud access or cross-region progress. Check the official service’s account conditions; this site has not tested cloud login."}},
+      {"id":"cloud-free-time","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Does Azur Promilia cloud gaming give 600 free minutes every day?"},"answer":{"en":"No. The China announcement lists 600 minutes at first cloud login, 15 minutes for daily login and a 600-minute accumulated free-time cap. It does not promise unlimited play or a daily reset to 600. Purchase-linked play cards have separate conditions; charging order and the daily reset clock were not specified."}},
+      {"id":"cloud-mobile","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Can I play the cloud version in a phone browser?"},"answer":{"en":"The official China notice marks browser play as computer-only and lists separate cloud apps for Android 6.0 or later and iOS 15 or later. A site loading on a phone is not proof of browser streaming support. These cloud conditions do not replace the full game’s native requirements."}}
+    ]
   }
 ]
