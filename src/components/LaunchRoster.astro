@@ -1,0 +1,30 @@
+---
+import roster from '../data/launch-roster.json';
+import { sources } from '../lib/facts';
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = {
+  'zh-hans': {title:'官网当前公开的角色名称与标签', intro:'日本官网首页新增核对以下12个轮播名称，保留日本原名；这是公开预览，不代表完整实装名单。下方国服标签按另一官网独立记录。', jp:'日本官网角色预览', cn:'国服官网属性与定位预览', name:'国服原名', elements:'属性原文', role:'定位原文', rarity:'星级', note:'两地名称不在此强行对应；官网标签不能替代技能、配队、突破材料或强度比较。源千代的展示不证明其已进入当期卡池。', source:'官方来源', checked:'核对日期'},
+  ja: {title:'公式トップで公開されたキャラ名・表示', intro:'日本公式トップの12名を原文で確認しました。全実装キャラの一覧ではありません。中国本土の表示は別の公式ページで確認しています。', jp:'日本公式のキャラクタープレビュー', cn:'中国本土公式の属性・役割プレビュー', name:'中国本土の原文名', elements:'属性の原文', role:'役割の原文', rarity:'星数', note:'地域間の名称を推測で対応させません。公開ラベルだけでは技能、編成、突破素材、強さは判断できず、源千代の表示も当期ガチャへの登場を証明しません。', source:'公式出典', checked:'確認日'},
+  en: {title:'Official character preview names', intro:'Japan’s official homepage displays these twelve character names. They are kept in the original Japanese so you can match the regional page. This is a public preview, not a complete playable roster.', jp:'Japan homepage previews', cn:'Mainland China: original preview labels', name:'China original name', elements:'Element labels', role:'Role label', rarity:'Stars', note:'Japan and China names are not mapped by assumption. These labels do not establish skills, builds, materials or rankings. A preview of 源千代 does not prove availability in the current banner. Chinese labels are preserved as original source text, not presented as official English terminology.', source:'Official source', checked:'Source checked'},
+}[locale];
+const jp = sources.find(s => s.id === roster.japanSource);
+const cn = sources.find(s => s.id === roster.chinaSource);
+const usable = (source: typeof jp) => source?.status === 'verified' && source.kind === 'official' && source.url && source.checkedAt && source.excerpt;
+---
+{(usable(jp) || usable(cn)) && <section class="launch-roster" aria-labelledby="launch-roster-title" data-launch-roster data-pagefind-body>
+  <h2 id="launch-roster-title">{c.title}</h2><p>{c.intro}</p>
+  {usable(jp) && <><h3>{c.jp}</h3><ul class="name-list" lang="ja">{roster.japanNames.map(name => <li>{name}</li>)}</ul><p class="source"><a href={jp!.url!} target="_blank" rel="noopener noreferrer">{c.source} ↗</a> · {c.checked}: <time datetime={jp!.checkedAt!}>{jp!.checkedAt}</time></p></>}
+  {usable(cn) && <><h3>{c.cn}</h3><div class="table-scroll"><table><caption class="sr-only">{c.cn}</caption><thead><tr><th scope="col">{c.name}</th><th scope="col">{c.elements}</th><th scope="col">{c.role}</th><th scope="col">{c.rarity}</th></tr></thead><tbody>{roster.chinaPreviews.map(row => <tr><th scope="row" lang="zh-Hans">{row.name}</th><td lang="zh-Hans">{row.elements}</td><td lang="zh-Hans">{row.role}</td><td>{row.rarity}</td></tr>)}</tbody></table></div><p class="source"><a href={cn!.url!} target="_blank" rel="noopener noreferrer">{c.source} ↗</a> · {c.checked}: <time datetime={cn!.checkedAt!}>{cn!.checkedAt}</time></p></>}
+  <p>{c.note}</p>
+</section>}
+<style>
+  .launch-roster { padding: 1.5rem; margin: 0 0 2rem; border: 1px solid var(--line); border-radius: var(--radius); line-height: 1.9; }
+  h2 { font-size: 1.35rem; } h3 { font-size: 1rem; margin-top: 1.3rem; } p { color: var(--muted); margin: .7rem 0; }
+  .name-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem 1rem; list-style: none; padding: 0; }
+  .name-list li { border-bottom: 1px solid var(--line); padding: .5rem 0; } .source { font-size: .85rem; } a { text-decoration: underline; text-underline-offset: .2em; }
+  .table-scroll { overflow-x: auto; } table { width: 100%; border-collapse: collapse; text-align: left; font-size: .9rem; } th,td { padding: .7rem; border-bottom: 1px solid var(--line); }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  @media(max-width:650px) { .launch-roster { padding: 1rem; } .name-list { grid-template-columns: repeat(2, minmax(0,1fr)); } th,td { padding: .4rem; } }
+</style>

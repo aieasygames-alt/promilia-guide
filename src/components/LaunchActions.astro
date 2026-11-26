@@ -7,7 +7,7 @@ import ScheduleTime from './ScheduleTime.astro';
 interface Props { locale: 'zh-hans' | 'ja'; claimData?: typeof defaultClaims; sourceData?: typeof defaultSources }
 const { locale, claimData: claims = defaultClaims, sourceData: sources = defaultSources } = Astro.props;
 const ja = locale === 'ja';
-const regions = (['cn', 'jp'] as const).map(region => regionalReleaseState({ claims, sources, region }));
+const regions = (ja ? ['jp', 'cn'] as const : ['cn', 'jp'] as const).map(region => regionalReleaseState({ claims, sources, region }));
 const codeCount = redeemCodeRows({ codes: redeemCodes, sources }).filter(code => code.status === 'active').length;
 ---
 <section class="launch-actions" aria-labelledby="launch-actions-title" data-launch-actions>

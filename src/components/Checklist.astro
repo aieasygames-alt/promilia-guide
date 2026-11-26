@@ -10,7 +10,7 @@ const c = t(locale);
   <p>{c.checklistNote}</p><progress max={items.length} value="0" aria-label={c.saved}></progress>
   <ul class="checklist-items">{items.map((item) => <li><label><input type="checkbox" data-task={item.id}/><span>{item.text}</span></label></li>)}</ul>
   <button class="reset-button" type="button">{c.reset}</button><span class="storage-notice" role="status"></span>
-  <noscript><p>{locale === 'ja' ? '保存機能には JavaScript が必要です。チェックリストはそのまま読めます。' : '保存进度需要启用 JavaScript，清单内容仍可直接阅读。'}</p></noscript>
+  <noscript><p>{locale === 'en' ? 'Enable JavaScript to save progress. You can still read the checklist without it.' : locale === 'ja' ? '保存機能には JavaScript が必要です。チェックリストはそのまま読めます。' : '保存进度需要启用 JavaScript，清单内容仍可直接阅读。'}</p></noscript>
 </section>
 <script>
   document.querySelectorAll<HTMLElement>('[data-checklist]').forEach((section) => {

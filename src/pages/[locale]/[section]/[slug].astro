@@ -8,6 +8,7 @@ import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
 import RedeemCodeBox from '../../../components/RedeemCodeBox.astro';
+import EnglishCodeStatus from '../../../components/EnglishCodeStatus.astro';
 import MobileActionBar from '../../../components/MobileActionBar.astro';
 import { allGuides, visibleGuides, articlePath, isPublished, type Guide } from '../../../lib/content';
 import { alternateLinks, origin, languageTag } from '../../../lib/publication.mjs';
@@ -46,6 +47,7 @@ const compactFacts = !en && data.claimRefs.length > 0;
 const featureVisual = !en && data.contentId === 'launch' ? 'public-beta' : null;
 const toc = [
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
+  ...(en && data.contentId === 'redeem-codes' ? [{ id: 'redeem-title', text: 'Verified code records' }] : []),
   ...(!en && data.claimRefs.length ? [{ id: compactFacts ? 'claim-summary-details' : 'claim-summary-title', text: locale === 'ja' ? '確認できたこと・確認中のこと' : '已确认与待确认' }] : []),
   ...headings.filter((heading) => heading.depth === 2).map((heading) => ({ id: heading.slug, text: heading.text })),
   { id: 'sources', text: c.sources }, { id: 'revisions', text: c.revisions },
@@ -64,9 +66,10 @@ const schema = [
     <div class="article-grid"><article data-pagefind-body data-content-id={data.contentId} data-published={String(published)}>
       {hasDistribution && <DistributionMatrix locale={referenceLocale}/>}
       {isRedeemCodes && <RedeemCodeBox locale={referenceLocale}/>}
+      {en && data.contentId === 'redeem-codes' && <EnglishCodeStatus/>}
       {!en && (compactFacts ? <details id="claim-summary-details" class="article-facts"><summary>{locale === 'ja' ? '出典と確認状況を開く' : '展开来源与核验状态'}</summary><ClaimSummary locale={referenceLocale} refs={data.claimRefs} revisions={data.claimRevisions}/></details> : <ClaimSummary locale={referenceLocale} refs={data.claimRefs} revisions={data.claimRevisions}/>)}
       <div class="prose"><Content/></div>
-      {!en && <RelatedQuestions locale={referenceLocale} contentId={data.contentId}/>}
+      <RelatedQuestions locale={locale} contentId={data.contentId}/>
       {data.checklist.length > 0 && <Checklist locale={locale} contentId={data.contentId} items={data.checklist}/>}
       <section class="article-bottom" id="sources"><h2>{c.sources}</h2><ul class="source-list">{references.map((source) => <li id={`source-${source.id}`}><strong>{source.url ? <a href={source.url} rel="noopener noreferrer" target="_blank">{source.localized?.[locale]?.title || source.title}</a> : source.localized?.[locale]?.title || source.title}</strong><small>{en ? source.localized?.en?.publisher || source.publisher : source.publisher} · {source.localized?.[locale]?.note || source.note}</small><small>{source.publishedAt && `${en ? 'Published' : locale === 'ja' ? '掲載日' : '原文发布'}：${source.publishedAt} · `}{source.checkedAt ? `${en ? 'Source checked' : locale === 'ja' ? '出典確認日' : '来源核对'}：${source.checkedAt}` : c.sourcePending}</small><span class={`pill ${source.status === 'verified' ? '' : 'pending'}`}>{source.status === 'verified' ? (en ? 'Source verified' : locale === 'ja' ? '出典確認済み' : '来源已核验') : (en ? 'Not verified as official evidence' : locale === 'ja' ? '公式根拠として未確認' : '非已核验官方证据')}</span></li>)}</ul></section>
       <section class="article-bottom" id="revisions" data-pagefind-ignore data-nosnippet><h2>{c.revisions}</h2>{data.revisions.map((revision) => <div class="archive-row"><time datetime={revision.date}>{revision.date}</time><p>{revision.note}</p></div>)}</section>

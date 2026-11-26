@@ -7,7 +7,7 @@ title: アズールプロミリアは何時から？11月26日11時の開始予�
 description: 日本公式11月24日FAQは11月26日11:00開始予定と案内。事前DLは24日16:00。中国本土の独立日程、時差、登録任務切替と実際の開放を区別して解説。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
@@ -29,7 +29,7 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - cn-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -79,7 +79,9 @@ revisions:
     note: 後続の事前DL開始公告、PC専用ページとストア表示を追加照合。開始発表・ファイル取得・実行を区別し、本改訂も本文・訳文レビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
-translatedFromRevision: 11
+  - date: "2026-11-26"
+    note: 原稿の絶対日付・表記修正に同期。ゲーム内仕様の追加・実測を示すものではありません。
+translatedFromRevision: 12
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -107,7 +109,7 @@ claimRevisions:
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-26"
 ---
 
 ## 日本版は11月26日11時にサービス開始予定

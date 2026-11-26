@@ -13,8 +13,8 @@ const plan = JSON.parse(await readFile('src/data/english-release-plan.json', 'ut
 const english = entries.filter(({ data }) => data.locale === 'en');
 const context = { entries, sources, claims };
 
-test('English release requires exactly the three planned, substantive guides and localized source provenance', () => {
-  assert.deepEqual(english.map(({ data }) => data.contentId).sort(), ['download', 'global-release', 'requirements']);
+test('English release requires all planned, substantive guides and localized source provenance', () => {
+  assert.deepEqual(english.map(({ data }) => data.contentId).sort(), plan.topics.map(topic => topic.contentId).sort());
   assert.equal(createReleaseReport({ plan, ...context }).ready, true);
   for (const entry of english) {
     assert.ok(entry.body.split(/\s+/).length > 500);

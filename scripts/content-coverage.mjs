@@ -11,6 +11,10 @@ import { contentRoutes } from '../src/data/content-routes.ts';
 const entries = (await readEntries()).map(entry => ({ ...entry, data: guideSchema.parse(entry.data) }));
 const { sources, claims } = await readEditorialData();
 const groups = JSON.parse(await readFile(new URL('../src/data/faq.json', import.meta.url), 'utf8'));
+const englishPlan = JSON.parse(await readFile(new URL('../src/data/english-release-plan.json', import.meta.url), 'utf8'));
+const englishQuestions = JSON.parse(await readFile(new URL('../src/data/english-faq.json', import.meta.url), 'utf8'));
+const englishAnswers = resolveQuestions(englishQuestions, 'en', { entries, sources, claims }).flatMap(group => group.questions);
+const allTopics = contentRoutes.flatMap(group => group.topics);
 const result = {
   mode: process.env.CONTENT_PREVIEW === 'true' ? 'preview' : 'production',
   locales: Object.fromEntries(['zh-hans', 'ja'].map(locale => {
@@ -32,9 +36,14 @@ const result = {
       unpublishedTopics: topics.filter(id => localized.some(entry => entry.data.contentId === id) && !published.some(entry => entry.data.contentId === id)),
     }];
   }).concat([['en', {
-    scope: 'Launch essentials: release dates, downloads and requirements',
+    scope: englishPlan.title,
     publishedGuides: entries.filter(({ data }) => data.locale === 'en' && isPublishable(data, { entries, sources, claims })).length,
-    missingTopics: ['global-release', 'download', 'requirements'].filter(id => !entries.some(({ data }) => data.locale === 'en' && data.contentId === id)),
+    missingTopics: englishPlan.topics.map(topic => topic.contentId).filter(id => !entries.some(({ data }) => data.locale === 'en' && data.contentId === id)),
+    fullReferenceTopicCount: allTopics.length,
+    coveredReferenceTopics: allTopics.filter(id => entries.some(({ data }) => data.locale === 'en' && data.contentId === id && isPublishable(data, { entries, sources, claims }))),
+    missingReferenceTopics: allTopics.filter(id => !entries.some(({ data }) => data.locale === 'en' && data.contentId === id && isPublishable(data, { entries, sources, claims }))),
+    questions: englishAnswers.length,
+    currentAnswers: englishAnswers.filter(question => question.available).length,
     unpublishedTopics: entries.filter(({ data }) => data.locale === 'en' && !isPublishable(data, { entries, sources, claims })).map(({ data }) => data.contentId),
   }]])),
 };

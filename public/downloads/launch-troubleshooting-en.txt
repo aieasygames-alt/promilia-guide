@@ -1,0 +1,24 @@
+Promilia Guide — Troubleshooting record
+Edited: November 26, 2026. Filling this in does not submit a support ticket.
+
+Regional service / platform / distribution source:
+Game version / launcher version:
+Game UID, or why it is not available (do not substitute a web-event ID):
+Device model / OS:
+PC CPU / GPU / RAM, if relevant:
+Installation drive / SSD or HDD / free storage:
+Date, time and time zone:
+Failing stage: download / verification / extra data / login / play / reward
+Screen and exact error wording:
+Steps: where you were, what you did, what appeared:
+Expected result / actual result:
+Attempted action 1 / result:
+Attempted action 2 / result:
+Once, repeatedly or every attempt:
+Screenshot or video description:
+Relevant official notice or reward program URL:
+
+Keep passwords, verification codes and unnecessary personal information out of this record.
+Japan's official contact page accepts Japanese inquiries. Use the guide's Japanese field labels if useful; responses are by email, with no fixed turnaround promised.
+Use the correct regional official support route. This fan site cannot recover game accounts or transfer rewards.
+Guide and sources: https://promiliaguide.com/en/guides/support/

@@ -7,7 +7,7 @@ title: アズールプロミリアの日本・中国本土・繁体字版｜公�
 description: 日本・中国本土・繁体字公式の入口とアプリIDを対照。台湾App Storeリンク、配信日、登録・インストール・地域間共有を分けて確認します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
 gameRegion: 中国本土・日本・繁体字公式（地域別に記載）
 verification: official
@@ -82,6 +82,8 @@ revisions:
     note: 後続の事前DL開始公告、PC専用ページとストア表示を追加照合。開始発表・ファイル取得・実行を区別し、本改訂も本文・訳文レビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
+  - date: "2026-11-26"
+    note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
 translatedFromRevision: 11
 claimRefs:
   - cn-launch-date
@@ -116,7 +118,7 @@ claimRevisions:
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-26"
 ---
 
 ## 地域ごとに確認した配信状況
@@ -139,7 +141,7 @@ reviewedAt: "2026-11-24"
 | 日本 | [日本公式](https://azurpromilia.jp/) | App Storeリンク `6787982572`、Google Play `com.Yostar.AzurpromiliaJP` | 公式リンクとApple日本向けメタデータを照合。iOSウェブはTodayへ移動 |
 | 繁体字公式 | [繁体字公式入口](https://azurpromilia.jimi-global.com/home/) | 台湾App Storeリンク `6789139052`、Google Play `com.jimi.azurpromilia` | 11月23日に予約・事前登録リンクを確認。ストア本文と利用資格は別途確認 |
 
-繁体字の行はホームにあるリンクの記録で、運営地域全体の一覧ではありません。アプリIDが異なることだけで、アカウントや進行の共有可否も確定しません。
+繁体字の行は公式サイトにあるリンクの記録で、運営地域全体の一覧ではありません。アプリIDが異なることだけで、アカウントや進行の共有可否も確定しません。
 
 ## 「グローバル版」「国際服」は一つのサービス？
 
@@ -151,7 +153,7 @@ reviewedAt: "2026-11-24"
 
 ### 台湾App Storeのリンクがあれば、今すぐインストールできる？
 
-今回確認したのは公式ホームの予約リンクです。対象URLの取得先はTodayで、アプリ本文を読めていません。動作環境、全容量、個人の利用資格と実際のインストールは別途確認します。
+今回確認したのは公式サイトの予約リンクです。対象URLの取得先はTodayで、アプリ本文を読めていません。動作環境、全容量、個人の利用資格と実際のインストールは別途確認します。
 
 
 ## 日本の日程情報を更新した根拠
@@ -197,4 +199,4 @@ Yostarは2025年12月の告知で日本向け共同サービスとiOS・Android�
 
 ## 事前DL開始後の公式入口と確認範囲
 
-[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土ホームはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に差分資源を取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。
+[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土の公式サイトはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に追加データを取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。

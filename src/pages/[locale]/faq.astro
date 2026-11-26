@@ -4,7 +4,7 @@ import questions from '../../data/faq.json';
 import { allGuides, type ReferenceLocale as Locale } from '../../lib/content';
 import { claims, sources } from '../../lib/facts';
 import { resolveQuestions } from '../../lib/content-navigation.mjs';
-import { referenceLocales as locales, languageTag, origin } from '../../lib/publication.mjs';
+import { referenceLocales as locales, locales as alternateLocales, languageTag, origin } from '../../lib/publication.mjs';
 export function getStaticPaths() { return locales.map(locale => ({ params: { locale } })); }
 const locale = Astro.params.locale as Locale;
 const ja = locale === 'ja';
@@ -13,7 +13,7 @@ type ResolvedGroup = Omit<(typeof questions)[number], 'questions'> & { questions
 const groups: ResolvedGroup[] = resolveQuestions(questions, locale, { entries: await allGuides(), sources, claims });
 const title = ja ? 'アズールプロミリア よくある質問：開始・報酬・攻略' : '蓝色星原常见问题：开服、福利、图鉴与玩法答疑';
 const description = ja ? 'ダウンロード、容量、アカウント、ガチャ、キャラクター、キボ、農園の疑問を整理。短い回答から地域別の詳しいガイドへ進めます。' : '汇总蓝色星原开服、下载、容量、账号、卡池、角色、奇波和家园常见问题，短答后直达对应指南，区分国服与日本版及待核实玩法。';
-const alternates = locales.map(l => ({ lang: languageTag[l], href: `${origin}/${l}/faq/` })).concat([{ lang: 'x-default', href: `${origin}/zh-hans/faq/` }]);
+const alternates = alternateLocales.map(l => ({ lang: languageTag[l], href: `${origin}/${l}/faq/` })).concat([{ lang: 'x-default', href: `${origin}/zh-hans/faq/` }]);
 ---
 <Base locale={locale} title={title} description={description} alternates={alternates} languageTarget={`/${ja ? 'zh-hans' : 'ja'}/faq/`}>
   <div class="container">

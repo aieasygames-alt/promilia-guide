@@ -1,47 +1,71 @@
 ---
-contentId: "home"
-locale: "ja"
-slug: "home"
-section: "systems"
-title: "ホーム入門：報酬の区分・解放記録・配置の確認"
-description: "ホームレベルとショップ報酬を施設生産から分け、解放前提・キボ配置・保管・初回生産を記録します。"
-author: "Promilia Guide 編集部"
+contentId: home
+locale: ja
+slug: home
+section: systems
+title: 農園入門：報酬の区分・解放記録・配置の確認
+description: 農園レベルとショップ報酬を施設生産から分け、解放前提・キボ配置・保管・初回生産を記録します。
+author: Promilia Guide 編集部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-21"
-gameVersion: "正式配信前／操作手順は正式版で確認予定"
-gameRegion: "中国本土・日本（地域別明記）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
-sourceRevision: 2
-translationStatus: "published"
-aliases: ["家园","ホーム","派遣"]
-related: ["getting-started","resources","kibo-guide"]
+updatedAt: "2026-11-26"
+gameVersion: 正式配信前／操作手順は正式版で確認予定
+gameRegion: 中国本土・日本（地域別明記）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-benefits-images-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - jp-google-play-2026-11-21
+  - jp-release-special-2026-11-20
+sourceRevision: 3
+translationStatus: published
+aliases:
+  - 家园
+  - ホーム
+  - 派遣
+related:
+  - getting-started
+  - resources
+  - kibo-guide
 order: 12
 minutes: 8
-revisions: [{"date":"2026-11-21","note":"需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。"},{"date":"2026-11-21","note":"第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。"},{"date":"2026-11-21","note":"プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。"}]
-claimRefs: ["cn-rewards-conditions","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
-claimRevisions: {"cn-rewards-conditions":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
-translatedFromRevision: 2
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions:
+  - date: "2026-11-21"
+    note: 需要調査と公式画像・日本向けイベント規約を反映。今回の本文と言語はレビュー待ち。以前の承認は旧稿の履歴として保持。
+  - date: "2026-11-21"
+    note: 第3ラウンド：特典画像の段階、ストア情報、ホーム・キボの公式説明と配信字幕の確認先を追加。正式規約全体と実操作は未検証。
+  - date: "2026-11-21"
+    note: プロジェクト責任者が本会話で今回の全レビュー対象の承認と公開・公開後検証を明示。現在の本文・訳文を対象とし、未確認のゲーム仕様は未確認のまま保持。
+  - date: "2026-11-26"
+    note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
+claimRefs:
+  - cn-rewards-conditions
+  - cn-store-home-kibo-overview
+  - jp-store-home-kibo-overview
+claimRevisions:
+  cn-rewards-conditions: 1
+  cn-store-home-kibo-overview: 1
+  jp-store-home-kibo-overview: 1
+translatedFromRevision: 3
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-26"
 ---
 
-## ホームで最初に解決したいこと
+## 農園で最初に解決したいこと
 
-正式版の解放任務、施設操作、配置条件はまだ照合が完了していません。本ページでは報酬・生産・配置を分け、初回の解放と生産の記録を助けます。未検証の建築順や完成効率表は提示しません。
+正式版の解放に必要なクエスト、施設操作、配置条件はまだ照合が完了していません。本ページでは報酬・生産・配置を分け、初回の解放と生産の記録を助けます。未検証の建築順や完成効率表は提示しません。
 
-中国本土の11月20日特典画像は、恒常入手の区分でホームレベルとホームショップに中国語名「纯粹忆痕」各×8を掲載しています。ログイン配布、無償・無制限交換、施設の毎時生産量を示すものではありません。日本向けには別の確認が必要です。
+中国本土の11月20日特典画像は、恒常入手の区分で農園レベルと農園ショップに中国語名「纯粹忆痕」各×8を掲載しています。ログイン配布、無償・無制限交換、施設の毎時生産量を示すものではありません。日本向けには別の確認が必要です。
 
 ## 公式に紹介されている遊び方
 
 中国本土App Storeの開発元説明には、開墾、栽培・孵化、装備製作と、キボによる栽培・採集・製作・生産の協力が記載されています。具体的な施設名、投入、配置能力は正式版で確認する必要があり、全キボが全作業を担当できるという意味ではありません。
 
-日本向けGoogle Playも、キボと協力して「農園」を管理し、敵と戦うと独立して説明しています。本ページのタイトルはナビゲーションに合わせ「ホーム」を残し、日本公式の説明では「農園」を使用します。中国本土の作業一覧を日本の全施設規則にはしません。
+日本向けGoogle Playは、キボと協力して「農園」を管理し、敵と戦うと説明しています。以下では日本公式の表記に合わせ「農園」と呼び、中国本土の作業一覧を日本の全施設規則にはしません。
 
 | 体験したいこと | 正式配信後に確かめる結果 | 残す根拠 |
 | --- | --- | --- |
-| 開墾・栽培 | 利用可能な作物を一度栽培し収穫 | 解放任務、種・材料、開始・受取前後の在庫 |
+| 開墾・栽培 | 利用可能な作物を一度栽培し収穫 | 解放に必要なクエスト、種・材料、開始・受取前後の在庫 |
 | 孵化 | 現在可能な孵化を一度完了 | 卵の入手元、装置、費用、時間、結果 |
 | 装備製作 | 解放済みレシピで一品作成 | レシピ入手元、材料、製作と任務報酬の区別 |
 | キボの協力 | 配置前後の状態を比較 | 個体能力、作業条件、生産、停止表示 |
@@ -52,8 +76,8 @@ reviewedAt: "2026-11-21"
 
 | 項目 | 最初の確認 | そのまま推測できないこと |
 | --- | --- | --- |
-| ホームレベル報酬 | 必要レベル、受取場所、受取済みか | 毎レベル同じ数がもらえる |
-| ホームショップ | 通貨、在庫、更新、購入前提 | 公告の総数を無償で一括入手できる |
+| 農園レベル報酬 | 必要レベル、受取場所、受取済みか | 毎レベル同じ数がもらえる |
+| 農園ショップ | 通貨、在庫、更新、購入前提 | 公告の総数を無償で一括入手できる |
 | 施設生産 | 材料、配置、時間、保管、受取操作 | 報酬表の数値が毎時収入になる |
 | キボの配置 | 必要能力、配置状態、不足条件 | レアリティが高ければ常に最適 |
 

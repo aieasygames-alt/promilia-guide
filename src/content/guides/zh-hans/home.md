@@ -1,29 +1,53 @@
 ---
-contentId: "home"
-locale: "zh-hans"
-slug: "home"
-section: "systems"
-title: "家园起步：奖励区分、解锁记录与派遣排查"
-description: "区分家园等级、商店奖励与设施生产，记录解锁前置、奇波岗位、仓储及首次产出。"
-author: "Promilia Guide 编辑部"
+contentId: home
+locale: zh-hans
+slug: home
+section: systems
+title: 家园起步：奖励区分、解锁记录与派遣排查
+description: 区分家园等级、商店奖励与设施生产，记录解锁前置、奇波岗位、仓储及首次产出。
+author: Promilia Guide 编辑部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-21"
-gameVersion: "公测前 / 操作流程待正式版验证"
-gameRegion: "中国大陆、日本（分地区说明）"
-verification: "editorial"
-status: "published"
-sourceRefs: ["cn-launch-benefits-images-2026-11-21","cn-store-gameplay-2026-11-21","jp-google-play-2026-11-21","jp-release-special-2026-11-20"]
-sourceRevision: 2
-translationStatus: "published"
-aliases: ["家园","ホーム","派遣"]
-related: ["getting-started","resources","kibo-guide"]
+updatedAt: "2026-11-26"
+gameVersion: 公测前 / 操作流程待正式版验证
+gameRegion: 中国大陆、日本（分地区说明）
+verification: editorial
+status: published
+sourceRefs:
+  - cn-launch-benefits-images-2026-11-21
+  - cn-store-gameplay-2026-11-21
+  - jp-google-play-2026-11-21
+  - jp-release-special-2026-11-20
+sourceRevision: 3
+translationStatus: published
+aliases:
+  - 家园
+  - ホーム
+  - 派遣
+related:
+  - getting-started
+  - resources
+  - kibo-guide
 order: 12
 minutes: 8
-revisions: [{"date":"2026-11-21","note":"按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。"},{"date":"2026-11-21","note":"第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。"},{"date":"2026-11-21","note":"项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。"}]
-claimRefs: ["cn-rewards-conditions","cn-store-home-kibo-overview","jp-store-home-kibo-overview"]
-claimRevisions: {"cn-rewards-conditions":1,"cn-store-home-kibo-overview":1,"jp-store-home-kibo-overview":1}
-reviewer: "项目负责人（会话确认）"
-reviewedAt: "2026-11-21"
+revisions:
+  - date: "2026-11-21"
+    note: 按社区需求扩充并核对官方配图、日本活动规则；当前修订待正文与语言审核，历史审核记录仅适用于旧稿。
+  - date: "2026-11-21"
+    note: 第三轮补充福利预览档位、商店资料和家园/奇波官方玩法，定位日本回放字幕线索；未完成的正式规则和实测继续待核验。
+  - date: "2026-11-21"
+    note: 项目负责人在本会话明确确认本批全部待审内容审核通过，并授权发布所有开发内容及上线验证；确认覆盖当前正文与译文，未知游戏规则继续保持未知。
+  - date: "2026-11-26"
+    note: 按多语言审计修正日期或术语表述；按项目负责人本轮开发及既有上线授权发布，不另称独立语言审校或正式服实测。
+claimRefs:
+  - cn-rewards-conditions
+  - cn-store-home-kibo-overview
+  - jp-store-home-kibo-overview
+claimRevisions:
+  cn-rewards-conditions: 1
+  cn-store-home-kibo-overview: 1
+  jp-store-home-kibo-overview: 1
+reviewer: 项目负责人（会话发布确认）
+reviewedAt: "2026-11-26"
 ---
 
 ## 家园先解决哪一个问题
@@ -36,7 +60,7 @@ reviewedAt: "2026-11-21"
 
 国服App Store的开发者介绍列出开垦土地、种植孵化和制作装备，并说明奇波可以入驻家园，协助种植、采集、制作与生产。这里确认的是玩法类别，具体设施名、投入与岗位能力仍需正式客户端核对；不表示每只奇波都能做所有工作。
 
-日本Google Play独立说明与「キボ」协作管理「農園」并战斗。本页日语标题暂沿用导航中的「ホーム」，讲解日本官方资料时保留「農園」；国服的工种清单不直接当作日本全部设施规则。
+日本Google Play独立说明与「キボ」协作管理「農園」并战斗。日语版统一采用该官方描述中的「農園」；国服的工种清单不直接当作日本全部设施规则。
 
 | 想先体验什么 | 开放后先验证的一个结果 | 需要留下的依据 |
 | --- | --- | --- |

@@ -1,41 +1,41 @@
 ---
-contentId: "download"
-locale: "en"
-slug: "download"
-section: "guides"
+contentId: download
+locale: en
+slug: download
+section: guides
 title: "Azur Promilia Download Guide: Japan & China PC, Android, iOS"
-description: "Find official Azur Promilia PC and mobile download routes for Japan and China. Includes preload steps, account differences and regional download-error fixes."
-author: "Promilia Guide"
+description: Find official Azur Promilia PC and mobile download routes for Japan and China. Includes preload steps, account differences and regional download-error fixes.
+author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-25"
-gameVersion: "Pre-launch / regional FAQs checked November 24, 2026"
-gameRegion: "Japan and mainland China, described separately"
-verification: "official"
-status: "published"
+updatedAt: "2026-11-26"
+gameVersion: Pre-launch / regional FAQs checked November 24, 2026
+gameRegion: Japan and mainland China, described separately
+verification: official
+status: published
 sourceRefs:
-  - "jp-pc-download-page-2026-11-24"
+  - jp-pc-download-page-2026-11-24
 claimRefs:
-  - "cn-ios-compatibility"
-  - "cn-launch-date"
-  - "cn-opening-time"
-  - "jp-release-status"
-  - "jp-opening-time"
-  - "cn-official-entry"
-  - "jp-official-entry"
-  - "cn-ios-store"
-  - "cn-preload-status"
-  - "jp-preload-status"
-  - "jp-platform-plan"
-  - "cn-platform-details"
-  - "jp-platform-details"
-  - "cn-public-launch-requirements"
-  - "jp-public-launch-requirements"
-  - "cn-public-launch-platform-rules"
-  - "jp-public-launch-platform-rules"
-  - "jp-ios-store-metadata"
-  - "jp-launch-troubleshooting"
-  - "cn-launch-troubleshooting"
-  - "cn-login-support-rules"
+  - cn-ios-compatibility
+  - cn-launch-date
+  - cn-opening-time
+  - jp-release-status
+  - jp-opening-time
+  - cn-official-entry
+  - jp-official-entry
+  - cn-ios-store
+  - cn-preload-status
+  - jp-preload-status
+  - jp-platform-plan
+  - cn-platform-details
+  - jp-platform-details
+  - cn-public-launch-requirements
+  - jp-public-launch-requirements
+  - cn-public-launch-platform-rules
+  - jp-public-launch-platform-rules
+  - jp-ios-store-metadata
+  - jp-launch-troubleshooting
+  - cn-launch-troubleshooting
+  - cn-login-support-rules
 claimRevisions:
   cn-ios-compatibility: 1
   cn-launch-date: 2
@@ -60,21 +60,23 @@ claimRevisions:
   cn-login-support-rules: 1
 sourceRevision: 14
 translatedFromRevision: 14
-translationStatus: "published"
-reviewer: "Project owner (publication authorized in conversation)"
-reviewedAt: "2026-11-25"
+translationStatus: published
+reviewer: Project owner (publication authorized in conversation)
+reviewedAt: "2026-11-26"
 aliases:
-  - "Azur Promilia"
-  - "azurpromilia"
-  - "azure promilia"
-  - "Azur Promilia PC download"
-  - "Azur Promilia JP download"
+  - Azur Promilia
+  - azurpromilia
+  - azure promilia
+  - Azur Promilia PC download
+  - Azur Promilia JP download
 related:
-  - "global-release"
-  - "requirements"
+  - global-release
+  - requirements
 revisions:
   - date: "2026-11-25"
-    note: "Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test."
+    note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
+  - date: "2026-11-26"
+    note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
 order: 2
 minutes: 8
 ---
@@ -99,7 +101,7 @@ For Traditional Chinese store identities and the limits of regional availability
 
 1. Open the [Japan official Windows page](https://azurpromilia.jp/PCdownload). Confirm that you are following the Japan service, rather than a mirror or a different regional client.
 2. Follow the official Yostar launcher download and installation instructions. Our web check confirmed the page and launcher link; it did not verify a downloaded file or run it.
-3. Choose the game installation directory. The Japan FAQ recommends an SSD and **more than 120GB free space on the target drive**. Free space on another drive does not expand the selected installation directory.
+3. Choose the game installation directory. The Japan FAQ recommends an SSD and **at least 120GB free space on the target drive**. Free space on another drive does not expand the selected installation directory.
 4. Let the launcher install the game client, then follow the additional-resource prompts. The launcher, game client and in-game resources are separate stages.
 5. Check the service notice before attempting to play. The announced Japan opening is **November 26 at 11:00 JST**, equivalent to **02:00 UTC**. Pre-download is not an early-access login.
 
@@ -109,7 +111,7 @@ If an official page cannot deliver the file to you, record the URL, timestamp an
 
 Start from your regional official site and follow its Android or App Store link. Match the app ID in the table above before installing. A store listing, preorder display or redirect does not by itself establish that your account is eligible to install.
 
-Both regional FAQs recommend **more than 55GB free storage** on Android/iOS before installation. The store's base-app size is not the complete game; both FAQs describe additional downloads after the base client. See the [device and storage requirements](/en/guides/requirements/) before clearing space.
+Both regional FAQs recommend **at least 55GB free storage** on Android/iOS before installation. The store's base-app size is not the complete game; both FAQs describe additional downloads after the base client. See the [device and storage requirements](/en/guides/requirements/) before clearing space.
 
 During the Japan iOS web check, the linked page redirected to App Store Today. Apple Japan metadata separately confirmed app ID `6787982572` and Yostar as publisher. We do not treat that metadata response as an installation test.
 

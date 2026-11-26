@@ -1,38 +1,38 @@
 ---
-contentId: "global-release"
-locale: "en"
-slug: "global-release"
-section: "guides"
+contentId: global-release
+locale: en
+slug: global-release
+section: guides
 title: "Azur Promilia Release Date: Japan, China & Global Status"
-description: "Azur Promilia Japan and China launch times for November 26, 2026, official regional links, app IDs and what is verified about a global English release."
-author: "Promilia Guide"
+description: Azur Promilia Japan and China launch times for November 26, 2026, official regional links, app IDs and what is verified about a global English release.
+author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-25"
-gameVersion: "Pre-launch / regional FAQs checked November 24, 2026"
-gameRegion: "Japan, mainland China; Traditional Chinese entries noted separately"
-verification: "official"
-status: "published"
+updatedAt: "2026-11-26"
+gameVersion: Pre-launch / regional FAQs checked November 24, 2026
+gameRegion: Japan, mainland China; Traditional Chinese entries noted separately
+verification: official
+status: published
 sourceRefs:
-  - "cn-official-home-2026-11-14"
-  - "jp-pc-download-page-2026-11-24"
-  - "jp-apple-metadata-2026-11-24"
-  - "cn-login-troubleshooting-support-2026-11-24"
+  - cn-official-home-2026-11-14
+  - jp-pc-download-page-2026-11-24
+  - jp-apple-metadata-2026-11-24
+  - cn-login-troubleshooting-support-2026-11-24
 claimRefs:
-  - "cn-launch-date"
-  - "cn-opening-time"
-  - "jp-release-status"
-  - "jp-opening-time"
-  - "tc-official-announcement"
-  - "tc-mobile-official-entry"
-  - "jp-official-entry"
-  - "jp-platform-plan"
-  - "cn-ios-store"
-  - "cn-preload-status"
-  - "jp-preload-status"
-  - "cn-public-launch-platform-rules"
-  - "jp-public-launch-platform-rules"
-  - "cn-public-launch-requirements"
-  - "jp-public-launch-requirements"
+  - cn-launch-date
+  - cn-opening-time
+  - jp-release-status
+  - jp-opening-time
+  - tc-official-announcement
+  - tc-mobile-official-entry
+  - jp-official-entry
+  - jp-platform-plan
+  - cn-ios-store
+  - cn-preload-status
+  - jp-preload-status
+  - cn-public-launch-platform-rules
+  - jp-public-launch-platform-rules
+  - cn-public-launch-requirements
+  - jp-public-launch-requirements
 claimRevisions:
   cn-launch-date: 2
   cn-opening-time: 4
@@ -51,21 +51,23 @@ claimRevisions:
   jp-public-launch-requirements: 1
 sourceRevision: 11
 translatedFromRevision: 11
-translationStatus: "published"
-reviewer: "Project owner (publication authorized in conversation)"
-reviewedAt: "2026-11-25"
+translationStatus: published
+reviewer: Project owner (publication authorized in conversation)
+reviewedAt: "2026-11-26"
 aliases:
-  - "Azur Promilia"
-  - "azurpromilia"
-  - "azure promilia"
-  - "Azur Promilia global release date"
-  - "Azur Promilia JP release"
+  - Azur Promilia
+  - azurpromilia
+  - azure promilia
+  - Azur Promilia global release date
+  - Azur Promilia JP release
 related:
-  - "download"
-  - "requirements"
+  - download
+  - requirements
 revisions:
   - date: "2026-11-25"
-    note: "Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test."
+    note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
+  - date: "2026-11-26"
+    note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
 order: 1
 minutes: 6
 ---
@@ -117,7 +119,7 @@ These statements do not confirm Japan–China cross-region progress, account tra
 
 1. **Regional edition:** start from its official site, then follow its store or PC link.
 2. **Account eligibility:** read the relevant service rules. China requires real-name verification; a store page opening successfully does not establish account eligibility.
-3. **Device and space:** the two regional FAQs recommend more than 55GB free on Android/iOS and more than 120GB on PC, with an SSD recommended. See the [requirements and storage guide](/en/guides/requirements/).
+3. **Device and space:** the two regional FAQs recommend at least 55GB free on Android/iOS and at least 120GB on PC, with an SSD recommended. See the [requirements and storage guide](/en/guides/requirements/).
 4. **Current service notice:** distinguish preregistration, pre-download, the planned opening and the latest server status.
 
 ## Release date questions

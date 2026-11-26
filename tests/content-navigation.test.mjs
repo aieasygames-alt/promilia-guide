@@ -9,9 +9,21 @@ import { entityCategory } from '../src/lib/entity-category.mjs';
 import { resolveQuestions, officialAnnouncements } from '../src/lib/content-navigation.mjs';
 
 const groups = JSON.parse(await readFile(new URL('../src/data/faq.json', import.meta.url), 'utf8'));
+const englishGroups = JSON.parse(await readFile(new URL('../src/data/english-faq.json', import.meta.url), 'utf8'));
 const entries = (await readEntries()).map(entry => ({ ...entry, data: guideSchema.parse(entry.data) }));
 const { sources, claims } = await readEditorialData();
 const context = { entries, sources, claims };
+
+test('English FAQ answers resolve to English guides and stop exposing withdrawn reward evidence', () => {
+  const resolved = resolveQuestions(englishGroups, 'en', context).flatMap(group => group.questions);
+  assert.equal(resolved.length, 12);
+  assert.equal(new Set(resolved.map(question => question.id)).size, resolved.length);
+  assert.ok(resolved.every(question => question.available && question.href.startsWith('/en/')));
+  const withdrawn = sources.map(source => source.id === 'jp-kibo-adventure-rules-2026-11-21' ? { ...source, status: 'unavailable' } : source);
+  const affected = resolveQuestions(englishGroups, 'en', { ...context, sources: withdrawn }).flatMap(group => group.questions).find(question => question.id === 'kibo-rewards');
+  assert.equal(affected.available, false);
+  assert.equal(affected.href, null);
+});
 
 test('FAQ entries have unique anchors, both languages, current claim pins and real guide targets', () => {
   const ids = groups.flatMap(group => [group.id, ...group.questions.map(question => `q-${question.id}`)]);

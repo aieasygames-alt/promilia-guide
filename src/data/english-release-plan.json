@@ -1,10 +1,14 @@
 {
   "id": "english-launch-essentials",
-  "title": "English launch essentials",
+  "title": "English launch and first-session essentials",
   "locales": ["en"],
   "topics": [
     { "contentId": "global-release", "label": "Release dates and regions", "requiredClaims": ["cn-launch-date", "jp-release-status", "cn-opening-time", "jp-opening-time", "tc-mobile-official-entry"] },
     { "contentId": "download", "label": "Official downloads", "requiredClaims": ["cn-preload-status", "jp-preload-status", "jp-official-entry", "cn-launch-troubleshooting", "jp-launch-troubleshooting"] },
-    { "contentId": "requirements", "label": "System requirements and storage", "requiredClaims": ["cn-public-launch-requirements", "jp-public-launch-requirements", "jp-ios-store-metadata"] }
+    { "contentId": "requirements", "label": "System requirements and storage", "requiredClaims": ["cn-public-launch-requirements", "jp-public-launch-requirements", "jp-ios-store-metadata"] },
+    { "contentId": "getting-started", "label": "First-session preparation", "requiredClaims": ["jp-kibo-web-rewards", "jp-preregister-benefits", "jp-account-deletion-terms"] },
+    { "contentId": "resources", "label": "Launch rewards and mail", "requiredClaims": ["jp-preregister-benefits", "jp-kibo-web-rewards", "cn-kibo-web-rewards", "cn-preregister-mail-benefits"] },
+    { "contentId": "redeem-codes", "label": "Code verification and regional rules", "requiredClaims": ["jp-kibo-web-rewards", "cn-kibo-web-rewards"] },
+    { "contentId": "support", "label": "Login and official support", "requiredClaims": ["cn-login-support-rules", "cn-launch-troubleshooting", "jp-launch-troubleshooting"] }
   ]
 }
