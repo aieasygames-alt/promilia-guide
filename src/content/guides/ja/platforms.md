@@ -7,7 +7,7 @@ title: アズールプロミリアのPC版・対応機種｜PS5・Steam・デー
 description: 日本公式FAQはPC・Android・iOSの同一アカウントでのプレイデータ共有を案内。Yostarランチャー、Steam・PS5、地域と有償通貨の確認範囲を整理。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
@@ -80,6 +80,8 @@ revisions:
     note: 後続の事前DL開始公告、PC専用ページとストア表示を追加照合。開始発表・ファイル取得・実行を区別し、本改訂も本文・訳文レビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
+  - date: "2026-11-26"
+    note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
 translatedFromRevision: 11
 claimRefs:
   - cn-ios-store
@@ -120,7 +122,7 @@ claimRevisions:
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-26"
 ---
 
 ## 対応機種とデータ共有は？
@@ -146,7 +148,7 @@ reviewedAt: "2026-11-24"
 
 アカウントの種類、元の配布元、サーバーを確認してください。中国本土FAQは一部チャネル版と公式サーバーのデータが共有されないと案内しています。テスト時の課金還元も元のアカウントが必要で、チャネル利用者は同じチャネルのクライアントを確認します。
 
-また、中国本土の旧「旅迹测试」クライアントは直接更新できず、完全に削除して公測正式版をインストールする案内です。過去のテストの端末制限を正式版に流用しません。
+また、中国本土の旧「旅迹测试」クライアントは直接更新できず、完全に削除して正式版をインストールする案内です。過去のテストの端末制限を正式版に流用しません。
 
 ## 別端末へ移る前の確認順
 
@@ -181,4 +183,4 @@ reviewedAt: "2026-11-24"
 
 ## 事前DL開始後の公式入口と確認範囲
 
-[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土ホームはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に差分資源を取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。
+[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土の公式サイトはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に追加データを取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。

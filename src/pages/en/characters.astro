@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import LaunchRoster from '../../components/LaunchRoster.astro';
+import { locales, languageTag, origin } from '../../lib/publication.mjs';
+const alternates = [...locales.map(locale => ({ lang: languageTag[locale], href: `${origin}/${locale}/characters/` })), { lang: 'x-default', href: `${origin}/zh-hans/characters/` }];
+---
+<Base locale="en" title="Azur Promilia Characters: Official Regional Preview Names" description="Match Azur Promilia character names from Japan's official homepage and mainland China's preview labels. Regional sources are separate; builds remain unverified." alternates={alternates}>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/en/">Home</a><span>/</span>Characters</nav>
+    <header class="page-heading"><p class="eyebrow">OFFICIAL CHARACTER REFERENCES</p><h1>Azur Promilia character previews</h1><p>Match the name on a regional page before looking for account rewards or banner information.</p></header>
+    <LaunchRoster locale="en"/>
+    <section class="prose character-next" data-pagefind-body><h2>What this character list can tell you</h2><p>The Japan list reproduces the current homepage's preview names. The China table records two independently checked previews. Names stay in their original regional scripts so you can identify the official page; no unverified English character names or Japan–China name mappings are introduced.</p><p>This is not a tier list. Complete skills, materials, equipment choices and tested teams are not available here yet. A five-star display or a preview position does not establish which character is best for your account.</p><h2>Before choosing an account or spending</h2><p>Check the <a href="/en/guides/getting-started/">first-session account checklist</a> and <a href="/en/guides/resources/">launch reward conditions</a>. Japan's full banner guarantees still need independent verification; China banner numbers do not become Japan rules when translated into English.</p><p>More source-dated character summaries are available in <a href="/ja/characters/" lang="ja">日本語</a> and <a href="/zh-hans/characters/" lang="zh-Hans">简体中文</a>. For short account and reward answers, use the <a href="/en/faq/">English FAQ</a>.</p></section>
+  </div>
+</Base>
+<style>.character-next { max-width: 850px; padding-bottom: 4rem; }</style>

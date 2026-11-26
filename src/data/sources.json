@@ -466,6 +466,11 @@
       "ja": {
         "title": "日本公式「集まれ！キボの巣穴探索」イベントルール",
         "note": "イベント期間、11月24日16時の事前DL予定、参加Yostar IDで最初に作成したキャラへの配布を確認。現在のインストール可否や他地域の根拠にはしません。"
+      },
+      "en": {
+        "title": "Japan Kibo nest exploration: official event rules",
+        "publisher": "Azur Promilia Japan",
+        "note": "Rules cover the event period, task transition, participating Yostar ID, first created character and collection deadline. These web-event rules do not establish game installation, capture locations or Japan–China account sharing."
       }
     }
   },
@@ -487,6 +492,11 @@
       "ja": {
         "title": "中国本土公式：キボの巣穴探索イベント規約",
         "note": "公式トップの「集结，勇闯奇波巢穴」→「活动规则」で確認。11月24日15時（UTC+8）の事前DL予定、参加した蛮啾通行证の最初のキャラへの配布を記録。機種別配布や日本向けの根拠にはしません。"
+      },
+      "en": {
+        "title": "Mainland China Kibo nest: official event rules",
+        "publisher": "Manjuu / Azur Promilia China",
+        "note": "Rules were read from the official event without login or participation. The participating account, first-character assignment, task transition and collection deadline are China-specific. No individual reward claim was tested."
       }
     }
   },
@@ -508,6 +518,11 @@
       "ja": {
         "title": "日本公式FAQ・お問い合わせの受付案内",
         "note": "日本語での受付と受信設定を確認。問い合わせの送信や個人情報の入力はしていません。ガチャ・データ共有・動作環境の根拠には使用しません。"
+      },
+      "en": {
+        "title": "Japan official contact: language and email instructions",
+        "publisher": "Azur Promilia Japan",
+        "note": "Public contact instructions only: Japanese inquiries, email receipt settings and no telephone support. No form was submitted. This source is not evidence of game mechanics."
       }
     }
   },
@@ -1062,6 +1077,11 @@
       "ja": {
         "title": "日本事前登録ページ：人数別報酬とSNSのキボ特典",
         "note": "表示の人数別報酬を記録。無垢な痕跡3+5+12=20個は掲載数量の合計で、限定20回・実受取・再配布の保証ではありません。SNSと巣穴探索を分けます。"
+      },
+      "en": {
+        "title": "Japan preregistration milestones and social rewards",
+        "publisher": "Azur Promilia Japan",
+        "note": "Records the page’s listed milestones, not an actual claim. The 3 + 5 + 12 ticket total is arithmetic, not proof of 20 limited-banner pulls. Social rewards and nest exploration are separate programs."
       }
     }
   },
@@ -1109,6 +1129,11 @@
       "ja": {
         "title": "中国本土FAQ第3・4節：テスト課金返還・事前登録メール",
         "note": "中国本土の対象テストのみ。元の課金アカウントとチャネルを維持。ボタン確認のみで、個人の照会・受取は未実施。日本版の特典や返還条件へ流用しません。"
+      },
+      "en": {
+        "title": "China launch FAQ: test-payment returns and preregistration mail",
+        "publisher": "Manjuu / Azur Promilia China",
+        "note": "Sections 3–4 distinguish original paying accounts and channel clients from preregistration gifts. The mail prerequisites and separate deadlines are China-only; no account lookup, payment query or in-game claim was performed."
       }
     }
   },
@@ -1130,6 +1155,11 @@
       "ja": {
         "title": "日本利用規約第4条：削除したアカウントの復旧",
         "note": "第4条6項の削除後復旧不可に限定。削除の実操作、ゲスト、再作成・連携変更は未確認。ログイン不能すべてを復旧不可とは扱いません。"
+      },
+      "en": {
+        "title": "Japan terms: account deletion and restoration",
+        "publisher": "Yostar / Azur Promilia Japan",
+        "note": "Article 4.6 says deleted accounts cannot be restored. It does not establish a tested deletion menu, guest reset, reroll route or account recovery procedure. No account operation was performed."
       }
     }
   },
@@ -1177,6 +1207,58 @@
         "title": "China launch FAQ: login and troubleshooting (Chinese)",
         "note": "Real-name requirements, region-specific restart steps and support route.",
         "publisher": "Manjuu / China official site"
+      }
+    }
+  },
+  {
+    "id": "jp-home-character-roster-2026-11-26",
+    "title": "日本官网当前角色轮播名称",
+    "publisher": "アズールプロミリア日本公式",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-26",
+    "gameVersion": "2026-11-26 官网角色预览",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "公开首页角色轮播列出12个名称，只核验公开表记，不表示完整可玩名单、获取方式、技能或强度。",
+    "excerpt": "メイプル、アニス、テララ、源千代、蘭香子、塗山小玉、アビィ、キャスベル、シャル、ポンポン、ペイペイ、ミィティ。",
+    "evidenceFile": "research/2026-11-26-multilingual/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式トップ：公開キャラクター名",
+        "note": "トップの12名の表記を確認。全実装キャラ、入手方法、技能、強さを保証する一覧ではありません。"
+      },
+      "en": {
+        "title": "Japan official homepage: character preview names",
+        "publisher": "Azur Promilia Japan",
+        "note": "Twelve names observed in the public homepage preview. This is not a complete playable roster or evidence of acquisition, skills, rarity or rankings."
+      }
+    }
+  },
+  {
+    "id": "cn-home-character-preview-2026-11-26",
+    "title": "国服官网涂山小玉与源千代角色预览",
+    "publisher": "蓝色星原：旅谣国服官方",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-26",
+    "gameVersion": "2026-11-26 官网角色预览",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "进入官网后分别选择涂山小玉与源千代读取名称、图标替代文本和介绍。仅记录国服公开标签，不推导技能倍率、强度或日本标签。",
+    "excerpt": "涂山小玉：风属性、光属性、猛攻、五星角色。源千代：暗属性、爆发、五星角色。",
+    "evidenceFile": "research/2026-11-26-multilingual/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式トップ：涂山小玉・源千代の公開表示",
+        "note": "中国本土の原文名と属性・役割・星数表示のみ。日本版の名称・性能や技能倍率へ流用しません。"
+      },
+      "en": {
+        "title": "China official homepage: two character previews",
+        "publisher": "Manjuu / Azur Promilia China",
+        "note": "China-only original names, element labels, role labels and five-star display for two previews. The page does not establish Japan equivalents, skill values, build recommendations or character rankings."
       }
     }
   }

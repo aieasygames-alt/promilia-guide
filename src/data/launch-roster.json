@@ -1,0 +1,9 @@
+{
+  "japanSource": "jp-home-character-roster-2026-11-26",
+  "chinaSource": "cn-home-character-preview-2026-11-26",
+  "japanNames": ["メイプル", "アニス", "テララ", "源千代", "蘭香子", "塗山小玉", "アビィ", "キャスベル", "シャル", "ポンポン", "ペイペイ", "ミィティ"],
+  "chinaPreviews": [
+    {"name":"涂山小玉", "elements":"风・光", "role":"猛攻", "rarity":5},
+    {"name":"源千代", "elements":"暗", "role":"爆发", "rarity":5}
+  ]
+}

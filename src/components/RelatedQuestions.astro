@@ -1,11 +1,14 @@
 ---
 import questions from '../data/faq.json';
-import type { ReferenceLocale as Locale } from '../lib/content';
+import englishQuestions from '../data/english-faq.json';
+import type { Locale } from '../lib/content';
 interface Props { locale: Locale; contentId: string }
 const { locale, contentId } = Astro.props;
-const related = questions.flatMap<(typeof questions)[number]['questions'][number]>(group => group.questions).filter(question => question.contentId === contentId);
+const related = locale === 'en'
+  ? englishQuestions.flatMap<(typeof englishQuestions)[number]['questions'][number]>(group => group.questions).filter(question => question.contentId === contentId).map(question => ({ id: question.id, text: question.question.en }))
+  : questions.flatMap<(typeof questions)[number]['questions'][number]>(group => group.questions).filter(question => question.contentId === contentId).map(question => ({ id: question.id, text: question.question[locale] }));
 ---
-{related.length > 0 && <section class="related-questions" data-pagefind-ignore><h2>{locale === 'ja' ? 'このテーマのよくある質問' : '这个主题的常见问题'}</h2><ul>{related.map(question => <li><a href={`/${locale}/faq/#q-${question.id}`}>{question.question[locale]} →</a></li>)}</ul></section>}
+{related.length > 0 && <section class="related-questions" data-pagefind-ignore><h2>{locale === 'en' ? 'Related questions' : locale === 'ja' ? 'このテーマのよくある質問' : '这个主题的常见问题'}</h2><ul>{related.map(question => <li><a href={`/${locale}/faq/#q-${question.id}`}>{question.text} →</a></li>)}</ul></section>}
 <style>
   .related-questions { margin: 2rem 0; border-top: 1px solid var(--line); padding-top: 1.5rem; }
   h2 { font-size: 1.15rem; } ul { padding-left: 1.2rem; } li { margin: .65rem 0; line-height: 1.8; }

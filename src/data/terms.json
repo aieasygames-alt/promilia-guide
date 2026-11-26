@@ -37,11 +37,16 @@
   {
     "id": "homestead",
     "zh": "家园",
-    "ja": "拠点システム（仮称）",
-    "jaStatus": "pending",
+    "ja": "農園",
+    "jaStatus": "verified",
     "aliases": [
       "家園",
-      "homestead"
+      "homestead",
+      "ホーム",
+      "農園"
+    ],
+    "sourceRefs": [
+      "jp-google-play-2026-11-21"
     ]
   }
 ]

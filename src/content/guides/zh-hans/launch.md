@@ -7,7 +7,7 @@ title: 蓝色星原公测时间与预下载：国服、日本日期和时区
 description: 11月24日两地FAQ：国服11月26日10:00（UTC+8）、日本同日11:00计划开服。列预下载时刻、时差、任务切换和登录前检查，实际开放状态另核。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 公测前 / 2026-11-24 官方FAQ核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
@@ -29,7 +29,7 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - cn-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -79,6 +79,8 @@ revisions:
     note: 追加核对预下载开始公告、PC独立页面和商店版本变化；区分公告开放、文件取得与安装运行，本次修订仍待正文及译文确认。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-26"
+    note: 按多语言审计修正日期或术语表述；按项目负责人本轮开发及既有上线授权发布，不另称独立语言审校或正式服实测。
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -106,12 +108,12 @@ claimRevisions:
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-26"
 ---
 
 ## 国服、日本分别几点开服？
 
-**国服计划2026年11月26日10:00（UTC+8），日本计划同日11:00（日本时间）。** 两地今天分别发布的公测FAQ独立给出了时刻，换算后是同一时刻；这不证明账号、服务器或活动共用。
+**国服计划2026年11月26日10:00（UTC+8），日本计划同日11:00（日本时间）。** 两地11月24日分别发布的公测FAQ独立给出了时刻，换算后是同一时刻；这不证明账号、服务器或活动共用。
 
 | 地区 | 预下载开始（官方公告） | 正式服务计划 | 本次依据 |
 | --- | --- | --- | --- |

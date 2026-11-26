@@ -1,0 +1,18 @@
+---
+import { redeemCodes } from '../lib/redeem-data';
+import { sources } from '../lib/facts';
+import { redeemCodeRows } from '../lib/redeem-codes.mjs';
+const codes = redeemCodeRows({ codes: redeemCodes, sources });
+const active = codes.filter(code => code.status === 'active').length;
+---
+<section class="notice english-code-status" aria-labelledby="redeem-title" data-redeem-container>
+  <h2 id="redeem-title">Verified code records</h2>
+  <p>{active ? `${active} code record(s) are within their recorded validity window. Check the region and original terms below.` : 'There are currently no independently verified active codes in this site’s records. Unverified strings are not offered as working codes.'}</p>
+  {codes.length > 0 && <ul>{codes.map(item => <li><strong>{item.code}</strong> — {item.region === 'jp' ? 'Japan' : 'Mainland China'} · {item.status === 'expired' ? 'Expired' : item.status === 'scheduled' ? 'Not started' : 'Within recorded validity window'}<br/><time datetime={item.availableAt!}>{item.availableAt}</time> → <time datetime={item.expiresAt!}>{item.expiresAt}</time><br/>{item.sourceRefs.map(id => <a href={sources.find(source => source.id === id)!.url!} target="_blank" rel="noopener noreferrer">Read the official reward and redemption terms ↗ </a>)}</li>)}</ul>}
+</section>
+<style>
+  .english-code-status { display: block; line-height: 1.8; }
+  h2 { font-size: 1.2rem; margin-bottom: .6rem; }
+  li { margin: 1rem 0; overflow-wrap: anywhere; }
+  a { text-decoration: underline; }
+</style>

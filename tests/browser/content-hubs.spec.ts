@@ -42,8 +42,8 @@ test('region filter includes the Japanese-name Metsa and matches its count and p
 test('updates show latest releases first and consolidate official announcement links', async ({ page }) => {
   for (const locale of ['zh-hans', 'ja']) {
     await page.goto(`/${locale}/updates/`);
-    await expect(page.locator('[data-site-update]').first()).toHaveAttribute('data-site-update', '2026-11-25');
-    await expect(page.locator('[data-site-update]').first()).toContainText('30');
+    await expect(page.locator('[data-site-update]').first()).toHaveAttribute('data-site-update', '2026-11-26');
+    await expect(page.locator('[data-site-update]').first()).toContainText('37');
     const links = await page.locator('[data-announcement-url]').evaluateAll(nodes => nodes.map(node => node.getAttribute('data-announcement-url')!.replace(/\/$/, '')));
     expect(links.length).toBe(new Set(links).size);
     const dates = await page.locator('[data-announcement-url] time').allTextContents();

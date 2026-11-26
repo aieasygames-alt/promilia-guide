@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import questions from '../../data/english-faq.json';
+import { allGuides } from '../../lib/content';
+import { claims, sources } from '../../lib/facts';
+import { resolveQuestions } from '../../lib/content-navigation.mjs';
+import { locales, languageTag, origin } from '../../lib/publication.mjs';
+type Question = (typeof questions)[number]['questions'][number] & { available: boolean; href: string | null };
+type Group = Omit<(typeof questions)[number], 'questions'> & { questions: Question[] };
+const groups: Group[] = resolveQuestions(questions, 'en', { entries: await allGuides(), sources, claims });
+const alternates = [...locales.map(locale => ({ lang: languageTag[locale], href: `${origin}/${locale}/faq/` })), { lang: 'x-default', href: `${origin}/zh-hans/faq/` }];
+---
+<Base locale="en" title="Azur Promilia FAQ: Accounts, Rewards, Codes & Login" description="English answers to Azur Promilia release, accounts, Japan rewards, redeem codes, storage and login questions, with links to regional sources and support." alternates={alternates}>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/en/">Home</a><span>/</span>FAQ</nav>
+    <header class="page-heading"><p class="eyebrow">ANSWERS FOR YOUR FIRST SESSION</p><h1>Azur Promilia FAQ</h1><p>Find a short answer, then follow the guide for regional conditions, steps and original sources.</p></header>
+    <div class="faq-layout" data-pagefind-body>
+      <nav class="faq-index" aria-label="Question categories">{groups.map(group => <a href={`#${group.id}`}>{group.title.en} <span>{group.questions.length}</span></a>)}</nav>
+      <div><p class="notice">Japan and mainland China rules are kept separate. English guide text does not establish an English game client. Source dates and unverified gameplay details are explained in each guide.</p>
+        {groups.map(group => <section class="faq-section" aria-labelledby={group.id}><h2 id={group.id}>{group.title.en}</h2>{group.questions.map(question => <details class="faq-answer" id={`q-${question.id}`} data-faq-id={question.id} data-answer-current={String(question.available)}><summary>{question.question.en}</summary><div>{question.available ? <><p>{question.answer.en}</p><a href={question.href!}>Read the conditions, steps and sources →</a></> : <p>This answer's guide or evidence is being rechecked. <a href="/en/#guides">Browse the current English guides →</a></p>}</div></details>)}</section>)}
+        <p class="faq-footer">For account-specific issues, use <a href="/en/guides/support/">official game support</a>. For an error in this guide, <a href="/en/#corrections">report a correction</a>.</p>
+      </div>
+    </div>
+  </div>
+</Base>
+<script>
+  function revealQuestion() {
+    let id: string;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    if (!id.startsWith('q-')) return;
+    const question = document.getElementById(id);
+    if (question instanceof HTMLDetailsElement) question.open = true;
+  }
+  revealQuestion();
+  window.addEventListener('hashchange', revealQuestion);
+</script>
+<style>
+  .faq-layout { display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 3rem; margin-bottom: 5rem; }
+  .faq-index { align-self: start; position: sticky; top: 105px; display: grid; border-top: 2px solid var(--green); }
+  .faq-index a { display: flex; justify-content: space-between; gap: .5rem; padding: .9rem .2rem; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .faq-index span { color: var(--muted); } .faq-section { margin: 2.5rem 0; } .faq-section h2 { margin-bottom: 1rem; font-size: 1.35rem; scroll-margin-top: 105px; }
+  .faq-answer { border-bottom: 1px solid var(--line); scroll-margin-top: 105px; } summary { cursor: pointer; padding: 1.1rem .1rem; font-weight: 600; line-height: 1.7; }
+  .faq-answer div { padding: 0 1rem 1.3rem; } .faq-answer p { margin: .2rem 0 .9rem; line-height: 1.9; }
+  .faq-answer a, .faq-footer a { color: var(--green); text-decoration: underline; text-underline-offset: .25em; }
+  .faq-footer { color: var(--muted); line-height: 1.9; }
+  @media (max-width: 820px) { .faq-layout { grid-template-columns: 1fr; gap: 1rem; } .faq-index { position: static; } }
+</style>

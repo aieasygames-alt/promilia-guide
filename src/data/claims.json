@@ -175,7 +175,8 @@
       "getting-started",
       "download",
       "platforms",
-      "requirements"
+      "requirements",
+      "support"
     ],
     "conflicts": [],
     "value": {
@@ -652,7 +653,8 @@
       "download",
       "platforms",
       "getting-started",
-      "requirements"
+      "requirements",
+      "support"
     ],
     "conflicts": [],
     "value": {
@@ -1297,7 +1299,9 @@
     "gameRegion": "日本",
     "gameVersion": "2026-11-24 利用规约第4条6项",
     "affectedPages": [
-      "reroll"
+      "reroll",
+      "getting-started",
+      "support"
     ],
     "distributionScope": {
       "region": "jp",
