@@ -7,7 +7,7 @@ title: 蓝色星原容量与配置要求：手机、iPad和PC确认表
 description: 11月24日两地官方FAQ：手机建议预留55GB以上、PC120GB以上。列日本与国服最低/推荐配置、鸿蒙差异，并区分商店包体、追加资源和实际安装占用。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 公测前 / 国服实名、故障与客服分流核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
@@ -31,7 +31,8 @@ sourceRefs:
   - cn-ios-store-followup-2026-11-24
   - jp-support-page-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
-sourceRevision: 10
+  - cn-cloud-launch-2026-11-26
+sourceRevision: 11
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -47,6 +48,7 @@ related:
   - getting-started
   - reroll
   - support
+  - cloud-gaming
 order: 5
 minutes: 8
 revisions:
@@ -78,6 +80,8 @@ revisions:
     note: 补核国服实名、故障顺序与客服入口，区分日本重启对象；当前正文与译文待本批确认，不继承旧稿审核。
   - date: "2026-11-25"
     note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
+  - date: "2026-11-26"
+    note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -94,6 +98,7 @@ claimRefs:
   - jp-launch-troubleshooting
   - cn-launch-troubleshooting
   - cn-login-support-rules
+  - cn-cloud-gaming-launch
 claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
@@ -110,8 +115,9 @@ claimRevisions:
   jp-launch-troubleshooting: 1
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
+  cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-25"
+reviewedAt: "2026-11-26"
 ---
 
 ## 手机要留多少空间？PC要留多少？
@@ -120,6 +126,13 @@ reviewedAt: "2026-11-25"
 
 本页配置来自[国服公测FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)和[日本正式服务FAQ](https://azurpromilia.jp/contact)，均于11月24日发布并逐份读取。两地表格相似，各自适用范围仍分开保存；后续调整以对应地区原文为准。
 
+
+
+## Mac与容量不足：新增官方云游戏方式
+
+11月26日[官方云游戏公告](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/)确认中国大陆《云·蓝色星原》上线，电脑网页方式推荐Windows及macOS浏览器，手机另有Android与iOS云客户端。它和完整客户端的配置、空间要求分别核对；不是原生Mac安装包，也不是日本云服务公告。
+
+入口、首次600分钟、每日15分钟与免费累积上限600分钟见[云游戏与Mac指南](/zh-hans/guides/cloud-gaming/)。本站未实测云端登录、网络质量或角色数据；不要把云端推荐系统条件替代下面的原生版配置。
 
 ## 国服空间与闪退排查：先留下目标盘和发生阶段
 

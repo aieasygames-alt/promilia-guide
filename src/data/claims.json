@@ -1377,5 +1377,35 @@
     ],
     "conflicts": [],
     "value": {}
+  },
+  {
+    "id": "cn-cloud-gaming-launch",
+    "revision": 1,
+    "text": "中国大陆官方云游戏上线，支持公告所列电脑浏览器及移动客户端，免费与商品时长按独立条款。",
+    "localized": {
+      "zh-hans": {
+        "summary": "中国大陆官方云游戏已公告上线；Mac走网页，首次600分钟、每日15分钟、免费上限600分钟。",
+        "detail": "适用地区为中国大陆；不证明原生Mac、日本或全球英语服务。未完成登录、网络或进度实测。"
+      },
+      "ja": {
+        "summary": "中国本土の公式クラウド版を案内。Macはブラウザ方式、無料時間は初回600分・毎日15分・累積上限600分。",
+        "detail": "日本版やネイティブMac版の発表ではありません。ログイン・通信品質・データ共有は未検証です。"
+      }
+    },
+    "sourceRefs": [
+      "cn-cloud-launch-2026-11-26"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆官方云游戏",
+    "gameVersion": "2026-11-26 上线公告",
+    "verification": "verified",
+    "affectedPages": [
+      "cloud-gaming",
+      "download",
+      "requirements",
+      "platforms"
+    ],
+    "conflicts": [],
+    "value": {}
   }
 ]

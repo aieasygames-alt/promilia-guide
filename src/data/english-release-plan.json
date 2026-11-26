@@ -9,6 +9,7 @@
     { "contentId": "getting-started", "label": "First-session preparation", "requiredClaims": ["jp-kibo-web-rewards", "jp-preregister-benefits", "jp-account-deletion-terms"] },
     { "contentId": "resources", "label": "Launch rewards and mail", "requiredClaims": ["jp-preregister-benefits", "jp-kibo-web-rewards", "cn-kibo-web-rewards", "cn-preregister-mail-benefits"] },
     { "contentId": "redeem-codes", "label": "Code verification and regional rules", "requiredClaims": ["jp-kibo-web-rewards", "cn-kibo-web-rewards"] },
-    { "contentId": "support", "label": "Login and official support", "requiredClaims": ["cn-login-support-rules", "cn-launch-troubleshooting", "jp-launch-troubleshooting"] }
+    { "contentId": "support", "label": "Login and official support", "requiredClaims": ["cn-login-support-rules", "cn-launch-troubleshooting", "jp-launch-troubleshooting"] },
+    {"contentId":"cloud-gaming","label":"China cloud gaming, Mac and free time","requiredClaims":["cn-cloud-gaming-launch"]}
   ]
 }

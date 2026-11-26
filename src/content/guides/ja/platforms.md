@@ -34,7 +34,8 @@ sourceRefs:
   - cn-download-home-followup-2026-11-24
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+  - cn-cloud-launch-2026-11-26
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -47,6 +48,7 @@ aliases:
 related:
   - requirements
   - download
+  - cloud-gaming
 order: 4
 minutes: 4
 revisions:
@@ -82,7 +84,9 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
   - date: "2026-11-26"
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
-translatedFromRevision: 11
+  - date: "2026-11-26"
+    note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
+translatedFromRevision: 12
 claimRefs:
   - cn-ios-store
   - cn-ios-compatibility
@@ -102,6 +106,7 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-cloud-gaming-launch
 claimRevisions:
   cn-ios-store: 3
   cn-ios-compatibility: 1
@@ -121,6 +126,7 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-26"
 ---
@@ -137,6 +143,13 @@ reviewedAt: "2026-11-26"
 それぞれ[日本FAQ](https://azurpromilia.jp/contact)と[中国本土FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)を出典としています。今回はログインを行っておらず、実際の端末切り替えの成功記録ではありません。
 
 上の早見表は日本・中国本土のPC、Android、iPhone/iPadの6行です。中国本土FAQの鴻蒙は独立項目で、Android用リンクを代用しません。
+
+
+## Mac・容量不足と中国本土のクラウド版
+
+11月26日の[中国本土公式告知](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/)は「云·蓝色星原」の提供開始を案内しています。パソコンのブラウザにはmacOSも記載され、モバイルにはAndroid・iOSのクラウドアプリがあります。日本版のクラウド対応やネイティブMac版を発表したものではありません。
+
+[中国本土クラウド版ガイド](/ja/guides/cloud-gaming/)で入口、初回600分・毎日15分・無料分の累積上限600分を確認できます。通常版の動作環境と別に読み、Yostar IDでの利用や日本のデータ引継ぎは推測しないでください。当サイトではログインと通信品質を未検証です。
 
 ## 日本PC版の入手経路
 

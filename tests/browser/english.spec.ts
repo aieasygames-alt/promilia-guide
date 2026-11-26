@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const topics = ['global-release', 'download', 'requirements', 'getting-started', 'resources', 'redeem-codes', 'support'];
+const topics = ['global-release', 'download', 'requirements', 'cloud-gaming', 'getting-started', 'resources', 'redeem-codes', 'support'];
 
 test('English preparation checklist persists through Japanese switching and FAQ returns to its guide', async ({ page }) => {
   await page.goto('/en/guides/getting-started/');
@@ -13,7 +13,7 @@ test('English preparation checklist persists through Japanese switching and FAQ 
   await expect(page.locator('input[data-task="account"]')).toBeChecked();
   await page.locator('.related-questions a[href$="#q-first-day"]').click();
   await expect(page.locator('#q-first-day')).toHaveAttribute('open', '');
-  await expect(page.locator('[data-faq-id]')).toHaveCount(12);
+  await expect(page.locator('[data-faq-id]')).toHaveCount(15);
   await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
   await page.locator('#q-first-day a').click();
   await expect(page).toHaveURL(/\/en\/guides\/getting-started\/$/);
@@ -81,7 +81,7 @@ test('untranslated topics offer English home without a false article alternate',
   await expect(english).toHaveAttribute('href', '/en/');
   await expect(english).toContainText('首页');
   await english.click();
-  await expect(page.locator('#guides .guide-card')).toHaveCount(7);
+  await expect(page.locator('#guides .guide-card')).toHaveCount(8);
   await expect(page.locator('#regional-status')).toBeVisible();
   await expect(page.locator('.english-scope')).toContainText('not verified a global English release date');
 });

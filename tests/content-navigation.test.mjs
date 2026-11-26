@@ -16,7 +16,7 @@ const context = { entries, sources, claims };
 
 test('English FAQ answers resolve to English guides and stop exposing withdrawn reward evidence', () => {
   const resolved = resolveQuestions(englishGroups, 'en', context).flatMap(group => group.questions);
-  assert.equal(resolved.length, 12);
+  assert.equal(resolved.length, 15);
   assert.equal(new Set(resolved.map(question => question.id)).size, resolved.length);
   assert.ok(resolved.every(question => question.available && question.href.startsWith('/en/')));
   const withdrawn = sources.map(source => source.id === 'jp-kibo-adventure-rules-2026-11-21' ? { ...source, status: 'unavailable' } : source);
@@ -47,6 +47,15 @@ test('FAQ suppresses stale answers when a pinned claim changes or loses its sour
   const result = resolveQuestions(fixture, 'ja', { ...context, sources: lost })[0].questions[0];
   assert.equal(result.available, false);
   assert.equal(result.href, null);
+});
+
+test('cloud FAQ withdraws regional time and Mac guidance when the launch source is lost', () => {
+  const withdrawn = sources.map(source => source.id === 'cn-cloud-launch-2026-11-26' ? { ...source, status: 'unavailable' } : source);
+  for (const [locale, questions] of [['zh-hans', groups], ['ja', groups], ['en', englishGroups]]) {
+    const cloud = resolveQuestions(questions, locale, { ...context, sources: withdrawn }).find(group => group.id === 'cloud');
+    assert.equal(cloud.questions.length, 3);
+    assert.ok(cloud.questions.every(question => !question.available && question.href === null));
+  }
 });
 
 test('FAQ cannot route public answers to draft articles or missing translations', () => {

@@ -7,7 +7,7 @@ title: 蓝色星原PC与手机平台：Windows、PS5、Steam和互通核对
 description: 11月24日FAQ确认日本PC/Android/iOS同账号进度共享，国服官方服另含鸿蒙；区分渠道服、实际安装器、Steam/PS5与付费权益边界。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
+updatedAt: "2026-11-26"
 gameVersion: 公测前 / 2026-11-24 官方FAQ核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
@@ -34,7 +34,8 @@ sourceRefs:
   - cn-download-home-followup-2026-11-24
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+  - cn-cloud-launch-2026-11-26
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -47,6 +48,7 @@ aliases:
 related:
   - requirements
   - download
+  - cloud-gaming
 order: 4
 minutes: 4
 revisions:
@@ -80,6 +82,8 @@ revisions:
     note: 追加核对预下载开始公告、PC独立页面和商店版本变化；区分公告开放、文件取得与安装运行，本次修订仍待正文及译文确认。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-26"
+    note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
 claimRefs:
   - cn-ios-store
   - cn-ios-compatibility
@@ -99,6 +103,7 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-cloud-gaming-launch
 claimRevisions:
   cn-ios-store: 3
   cn-ios-compatibility: 1
@@ -118,8 +123,9 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-26"
 ---
 
 ## 支持哪些平台，进度能否互通？
@@ -134,6 +140,13 @@ reviewedAt: "2026-11-24"
 两行分别来自[日本FAQ](https://azurpromilia.jp/contact)和[国服FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/)。本轮没有登录验证，不把FAQ的支持说明改写为已成功跨端。
 
 上方设备速查仍覆盖国服/日本的PC、Android、iPhone/iPad六行；鸿蒙单列在国服FAQ，不使用Android操作链接代替它。
+
+
+## Mac与容量不足：新增官方云游戏方式
+
+11月26日[官方云游戏公告](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/)确认中国大陆《云·蓝色星原》上线，电脑网页方式推荐Windows及macOS浏览器，手机另有Android与iOS云客户端。它和完整客户端的配置、空间要求分别核对；不是原生Mac安装包，也不是日本云服务公告。
+
+入口、首次600分钟、每日15分钟与免费累积上限600分钟见[云游戏与Mac指南](/zh-hans/guides/cloud-gaming/)。本站未实测云端登录、网络质量或角色数据；不要把云端推荐系统条件替代下面的原生版配置。
 
 ## 日本PC版如何取得？
 
