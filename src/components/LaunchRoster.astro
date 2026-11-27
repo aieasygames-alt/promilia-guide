@@ -1,11 +1,12 @@
 ---
 import roster from '../data/launch-roster.json';
+import LaunchCharacterPool from './LaunchCharacterPool.astro';
 import { sources } from '../lib/facts';
 import type { Locale } from '../lib/content';
 interface Props { locale: Locale }
 const { locale } = Astro.props;
 const c = {
-  'zh-hans': {title:'官网当前公开的角色名称与标签', intro:'日本官网首页新增核对以下12个轮播名称，保留日本原名；这是公开预览，不代表完整实装名单。下方国服标签按另一官网独立记录。', jp:'日本官网角色预览', cn:'国服官网属性与定位预览', name:'国服原名', elements:'属性原文', role:'定位原文', rarity:'星级', note:'两地名称不在此强行对应；官网标签不能替代技能、配队、突破材料或强度比较。源千代的展示不证明其已进入当期卡池。', source:'官方来源', checked:'核对日期'},
+  'zh-hans': {title:'官网当前公开的角色名称与标签', intro:'日本官网首页已核对以下12个轮播名称，保留日本原名；这是公开预览，不代表完整实装名单。下方国服标签按另一官网独立记录。', jp:'日本官网角色预览', cn:'国服官网属性与定位预览', name:'国服原名', elements:'属性原文', role:'定位原文', rarity:'星级', note:'两地名称不在此强行对应；官网标签不能替代技能、配队、突破材料或强度比较。源千代的展示不证明其已进入当期卡池。', source:'官方来源', checked:'核对日期'},
   ja: {title:'公式トップで公開されたキャラ名・表示', intro:'日本公式トップの12名を原文で確認しました。全実装キャラの一覧ではありません。中国本土の表示は別の公式ページで確認しています。', jp:'日本公式のキャラクタープレビュー', cn:'中国本土公式の属性・役割プレビュー', name:'中国本土の原文名', elements:'属性の原文', role:'役割の原文', rarity:'星数', note:'地域間の名称を推測で対応させません。公開ラベルだけでは技能、編成、突破素材、強さは判断できず、源千代の表示も当期ガチャへの登場を証明しません。', source:'公式出典', checked:'確認日'},
   en: {title:'Official character preview names', intro:'Japan’s official homepage displays these twelve character names. They are kept in the original Japanese so you can match the regional page. This is a public preview, not a complete playable roster.', jp:'Japan homepage previews', cn:'Mainland China: original preview labels', name:'China original name', elements:'Element labels', role:'Role label', rarity:'Stars', note:'Japan and China names are not mapped by assumption. These labels do not establish skills, builds, materials or rankings. A preview of 源千代 does not prove availability in the current banner. Chinese labels are preserved as original source text, not presented as official English terminology.', source:'Official source', checked:'Source checked'},
 }[locale];
@@ -13,6 +14,7 @@ const jp = sources.find(s => s.id === roster.japanSource);
 const cn = sources.find(s => s.id === roster.chinaSource);
 const usable = (source: typeof jp) => source?.status === 'verified' && source.kind === 'official' && source.url && source.checkedAt && source.excerpt;
 ---
+<LaunchCharacterPool locale={locale}/>
 {(usable(jp) || usable(cn)) && <section class="launch-roster" aria-labelledby="launch-roster-title" data-launch-roster data-pagefind-body>
   <h2 id="launch-roster-title">{c.title}</h2><p>{c.intro}</p>
   {usable(jp) && <><h3>{c.jp}</h3><ul class="name-list" lang="ja">{roster.japanNames.map(name => <li>{name}</li>)}</ul><p class="source"><a href={jp!.url!} target="_blank" rel="noopener noreferrer">{c.source} ↗</a> · {c.checked}: <time datetime={jp!.checkedAt!}>{jp!.checkedAt}</time></p></>}

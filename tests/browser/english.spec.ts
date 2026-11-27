@@ -116,7 +116,7 @@ test('English launch facts retain regional and storage boundaries', async ({ pag
 test('English home and guides fit narrow phones and tablets with accessible language navigation', async ({ page }) => {
   for (const width of [320, 768]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const path of ['', ...topics.map(topic => `guides/${topic}/`), 'search/', 'faq/', 'characters/']) {
+    for (const path of ['', ...topics.map(topic => `guides/${topic}/`), 'search/', 'faq/', 'characters/', 'kibo/']) {
       await page.goto(`/en/${path}`);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${path} at ${width}px`).toBe(true);
       await page.locator('.language-selector summary').click();
