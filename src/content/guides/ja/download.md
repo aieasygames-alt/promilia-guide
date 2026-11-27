@@ -7,8 +7,8 @@ title: アズールプロミリアのダウンロード｜事前DL・PC・スマ
 description: 事前DLの公式入口とPC・スマホの導入順を案内。日本FAQに基づき検証エラー、追加データ失敗、起動遅延、強制終了の対処と問い合わせ先を整理します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始に向けた案内 / 公式FAQの確認日：2026-11-24
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -45,7 +45,8 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
-sourceRevision: 15
+  - cn-community-download-2026-11-27
+sourceRevision: 16
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -110,7 +111,9 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-26"
     note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
-translatedFromRevision: 15
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 16
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -162,8 +165,16 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
+
+## 配信後に追加データを何度も取得する場合
+
+11月27日に確認した[中国本土プレイヤーのTapTap投稿](https://www.taptap.cn/moment/875190460434352579)には、事前DL後も複数回の追加取得があったとあります。個人の記録であり、記載サイズを共通のパッチ容量や日本版の不具合にはできません。両地域のFAQは、本体導入後の追加データ取得自体を案内しています。
+
+毎回同じ内容を取り直す場合は、ランチャーとゲームの版、各回のリソース名・容量、検証の完了、空き容量、導入先、エラー原文を記録します。同じ保存先を使っているか、取得と書込みが完了しているかを確認し、地域別FAQの再試行・再起動へ進んでください。新バージョンの追加データと、同じ版での検証失敗の繰り返しは別に報告します。公式の修正告知を確認できていないため、「修正済み」とは案内しません。
+
+画面のカクつきは[動作環境とフレーム低下の確認](/ja/guides/requirements/)、継続する問題は[公式窓口への記録](/ja/guides/support/)へ。当サイトはパッチの再現・導入テストを実施していません。
 
 ## 事前DLは公式が開始を発表。PCは専用ページへ
 

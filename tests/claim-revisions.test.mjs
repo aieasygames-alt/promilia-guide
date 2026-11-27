@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { selectClaimRevisions } from '../src/lib/claim-revisions.mjs';
 import { readEditorialData } from '../scripts/editorial-data.mjs';
 import { regionalReleaseState } from '../src/lib/release-state.mjs';
+import { releaseSummary } from '../src/lib/editorial.mjs';
 import { distributionRows } from '../src/lib/distribution.mjs';
 import { readFile } from 'node:fs/promises';
 
@@ -24,7 +25,7 @@ test('unknown, duplicate and non-increasing staged facts fail in both modes', ()
   }
 });
 
-test('published FAQ opening times agree across build modes and never certify an open server', async () => {
+test('opening schedules alone never certify a server; independent launch evidence does', async () => {
   const approved = await readEditorialData({ preview: false });
   const preview = await readEditorialData({ preview: true });
   for (const [region, time, timeZone] of [['cn', '10:00', 'Asia/Shanghai'], ['jp', '11:00', 'Asia/Tokyo']]) {
@@ -34,8 +35,16 @@ test('published FAQ opening times agree across build modes and never certify an 
     assert.deepEqual(published, staged);
     assert.equal(staged.verification, 'verified');
     assert.deepEqual(staged.value, { date: '2026-11-26', time, timeZone });
-    assert.equal(regionalReleaseState({ ...preview, region, now: new Date('2026-11-26T02:00:00Z') }).stage, 'awaiting-confirmation');
-    assert.equal(regionalReleaseState({ ...approved, region, now: new Date('2026-11-26T02:00:00Z') }).stage, 'awaiting-confirmation');
+    const scheduleOnly = { ...approved, claims: approved.claims.filter(claim => claim.id !== `${region}-service-status`) };
+    assert.equal(regionalReleaseState({ ...scheduleOnly, region, now: new Date('2026-11-26T02:00:00Z') }).stage, 'awaiting-confirmation');
+    for (const data of [preview, approved]) {
+      assert.equal(regionalReleaseState({ ...data, region }).stage, 'open');
+      assert.equal(releaseSummary({ ...data, region, locale: 'zh-hans' }).claimId, `${region}-service-status`);
+      const service = data.claims.find(claim => claim.id === `${region}-service-status`);
+      const withdrawn = { ...data, sources: data.sources.map(source => service.sourceRefs.includes(source.id) ? { ...source, status: 'unavailable' } : source) };
+      assert.equal(regionalReleaseState({ ...withdrawn, region }).stage, 'awaiting-confirmation');
+      assert.match(releaseSummary({ ...withdrawn, region, locale: 'zh-hans' }).label, /待核验/);
+    }
   }
 });
 

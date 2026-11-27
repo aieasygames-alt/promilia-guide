@@ -4,11 +4,11 @@ locale: en
 slug: global-release
 section: guides
 title: "Azur Promilia Release Date: Japan, China & Global Status"
-description: Azur Promilia Japan and China launch times for November 26, 2026, official regional links, app IDs and what is verified about a global English release.
+description: Azur Promilia officially launched in Japan and mainland China on November 26, 2026. Compare regional launch notices, downloads and the unverified global English release status.
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-26"
-gameVersion: Pre-launch / regional FAQs checked November 24, 2026
+updatedAt: "2026-11-27"
+gameVersion: Post-launch / sources checked November 27, 2026
 gameRegion: Japan, mainland China; Traditional Chinese entries noted separately
 verification: official
 status: published
@@ -17,6 +17,8 @@ sourceRefs:
   - jp-pc-download-page-2026-11-24
   - jp-apple-metadata-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
 claimRefs:
   - cn-launch-date
   - cn-opening-time
@@ -33,6 +35,8 @@ claimRefs:
   - jp-public-launch-platform-rules
   - cn-public-launch-requirements
   - jp-public-launch-requirements
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-opening-time: 4
@@ -49,11 +53,13 @@ claimRevisions:
   jp-public-launch-platform-rules: 1
   cn-public-launch-requirements: 1
   jp-public-launch-requirements: 1
-sourceRevision: 11
-translatedFromRevision: 11
+  cn-service-status: 1
+  jp-service-status: 1
+sourceRevision: 12
+translatedFromRevision: 12
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -68,13 +74,21 @@ revisions:
     note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
   - date: "2026-11-26"
     note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
+  - date: "2026-11-27"
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
 order: 1
 minutes: 6
 ---
 
+## Japan and China have officially announced launch
+
+**Both publishers announced service began on November 26, 2026.** See the [Japan formal-service notice](https://azurpromilia.jp/news/5225) and [China public-launch notice](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576), checked November 27. This updates the earlier schedule-only status. An official launch announcement is not a real-time uptime check or proof that a particular account can log in.
+
+The original opening schedules were 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. Japan also published [limited-banner rules](/en/guides/banner-rules/) and [its first story event](/en/guides/resources/). A global English release date and English-client support remain unverified in these sources.
+
 ## When does Azur Promilia release?
 
-**The regional launch FAQs schedule Azur Promilia for November 26, 2026: 11:00 JST in Japan and 10:00 UTC+8 in mainland China. Both correspond to 02:00 UTC on November 26.** These are announced opening times, not confirmation that servers are already live.
+**The regional launch FAQs schedule Azur Promilia for November 26, 2026: 11:00 JST in Japan and 10:00 UTC+8 in mainland China. Both correspond to 02:00 UTC on November 26.** These are the original opening times; the November 26 launch notices above now independently confirm the service-start announcements.
 
 The [Japan launch FAQ](https://azurpromilia.jp/contact) and [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) were checked separately on November 24. Use the official notice for your intended region if the schedule changes.
 

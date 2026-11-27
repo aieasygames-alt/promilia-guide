@@ -3,12 +3,12 @@ contentId: launch
 locale: ja
 slug: launch
 section: guides
-title: アズールプロミリアは何時から？11月26日11時の開始予定
-description: 日本公式11月24日FAQは11月26日11:00開始予定と案内。事前DLは24日16:00。中国本土の独立日程、時差、登録任務切替と実際の開放を区別して解説。
+title: アズールプロミリア配信開始：11月26日の公式告知とログイン確認
+description: 日本・中国本土の11月26日サービス開始告知を確認。11:00 JST・10:00 UTC+8の当初日程、ダウンロード、初回報酬と現在のログイン確認を整理。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -29,7 +29,9 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - cn-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 12
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+sourceRevision: 13
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -81,7 +83,9 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
   - date: "2026-11-26"
     note: 原稿の絶対日付・表記修正に同期。ゲーム内仕様の追加・実測を示すものではありません。
-translatedFromRevision: 12
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 13
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -95,6 +99,8 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -108,11 +114,19 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
 
-## 日本版は11月26日11時にサービス開始予定
+## 配信後の案内：開始発表を確認し、現在のチュートリアルへ
+
+11月27日に[日本の正式サービス開始告知](https://azurpromilia.jp/news/5225)と[中国本土の公測開始告知](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)を独立確認しました。両地域とも11月26日に開始を発表済みです。以下の時刻は当初の開始日程で、現在のメンテナンスや個別アカウントのログイン状態は別途確認してください。
+
+観測機能の解放後は[日本の初心者30回・限定90／80回と券種](/ja/guides/banner-rules/)を先に確認。初回の無垢な痕跡20個を限定20回と混同せず、継続ログイン・任務の累計分と分けます。[初回ストーリーイベント](/ja/guides/resources/)は5つの結末と目標報酬を案内していますが、解放任務や結末の数値を実機で検証したものではありません。
+
+## 日本版の当初開始日程：11月26日11時
 
 **日本公式の11月24日FAQは、正式サービスを2026年11月26日11:00（日本時間）から開始予定と案内しています。** 中国本土は独立したFAQで同日10:00（UTC+8）と発表。同じ時刻ですが、アカウント・サーバー・特典が共通という意味ではありません。
 

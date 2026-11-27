@@ -4,11 +4,11 @@ locale: zh-hans
 slug: getting-started
 section: guides
 title: 蓝色星原新手准备：开服、领福利与首次抽卡检查
-description: 从本体和追加资源到创角、邮件领取、券种核对与首次抽卡，整理公测前可确认的准备顺序；日本预约特典和巢穴奖励分别检查。
+description: 公测后新手行动顺序：账号与客户端、邮箱福利、新手8票十连和30次保底、限定票券与首期活动；区分公告步骤与尚未实测的解锁任务链。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
-gameVersion: 公测前 / 国服实名、故障与客服分流核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: editorial
 status: published
@@ -33,7 +33,10 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
-sourceRevision: 15
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
+sourceRevision: 16
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -96,6 +99,8 @@ revisions:
     note: 补核国服实名、故障顺序与客服入口，区分日本重启对象；当前正文与译文待本批确认，不继承旧稿审核。
   - date: "2026-11-25"
     note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 checklist:
   - id: region
     text: 确认目标地区、服务器与账号渠道
@@ -131,6 +136,8 @@ claimRefs:
   - cn-test-recharge-return
   - cn-preregister-mail-benefits
   - cn-login-support-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -153,9 +160,17 @@ claimRevisions:
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
   cn-login-support-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-25"
+reviewedAt: "2026-11-27"
 ---
+
+## 公测后先看：正式开始公告与首轮资源
+
+11月27日已分别核对[国服公测正式开启](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)和[日本正式服务开始](https://azurpromilia.jp/news/5225)公告，两地均于11月26日宣布上线。下文的具体开服小时保留原始日程；当前维护、排队和个人登录问题另查最新说明。
+
+进入后跟随当前教程，观测解锁后先区分票券：国服新手纯粹忆痕8张十连、30次内五星，角色限定与灵子限定分别使用璀璨忆痕、析光忆痕。日本也已独立确认新手30、限定90／80，见[地区抽卡表](/zh-hans/guides/banner-rules/)。随后检查[首登福利与日本首期活动](/zh-hans/guides/resources/)，家园生产遇到缺粮可看[公测首日派遣反馈](/zh-hans/systems/home/)。完整解锁任务链、重置操作与通关耗时仍未实测。
 
 ## 预下载已公告开始，先确认空间、账号和追加资源
 
@@ -267,7 +282,7 @@ reviewedAt: "2026-11-25"
 | 家园首次产出 | 确认前置，完成一次种植或制作并收取 | 记任务锁定提示，不跳写建筑顺序；见[家园](/zh-hans/systems/home/) |
 | 一只奇波的实际用途 | 记录来源，并复现一次解决探索、战斗或岗位需求的结果 | 保留能力原文与阻塞，网页已获奖励不算野外获取完成；见[奇波](/zh-hans/systems/kibo/) |
 
-本页仍是公测前准备稿。正式版任务名、地区差异、客户端构建、消耗和用时取得后，才能将上表替换为可复现的实机步骤。
+本页已加入公测后的公告与入口，但完整任务名、客户端构建、消耗和用时尚未取得实测记录，上表仍是核对顺序。
 
 ## 每天时间少，哪些事情先做
 

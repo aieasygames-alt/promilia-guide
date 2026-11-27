@@ -7,8 +7,8 @@ title: 蓝色星原官方下载与预下载：国服、日本PC和手机入口
 description: 两地官方已宣布预下载开始，列PC和手机入口；按日本FAQ分流校验错误、追加资源失败、启动慢和闪退，附官方客服入口与故障记录表。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 公测前 / 国服实名、故障与客服分流核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -45,7 +45,8 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
-sourceRevision: 15
+  - cn-community-download-2026-11-27
+sourceRevision: 16
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -108,6 +109,8 @@ revisions:
     note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
   - date: "2026-11-26"
     note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -159,8 +162,16 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
+
+## 公测后反复下载资源：先区分追加更新与循环失败
+
+11月27日核查的[TapTap玩家原帖](https://www.taptap.cn/moment/875190460434352579)描述预下载、上线后又多次追加资源。这是国服个人经历，帖中大小是个人记录，不能当作统一补丁体积，也不能证明所有追加下载都是故障。两地FAQ原本就说明安装本体后还需追加数据。
+
+如果每次启动都重复同一份内容，先记录启动器／游戏版本、每轮资源名与大小、是否完成校验、剩余空间、安装目录及完整错误。检查是否实际使用同一目录、下载是否成功写入且保存；按本页对应地区FAQ重试与重启。不同版本追加新资源，与同版本反复校验失败应分开反馈。没有版本和文件记录时，不先以“已优化”或“已修复”下结论，也不把反复卸载当作首选。
+
+客户端能进但画面掉帧，与下载失败是不同问题，见[配置与掉帧排查](/zh-hans/guides/requirements/)；仍失败时带记录联系[对应地区客服](/zh-hans/guides/support/)。本页未完成下载、安装或补丁复现实测。
 
 ## 两地官方已宣布预下载开始，日本PC有独立下载页
 

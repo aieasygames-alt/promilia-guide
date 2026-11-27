@@ -7,14 +7,15 @@ title: "Azur Promilia Download Guide: Japan & China PC, Android, iOS"
 description: Find official Azur Promilia PC and mobile download routes for Japan and China. Includes preload steps, account differences and regional download-error fixes.
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-26"
-gameVersion: Pre-launch / regional FAQs checked November 24, 2026
+updatedAt: "2026-11-27"
+gameVersion: Post-launch / sources checked November 27, 2026
 gameRegion: Japan and mainland China, described separately
 verification: official
 status: published
 sourceRefs:
   - jp-pc-download-page-2026-11-24
   - cn-cloud-launch-2026-11-26
+  - cn-community-download-2026-11-27
 claimRefs:
   - cn-ios-compatibility
   - cn-launch-date
@@ -61,11 +62,11 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 15
-translatedFromRevision: 15
+sourceRevision: 16
+translatedFromRevision: 16
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -83,9 +84,19 @@ revisions:
     note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
   - date: "2026-11-26"
     note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
+  - date: "2026-11-27"
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
 order: 2
 minutes: 8
 ---
+
+## Post-launch report: repeated additional-resource downloads
+
+A [mainland-China player's TapTap post](https://www.taptap.cn/moment/875190460434352579), checked November 27, describes multiple additional downloads after pre-download and launch. It is an individual account, not a confirmed universal patch size or a Japan-wide issue. Both regional FAQs already explain that the installed base client needs additional resources.
+
+If the same content downloads on every start, record the launcher and game versions, each resource name and size, whether verification completed, free space, installation directory and exact error. Check whether the same location is being used and whether the download and disk write actually finish. Follow the correct regional retry and restart sequence below. New resources for a new version differ from the same version repeatedly failing verification; report the two cases separately.
+
+This site has not reproduced the loop or verified an official post-launch fix. Repeated deletion and reinstallation should not replace collecting the version and file details first. If the game runs but stutters, use [requirements and frame-drop checks](/en/guides/requirements/). For unresolved download failures, prepare a report for [regional official support](/en/guides/support/).
 
 ## Where is the official Azur Promilia download?
 

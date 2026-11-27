@@ -9,9 +9,9 @@ const entries = await allGuides();
 const article = entries.find(entry => entry.data.locale === locale && entry.data.contentId === 'banner-rules' && isPublished(entry.data, entries));
 const claim = claims.find(claim => claim.id === 'cn-banner-rules-system');
 const source = sources.find(source => source.id === 'cn-character-banner-2026-11-24');
-// These names and rarities reproduce the approved article's revision 3 announcement.
+// These names and rarities reproduce the approved article's revision 4 announcement.
 // A changed or withdrawn dependency hides this summary until it is checked again.
-const available = article && article.data.claimRevisions?.['cn-banner-rules-system'] === 3 && claim?.revision === 3 && isVerifiedClaim(claim, sources) && source?.status === 'verified';
+const available = article && article.data.claimRevisions?.['cn-banner-rules-system'] === 4 && claim?.revision === 4 && isVerifiedClaim(claim, sources) && source?.status === 'verified';
 const rows = [
   { name: '涂山小玉', note: ja ? '限定星5キャラ' : '限定五星角色' },
   { name: '枫糖', note: ja ? '確率アップの星4キャラ' : '概率提升四星角色' },
@@ -19,7 +19,7 @@ const rows = [
 ];
 const anchor = ja ? '中国本土限定キャラと霊子の天井比較' : '当期卡池对象与结束时间';
 ---
-{available && <section class="banner-characters" aria-labelledby="banner-characters-title" data-pagefind-body data-banner-characters data-claim-revision="3">
+{available && <section class="banner-characters" aria-labelledby="banner-characters-title" data-pagefind-body data-banner-characters data-claim-revision="4">
   <p class="banner-region">{ja ? '中国本土の公式告知 · 2026年11月24日' : '国服官方公告 · 2026年11月24日'}</p>
   <h2 id="banner-characters-title">{ja ? '中国本土の公測ガチャで告知されたキャラ' : '国服公测卡池已公告角色'}</h2>
   <p>{ja ? '「桃笺为契」の対象です。名前は中国本土の原文表記で、日本版の名称・開催予定を示しません。' : '以下为「桃笺为契」公告列出的对象；与下方官网人物介绍分开查阅。'}</p>

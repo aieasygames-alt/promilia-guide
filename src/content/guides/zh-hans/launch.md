@@ -3,12 +3,12 @@ contentId: launch
 locale: zh-hans
 slug: launch
 section: guides
-title: 蓝色星原公测时间与预下载：国服、日本日期和时区
-description: 11月24日两地FAQ：国服11月26日10:00（UTC+8）、日本同日11:00计划开服。列预下载时刻、时差、任务切换和登录前检查，实际开放状态另核。
+title: 蓝色星原已公测：11月26日上线公告、时间与登录排查
+description: 两地11月26日官方已宣布正式上线。核对国服10:00、日本11:00原始开服日程、下载、首登福利、抽卡规则与公测后登录问题。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 公测前 / 2026-11-24 官方FAQ核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -29,7 +29,9 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - cn-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 12
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+sourceRevision: 13
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -81,6 +83,8 @@ revisions:
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
   - date: "2026-11-26"
     note: 按多语言审计修正日期或术语表述；按项目负责人本轮开发及既有上线授权发布，不另称独立语言审校或正式服实测。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -94,6 +98,8 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -107,9 +113,17 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
+
+## 公测后先看：正式开始公告与首轮资源
+
+11月27日已分别核对[国服公测正式开启](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)和[日本正式服务开始](https://azurpromilia.jp/news/5225)公告，两地均于11月26日宣布上线。下文的具体开服小时保留原始日程；当前维护、排队和个人登录问题另查最新说明。
+
+进入后跟随当前教程，观测解锁后先区分票券：国服新手纯粹忆痕8张十连、30次内五星，角色限定与灵子限定分别使用璀璨忆痕、析光忆痕。日本也已独立确认新手30、限定90／80，见[地区抽卡表](/zh-hans/guides/banner-rules/)。随后检查[首登福利与日本首期活动](/zh-hans/guides/resources/)，家园生产遇到缺粮可看[公测首日派遣反馈](/zh-hans/systems/home/)。完整解锁任务链、重置操作与通关耗时仍未实测。
 
 ## 国服、日本分别几点开服？
 

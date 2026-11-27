@@ -7,14 +7,15 @@ title: "Azur Promilia Requirements: PC, Android, iOS & Storage"
 description: "Azur Promilia PC, Android and iPhone requirements. Compare regional hardware specs and recommended free storage: at least 55GB on mobile and 120GB on PC."
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-26"
-gameVersion: Pre-launch / regional FAQs checked November 24, 2026
+updatedAt: "2026-11-27"
+gameVersion: Post-launch / sources checked November 27, 2026
 gameRegion: Japan and mainland China, described separately
 verification: official
 status: published
 sourceRefs:
   - cn-ios-store-followup-2026-11-24
   - cn-cloud-launch-2026-11-26
+  - cn-community-performance-2026-11-27
 claimRefs:
   - cn-ios-compatibility
   - cn-platform-details
@@ -43,11 +44,11 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 11
-translatedFromRevision: 11
+sourceRevision: 12
+translatedFromRevision: 12
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -65,6 +66,8 @@ revisions:
     note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
   - date: "2026-11-26"
     note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
+  - date: "2026-11-27"
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
 order: 3
 minutes: 8
 ---
@@ -188,3 +191,11 @@ The FAQs recommend an SSD. This guide does not recast that recommendation as a s
 ### Can PC and mobile share progress?
 
 Japan's FAQ confirms same-account progress on PC, Android and iOS. China's official service confirms PC, Android, iOS and HarmonyOS, with some channel-server exceptions. This does not establish cross-region progress or shared paid currency. See [regional availability](/en/guides/global-release/).
+
+## Post-launch frame drops and low utilization: what to record
+
+A [TapTap report by kelinton](https://www.taptap.cn/moment/875181885217573464), checked November 27, describes low utilization and frame drops at high settings and 2K resolution in mainland China. It does not provide a complete controlled comparison of hardware, drivers and scenes. Treat it as an individual report, not a universal GPU benchmark or evidence that the Japan client has the same issue. This site has not performed a performance benchmark.
+
+Separate low frame rate, network latency, resource-loading pauses and crashes. Record the frame cap, vertical synchronization, resolution, render scale, CPU/GPU/RAM, driver, power mode, selected GPU and exact scene. Compare the same place and a similar viewpoint, changing one setting at a time and recording the result. These are editorial diagnostic suggestions, not a tested fix.
+
+Meeting minimum requirements does not promise stable performance at every setting. An SSD recommendation also cannot explain every frame drop. If the issue persists, send the version, time, settings and a short recording to [official support](/en/guides/support/). Repeated resource downloads have a separate [download checklist](/en/guides/download/). The sources checked here do not establish an official post-launch fix or compensation for these reports.

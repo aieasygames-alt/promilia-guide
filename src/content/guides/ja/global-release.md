@@ -7,8 +7,8 @@ title: アズールプロミリアの日本・中国本土・繁体字版｜公�
 description: 日本・中国本土・繁体字公式の入口とアプリIDを対照。台湾App Storeリンク、配信日、登録・インストール・地域間共有を分けて確認します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本・繁体字公式（地域別に記載）
 verification: official
 status: published
@@ -33,7 +33,9 @@ sourceRefs:
   - cn-ios-store-followup-2026-11-24
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -84,7 +86,9 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
   - date: "2026-11-26"
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
-translatedFromRevision: 11
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 12
 claimRefs:
   - cn-launch-date
   - cn-ios-store
@@ -101,6 +105,8 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-ios-store: 3
@@ -117,9 +123,15 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
+
+## 11月26日、両地域の公式がサービス開始を発表
+
+[日本の正式サービス開始告知](https://azurpromilia.jp/news/5225)と[中国本土の公測開始告知](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)を11月27日に確認しました。予定時刻からの推測ではなく、各運営の開始発表です。現在のメンテナンスや個別アカウントのログイン状態は別途確認してください。日本の[初回ガチャ](/ja/guides/banner-rules/)と[ストーリーイベント](/ja/guides/resources/)も更新済みです。
 
 ## 地域ごとに確認した配信状況
 

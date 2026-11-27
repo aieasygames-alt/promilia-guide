@@ -5,11 +5,11 @@ test('home action cards use independent regions and do not promote unverified cl
     await page.goto(`/${locale}/`);
     const actions = page.locator('[data-launch-actions]');
     await expect(actions.locator('[data-launch-region]')).toHaveCount(2);
-    await expect(actions.locator('[data-launch-clock]')).toHaveCount(2);
+    await expect(actions.locator('[data-launch-clock]')).toHaveCount(0);
     await expect(actions.locator('[data-launch-region="cn"] time[datetime="2026-11-26T10:00:00+08:00"]')).toHaveText('2026-11-26 10:00 (UTC+8)');
     await expect(actions.locator('[data-launch-region="jp"] time[datetime="2026-11-26T11:00:00+09:00"]')).toHaveText('2026-11-26 11:00 (JST / UTC+9)');
-    await expect(actions.locator('[data-launch-region="cn"]')).toHaveAttribute('data-service-stage', /^(announced|awaiting-confirmation)$/);
-    await expect(actions.locator('[data-launch-region="jp"]')).toHaveAttribute('data-service-stage', /^(announced|awaiting-confirmation)$/);
+    await expect(actions.locator('[data-launch-region="cn"]')).toHaveAttribute('data-service-stage', 'open');
+    await expect(actions.locator('[data-launch-region="jp"]')).toHaveAttribute('data-service-stage', 'open');
     await expect(actions.locator('[data-home-code-count]')).toContainText(/暂无|ありません/);
     await expect(page.locator('body')).not.toContainText(/PROMILIA1120LIVE|STARVOYAGE2026|AZUR1126READY|仅剩 6 天|あと6日/);
     await actions.locator('[data-launch-region="jp"] a').click();

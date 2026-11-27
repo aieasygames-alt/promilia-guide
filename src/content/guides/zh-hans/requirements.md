@@ -7,8 +7,8 @@ title: 蓝色星原容量与配置要求：手机、iPad和PC确认表
 description: 11月24日两地官方FAQ：手机建议预留55GB以上、PC120GB以上。列日本与国服最低/推荐配置、鸿蒙差异，并区分商店包体、追加资源和实际安装占用。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 公测前 / 国服实名、故障与客服分流核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -32,7 +32,8 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
-sourceRevision: 11
+  - cn-community-performance-2026-11-27
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -82,6 +83,8 @@ revisions:
     note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
   - date: "2026-11-26"
     note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -117,7 +120,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
 
 ## 手机要留多少空间？PC要留多少？
@@ -231,3 +234,11 @@ iOS机型与内存是公告分别列出的字段，本页按原文并列保留�
 ## 预下载已公告开始，容量够了去哪里下？
 
 两地均已发布开始公告。日本PC有[官方Windows独立下载页](https://azurpromilia.jp/PCdownload)，国服官网已显示PC和Android下载按钮；本轮没有取得安装文件或测量完整占用。国服App Store后续刷新为1.0.1、3.9GB，分发体积仍不能替代55GB建议预留。按[下载与追加资源步骤](/zh-hans/guides/download/)继续，先核对地区和渠道。
+
+## 公测后掉帧与低占用反馈：怎样定位问题？
+
+11月27日核查的[玩家kelinton原帖](https://www.taptap.cn/moment/875181885217573464)报告2K高画质下利用率偏低与掉帧，但没有完整统一的硬件、驱动和场景对照。它能说明有玩家遇到此类体验，不能推出所有配置都同样卡、某块显卡的稳定帧数或日本版也必现；本页未完成性能基准测试。
+
+排查时先区分画面帧率下降、网络延迟、资源加载停顿与闪退。保留当前帧率上限／垂直同步设置、分辨率、渲染比例、CPU/GPU/RAM、驱动、电源模式、是否使用独立显卡及实际场景。用同一地点和相近视角，每次只改一个设置并记录变化，避免把换场景误认为某开关的效果。这是编辑排查建议，不保证某项设置能修复。
+
+满足最低配置不等于任意画质都稳定运行；官方推荐SSD也不等于存储介质能解释所有掉帧。持续异常请附版本、时间、录屏和设置给[官方客服](/zh-hans/guides/support/)，追加下载问题另见[下载排查](/zh-hans/guides/download/)。未取得独立修复公告前不标“已修复”或承诺补偿。

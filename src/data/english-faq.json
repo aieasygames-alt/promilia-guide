@@ -1,37 +1,269 @@
 [
   {
-    "id": "start", "title": {"en": "Release, accounts and getting started"},
+    "id": "start",
+    "title": {
+      "en": "Release, accounts and getting started"
+    },
     "questions": [
-      {"id":"opening","contentId":"global-release","claimRevisions":{"cn-opening-time":4,"jp-opening-time":2},"question":{"en":"When does Azur Promilia open in Japan and China?"},"answer":{"en":"The announced schedule is November 26, 2026: 11:00 JST in Japan and 10:00 UTC+8 in mainland China, both 02:00 UTC. These are regional schedules, not confirmation of current server availability. Check the latest regional notices before attempting to log in."}},
-      {"id":"global","contentId":"global-release","question":{"en":"Does an English guide mean there is a global English server?"},"answer":{"en":"No. The sources used for these guides have not established a global English release date or English-client support. Reading in English does not change the game region, publisher, account rules or store eligibility."}},
-      {"id":"first-day","contentId":"getting-started","question":{"en":"What should a beginner do before creating a character?"},"answer":{"en":"Check the regional client and login account, especially the Yostar ID used for Japan's nest event. Verify installation and service status, then follow the current tutorial. Check mail and reward conditions before spending or recreating a character; exact unlock levels and a timed first-pull route remain unverified."}},
-      {"id":"progress","contentId":"download","claimRevisions":{"cn-public-launch-platform-rules":1,"jp-public-launch-platform-rules":1},"question":{"en":"Can I share progress between PC and mobile?"},"answer":{"en":"Japan's FAQ confirms same-account progress across PC, Android and iOS. China's official service separately includes PC, Android, iOS and HarmonyOS, with channel editions needing their own checks. This does not establish Japan–China transfers or shared paid currency across every platform."}}
+      {
+        "id": "opening",
+        "contentId": "global-release",
+        "claimRevisions": {
+          "cn-opening-time": 4,
+          "jp-opening-time": 2,
+          "cn-service-status": 1,
+          "jp-service-status": 1
+        },
+        "question": {
+          "en": "When does Azur Promilia open in Japan and China?"
+        },
+        "answer": {
+          "en": "Both regional publishers announced service began on November 26, 2026; the notices were checked November 27. Original opening times were 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. These announcements do not establish current uptime, personal login eligibility or a global English release."
+        }
+      },
+      {
+        "id": "global",
+        "contentId": "global-release",
+        "question": {
+          "en": "Does an English guide mean there is a global English server?"
+        },
+        "answer": {
+          "en": "No. The sources used for these guides have not established a global English release date or English-client support. Reading in English does not change the game region, publisher, account rules or store eligibility."
+        }
+      },
+      {
+        "id": "first-day",
+        "contentId": "getting-started",
+        "question": {
+          "en": "What should a beginner do before creating a character?"
+        },
+        "answer": {
+          "en": "Check the regional client and login account, especially the Yostar ID used for Japan's nest event. Verify installation and service status, then follow the current tutorial. Check mail and reward conditions before spending or recreating a character; exact unlock levels and a timed first-pull route remain unverified."
+        }
+      },
+      {
+        "id": "progress",
+        "contentId": "download",
+        "claimRevisions": {
+          "cn-public-launch-platform-rules": 1,
+          "jp-public-launch-platform-rules": 1
+        },
+        "question": {
+          "en": "Can I share progress between PC and mobile?"
+        },
+        "answer": {
+          "en": "Japan's FAQ confirms same-account progress across PC, Android and iOS. China's official service separately includes PC, Android, iOS and HarmonyOS, with channel editions needing their own checks. This does not establish Japan–China transfers or shared paid currency across every platform."
+        }
+      }
     ]
   },
   {
-    "id": "rewards", "title": {"en": "Rewards and codes"},
+    "id": "rewards",
+    "title": {
+      "en": "Rewards and codes"
+    },
     "questions": [
-      {"id":"mail-rewards","contentId":"resources","claimRevisions":{"jp-preregister-benefits":1},"question":{"en":"When do Japan preregistration rewards arrive?"},"answer":{"en":"Japan's FAQ describes in-game mail after service starts and names 星彩・クロディーメ and 無垢な痕跡 among the benefits. Check the current distribution notice for eligibility and quantities. Pre-downloading alone is not proof of mail delivery, and the FAQ does not promise a fixed delay in minutes."}},
-      {"id":"kibo-rewards","contentId":"resources","claimRevisions":{"jp-preregister-benefits":1,"jp-kibo-web-rewards":1},"question":{"en":"Are 星彩・クロディーメ and 星彩・キラミィ the same gift?"},"answer":{"en":"No. Japan's preregistration / social benefits list 星彩・クロディーメ; the nest exploration event lists 星彩・キラミィ. Track the participating account, earned web items and receiving character for the nest event separately from preregistration mail."}},
-      {"id":"delete-account","contentId":"getting-started","claimRevisions":{"jp-account-deletion-terms":1,"jp-kibo-web-rewards":1},"question":{"en":"Can I delete my account to reroll or reclaim gifts?"},"answer":{"en":"Japan's terms state that deleted accounts cannot be restored, including accidental deletion. The nest event assigns earned rewards to the participating Yostar ID's first created character. Neither rule establishes a repeatable reroll method or a way to move gifts; check existing progress and bindings first."}},
-      {"id":"codes","contentId":"redeem-codes","question":{"en":"Are there verified working Azur Promilia codes?"},"answer":{"en":"This site's checked records currently contain no independently verified active codes. That is not a statement about every official channel. A usable code needs original evidence for its exact string, region, reward, method and validity window; unsupported old strings are not offered as working codes."}},
-      {"id":"code-input","contentId":"redeem-codes","question":{"en":"Where do I enter a redeem code?"},"answer":{"en":"A launch-client menu or official web redemption form has not been verified from this guide's sources. Follow the input route stated in the original regional code announcement. Preregistration mail and nest exploration are separate programs and do not by themselves establish a code-entry method."}}
+      {
+        "id": "mail-rewards",
+        "contentId": "resources",
+        "claimRevisions": {
+          "jp-preregister-benefits": 1
+        },
+        "question": {
+          "en": "When do Japan preregistration rewards arrive?"
+        },
+        "answer": {
+          "en": "Japan's FAQ describes in-game mail after service starts and names 星彩・クロディーメ and 無垢な痕跡 among the benefits. Check the current distribution notice for eligibility and quantities. Pre-downloading alone is not proof of mail delivery, and the FAQ does not promise a fixed delay in minutes."
+        }
+      },
+      {
+        "id": "kibo-rewards",
+        "contentId": "resources",
+        "claimRevisions": {
+          "jp-preregister-benefits": 1,
+          "jp-kibo-web-rewards": 1
+        },
+        "question": {
+          "en": "Are 星彩・クロディーメ and 星彩・キラミィ the same gift?"
+        },
+        "answer": {
+          "en": "No. Japan's preregistration / social benefits list 星彩・クロディーメ; the nest exploration event lists 星彩・キラミィ. Track the participating account, earned web items and receiving character for the nest event separately from preregistration mail."
+        }
+      },
+      {
+        "id": "delete-account",
+        "contentId": "getting-started",
+        "claimRevisions": {
+          "jp-account-deletion-terms": 1,
+          "jp-kibo-web-rewards": 1
+        },
+        "question": {
+          "en": "Can I delete my account to reroll or reclaim gifts?"
+        },
+        "answer": {
+          "en": "Japan's terms state that deleted accounts cannot be restored, including accidental deletion. The nest event assigns earned rewards to the participating Yostar ID's first created character. Neither rule establishes a repeatable reroll method or a way to move gifts; check existing progress and bindings first."
+        }
+      },
+      {
+        "id": "codes",
+        "contentId": "redeem-codes",
+        "question": {
+          "en": "Are there verified working Azur Promilia codes?"
+        },
+        "answer": {
+          "en": "This site's checked records currently contain no independently verified active codes. That is not a statement about every official channel. A usable code needs original evidence for its exact string, region, reward, method and validity window; unsupported old strings are not offered as working codes."
+        }
+      },
+      {
+        "id": "code-input",
+        "contentId": "redeem-codes",
+        "question": {
+          "en": "Where do I enter a redeem code?"
+        },
+        "answer": {
+          "en": "A launch-client menu or official web redemption form has not been verified from this guide's sources. Follow the input route stated in the original regional code announcement. Preregistration mail and nest exploration are separate programs and do not by themselves establish a code-entry method."
+        }
+      },
+      {
+        "id": "beginner-cost",
+        "contentId": "banner-rules",
+        "question": {
+          "en": "Does the beginner 30 guarantee cost 30 tickets?"
+        },
+        "answer": {
+          "en": "No. China uses eight 纯粹忆痕 per ten observations, and Japan independently confirms eight 無垢な痕跡 per ten. Three ten-pulls cost 24 tickets and count as 30 observations. The banner ends at cumulative 30; this is not a selectable five-star or 30 limited pulls."
+        },
+        "claimRevisions": {
+          "jp-banner-rules-system": 2
+        }
+      },
+      {
+        "id": "first-story-event",
+        "contentId": "resources",
+        "question": {
+          "en": "When does the first Japan story event end?"
+        },
+        "answer": {
+          "en": "Japan’s 花逢ひの縁契りて ends January 5, 2027 at 04:59 JST. Training four attributes and making choices leads to five endings. Target rewards include 秘虹晶 ×600, 無垢な痕跡 ×5 and 凪いだ一日 ×2. Exact ending thresholds and optimal routes are unverified. The first limited banners end earlier, on December 17."
+        }
+      },
+      {
+        "id": "pity",
+        "contentId": "banner-rules",
+        "claimRevisions": {
+          "cn-banner-rules-system": 4,
+          "jp-banner-rules-system": 2
+        },
+        "question": {
+          "en": "What are the character and anima guarantees?"
+        },
+        "answer": {
+          "en": "Japan independently confirms 90 observations for the featured limited character and 80 for the featured limited anima, carrying within each category. China’s disclosures confirm its own 90/80 and publish base rates of 0.800%/1.200%. Do not apply China’s probability curve to Japan or mix banner histories."
+        }
+      }
     ]
   },
   {
-    "id": "help", "title": {"en": "Storage, login and official support"},
+    "id": "help",
+    "title": {
+      "en": "Storage, login and official support"
+    },
     "questions": [
-      {"id":"space","contentId":"requirements","claimRevisions":{"cn-public-launch-requirements":1,"jp-public-launch-requirements":1},"question":{"en":"Does Azur Promilia need 55GB of RAM?"},"answer":{"en":"No. The regional FAQs recommend at least 55GB of free mobile storage and 120GB on PC. Storage is different from RAM, the initial store payload and final installed space. Check the actual installation drive and the regional CPU, GPU, RAM and OS requirements."}},
-      {"id":"login","contentId":"support","claimRevisions":{"jp-launch-troubleshooting":1,"cn-login-support-rules":1},"question":{"en":"The download finished. Why can I not log in?"},"answer":{"en":"Separate extra-data errors, server opening or maintenance, and account prompts. Check the current regional notice and client. China's FAQ additionally requires real-name verification; that is not a Japan requirement. Record the exact error and attempt time, then use the appropriate regional support route."}},
-      {"id":"support-language","contentId":"support","question":{"en":"Does Japan support accept English or offer phone help?"},"answer":{"en":"The Japan contact page states that inquiries are accepted in Japanese, with replies to the email address supplied and no telephone support. Check spam folders and receipt settings for @azurpromilia.jp. The page does not promise a fixed response time; our guide includes Japanese field labels to help prepare a report."}}
+      {
+        "id": "space",
+        "contentId": "requirements",
+        "claimRevisions": {
+          "cn-public-launch-requirements": 1,
+          "jp-public-launch-requirements": 1
+        },
+        "question": {
+          "en": "Does Azur Promilia need 55GB of RAM?"
+        },
+        "answer": {
+          "en": "No. The regional FAQs recommend at least 55GB of free mobile storage and 120GB on PC. Storage is different from RAM, the initial store payload and final installed space. Check the actual installation drive and the regional CPU, GPU, RAM and OS requirements."
+        }
+      },
+      {
+        "id": "login",
+        "contentId": "support",
+        "claimRevisions": {
+          "jp-launch-troubleshooting": 1,
+          "cn-login-support-rules": 1
+        },
+        "question": {
+          "en": "The download finished. Why can I not log in?"
+        },
+        "answer": {
+          "en": "Separate extra-data errors, server opening or maintenance, and account prompts. Check the current regional notice and client. China's FAQ additionally requires real-name verification; that is not a Japan requirement. Record the exact error and attempt time, then use the appropriate regional support route."
+        }
+      },
+      {
+        "id": "support-language",
+        "contentId": "support",
+        "question": {
+          "en": "Does Japan support accept English or offer phone help?"
+        },
+        "answer": {
+          "en": "The Japan contact page states that inquiries are accepted in Japanese, with replies to the email address supplied and no telephone support. Check spam folders and receipt settings for @azurpromilia.jp. The page does not promise a fixed response time; our guide includes Japanese field labels to help prepare a report."
+        }
+      },
+      {
+        "id": "repeat-resources",
+        "contentId": "download",
+        "question": {
+          "en": "Why does the game keep downloading resources?"
+        },
+        "answer": {
+          "en": "An individual China report describes repeated downloads, while both FAQs already require additional data after installation. Separate a new-version update from the same version repeatedly failing. Record versions, resource names/sizes, verification, storage and install path, then follow the regional FAQ. The post does not establish a universal failure, fixed patch size or official fix."
+        }
+      }
     ]
   },
   {
-    "id": "cloud", "title": {"en":"Cloud gaming, Mac and free time"},
+    "id": "cloud",
+    "title": {
+      "en": "Cloud gaming, Mac and free time"
+    },
     "questions": [
-      {"id":"cloud-mac","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Can I play Azur Promilia on Mac through cloud gaming?"},"answer":{"en":"The November 26 China cloud notice recommends macOS browsers, including Safari. This supports a China cloud browser route, not a native Mac installer, Japan cloud access or cross-region progress. Check the official service’s account conditions; this site has not tested cloud login."}},
-      {"id":"cloud-free-time","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Does Azur Promilia cloud gaming give 600 free minutes every day?"},"answer":{"en":"No. The China announcement lists 600 minutes at first cloud login, 15 minutes for daily login and a 600-minute accumulated free-time cap. It does not promise unlimited play or a daily reset to 600. Purchase-linked play cards have separate conditions; charging order and the daily reset clock were not specified."}},
-      {"id":"cloud-mobile","contentId":"cloud-gaming","claimRevisions":{"cn-cloud-gaming-launch":1},"question":{"en":"Can I play the cloud version in a phone browser?"},"answer":{"en":"The official China notice marks browser play as computer-only and lists separate cloud apps for Android 6.0 or later and iOS 15 or later. A site loading on a phone is not proof of browser streaming support. These cloud conditions do not replace the full game’s native requirements."}}
+      {
+        "id": "cloud-mac",
+        "contentId": "cloud-gaming",
+        "claimRevisions": {
+          "cn-cloud-gaming-launch": 1
+        },
+        "question": {
+          "en": "Can I play Azur Promilia on Mac through cloud gaming?"
+        },
+        "answer": {
+          "en": "The November 26 China cloud notice recommends macOS browsers, including Safari. This supports a China cloud browser route, not a native Mac installer, Japan cloud access or cross-region progress. Check the official service’s account conditions; this site has not tested cloud login."
+        }
+      },
+      {
+        "id": "cloud-free-time",
+        "contentId": "cloud-gaming",
+        "claimRevisions": {
+          "cn-cloud-gaming-launch": 1
+        },
+        "question": {
+          "en": "Does Azur Promilia cloud gaming give 600 free minutes every day?"
+        },
+        "answer": {
+          "en": "No. The China announcement lists 600 minutes at first cloud login, 15 minutes for daily login and a 600-minute accumulated free-time cap. It does not promise unlimited play or a daily reset to 600. Purchase-linked play cards have separate conditions; charging order and the daily reset clock were not specified."
+        }
+      },
+      {
+        "id": "cloud-mobile",
+        "contentId": "cloud-gaming",
+        "claimRevisions": {
+          "cn-cloud-gaming-launch": 1
+        },
+        "question": {
+          "en": "Can I play the cloud version in a phone browser?"
+        },
+        "answer": {
+          "en": "The official China notice marks browser play as computer-only and lists separate cloud apps for Android 6.0 or later and iOS 15 or later. A site loading on a phone is not proof of browser streaming support. These cloud conditions do not replace the full game’s native requirements."
+        }
+      }
     ]
   }
 ]

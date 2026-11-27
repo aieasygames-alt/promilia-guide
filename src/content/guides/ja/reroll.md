@@ -7,8 +7,8 @@ title: アズールプロミリアのリセマラは必要？判断材料と注�
 description: 日本版のリセマラはアカウント条件・初回資源・所要時間を確認中。中国本土のキャラ90回・霊子80回保証を日本へ流用せず、Web報酬の最初のキャラへの配布条件を整理。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-15"
-updatedAt: "2026-11-24"
-gameVersion: サービス開始前 / 2026-11-24 地域別アカウント・受取照合
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: editorial
 status: published
@@ -22,7 +22,9 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
   - jp-account-terms-2026-11-24
-sourceRevision: 7
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
+sourceRevision: 8
 translationStatus: published
 aliases:
   - アズールプロミリア リセマラ
@@ -58,7 +60,9 @@ revisions:
     note: 中国本土の事前登録メール・元テスト課金アカウント・証票期限を分離。リセマラ稿は日本の削除後復旧不可条項も追加。旧承認を継承せず、本文・訳文レビュー待ち。
   - date: "2026-11-24"
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
-translatedFromRevision: 7
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 8
 claimRefs:
   - cn-banner-rules-system
   - jp-banner-rules-system
@@ -69,8 +73,8 @@ claimRefs:
   - cn-preregister-mail-benefits
   - jp-account-deletion-terms
 claimRevisions:
-  cn-banner-rules-system: 3
-  jp-banner-rules-system: 1
+  cn-banner-rules-system: 4
+  jp-banner-rules-system: 2
   cn-kibo-web-rewards: 1
   jp-kibo-web-rewards: 1
   jp-preregister-benefits: 1
@@ -78,12 +82,18 @@ claimRevisions:
   cn-preregister-mail-benefits: 1
   jp-account-deletion-terms: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-27"
 ---
+
+## 11月26日の正式告知で判明した初回ガチャ
+
+日本公式は始源の観測を無垢な痕跡8個で10回・累計30回以内に星5、限定キャラ90回・アニマ80回と発表しました。初回特典の無垢な痕跡20個を限定20回とは数えません。中国本土の初心者観測も纯粹忆痕8枚で10回、30回以内の星5・独立カウントを公示しています。[正式な地域別ガチャ規約](/ja/guides/banner-rules/)を先に確認してください。
+
+この更新でリセット手順、必要時間、手持ちによる優劣が実測済みになったわけではありません。初回報酬の受取先と削除後の復元不可を確認してから判断しましょう。
 
 ## アズプロのリセマラは必要？
 
-現時点では、天井の情報だけでアズールプロミリア（アズプロ）のリセマラが必要かは判断できません。**日本版のガチャ条件、初回の資源、初期化手順、所要時間は独立確認中です。** 中国本土で確認した当期キャラ90回・霊子80回の保証を、日本版の判断基準には使えません。[サービス開始準備](/ja/guides/getting-started/)を進め、対象地域の条件を確認しましょう。
+現時点では、天井の情報だけでアズールプロミリア（アズプロ）のリセマラが必要かは判断できません。**日本版の保証回数と初回特典は上記で更新済みです。初期化手順と所要時間は未検証です。** 中国本土で確認した当期キャラ90回・霊子80回の保証を、日本版の判断基準には使えません。[サービス開始準備](/ja/guides/getting-started/)を進め、対象地域の条件を確認しましょう。
 
 ## リセマラ判断に必要な確認表
 

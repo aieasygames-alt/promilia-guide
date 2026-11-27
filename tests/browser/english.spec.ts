@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const topics = ['global-release', 'download', 'requirements', 'cloud-gaming', 'getting-started', 'resources', 'redeem-codes', 'support'];
+const topics = ['global-release', 'download', 'requirements', 'cloud-gaming', 'getting-started', 'resources', 'redeem-codes', 'support', 'banner-rules'];
 
 test('English preparation checklist persists through Japanese switching and FAQ returns to its guide', async ({ page }) => {
   await page.goto('/en/guides/getting-started/');
@@ -13,7 +13,7 @@ test('English preparation checklist persists through Japanese switching and FAQ 
   await expect(page.locator('input[data-task="account"]')).toBeChecked();
   await page.locator('.related-questions a[href$="#q-first-day"]').click();
   await expect(page.locator('#q-first-day')).toHaveAttribute('open', '');
-  await expect(page.locator('[data-faq-id]')).toHaveCount(15);
+  await expect(page.locator('[data-faq-id]')).toHaveCount(19);
   await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
   await page.locator('#q-first-day a').click();
   await expect(page).toHaveURL(/\/en\/guides\/getting-started\/$/);
@@ -81,7 +81,7 @@ test('untranslated topics offer English home without a false article alternate',
   await expect(english).toHaveAttribute('href', '/en/');
   await expect(english).toContainText('首页');
   await english.click();
-  await expect(page.locator('#guides .guide-card')).toHaveCount(8);
+  await expect(page.locator('#guides .guide-card')).toHaveCount(9);
   await expect(page.locator('#regional-status')).toBeVisible();
   await expect(page.locator('.english-scope')).toContainText('not verified a global English release date');
 });
@@ -105,7 +105,7 @@ test('English launch facts retain regional and storage boundaries', async ({ pag
   await page.goto('/en/guides/global-release/');
   await expect(page.locator('.prose')).toContainText('11:00 JST');
   await expect(page.locator('.prose')).toContainText('02:00 UTC');
-  await expect(page.locator('.prose')).toContainText('not confirmation that servers are already live');
+  await expect(page.locator('.prose')).toContainText('Both publishers announced service began');
   await page.goto('/en/guides/requirements/');
   await expect(page.locator('.prose')).toContainText('at least 55GB');
   await expect(page.locator('.prose')).toContainText('not measured download sizes');
