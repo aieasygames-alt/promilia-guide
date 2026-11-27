@@ -7,6 +7,7 @@ import ClaimSummary from '../../../components/ClaimSummary.astro';
 import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
+import { pageVisuals } from '../../../lib/visuals';
 import RedeemCodeBox from '../../../components/RedeemCodeBox.astro';
 import EnglishCodeStatus from '../../../components/EnglishCodeStatus.astro';
 import MobileActionBar from '../../../components/MobileActionBar.astro';
@@ -44,7 +45,7 @@ const sectionLabel = data.section === 'systems' ? c.systems : c.guides;
 const hasDistribution = !en && ['download', 'platforms'].includes(data.contentId);
 const isRedeemCodes = !en && data.contentId === 'redeem-codes';
 const compactFacts = !en && data.claimRefs.length > 0;
-const featureVisual = !en && data.contentId === 'launch' ? 'public-beta' : null;
+const featureVisual = pageVisuals(articlePath(data))[0];
 const toc = [
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
   ...(en && data.contentId === 'redeem-codes' ? [{ id: 'redeem-title', text: 'Verified code records' }] : []),
@@ -53,7 +54,7 @@ const toc = [
   { id: 'sources', text: c.sources }, { id: 'revisions', text: c.revisions },
 ];
 const schema = [
-  { '@context': 'https://schema.org', '@type': 'Article', headline: data.title, description: data.description, inLanguage: languageTag[locale], datePublished: data.publishedAt, dateModified: data.updatedAt, author: { '@type': 'Organization', name: data.author }, mainEntityOfPage: url, image: origin + '/images/social.png' },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: data.title, description: data.description, inLanguage: languageTag[locale], datePublished: data.publishedAt, dateModified: data.updatedAt, author: { '@type': 'Organization', name: data.author }, mainEntityOfPage: url },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: c.home, item: origin + `/${locale}/` }, { '@type': 'ListItem', position: 2, name: sectionLabel, item: origin + sectionPath }, { '@type': 'ListItem', position: 3, name: data.title, item: url }] },
 ];
 ---
@@ -62,7 +63,7 @@ const schema = [
     <header class="page-heading"><div class="card-tags"><span class={`pill ${data.verification === 'pending' ? 'pending' : ''}`}>{c[data.verification]}</span>{!published && <span class="pill draft">{c.draft}</span>}</div><h1 data-pagefind-body data-pagefind-meta="title">{data.title}</h1><p data-pagefind-meta="description">{data.description}</p><div class="metadata"><span>{c.region}<b>{data.gameRegion}</b></span><span>{c.version}<b>{data.gameVersion}</b></span><span>{c.updated}<b><time datetime={data.updatedAt}>{data.updatedAt}</time></b></span><span>{c.author}<b>{data.author}</b></span></div></header>
     {!published && <div class="notice"><strong>{c.draft}</strong>{factsVerified ? (locale === 'ja' ? '公式資料を登録・照合しました。公開前の編集・日本語レビューはまだ完了していません。' : '已录入并核对官方资料，公开前的正文与语言审核仍待完成。') : c.sourcePending}<br/>{locale === 'ja' ? 'レビューが完了するまで、本番ビルドから除外します。' : '正式构建会排除本页；真实审核人与审核日期不会由程序自动填写。'}{issues.some((issue) => ['stale-claim', 'stale-translation'].includes(issue.code)) && <p>{locale === 'ja' ? '原稿または共有情報の改訂が進んでいます。本文を再確認してください。' : '原稿或共享事实已经更新，请重新核对正文。'}</p>}</div>}
     {!translation && <p class="search-help">{c.missing} · <a class="text-link" href={`/${other}/`}>{c.targetHome} ↗</a></p>}
-    {featureVisual && <FeatureVisual id={featureVisual} locale={referenceLocale}/>}
+    {featureVisual && <FeatureVisual id={featureVisual} locale={locale} priority/>}
     <div class="article-grid"><article data-pagefind-body data-content-id={data.contentId} data-published={String(published)}>
       {hasDistribution && <DistributionMatrix locale={referenceLocale}/>}
       {isRedeemCodes && <RedeemCodeBox locale={referenceLocale}/>}

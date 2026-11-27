@@ -1,0 +1,23 @@
+---
+import FeatureVisual from './FeatureVisual.astro';
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale; kind: 'home' | 'characters'; }
+const { locale, kind } = Astro.props;
+const en = locale === 'en', ja = locale === 'ja';
+const title = kind === 'home' ? (en ? 'Characters and Kibo in artwork' : ja ? 'イラストで見るキャラクターとキボ' : '插画中的角色与奇波') : (en ? 'Character artwork references' : ja ? 'キャラクターのイラスト資料' : '角色插画资料');
+---
+<section class="artwork-section" data-pagefind-ignore aria-label={title}>
+  <h2>{title}</h2>
+  {kind === 'home' ? <>
+    <p>{en ? 'Explore the artwork, then use the sourced lists to check names and regional information.' : ja ? 'イラストを楽しんだら、出典付きの一覧で名称や地域ごとの情報を確認できます。' : '欣赏游戏插画，也可以通过有来源的名单继续查找角色名称和奇波资料。'} <a href={`/${locale}/characters/`}>{en ? 'Characters' : ja ? 'キャラクター一覧' : '角色一览'}</a> · <a href={`/${locale}/kibo/`}>{en ? 'Kibo' : ja ? 'キボ一覧' : '奇波图鉴'}</a></p>
+    <FeatureVisual id="holiday-illustration" locale={locale}/>
+  </> : <div class="artwork-grid"><FeatureVisual id="nono-profile" locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 488px"/><FeatureVisual id="celebration-art" locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 488px"/></div>}
+</section>
+<style>
+  .artwork-section { margin: 2.5rem 0 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  h2 { font-size: 1.4rem; margin-bottom: .8rem; }
+  p { color: var(--muted); line-height: 1.9; }
+  a { text-decoration: underline; text-underline-offset: .2em; }
+  .artwork-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; max-width: 1000px; }
+  @media (max-width: 650px) { .artwork-grid { grid-template-columns: 1fr; gap: 0; } }
+</style>

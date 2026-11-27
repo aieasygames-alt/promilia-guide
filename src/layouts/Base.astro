@@ -4,6 +4,7 @@ import Icon from '../components/Icon.astro';
 import { t } from '../lib/i18n';
 import { preview, type Locale } from '../lib/content';
 import { origin, locales, languageTag } from '../lib/publication.mjs';
+import { visuals, pageVisuals, imageObject } from '../lib/visuals';
 interface Props {
   locale?: Locale; title: string; description: string; noindex?: boolean;
   alternates?: { lang: string; href: string }[];
@@ -26,11 +27,16 @@ const languageOptions = locales.map((lang) => {
 const active = (href: string) => href === '' ? Astro.url.pathname === root : Astro.url.pathname.startsWith(root + href);
 const indexable = !noindex && !preview;
 const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
-const metadata = schema || {
+const visualIds = pageVisuals(Astro.url.pathname);
+const primary = visualIds[0];
+const primaryImage = primary ? imageObject(primary, locale) : undefined;
+const socialImage = primary ? { src: visuals[primary].src, width: visuals[primary].width, height: visuals[primary].height, alt: visuals[primary].alt[locale] } : { src: '/images/social.png', width: 1200, height: 630, alt: 'Promilia Guide' };
+const metadata = Array.isArray(schema) ? schema.map(item => item['@type'] === 'Article' && primaryImage ? { ...item, image: primaryImage } : item) : schema || {
   '@context': 'https://schema.org',
   '@graph': [
     { '@type': 'Organization', '@id': origin + '/#organization', name: 'Promilia Guide', url: origin, logo: logoUrl },
-    { '@type': isHome ? 'WebSite' : 'WebPage', name: title, url: canonical, inLanguage: languageTag[locale], description, publisher: { '@id': origin + '/#organization' } },
+    ...(isHome ? [{ '@type': 'WebSite', '@id': origin + `/${locale}/#website`, name: 'Promilia Guide', url: origin + `/${locale}/`, inLanguage: languageTag[locale] }] : []),
+    { '@type': 'WebPage', name: title, url: canonical, inLanguage: languageTag[locale], description, publisher: { '@id': origin + '/#organization' }, ...(primaryImage ? { primaryImageOfPage: primaryImage, image: visualIds.map(id => imageObject(id, locale)) } : {}) },
   ],
 };
 ---
@@ -42,7 +48,7 @@ const metadata = schema || {
     <meta name="theme-color" content="#193e3c" />
     <title>{title} | Promilia Guide</title>
     <meta name="description" content={description} />
-    <meta name="robots" content={indexable ? 'index,follow' : 'noindex,follow'} />
+    <meta name="robots" content={indexable ? 'index,follow,max-image-preview:large' : 'noindex,follow'} />
     <link rel="canonical" href={canonical} />
     {indexable && alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={alt.href} />)}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -52,10 +58,16 @@ const metadata = schema || {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={locale === 'en' ? 'en_US' : locale === 'ja' ? 'ja_JP' : 'zh_CN'} />
-    <meta property="og:image" content={origin + '/images/social.png'} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content={origin + socialImage.src} />
+    <meta property="og:image:type" content={socialImage.src.endsWith('.webp') ? 'image/webp' : 'image/png'} />
+    <meta property="og:image:width" content={String(socialImage.width)} />
+    <meta property="og:image:height" content={String(socialImage.height)} />
+    <meta property="og:image:alt" content={socialImage.alt} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={origin + socialImage.src} />
+    <meta name="twitter:image:alt" content={socialImage.alt} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(metadata).replace(/</g, '\\u003c')} />
   </head>
   <body data-pagefind-ignore={searchable ? undefined : 'all'}>
