@@ -566,23 +566,25 @@
   },
   {
     "id": "cn-banner-rules-system",
-    "revision": 3,
-    "text": "国服当期「桃笺为契」角色池连续70次未得限定五星后递增、第90次必得；「绯影入怀」灵子池为60次后递增、第80次必得。同类观测内共享及继承，获得对应限定五星后重新计数；完整概率与票券用途仍待游戏内详情。",
+    "revision": 4,
+    "text": "国服限定角色使用璀璨忆痕，五星基础0.800%、90次保证；限定灵子使用析光忆痕，五星基础1.200%、80次保证，两者五星限定占比100%、同类继承。每十次至少四星及以上内容，包含角色与灵子。",
     "localized": {
       "zh-hans": {
-        "summary": "国服当期「桃笺为契」角色池连续70次未得限定五星后递增、第90次必得；「绯影入怀」灵子池为60次后递增、第80次必得。同类观测内共享及继承，获得对应限定五星后重新计数；完整概率与票券用途仍待游戏内详情。"
+        "summary": "国服限定角色使用璀璨忆痕，五星基础0.800%、90次保证；限定灵子使用析光忆痕，五星基础1.200%、80次保证，两者五星限定占比100%、同类继承。每十次至少四星及以上内容，包含角色与灵子。"
       },
       "ja": {
-        "summary": "中国本土の当期キャラ「桃笺为契」は70回未獲得後に確率上昇・90回保証、霊子「绯影入怀」は60回後に上昇・80回保証。同種内で共有・引き継ぎ、限定星5獲得後にリセット。全確率・券種と日本版の条件は別確認。"
+        "summary": "中国本土の限定キャラは璀璨忆痕・星5基礎0.800%・90回保証、限定霊子は析光忆痕・1.200%・80回保証。星5は当期限定、同種内で引き継ぎ。10回保証の星4にはキャラと霊子を含みます。"
       }
     },
     "sourceRefs": [
       "cn-character-banner-2026-11-24",
-      "cn-anima-banner-2026-11-24"
+      "cn-anima-banner-2026-11-24",
+      "cn-character-probability-2026-11-26",
+      "cn-anima-probability-2026-11-26"
     ],
     "type": "official",
     "gameRegion": "中国大陆",
-    "gameVersion": "2026-11-24 公测当期两项观测公告",
+    "gameVersion": "2026-11-26完整概率公示",
     "verification": "verified",
     "affectedPages": [
       "banner-rules",
@@ -669,29 +671,35 @@
   },
   {
     "id": "jp-banner-rules-system",
-    "revision": 1,
-    "text": "日本地区抽卡概率、保底与继承规则待独立核验。",
+    "revision": 2,
+    "text": "日本星弦の観測90回内、絆心の観測80回内必得当期限定五星，同类跨期继承；始源の観測十连8枚無垢な痕跡，30回内五星。基础概率与递增曲线仍需日本独立条款。",
     "localized": {
       "zh-hans": {
-        "summary": "日本地区抽卡概率、保底与继承规则待独立核验。"
+        "summary": "日本星弦の観測90回内、絆心の観測80回内必得当期限定五星，同类跨期继承；始源の観測十连8枚無垢な痕跡，30回内五星。基础概率与递增曲线仍需日本独立条款。"
       },
       "ja": {
-        "summary": "日本向けガチャの確率・天井・引き継ぎ条件は独立した公式根拠を確認中です。"
+        "summary": "日本版は星弦の観測90回以内・絆心の観測80回以内で当期限定星5を保証し、同種の次回へ回数を引き継ぎ。始源の観測は無垢な痕跡8個で10回、30回以内に星5。基礎確率・上昇曲線は別途確認。"
       }
     },
     "sourceRefs": [
-      "jp-official-home-2026-11-14"
+      "jp-public-launch-2026-11-26"
     ],
-    "type": "pending",
+    "type": "official",
     "gameRegion": "日本",
-    "gameVersion": "正式发行前",
-    "verification": "pending",
+    "gameVersion": "2026-11-26正式服务开始公告",
+    "verification": "verified",
     "affectedPages": [
       "banner-rules",
       "reroll"
     ],
     "conflicts": [],
-    "value": {},
+    "value": {
+      "characterHardPity": 90,
+      "weaponHardPity": 80,
+      "beginnerPity": 30,
+      "pityCarryOver": true,
+      "characterRateUpProbability": "100%"
+    },
     "distributionScope": {
       "region": "jp",
       "release": "public-launch"
@@ -1407,5 +1415,67 @@
     ],
     "conflicts": [],
     "value": {}
+  },
+  {
+    "id": "cn-service-status",
+    "revision": 1,
+    "text": "国服官网11月26日公告公测正式开启。",
+    "localized": {
+      "zh-hans": {
+        "summary": "11月26日国服官方公告公测正式开启；当前维护与个人登录状态另查。"
+      },
+      "ja": {
+        "summary": "11月26日、中国本土公式が公測開始を発表。現在のメンテナンス・個別ログインは別途確認。"
+      }
+    },
+    "sourceRefs": [
+      "cn-public-launch-2026-11-26"
+    ],
+    "type": "official",
+    "gameRegion": "中国大陆",
+    "gameVersion": "2026-11-26正式上线公告",
+    "distributionScope": {
+      "region": "cn",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "serviceStatus": "open"
+    }
+  },
+  {
+    "id": "jp-service-status",
+    "revision": 1,
+    "text": "日本官网11月26日公告正式服务开始。",
+    "localized": {
+      "zh-hans": {
+        "summary": "11月26日日本官方公告正式服务开始；当前维护与个人登录状态另查。"
+      },
+      "ja": {
+        "summary": "11月26日、日本公式が正式サービス開始を発表。現在のメンテナンス・個別ログインは別途確認。"
+      }
+    },
+    "sourceRefs": [
+      "jp-public-launch-2026-11-26"
+    ],
+    "type": "official",
+    "gameRegion": "日本",
+    "gameVersion": "2026-11-26正式上线公告",
+    "distributionScope": {
+      "region": "jp",
+      "release": "public-launch"
+    },
+    "verification": "verified",
+    "affectedPages": [
+      "global-release"
+    ],
+    "conflicts": [],
+    "value": {
+      "serviceStatus": "open"
+    }
   }
 ]

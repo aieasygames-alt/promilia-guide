@@ -3,8 +3,8 @@ contentId: resources
 locale: en
 slug: resources
 section: guides
-title: "Azur Promilia Launch Rewards: Japan Gifts & Missing Mail"
-description: Check Azur Promilia Japan preregistration gifts and Kibo web rewards. Compare account binding, receiving characters, deadlines and missing-mail checks.
+title: "Azur Promilia Launch Rewards & First Event: Gifts, Endings, Dates"
+description: "Japan launch gifts, beginner tickets and the first story event: five endings, 600 秘虹晶, reward targets and January 5 deadline. Track missing mail separately."
 claimRefs:
   - jp-preregister-benefits
   - jp-kibo-web-rewards
@@ -14,6 +14,8 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - jp-launch-faq-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
 order: 5
 aliases:
   - Azur Promilia rewards
@@ -24,10 +26,11 @@ related:
   - getting-started
   - redeem-codes
   - support
+  - banner-rules
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: Launch preparation / regional source dates recorded below
+updatedAt: "2026-11-27"
+gameVersion: Post-launch / sources checked November 27, 2026
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
@@ -36,16 +39,33 @@ claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
   cn-preregister-mail-benefits: 1
-sourceRevision: 10
-translatedFromRevision: 10
+sourceRevision: 11
+translatedFromRevision: 11
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 minutes: 8
 revisions:
   - date: "2026-11-26"
     note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+  - date: "2026-11-27"
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
 ---
+
+## Post-launch Japan event: five endings and reward targets
+
+The [November 26 Japan launch announcement](https://azurpromilia.jp/news/5225) confirms first-login preregistration benefits including four-star **アニス** and **無垢な痕跡 ×20**. Its promotion of 40 or more character-observation opportunities includes repeat logins and designated quests. It does not promise 40 immediate limited-character pulls. The same notice confirms 無垢な痕跡 can be used on the beginner banner: eight for ten observations, with a five-star within 30. See [regional banner rules and tickets](/en/guides/banner-rules/).
+
+| Japan content | Officially announced mechanics or rewards | Deadline |
+| --- | --- | --- |
+| Story event 花逢ひの縁契りて | Train 塗山小玉's 法力, 勇気, 縁結 and 洞察; training and choices lead to five endings | January 5, 2027 at 04:59 JST |
+| Event target rewards | 秘虹晶 ×600, 無垢な痕跡 ×5, limited anima 凪いだ一日 ×2 and materials | Complete the stated objectives; check claim conditions in the event |
+| 星灯り交換所 | Exchange event 流光の欠片 for observation items and materials | The article does not give a separate shop-closing time |
+| First limited character and anima banners | 桃花の契り and 花霞を胸に | December 17, 2026 at 04:59 JST |
+
+The story event lasts longer than the first limited banners. Keep the year change in mind: its end is in **2027**. Start with the event tutorial, then record the endings already seen, current four attributes, branch choices and claimed target rewards. The official article does not supply exact ending thresholds, an optimal route, reset costs or a precise unlock quest, so this is not a tested five-ending walkthrough.
+
+The same Japan notice lists the 桃色うさぎの宴 cosmetics and 塗山小玉 dorm set 春還る花亭 until January 5 at 04:59 JST. メーツァ's 翠緑の秘苑 set is a permanent sale. These are appearance or dorm purchases, not free farming resources or extra free pulls. Original Japanese labels are retained to match the client; they are not official English names, and the Japan event conditions should not be applied to China.
 
 ## How do you claim Azur Promilia launch rewards?
 
@@ -68,7 +88,7 @@ The [Japan preregistration page](https://azurpromilia.jp/pre-register/) displays
 | 25 million | アニス ×1 |
 | 30 million | 無垢な痕跡 ×12 |
 
-The three listed 無垢な痕跡 amounts add up to **20**. That arithmetic is not proof of 20 immediate limited-banner pulls. Verify the ticket's actual use and the distribution terms before spending.
+The three listed 無垢な痕跡 amounts add up to **20**. That arithmetic is not proof of 20 immediate limited-banner pulls. The November 26 launch notice confirms its beginner-banner use; check the actual claim and spending conditions separately.
 
 The page separately associates **星彩・クロディーメ** with a global official social-following milestone of 5 million. Do not merge that social milestone with the 5-million preregistration row or with the nest event below.
 

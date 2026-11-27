@@ -7,8 +7,8 @@ title: 蓝色星原日服、国际服与繁中版：官方入口和应用ID
 description: 区分国服、日本与繁中官网，列出台湾App Store及各地区应用ID。说明“国际服”搜索词、账号、服务器与发行地区分别需要哪些依据。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 官方FAQ核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本、繁中官网（分地区说明）
 verification: official
 status: published
@@ -33,7 +33,9 @@ sourceRefs:
   - cn-ios-store-followup-2026-11-24
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
-sourceRevision: 11
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -85,6 +87,8 @@ revisions:
     note: 追加核对预下载开始公告、PC独立页面和商店版本变化；区分公告开放、文件取得与安装运行，本次修订仍待正文及译文确认。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-launch-date
   - cn-ios-store
@@ -101,6 +105,8 @@ claimRefs:
   - jp-public-launch-requirements
   - cn-public-launch-platform-rules
   - jp-public-launch-platform-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-ios-store: 3
@@ -117,9 +123,15 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
   jp-public-launch-platform-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-27"
 ---
+
+## 11月26日，两地官方均已宣布正式上线
+
+11月27日分别核对[国服公测正式开启公告](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)与[日本正式服务开始公告](https://azurpromilia.jp/news/5225)。这已超出此前只确认计划时刻的资料范围；当前维护状态、排队或个人账号是否可登录仍查即时公告。同步更新[两地抽卡规则](/zh-hans/guides/banner-rules/)与[日本首期剧情活动](/zh-hans/guides/resources/)，不把同日上线推广为全球英语服。
 
 ## 本轮分别确认了哪些地区
 

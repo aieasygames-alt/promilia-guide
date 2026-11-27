@@ -185,15 +185,20 @@ test('feedback download contains the report and makes no submission', async ({ p
 test('home and article share verified regional facts and dated original citations', async ({ page }) => {
   for (const locale of ['zh-hans', 'ja']) {
     await page.goto(`/${locale}/`);
-    const status = page.locator('[data-release-claim="cn-launch-date"]');
-    await expect(status).toHaveAttribute('data-release-revision', '2');
+    const status = page.locator('[data-release-claim="cn-service-status"]');
+    await expect(status).toHaveAttribute('data-release-revision', '1');
     await expect(status).toHaveAttribute('data-release-verified', 'true');
-    await expect(status.locator('a')).toHaveAttribute('href', 'https://azurpromilia.manjuu.com/home/news/detail/901234083139555328/');
-    const japan = page.locator('[data-release-claim="jp-release-status"]');
-    await expect(japan).toHaveAttribute('data-release-revision', '2');
+    await expect(status.locator('a')).toHaveAttribute('href', 'https://azurpromilia.manjuu.com/home/news/detail/912762865511960576');
+    const japan = page.locator('[data-release-claim="jp-service-status"]');
+    await expect(japan).toHaveAttribute('data-release-revision', '1');
     await expect(japan).toHaveAttribute('data-release-verified', 'true');
     await expect(japan).toContainText(/日本/);
-    await expect(japan.locator('a')).toHaveAttribute('href', 'https://x.com/AzurPromilia_JP/status/2113466648586047817');
+    await expect(japan.locator('a')).toHaveAttribute('href', 'https://azurpromilia.jp/news/5225');
+    await page.goto(`/${locale}/guides/global-release/`);
+    for (const region of ['cn', 'jp']) {
+      await expect(page.locator(`[data-claim-id="${region}-service-status"]`)).toHaveAttribute('data-claim-verified', 'true');
+      await expect(page.locator(`[data-claim-id="${region}-service-status"]`)).toHaveAttribute('data-claim-revision', '1');
+    }
     await page.goto(`/${locale}/guides/launch/`);
     await expect(page.locator('[data-claim-id="cn-launch-date"]')).toHaveAttribute('data-claim-revision', '2');
     await expect(page.locator('[data-claim-id="cn-opening-time"]')).toHaveAttribute('data-claim-verified', 'true');

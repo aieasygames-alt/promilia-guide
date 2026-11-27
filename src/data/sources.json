@@ -1035,6 +1035,11 @@
       "ja": {
         "title": "中国本土：キャラ「桃笺为契」の告知",
         "note": "中国本土の限定星5キャラ保証は90回、連続70回未獲得後に確率上昇。同種内引き継ぎと獲得後リセットを明記。日本版は別確認。"
+      },
+      "en": {
+        "title": "China first limited-character banner: 桃笺为契",
+        "publisher": "Manjuu",
+        "note": "November 24 mainland-China banner notice: featured items, maximum guarantee, same-category carryover and December 17 at 03:59 UTC+8 expiry. The November 26 probability disclosure adds rates and ticket rules. Japan is verified separately."
       }
     }
   },
@@ -1056,6 +1061,11 @@
       "ja": {
         "title": "中国本土：霊子「绯影入怀」の告知",
         "note": "中国本土の限定星5霊子保証は80回、連続60回未獲得後に確率上昇。同種内引き継ぎと獲得後リセットを明記。日本版は別確認。"
+      },
+      "en": {
+        "title": "China first limited-anima banner: 绯影入怀",
+        "publisher": "Manjuu",
+        "note": "November 24 mainland-China banner notice: featured items, maximum guarantee, same-category carryover and December 17 at 03:59 UTC+8 expiry. The November 26 probability disclosure adds rates and ticket rules. Japan is verified separately."
       }
     }
   },
@@ -1285,6 +1295,231 @@
         "title": "China official cloud-service launch notice (Chinese)",
         "note": "Checked the public China announcement and entry pages. Supports the stated browser/mobile and time-benefit rules; does not establish Japan or English-client support, successful login, latency or saved-progress compatibility.",
         "publisher": "Manjuu / Azur Promilia China"
+      }
+    }
+  },
+  {
+    "id": "cn-public-launch-2026-11-26",
+    "title": "《蓝色星原：旅谣》公测现已正式开启！",
+    "publisher": "蛮啾网络",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912762865511960576",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "国服官网11月26日正式公告公测现已开启；正文欢迎来到普罗米利亚大陆。不证明核查时刻全部服务器或个人账号可登录。",
+    "excerpt": "国服官网11月26日正式公告公测现已开启；正文欢迎来到普罗米利亚大陆。不证明核查时刻全部服务器或个人账号可登录。",
+    "localized": {
+      "ja": {
+        "title": "中国本土の正式サービス開始告知",
+        "note": "11月26日の公式原文を11月27日に確認。対象地域と告知内容の範囲で使用し、現在の全サーバー稼働や実操作を保証しません。"
+      },
+      "en": {
+        "title": "China public launch announcement",
+        "publisher": "Manjuu",
+        "note": "Official regional notice published November 26 and checked November 27. Covers the announcement, not current uptime, personal eligibility or a gameplay test."
+      }
+    }
+  },
+  {
+    "id": "jp-public-launch-2026-11-26",
+    "title": "正式サービス開始！リリース記念キャンペーン",
+    "publisher": "Yostar／Manjuu",
+    "kind": "official",
+    "url": "https://azurpromilia.jp/news/5225",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "11月26日正式服务开始。始源の観測十连8枚、30回内五星；星弦の観測90回、絆心の観測80回且每次五星为当期限定，同类继承。两限定池12月17日04:59 JST结束；花逢ひの縁契りて至2027年1月5日04:59，五结局、秘虹晶600及無垢な痕跡5等奖励。",
+    "excerpt": "11月26日正式服务开始。始源の観測十连8枚、30回内五星；星弦の観測90回、絆心の観測80回且每次五星为当期限定，同类继承。两限定池12月17日04:59 JST结束；花逢ひの縁契りて至2027年1月5日04:59，五结局、秘虹晶600及無垢な痕跡5等奖励。",
+    "localized": {
+      "ja": {
+        "title": "正式サービス開始・ガチャ・初回イベントの公式告知",
+        "note": "11月26日の公式原文を11月27日に確認。対象地域と告知内容の範囲で使用し、現在の全サーバー稼働や実操作を保証しません。"
+      },
+      "en": {
+        "title": "Japan launch, banners and first story event",
+        "publisher": "Yostar / Manjuu",
+        "note": "Official regional notice published November 26 and checked November 27. Covers the announcement, not current uptime, personal eligibility or a gameplay test."
+      }
+    }
+  },
+  {
+    "id": "cn-character-probability-2026-11-26",
+    "title": "弦定观测（角色限定观测）玩法概率公示",
+    "publisher": "蛮啾网络",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912783489026363392",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "璀璨忆痕；五星基础0.800%、限定占比100%、含保底综合1.716%。71–80次每次提升2.000%、81–89提升8.000%、90必得；同类继承、五星后重置；每十次至少四星及以上，四星包含角色和灵子。",
+    "excerpt": "璀璨忆痕；五星基础0.800%、限定占比100%、含保底综合1.716%。71–80次每次提升2.000%、81–89提升8.000%、90必得；同类继承、五星后重置；每十次至少四星及以上，四星包含角色和灵子。",
+    "localized": {
+      "ja": {
+        "title": "中国本土・限定キャラの確率公示",
+        "note": "11月26日の公式原文を11月27日に確認。対象地域と告知内容の範囲で使用し、現在の全サーバー稼働や実操作を保証しません。"
+      },
+      "en": {
+        "title": "China limited-character probability disclosure",
+        "publisher": "Manjuu",
+        "note": "Official regional notice published November 26 and checked November 27. Covers the announcement, not current uptime, personal eligibility or a gameplay test."
+      }
+    }
+  },
+  {
+    "id": "cn-anima-probability-2026-11-26",
+    "title": "羁点观测（灵子限定观测）玩法概率公示",
+    "publisher": "蛮啾网络",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/913161199422672896",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "析光忆痕；五星基础1.200%、限定占比100%、含保底综合2.141%。61–70次每次提升2.000%、71–79提升8.000%、80必得；同类继承、五星后重置；每十次至少四星及以上，四星包括角色与灵子。",
+    "excerpt": "析光忆痕；五星基础1.200%、限定占比100%、含保底综合2.141%。61–70次每次提升2.000%、71–79提升8.000%、80必得；同类继承、五星后重置；每十次至少四星及以上，四星包括角色与灵子。",
+    "localized": {
+      "ja": {
+        "title": "中国本土・限定霊子の確率公示",
+        "note": "11月26日の公式原文を11月27日に確認。対象地域と告知内容の範囲で使用し、現在の全サーバー稼働や実操作を保証しません。"
+      },
+      "en": {
+        "title": "China limited-anima probability disclosure",
+        "publisher": "Manjuu",
+        "note": "Official regional notice published November 26 and checked November 27. Covers the announcement, not current uptime, personal eligibility or a gameplay test."
+      }
+    }
+  },
+  {
+    "id": "cn-beginner-probability-2026-11-26",
+    "title": "始源观测（新手观测）玩法概率公示",
+    "publisher": "蛮啾网络",
+    "kind": "official",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/913156502976598016",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "note": "纯粹忆痕，仅十连，每次消耗8；累计30次关闭，至多30次至少一五星角色；累计次数与保底独立。五星基础0.800%，含保底综合3.419%。",
+    "excerpt": "纯粹忆痕，仅十连，每次消耗8；累计30次关闭，至多30次至少一五星角色；累计次数与保底独立。五星基础0.800%，含保底综合3.419%。",
+    "localized": {
+      "ja": {
+        "title": "中国本土・初心者観測の確率公示",
+        "note": "11月26日の公式原文を11月27日に確認。対象地域と告知内容の範囲で使用し、現在の全サーバー稼働や実操作を保証しません。"
+      },
+      "en": {
+        "title": "China beginner-banner probability disclosure",
+        "publisher": "Manjuu",
+        "note": "Official regional notice published November 26 and checked November 27. Covers the announcement, not current uptime, personal eligibility or a gameplay test."
+      }
+    }
+  },
+  {
+    "id": "cn-community-farm-2026-11-26",
+    "title": "蓝色星原【家园】【1-15级规划和精灵安排】",
+    "publisher": "TapTap（玩家个人帖子）",
+    "kind": "community",
+    "url": "https://www.taptap.cn/moment/875088587471717682",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆玩家个人反馈",
+    "status": "verified",
+    "note": "雅中林阁的11月26日首日体验帖，作者注明未参加内测，列耕作小屋、奇波餐桌、订单看板、奇波牧场及播种管理操作。评论有补充修正；本站未复现实测，不作为通用解锁等级或最优布局。",
+    "excerpt": "雅中林阁的11月26日首日体验帖，作者注明未参加内测，列耕作小屋、奇波餐桌、订单看板、奇波牧场及播种管理操作。评论有补充修正；本站未复现实测，不作为通用解锁等级或最优布局。",
+    "localized": {
+      "ja": {
+        "title": "プレイヤー投稿：初日の農園配置",
+        "note": "中国本土プレイヤーの個別投稿を確認。公式告知・当サイトの実機検証ではなく、日本版全体へ一般化しません。"
+      },
+      "en": {
+        "title": "Player report: first-day farm setup",
+        "publisher": "TapTap player post",
+        "note": "An individual mainland-China player report, read November 27. Not an official finding, controlled benchmark, Japan-wide issue or a repair tested by this site."
+      }
+    }
+  },
+  {
+    "id": "cn-community-farm-food-2026-11-27",
+    "title": "黄鸡数值策划发力了",
+    "publisher": "TapTap（玩家个人帖子）",
+    "kind": "community",
+    "url": "https://www.taptap.cn/moment/875286112719866850",
+    "publishedAt": null,
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆玩家个人反馈",
+    "status": "verified",
+    "note": "11月27日核查的个人帖子描述派满岗位后食物不足、额外被动收益不抵耗粮的体验。未核实完整配置，不据此确认统一效率或否定某类词条。",
+    "excerpt": "11月27日核查的个人帖子描述派满岗位后食物不足、额外被动收益不抵耗粮的体验。未核实完整配置，不据此确认统一效率或否定某类词条。",
+    "localized": {
+      "ja": {
+        "title": "プレイヤー投稿：農園の食料消費",
+        "note": "中国本土プレイヤーの個別投稿を確認。公式告知・当サイトの実機検証ではなく、日本版全体へ一般化しません。"
+      },
+      "en": {
+        "title": "Player report: farm food consumption",
+        "publisher": "TapTap player post",
+        "note": "An individual mainland-China player report, read November 27. Not an official finding, controlled benchmark, Japan-wide issue or a repair tested by this site."
+      }
+    }
+  },
+  {
+    "id": "cn-community-performance-2026-11-27",
+    "title": "目前的优化真的还是有很大问题的",
+    "publisher": "TapTap（玩家个人帖子）",
+    "kind": "community",
+    "url": "https://www.taptap.cn/moment/875181885217573464",
+    "publishedAt": null,
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆玩家个人反馈",
+    "status": "verified",
+    "note": "kelinton个人报告2K高设置下利用率偏低和掉帧；帖子未提供完整受控测试条件，不能推广至全部硬件或日本客户端。",
+    "excerpt": "kelinton个人报告2K高设置下利用率偏低和掉帧；帖子未提供完整受控测试条件，不能推广至全部硬件或日本客户端。",
+    "localized": {
+      "ja": {
+        "title": "プレイヤー投稿：使用率とフレーム低下",
+        "note": "中国本土プレイヤーの個別投稿を確認。公式告知・当サイトの実機検証ではなく、日本版全体へ一般化しません。"
+      },
+      "en": {
+        "title": "Player report: low utilization and frame drops",
+        "publisher": "TapTap player post",
+        "note": "An individual mainland-China player report, read November 27. Not an official finding, controlled benchmark, Japan-wide issue or a repair tested by this site."
+      }
+    }
+  },
+  {
+    "id": "cn-community-download-2026-11-27",
+    "title": "你游最好是在优化游戏",
+    "publisher": "TapTap（玩家个人帖子）",
+    "kind": "community",
+    "url": "https://www.taptap.cn/moment/875190460434352579",
+    "publishedAt": null,
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测后 / 11月27日核查",
+    "gameRegion": "中国大陆玩家个人反馈",
+    "status": "verified",
+    "note": "潜渊待惊鸿个人描述预下载及上线后多次追加资源，原帖大小为个人回忆；不确认为固定补丁大小、全体故障或官方已修复。",
+    "excerpt": "潜渊待惊鸿个人描述预下载及上线后多次追加资源，原帖大小为个人回忆；不确认为固定补丁大小、全体故障或官方已修复。",
+    "localized": {
+      "ja": {
+        "title": "プレイヤー投稿：追加データの再ダウンロード",
+        "note": "中国本土プレイヤーの個別投稿を確認。公式告知・当サイトの実機検証ではなく、日本版全体へ一般化しません。"
+      },
+      "en": {
+        "title": "Player report: repeated resource downloads",
+        "publisher": "TapTap player post",
+        "note": "An individual mainland-China player report, read November 27. Not an official finding, controlled benchmark, Japan-wide issue or a repair tested by this site."
       }
     }
   }

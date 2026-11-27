@@ -7,8 +7,8 @@ title: 蓝色星原刷初始／刷首抽：是否需要、账号与奖励绑定
 description: 国服限定角色池已公告90次保证、灵子池80次保证，但刷初始还需账号重置、首轮资源与耗时证据。说明网页奖励首个角色绑定和日服独立核验。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-15"
-updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 账号及返还领取核对
+updatedAt: "2026-11-27"
+gameVersion: 公测后 / 2026-11-27资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: editorial
 status: published
@@ -22,7 +22,9 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
   - jp-account-terms-2026-11-24
-sourceRevision: 7
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
+sourceRevision: 8
 translationStatus: published
 aliases:
   - 刷初始
@@ -59,6 +61,8 @@ revisions:
     note: 补国服预约／社媒邮箱、原测试充值账号与凭证期限分流，首抽页另引日本删除不可恢复条款；不继承旧审核，正文与译文仍待审。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-27"
+    note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-banner-rules-system
   - jp-banner-rules-system
@@ -69,8 +73,8 @@ claimRefs:
   - cn-preregister-mail-benefits
   - jp-account-deletion-terms
 claimRevisions:
-  cn-banner-rules-system: 3
-  jp-banner-rules-system: 1
+  cn-banner-rules-system: 4
+  jp-banner-rules-system: 2
   cn-kibo-web-rewards: 1
   jp-kibo-web-rewards: 1
   jp-preregister-benefits: 1
@@ -78,8 +82,14 @@ claimRevisions:
   cn-preregister-mail-benefits: 1
   jp-account-deletion-terms: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-27"
 ---
+
+## 公测后首抽规则更新
+
+日本官方已于11月26日确认：始源の観測8枚無垢な痕跡十连、30回内五星；限定角色90回、アニマ80回，并在同类池间继承。国服新手概率公示也明确纯粹忆痕8票十连、30次内五星，计数独立。先看[更新后的地区抽卡表](/zh-hans/guides/banner-rules/)，不要把20张普通票当作20次限定抽。
+
+这没有证明重置方法、正式耗时或强度排名；重开前仍需核对原账号奖励绑定与删除后果。
 
 ## 蓝色星原需要刷初始或刷首抽吗？
 
@@ -101,14 +111,14 @@ reviewedAt: "2026-11-24"
 
 11月24日[角色池公告](https://azurpromilia.manjuu.com/home/news/detail/912104344520888320)确认「桃笺为契」连续70次未得限定五星后递增，第90次必得；[灵子池公告](https://azurpromilia.manjuu.com/home/news/detail/912105412612984832)确认「绯影入怀」连续60次未得限定五星后递增，第80次必得。两类保底分别共享、跨期继承，获得对应限定五星后重新计数，具体见[卡池规则](/zh-hans/guides/banner-rules/)。
 
-这补齐了国服两项当期规则，但不代表角色很容易首抽取得，也不能证明重开比持续推进更省时间。基础概率、券种用途与首轮可领资源尚未齐备，无法计算一次重开的目标获取率或期望耗时。
+这补齐了国服两项当期规则，但不代表角色很容易首抽取得，也不能证明重开比持续推进更省时间。国服基础概率与三类券种已见概率公示，但个人首轮可领资源与解锁耗时尚未齐备，无法计算一次重开的目标获取率或期望耗时。
 
 | 目标 | 现在可用的依据 | 决定前还差什么 |
 | --- | --- | --- |
 | 取得国服涂山小玉 | 当期角色池限定五星90次保证、同类继承 | 实际可用券、账号重置成本、角色性能 |
 | 同时取得花之舞 | 灵子池是独立80次保证类别 | 独立资源能否覆盖，不把两池历史合并 |
 | 先保留当前账号继续推进 | 同类保底未得计数可继承；网页奖励绑定首个角色 | 后续可获资源与玩法体验仍需实际记录 |
-| 玩日本版 | 日本网页奖励绑定规则已确认 | 日服卡池全部独立核验，不套用国服数值 |
+| 玩日本版 | 日本网页奖励绑定规则已确认 | 日本官方已独立确认90／80与新手30；基础概率仍按日本条款 |
 
 两池公告均为开服后至12月17日03:59（UTC+8）。这是国服活动窗口，不是要求首日反复重开的截止线，也不是日本版期限。
 

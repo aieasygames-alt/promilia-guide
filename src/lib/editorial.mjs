@@ -135,6 +135,16 @@ export function releaseSummary({ claims, sources, locale, region = 'cn', asOf = 
   };
   const [year, month, day] = claim.value.date.split('-').map(Number);
   const reached = asOf >= claim.value.date;
+  const service = claims.find((item) => item.id === `${region}-service-status`);
+  if (reached && isVerifiedClaim(service, sources) && service.distributionScope?.region === region && service.distributionScope?.release === 'public-launch' && service.value.serviceStatus === 'open') {
+    const notice = sources.find((item) => service.sourceRefs.includes(item.id));
+    return {
+      verified: true, claimId: service.id, revision: service.revision, date: claim.value.date,
+      label: `${regionLabel} · ${ja ? '正式サービス開始を発表' : '官方已宣布正式上线'}`,
+      detail: ja ? '開始告知を確認済み。現在のメンテナンスや個別ログイン状態は最新の公式案内で確認してください。' : '已核对正式开始公告；当前维护和个人登录状态请查看最新官方说明。',
+      source: { id: notice.id, title: notice.localized?.[locale]?.title || notice.title, url: notice.url, checkedAt: notice.checkedAt },
+    };
+  }
   const source = sources.find((source) => claim.sourceRefs.includes(source.id) && source.status === 'verified');
   return {
     verified: true, claimId: claim.id, revision: claim.revision, date: claim.value.date,

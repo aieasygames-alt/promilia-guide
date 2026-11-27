@@ -7,8 +7,8 @@ title: アズールプロミリアの容量・推奨スペック｜スマホ・P
 description: 日本公式FAQはスマホ55GB以上・PC120GB以上の空き容量を推奨。最低・推奨スペック、iPhone・iPadの確認点、ストアサイズと追加データの違いを解説。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始に向けた案内 / 公式FAQの確認日：2026-11-24
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -32,7 +32,8 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
-sourceRevision: 11
+  - cn-community-performance-2026-11-27
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -84,7 +85,9 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-26"
     note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
-translatedFromRevision: 11
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 12
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -120,7 +123,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
 
 ## スマホは55GB以上、PCは120GB以上の空き容量を推奨
@@ -234,3 +237,11 @@ iOSの機種名とメモリーは原文の別々の項目をそのまま記載�
 ## 事前DL開始後、どこからPC版を取得する？
 
 日本公式は[11月24日の開始公告](https://azurpromilia.jp/news/5191)で、[Windows専用ページ](https://azurpromilia.jp/PCdownload)を案内しています。本体の前にYostarランチャーを取得し、その後に本体・追加データを順に取得します。ページとリンクは確認済みですが、ファイル自体と実占有量は未検証です。[ダウンロードの段階別案内](/ja/guides/download/)へ進んでください。
+
+## 配信後のフレーム低下・低使用率の個別報告
+
+11月27日に確認した[中国本土のkelinton氏の投稿](https://www.taptap.cn/moment/875181885217573464)は、2Kの高設定で使用率が低く、フレームが落ちるという内容です。機器・ドライバー・場面をそろえた比較がなく、全端末の問題、特定GPUの安定FPS、日本版でも必ず起こる不具合とは判断できません。当サイトのベンチマークではありません。
+
+画面のフレーム低下、通信遅延、リソース読込みの停止、強制終了を分けて記録してください。フレーム上限、垂直同期、解像度、描画倍率、CPU・GPU・RAM、ドライバー、電源モード、使用GPUと場所を残し、同じ場所・近い視点で設定を1つずつ変更すると比較しやすくなります。これは編集上の切り分け案で、修復を保証しません。
+
+最低条件を満たしても、すべての画質で安定するとは限りません。SSD推奨だけですべての原因も説明できません。続く場合は版、日時、設定、映像を[公式サポート](/ja/guides/support/)へ。追加DLは[ダウンロード案内](/ja/guides/download/)で別に扱います。確認できた修正告知や補償の情報は今回の資料にはありません。
