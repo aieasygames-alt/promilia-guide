@@ -19,6 +19,8 @@ sourceRefs:
   - cn-login-troubleshooting-support-2026-11-24
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
+  - jp-official-home-2026-11-14
+  - tc-official-home-2026-11-14
 claimRefs:
   - cn-launch-date
   - cn-opening-time
@@ -55,8 +57,8 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 12
-translatedFromRevision: 12
+sourceRevision: 13
+translatedFromRevision: 13
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-27"
@@ -69,6 +71,9 @@ aliases:
 related:
   - download
   - requirements
+  - getting-started
+  - resources
+  - banner-rules
 revisions:
   - date: "2026-11-25"
     note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
@@ -76,6 +81,8 @@ revisions:
     note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
   - date: "2026-11-27"
     note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+  - date: "2026-11-27"
+    note: Prioritized official regional entries, device paths and post-launch next steps; clarified the limits of verified game-client language support. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
 order: 1
 minutes: 6
 ---
@@ -85,6 +92,20 @@ minutes: 6
 **Both publishers announced service began on November 26, 2026.** See the [Japan formal-service notice](https://azurpromilia.jp/news/5225) and [China public-launch notice](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576), checked November 27. This updates the earlier schedule-only status. An official launch announcement is not a real-time uptime check or proof that a particular account can log in.
 
 The original opening schedules were 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. Japan also published [limited-banner rules](/en/guides/banner-rules/) and [its first story event](/en/guides/resources/). A global English release date and English-client support remain unverified in these sources.
+
+## After choosing an edition: download, account, rewards
+
+| Your next task | Guide | Check before continuing |
+| --- | --- | --- |
+| Install on PC or mobile | [Official download steps](/en/guides/download/) | Regional client, target drive and additional resources |
+| Check a device or storage | [PC and mobile requirements](/en/guides/requirements/) | At least 120GB free on PC or 55GB on Android/iOS is a recommendation, not the measured download size |
+| Start the first session | [Beginner account and mail checklist](/en/guides/getting-started/) | Intended account and the receiving character for web-event rewards |
+| Find launch gifts or missing mail | [Rewards and Japan’s first event](/en/guides/resources/) | Source, conditions and the deadline’s time zone |
+| Spend tickets | [Regional banner rules](/en/guides/banner-rules/) | Ticket type, guarantee and banner period |
+| Identify a character or Kibo | [Character catalog](/en/characters/) · [Kibo catalog](/en/kibo/) | Published identities are separate from tested builds and capture routes |
+
+Before joining friends, compare the regional edition, publisher or channel, and server. A common release date does not establish cross-region multiplayer. For an account or login error, use the [regional support guide](/en/guides/support/).
+
 
 ## When does Azur Promilia release?
 

@@ -44,8 +44,8 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 12
-translatedFromRevision: 12
+sourceRevision: 13
+translatedFromRevision: 13
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-27"
@@ -59,6 +59,8 @@ related:
   - global-release
   - download
   - cloud-gaming
+  - getting-started
+  - support
 revisions:
   - date: "2026-11-25"
     note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
@@ -68,6 +70,8 @@ revisions:
     note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
   - date: "2026-11-27"
     note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+  - date: "2026-11-27"
+    note: Added a device and target-drive preparation checklist, prioritized the specification tables and connected download and login help. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
 order: 3
 minutes: 8
 ---
@@ -86,12 +90,17 @@ The China FAQ also recommends at least 55GB free for HarmonyOS. Keep that platfo
 
 Sources: [Japan launch FAQ](https://azurpromilia.jp/contact) and [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/), checked independently on November 24, 2026.
 
+## Four checks before you download
 
-## Mac and low storage: the China cloud alternative
+| Check | On PC | On mobile |
+| --- | --- | --- |
+| Edition and account | Japan or China; official-server or channel account | Regional official site, app ID and store eligibility |
+| Hardware | OS, full CPU and GPU model, physical RAM | Device model, OS, chipset and physical RAM |
+| Installation location | Target drive, SSD/HDD and free space on that drive | Free device storage, separately from RAM |
+| Download stage | Launcher, game client and additional resources | Store app and in-game additional resources |
 
-The [November 26 China announcement](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) confirms an official cloud service with Windows and macOS browser recommendations and separate Android and iOS cloud apps. This is a mainland China service announcement; it does not establish a native Mac installer, a Japan cloud service or an English game client.
+Compare the relevant specification tables below, then follow the [official PC and mobile download steps](/en/guides/download/). The PC recommendation applies to the **target drive**; free space on other drives cannot be added to it. If installation is complete but an account, verification or maintenance prompt blocks login, use the [beginner account checks](/en/guides/getting-started/) rather than assuming the hardware is at fault.
 
-See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements below. We have not tested cloud login, performance or saved-progress compatibility.
 
 ## Azur Promilia PC system requirements
 
@@ -143,6 +152,12 @@ The China FAQ separately lists HarmonyOS. These values do not establish a Japan 
 | Storage | At least 55GB free recommended |
 
 Use the official regional distribution route. The existence of an Android download button does not prove that it is the HarmonyOS package.
+
+## Mac and low storage: the China cloud alternative
+
+The [November 26 China announcement](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) confirms an official cloud service with Windows and macOS browser recommendations and separate Android and iOS cloud apps. This is a mainland China service announcement; it does not establish a native Mac installer, a Japan cloud service or an English game client.
+
+See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements above. We have not tested cloud login, performance or saved-progress compatibility.
 
 ## Why is the App Store size much smaller than 55GB?
 
