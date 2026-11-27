@@ -4,11 +4,11 @@ locale: ja
 slug: getting-started
 section: guides
 title: アズールプロミリア初心者向け準備：開始・特典・初回ガチャ
-description: 本体・追加データ、アカウント、初回メール受取、チケット用途を順に確認。日本の事前登録特典と巣穴探索の配布先・期限を分けて準備します。
+description: 配信後の最初の準備：公式クライアントとアカウント、メール、初心者30回・限定90／80回、初回イベントを確認。解放任務や操作の未検証部分を分けて案内。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始に向けた案内 / 公式FAQの確認日：2026-11-24
+updatedAt: "2026-11-27"
+gameVersion: 正式サービス開始後 / 2026-11-27資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: editorial
 status: published
@@ -33,7 +33,10 @@ sourceRefs:
   - jp-support-page-2026-11-24
   - cn-launch-returns-rewards-2026-11-24
   - cn-login-troubleshooting-support-2026-11-24
-sourceRevision: 15
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
+sourceRevision: 16
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -98,7 +101,9 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の本番公開と公開後検証を明示。現在の本文・訳文の公開確認を記録し、独立言語校閲やゲーム内実操作を完了したとは記録しません。
   - date: "2026-11-26"
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
-translatedFromRevision: 15
+  - date: "2026-11-27"
+    note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+translatedFromRevision: 16
 checklist:
   - id: region
     text: 対象地域・サーバー・アカウントを確認する
@@ -134,6 +139,8 @@ claimRefs:
   - cn-test-recharge-return
   - cn-preregister-mail-benefits
   - cn-login-support-rules
+  - cn-service-status
+  - jp-service-status
 claimRevisions:
   cn-launch-date: 2
   cn-official-entry: 1
@@ -156,13 +163,21 @@ claimRevisions:
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
   cn-login-support-rules: 1
+  cn-service-status: 1
+  jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 ---
+
+## 配信後の案内：開始発表を確認し、現在のチュートリアルへ
+
+11月27日に[日本の正式サービス開始告知](https://azurpromilia.jp/news/5225)と[中国本土の公測開始告知](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)を独立確認しました。両地域とも11月26日に開始を発表済みです。以下の時刻は当初の開始日程で、現在のメンテナンスや個別アカウントのログイン状態は別途確認してください。
+
+観測機能の解放後は[日本の初心者30回・限定90／80回と券種](/ja/guides/banner-rules/)を先に確認。初回の無垢な痕跡20個を限定20回と混同せず、継続ログイン・任務の累計分と分けます。[初回ストーリーイベント](/ja/guides/resources/)は5つの結末と目標報酬を案内していますが、解放任務や結末の数値を実機で検証したものではありません。
 
 ## 事前DL開始後に必要な容量・アカウント・追加データ
 
-11月24日の日本公式FAQはPC120GB以上、Android/iOS55GB以上の空き容量を推奨。後続公告で日本は11月24日16:00、中国本土は同日15:00（UTC+8）の事前DL開始を確認。正式サービスは日本26日11:00、中国本土26日10:00（UTC+8）予定です。開始発表と実際のファイル取得・ログイン結果を分けます。
+11月24日の日本公式FAQはPC120GB以上、Android/iOS55GB以上の空き容量を推奨。後続公告で日本は11月24日16:00、中国本土は同日15:00（UTC+8）の事前DL開始を確認。当初の正式サービス日程は日本26日11:00、中国本土26日10:00（UTC+8）で、26日の開始発表も上記で確認済みです。開始発表と実際のファイル取得・ログイン結果を分けます。
 
 日本は同一アカウントでPC・Android・iOSの進行を共有。中国本土は公式サーバーのPC・Android・iOS・鴻蒙が対象で、一部チャネル版は公式と共有されません。巣穴報酬を受け取るIDと最初のキャラクターを確認してから作成・やり直しを判断してください。
 

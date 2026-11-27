@@ -16,7 +16,9 @@
       "download",
       "requirements",
       "global-release",
-      "reroll"
+      "reroll",
+      "launch",
+      "getting-started"
     ]
   },
   {

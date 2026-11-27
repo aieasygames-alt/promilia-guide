@@ -4,7 +4,7 @@ locale: en
 slug: getting-started
 section: guides
 title: "Azur Promilia Beginner Guide: Accounts, Mail & First Steps"
-description: Start Azur Promilia with the right regional account. Check installation, Japan Kibo rewards, mail and first-pull decisions before spending or changing accounts.
+description: "Azur Promilia beginner preparation after launch: regional account and client, mail, beginner tickets, 90/80 guarantees and Japan’s first event. Exact unlock routes remain untested."
 claimRefs:
   - cn-public-launch-requirements
   - jp-public-launch-requirements
@@ -16,9 +16,14 @@ claimRefs:
   - jp-preregister-benefits
   - cn-login-support-rules
   - jp-account-deletion-terms
+  - cn-service-status
+  - jp-service-status
 sourceRefs:
   - jp-launch-faq-2026-11-24
   - jp-account-terms-2026-11-24
+  - cn-public-launch-2026-11-26
+  - jp-public-launch-2026-11-26
+  - cn-beginner-probability-2026-11-26
 order: 4
 aliases:
   - Azur Promilia beginner guide
@@ -32,8 +37,8 @@ related:
   - support
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: Launch preparation / regional source dates recorded below
+updatedAt: "2026-11-27"
+gameVersion: Post-launch / sources checked November 27, 2026
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
@@ -48,15 +53,19 @@ claimRevisions:
   jp-preregister-benefits: 1
   cn-login-support-rules: 1
   jp-account-deletion-terms: 1
-sourceRevision: 15
-translatedFromRevision: 15
+  cn-service-status: 1
+  jp-service-status: 1
+sourceRevision: 16
+translatedFromRevision: 16
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-27"
 minutes: 8
 revisions:
   - date: "2026-11-26"
     note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+  - date: "2026-11-27"
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
 checklist:
   - id: region
     text: Confirm your regional service, account and distribution route
@@ -71,6 +80,12 @@ checklist:
   - id: rules
     text: Read current reward conditions and regional banner details
 ---
+
+## After launch: follow the confirmed notices and current tutorial
+
+[Japan](https://azurpromilia.jp/news/5225) and [mainland China](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) officially announced launch on November 26. These notices were checked November 27; current maintenance and individual login problems still need their own checks.
+
+After the tutorial unlocks observations, Japan’s beginner banner uses eight 無垢な痕跡 for ten observations with a five-star character within 30. Japan’s limited character and anima guarantees are independently confirmed at 90 and 80. Read [the regional ticket and pity table](/en/guides/banner-rules/) before spending, then check [Japan’s first story event and objective rewards](/en/guides/resources/). Exact unlock quests, reset steps and a timed first-pull route remain untested.
 
 ## What should you do first in Azur Promilia?
 
