@@ -1,0 +1,70 @@
+---
+import { sources } from '../lib/facts';
+interface Props { locale: 'zh-hans' | 'ja' | 'en' }
+const { locale } = Astro.props;
+const copy = {
+  'zh-hans': {
+    title: '先选游戏地区，再选下载设备',
+    intro: 'Promilia Guide 是玩家攻略站。下面直接前往各地区官网；攻略语言不会改变游戏地区。',
+    regions: ['日本 / 日服', '中国大陆 / 国服', '繁中官方入口'],
+    notes: ['PC从日本Windows专页开始；手机从日本官网进入商店。', '官方服与渠道账号先分清，再选对应客户端。', '核对对应商店与运营公告；完整发行范围、账号与服务器规则仍待确认。'],
+    official: '前往官网', pc: '日本Windows官方下载页', steps: '安装与账号步骤',
+    devices: ['PC步骤', 'Android步骤', 'iPhone / iPad核对'], evidence: '入口核验记录',
+    unknown: '找“国际服”或“日服中文”？本页尚未核实统一全球英语服或日本客户端中文支持，先核对目标版本与游戏内语言。',
+  },
+  ja: {
+    title: 'プレイする地域を選び、公式からダウンロード',
+    intro: 'Promilia Guideは非公式の攻略サイトです。以下は各地域の公式サイトへのリンクです。記事の言語とゲームの地域は別に選びます。',
+    regions: ['日本版', '中国本土版', '繁体字版の公式入口'],
+    notes: ['PCは日本公式Windowsページ、スマホは日本公式のストアリンクへ。', '公式版と配布元別アカウントの違いを確認してから取得します。', '対象ストアと運営告知を確認。配信地域の全範囲・アカウント・サーバー規約は別途確認が必要です。'],
+    official: '公式サイトへ', pc: '日本公式Windowsダウンロード', steps: '導入とアカウントの手順',
+    devices: ['PCの手順', 'Androidの手順', 'iPhone / iPadの確認'], evidence: '入口の照合記録',
+    unknown: '世界共通の英語版サービスや、日本版クライアントの中国語対応は本ページでは未確認です。対象の版とゲーム内言語を個別に確認してください。',
+  },
+  en: {
+    title: 'Choose your regional edition, then your device',
+    intro: 'Promilia Guide is an unofficial guide site. These links lead to regional official sites; the language of this guide does not select a game region.',
+    regions: ['Japan edition', 'Mainland China edition', 'Traditional Chinese official site'],
+    notes: ['Start on the Japan Windows page for PC, or follow mobile-store links from the Japan homepage.', 'Check official-server versus channel-account rules before choosing a client.', 'Check the linked store and regional notices. Full country coverage, account and server rules remain unverified here.'],
+    official: 'Visit official site', pc: 'Official Japan Windows page', steps: 'Installation and account steps',
+    devices: ['PC steps', 'Android steps', 'iPhone / iPad checks'], evidence: 'Entry verification record',
+    unknown: 'A worldwide English service and Chinese-language support in the Japan client remain unverified in this guide. Check the intended edition and its in-game language options separately.',
+  },
+}[locale];
+const sourceIds = ['jp-official-home-2026-11-14', 'cn-official-home-2026-11-14', 'tc-official-home-2026-11-14'];
+function officialUrl(id: string) {
+  const source = sources.find(source => source.id === id);
+  if (!source || source.status !== 'verified' || source.kind !== 'official' || !source.url?.startsWith('https://')) throw new Error(`Unverified gateway entry: ${id}`);
+  return source.url;
+}
+const pcUrl = officialUrl('jp-pc-download-page-2026-11-24');
+const regions = ['jp', 'cn', 'tc'];
+const englishTargets = ['how-to-download-the-japan-version-on-pc', 'how-to-download-on-android-or-iphone', 'how-to-download-on-android-or-iphone'];
+---
+<section class="regional-gateway" aria-labelledby="regional-gateway-title" data-regional-gateway>
+  <h2 id="regional-gateway-title">{copy.title}</h2>
+  <p>{copy.intro}</p>
+  <div class="region-cards">{sourceIds.map((id, index) => <section data-region-entry={regions[index]}>
+    <h3>{copy.regions[index]}</h3><p>{copy.notes[index]}</p>
+    <a class="official-entry" href={officialUrl(id)} rel="noopener noreferrer" target="_blank">{copy.official} ↗</a>
+    {index === 0 && <a href={pcUrl} rel="noopener noreferrer" target="_blank">{copy.pc} ↗</a>}
+    {index < 2 && <ul>{['pc', 'android', 'ios'].map((platform, device) => <li><a href={locale === 'en' ? `/en/guides/download/#${index === 1 ? 'china-client-accounts-and-old-test-versions' : englishTargets[device]}` : `/${locale}/guides/download/?region=${regions[index]}&platform=${platform}#distribution-title`}>{copy.devices[device]}</a></li>)}</ul>}
+    <a class="evidence" href={`#source-${id}`}>{copy.evidence}</a>
+  </section>)}</div>
+  <p class="region-boundary">{copy.unknown} <a href={`/${locale}/guides/getting-started/`}>{copy.steps} →</a></p>
+</section>
+<style>
+  .regional-gateway { margin: 0 0 2rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper, #fffdf8); }
+  h2 { font-size: 1.35rem; margin: 0 0 .6rem; }
+  p { line-height: 1.7; color: var(--muted); margin: .5rem 0 1rem; }
+  .region-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .region-cards section { min-width: 0; border-top: 2px solid var(--green); padding-top: .8rem; }
+  h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+  a { color: var(--green); text-decoration: underline; text-underline-offset: .2em; overflow-wrap: anywhere; }
+  .region-cards > section > a { display: block; width: fit-content; margin: .5rem 0; }
+  .official-entry { font-weight: 700; }
+  ul { padding: 0; margin: .8rem 0; list-style: none; display: flex; flex-wrap: wrap; gap: .6rem .8rem; }
+  .evidence { font-size: .8rem; }
+  .region-boundary { margin: 1rem 0 0; font-size: .9rem; }
+  @media (max-width: 760px) { .region-cards { grid-template-columns: 1fr; } }
+</style>

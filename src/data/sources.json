@@ -235,6 +235,11 @@
       "ja": {
         "title": "アズールプロミリア公式サイト",
         "note": "公式の作品名・「キボ」の表記と、事前登録・ストアへのリンクを確認。インストールやログインの可否は別途確認が必要です。"
+      },
+      "en": {
+        "title": "Japan official homepage (Japanese)",
+        "note": "Official regional identity and store links checked. Installation, account eligibility and game-client language options require separate confirmation.",
+        "publisher": "Japan official site / Yostar"
       }
     }
   },

@@ -64,11 +64,12 @@ const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => 
         const url = new URL(location.href); url.searchParams.set('region', region.value); url.searchParams.set('platform', platform.value);
         history.replaceState(null, '', url);
       }
-      const language = document.querySelector<HTMLAnchorElement>('.language-button');
-      if (language && /\/(guides|systems)\/[^/]+\/$/.test(new URL(language.href).pathname)) {
+      const languages = document.querySelectorAll<HTMLAnchorElement>('.language-button, .language-selector a[lang="zh-Hans"], .language-selector a[lang="ja"]');
+      languages.forEach((language) => {
+        if (!/\/(guides|systems)\/[^/]+\/$/.test(new URL(language.href).pathname)) return;
         const target = new URL(language.href); target.searchParams.set('region', region.value); target.searchParams.set('platform', platform.value);
         target.hash = 'distribution-title'; language.href = target.href;
-      }
+      });
     };
     region.addEventListener('change', () => filter(true)); platform.addEventListener('change', () => filter(true));
     filter();

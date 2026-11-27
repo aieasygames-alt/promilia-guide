@@ -35,6 +35,8 @@ related:
   - resources
   - redeem-codes
   - support
+  - banner-rules
+  - global-release
 author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-27"
@@ -55,8 +57,8 @@ claimRevisions:
   jp-account-deletion-terms: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 16
-translatedFromRevision: 16
+sourceRevision: 17
+translatedFromRevision: 17
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-27"
@@ -66,6 +68,8 @@ revisions:
     note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
   - date: "2026-11-27"
     note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+  - date: "2026-11-27"
+    note: Updated the post-launch session flow and verified banner guidance; connected rewards, character and Kibo catalogs with honest route-coverage limits. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
 checklist:
   - id: region
     text: Confirm your regional service, account and distribution route
@@ -86,6 +90,19 @@ checklist:
 [Japan](https://azurpromilia.jp/news/5225) and [mainland China](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) officially announced launch on November 26. These notices were checked November 27; current maintenance and individual login problems still need their own checks.
 
 After the tutorial unlocks observations, Japan’s beginner banner uses eight 無垢な痕跡 for ten observations with a five-star character within 30. Japan’s limited character and anima guarantees are independently confirmed at 90 and 80. Read [the regional ticket and pity table](/en/guides/banner-rules/) before spending, then check [Japan’s first story event and objective rewards](/en/guides/resources/). Exact unlock quests, reset steps and a timed first-pull route remain untested.
+
+## After login: choose the task you need now
+
+| Your task | Continue here | What to check next |
+| --- | --- | --- |
+| Missing mail or web-event rewards | [Reward sources and missing-mail checks](/en/guides/resources/) | Received items, unmet conditions and later sign-in or quest rewards separately |
+| First banner spending | [Regional banner rules](/en/guides/banner-rules/) | Region, ticket, count and expiry before spending |
+| Character names and launch roster | [English character catalog](/en/characters/) | Official identities and available records; a complete tested tier list is not established |
+| Kibo names and sources | [English Kibo catalog](/en/kibo/) | Catalog entries and event rewards are separate from verified capture locations |
+| Download or login blocked | [Download stages](/en/guides/download/) · [Official support](/en/guides/support/) | Version, time, exact error and the appropriate regional steps |
+
+This connects the available launch guides. Exact quest names, unlock levels, capture coordinates and a timed daily farming routine still need launch-client testing.
+
 
 ## What should you do first in Azur Promilia?
 
@@ -113,7 +130,7 @@ Japan PC distribution uses the official Windows page and Yostar launcher. The ga
 
 The regional FAQs recommend at least **55GB free storage on Android/iOS** and **120GB on PC**, with an SSD recommended for PC. These are recommended allowances, not measured final download sizes. Check the full [requirements](/en/guides/requirements/) rather than treating a store size as the complete game.
 
-The announced opening is November 26, 2026 at **11:00 JST in Japan**, equivalent to **02:00 UTC**. China's separately announced schedule is **10:00 UTC+8**, the same instant. Those are schedules; consult the current regional notices for actual service status. Installation success does not prove the server is open.
+Japan and China officially announced launch on November 26. The original schedules were **11:00 JST in Japan / 02:00 UTC** and **10:00 UTC+8 in China**, the same instant. Check current maintenance notices and account messages before login; an installed client does not resolve a blocked account.
 
 ## Your first session: tutorial, mail, then reward checks
 
@@ -138,7 +155,7 @@ See [launch rewards and missing mail](/en/guides/resources/) for the complete di
 
 ## Before your first pull or a reroll decision
 
-Do not assume every displayed ticket can be used on the same banner. Read the item name, eligible banner, cost, period and current in-game probability details. This guide has not independently established Japan's complete banner guarantees or a tested reroll route.
+Do not assume every displayed ticket can be used on the same banner. Read the item name, eligible banner, cost, period and current in-game probability details. Japan’s published beginner and limited-banner guarantees are summarized in the [regional banner guide](/en/guides/banner-rules/). A tested account-reset or timed reroll route remains unverified.
 
 Japan's [account terms](https://azurpromilia.jp/terms/user) state that a deleted account cannot be restored, including accidental deletion. That does not establish a reusable reset procedure. Before any account change, check existing progress and web-event rewards tied to the original ID and receiving character.
 
@@ -162,4 +179,4 @@ A promotional cumulative total is not a measured first-session balance. Sign-in 
 
 ### Where are the farming, capture and material routes?
 
-Verified unlock quests, farming production tables, capture coordinates and complete material routes are not available in this English section yet. Follow current in-game source hints; this guide does not substitute old test coordinates or another game's rules for launch-version evidence.
+Use the [English character catalog](/en/characters/) and [Kibo catalog](/en/kibo/) to identify published names and available official records. Verified unlock quests, farming production tables, capture coordinates and complete material routes are not available in this English section yet. Follow current in-game source hints. If you read Chinese or Japanese, the [China-focused farming guide (Chinese)](/zh-hans/systems/home/) and [Japan-language farming guide](/ja/systems/home/) explain the available evidence and unresolved mechanics; neither is a tested English farming route.
