@@ -1522,5 +1522,57 @@
         "note": "An individual mainland-China player report, read November 27. Not an official finding, controlled benchmark, Japan-wide issue or a repair tested by this site."
       }
     }
+  },
+  {
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测 / 11月27日官网状态",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-27-launch-character-kibo-audit.md",
+    "id": "cn-standard-character-pool-2026-11-26",
+    "title": "恒常观测（角色常驻观测）公测角色名单",
+    "url": "https://azurpromilia.manjuu.com/home/news/detail/912772234182004736",
+    "publishedAt": "2026-11-26",
+    "note": "已查看观测内容一览原图，五星与四星角色各10名；灵子另计。首次50次与后续每200次常驻五星自选；不是游戏全角色表，也不证明公测后追加。",
+    "excerpt": "五星：米砂、末音、法兰塔、璐璐卡、夏儿、阿比、红宝石、兰香子、姬瑟贝露、佩佩。四星：诺诺、忒拉拉、西芙莉雅、寒悠悠、莉莉、米蒂、芃芃、艾妮丝、卡塔露、枫糖。首次累计50次后获得1次常驻五星自选，此后每累计200次额外1次。",
+    "localized": {
+      "ja": {
+        "title": "中国本土の恒常キャラ公示：星5・星4各10名",
+        "note": "公式表の原画像を照合。中国本土の公測時の対象で、日本版の全実装一覧ではありません。"
+      },
+      "en": {
+        "title": "China standard-character pool: ten five-stars and ten four-stars",
+        "publisher": "Manjuu / China official site",
+        "note": "Original roster image checked. China launch pool only; anima are excluded. Does not prove post-launch additions or Japan availability."
+      }
+    }
+  },
+  {
+    "publisher": "蓝色星原：旅谣国服官方网站",
+    "kind": "official",
+    "checkedAt": "2026-11-27",
+    "gameVersion": "2026-11-26公测 / 11月27日官网状态",
+    "gameRegion": "中国大陆",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-27-launch-character-kibo-audit.md",
+    "id": "cn-kibo-showcase-2026-11-27",
+    "title": "国服官网地区奇波展示与18份介绍图",
+    "url": "https://azurpromilia.manjuu.com/home/",
+    "publishedAt": null,
+    "note": "逐条打开18个介绍入口并记录官方原图；另6个名称的入口禁用。去重戏风鸢，组合入口椒饱饱与鲜灵灵分别列名，合计24名。官网分组不是捕获坐标，也不证明全部实装。",
+    "excerpt": "新芽山谷7份介绍，弗利斯城邦8份介绍，辰王朝3份介绍；另有骊渊蛟、珍美螺、戏风鸢、香浮浮、椒饱饱、鲜灵灵名称展示。",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式の地域別キボ紹介・18枚の原画像",
+        "note": "18件の紹介入口を実際に開いて照合。ほか6名は名前のみ。中国語名を残し、日本名や実際の捕獲場所を推測しません。"
+      },
+      "en": {
+        "title": "China regional Kibo showcase and eighteen introduction images",
+        "publisher": "Manjuu / China official site",
+        "note": "Eighteen introduction controls opened and original images recorded; six other names have disabled controls. Website grouping does not establish catch locations or implementation dates."
+      }
+    }
   }
 ]

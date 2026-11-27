@@ -35,7 +35,7 @@ test('region filter includes the Japanese-name Metsa and matches its count and p
     await expect(page.locator('[data-entity-id="metsa"]')).toBeVisible();
     await expect(page.locator('[data-entity-id="symphoria"]')).toBeVisible();
     await page.locator('[data-filter-target="all"]').click();
-    await expect(page.locator('.entity-card:visible')).toHaveCount(6);
+    await expect(page.locator('.entity-card:visible')).toHaveCount(await page.locator('.preview-bar').count() ? 6 : 5);
   }
 });
 

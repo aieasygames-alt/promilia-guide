@@ -1,0 +1,56 @@
+---
+import catalog from '../data/launch-kibo.json';
+import { sources } from '../lib/facts';
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale; compact?: boolean }
+const { locale, compact = false } = Astro.props;
+const c = {
+  'zh-hans': {
+    title:'公测官网奇波：地区与官方图像', intro:'国服官网当前展示24个不同名称，其中18个可以打开介绍图，另6个仅展示名称。下方按官网地区分组，方便比对外形与名字；不是完整实装图鉴，也不是捕捉地点表。',
+    source:'国服官网奇波展示', image:'查看官方介绍原图', alt:'的国服官方介绍图', checked:'核对日期', nameOnly:'仅展示名称，介绍入口未开放',
+    pending:'辰王朝还有以下6个名称。官网入口未开放，暂不据此确认获取方式或实装时间。戏风鸢的同名入口合并计数；组合入口中的椒饱饱、鲜灵灵分别列名。',
+    scope:'新芽山谷、弗利斯城邦、辰王朝是官网展示分组，不证明这些奇波能在对应地区的任意位置捕捉。飞鳐与星鳐暂不合并；星彩奖励与异色形态也不自动计为新物种。',
+    next:'查获取与用途时怎么走', use:'先确认游戏内名称、形态和当前版本，再区分野外捕捉、孵化与活动领取。农园岗位要看个体工作能力和岗位要求，不能由这张外形图推断。',
+    guide:'奇波获取与用途指南', home:'家园岗位与派遣指南', all:'查看全部官方图像',
+    regions:{'新芽山谷':'新芽山谷','弗利斯城邦':'弗利斯城邦','辰王朝':'辰王朝'},
+  },
+  ja: {
+    title:'中国本土の公式キボ紹介：地域別の名前と画像', intro:'中国本土の公式サイトには24の異なる名前が表示されています。18件は紹介画像を開けますが、残る6件は名前のみです。中国語名を原文で残し、外見を照合できるようにまとめました。全実装一覧や捕獲場所の表ではありません。',
+    source:'中国本土公式のキボ紹介', image:'公式の紹介画像を開く', alt:'の中国本土公式紹介画像', checked:'確認日', nameOnly:'名前のみ公開・紹介ページは未開放',
+    pending:'辰王朝には次の6名も表示されていますが、紹介の入口は無効です。入手方法や実装日は確認できません。同名の戏风鸢は1件として数え、椒饱饱と鲜灵灵はそれぞれ記載しています。',
+    scope:'地域名は中国本土公式の表示区分であり、実際の捕獲エリアや座標を保証しません。飞鳐と星鳐は別に扱い、星彩の報酬や異色の姿も新種として自動的に加算しません。日本名との対応は推測していません。',
+    next:'入手と農園の仕事を調べるには', use:'ゲーム内の名前・姿・バージョンを確認し、野外での捕獲、孵化、イベント受取を区別してください。農園の配置は個体の作業能力と仕事の条件で判断します。外見の紹介画像だけでは分かりません。',
+    guide:'キボの入手・用途ガイド', home:'農園の配置・派遣ガイド', all:'公式画像の一覧へ',
+    regions:{'新芽山谷':'新芽山谷（中国本土の表記）','弗利斯城邦':'弗利斯城邦（中国本土の表記）','辰王朝':'辰王朝'},
+  },
+  en: {
+    title:'Kibo names and official artwork from China’s launch site', intro:'China’s official showcase displays 24 distinct names. Eighteen have an introduction image; six are name-only previews. Browse the regional groups to match a name and appearance. This is a source-dated showcase, not a complete obtainable roster or a catch-location map. Names are original Chinese, not verified English localizations.',
+    source:'Official China Kibo showcase', image:'Open official introduction image', alt:' — official China Kibo introduction artwork', checked:'Source checked', nameOnly:'Name-only previews: introductions not yet open',
+    pending:'The China site also displays these six names under 辰王朝, with disabled introduction controls. Their acquisition methods and implementation dates are unverified. Duplicate 戏风鸢 controls count once; the combined 椒饱饱 & 鲜灵灵 control contributes two names.',
+    scope:'Regional groups describe the official website layout, not verified catch areas or coordinates. 飞鳐 and 星鳐 are kept separate. Starry reward forms and alternate colors are not automatically counted as new species. This page does not infer Japan–China name mappings.',
+    next:'Before catching, hatching or assigning a Kibo', use:'Match the in-game name, form and version first. Wild capture, hatching and event claims have different requirements. For farm work, check the individual’s work abilities and the job’s conditions; appearance alone cannot establish suitability.',
+    guide:'Check launch reward and Kibo claim conditions', home:'First-session account checklist', all:'Browse all official images',
+    regions:{'新芽山谷':'新芽山谷 · China website group','弗利斯城邦':'弗利斯城邦 · China website group','辰王朝':'辰王朝 · China website group'},
+  },
+}[locale];
+const source = sources.find(s => s.id === catalog.sourceRef);
+const available = source?.status === 'verified' && source.kind === 'official' && source.checkedAt === catalog.checkedAt && source.url && source.excerpt;
+const groups = Object.entries(c.regions).map(([id,title]) => ({id,title,items:catalog.introductions.filter(row=>row.region===id)}));
+---
+{available && <section class="launch-kibo" aria-labelledby="launch-kibo-title" data-launch-kibo data-pagefind-body>
+  <h2 id="launch-kibo-title">{c.title}</h2><p>{c.intro}</p>
+  <p class="source"><a href={source!.url!} target="_blank" rel="noopener noreferrer">{c.source} ↗</a> · {c.checked}: <time datetime={catalog.checkedAt}>{catalog.checkedAt}</time></p>
+  {compact ? <><ul class="compact-names" lang="zh-Hans">{catalog.introductions.map(row=><li>{row.name}</li>)}</ul><a href={`/${locale}/kibo/#launch-kibo-title`}>{c.all} →</a></> : groups.map(group => <section class="kibo-region" aria-labelledby={`kibo-region-${group.items[0].id}`}><h3 id={`kibo-region-${group.items[0].id}`}>{group.title}</h3><div class="showcase-grid">{group.items.map(row => <article class="showcase-card" data-kibo-introduction={row.id}><img src={row.image} width={row.width} height={row.height} loading="lazy" decoding="async" alt={`${row.name}${c.alt}`}/><div><h4 lang="zh-Hans">{row.name}</h4><a href={row.sourceImage} target="_blank" rel="noopener noreferrer">{c.image} ↗</a></div></article>)}</div></section>)}
+  <section class="name-only" data-kibo-name-only><h3>{c.nameOnly}</h3><p>{c.pending}</p><ul class="compact-names" lang="zh-Hans">{catalog.nameOnly.map(name=><li>{name}</li>)}</ul></section>
+  <p>{c.scope}</p><h3>{c.next}</h3><p>{c.use}</p>
+  <div class="links"><a href={locale==='en'?'/en/guides/resources/':`/${locale}/systems/kibo/`}>{c.guide} →</a><a href={locale==='en'?'/en/guides/getting-started/':`/${locale}/systems/home/`}>{c.home} →</a></div>
+</section>}
+<style>
+  .launch-kibo { border-top:2px solid var(--green); padding-top:1.5rem; margin:0 0 3rem; line-height:1.9; } h2 { font-size:1.4rem; } h3 { font-size:1.1rem; margin:1.5rem 0 .8rem; } p { color:var(--muted); margin:.8rem 0; }
+  .source,.showcase-card a { font-size:.85rem; } a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
+  .showcase-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; } .showcase-card { min-width:0; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; }
+  .showcase-card img { display:block; width:100%; height:auto; background:#eeeae1; } .showcase-card div { padding:.8rem 1rem; } h4 { margin:0 0 .3rem; font-size:1rem; }
+  .compact-names { display:flex; flex-wrap:wrap; gap:.5rem 1rem; list-style:none; padding:0; margin:1rem 0; } .compact-names li { border-bottom:1px solid var(--line); padding:.3rem; }
+  .name-only { margin-top:2rem; padding:0 1.2rem 1rem; border:1px dashed var(--line); border-radius:var(--radius); } .links { display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; }
+  @media(max-width:850px) { .showcase-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } } @media(max-width:520px) { .showcase-grid { grid-template-columns:1fr; } }
+</style>

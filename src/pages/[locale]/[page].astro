@@ -2,6 +2,7 @@
 import BannerCharacters from '../../components/BannerCharacters.astro';
 import Base from '../../layouts/Base.astro';
 import LaunchRoster from '../../components/LaunchRoster.astro';
+import LaunchKibo from '../../components/LaunchKibo.astro';
 import Icon from '../../components/Icon.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import EntityCard from '../../components/EntityCard.astro';
@@ -26,14 +27,14 @@ const c = t(locale);
 const ja = locale === 'ja';
 const labels: Record<string, string> = { guides: c.guides, systems: c.systems, characters: c.characters, kibo: c.kibo, updates: c.updates, about: c.about, 'editorial-policy': c.policy, contact: c.contact, search: c.searchLabel };
 const seoTitles: Record<string, string> = ja ? {
-  guides: 'アズールプロミリア初心者攻略｜ダウンロード・容量・特典', systems: 'アズールプロミリアのシステム｜戦闘・キボ・農園', characters: 'アズールプロミリアのキャラ一覧｜公式紹介・中国本土ガチャ告知', kibo: 'アズールプロミリアのキボ一覧｜名前・分類・公式紹介', updates: 'アズールプロミリア攻略の更新情報｜地域・出典と変更履歴',
+  guides: 'アズールプロミリア初心者攻略｜ダウンロード・容量・特典', systems: 'アズールプロミリアのシステム｜戦闘・キボ・農園', characters: 'アズールプロミリアのキャラ一覧｜公式紹介・中国本土ガチャ告知', kibo: 'アズールプロミリアのキボ一覧｜中国本土公式の24名・紹介画像', updates: 'アズールプロミリア攻略の更新情報｜地域・出典と変更履歴',
 } : {
-  guides: '蓝色星原开荒攻略｜下载、配置、公测福利与首抽', systems: '蓝色星原系统指南｜战斗、奇波与家园', characters: '蓝色星原角色一览｜官方介绍与国服公测卡池', kibo: '蓝色星原奇波图鉴｜名称、分类与官方介绍', updates: '蓝色星原攻略更新｜地区公告、来源与修订记录',
+  guides: '蓝色星原开荒攻略｜下载、配置、公测福利与首抽', systems: '蓝色星原系统指南｜战斗、奇波与家园', characters: '蓝色星原角色一览｜官方介绍与国服公测卡池', kibo: '蓝色星原奇波图鉴｜24个官网名称与18份官方图像', updates: '蓝色星原攻略更新｜地区公告、来源与修订记录',
 };
 const intros: Record<string, string> = ja ? {
-  guides: 'アズールプロミリアの配信日、公式ダウンロード、容量・推奨スペック、特典、リセマラ、ガチャとログイン対策を目的別に探せます。', systems: '操作の条件と根拠を一つずつ確認し、ゲームの仕組みを理解しましょう。', characters: '公式に確認できた名称・紹介文と、資料の確認状況を整理します。', kibo: '公式サイトで紹介された5種のキボを、名前・分類・公開された特徴から整理します。', updates: '情報の変更点、対象範囲と確認状況を記録します。', about: '未知の世界を歩くための、プレイヤーによる非公式の道しるべ。', 'editorial-policy': '情報の根拠と対象範囲を示し、確認できていないことを区別します。', contact: '誤りや古い情報を見つけたら、根拠と一緒に修正メモを作成できます。', search: c.searchHelp,
+  guides: 'アズールプロミリアの配信日、公式ダウンロード、容量・推奨スペック、特典、リセマラ、ガチャとログイン対策を目的別に探せます。', systems: '操作の条件と根拠を一つずつ確認し、ゲームの仕組みを理解しましょう。', characters: '公式に確認できた名称・紹介文と、資料の確認状況を整理します。', kibo: '中国本土公式の24名と18枚の紹介画像を地域別に整理し、既存の分類・生態資料も掲載します。名前のみの公開と入手可能なキボを区別します。', updates: '情報の変更点、対象範囲と確認状況を記録します。', about: '未知の世界を歩くための、プレイヤーによる非公式の道しるべ。', 'editorial-policy': '情報の根拠と対象範囲を示し、確認できていないことを区別します。', contact: '誤りや古い情報を見つけたら、根拠と一緒に修正メモを作成できます。', search: c.searchHelp,
 } : {
-  guides: '按问题查找蓝色星原官方下载、容量配置、公测福利、卡池保底、首抽与登录排查，分别核对国服和日本公告。', systems: '讲清操作、前提与例外，再把机制用到你的旅途中。', characters: '整理已核验的官方角色名称、英文标识、简介与资料状态。', kibo: '整理官网已公布的 5 个奇波：名称、英文标识、分类与公开特征。', updates: '记录改了什么、依据是什么，以及适用于哪个地区与版本。', about: '一份玩家自建的星原旅行手册，陪你走好每一次出发。', 'editorial-policy': '让已知有依据，让未知保持清楚，让每次修订都有迹可循。', contact: '如果发现错误或过时内容，可以在这里整理问题与可核对的依据。', search: c.searchHelp,
+  guides: '按问题查找蓝色星原官方下载、容量配置、公测福利、卡池保底、首抽与登录排查，分别核对国服和日本公告。', systems: '讲清操作、前提与例外，再把机制用到你的旅途中。', characters: '整理已核验的官方角色名称、英文标识、简介与资料状态。', kibo: '按地区整理国服官网24个奇波名称与18份介绍图，区分名称展示和获取状态，并保留已有分类与生态资料。', updates: '记录改了什么、依据是什么，以及适用于哪个地区与版本。', about: '一份玩家自建的星原旅行手册，陪你走好每一次出发。', 'editorial-policy': '让已知有依据，让未知保持清楚，让每次修订都有迹可循。', contact: '如果发现错误或过时内容，可以在这里整理问题与可核对的依据。', search: c.searchHelp,
 };
 const entries = (await visibleGuides(locale)).filter((entry) => page === 'systems' ? entry.data.section === 'systems' : entry.data.section === 'guides');
 const catalog = page === 'guides' || page === 'systems';
@@ -56,7 +57,7 @@ const otherCount = entityEntries.filter(entity => entityCategory(entity) === 'ot
 if (otherCount) activeFilters.push({ id: 'other', label: ja ? 'その他・未分類' : '其他／未分类', count: otherCount });
 const all = await allGuides();
 const noindex = ['search'].includes(page) || (catalog && entries.filter((e) => isPublished(e.data, all)).length < 2);
-const alternateLocales = page === 'characters' ? [...locales, 'en' as const] : locales;
+const alternateLocales = ['characters', 'kibo'].includes(page) ? [...locales, 'en' as const] : locales;
 const alternates = alternateLocales.map((l) => ({ lang: languageTag[l], href: origin + `/${l}/${page}/` })).concat([{ lang: 'x-default', href: origin + `/zh-hans/${page}/` }]);
 ---
 <Base locale={locale} title={seoTitles[page] || labels[page]} description={intros[page]} noindex={noindex} searchable={!['search', 'contact'].includes(page) && (!catalog || entries.length > 0)} alternates={alternates} languageTarget={`/${ja ? 'zh-hans' : 'ja'}/${page}/`}>
@@ -67,7 +68,9 @@ const alternates = alternateLocales.map((l) => ({ lang: languageTag[l], href: or
     {page === 'search' && <><Search locale={locale}/><a class="text-link" href={`/${locale}/guides/`}>{c.browse}<Icon name="arrow" size={17}/></a></>}
     {page === 'characters' && <BannerCharacters locale={locale}/>}
     {page === 'characters' && <LaunchRoster locale={locale}/>}
+    {page === 'kibo' && <LaunchKibo locale={locale}/>}
     {entityKind && <section class="entity-catalog" data-entity-catalog={entityKind} data-pagefind-body>
+      {entityKind === 'character' && <><h2>{ja ? '公測前の公式人物紹介資料' : '公测前官方人物介绍资料'}</h2><p class="notice">{ja ? '以下の5件は以前の公式紹介から照合した資料です。上の公測ガチャ対象とは別で、現在の全実装名簿ではありません。旧表記と現在の名称の対応は確認を続けています。' : '以下5项是此前核对的官方人物介绍，与上方公测卡池名单分别记录，不代表当前全部可用角色；旧表记与现名的对应继续核验。'}</p></>}
       <CatalogHelp locale={locale} kind={entityKind} count={entityEntries.filter(entity => isEntityCatalogPublishable(entity, locale, sources)).length}/>
       {entityKind === 'kibo' && <FeatureVisual id="kibo-showcase" locale={locale}/>}
       <div class="notice entity-notice">{ja ? '公式サイトで公開された名称と紹介文を、地域ごとの表記のまま掲載しています。技能倍率、育成素材、強さ、入手場所は公式根拠が確認できるまで追加しません。' : '以下内容来自官方站已公开的名称与介绍，并保留各地区原始表记。技能倍率、养成材料、强度和获取地点在有明确官方依据前不会补充。'}</div>

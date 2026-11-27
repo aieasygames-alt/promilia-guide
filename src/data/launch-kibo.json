@@ -1,0 +1,176 @@
+{
+  "checkedAt": "2026-11-27",
+  "sourceRef": "cn-kibo-showcase-2026-11-27",
+  "introductions": [
+    {
+      "id": "phantomfly",
+      "name": "森彩灵蝶",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/phantomfly-detail-CXKzhaJo.png",
+      "image": "/images/entities/launch-kibo/phantomfly.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "snowpup",
+      "name": "小雪狼",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/snowpup-detail-C6wqtHw_.png",
+      "image": "/images/entities/launch-kibo/snowpup.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "gusthawk",
+      "name": "风剪鹰",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/gusthawk-detail-BiKlvG3Y.png",
+      "image": "/images/entities/launch-kibo/gusthawk.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "airay",
+      "name": "飞鳐",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/airay-detail-C3KmHkGM.png",
+      "image": "/images/entities/launch-kibo/airay.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "beaver",
+      "name": "河狸仔",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/beaver-detail-DCrazFBf.png",
+      "image": "/images/entities/launch-kibo/beaver.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "leafox",
+      "name": "小芽狐",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/leafox-detail-DGpymdwB.png",
+      "image": "/images/entities/launch-kibo/leafox.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "flamoo",
+      "name": "焰哞哞",
+      "region": "新芽山谷",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/flamoo-detail-CO-oMv34.png",
+      "image": "/images/entities/launch-kibo/flamoo.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "scareclaw",
+      "name": "跳跳稻草人",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/scareclaw-detail-ChBGO2iy.png",
+      "image": "/images/entities/launch-kibo/scareclaw.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "mokoon",
+      "name": "摩空球",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/mokoon-detail-De6jFuZI.png",
+      "image": "/images/entities/launch-kibo/mokoon.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "puffershark",
+      "name": "爆爆鲨",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/puffershark-detail-BDaKkvzn.png",
+      "image": "/images/entities/launch-kibo/puffershark.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "krisha",
+      "name": "柯瑞夏",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/krisha-detail-Di0xWbYs.png",
+      "image": "/images/entities/launch-kibo/krisha.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "shwoof",
+      "name": "咩嗷仔",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/shwoof-detail-DKQqjMT7.png",
+      "image": "/images/entities/launch-kibo/shwoof.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "downybrinny",
+      "name": "绒心布里尼",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/downybrinny-detail-BQZGTKFg.png",
+      "image": "/images/entities/launch-kibo/downybrinny.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "notepole",
+      "name": "小音浮",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/notepole-detail-CoaeXLDB.png",
+      "image": "/images/entities/launch-kibo/notepole.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "bluda",
+      "name": "布鲁达",
+      "region": "弗利斯城邦",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/bluda-detail-C7Uu0iwi.png",
+      "image": "/images/entities/launch-kibo/bluda.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "floatfish",
+      "name": "浮结鱼",
+      "region": "辰王朝",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/floatfish-detail-G28Al-K7.png",
+      "image": "/images/entities/launch-kibo/floatfish.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "jadefox",
+      "name": "青华幼狐",
+      "region": "辰王朝",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/jadefox-detail-CYMwcry8.png",
+      "image": "/images/entities/launch-kibo/jadefox.webp",
+      "width": 840,
+      "height": 420
+    },
+    {
+      "id": "tangtang",
+      "name": "糖鸟",
+      "region": "辰王朝",
+      "sourceImage": "https://webstatic.manjuu.com/web/static/azurpromilia.manjuu.com/home/assets/tangtang-detail-CbZibZYq.png",
+      "image": "/images/entities/launch-kibo/tangtang.webp",
+      "width": 840,
+      "height": 420
+    }
+  ],
+  "nameOnly": [
+    "骊渊蛟",
+    "珍美螺",
+    "戏风鸢",
+    "香浮浮",
+    "椒饱饱",
+    "鲜灵灵"
+  ]
+}

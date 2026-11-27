@@ -297,29 +297,29 @@ export const entities: readonly Entity[] = [
     },
     "image": "/images/entities/characters/hanyouyou.webp",
     "imageAlt": {
-      "zh-hans": "寒悠悠的官方角色形象",
-      "ja": "カンユウユウの公式キャラクタービジュアル"
+      "zh-hans": "以寒悠悠名义保存的图像（对应待核对）",
+      "ja": "寒悠悠として保存された画像（対応確認中）"
     },
     "imageSource": "official",
     "summary": {
-      "zh-hans": "此条名称与人物设定仍待补充独立来源，暂不进入正式目录。",
-      "ja": "名称と人物設定の独立した出典を確認中のため、正式な一覧には含めません。"
+      "zh-hans": "公测常驻池公示已确认寒悠悠为四星角色；现有图片对应、日文姓名与人物设定仍待独立核对，资料卡暂不进入正式目录。",
+      "ja": "中国本土の公測公示で寒悠悠の名前・星4・恒常対象を確認。既存画像との対応、日本語名、人物設定は確認中のため、この紹介カードは正式一覧に含めません。"
     },
     "sourceRefs": {
-      "zh-hans": "cn-official-home-2026-11-14",
-      "ja": "jp-official-character-2026-11-14"
+      "zh-hans": "cn-standard-character-pool-2026-11-26",
+      "ja": "cn-standard-character-pool-2026-11-26"
     },
-    "revision": 1,
+    "revision": 2,
     "catalogStatus": "pending",
     "detailReview": {
       "zh-hans": {
         "status": "draft",
-        "revision": 1,
+        "revision": 2,
         "sourceChecks": {}
       },
       "ja": {
         "status": "draft",
-        "revision": 1,
+        "revision": 2,
         "sourceChecks": {}
       }
     }

@@ -1,6 +1,7 @@
 ---
 import BannerCharacters from '../../components/BannerCharacters.astro';
 import LaunchRoster from '../../components/LaunchRoster.astro';
+import LaunchKibo from '../../components/LaunchKibo.astro';
 import Base from '../../layouts/Base.astro';
 import ContentRoutes from '../../components/ContentRoutes.astro';
 import { visibleEntitiesFor, visibleGuides, type ReferenceLocale as Locale } from '../../lib/content';
@@ -35,6 +36,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
       <p class="notice">{ja ? '掲載件数は当サイトが照合した紹介数で、ゲーム内の全キャラクター・全キボ数ではありません。名前と設定の資料から、技能・強さ・素材・捕獲場所を推定しません。' : '这里的数量是本站已核验介绍数，不代表游戏全部角色或奇波总数。名称与设定资料不能替代技能、强度、材料和捕获地点证据。'}</p>
       <BannerCharacters locale={locale}/>
       <LaunchRoster locale={locale}/>
+      <LaunchKibo locale={locale} compact/>
       {[{ id: 'characters', items: characters, label: ja ? 'キャラクター早見表' : '角色名称速查', path: 'characters' }, { id: 'kibo', items: kibo, label: ja ? 'キボ早見表' : '奇波名称速查', path: 'kibo' }].map(group => <section class="database-section" aria-labelledby={group.id}>
         <div class="section-head"><h2 id={group.id}>{group.label}</h2><a class="text-link" href={`/${locale}/${group.path}/`}>{ja ? '画像付き一覧へ' : '查看图文目录'} →</a></div>
         <div class="database-table"><table><caption class="sr-only">{group.label}</caption><thead><tr><th scope="col">{ja ? '名前 / 英文表記' : '名称／英文标识'}</th><th scope="col">{ja ? '所属・分類' : '所属／分类'}</th><th scope="col">{ja ? '紹介・資料' : '介绍与资料'}</th></tr></thead><tbody>{group.items.map(entity => <tr><th scope="row"><a href={`/${locale}/${group.path}/${entity.id}/`}>{entity.names[locale]}</a><small>{entity.romanized}</small></th><td>{entity.origin?.[locale] || entity.classification?.[locale]}</td><td><p>{entity.summary[locale]}</p><a href={sources.find(source => source.id === entity.sourceRefs[locale])!.url!} target="_blank" rel="noopener noreferrer">{ja ? '公式出典' : '官方来源'} ↗</a></td></tr>)}</tbody></table></div>

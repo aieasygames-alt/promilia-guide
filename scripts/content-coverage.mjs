@@ -14,6 +14,9 @@ const groups = JSON.parse(await readFile(new URL('../src/data/faq.json', import.
 const englishPlan = JSON.parse(await readFile(new URL('../src/data/english-release-plan.json', import.meta.url), 'utf8'));
 const englishQuestions = JSON.parse(await readFile(new URL('../src/data/english-faq.json', import.meta.url), 'utf8'));
 const englishAnswers = resolveQuestions(englishQuestions, 'en', { entries, sources, claims }).flatMap(group => group.questions);
+const launchPool = JSON.parse(await readFile(new URL('../src/data/launch-character-pool.json', import.meta.url), 'utf8'));
+const launchKibo = JSON.parse(await readFile(new URL('../src/data/launch-kibo.json', import.meta.url), 'utf8'));
+const launchCatalogCoverage = { standardPoolNames: launchPool.fiveStar.length + launchPool.fourStar.length, kiboIntroductionImages: launchKibo.introductions.length, kiboNameOnlyPreviews: launchKibo.nameOnly.length, scope: 'China official sources; original regional names, not total implementation counts' };
 const allTopics = contentRoutes.flatMap(group => group.topics);
 const result = {
   mode: process.env.CONTENT_PREVIEW === 'true' ? 'preview' : 'production',
@@ -29,6 +32,7 @@ const result = {
       awaitingReviewSystemGuides: localized.filter(entry => entry.data.section === 'systems' && entry.data.status === 'draft').length,
       verifiedCharacterProfiles: entities.filter(entity => entity.kind === 'character' && isEntityCatalogPublishable(entity, locale, sources)).length,
       verifiedKiboProfiles: entities.filter(entity => entity.kind === 'kibo' && isEntityCatalogPublishable(entity, locale, sources)).length,
+      launchCatalogs: launchCatalogCoverage,
       publishedPracticalEntityDetails: entities.filter(entity => isEntityDetailPublishable(entity, locale, sources)).length,
       questions: available.flatMap(group => group.questions).length,
       currentAnswers: available.flatMap(group => group.questions).filter(question => question.available).length,
@@ -37,6 +41,7 @@ const result = {
     }];
   }).concat([['en', {
     scope: englishPlan.title,
+    launchCatalogs: launchCatalogCoverage,
     publishedGuides: entries.filter(({ data }) => data.locale === 'en' && isPublishable(data, { entries, sources, claims })).length,
     missingTopics: englishPlan.topics.map(topic => topic.contentId).filter(id => !entries.some(({ data }) => data.locale === 'en' && data.contentId === id)),
     fullReferenceTopicCount: allTopics.length,

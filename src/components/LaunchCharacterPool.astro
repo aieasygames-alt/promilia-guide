@@ -1,0 +1,59 @@
+---
+import pool from '../data/launch-character-pool.json';
+import { sources } from '../lib/facts';
+import type { Locale } from '../lib/content';
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+const c = {
+  'zh-hans': {
+    title: '国服公测常驻角色名单', region: '中国大陆服 · 2026年11月26日官方公示',
+    intro: '恒常观测的官方内容表列出以下20名角色：五星、四星各10名。这里按角色整理，未把同表中的灵子算作角色。',
+    five: '五星常驻角色', four: '四星常驻角色',
+    limited: '涂山小玉属于另行公告的首期限定角色，不在这份常驻名单中。源千代的官网展示也不等于已进入常驻池。',
+    how: '怎么使用这份名单',
+    use: '查常驻自选时先核对五星组：公示说明首次累计50次常驻角色观测可获得1次常驻五星自选，此后每累计200次再获得1次。四星组是池内角色名单，不代表每次十连必得角色；四星内容也包含灵子。领取条件与可选对象以游戏内界面为准。',
+    hanyouyou: '寒悠悠已由公测公示确认名称、四星身份和入池。其技能、日文名及现有图片对应关系仍需单独核对。',
+    names: '本表保留国服原名，不推测中日角色对应。旧介绍中的“西夫未瑟”和“メーツァ”尚不能直接改为表内名称。此表是公测名单补录，不表示这些角色在开服后才新增。',
+    source: '官方常驻池公示', checked: '核对日期', banner: '查看限定卡池与保底规则',
+  },
+  ja: {
+    title: '中国本土・公測時の恒常キャラ一覧', region: '中国本土版 · 2026年11月26日の公式公示',
+    intro: '中国本土の恒常キャラガチャの公式表には、星5・星4が各10名、計20名記載されています。同じ表に載る霊子はキャラ数に含めていません。名前は中国本土の原文です。',
+    five: '星5の恒常キャラ', four: '星4の恒常キャラ',
+    limited: '涂山小玉は別途告知された初回限定キャラで、この恒常一覧には含まれません。源千代も公式での紹介だけでは恒常ガチャへの登場を確認できません。',
+    how: '恒常キャラを選ぶ前に',
+    use: '中国本土の公示では、恒常キャラガチャの初回累計50回で恒常星5を1回選択でき、その後は累計200回ごとに追加の選択機会があります。星4枠には霊子も含まれるため、10回ごとにキャラが出るという意味ではありません。受取条件と選択対象はゲーム内で確認してください。日本版の規則とは別です。',
+    hanyouyou: '寒悠悠の中国語名・星4・恒常対象は公式表で確認できました。技能、日本語名、既存画像との対応は別途確認が必要です。',
+    names: '日中の名前を推測で対応させていません。旧紹介の西夫未瑟・メーツァを、この表の名前へ自動的に置き換えることもできません。これは公測時の一覧の補完であり、配信開始後の追加を示すものではありません。',
+    source: '中国本土の公式公示', checked: '確認日', banner: '限定ガチャと天井の地域別ガイド',
+  },
+  en: {
+    title: 'China launch standard-banner character roster', region: 'Mainland China · official disclosure dated November 26, 2026',
+    intro: 'The official standard-character banner table lists 20 characters: ten five-stars and ten four-stars. Anima items appear separately in that disclosure and are excluded here. Names remain in the original Chinese; these are not official English names.',
+    five: 'Five-star standard characters', four: 'Four-star standard characters',
+    limited: '涂山小玉 is covered by a separate first limited-banner announcement and is not in this standard pool. A homepage preview of 源千代 does not establish standard-banner availability.',
+    how: 'Before using a standard selector',
+    use: 'China’s disclosure offers one standard five-star selection after the first 50 standard-character observations, then another selection for every further 200. Check the five-star group when reviewing that selection. Four-star results can also be anima, so a ten-pull guarantee does not mean a guaranteed character. Check the in-game selection and claim conditions. These are China rules, not Japan rules.',
+    hanyouyou: 'The official table confirms 寒悠悠 as a four-star in China’s standard pool. Skills, the Japanese name and the match to our older portrait still need separate checks.',
+    names: 'We do not infer Japan–China name mappings or automatically rename older profiles such as 西夫未瑟 and メーツァ. This fills a launch-roster gap; it does not establish that these characters were added after launch.',
+    source: 'Official China standard-pool disclosure', checked: 'Source checked', banner: 'Compare regional banners and guarantees',
+  },
+}[locale];
+const source = sources.find(s => s.id === pool.sourceRef);
+const available = source?.status === 'verified' && source.kind === 'official' && source.checkedAt === pool.checkedAt && source.url && source.excerpt;
+---
+{available && <section class="launch-pool" aria-labelledby="standard-pool-title" data-standard-pool data-pagefind-body>
+  <p class="region">{c.region}</p><h2 id="standard-pool-title">{c.title}</h2><p>{c.intro}</p>
+  {[{stars:5, title:c.five, names:pool.fiveStar},{stars:4, title:c.four, names:pool.fourStar}].map(group => <div data-pool-rarity={group.stars}><h3>{group.title}</h3><ul class="pool-names" lang="zh-Hans">{group.names.map(name => <li data-pool-character={name}>{name}</li>)}</ul></div>)}
+  <p>{c.limited}</p><h3>{c.how}</h3><p>{c.use}</p><p>{c.hanyouyou}</p><p class="scope">{c.names}</p>
+  <div class="links"><a href={source!.url!} target="_blank" rel="noopener noreferrer">{c.source} ↗</a><a href={`/${locale}/guides/banner-rules/`}>{c.banner} →</a></div>
+  <p class="source-date">{c.checked}: <time datetime={pool.checkedAt}>{pool.checkedAt}</time></p>
+</section>}
+<style>
+  .launch-pool { padding:1.5rem; margin:0 0 2rem; border:1px solid var(--line); border-left:3px solid var(--green); border-radius:var(--radius); line-height:1.9; }
+  h2 { font-size:1.35rem; } h3 { font-size:1rem; margin-top:1.3rem; } p { color:var(--muted); margin:.7rem 0; }
+  .region { color:var(--green); font-size:.8rem; } .pool-names { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.5rem 1rem; list-style:none; padding:0; }
+  li { border-bottom:1px solid var(--line); padding:.5rem 0; overflow-wrap:anywhere; } .scope,.source-date { font-size:.85rem; } .links { display:flex; flex-wrap:wrap; gap:.6rem 1.5rem; }
+  a { color:var(--green); text-decoration:underline; text-underline-offset:.2em; }
+  @media(max-width:650px) { .launch-pool { padding:1rem; } .pool-names { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+</style>
