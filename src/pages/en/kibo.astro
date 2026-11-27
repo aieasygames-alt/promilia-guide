@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import FeatureVisual from '../../components/FeatureVisual.astro';
 import LaunchKibo from '../../components/LaunchKibo.astro';
 import { locales, languageTag, origin } from '../../lib/publication.mjs';
 const alternates = [...locales.map(locale => ({ lang: languageTag[locale], href: `${origin}/${locale}/kibo/` })), { lang:'x-default', href:`${origin}/zh-hans/kibo/` }];
@@ -8,6 +9,7 @@ const alternates = [...locales.map(locale => ({ lang: languageTag[locale], href:
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/en/">Home</a><span>/</span>Kibo</nav>
     <header class="page-heading"><p class="eyebrow">OFFICIAL KIBO REFERENCES</p><h1>Azur Promilia Kibo guide</h1><p>Match Kibo names and appearances from the official regional website, then check how rewards and acquisition conditions differ.</p></header>
+    <FeatureVisual id="kibo-companions" locale="en" priority/>
     <LaunchKibo locale="en"/>
     <section class="prose kibo-next" data-pagefind-body>
       <h2>Are these Kibo newly added after launch?</h2><p>The images and names were checked on November 27, 2026. The showcase does not provide a release date for each Kibo. Finding a missing entry here does not establish that the game added it after the November 26 launch. The count describes this website section, not the total number of Kibo in the game.</p>

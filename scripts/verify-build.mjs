@@ -36,12 +36,30 @@ for (const file of htmlFiles) {
   if (!canonical?.startsWith(origin + '/')) fail(`${file}: canonical must use production origin`);
   if (path !== '/404/' && canonical !== origin + path) fail(`${file}: canonical must reference this page`);
   if (isPreview && !$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`${file}: preview must be noindex`);
+  if (!$('meta[name=robots]').attr('content')?.includes('noindex') && !$('meta[name=robots]').attr('content')?.includes('max-image-preview:large')) fail(`${file}: indexable page must allow large image previews`);
+  const ogImage = $('meta[property="og:image"]').attr('content');
+  if (!ogImage?.startsWith(origin + '/') || !allFiles.has('dist' + new URL(ogImage, origin).pathname)) fail(`${file}: social image must be an existing canonical asset`);
+  if ($('meta[name="twitter:image"]').attr('content') !== ogImage) fail(`${file}: Twitter and Open Graph images must agree`);
+  if (ogImage && !ogImage.endsWith('/images/social.png')) {
+    const image = $('img').toArray().find(node => origin + $(node).attr('src') === ogImage);
+    if (!image) fail(`${file}: representative image must be visible in the page HTML`);
+    else {
+      if ($(image).attr('width') !== $('meta[property="og:image:width"]').attr('content') || $(image).attr('height') !== $('meta[property="og:image:height"]').attr('content')) fail(`${file}: social dimensions must match the visible image`);
+      if ($(image).attr('alt') !== $('meta[property="og:image:alt"]').attr('content')) fail(`${file}: social alt must match the localized visible image`);
+    }
+    const structured = $('script[type="application/ld+json"]').text();
+    if (!structured.includes(ogImage)) fail(`${file}: structured data must include the representative image`);
+  }
   for (const script of $('script[type="application/ld+json"]').toArray()) {
     try { JSON.parse($(script).text()); } catch { fail(`${file}: invalid JSON-LD`); }
   }
   for (const node of $('img[src],script[src],link[rel=stylesheet][href]').toArray()) {
     const src = $(node).attr('src') || $(node).attr('href');
     if (src?.startsWith('/') && !allFiles.has('dist' + new URL(src, origin).pathname)) fail(`${file}: missing local asset ${src}`);
+  }
+  for (const node of $('img[srcset]').toArray()) for (const candidate of $(node).attr('srcset').split(',')) {
+    const src = candidate.trim().split(/\s+/)[0];
+    if (src.startsWith('/') && !allFiles.has('dist' + src)) fail(`${file}: missing responsive image ${src}`);
   }
 }
 for (const [path, { $, file }] of pages) {
@@ -91,6 +109,11 @@ for (const node of sitemap('url').toArray()) {
   if (articleUpdates.has(path)) {
     if (lastmod.length !== 1 || lastmod.text() !== articleUpdates.get(path)) fail(`Sitemap lastmod must match the article's actual updatedAt ${path}`);
   } else if (lastmod.length) fail(`Sitemap must not invent an update date for a non-article page ${path}`);
+  for (const image of item.find('image\\:loc').toArray()) {
+    const src = sitemap(image).text();
+    if (!src.startsWith(origin + '/') || !allFiles.has('dist' + new URL(src, origin).pathname)) fail(`Sitemap image must be an existing canonical asset: ${src}`);
+    if (!page?.$('img').toArray().some(node => origin + page.$(node).attr('src') === src)) fail(`Sitemap image must appear in the page HTML: ${path} ${src}`);
+  }
 }
 if (!isPreview) for (const path of articleUpdates.keys()) {
   if (!sitemapPaths.has(path)) fail(`Published article missing from sitemap ${path}`);

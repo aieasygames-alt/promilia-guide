@@ -1,5 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ArtworkGallery from '../../components/ArtworkGallery.astro';
+import { visuals, visualSrcSet } from '../../lib/visuals';
 import Icon from '../../components/Icon.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import LaunchActions from '../../components/LaunchActions.astro';
@@ -28,7 +30,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
 <Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア攻略｜ダウンロード・容量・特典' : '蓝色星原：旅谣攻略｜下载、开荒与福利'} description={c.intro} alternates={alternates}>
   <section class="hero">
     <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1><span class="hero-game">{locale === 'ja' ? 'アズールプロミリア攻略' : '蓝色星原：旅谣攻略'}</span>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? '出典を明記 · バージョンを区別 · 継続して更新' : '来源可追溯 · 版本有标注 · 内容持续修订'}</span></div></div>
-    <div class="hero-visual"><img src="/images/feature/home-world.webp" width="1500" height="843" alt={locale === 'ja' ? 'ユーザー提供の「アズールプロミリア」風景ビジュアル。山、花畑、キャラクターを描いている。' : '用户提供的蓝色星原：旅谣风景图，展示山地、花田与角色。'} fetchpriority="high" loading="eager" decoding="async"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-compass" aria-hidden="true"><span>N</span><Icon name="compass" size={50}/></div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>THE JOURNEY STARTS HERE</small><strong>{c.fieldnotesSub}</strong></span><span class="caption-index">01 / ∞</span></div></div>
+    <div class="hero-visual"><img src="/images/feature/home-world.webp" srcset={visualSrcSet('home-world')} sizes="(max-width: 900px) 100vw, 55vw" width="1500" height="843" alt={visuals['home-world'].alt[locale]} fetchpriority="high" loading="eager" decoding="async"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-compass" aria-hidden="true"><span>N</span><Icon name="compass" size={50}/></div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>THE JOURNEY STARTS HERE</small><strong>{c.fieldnotesSub}</strong></span><span class="caption-index">01 / ∞</span></div></div>
   </section>
   <div class="container">
     <nav class="launch-answers" aria-label={locale === 'ja' ? 'サービス開始の疑問から探す' : '公测问题快速查找'}><strong>{locale === 'ja' ? 'いま知りたいこと' : '公测先查这些'}</strong><div>{launchLinks.map(link => <a href={link.href}>{link.label}<Icon name="arrow" size={14}/></a>)}</div></nav>
@@ -79,6 +81,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
     <section class="home-section toolkit"><div class="section-head"><div><div class="section-kicker">KEEP THESE CLOSE</div><h2>{c.toolkit}</h2><p>{c.toolkitSub}</p></div><span class="toolkit-star" aria-hidden="true">✧</span></div><div class="toolkit-grid">{tools.map((tool, i) => <a href={root + tool.path}><span class="tool-icon"><Icon name={tool.icon} size={25}/></span><div><h3>{c.toolkitNames[i]}</h3><p>{c.toolkitNotes[i]}</p></div><Icon name="arrow" size={16}/></a>)}</div></section>
     <nav class="home-reference" aria-label={locale === 'ja' ? '資料とよくある質問' : '图鉴与常见问题'}><a href={root + 'database/'}><Icon name="book" size={23}/><span><strong>{c.database}</strong><small>{locale === 'ja' ? 'キャラクター・キボ・地域を横断して探す' : '角色、奇波与地区资料集中查阅'}</small></span><Icon name="arrow" size={18}/></a><a href={root + 'faq/'}><Icon name="compass" size={23}/><span><strong>{c.faq}</strong><small>{locale === 'ja' ? '開始・報酬・遊び方の疑問から探す' : '从开服、领取与玩法问题找到答案'}</small></span><Icon name="arrow" size={18}/></a></nav>
     <section class="updates-callout"><Icon name="book" size={28}/><div><h2>{c.updatesTitle}</h2><p>{c.updatesSub}</p></div><a class="text-link" href={root + 'updates/'}>{c.readUpdates}<Icon name="arrow" size={17}/></a></section>
+    <ArtworkGallery kind="home" locale={locale}/>
   </div>
 </Base>
 <style>
