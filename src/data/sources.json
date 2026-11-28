@@ -450,6 +450,11 @@
       "ja": {
         "title": "中国本土の配布特典画像：受取条件と区分",
         "note": "7日間のログイン、指定レベル、月次交換2回分などを画像で確認。中国本土向けの資料で、日本には適用しません。"
+      },
+      "en": {
+        "title": "China launch benefit images: conditions and reward categories",
+        "publisher": "Azur Promilia mainland-China official website / Manjuu",
+        "note": "The original article and benefit images were read on November 21. Rewards include login, level and shop conditions; the home-level and home-shop tickets are separate sources, not an immediate unconditional grant. See the dated evidence record for scope."
       }
     }
   },
@@ -549,6 +554,11 @@
       "ja": {
         "title": "中国本土App Store：遊び方と配信前の表示",
         "note": "開発元の説明で星结、ホーム、キボの協力作業を確認。正式版の操作検証や必要な空き容量の根拠ではありません。"
+      },
+      "en": {
+        "title": "China App Store: Kibo partnerships and home gameplay",
+        "publisher": "App Store / Manjuu",
+        "note": "The developer description covers 星结 partnerships, farming and Kibo production work. This was a pre-launch store check, not a gameplay test or a measurement of full installed storage. Historical store dates and payload sizes are not current installation requirements."
       }
     }
   },
@@ -570,6 +580,11 @@
       "ja": {
         "title": "Google Play：日本向け表示を再確認（11月21日）",
         "note": "11月17日の更新表示とキボ・農園の説明を確認。更新日は配信開始日ではなく、今回の表示ではインストール、最低OS、全容量を確認できていません。"
+      },
+      "en": {
+        "title": "Japan Google Play description rechecked November 21",
+        "publisher": "Google Play / Yostar Limited.",
+        "note": "The public description and gameplay text were readable, including Kibo cooperation and farm management. The November 17 update display was recorded separately from an earlier check. Installation eligibility, minimum Android OS, complete storage and build number were not established by this check."
       }
     }
   },

@@ -143,3 +143,5 @@ The official five-star pool includes 佩佩 and excludes the separately announce
 Japan's launch notice lists アニス and 無垢な痕跡 ×20 among first-login preregistration benefits. Its promotion of **40 or more character-observation opportunities** also includes repeat logins and designated quest completions. It is not a promise of 40 immediate limited-character pulls.
 
 Sort rewards into claimed items, unfinished conditions, beginner tickets, limited-character tickets, limited-anima tickets and other currency. China's three ticket names above now have official uses, but conversion rates and item expiry still need their own details. Read [launch rewards and the first Japan story event](/en/guides/resources/) before spending, or return to the [first-session checklist](/en/guides/getting-started/). No measured average pull cost is available here.
+
+Need to choose the China standard five-star? Compare [selector candidates around your existing roster](/en/guides/reroll/) and [community starter team ideas](/en/systems/combat/).

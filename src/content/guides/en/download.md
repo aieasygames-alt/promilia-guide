@@ -262,3 +262,5 @@ No. Pre-download and service launch are separate announcements. [Japan](https://
 The [November 27 official China notice](https://www.taptap.cn/moment/875477210155189543) acknowledges long iOS download/verification waits with large resources or unstable networks, occasional stalls and repeated login-page verification. Resource packaging, verification and interrupted-download resumption are being optimized through staged platform updates, prioritizing iOS. **This is not a completed-fix announcement.**
 
 If the problem persists, send the failure stage, device, version, error and time to regional support. Avoid repeatedly deleting downloaded resources. The notice covers China; check Japan’s own notices for Japan issues. China’s [official cloud service](/en/guides/cloud-gaming/) is another option if its account and network requirements suit you.
+
+Moving an existing character between devices? Check [regional cross-save and platform rules](/en/guides/platforms/) before creating another character. For the opening sequence, use the [launch checklist](/en/guides/launch/).

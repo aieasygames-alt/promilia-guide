@@ -215,7 +215,7 @@ test('home and article share verified regional facts and dated original citation
   }
 });
 
-test('editorial preview filters bilingual impact and exports a local report', async ({ page }) => {
+test('editorial preview filters localized impact and exports a local report', async ({ page }) => {
   await page.goto('/editorial/');
   await expect(page.locator('h1')).toHaveText('内容审核工作台');
   await expect(page.locator('body')).toHaveAttribute('data-pagefind-ignore', 'all');
@@ -228,7 +228,7 @@ test('editorial preview filters bilingual impact and exports a local report', as
   await page.locator('#impact-filter').selectOption('source:cn-app-store-2026-11-14');
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(impactCount(['--source', 'cn-app-store-2026-11-14']));
   await page.locator('#impact-filter').selectOption('content:launch');
-  await expect(page.locator('[data-report-row]:visible')).toHaveCount(2);
+  await expect(page.locator('[data-report-row]:visible')).toHaveCount(editorialStatus.articles.filter((article: { contentId: string }) => article.contentId === 'launch').length);
   await page.locator('#state-filter').selectOption('publishable');
   const publishedLaunch = editorialStatus.articles.filter((article: { contentId: string; publishable: boolean }) => article.contentId === 'launch' && article.publishable).length;
   await expect(page.locator('[data-report-row]:visible')).toHaveCount(publishedLaunch);

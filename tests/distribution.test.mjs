@@ -63,6 +63,7 @@ test('distribution schema and cross-file checks reject duplicate, wrong-scope an
   assert.match(validateDistribution([{ ...channels[0], entryClaim: 'cn-test-client-history' }], claims).join('\n'), /public launch/);
   assert.match(validateDistribution([{ ...channels[0], entryClaim: 'missing' }], claims).join('\n'), /unknown entryClaim/);
   assert.match(validateDistribution(channels, claims, [{ path: 'fixture.md', data: { contentId: 'download', claimRefs: [] } }]).join('\n'), /distribution component requires/);
+  assert.deepEqual(validateDistribution(channels, claims, [{ path: 'en/platforms.md', data: { locale: 'en', contentId: 'platforms', claimRefs: [] } }]), []);
   assert.equal(distributionSchema.safeParse({ ...channels[0], region: 'global' }).success, false);
   const ios = claims.find((claim) => claim.id === 'cn-ios-store');
   assert.equal(claimSchema.safeParse({ ...ios, value: { availability: 'download' } }).success, false);

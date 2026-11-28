@@ -18,7 +18,7 @@ const other = locale === 'zh-hans' ? 'ja' : 'zh-hans';
 const canonical = origin + Astro.url.pathname;
 const logoAlt = locale === 'en' ? 'Azur Promilia' : locale === 'ja' ? 'アズールプロミリア（Azur Promilia）' : '蓝色星原：旅谣（Azur Promilia）';
 const logoUrl = origin + '/images/logo.png';
-const nav = locale === 'en' ? [['', c.home], ['guides/download/', 'Download'], ['guides/getting-started/', 'Get started'], ['guides/resources/', 'Rewards'], ['characters/', 'Characters'], ['kibo/', 'Kibo'], ['faq/', c.faq]] : [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['database/', c.database], ['updates/', c.updates]];
+const nav = locale === 'en' ? [['', c.home], ['guides/download/', 'Download'], ['guides/getting-started/', 'Get started'], ['#gameplay', 'Gameplay'], ['characters/', 'Characters'], ['kibo/', 'Kibo'], ['faq/', c.faq]] : [['', c.home], ['guides/', c.guides], ['characters/', c.characters], ['kibo/', c.kibo], ['systems/', c.systems], ['database/', c.database], ['updates/', c.updates]];
 const languageNames = { 'zh-hans': '简体中文', ja: '日本語', en: 'English' };
 const languageOptions = locales.map((lang) => {
   const exact = alternates.find(alt => alt.lang === languageTag[lang]);
