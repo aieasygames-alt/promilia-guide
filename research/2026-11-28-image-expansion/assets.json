@@ -1,0 +1,239 @@
+[
+  {
+    "original": "codex-clipboard-e74351ee-6974-45d7-8253-94b4002929fb.png",
+    "sha256": "f5d92063f76ec30acf59acb4b80f1d4e3f8ed296a459b7e18aec0331b3ed9d12",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1706787,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-horned-character-meadow.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 192768
+      },
+      {
+        "path": "public/images/feature/azur-promilia-horned-character-meadow-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 27094
+      },
+      {
+        "path": "public/images/feature/azur-promilia-horned-character-meadow-800w.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 89784
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-e66e0666-ca1a-4fad-b2b6-4bd0a781b838.png",
+    "sha256": "7f644abd78902abdbed46b381f7da29eddb991b1830ea89c302ca5a5c4adece3",
+    "width": 640,
+    "height": 480,
+    "bytes": 388625,
+    "crop": {
+      "left": 0,
+      "top": 60,
+      "width": 640,
+      "height": 360
+    },
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-tushan-xiaoyu-profile.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 38696
+      },
+      {
+        "path": "public/images/feature/azur-promilia-tushan-xiaoyu-profile-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 17198
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-8a3a8955-7262-4e62-835d-2071cb1df0e0.png",
+    "sha256": "f21ed42d596ce4985faa2b68a6096d75bb00aa98df8e8d1eae17ace05f5f7f2e",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1117917,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-blue-haired-character-riverside.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 83802
+      },
+      {
+        "path": "public/images/feature/azur-promilia-blue-haired-character-riverside-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 14628
+      },
+      {
+        "path": "public/images/feature/azur-promilia-blue-haired-character-riverside-800w.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 40782
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-054a0a3b-ef11-4dcc-8e29-cfa639c43e3e.png",
+    "sha256": "4726549c478d8640d6f0e2a238a189bf8757514d1c9275347d0a1ed4f5f2f0ee",
+    "width": 640,
+    "height": 360,
+    "bytes": 427599,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-kibo-night-gathering.webp",
+        "width": 640,
+        "height": 360,
+        "bytes": 47572
+      },
+      {
+        "path": "public/images/feature/azur-promilia-kibo-night-gathering-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 21388
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-d1b83c36-234a-4f1c-8e58-47229c7dcd86.png",
+    "sha256": "659bf95f4f6a0c8bc495d0a74a30717817c57a1af9ae67750da89d4675628836",
+    "width": 1920,
+    "height": 1005,
+    "bytes": 1702052,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-elf-and-fairy.webp",
+        "width": 1600,
+        "height": 838,
+        "bytes": 73110
+      },
+      {
+        "path": "public/images/feature/azur-promilia-elf-and-fairy-400w.webp",
+        "width": 400,
+        "height": 209,
+        "bytes": 12244
+      },
+      {
+        "path": "public/images/feature/azur-promilia-elf-and-fairy-800w.webp",
+        "width": 800,
+        "height": 419,
+        "bytes": 32162
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-5f619eef-b17f-4251-933c-4465f048cd41.png",
+    "sha256": "d51bd7bbdb32621840ad043f8cfd98812ed6aac11e988dbc0550e66d285d5b31",
+    "width": 415,
+    "height": 739,
+    "bytes": 441522,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-elf-portrait.webp",
+        "width": 415,
+        "height": 739,
+        "bytes": 41986
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-0508408f-c876-4d46-892d-c9406275e449.png",
+    "sha256": "ff1508557af00c7cac6d542b7fb47d07e20a8628b4c5d989d7ba51b7aa132171",
+    "width": 466,
+    "height": 658,
+    "bytes": 553898,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-fox-eared-character-fireworks.webp",
+        "width": 466,
+        "height": 658,
+        "bytes": 55840
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-a3918a77-eb18-48d3-b465-1bed1ddcf7ec.png",
+    "sha256": "d9e191f9ed211be8017b5a3448802cdfb973299002dbe799f388f72880c204a8",
+    "width": 405,
+    "height": 720,
+    "bytes": 499524,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-moren-japanese-preview.webp",
+        "width": 405,
+        "height": 720,
+        "bytes": 52626
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-76204433-6362-4182-9c2f-3e914681083f.png",
+    "sha256": "582d383e29ae4de15c96636d9020eac41c3bcd4f20356f40e5bd7b27cc003ddc",
+    "width": 1920,
+    "height": 1080,
+    "bytes": 2329842,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-winged-fairy-illustration.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 125812
+      },
+      {
+        "path": "public/images/feature/azur-promilia-winged-fairy-illustration-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 14214
+      },
+      {
+        "path": "public/images/feature/azur-promilia-winged-fairy-illustration-800w.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 43138
+      }
+    ]
+  },
+  {
+    "original": "codex-clipboard-7fb94f31-3a47-4bfd-b03c-854e63974b21.png",
+    "sha256": "f5bcfcc8cfb6b37212242cb47b66449028976c23e8c2dc61a336362c0a4d13a4",
+    "width": 1200,
+    "height": 675,
+    "bytes": 1268004,
+    "crop": null,
+    "outputs": [
+      {
+        "path": "public/images/feature/azur-promilia-japanese-kibo-challenge-visual.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 136708
+      },
+      {
+        "path": "public/images/feature/azur-promilia-japanese-kibo-challenge-visual-400w.webp",
+        "width": 400,
+        "height": 225,
+        "bytes": 25760
+      },
+      {
+        "path": "public/images/feature/azur-promilia-japanese-kibo-challenge-visual-800w.webp",
+        "width": 800,
+        "height": 450,
+        "bytes": 72408
+      }
+    ]
+  }
+]

@@ -12,6 +12,56 @@ const asset = (name: string, width: number, height: number, smaller: number[] = 
 });
 // Artwork describes a scene; it does not verify gameplay rules or regional availability.
 export const visuals = {
+  'character-meadow': {
+    ...asset('azur-promilia-horned-character-meadow', 1280, 720, [400, 800]),
+    alt: { 'zh-hans': '蓝色星原草地场景中的棕发双角角色，身后是花田与山林。', ja: '花畑と山林を背景に、茶色の髪と角を持つキャラクターを描いたアズールプロミリアのビジュアル。', en: 'Azur Promilia horned, brown-haired character in a meadow with flowers and forested hills.' },
+    caption: { 'zh-hans': '草地与角色 · 日文标识 · 用户提供素材', ja: '草原のキャラクター · 日本語ロゴ · ユーザー提供素材', en: 'Character in a meadow · Japanese logo · User-supplied artwork' },
+  },
+  'xiaoyu-profile': {
+    ...asset('azur-promilia-tushan-xiaoyu-profile', 640, 360, [400]),
+    alt: { 'zh-hans': '涂山小玉的粉发狐耳角色介绍图，画面标有「塗山小玉 / Tushan Xiaoyu」。', ja: '「塗山小玉 / Tushan Xiaoyu」と記された、ピンク髪でキツネ耳のキャラクター紹介画像。', en: 'Pink-haired, fox-eared character profile labeled 塗山小玉 / Tushan Xiaoyu.' },
+    caption: { 'zh-hans': '塗山小玉 / Tushan Xiaoyu · 保留图中姓名与日文标识 · 用户提供素材', ja: '塗山小玉 / Tushan Xiaoyu · 画像内の名前と日本語ロゴを保持 · ユーザー提供素材', en: '塗山小玉 / Tushan Xiaoyu · Original name and Japanese logo retained · User-supplied artwork' },
+  },
+  'character-riverside': {
+    ...asset('azur-promilia-blue-haired-character-riverside', 1280, 720, [400, 800]),
+    alt: { 'zh-hans': '蓝白发双角角色站在水边，远处可见建筑，画面带有蓝色星原日文标识。', ja: '水辺に立つ青白い髪と角を持つキャラクター。奥には建物が見え、日本語ロゴが添えられている。', en: 'Blue-white-haired horned character beside water, with distant buildings and the Japanese Azur Promilia logo.' },
+    caption: { 'zh-hans': '水边角色宣传图 · 用户提供素材 · © Manjuu Co., Ltd. © Yostar, Inc.', ja: '水辺のキャラクタービジュアル · ユーザー提供素材 · © Manjuu Co., Ltd. © Yostar, Inc.', en: 'Riverside character visual · User-supplied artwork · © Manjuu Co., Ltd. © Yostar, Inc.' },
+  },
+  'kibo-night': {
+    ...asset('azur-promilia-kibo-night-gathering', 640, 360, [400]),
+    alt: { 'zh-hans': '夜色中角色与多只奇波围坐在木栏旁，发光的小伙伴漂浮在空中。', ja: '夜の木柵に集まるキャラクターとキボ。光る仲間たちが空に浮かんでいる。', en: 'Azur Promilia characters and Kibo gathered on a wooden fence at night with glowing companions overhead.' },
+    caption: { 'zh-hans': '角色与奇波的夜间插画 · 用户提供素材 · © Manjuu Co., Ltd. © Yostar, Inc.', ja: 'キャラクターとキボの夜のイラスト · ユーザー提供素材 · © Manjuu Co., Ltd. © Yostar, Inc.', en: 'Characters and Kibo at night · User-supplied artwork · © Manjuu Co., Ltd. © Yostar, Inc.' },
+  },
+  'elf-and-fairy': {
+    ...asset('azur-promilia-elf-and-fairy', 1600, 838, [400, 800]),
+    alt: { 'zh-hans': '蓝色星原金发尖耳角色的近景，右侧漂浮着带翅膀的小精灵。', ja: '金髪で尖った耳を持つキャラクターのアップと、その横に浮かぶ羽のある小さな妖精。', en: 'Azur Promilia close-up of a blonde, pointed-eared character beside a small winged fairy.' },
+    caption: { 'zh-hans': '尖耳角色与小精灵 · 用户提供素材', ja: '尖った耳のキャラクターと小さな妖精 · ユーザー提供素材', en: 'Pointed-eared character and fairy · User-supplied artwork' },
+  },
+  'elf-portrait': {
+    ...asset('azur-promilia-elf-portrait', 415, 739),
+    alt: { 'zh-hans': '金发尖耳角色身穿白色与深色服装，肩旁停着一个小精灵。', ja: '白と濃色の衣装を着た金髪のキャラクター。尖った耳のそばに小さな妖精がいる。', en: 'Blonde, pointed-eared character in a white and dark outfit with a tiny fairy near her shoulder.' },
+    caption: { 'zh-hans': '角色竖幅形象 · 用户提供素材', ja: 'キャラクターの縦長ビジュアル · ユーザー提供素材', en: 'Character portrait · User-supplied artwork' },
+  },
+  'fox-festival': {
+    ...asset('azur-promilia-fox-eared-character-fireworks', 466, 658),
+    alt: { 'zh-hans': '粉发狐耳角色与白色小狐狸站在桥上，身后是烟花与灯光。', ja: '花火と明かりを背景に、橋の上で白い子ギツネと過ごすピンク髪のキツネ耳キャラクター。', en: 'Pink-haired, fox-eared character on a bridge beside a small white fox, with fireworks behind them.' },
+    caption: { 'zh-hans': '烟花与桥上的伙伴 · 用户提供素材', ja: '花火と橋の上の仲間 · ユーザー提供素材', en: 'Fireworks and companions on a bridge · User-supplied artwork' },
+  },
+  'moren-preview': {
+    ...asset('azur-promilia-moren-japanese-preview', 405, 720),
+    alt: { 'zh-hans': '标有日文「モーレン」的紫发尖耳角色竖屏介绍画面。', ja: '「モーレン」と名前が表示された、紫髪で尖った耳のキャラクターの縦型紹介映像の一場面。', en: 'Japanese vertical character preview labeled モーレン, showing a purple-haired, pointed-eared character.' },
+    caption: { 'zh-hans': 'モーレン · 日文开发中介绍画面，保留原图文字与署名 · 用户提供素材 · © Manjuu © Yostar', ja: 'モーレン · 開発中の紹介映像の一場面。原画像の文字と権利表記を保持 · ユーザー提供素材 · © Manjuu © Yostar', en: 'モーレン · Japanese development preview with original text and credit retained · User-supplied artwork · © Manjuu © Yostar' },
+  },
+  'fairy-illustration': {
+    ...asset('azur-promilia-winged-fairy-illustration', 1600, 900, [400, 800]),
+    alt: { 'zh-hans': '金绿渐变发色、带透明翅膀的小精灵举起拳头，旁边是蓝色星原日文标识。', ja: '金色から緑に変わる髪と透き通る羽の小さな妖精が、拳を上げている日本語ロゴ入りイラスト。', en: 'Chibi fairy with blonde-to-green hair and translucent wings raising a fist beside the Japanese game logo.' },
+    caption: { 'zh-hans': '小精灵主题插画 · 用户提供素材 · © Manjuu © Yostar', ja: '小さな妖精のイラスト · ユーザー提供素材 · © Manjuu © Yostar', en: 'Fairy illustration · User-supplied artwork · © Manjuu © Yostar' },
+  },
+  'japan-challenge': {
+    ...asset('azur-promilia-japanese-kibo-challenge-visual', 1200, 675, [400, 800]),
+    alt: { 'zh-hans': '蓝色星原角色与白色伙伴的日文宣传图，标题写有「目指せ！キボと皆のアズプロチャレンジ」。', ja: '「目指せ！キボと皆のアズプロチャレンジ」と題した、キャラクターと白い仲間たちの告知ビジュアル。', en: 'Japanese Azur Promilia challenge promotional visual with characters and white companions.' },
+    caption: { 'zh-hans': '日文「アズプロチャレンジ」宣传图 · 用户提供素材 · © Manjuu © Yostar。各地区活动日期、参与条件和奖励请以对应官方公告为准。', ja: '「アズプロチャレンジ」告知ビジュアル · ユーザー提供素材 · © Manjuu © Yostar。開催期間・参加条件・報酬は、対象地域の公式告知をご確認ください。', en: 'Japanese アズプロチャレンジ promotional visual · User-supplied artwork · © Manjuu © Yostar. Check the relevant regional announcement for event dates, eligibility and rewards.' },
+  },
   'metsa-profile': {
     src: '/images/entities/characters/metsa-official.webp', width: 1200, height: 1200,
     variants: [400, 800, 1200].map(width => ({ src: `/images/entities/characters/metsa-official${width === 1200 ? '' : `-${width}w`}.webp`, width })),
@@ -63,15 +113,22 @@ export const visuals = {
 export type VisualId = keyof typeof visuals;
 export const visualSrcSet = (id: VisualId) => visuals[id].variants.map(v => `${v.src} ${v.width}w`).join(', ');
 
+// Shared by visible galleries and search metadata, so only displayed artwork is listed.
+export const characterArtwork = {
+  scenes: ['character-ensemble', 'character-riverside', 'elf-and-fairy', 'fairy-illustration'],
+  profiles: ['xiaoyu-profile', 'nono-profile', 'celebration-art'],
+  portraits: ['fox-festival', 'elf-portrait', 'moren-preview'],
+} as const satisfies Record<string, readonly VisualId[]>;
+
 // Only images rendered on these pages belong in their metadata and sitemap.
 export function pageVisuals(path: string): VisualId[] {
   if (/^\/(zh-hans|ja)\/characters\/metsa\/$/.test(path)) return ['metsa-profile'];
   if (/^\/(zh-hans|ja|en)\/$/.test(path)) return ['home-world', 'holiday-illustration'];
-  if (/^\/(zh-hans|ja|en)\/characters\/$/.test(path)) return ['character-ensemble', 'nono-profile', 'celebration-art'];
-  if (/^\/(zh-hans|ja|en)\/kibo\/$/.test(path)) return ['kibo-companions', ...(path.startsWith('/en/') ? [] : ['kibo-showcase' as const])];
+  if (/^\/(zh-hans|ja|en)\/characters\/$/.test(path)) return ['character-meadow', ...characterArtwork.scenes, ...characterArtwork.profiles, ...characterArtwork.portraits];
+  if (/^\/(zh-hans|ja|en)\/kibo\/$/.test(path)) return ['kibo-companions', ...(path.startsWith('/en/') ? [] : ['kibo-showcase' as const]), 'kibo-night'];
   if (/^\/(zh-hans|ja|en)\/guides\/getting-started\/$/.test(path)) return ['home-world'];
-  if (/^\/(zh-hans|ja|en)\/guides\/launch\/$/.test(path)) return ['public-beta'];
-  if (/^\/(zh-hans|ja|en)\/systems\/kibo\/$/.test(path)) return ['kibo-companions'];
+  if (/^\/(zh-hans|ja|en)\/guides\/launch\/$/.test(path)) return ['public-beta', 'japan-challenge'];
+  if (/^\/(zh-hans|ja|en)\/systems\/kibo\/$/.test(path)) return ['kibo-companions', 'kibo-night'];
   return [];
 }
 

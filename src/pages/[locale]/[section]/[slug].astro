@@ -46,7 +46,7 @@ const sectionLabel = data.section === 'systems' ? c.systems : c.guides;
 const hasDistribution = !en && ['download', 'platforms'].includes(data.contentId);
 const isRedeemCodes = !en && data.contentId === 'redeem-codes';
 const compactFacts = !en && data.claimRefs.length > 0;
-const featureVisual = pageVisuals(articlePath(data))[0];
+const [featureVisual, ...additionalVisuals] = pageVisuals(articlePath(data));
 const toc = [
   ...(en && data.contentId === 'global-release' ? [{ id: 'english-release-answer', text: 'Global English release date' }] : []),
   ...(data.contentId === 'global-release' ? [{ id: 'regional-gateway-title', text: en ? 'Official regional entries' : locale === 'ja' ? '地域別の公式入口' : '各地区官方入口' }] : []),
@@ -72,6 +72,7 @@ const schema = [
       {isRedeemCodes && <RedeemCodeBox locale={referenceLocale}/>}
       {en && data.contentId === 'redeem-codes' && <EnglishCodeStatus/>}
       <div class="prose"><Content/></div>
+      {additionalVisuals.length > 0 && <section data-pagefind-ignore aria-label={en ? 'Related artwork' : locale === 'ja' ? '関連ビジュアル' : '相关画面'}>{additionalVisuals.map(id => <FeatureVisual id={id} locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 80px), 780px"/>)}</section>}
       {hasDistribution && <DistributionMatrix locale={referenceLocale}/>}
       <RelatedQuestions locale={locale} contentId={data.contentId}/>
       {data.checklist.length > 0 && <Checklist locale={locale} contentId={data.contentId} items={data.checklist}/>}
