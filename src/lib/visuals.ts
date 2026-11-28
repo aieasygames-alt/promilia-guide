@@ -40,7 +40,7 @@ export const visuals = {
   'holiday-illustration': {
     ...asset('azur-promilia-holiday-illustration', 1280, 720, [400, 800]),
     alt: { 'zh-hans': '蓝色星原韩文标识节日插画，角色与奇波围坐在装饰树和礼物旁。', ja: '韓国語ロゴ入りのホリデーイラスト。キャラクターとキボがツリーやプレゼントを囲んでいる。', en: 'Azur Promilia holiday illustration with characters, Kibo, presents, a decorated tree and Korean logo.' },
-    caption: { 'zh-hans': '节日主题插画资料 · 韩文标识 · 用户提供素材。© Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. 不表示当前圣诞活动或韩国服已开服。', ja: 'ホリデーイラスト資料 · 韓国語ロゴ · ユーザー提供素材。© Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. 現在のクリスマスイベントや韓国でのサービス開始を示す告知ではありません。', en: 'Holiday artwork reference with Korean logo · User-supplied. © Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. This does not announce a current Christmas event or a Korean launch.' },
+    caption: { 'zh-hans': '节日主题插画 · 韩文标识 · 用户提供素材。© Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. 活动安排和地区服务状态请查看对应公告。', ja: '韓国語ロゴ入りのホリデーイラスト · ユーザー提供素材。© Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. イベント日程や各地域のサービス状況は、それぞれの公式告知をご確認ください。', en: 'Holiday illustration with Korean logo · User-supplied artwork. © Manjuu Co., Ltd. & NEXON Korea Corp. All Rights Reserved. See the relevant official announcements for event dates and regional service availability.' },
   },
   'kibo-companions': {
     ...asset('azur-promilia-kibo-companions', 739, 415, [400]),

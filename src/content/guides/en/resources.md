@@ -45,13 +45,15 @@ claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
   cn-preregister-mail-benefits: 1
-sourceRevision: 13
-translatedFromRevision: 13
+sourceRevision: 14
+translatedFromRevision: 14
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
+  - date: "2026-11-28"
+    note: "Kept regional maximum guarantees and event periods aligned with the source guide."
   - date: "2026-11-26"
     note: Published the English first-session guide following the project owner’s
       multilingual development request and existing deployment authorization.
@@ -71,6 +73,8 @@ revisions:
       authorized by the project owner’s current request and standing deployment
       instruction. No independent language review or gameplay test claimed.
 readerUpdates:
+  - date: "2026-11-28"
+    note: "Kept regional maximum guarantees and event periods aligned with the source guide."
   - date: "2026-11-28"
     note: Shortened reward-claim advice while preserving regional conditions and
       deadlines.

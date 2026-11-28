@@ -170,14 +170,14 @@ Both regional FAQs recommend at least 120GB free on PC and 55GB on Android/iOS, 
 
 ## After choosing an edition
 
-| Your next task | Guide | First check |
+| What you want to do | Guide | First check |
 | --- | --- | --- |
 | Install on PC or mobile | [Official download steps](/en/guides/download/) | Regional client, target drive and additional resources |
 | Start the first session | [Beginner account checklist](/en/guides/getting-started/) | Web-event account and receiving character |
 | Claim thank-you gifts | [Rewards and missing mail](/en/guides/resources/) | Region, eligibility and maintenance-based deadline |
 | Enter a Japan code | [AZPR1126 and menu](/en/guides/redeem-codes/) | Separate the code from automatic thank-you mail |
 | Spend tickets | [Regional banner rules](/en/guides/banner-rules/) | Ticket, guarantee and banner period |
-| Identify characters or Kibo | [Characters](/en/characters/) · [Kibo](/en/kibo/) | Published identities versus tested builds and catch locations |
+| Identify characters or Kibo | [Characters](/en/characters/) · [Kibo](/en/kibo/) | Names, profiles and reward sources; check each entry for gameplay details |
 
 Account-specific errors go through [regional official support](/en/guides/support/).
 

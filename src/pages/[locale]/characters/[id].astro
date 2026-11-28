@@ -7,6 +7,7 @@ import { t } from '../../../lib/i18n';
 import { sources } from '../../../lib/facts';
 import { preview, visibleEntitiesFor } from '../../../lib/content';
 import { isEntityDetailPublishable } from '../../../lib/entity-publication.mjs';
+import { entityImageSrcSet, entityDetailSizes } from '../../../lib/entity-images';
 
 export function getStaticPaths() {
   return ['zh-hans', 'ja'].flatMap((locale) =>
@@ -107,10 +108,13 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
             <img
               class="entity-image"
               src={entity.image}
+              srcset={entityImageSrcSet(entity.image)}
+              sizes={entityDetailSizes}
               alt={entity.imageAlt[locale]}
               width="1200"
               height="1200"
               fetchpriority="high"
+              decoding="async"
             />
             <figcaption>{entity.imageSource === 'official' ? (ja ? '公式画像' : '官方图片') : (ja ? '第三者画像' : '第三方图片')}</figcaption>
           </figure>

@@ -3,6 +3,7 @@ import type { Entity, EntityLocale } from '../data/entities';
 import type { Source } from '../lib/facts';
 import Icon from './Icon.astro';
 import { entityCategory } from '../lib/entity-category.mjs';
+import { entityImageSrcSet, entityCardSizes } from '../lib/entity-images';
 
 interface Props {
   entity: Entity;
@@ -28,10 +29,12 @@ const category = entityCategory(entity);
     <img
       class="entity-image"
       src={entity.image}
+      srcset={entityImageSrcSet(entity.image)}
+      sizes={entityCardSizes}
       alt={entity.imageAlt[locale]}
       width="1200"
       height="1200"
-      loading={index === 0 ? 'eager' : 'lazy'}
+      loading="lazy"
       decoding="async"
     />
     <figcaption>{imageSourceLabel}</figcaption>

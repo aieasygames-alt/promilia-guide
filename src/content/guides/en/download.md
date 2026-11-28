@@ -74,8 +74,8 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 19
-translatedFromRevision: 19
+sourceRevision: 20
+translatedFromRevision: 20
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -92,6 +92,8 @@ related:
   - getting-started
   - support
 revisions:
+  - date: "2026-11-28"
+    note: "Clarified current login checks and the ongoing China download improvements."
   - date: "2026-11-25"
     note: Published the English launch guide using the existing regional source
       checks. The project owner requested creation and production deployment in
@@ -127,6 +129,8 @@ revisions:
 order: 2
 minutes: 8
 readerUpdates:
+  - date: "2026-11-28"
+    note: "Clarified current login checks and the ongoing China download improvements."
   - date: "2026-11-28"
     note: Official links and installation steps now come first, with shorter source
       notes.
@@ -211,7 +215,7 @@ A [mainland-China player's TapTap post](https://www.taptap.cn/moment/87519046043
 
 If the same content downloads on every start, record the launcher and game versions, each resource name and size, whether verification completed, free space, installation directory and exact error. Check whether the same location is being used and whether the download and disk write actually finish. Follow the correct regional retry and restart sequence below. New resources for a new version differ from the same version repeatedly failing verification; report the two cases separately.
 
-No completed fix for this loop is established in the sources used here. Repeated deletion and reinstallation should not replace collecting the version and file details first. If the game runs but stutters, use [requirements and frame-drop checks](/en/guides/requirements/). For unresolved download failures, prepare a report for [regional official support](/en/guides/support/).
+The [November 27 China notice](https://www.taptap.cn/moment/875477210155189543) says download and verification improvements are still in progress; it does not announce a completed fix. Keep the version and file details before trying repeated deletion or reinstallation. If the game runs but stutters, use [requirements and frame-drop checks](/en/guides/requirements/). For unresolved download failures, prepare a report for [regional official support](/en/guides/support/).
 
 ## Download failed: choose the stage and region
 

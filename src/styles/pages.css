@@ -1677,6 +1677,8 @@
 .mobile-action-bar {
   display: none;
 }
+.mobile-bar-btn[hidden] { display: none; }
+.mobile-share-status:empty { display: none; }
 @media (max-width: 820px) {
   .mobile-action-bar {
     display: block;
@@ -1712,6 +1714,8 @@
     font-weight: 500;
     padding: 6px 14px;
     border-radius: 6px;
+    min-height: 44px;
+    text-decoration: none;
     cursor: pointer;
     transition: all 0.15s ease;
   }
@@ -1722,6 +1726,22 @@
   .mobile-bar-btn.copied {
     color: #2e7d32;
     font-weight: 600;
+  }
+  .mobile-bar-btn:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+  .mobile-share-status {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
+    margin: 0 auto;
+    max-width: 448px;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--paper, #fdfcf7);
+    color: var(--ink);
+    font-size: 13px;
+    box-shadow: 0 2px 12px rgba(35, 61, 55, 0.12);
   }
   .article-grid {
     padding-bottom: 50px;

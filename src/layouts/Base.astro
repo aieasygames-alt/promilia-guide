@@ -30,6 +30,8 @@ const isHome = Astro.url.pathname === root || Astro.url.pathname === '/';
 const visualIds = pageVisuals(Astro.url.pathname);
 const primary = visualIds[0];
 const primaryImage = primary ? imageObject(primary, locale) : undefined;
+const schemaEntries = Array.isArray(schema) ? schema : schema ? [schema] : [];
+const isArticle = schemaEntries.some(item => item['@type'] === 'Article');
 const socialImage = primary ? { src: visuals[primary].src, width: visuals[primary].width, height: visuals[primary].height, alt: visuals[primary].alt[locale] } : { src: '/images/social.png', width: 1200, height: 630, alt: 'Promilia Guide' };
 const metadata = Array.isArray(schema) ? schema.map(item => item['@type'] === 'Article' && primaryImage ? { ...item, image: primaryImage } : item) : schema || {
   '@context': 'https://schema.org',
@@ -53,7 +55,7 @@ const metadata = Array.isArray(schema) ? schema.map(item => item['@type'] === 'A
     {indexable && alternates.map((alt) => <link rel="alternate" hreflang={alt.lang} href={alt.href} />)}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:site_name" content="Promilia Guide" />
-    <meta property="og:type" content={Array.isArray(schema) ? 'article' : 'website'} />
+    <meta property="og:type" content={isArticle ? 'article' : 'website'} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />

@@ -25,7 +25,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-launch-troubleshooting: 1
   jp-launch-troubleshooting: 1
-sourceRevision: 3
+sourceRevision: 4
 translationStatus: published
 aliases: [ 蓝色星原客服, 蓝色星原登录失败, 蓝色星原实名认证, 渠道账号, 联系客服, アズールプロミリア 問い合わせ ]
 related:
@@ -42,6 +42,8 @@ related:
 order: 14
 minutes: 7
 revisions:
+  - date: "2026-11-28"
+    note: "更新上线后的登录排查，明确维护、认证与安装错误的区别。"
   - date: "2026-11-24"
     note: 按两地官方FAQ新增客服分流与问题说明指南；正文与日文译稿待本批确认，未提交任何咨询或验证游戏内操作。
   - date: "2026-11-25"
@@ -53,6 +55,8 @@ revisions:
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
 readerUpdates:
+  - date: "2026-11-28"
+    note: "更新上线后的登录排查，明确维护、认证与安装错误的区别。"
   - date: "2026-11-28"
     note: 客服入口先按地区说明，问题描述改为更易使用的提示。
 ---
@@ -78,7 +82,7 @@ readerUpdates:
 | 停在哪里 | 先核对什么 | 怎样继续 |
 | --- | --- | --- |
 | 启动器、本体或增量资源 | 具体阶段、目标磁盘、报错，及本地区对应的重启对象 | 按[下载排查](/zh-hans/guides/download/)执行单项建议，记录结果 |
-| 已到登录画面，但服务器未开放／维护 | 本地区最新服务公告与显示时间 | 用[开服说明](/zh-hans/guides/launch/)核对；预下载完成不代表能登录 |
+| 已到登录画面，但无法进入 | 本地区最新维护公告、账号与错误提示 | 用[开服说明](/zh-hans/guides/launch/)核对当前状态；下载完成后仍可能受维护或认证影响 |
 | 国服显示实名要求或认证异常 | 当前官方认证提示；FAQ明确完成实名认证后方可登录 | 依官方界面处理，异常从官方或对应渠道求助；不自行猜失败原因 |
 | 已进角色，但邮件／活动／功能锁定 | 当前任务、解锁提示、奖励来源、参与账号 | 按[领取条件](/zh-hans/guides/resources/)或对应系统指南核对前置 |
 
