@@ -1,14 +1,15 @@
 ---
 import { redeemCodes } from '../lib/redeem-data';
 import { sources as defaultSources } from '../lib/facts';
-import { redeemCodeRows } from '../lib/redeem-codes.mjs';
+import { redeemCodeRows, announcedCodeRows } from '../lib/redeem-codes.mjs';
 interface Props { locale: 'zh-hans' | 'ja'; codeData?: typeof redeemCodes; sourceData?: typeof defaultSources }
 const { locale, codeData = redeemCodes, sourceData: sources = defaultSources } = Astro.props;
 const ja = locale === 'ja';
 const codes = redeemCodeRows({ codes: codeData, sources });
+const hasAnnouncements = announcedCodeRows({ codes: codeData, sources }).length > 0;
 ---
-<section class="redeem-box" data-redeem-container aria-labelledby="redeem-title">
-  <h2 id="redeem-title">{ja ? '出典を確認したコード' : '已核验兑换码速查'}</h2>
+{(codes.length > 0 || !hasAnnouncements) && <section class="redeem-box" data-redeem-container aria-labelledby="redeem-title">
+  <h2 id="redeem-title">{ja ? '有効期間を自動判定できるコード' : '可自动核对有效期的代码'}</h2>
   <p class="search-help">{ja ? '対象地域と有効期間を確認してください。コピーは受取成功を意味しません。' : '请逐条核对地区与有效期。复制不代表兑换成功。'}</p>
   {codes.length ? <div class="redeem-card-grid">{codes.map(item => <article class="redeem-item-card" data-code-region={item.region} data-code-start={item.availableAt} data-code-expiry={item.expiresAt}>
     <header><code>{item.code}</code><span class="pill">{item.region === 'cn' ? (ja ? '中国本土' : '中国大陆') : (ja ? '日本' : '日本地区')}</span></header>
@@ -18,9 +19,9 @@ const codes = redeemCodeRows({ codes: codeData, sources });
     <p data-code-status data-ja={String(ja)}>{item.status === 'expired' ? (ja ? '期限切れ' : '已到期') : item.status === 'scheduled' ? (ja ? '受付開始前' : '尚未开始') : (ja ? '有効期間は上記日時を確認' : '有效期请核对上方日期')}</p>
     <button type="button" class="button redeem-copy-btn" data-copy-target={item.code} data-label-copied={ja ? 'コピー完了' : '已复制'} data-label-failed={ja ? 'コピーできませんでした。上の文字列を選択してコピーしてください。' : '复制失败，请选中上方代码手动复制。'} disabled>{ja ? 'コピー' : '复制代码'}</button>
     <small>{item.sourceRefs.map(id => <a href={sources.find(source=>source.id===id)!.url!} target="_blank" rel="noopener noreferrer">{ja ? '公式原文' : '官方原文'} ↗ </a>)}</small>
-  </article>)}</div> : <p class="notice" data-code-empty>{ja ? '現在、独立して照合できる有効コードはありません。未確認の文字列にはコピー操作を表示しません。' : '当前暂无可独立核验的有效兑换码。待核验字符串不提供领取或复制操作。'}</p>}
+  </article>)}</div> : <p class="notice" data-code-empty>{ja ? '報酬・開始時刻・期限・タイムゾーンがすべて揃った自動判定用の記録は現在ありません。公式発表済みのコードは上の案内を確認してください。' : '当前没有奖励、起止时刻和时区全部齐备的自动判定记录。官方已公布的代码请看上方说明。'}</p>}
   <p data-copy-feedback role="status" aria-live="polite"></p>
-</section>
+</section>}
 <script>
   document.querySelectorAll<HTMLElement>('[data-redeem-container]').forEach(container => {
     const feedback = container.querySelector<HTMLElement>('[data-copy-feedback]')!;

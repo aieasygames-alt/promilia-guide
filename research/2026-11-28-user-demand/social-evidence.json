@@ -1,0 +1,802 @@
+{
+  "observedDate": "2026-11-28",
+  "timezone": "Asia/Shanghai",
+  "method": "定向公开样本；浏览器可见DOM/AX人工摘录。非全网爬取、非随机样本，未观看完整视频、未读取全量评论。",
+  "rules": [
+    "语言不等于发帖者国籍或所在地。各国指面向地区的语言和平台样本。",
+    "计数为观察时页面显示值；播放、浏览、评论、点赞不可互相换算或相加为独立用户。",
+    "original为直接读取原页；platform-list为平台内列表/卡片；aggregation为第三方聚合，分别标记。",
+    "玩家问题证明需求存在，不证明回复中的游戏机制正确。",
+    "抽奖、官方宣传、PR、模板邀请和普通提问分开；不把重复作者或转载当作独立验证。",
+    "日期保持网页显示；没有确认时区的时间不擅自换算。"
+  ],
+  "sources": [
+    {
+      "id": "E01",
+      "language": "en",
+      "market": "英语用户，国别未知",
+      "platform": "Reddit r/gachagaming",
+      "readLevel": "original",
+      "url": "https://www.reddit.com/r/gachagaming/comments/1y15x3n/azur_promilia_launches_on_november_26_2026_11am/",
+      "title": "Azur Promilia launches on November 26, 2026 @ 11AM JST…",
+      "publishedAt": "2026-11-20T15:12:06.929Z",
+      "phase": "开服前讨论，开服后读取",
+      "metrics": {
+        "postScore": 531,
+        "comments": 437
+      },
+      "observations": [
+        "为什么没有同步Global：可见评论154分、27回复",
+        "不想晚一年开始：200分、5回复",
+        "Then what launches on Nov 26th?? JP and CN servers only?：49分、10回复",
+        "希望先有英语文本、沿用中日配音：41分、5回复",
+        "担心400ping：11分，非实测"
+      ],
+      "topics": [
+        "地区开服",
+        "英语文本与配音",
+        "跨区游玩",
+        "延迟与版本差距"
+      ],
+      "limits": "帖内明年Global、SEA代理、延迟原因均为用户说法，未据此确认日期/运营方。高评论是单帖热度，非各英语国家热度。"
+    },
+    {
+      "id": "E02",
+      "language": "en",
+      "market": "英语用户，国别未知",
+      "platform": "Reddit r/gachagaming",
+      "readLevel": "original",
+      "url": "https://www.reddit.com/r/gachagaming/comments/1y49rru/azur_promilia_predownload_is_now_available/",
+      "title": "Azur Promilia pre-download is now available, official system requirements posted",
+      "publishedDisplay": "4天前",
+      "phase": "预下载讨论，非正式服故障测试",
+      "metrics": null,
+      "observations": [
+        "120GB on launch is insane",
+        "Was excited for this game till the no global/eng",
+        "This game has no Eng Localization right?"
+      ],
+      "topics": [
+        "容量",
+        "英语可玩性",
+        "官方下载"
+      ],
+      "limits": "正文引用日本5191公告；120GB为要求/预留值，不是已测客户端大小。原帖计数当次未完整加载，不使用搜索卡片106评论作直接读数。"
+    },
+    {
+      "id": "C01",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "Bilibili",
+      "readLevel": "platform-list",
+      "url": "https://www.bilibili.com/v/topic/detail?topic_id=1351735",
+      "title": "蓝色星原旅谣公测·热门",
+      "publishedDisplay": "话题累计，起点未确认",
+      "metrics": {
+        "displayViews": "7376.2万",
+        "displayDiscussions": "34.9万"
+      },
+      "topics": [
+        "角色二创",
+        "开服PV",
+        "全收集",
+        "角色配队",
+        "福利"
+      ],
+      "limits": "官方发起话题，同时展示UP主激励计划；累计数含宣传、娱乐、攻略、旧帖，不是11月28日新增需求或有机搜索量。"
+    },
+    {
+      "id": "C02",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "Bilibili",
+      "readLevel": "original",
+      "url": "https://www.bilibili.com/video/BV1W2yUz3E1G/",
+      "title": "【蓝色星原一条龙全收集】夏露露村/宝箱/奇波解密/探索挑战/乌咪/星律/书籍/拍照点/建造修复",
+      "author": "你的影月月",
+      "publishedDisplay": "2026-11-26 14:29:40",
+      "metrics": {
+        "displayPlays": "71.7万",
+        "displayLikes": "2.8万",
+        "displayFavorites": "1.1万"
+      },
+      "topics": [
+        "分区域收集路线",
+        "宝箱",
+        "谜题",
+        "修复设施"
+      ],
+      "limits": "原页标题、日期和指标已读；未观看完整路线，不能把视频标题中的全收集直接当本站已验证坐标。顶部745未用作评论数。"
+    },
+    {
+      "id": "C03",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "Bilibili",
+      "readLevel": "original",
+      "url": "https://www.bilibili.com/video/BV1A4ymzKEmY/",
+      "title": "【蓝色星原】公测版本 这些角色必练！角色强度榜+各体系队伍搭配+养成+操作详解",
+      "author": "叫我棉被",
+      "publishedDisplay": "2026-11-26 09:07:38",
+      "metrics": {
+        "displayPlays": "88.7万",
+        "displayLikes": "2万",
+        "displayFavorites": "1.1万"
+      },
+      "topics": [
+        "新手角色选择",
+        "配队",
+        "培养",
+        "手法"
+      ],
+      "limits": "简介明确部分素材来自三测；发布时间早于国服开服。可支持选题需求，不能据此称正式服实测强度榜。顶部1743未用作评论数。"
+    },
+    {
+      "id": "C04",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/app/593829/topic?type=official",
+      "title": "论坛近期热门侧栏",
+      "publishedDisplay": "观察时列表",
+      "metrics": {
+        "skinPostComments": 1040,
+        "dormPostComments": 1070,
+        "launchPostComments": 1199
+      },
+      "topics": [
+        "皮肤",
+        "宿舍",
+        "公测"
+      ],
+      "limits": "前三均为有奖互动；不把评论数解释为皮肤攻略比玩法更重要。"
+    },
+    {
+      "id": "C05",
+      "language": "zh-CN",
+      "market": "中国大陆官方服务",
+      "platform": "TapTap 官方账号",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875477210155189543",
+      "title": "致星临者的感谢礼：登录即可领取10连",
+      "publishedDisplay": "列表11小时前；正文发放2026-11-27 20:30",
+      "metrics": {
+        "comments": 207,
+        "likes": 104
+      },
+      "observations": [
+        "璀璨忆痕×10，注册并解锁邮箱后领取，发放截止2027-01-05维护前",
+        "同题官方Bilibili话题卡片完整正文说明首次下载、资源校验与登录页反复校验反馈；优化进行中"
+      ],
+      "topics": [
+        "新增邮件奖励",
+        "下载校验循环",
+        "云游戏"
+      ],
+      "limits": "未在本轮跑通领取或安装；进行中的优化不能写成已经全部修复，国服公告不推给日韩繁中服。"
+    },
+    {
+      "id": "C06",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap 问答",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875598233131290206",
+      "title": "目前里边的宠物不同球抓取属性一样吗？孵化的时候需要用高级球才能出好属性吗？",
+      "publishedDisplay": "2026/11/28 04:34:46",
+      "metrics": null,
+      "topics": [
+        "捕捉道具",
+        "孵蛋",
+        "资质"
+      ],
+      "limits": "用户使用球称呼，不自动视为正式道具名；未见有证据回答。"
+    },
+    {
+      "id": "C07",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap 问答",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875592610704525555",
+      "title": "遇到闪光是用什么星彩卡都没区别吗，我用了紫和金感觉没啥加成",
+      "publishedDisplay": "2026/11/28 04:12:26",
+      "metrics": {
+        "visibleCommentCount": 2
+      },
+      "topics": [
+        "星彩卡",
+        "闪光",
+        "捕捉与孵蛋差异"
+      ],
+      "limits": "回复用应该等不确定措辞；不能据此确认紫金卡效果相同。"
+    },
+    {
+      "id": "C08",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap 问答",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875558061761103356",
+      "title": "问下孵蛋的时候选不同的卡片有区别吗？",
+      "publishedDisplay": "2026/11/28 01:55:08",
+      "metrics": {
+        "visibleCommentCount": 2
+      },
+      "topics": [
+        "孵蛋",
+        "卡片稀有度"
+      ],
+      "limits": "回复转述其他UP主而未附实测，答案仍待核。C06—C08为3名作者的相近问题，属于样本内重复，不是全网频率。"
+    },
+    {
+      "id": "C09",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap 问答",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875647309516376389",
+      "title": "珍迹奇波打死了还会刷吗？想压一下血量，结果失手打死了",
+      "publishedDisplay": "2026/11/28 07:49:47",
+      "metrics": {
+        "visibleCommentCount": 1
+      },
+      "topics": [
+        "珍稀奇波刷新",
+        "误杀后处理"
+      ],
+      "limits": "单个提问；评论关于多账号随机的说法未验证。"
+    },
+    {
+      "id": "C10",
+      "language": "zh-CN",
+      "market": "简中",
+      "platform": "TapTap 问答",
+      "readLevel": "platform-list",
+      "url": "https://www.taptap.cn/moment/875571182387071192",
+      "title": "小地图经常有箱子在上面，但我飞不上去，怎么上去？",
+      "publishedDisplay": "2026/11/28 02:47:17",
+      "metrics": {
+        "visibleCommentCount": 3
+      },
+      "topics": [
+        "飞行伙伴",
+        "高处宝箱",
+        "坐骑前置"
+      ],
+      "limits": "评论提及蝴蝶/鞍，未独立复现，不能直接写具体工作台步骤。"
+    },
+    {
+      "id": "T01",
+      "language": "zh-TW",
+      "market": "繁中社区，作者所在地未知",
+      "platform": "巴哈姆特",
+      "readLevel": "original",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=711",
+      "title": "【情報】這破遊戲有每日任務!! 一定要在凌晨四點前把每日任務打出來啊!",
+      "author": "我的小鐮刀不會輸",
+      "publishedDisplay": "昨天00:42（观察2026-11-28）",
+      "metrics": {
+        "firstPostGP": 10,
+        "visibleFloors": 3,
+        "firstPostCommentsAtLeast": 20
+      },
+      "observations": [
+        "主线打完野猪王才出现每日/每周任务",
+        "其他楼层提到耗体本、周王锁主线和委托板"
+      ],
+      "topics": [
+        "每日每周解锁",
+        "主线进度",
+        "刷新前安排"
+      ],
+      "limits": "标题凌晨四点是玩家陈述，未作为跨地区刷新规则；正文未精确验证任务名/等级。"
+    },
+    {
+      "id": "T02",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=79865",
+      "title": "文章列表（依最新回覆）",
+      "publishedDisplay": "观察时列表",
+      "metrics": null,
+      "topics": [
+        "新手Q&A",
+        "活动",
+        "首抽",
+        "日服中文",
+        "飞行",
+        "奇波闪光",
+        "卡关"
+      ],
+      "limits": "按最新回覆，不是热度排序。置顶和网页活动组队串会扩大互动数，列表日期不等于原帖发布日期。"
+    },
+    {
+      "id": "T03",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=732",
+      "title": "【閒聊】剛過25等主線評價(10+小時)",
+      "publishedDisplay": "最新回覆5小時前，原发日期未读",
+      "metrics": {
+        "GP": 85,
+        "interaction": 77,
+        "popularityDisplay": "13k"
+      },
+      "topics": [
+        "20—25级主线",
+        "剧情",
+        "森彩灵蝶跑图"
+      ],
+      "limits": "未读全帖；飞行能力与位置为列表摘要陈述，待正式版画面确认。"
+    },
+    {
+      "id": "T04",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=687",
+      "title": "【閒聊】11/28-0:30更新V5，日服-繁中漢化補丁",
+      "publishedDisplay": "标题11/28-0:30；原发日期未读",
+      "metrics": {
+        "GP": 151,
+        "interaction": 42,
+        "popularityDisplay": "10k"
+      },
+      "topics": [
+        "日服中文支持",
+        "地区语言选择"
+      ],
+      "limits": "非官方补丁；仅用作语言需求信号，未安装、未验证兼容性或账号规则，不写成官方内置中文。"
+    },
+    {
+      "id": "T05",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=620",
+      "title": "【集中】奇波-閃光 異色 星彩 分享集中串",
+      "publishedDisplay": "最新回覆6小時前；原发日期未读",
+      "metrics": {
+        "GP": 88,
+        "interaction": 27,
+        "popularityDisplay": "6476"
+      },
+      "topics": [
+        "闪光/异色/星彩区别",
+        "奇波收集"
+      ],
+      "limits": "分享串热度不证明稀有概率或刷新规律。"
+    },
+    {
+      "id": "T06",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=658",
+      "title": "【心得】台服PC刷首抽方法 Google帳號登入通用",
+      "publishedDisplay": "最新回覆6小時前；原发日期未读",
+      "metrics": {
+        "GP": 33,
+        "interaction": 41,
+        "popularityDisplay": "17k"
+      },
+      "topics": [
+        "刷首抽",
+        "地区账号"
+      ],
+      "limits": "不采用摘要里的多账号/解绑操作作为已测试流程；先用官方账号规则核对可逆性。"
+    },
+    {
+      "id": "T07",
+      "language": "zh-TW",
+      "market": "繁中社区",
+      "platform": "巴哈姆特",
+      "readLevel": "platform-list",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=752",
+      "title": "【心得】藍原現在最重要的是把小玉活動開放1等新手玩",
+      "publishedDisplay": "最新回覆1小時前；原发日期未读",
+      "metrics": {
+        "GP": 42,
+        "interaction": 8,
+        "popularityDisplay": "6169"
+      },
+      "topics": [
+        "活动解锁",
+        "升级路线",
+        "小玉活动"
+      ],
+      "limits": "20等门槛来自摘要中的玩家反馈，未作为各地区统一要求。"
+    },
+    {
+      "id": "K01",
+      "language": "ko",
+      "market": "韩语社区，作者所在地未知",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia?mode=best",
+      "title": "精选区 개념글",
+      "publishedDisplay": "观察到的攻略样本均标2026.11.27",
+      "metrics": {
+        "channelSubscribers": 11635
+      },
+      "topics": [
+        "每日每周",
+        "捕捉",
+        "孵蛋道具",
+        "自动播种",
+        "小玉队伍",
+        "地区福利"
+      ],
+      "limits": "精选区样本，不是韩国全国热度排名；日期页面提示按GMT显示，具体时刻不改为KST。未统计含成人/梗图等非攻略内容。"
+    },
+    {
+      "id": "K02",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "original",
+      "url": "https://arca.live/b/azurpromilia/190508272",
+      "title": "대충 써보는 일간 주간 숙제 모음",
+      "author": "에르",
+      "publishedDisplay": "2026-11-27 14:44:15；修订15:56:22；页面GMT提示",
+      "metrics": {
+        "views": 4719,
+        "recommendations": 41,
+        "comments": 21
+      },
+      "observations": [
+        "正文先说明看不到功能可能因等级或主线不足",
+        "列每日/每周、通行证、家园收菜补粮、商店",
+        "评论纠正F4快捷键、补充通行证任务等，作者修改"
+      ],
+      "topics": [
+        "每日每周清单",
+        "解锁",
+        "家园维护"
+      ],
+      "limits": "有截图的玩家攻略，本站未复现；有持续修订，不复制为全地区确定步骤，也不由此承诺日常固定耗时。"
+    },
+    {
+      "id": "K03",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia/190482512",
+      "title": "키보가 보이면 닥치는대로 다 잡아라 <<< 아님",
+      "publishedDisplay": "2026.11.27",
+      "metrics": {
+        "views": 8581,
+        "recommendations": 54,
+        "comments": 54
+      },
+      "topics": [
+        "奇波捕捉取舍",
+        "捕捉资源"
+      ],
+      "limits": "只读精选卡片，不据标题推出具体捕捉策略。"
+    },
+    {
+      "id": "K04",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia/190520332",
+      "title": "알에다 환상의 스타링크 쓴 후기",
+      "publishedDisplay": "2026.11.27",
+      "metrics": {
+        "views": 4948,
+        "recommendations": 49,
+        "comments": 64
+      },
+      "topics": [
+        "孵蛋",
+        "高阶星结道具"
+      ],
+      "limits": "仅标题/列表；后续计数已有变化，本表固定首次观察值；未确认환상의 스타링크与国服道具一一对应。"
+    },
+    {
+      "id": "K05",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia/190507810",
+      "title": "농사 자동씨앗 왜 안알려줬냐",
+      "publishedDisplay": "2026.11.27",
+      "metrics": {
+        "views": 4622,
+        "recommendations": 45,
+        "comments": 56
+      },
+      "topics": [
+        "自动播种",
+        "家园教程遗漏"
+      ],
+      "limits": "需求证据，未读完整设置流程。"
+    },
+    {
+      "id": "K06",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia/190503860",
+      "title": "도산파티 키보에 대하여 (참고용)",
+      "publishedDisplay": "2026.11.27",
+      "metrics": {
+        "views": 4508,
+        "recommendations": 16,
+        "comments": 12
+      },
+      "topics": [
+        "小玉配队",
+        "奇波搭配"
+      ],
+      "limits": "参考性质的玩家攻略；未读正文，不据此确认队伍强度。"
+    },
+    {
+      "id": "K07",
+      "language": "ko",
+      "market": "韩语社区",
+      "platform": "Arca.live",
+      "readLevel": "platform-list",
+      "url": "https://arca.live/b/azurpromilia/190517949",
+      "title": "근데 찾아보니까 일본쪽은 리딤으로 레드스톤 300개 주는거",
+      "publishedDisplay": "2026.11.27",
+      "metrics": {
+        "views": 5132,
+        "recommendations": 62,
+        "comments": 59
+      },
+      "topics": [
+        "各服福利差异",
+        "兑换码适用地区"
+      ],
+      "limits": "玩家跨服比较，不能确认奖励差异或将日本码标成韩服可用。"
+    },
+    {
+      "id": "J01",
+      "language": "ja",
+      "market": "日本语言平台",
+      "platform": "Yahoo!リアルタイム検索",
+      "readLevel": "aggregation",
+      "url": "https://search.yahoo.co.jp/realtime/search/matome/bcc94e28331f4aa0805cee1ab91d0dbc-1795662900",
+      "title": "アズールプロミリア正式リリース、ユーザーの「やるぞ」熱狂が拡散",
+      "publishedDisplay": "页面最终更新2026/11/26 12:15",
+      "metrics": {
+        "platformDisplayedPosts": 413
+      },
+      "topics": [
+        "开服",
+        "角色",
+        "初见体验"
+      ],
+      "limits": "标题、情绪60%/40%和正文为平台AI生成，未用作事实或情绪统计。413为平台显示的该聚合话题计数，不是研究者去重数或当前全X热度。只沿相关帖子回溯原文。"
+    },
+    {
+      "id": "J02",
+      "language": "ja",
+      "market": "日语",
+      "platform": "X",
+      "readLevel": "original",
+      "url": "https://x.com/Ayato_Morinaga/status/2125777704750633173",
+      "title": "ついにアズールプロミリアがサービス開始です",
+      "author": "森永彩斗",
+      "publishedDisplay": "2026年11月26日10:24（页面显示，时区未确认）",
+      "metrics": {
+        "views": 4020,
+        "likes": 65,
+        "reposts": 21,
+        "replies": 6
+      },
+      "topics": [
+        "角色与声优兴趣",
+        "开服初见"
+      ],
+      "limits": "声优账号宣传性发言，回复中的特拉拉偏好和下载等待只作为个例，不是有机玩家热榜。Yahoo聚合计数与X原页计数不同，采用原页。"
+    },
+    {
+      "id": "J03",
+      "language": "ja",
+      "market": "日语玩家，所在地未知",
+      "platform": "X",
+      "readLevel": "original",
+      "url": "https://x.com/punitomato/status/2126347101152182699",
+      "title": "キボたちが食堂でご飯食べまくる…僕の農園食いしん坊しかいない",
+      "author": "アル",
+      "publishedDisplay": "2026年11月28日0:07（页面时区未确认）",
+      "metrics": {
+        "views": 151,
+        "likes": 0,
+        "reposts": 0,
+        "replies": 0
+      },
+      "topics": [
+        "农园耗粮",
+        "奇波餐桌"
+      ],
+      "limits": "低互动新帖；跨语言重复需求的辅助证据，不能称日本热门帖或核实耗粮参数。"
+    },
+    {
+      "id": "J04",
+      "language": "ja",
+      "market": "日语玩家，所在地未知",
+      "platform": "X",
+      "readLevel": "original",
+      "url": "https://x.com/4_x_8/status/2126348400740405560",
+      "title": "モルフォーレ捕まえたら移動めっちゃ楽で助かる",
+      "author": "翠野シオン",
+      "publishedDisplay": "2026年11月28日0:12（页面时区未确认）",
+      "metrics": {
+        "views": 289,
+        "likes": 0,
+        "reposts": 0,
+        "replies": 1
+      },
+      "topics": [
+        "飞行/移动奇波",
+        "奇波用途"
+      ],
+      "limits": "单个体验。作者在回复中把キボデュエル更正为キボファイト；译名、能力和获取要另核，不直接合并为国服森彩灵蝶实体。"
+    },
+    {
+      "id": "J05",
+      "language": "ja",
+      "market": "日本语言平台",
+      "platform": "Yahoo!リアルタイム検索",
+      "readLevel": "aggregation",
+      "url": "https://search.yahoo.co.jp/realtime/search?p=アズールプロミリア+キボ&ei=UTF-8",
+      "title": "アズールプロミリア キボ·新着順",
+      "publishedDisplay": "观察时近实时列表",
+      "metrics": null,
+      "topics": [
+        "网页活动模板邀请",
+        "捕捉",
+        "跑图",
+        "农园",
+        "初见直播"
+      ],
+      "limits": "多条相同队伍邀请与带#PR直播，必须去重排除；新着顺不是热门顺。首条Best Post为Yostar官方开服宣传，显示3321赞761转发，不与普通帖混算。"
+    },
+    {
+      "id": "O01",
+      "language": "ko",
+      "market": "韩国官方服务",
+      "platform": "Nexon 官方网站",
+      "readLevel": "original",
+      "url": "https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true",
+      "entryUrl": "https://azurpromilia.nexon.com/",
+      "title": "별의 도약 GRAND OPEN",
+      "publishedDisplay": "落地页年份路径2026/11；标题11월26일 GRAND OPEN",
+      "metrics": null,
+      "observations": [
+        "PC下载页https://azurpromilia.nexon.com/support/download",
+        "App Store韩国ID6754899430",
+        "Google Play com.nexon.azurpromilia",
+        "Galaxy Store com.nexon.azurpromiliagalaxy",
+        "页面列最大500次免费观测，不能套用国服510或全地区相加",
+        "角色音频按钮有한국어 더빙与일본어 더빙，不等于确认每个客户端文本语言"
+      ],
+      "topics": [
+        "韩国开服",
+        "地区入口",
+        "下载",
+        "福利差异"
+      ],
+      "limits": "已核官方页面和入口；未安装、未登录、未核所有地区资格/互通/完整语言支持。社媒计数不适用。"
+    },
+    {
+      "id": "O02",
+      "language": "zh-TW",
+      "market": "繁中官方服务，完整运营范围待核",
+      "platform": "繁中官网",
+      "readLevel": "original",
+      "url": "https://azurpromilia.jimi-global.com/home",
+      "entryUrl": "https://azurpromilia.com/zh-tw",
+      "title": "《藍色星原：旅謠》官方網站 -11月26日正式公測！",
+      "publishedDisplay": "首页可见11月27日感谢礼及11月26日活动",
+      "metrics": null,
+      "observations": [
+        "azurpromilia.com/zh-tw跳转jimi-global.com/home",
+        "页面提供官方PC、Google Play、App Store下载按钮",
+        "可见官方Facebook、Instagram、YouTube、Discord链接",
+        "新闻列表有11月27日感谢礼；未打开详情，不写奖励数量与期限"
+      ],
+      "topics": [
+        "繁中正式下载",
+        "地区状态",
+        "感谢礼"
+      ],
+      "limits": "官网按钮存在不等于成功下载安装；角色中文/日文音频按钮不证明日服内置中文。未从首页推断台港澳完整服务资格。"
+    },
+    {
+      "id": "O03",
+      "language": "en",
+      "market": "SEA官方服务",
+      "platform": "PlayPark官方首页及FAQ",
+      "readLevel": "original",
+      "url": "https://azurpromilia.playpark.com/en/faq/",
+      "title": "FAQ | Azur Promilia SEA",
+      "publishedAt": "2026.10.09（FAQ页面日期）",
+      "phase": "11月28日读取，首页仍为Pre-Register",
+      "metrics": {},
+      "observations": [
+        "首页 https://azurpromilia.playpark.com/en/ 显示Southeast Asia Official Site、PRE-REGISTER及PlayPark版权。",
+        "FAQ称由PlayPark运营，服务器、客服、预约独立于其他地区；早期更新和活动可能不同。",
+        "FAQ列出五种界面语言：English、Thai、Indonesian、Vietnamese、Simplified Chinese；三种语音：Chinese、Japanese、English。这是SEA版本说明，不能外推至日服。",
+        "FAQ第7问写上线日期尚未公布；第9问写设备信息尚未公布。应与后续最新公告交叉核对，不能把旧FAQ当作没有新公告的证明。",
+        "FAQ称服务东南亚各国，明列Indonesia/Malaysia/Philippines/Singapore/Thailand/Brunei/Laos/Myanmar/Cambodia/East Timor；列表未列Vietnam，尽管语言含Vietnamese。具体国家准入需继续核官方条款，不能自行补齐。"
+      ],
+      "topics": [
+        "SEA与Global区别",
+        "英语界面与语音",
+        "区域运营",
+        "预约和上线状态"
+      ],
+      "limits": "未预约、登录、下载或安装；未查阅完整最新新闻列表。FAQ日期为10月9日，不能据此确定11月28日不存在更晚时间公告。"
+    },
+    {
+      "id": "O04",
+      "language": "en",
+      "market": "英语官方账号，非国别用户样本",
+      "platform": "X @AzurPromilia_EN",
+      "readLevel": "original",
+      "url": "https://x.com/AzurPromilia_EN",
+      "title": "Azur Promilia official English account",
+      "publishedAt": "本次可见列表最新11月23日",
+      "phase": "开服后读取官方账号简介和部分贴文",
+      "metrics": {
+        "followersDisplay": "1.3万",
+        "postsDisplay": 14
+      },
+      "observations": [
+        "简介自称official，链接到azurpromilia.juumy-pte.com。",
+        "本次加载可见11月23日Luruka及11月13/10/6/4日角色世界观贴文，没有在本次可见列表核到英语版日期公告。"
+      ],
+      "topics": [
+        "英语官方核实入口"
+      ],
+      "limits": "仅可见部分公开列表，未完整读取14篇和图片内信件；不能证明官方从未宣布日期。搜索摘要/用户转述中的summer 2027仍须核原文。"
+    }
+  ],
+  "unverifiedLeads": [
+    {
+      "url": "https://azurpromilia.wikiru.jp/?雑談掲示板",
+      "status": "浏览器连接失败ERR_SOCKET_NOT_CONNECTED，未读正文",
+      "use": "不做日本社区问题频率证据"
+    },
+    {
+      "platform": "X",
+      "account": "akatsuki_izayoi",
+      "status": "仅旧搜索摘要，11月24日Windows有声黑屏；本轮未取得稳定原帖",
+      "use": "不发布改Windows UTF-8系统设置的修复操作"
+    },
+    {
+      "platform": "AppMedia/Game8",
+      "status": "日语SERP可见日周清单、首抽攻略；正文未核",
+      "use": "仅竞品覆盖线索，不作玩家热度或机制证据"
+    }
+  ],
+  "notSampled": [
+    "微博",
+    "小红书",
+    "抖音",
+    "NGA当日正文",
+    "Facebook非公开群组",
+    "Discord登录频道",
+    "Naver正文",
+    "Chzzk直播评论",
+    "泰语/印尼语/越南语/欧洲小语种社区"
+  ]
+}

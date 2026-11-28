@@ -7,9 +7,9 @@ title: 蓝色星原家园开荒：种植派遣、奇波餐桌、耗粮与订单
 description: 结合公测首日社区家园实操，整理耕作小屋、奇波餐桌、订单与种子管理；排查派满缺粮，区分玩家路线、日本寮套装和未核实效率。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-27"
-gameVersion: 公测后 / 2026-11-27资料核对
-gameRegion: 中国大陆、日本（分地区说明）
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区社区原帖核对
+gameRegion: 中国大陆、日本；韩语／繁中社区记录分区说明
 verification: editorial
 status: published
 sourceRefs:
@@ -20,7 +20,8 @@ sourceRefs:
   - cn-community-farm-2026-11-26
   - cn-community-farm-food-2026-11-27
   - jp-public-launch-2026-11-26
-sourceRevision: 4
+  - kr-community-auto-seeds-2026-11-27
+sourceRevision: 5
 translationStatus: published
 aliases:
   - 家园
@@ -43,6 +44,8 @@ revisions:
     note: 按多语言审计修正日期或术语表述；按项目负责人本轮开发及既有上线授权发布，不另称独立语言审校或正式服实测。
   - date: "2026-11-27"
     note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按项目负责人开发及上线授权补地区社区原帖的日常／捕获／种子管理参考，分别标注地区与归因；不另称独立语言审校或游戏实测。
 claimRefs:
   - cn-rewards-conditions
   - cn-store-home-kibo-overview
@@ -52,8 +55,19 @@ claimRevisions:
   cn-store-home-kibo-overview: 1
   jp-store-home-kibo-overview: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+## 自动种子设置在哪里：韩国截图的入口对照
+
+[韩国玩家Horol的11月27日图文](https://arca.live/b/azurpromilia/190507810)给出了三张界面图，补足“种子管理在哪里找”的线索：**家园总览下方「키보 농장」→农场右下「씨앗 관리」→「씨앗 창고」种子槽**。这是韩语客户端原标签，不冒充国服或日本版的正式菜单名。
+
+1. 在已开放的家园总览找农场入口；若还未开放，按当前主线／功能锁定提示继续。
+2. 进入农场，查右下的种子管理；先看已有种子数量和种子槽配置。
+3. 原帖种子仓库说明按设置顺序栽培。按自己所需作物配置，再回到农场确认岗位、作物与食物状态。
+4. **实际产出仍要自己确认**：先观察一次播种、作物变化和收取，再扩大投入。截图只证明入口与配置，本站未复现自动运行；不要把收获物自动领取开关和种子配置混为一项。
+
+作者说自己21级才发现该功能，这不是21级解锁的依据；“每15–20分钟手动回来种麦”也是个人经历，不作为统一作物周期。国服已有[首日家园原帖](https://www.taptap.cn/moment/875088587471717682)列出种子管理与岗位，可对照本服界面查找，不能直接照抄韩语按钮位置。
 
 ## 首日玩家实操线索：先看种植、餐桌和订单
 

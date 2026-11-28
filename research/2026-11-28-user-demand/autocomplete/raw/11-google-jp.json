@@ -1,0 +1,11 @@
+{
+  "engine": "google",
+  "region": "jp",
+  "language": "ja",
+  "seed": "アズールプロミリア キボ",
+  "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=%E3%82%A2%E3%82%BA%E3%83%BC%E3%83%AB%E3%83%97%E3%83%AD%E3%83%9F%E3%83%AA%E3%82%A2+%E3%82%AD%E3%83%9C&hl=ja&gl=jp",
+  "observed_at": "2026-11-28T08:04:02+08:00",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "suggestions": []
+}

@@ -11,7 +11,7 @@ test('bilingual database and FAQ connect actual profiles, answers and guides on 
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.goto(`/${locale}/faq/#q-home-unlock`);
     await expect(page.locator('#q-home-unlock')).toHaveAttribute('open', '');
-    await expect(page.locator('[data-faq-id]')).toHaveCount(32);
+    await expect(page.locator('[data-faq-id]')).toHaveCount(33);
     await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
     await expect(page.locator('#q-pvp')).toContainText(locale === 'ja' ? '判断できません' : '判断');
     await expect(page.locator('#q-home-unlock')).toContainText(locale === 'ja' ? '未検証' : '未实测');
@@ -42,7 +42,7 @@ test('region filter includes the Japanese-name Metsa and matches its count and p
 test('updates show latest releases first and consolidate official announcement links', async ({ page }) => {
   for (const locale of ['zh-hans', 'ja']) {
     await page.goto(`/${locale}/updates/`);
-    await expect(page.locator('[data-site-update]').first()).toHaveAttribute('data-site-update', '2026-11-27');
+    await expect(page.locator('[data-site-update]').first()).toHaveAttribute('data-site-update', '2026-11-28');
     await expect(page.locator('[data-site-update]').first()).toContainText('41');
     const links = await page.locator('[data-announcement-url]').evaluateAll(nodes => nodes.map(node => node.getAttribute('data-announcement-url')!.replace(/\/$/, '')));
     expect(links.length).toBe(new Set(links).size);

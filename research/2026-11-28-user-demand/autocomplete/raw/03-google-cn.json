@@ -1,0 +1,11 @@
+{
+  "engine": "google",
+  "region": "cn",
+  "language": "zh-CN",
+  "seed": "蓝色星原 奇波",
+  "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=%E8%93%9D%E8%89%B2%E6%98%9F%E5%8E%9F+%E5%A5%87%E6%B3%A2&hl=zh-CN&gl=cn",
+  "observed_at": "2026-11-28T08:03:17+08:00",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "suggestions": []
+}

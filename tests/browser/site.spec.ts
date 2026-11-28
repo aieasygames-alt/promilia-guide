@@ -375,7 +375,8 @@ test('lightweight UI enhancements: homepage quick navigation, catalog filters, c
   await expect(page.locator('.entity-card:visible')).toHaveCount(6);
 
   await page.goto('/zh-hans/guides/redeem-codes/');
-  await expect(page.locator('[data-code-empty]')).toBeVisible();
+  await expect(page.locator('[data-announced-code="AZPR1126"]')).toBeVisible();
+  await expect(page.locator('[data-code-empty]')).toHaveCount(0);
   await expect(page.locator('[data-copy-target]')).toHaveCount(0);
 
   await page.setViewportSize({ width: 375, height: 812 });

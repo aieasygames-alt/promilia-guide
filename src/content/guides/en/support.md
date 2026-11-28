@@ -4,7 +4,9 @@ locale: en
 slug: support
 section: guides
 title: "Azur Promilia Support: Login, Errors & Missing Rewards"
-description: Find official Azur Promilia support for Japan and China. Prepare login, download and missing-reward reports, with Japanese form labels and an English checklist.
+description: Find official Azur Promilia support for Japan and China. Prepare
+  login, download and missing-reward reports, with Japanese form labels and an
+  English checklist.
 claimRefs:
   - cn-login-support-rules
   - cn-launch-troubleshooting
@@ -17,6 +19,7 @@ sourceRefs:
   - jp-launch-faq-2026-11-24
   - jp-support-page-2026-11-24
   - jp-account-terms-2026-11-24
+  - cn-thanks-download-update-2026-11-27
 order: 7
 aliases:
   - Azur Promilia support
@@ -30,8 +33,8 @@ related:
   - getting-started
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: Launch preparation / regional source dates recorded below
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
@@ -42,15 +45,23 @@ claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
   jp-account-deletion-terms: 1
-sourceRevision: 1
-translatedFromRevision: 1
+sourceRevision: 2
+translatedFromRevision: 2
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
   - date: "2026-11-26"
-    note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+    note: Published the English first-session guide following the project owner’s
+      multilingual development request and existing deployment authorization.
+      Regional evidence dates are retained; this is not an independent language
+      review or a gameplay, account, claim or support-submission test.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 ---
 
 ## Where should you contact Azur Promilia support?
@@ -143,3 +154,9 @@ Do not treat deletion as a generic repair step. Japan's account terms state that
 ### What if the issue is an error in this guide?
 
 Use the site's [correction route](/en/#corrections) with the affected guide URL, region, passage and original evidence. For game login or reward problems, continue through regional official support. The [English FAQ](/en/faq/) can help identify the appropriate guide first.
+
+## China download optimization is still in progress
+
+The [November 27 official China notice](https://www.taptap.cn/moment/875477210155189543) acknowledges long iOS download/verification waits with large resources or unstable networks, occasional stalls and repeated login-page verification. Resource packaging, verification and interrupted-download resumption are being optimized through staged platform updates, prioritizing iOS. **This is not a completed-fix announcement.**
+
+Record the failure stage, device, version, message and time, then use the regional FAQ and support. Do not infer the same Japan issue or repeatedly delete downloaded resources because of this notice. China's [official cloud route](/en/guides/cloud-gaming/) is an alternative with separate network and account checks.

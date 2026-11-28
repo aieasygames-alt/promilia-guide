@@ -3,13 +3,15 @@ contentId: global-release
 locale: en
 slug: global-release
 section: guides
-title: "Azur Promilia Release Date: Japan, China & Global Status"
-description: Azur Promilia officially launched in Japan and mainland China on November 26, 2026. Compare regional launch notices, downloads and the unverified global English release status.
+title: "Azur Promilia Release Date: Global, SEA, Japan & Korea"
+description: Compare Azur Promilia global and SEA release status with Japan,
+  China, Korea and Traditional Chinese downloads. English release targets summer
+  2027, subject to change.
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / sources checked November 27, 2026
-gameRegion: Japan, mainland China; Traditional Chinese entries noted separately
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
+gameRegion: Japan, China, Traditional Chinese, Korea, SEA and English release plan
 verification: official
 status: published
 sourceRefs:
@@ -21,6 +23,12 @@ sourceRefs:
   - jp-public-launch-2026-11-26
   - jp-official-home-2026-11-14
   - tc-official-home-2026-11-14
+  - tc-official-launch-2026-11-28
+  - kr-official-launch-2026-11-28
+  - sea-official-faq-2026-11-28
+  - sea-official-home-2026-11-28
+  - sea-official-news-2026-11-28
+  - en-release-window-2026-10-13
 claimRefs:
   - cn-launch-date
   - cn-opening-time
@@ -44,8 +52,8 @@ claimRevisions:
   cn-opening-time: 4
   jp-release-status: 2
   jp-opening-time: 2
-  tc-official-announcement: 1
-  tc-mobile-official-entry: 1
+  tc-official-announcement: 2
+  tc-mobile-official-entry: 2
   jp-official-entry: 2
   jp-platform-plan: 1
   cn-ios-store: 3
@@ -57,11 +65,11 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 13
-translatedFromRevision: 13
+sourceRevision: 14
+translatedFromRevision: 14
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -76,97 +84,105 @@ related:
   - banner-rules
 revisions:
   - date: "2026-11-25"
-    note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
+    note: Published the English launch guide using the existing regional source
+      checks. The project owner requested creation and production deployment in
+      this conversation; this records publication authorization, not an
+      independent language review or a completed installation/gameplay test.
   - date: "2026-11-26"
-    note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
+    note: Clarified inclusive recommended storage values. Publication follows the
+      project owner’s request to implement the multilingual audit; no
+      independent language or installation test is claimed.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under
+      the project owner’s development and deployment authorization. No
+      independent language review or gameplay test is claimed.
   - date: "2026-11-27"
-    note: Prioritized official regional entries, device paths and post-launch next steps; clarified the limits of verified game-client language support. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
+    note: Prioritized official regional entries, device paths and post-launch next
+      steps; clarified the limits of verified game-client language support.
+      Published under the project owner’s development and deployment
+      authorization; no independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 order: 1
 minutes: 6
 ---
 
-## Japan and China have officially announced launch
+## Which Azur Promilia versions are available?
 
-**Both publishers announced service began on November 26, 2026.** See the [Japan formal-service notice](https://azurpromilia.jp/news/5225) and [China public-launch notice](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576), checked November 27. This updates the earlier schedule-only status. An official launch announcement is not a real-time uptime check or proof that a particular account can log in.
+**Japan, mainland China, the Traditional Chinese edition and Korea show November 26 launch announcements or launch banners. PlayPark's SEA edition is taking preregistrations. Separately, the official English account targets summer 2027 for the English release, subject to change.** SEA, Japan and the English release plan are separate regional questions.
 
-The original opening schedules were 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. Japan also published [limited-banner rules](/en/guides/banner-rules/) and [its first story event](/en/guides/resources/). A global English release date and English-client support remain unverified in these sources.
+New regional entries and announcements were checked November 28, 2026. Japan and China's formal launch notices retain their November 27 source checks. A launch announcement is separate from current maintenance or whether an individual account can log in.
 
-## After choosing an edition: download, account, rewards
+## Release dates, publishers and official entries
 
-| Your next task | Guide | Check before continuing |
+| Edition | Official status and starting point | Check first |
+| --- | --- | --- |
+| Japan | [Official site](https://azurpromilia.jp/), [November 26 service-start notice](https://azurpromilia.jp/news/5225) and [Windows page](https://azurpromilia.jp/PCdownload) | Yostar ID, store eligibility and game-client language |
+| Mainland China | [Official site](https://azurpromilia.manjuu.com/home/) and [November 26 launch notice](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) | Official-server versus channel accounts and real-name verification |
+| Traditional Chinese | [Official homepage](https://azurpromilia.jimi-global.com/home/) displays launch and PC, Google Play and App Store download buttons | Regional terms, account eligibility and server rules |
+| Korea | [Nexon official page](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) displays November 26 GRAND OPEN, with [PC download](https://azurpromilia.nexon.com/support/download) and mobile-store entries | Nexon edition rules, rather than Japan accounts or China rewards |
+| SEA | [PlayPark site](https://azurpromilia.playpark.com/en/) offers preregistration; see its [announcement](https://azurpromilia.playpark.com/en/news/sea-official-announcement/) and [FAQ](https://azurpromilia.playpark.com/en/faq/) | Preregistration is not a playable client or a confirmed launch date |
+| English release plan | [October 13 official English update](https://x.com/AzurPromilia_EN/status/2109992558004998420): outside the initial launch; targets summer 2027 | Subject to change; not an exact date, SEA schedule or country-eligibility list |
+
+## When is the global English release?
+
+**The official English account says it is targeting summer 2027 and explicitly says the timing may change as development progresses.** This replaces this guide's earlier lack of a verified English-release statement. The announcement is dated October 13; this site read it on November 28.
+
+It does not give a specific day, confirm every country's eligibility or establish cross-region progress transfers. Do not turn the target season into a fixed countdown. Check SEA separately through PlayPark's announcements.
+
+## SEA release date and English-language support
+
+The [SEA FAQ](https://azurpromilia.playpark.com/en/faq/) lists five interface languages: **English, Thai, Indonesian, Vietnamese and Simplified Chinese**. It also lists **Chinese, Japanese and English voice-over**. Servers, support and preregistration are independent of other editions; early updates and events may differ. Preregistration elsewhere does not automatically carry over.
+
+The FAQ is dated October 9 and states that the launch date and device information have not been announced. On November 28, the All News list showed the October 20 release-confirmation and preregistration announcement. This records the checked official web status. Japan and China's November 26 date and hardware requirements should not be applied to SEA. The FAQ's general service-area wording and named-country list do not fully align; consult current SEA terms for your country.
+
+An English guide or unofficial patch is not proof that Japan's official client includes English text. SEA's language list does not establish English or Chinese text in Japan's client; that remains unverified in the Japan sources used here.
+
+## How to identify each regional app
+
+| Edition | Official app identity or entry | Scope |
+| --- | --- | --- |
+| Japan | App Store `6787982572`; Google Play `com.Yostar.AzurpromiliaJP`; Japan Windows page | Website entries and earlier Apple metadata checked; individual store eligibility is separate |
+| Mainland China | China App Store `6754017631`; PC/Android from its official site | A visible entry is not a completed installation or login |
+| Traditional Chinese | Taiwan App Store `6789139052`; Google Play `com.jimi.azurpromilia` | Earlier official-link identities retained; the homepage now shows downloads, replacing its November 23 preregistration display |
+| Korea | App Store `6754899430`; Google Play `com.nexon.azurpromilia`; Galaxy `com.nexon.azurpromiliagalaxy` | Links read on the Nexon page; no installation or login test |
+
+App IDs identify editions. They do not establish worldwide store access, shared servers or transferable progress. Before joining friends, compare edition, publisher/channel, account route and server.
+
+## Japan and China opening times and cross-device progress
+
+The original schedules were November 26 at 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. No exact Korea or Traditional Chinese opening hour is established here.
+
+Japan's FAQ confirms same-account progress sharing on PC, Android and iOS within Japan. China's FAQ confirms official-server sharing across PC, Android, iOS and HarmonyOS; some channel services differ. These are not cross-region transfer or multiplayer guarantees.
+
+Both regional FAQs recommend at least 120GB free on PC and 55GB on Android/iOS, with an SSD recommended. These are Japan/China storage recommendations, not measured download sizes or established Korea/SEA requirements. See [requirements and storage](/en/guides/requirements/) and [download stages](/en/guides/download/). November 24 pre-download is a historical milestone, separate from current service status.
+
+## After choosing an edition
+
+| Your next task | Guide | First check |
 | --- | --- | --- |
 | Install on PC or mobile | [Official download steps](/en/guides/download/) | Regional client, target drive and additional resources |
-| Check a device or storage | [PC and mobile requirements](/en/guides/requirements/) | At least 120GB free on PC or 55GB on Android/iOS is a recommendation, not the measured download size |
-| Start the first session | [Beginner account and mail checklist](/en/guides/getting-started/) | Intended account and the receiving character for web-event rewards |
-| Find launch gifts or missing mail | [Rewards and Japan’s first event](/en/guides/resources/) | Source, conditions and the deadline’s time zone |
-| Spend tickets | [Regional banner rules](/en/guides/banner-rules/) | Ticket type, guarantee and banner period |
-| Identify a character or Kibo | [Character catalog](/en/characters/) · [Kibo catalog](/en/kibo/) | Published identities are separate from tested builds and capture routes |
+| Start the first session | [Beginner account checklist](/en/guides/getting-started/) | Web-event account and receiving character |
+| Claim thank-you gifts | [Rewards and missing mail](/en/guides/resources/) | Region, eligibility and maintenance-based deadline |
+| Enter a Japan code | [AZPR1126 and menu](/en/guides/redeem-codes/) | Separate the code from automatic thank-you mail |
+| Spend tickets | [Regional banner rules](/en/guides/banner-rules/) | Ticket, guarantee and banner period |
+| Identify characters or Kibo | [Characters](/en/characters/) · [Kibo](/en/kibo/) | Published identities versus tested builds and catch locations |
 
-Before joining friends, compare the regional edition, publisher or channel, and server. A common release date does not establish cross-region multiplayer. For an account or login error, use the [regional support guide](/en/guides/support/).
+Account-specific errors go through [regional official support](/en/guides/support/).
 
+## Release-date questions
 
-## When does Azur Promilia release?
+### Does November 26 mean a US or European English launch?
 
-**The regional launch FAQs schedule Azur Promilia for November 26, 2026: 11:00 JST in Japan and 10:00 UTC+8 in mainland China. Both correspond to 02:00 UTC on November 26.** These are the original opening times; the November 26 launch notices above now independently confirm the service-start announcements.
+The regional notices do not establish a worldwide English launch. The English target is summer 2027, subject to change; overseas access to another edition still depends on its rules.
 
-The [Japan launch FAQ](https://azurpromilia.jp/contact) and [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) were checked separately on November 24. Use the official notice for your intended region if the schedule changes.
+### Is SEA the same as global?
 
-| Regional service | Announced date and local time | UTC equivalent | What the evidence covers |
-| --- | --- | --- | --- |
-| Japan | November 26, 2026, 11:00 JST (UTC+9) | November 26, 02:00 UTC | Japan service schedule, supported platforms and regional account rules |
-| Mainland China | November 26, 2026, 10:00 Beijing time (UTC+8) | November 26, 02:00 UTC | China service schedule and official-server platform rules |
-| Traditional Chinese official site | The homepage displays a November 26 date | A specific opening hour has not been verified here | Official site and Taiwan mobile-store entry links; full regional coverage still needs confirmation |
-| Global English release | Not verified in the sources used for this guide | Not established | Do not apply Japan or China dates to an assumed worldwide English service |
+Identify the publisher and announcement. SEA is operated independently by PlayPark. The English-release statement is a separate source and does not fix SEA's date.
 
-## Is there a global English release date?
+### Is the Traditional Chinese site still only a preorder?
 
-**We have not verified a global English release date or English game-client support from the official sources used here.** That describes the scope of this guide's evidence; it is not a claim that no other announcement exists.
-
-Searches for “Azur Promilia global” can refer to different regional editions. An English article, a Japanese store listing and a worldwide service announcement answer different questions. Before downloading, identify the publisher, client and regional rules you intend to use.
-
-This site is available in English, but that does not establish an English language option inside the game. We also have not verified that a store account in every country can install the Japan or China client.
-
-## Japan, China and Traditional Chinese versions: official links
-
-| Version / official site | Verified app identity or entry | Limits of this check |
-| --- | --- | --- |
-| [Japan official site](https://azurpromilia.jp/) | App Store ID `6787982572`; Google Play `com.Yostar.AzurpromiliaJP`; [Windows download page](https://azurpromilia.jp/PCdownload) | Official links and Japan Apple metadata were checked. The iOS web destination redirected to Today during our check; personal installation eligibility is separate. |
-| [Mainland China official site](https://azurpromilia.manjuu.com/home/) | China App Store ID `6754017631`; official PC and Android buttons | The site displayed download entries. This guide has not tested an installer or completed installation. |
-| [Traditional Chinese official site](https://azurpromilia.jimi-global.com/home/) | Taiwan App Store ID `6789139052`; Google Play `com.jimi.azurpromilia` | The November 23 site check showed App Store preorder and Google Play preregistration links. Those links do not establish a complete list of eligible countries or server rules. |
-
-App IDs help distinguish listings. They do not by themselves prove that accounts or progress can—or cannot—move between regions. Use the rules for the actual client rather than relying only on the English title “Azur Promilia.”
-
-## Has pre-download started?
-
-Both regional publishers posted pre-download start announcements on November 24: [China notice](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584) and [Japan notice](https://azurpromilia.jp/news/5191). The earlier regional schedules placed pre-download at 15:00 UTC+8 in China and 16:00 JST in Japan, the same instant.
-
-An announced pre-download opening does not prove that an individual device can install, or that game servers accept logins before launch. Both FAQs say additional resources are needed after installing the base client. Follow the [official download steps](/en/guides/download/) for the edition you choose.
-
-## Can PC and mobile share progress?
-
-The Japan FAQ confirms progress sharing on **PC, Android and iOS when using the same account within the Japan service**. The China FAQ confirms the same-account arrangement across **PC, Android, iOS and HarmonyOS on official servers**; some China channel servers do not share progress with the official service.
-
-These statements do not confirm Japan–China cross-region progress, account transfers, shared servers or the treatment of paid currency. A common launch time does not establish shared game infrastructure. If you plan to play with friends, compare the regional client, account route and server selection before starting.
-
-## What should overseas players check first?
-
-1. **Regional edition:** start from its official site, then follow its store or PC link.
-2. **Account eligibility:** read the relevant service rules. China requires real-name verification; a store page opening successfully does not establish account eligibility.
-3. **Device and space:** the two regional FAQs recommend at least 55GB free on Android/iOS and at least 120GB on PC, with an SSD recommended. See the [requirements and storage guide](/en/guides/requirements/).
-4. **Current service notice:** distinguish preregistration, pre-download, the planned opening and the latest server status.
-
-## Release date questions
-
-### Does the November 26 date apply to the US, Europe or Southeast Asia?
-
-This guide verifies Japan and China announcements separately. It does not establish a global English service or worldwide store availability. The UTC conversion is a way to read the regional schedule, not a list of eligible countries.
-
-### Does reading the guide in English select an English server?
-
-No. This site's language setting only changes the guide. Choose the game client and service region using the official regional rules.
-
-### Can I download on PC now?
-
-Japan has an official Windows download page and both regions have announced pre-download. Our checks cover the notices and web entries, not successful installer acquisition or a completed game login. Continue with the [Japan and China download guide](/en/guides/download/).
+Its homepage now shows launch and download buttons. The old November 23 preregistration description has been superseded. Individual store eligibility remains a separate check.

@@ -76,5 +76,28 @@
     "redemptionMethod": null,
     "sourceRefs": [],
     "checkedAt": "2026-11-21"
+  },
+  {
+    "code": "AZPR1126",
+    "region": "jp",
+    "verification": "announced",
+    "reward": null,
+    "availableAt": null,
+    "expiresAt": null,
+    "timeZone": null,
+    "redemptionMethod": {
+      "zh-hans": "设置（設定）→账号（アカウント）→兑换码（引き換えコード）",
+      "ja": "設定→アカウント→引き換えコード",
+      "en": "設定 (Settings) → アカウント (Account) → 引き換えコード (Redeem code)"
+    },
+    "announcedValidity": {
+      "zh-hans": "官方写明使用期限：2027年11月26日23:59；原帖未单列时区及开始小时。",
+      "ja": "使用期限：2027年11月26日(金)23:59まで。原文にタイムゾーンと開始時刻の別記はありません。",
+      "en": "Official deadline: November 26, 2027 at 23:59, as written. The post does not explicitly state the time zone or start hour."
+    },
+    "sourceRefs": [
+      "jp-redeem-azpr1126-2026-11-26"
+    ],
+    "checkedAt": "2026-11-28"
   }
 ]

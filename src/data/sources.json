@@ -1579,5 +1579,415 @@
         "note": "Eighteen introduction controls opened and original images recorded; six other names have disabled controls. Website grouping does not establish catch locations or implementation dates."
       }
     }
+  },
+  {
+    "id": "kr-official-launch-2026-11-28",
+    "title": "韩国Nexon：GRAND OPEN及官方下载入口",
+    "publisher": "Nexon Korea",
+    "kind": "official",
+    "url": "https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true",
+    "publishedAt": null,
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Nexon Korea",
+    "status": "verified",
+    "note": "读取韩国官方页，确认开服标识和各平台入口；未下载安装、登录或确认跨区资格。",
+    "excerpt": "11월 26일 GRAND OPEN；App Store id6754899430；Google Play com.nexon.azurpromilia；Galaxy com.nexon.azurpromiliagalaxy；PC azurpromilia.nexon.com/support/download",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "韓国Nexon公式：サービス開始と配布先",
+        "note": "11月26日GRAND OPENとPC・各ストアの入口を照合。インストール・ログイン・地域間共有は未検証。"
+      },
+      "en": {
+        "title": "Korea: Nexon launch and distribution entries",
+        "note": "The official page displays November 26 GRAND OPEN and PC/mobile links. No installation, account-eligibility or cross-region test.",
+        "publisher": "Nexon Korea"
+      }
+    }
+  },
+  {
+    "id": "tc-official-launch-2026-11-28",
+    "title": "繁中官网：正式公测与下载按钮",
+    "publisher": "Nijigen Games / JIMI 繁中官网",
+    "kind": "official",
+    "url": "https://azurpromilia.jimi-global.com/home/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Nijigen Games / JIMI 繁中官网",
+    "status": "verified",
+    "note": "当前官网已展示正式下载，替代11月23日预约按钮状态；未实测安装，完整地区资格仍依运营条款。",
+    "excerpt": "11月26日 正式公測；遊戲下載：官方PC下載、Google Play下載、App Store下載；11月27日感謝禮新闻。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "繁体字版公式：正式サービスとダウンロード",
+        "note": "11月26日開始表示とPC・Google Play・App Storeのダウンロードボタンを確認。利用資格とインストールは別途確認。"
+      },
+      "en": {
+        "title": "Traditional Chinese edition: launch and download buttons",
+        "note": "The homepage now displays launch and PC/Google Play/App Store download buttons, replacing the earlier preregistration display. Store eligibility was not tested.",
+        "publisher": "Nijigen Games / JIMI 繁中官网"
+      }
+    }
+  },
+  {
+    "id": "sea-official-faq-2026-11-28",
+    "title": "SEA官方FAQ：独立服务、语言与上线状态",
+    "publisher": "PlayPark / Azur Promilia SEA",
+    "kind": "official",
+    "url": "https://azurpromilia.playpark.com/en/faq/",
+    "publishedAt": "2026-10-09",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "PlayPark / Azur Promilia SEA",
+    "status": "verified",
+    "note": "依据已读取FAQ与本轮最新新闻列表。支持语言为SEA版本说明，不外推日服；不自行补全国家准入清单。",
+    "excerpt": "2026.10.09；five interface languages: English, Thai, Indonesian, Vietnamese, Simplified Chinese；voice-over: Chinese, Japanese, English；independent servers；launch date has not been announced yet；device information not announced yet.",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "SEA公式FAQ：独立運営・対応言語・配信状況",
+        "note": "SEA版は5表示言語と3音声言語を案内。配信日・機種情報は未発表との記載。日本版の言語対応には適用しません。"
+      },
+      "en": {
+        "title": "SEA official FAQ: languages, independent service and launch status",
+        "note": "The dated FAQ lists five interface and three voice languages, independent servers and preregistration. It does not establish a Japan-client language option or a worldwide service.",
+        "publisher": "PlayPark / Azur Promilia SEA"
+      }
+    }
+  },
+  {
+    "id": "sea-official-news-2026-11-28",
+    "title": "SEA官方发行公告及最新新闻列表核对",
+    "publisher": "PlayPark / Azur Promilia SEA",
+    "kind": "official",
+    "url": "https://azurpromilia.playpark.com/en/news/sea-official-announcement/",
+    "publishedAt": "2026-10-20",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "PlayPark / Azur Promilia SEA",
+    "status": "verified",
+    "note": "读取10月20日原公告、11月28日All News列表及预约首页；这不是客户端已开放或个人预约成功。",
+    "excerpt": "2026.10.20；SEA service published and operated by PlayPark；Pre-registration is now live；upcoming test recruitments and official launch schedule；11月28日All News仅显示此条。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "SEA公式発表：PlayPark運営と事前登録",
+        "note": "10月20日告知はPlayPark運営と事前登録を案内。11月28日の最新一覧でも当該告知を確認し、配信開始告知は確認できていません。"
+      },
+      "en": {
+        "title": "SEA official announcement and current news-list check",
+        "note": "The October 20 announcement confirms PlayPark and preregistration. The November 28 All News list showed this notice; no SEA launch notice was found there.",
+        "publisher": "PlayPark / Azur Promilia SEA"
+      }
+    }
+  },
+  {
+    "id": "sea-official-home-2026-11-28",
+    "title": "SEA官方英语预约首页",
+    "publisher": "PlayPark / Azur Promilia SEA",
+    "kind": "official",
+    "url": "https://azurpromilia.playpark.com/en/",
+    "publishedAt": null,
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "PlayPark / Azur Promilia SEA",
+    "status": "verified",
+    "note": "首页和FAQ链接已核对，尚未提交预约或安装。",
+    "excerpt": "Azur Promilia Southeast Asia Official Site；PRE-REGISTER；© Manjuu Co., Ltd. © Playpark Co., Ltd.",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "SEA版公式サイト：事前登録",
+        "note": "公式ホームは事前登録を表示。登録送信やインストールは行っていません。"
+      },
+      "en": {
+        "title": "SEA official preregistration site",
+        "note": "The official homepage displays preregistration, not a verified playable download. No preregistration was submitted.",
+        "publisher": "PlayPark / Azur Promilia SEA"
+      }
+    }
+  },
+  {
+    "id": "en-release-window-2026-10-13",
+    "title": "英语官方：Update on the English Release",
+    "publisher": "Azur Promilia @AzurPromilia_EN",
+    "kind": "official",
+    "url": "https://x.com/AzurPromilia_EN/status/2109992558004998420",
+    "publishedAt": "2026-10-13",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Azur Promilia @AzurPromilia_EN",
+    "status": "verified",
+    "note": "11月28日读取官方原帖完整文字；2027年夏是可调整目标窗口，不是具体公测日；不推定覆盖所有国家，也不作为SEA日期。",
+    "excerpt": "2026年10月13日；English version will not be included in the initial launch；currently targeting summer 2027 for the English release；timing remains subject to change as development progresses.",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "英語版公式：2027年夏を目標とする案内",
+        "note": "公式原文を確認。2027年夏は開発状況により変更される目標時期で、確定日やSEA版の日程ではありません。"
+      },
+      "en": {
+        "title": "Official English release update: targeting summer 2027",
+        "note": "Original October 13 statement: the English version is outside the initial launch and targets summer 2027, subject to change. No exact date or universal country coverage is established.",
+        "publisher": "Azur Promilia @AzurPromilia_EN"
+      }
+    }
+  },
+  {
+    "id": "cn-thanks-download-update-2026-11-27",
+    "title": "国服官方：感谢礼与首次下载专项优化",
+    "publisher": "蓝色星原：旅谣官方 / TapTap",
+    "kind": "official",
+    "url": "https://www.taptap.cn/moment/875477210155189543",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "蓝色星原：旅谣官方 / TapTap",
+    "status": "verified",
+    "note": "原帖11月28日读取，显示修改于昨天20:43。优化仍在进行，不写成已全部修复；领取没有实测。",
+    "excerpt": "璀璨忆痕×10；2026年11月27日20:30至2027年1月5日维护更新前；维护前注册并解锁邮箱；邮件有效期30天。下载校验问题已定位，专项优化正在进行，按端分批推送、iOS优先。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "中国本土公式：感謝ギフトと初回DL最適化",
+        "note": "璀璨忆痕×10、登録・メール解放条件とメール30日期限を確認。初回DL・検証の最適化は進行中で、修正完了とは記載しません。"
+      },
+      "en": {
+        "title": "China official thank-you mail and download-optimization update",
+        "note": "Ten 璀璨忆痕 via mail with registration/mail-unlock conditions and a 30-day mail validity. Download/verification optimization is ongoing, with iOS prioritized; no completed fix or claim test is asserted.",
+        "publisher": "蓝色星原：旅谣官方 / TapTap"
+      }
+    }
+  },
+  {
+    "id": "tc-thanks-mail-2026-11-27",
+    "title": "繁中官方：感謝禮10張璀璨憶痕",
+    "publisher": "Nijigen Games / JIMI 繁中官网",
+    "kind": "official",
+    "url": "https://azurpromilia.jimi-global.com/home/news/detail/914650651865255936/",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Nijigen Games / JIMI 繁中官网",
+    "status": "verified",
+    "note": "读取繁中原公告；文字未单列时区及邮件有效天数，不沿用国服30天条款，按游戏信箱显示确认。",
+    "excerpt": "2026.11.27；璀璨憶痕×10；2026年11月27日20:30至2027年1月5日維護更新前；更新維護前註冊並解鎖信箱。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "繁体字版公式：感謝ギフト",
+        "note": "璀璨憶痕×10と登録・メール解放条件を確認。原文に別記のないタイムゾーンや中国本土版のメール30日期限は付け加えません。"
+      },
+      "en": {
+        "title": "Traditional Chinese official thank-you gift",
+        "note": "Ten 璀璨憶痕 via game mail, with registration and mailbox-unlock conditions before January 5 maintenance. No separate time zone or mail-validity duration is stated in the text.",
+        "publisher": "Nijigen Games / JIMI 繁中官网"
+      }
+    }
+  },
+  {
+    "id": "jp-thanks-mail-2026-11-27",
+    "title": "日本官方：感謝の贈り物",
+    "publisher": "Yostar / @AzurPromilia_JP",
+    "kind": "official",
+    "url": "https://x.com/AzurPromilia_JP/status/2126311912610935144",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Yostar / @AzurPromilia_JP",
+    "status": "verified",
+    "note": "读取日服官方原帖；未列起始小时、完整资格或邮件有效天数，不挪用中服条件。",
+    "excerpt": "煌めく痕跡×10；ゲーム内メールよりお受け取りください；配布期間～2027年1月5日メンテナンス開始前。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式：感謝の贈り物",
+        "note": "煌めく痕跡×10をゲーム内メールで受取。配布は2027年1月5日メンテナンス開始前まで。本文にない条件は他地域から補いません。"
+      },
+      "en": {
+        "title": "Japan official thank-you gift",
+        "note": "Ten 煌めく痕跡 by game mail until the start of January 5, 2027 maintenance. The post does not specify the full eligibility or mail-expiry duration.",
+        "publisher": "Yostar / @AzurPromilia_JP"
+      }
+    }
+  },
+  {
+    "id": "jp-redeem-azpr1126-2026-11-26",
+    "title": "日本官方兑换码：AZPR1126",
+    "publisher": "Yostar / @AzurPromilia_JP",
+    "kind": "official",
+    "url": "https://x.com/AzurPromilia_JP/status/2125892182511083828",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-28网页核对",
+    "gameRegion": "Yostar / @AzurPromilia_JP",
+    "status": "verified",
+    "note": "确认字符串、日本版、公告期限和输入菜单；原帖未列奖励明细、开始小时或独立时区，因此以公告记录展示，不生成自动有效倒计时，未实测兑换。",
+    "excerpt": "【ルミィからのプレゼント】引き換えコードAZPR1126；使用期限2027年11月26日(金)23:59；設定→アカウント→引き換えコード。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式コード：AZPR1126",
+        "note": "コードと設定→アカウント→引き換えコードを確認。期限は原文どおり2027年11月26日23:59。報酬内訳や時刻のタイムゾーンは本文未記載。"
+      },
+      "en": {
+        "title": "Japan official code: AZPR1126",
+        "note": "The official post confirms the code, literal November 26, 2027 23:59 deadline and Japanese settings path. It does not state item quantities, a start hour or explicit time zone; redemption was not tested.",
+        "publisher": "Yostar / @AzurPromilia_JP"
+      }
+    }
+  },
+  {
+    "id": "tc-community-daily-unlock-2026-11-27",
+    "title": "巴哈姆特玩家：每日任务出现的主线进度",
+    "publisher": "巴哈姆特 / 我的小鐮刀不會輸",
+    "kind": "community",
+    "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=711",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-27–28社区记录",
+    "gameRegion": "繁中版玩家记录",
+    "status": "verified",
+    "note": "繁中玩家个人进度，未给完整任务名、等级或跨地区重置规则；不作为本站实测。",
+    "excerpt": "作者称打完主线野猪王后出现每日与每周任务；题名凌晨四点未列全地区时区依据。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "zh-hans": {
+        "title": "巴哈姆特玩家：每日任务出现的主线进度",
+        "note": "繁中玩家个人进度，未给完整任务名、等级或跨地区重置规则；不作为本站实测。"
+      },
+      "ja": {
+        "title": "繁体字版プレイヤー：毎日・毎週任務が出た進度",
+        "note": "原文とコメントを確認。個人の記録として紹介し、日本版の公式仕様・実機検証とは区別します。"
+      },
+      "en": {
+        "title": "Traditional Chinese player report: daily and weekly unlock",
+        "note": "The author reports seeing daily and weekly tasks after a main-story boar boss. It is not a complete unlock chain or a verified regional reset time.",
+        "publisher": "巴哈姆特 / 我的小鐮刀不會輸"
+      }
+    }
+  },
+  {
+    "id": "kr-community-daily-weekly-2026-11-27",
+    "title": "韩国玩家：每日每周清单与快捷键",
+    "publisher": "Arca Live / 에르",
+    "kind": "community",
+    "url": "https://arca.live/b/azurpromilia/190508272",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-27–28社区记录",
+    "gameRegion": "韩语客户端玩家记录",
+    "status": "verified",
+    "note": "正文及评论已读，11月28日修改；委托键经评论改成F4，作者明确未出现可能需等级或主线。次数、稀有刷新和解锁链未独立复核。",
+    "excerpt": "esc右下委托F4；F5每日／周常领取；F2下方任务；家园建筑、牧场、农场收取、加种子、补餐桌。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "zh-hans": {
+        "title": "韩国玩家：每日每周清单与快捷键",
+        "note": "正文及评论已读，11月28日修改；委托键经评论改成F4，作者明确未出现可能需等级或主线。次数、稀有刷新和解锁链未独立复核。"
+      },
+      "ja": {
+        "title": "韓国プレイヤー：毎日・毎週の一覧と訂正されたキー",
+        "note": "原文とコメントを確認。個人の記録として紹介し、日本版の公式仕様・実機検証とは区別します。"
+      },
+      "en": {
+        "title": "Korean player daily/weekly checklist and corrected keys",
+        "note": "The post lists F4 commissions, F5 daily/weekly rewards, F2 pass tasks and farm collection. A comment corrects F4; unlock levels, reset times and quotas are not independently tested.",
+        "publisher": "Arca Live / 에르"
+      }
+    }
+  },
+  {
+    "id": "kr-community-capture-budget-2026-11-27",
+    "title": "韩国玩家：低概率捕获与连接力检查",
+    "publisher": "Arca Live / HoYo호두",
+    "kind": "community",
+    "url": "https://arca.live/b/azurpromilia/190482512",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-27–28社区记录",
+    "gameRegion": "韩语客户端玩家记录",
+    "status": "verified",
+    "note": "读取正文与评论；探索8等数值、节点最优优先级和卡片品质效果未独立核验，不发布统一概率或最优加点。",
+    "excerpt": "初期区域较弱且成功率高，不等于后期也应无条件抓；连接力、账号成长和知识节点被作者列为需检查项。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "zh-hans": {
+        "title": "韩国玩家：低概率捕获与连接力检查",
+        "note": "读取正文与评论；探索8等数值、节点最优优先级和卡片品质效果未独立核验，不发布统一概率或最优加点。"
+      },
+      "ja": {
+        "title": "韓国プレイヤー：低確率の捕獲と消費枚数",
+        "note": "原文とコメントを確認。個人の記録として紹介し、日本版の公式仕様・実機検証とは区別します。"
+      },
+      "en": {
+        "title": "Korean player advice on capture costs and connection stats",
+        "note": "The author distinguishes early captures from later low-chance attempts and points to connection stats and knowledge nodes. Numeric thresholds and optimal skill priorities remain untested.",
+        "publisher": "Arca Live / HoYo호두"
+      }
+    }
+  },
+  {
+    "id": "kr-community-egg-card-2026-11-27",
+    "title": "韩国玩家：蛋使用幻之星结卡的个人结果",
+    "publisher": "Arca Live / 리트리버",
+    "kind": "community",
+    "url": "https://arca.live/b/azurpromilia/190520332",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-27–28社区记录",
+    "gameRegion": "韩语客户端玩家记录",
+    "status": "verified",
+    "note": "单个孵化结果不是概率或保底。未确认中文日文正式道具名、完整操作菜单、卡片来源和属性通用效果；只提供消费前辨别思路。",
+    "excerpt": "作者展示蛋使用환상의 스타링크后得到별빛特性，评论澄清使用确定目标的蛋；作者不确定卡片取得来源。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "zh-hans": {
+        "title": "韩国玩家：蛋使用幻之星结卡的个人结果",
+        "note": "单个孵化结果不是概率或保底。未确认中文日文正式道具名、完整操作菜单、卡片来源和属性通用效果；只提供消费前辨别思路。"
+      },
+      "ja": {
+        "title": "韓国プレイヤー：卵へのカード使用の個人結果",
+        "note": "原文とコメントを確認。個人の記録として紹介し、日本版の公式仕様・実機検証とは区別します。"
+      },
+      "en": {
+        "title": "Korean player egg-card result and follow-up clarification",
+        "note": "One player reports a special trait after using a card on an egg and clarifies that it was a fixed-species egg. The card origin is uncertain; one result cannot establish probabilities or guarantees.",
+        "publisher": "Arca Live / 리트리버"
+      }
+    }
+  },
+  {
+    "id": "kr-community-auto-seeds-2026-11-27",
+    "title": "韩国玩家：农场种子管理入口",
+    "publisher": "Arca Live / Horol",
+    "kind": "community",
+    "url": "https://arca.live/b/azurpromilia/190507810",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后 / 2026-11-27–28社区记录",
+    "gameRegion": "韩语客户端玩家记录",
+    "status": "verified",
+    "note": "已读正文评论并查看三图：总览、农场和种子仓库。作者21级才发现不等于21级解锁；没有独立验证自动运行或移植中日菜单。",
+    "excerpt": "截图顺序：家园总览下方키보 농장→右下씨앗 관리→씨앗 창고；说明设置种子槽后按设置顺序栽培。",
+    "evidenceFile": "research/2026-11-28-priority-implementation/evidence.md",
+    "localized": {
+      "zh-hans": {
+        "title": "韩国玩家：农场种子管理入口",
+        "note": "已读正文评论并查看三图：总览、农场和种子仓库。作者21级才发现不等于21级解锁；没有独立验证自动运行或移植中日菜单。"
+      },
+      "ja": {
+        "title": "韓国プレイヤー：種の管理画面への入口",
+        "note": "原文とコメントを確認。個人の記録として紹介し、日本版の公式仕様・実機検証とは区別します。"
+      },
+      "en": {
+        "title": "Korean player seed-management menu path",
+        "note": "Three screenshots show the farm button, seed management and seed slots. The author discovering it at level 21 does not establish an unlock requirement; automatic production has not been independently reproduced.",
+        "publisher": "Arca Live / Horol"
+      }
+    }
   }
 ]

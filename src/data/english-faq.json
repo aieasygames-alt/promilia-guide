@@ -28,7 +28,7 @@
           "en": "Does an English guide mean there is a global English server?"
         },
         "answer": {
-          "en": "No. The sources used for these guides have not established a global English release date or English-client support. Reading in English does not change the game region, publisher, account rules or store eligibility."
+          "en": "The English guide is a website language choice. Separately, the official English account targets summer 2027 for the English release, subject to change. PlayPark SEA is a separate service with English among five announced interface languages; its launch date remains unannounced in the checked sources. Choose the publisher and region before creating an account."
         }
       },
       {
@@ -53,6 +53,16 @@
         },
         "answer": {
           "en": "Japan's FAQ confirms same-account progress across PC, Android and iOS. China's official service separately includes PC, Android, iOS and HarmonyOS, with channel editions needing their own checks. This does not establish Japan–China transfers or shared paid currency across every platform."
+        }
+      },
+      {
+        "id": "sea-english-release",
+        "contentId": "global-release",
+        "question": {
+          "en": "Are SEA and the global English release on the same schedule?"
+        },
+        "answer": {
+          "en": "No shared schedule is established. PlayPark SEA currently offers separate preregistration; its FAQ lists five interface languages, including English, and three voice languages. The official English account separately targets summer 2027, subject to change. Neither confirms an English or Chinese text option in Japan’s client."
         }
       }
     ]
@@ -111,7 +121,7 @@
           "en": "Are there verified working Azur Promilia codes?"
         },
         "answer": {
-          "en": "This site's checked records currently contain no independently verified active codes. That is not a statement about every official channel. A usable code needs original evidence for its exact string, region, reward, method and validity window; unsupported old strings are not offered as working codes."
+          "en": "Japan officially announced AZPR1126. Enter it via 設定 → アカウント → 引き換えコード. The original deadline is November 26, 2027 at 23:59; the post does not separately state reward quantities, start hour or time zone. This is an official announcement, not a tested redemption or cross-region code."
         }
       },
       {

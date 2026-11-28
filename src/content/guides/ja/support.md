@@ -7,8 +7,8 @@ title: アズールプロミリアの問い合わせ先｜ログイン・不具�
 description: 日本の公式窓口と中国本土のゲーム内経路を区別し、ログイン、不具合、チャネルのアカウント問題を整理。問い合わせ前の情報と日本語テンプレートを掲載します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ・窓口案内
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: editorial
 status: published
@@ -16,6 +16,7 @@ sourceRefs:
   - cn-login-troubleshooting-support-2026-11-24
   - jp-launch-faq-2026-11-24
   - jp-support-page-2026-11-24
+  - cn-thanks-download-update-2026-11-27
 claimRefs:
   - cn-login-support-rules
   - cn-launch-troubleshooting
@@ -24,8 +25,8 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-launch-troubleshooting: 1
   jp-launch-troubleshooting: 1
-sourceRevision: 1
-translatedFromRevision: 1
+sourceRevision: 2
+translatedFromRevision: 2
 translationStatus: published
 aliases:
   - アズールプロミリア 問い合わせ
@@ -52,8 +53,10 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の本番公開と公開後検証を明示。現在の本文・訳文の公開確認を記録し、独立言語校閲やゲーム内実操作を完了したとは記録しません。
   - date: "2026-11-26"
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
+  - date: "2026-11-28"
+    note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
 ---
 
 ## 利用地域と問題を確かめてから窓口へ
@@ -153,3 +156,9 @@ UID（若未取得请说明）：
 ```
 
 送信後は公式画面の受付結果と追加依頼を確認します。当サイトでは問い合わせ送信、受付番号の取得、回答時間の実測を行っていません。中国本土FAQの上記条項にも統一した返信期限は記載されていません。
+
+## 中国本土の初回DL最適化は進行中
+
+[11月27日中国本土公式](https://www.taptap.cn/moment/875477210155189543)は大容量資源・回線変動時の一部iOS端末のDL・検証待ち、進行停止、ログイン画面での再検証を案内。資源分割・検証・中断再開を調整し、iOS優先で段階配布する方針です。**修正完了の発表ではありません。**
+
+本体・追加データ・検証・ログインの停止段階、端末、バージョン、表示と時刻を記録し、対象版のFAQとサポートへ。日本版にも同じ問題があるとは推定せず、この告知だけで取得済みデータを繰り返し削除しないでください。中国本土の[クラウド版](/ja/guides/cloud-gaming/)は回線・アカウント条件を別に確認します。

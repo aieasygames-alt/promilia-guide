@@ -26,7 +26,7 @@ test('cloud topic can be found from existing guidance and each language search',
   for (const locale of ['zh-hans', 'ja', 'en']) {
     for (const topic of ['download', 'requirements']) {
       await page.goto(`/${locale}/guides/${topic}/`);
-      await page.locator('.prose a[href$="/guides/cloud-gaming/"]').click();
+      await page.locator('.prose a[href$="/guides/cloud-gaming/"]').first().click();
       await expect(page).toHaveURL(new RegExp(`/${locale}/guides/cloud-gaming/$`));
     }
     await page.goto(`/${locale}/search/?q=Mac`);

@@ -3,13 +3,13 @@ contentId: resources
 locale: zh-hans
 slug: resources
 section: guides
-title: 蓝色星原公测福利与活动：票券用途、日本首期五结局奖励
-description: 公测后更新：日本首登アニス和20票、首期剧情活动五结局及秘虹晶600奖励、1月5日期限；区分国服票券、预约邮件、巢穴和条件累计抽数。
+title: 蓝色星原公测福利：三地感谢礼10连、邮箱条件与活动
+description: 国服、日服和繁中感谢礼10连分别怎么领？核对1月5日维护前期限、邮箱解锁与邮件有效期；另列登录福利、票券用途和日本首期五结局活动。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-27"
-gameVersion: 公测后 / 2026-11-27资料核对
-gameRegion: 中国大陆、日本（分地区说明）
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区资料核对
+gameRegion: 中国大陆、日本、繁中（分地区说明）
 verification: official
 status: published
 sourceRefs:
@@ -25,7 +25,11 @@ sourceRefs:
   - cn-launch-returns-rewards-2026-11-24
   - jp-public-launch-2026-11-26
   - cn-beginner-probability-2026-11-26
-sourceRevision: 11
+  - cn-thanks-download-update-2026-11-27
+  - tc-thanks-mail-2026-11-27
+  - jp-thanks-mail-2026-11-27
+  - jp-redeem-azpr1126-2026-11-26
+sourceRevision: 12
 translationStatus: published
 aliases:
   - 开荒资源
@@ -77,6 +81,8 @@ revisions:
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
   - date: "2026-11-27"
     note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-opening-rewards-resource
   - cn-rewards-conditions
@@ -98,8 +104,20 @@ claimRevisions:
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+## 11月27日感谢礼：三地分开领取，不需要兑换码
+
+| 地区与原文 | 奖励／入口 | 发放与领取条件 |
+| --- | --- | --- |
+| [国服官方](https://www.taptap.cn/moment/875477210155189543) | 璀璨忆痕×10，游戏邮箱 | 原文11月27日20:30至2027年1月5日维护更新前；维护前注册并解锁邮箱；邮件有效期30天 |
+| [繁中官方](https://azurpromilia.jimi-global.com/home/news/detail/914650651865255936/) | 璀璨憶痕×10，游戏信箱 | 原文同样列上述起止及维护前注册、解锁信箱条件；未单列邮件有效天数 |
+| [日服官方](https://x.com/AzurPromilia_JP/status/2126311912610935144) | 煌めく痕跡×10，游戏内邮件 | 截至2027年1月5日维护开始前；原帖未列起始小时、完整资格和邮件有效天数 |
+
+时间按各原文保留，未单列时区的不换算，“维护前”不补具体小时。国服30天条款不套给繁中或日本。确认版本与账号→解锁邮箱→打开感谢礼邮件→领取附件并核库存；本站未实测领取。未到账时记录资格、角色和邮件状态，联系[地区客服](/zh-hans/guides/support/)。
+
+日服另有[AZPR1126及设置输入路径](/zh-hans/guides/redeem-codes/)，与感谢礼邮件分开。韩服与SEA不据此追加同款10连。
 
 ## 公测后新增：日本首期活动与首登奖励
 

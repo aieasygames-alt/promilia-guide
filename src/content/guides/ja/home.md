@@ -7,9 +7,9 @@ title: アズプロ農園の始め方：初日の配置・食料不足・寮を�
 description: 中国本土の初日農園投稿から栽培・食料・注文の手掛かりを整理。個別報告と日本公式の寮を分け、配置増加時の食料収支と停止原因を確認。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-27"
-gameVersion: 正式サービス開始後 / 2026-11-27資料照合
-gameRegion: 中国本土・日本（地域別明記）
+updatedAt: "2026-11-28"
+gameVersion: 配信後 / 2026-11-28地域別投稿確認
+gameRegion: 日本・中国本土、韓国・繁体字版の投稿は別記
 verification: editorial
 status: published
 sourceRefs:
@@ -20,7 +20,8 @@ sourceRefs:
   - cn-community-farm-2026-11-26
   - cn-community-farm-food-2026-11-27
   - jp-public-launch-2026-11-26
-sourceRevision: 4
+  - kr-community-auto-seeds-2026-11-27
+sourceRevision: 5
 translationStatus: published
 aliases:
   - 家园
@@ -43,6 +44,8 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-27"
     note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+  - date: "2026-11-28"
+    note: 按项目负责人开发及上线授权补地区社区原帖的日常／捕获／种子管理参考，分别标注地区与归因；不另称独立语言审校或游戏实测。
 claimRefs:
   - cn-rewards-conditions
   - cn-store-home-kibo-overview
@@ -51,10 +54,21 @@ claimRevisions:
   cn-rewards-conditions: 1
   cn-store-home-kibo-overview: 1
   jp-store-home-kibo-overview: 1
-translatedFromRevision: 4
+translatedFromRevision: 5
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+## 種の設定はどこ？韓国版の画面から探す入口
+
+[韓国プレイヤーHorolの11月27日の図解](https://arca.live/b/azurpromilia/190507810)には3枚の画面があります。流れは **農園の全体画面下部「키보 농장」→畑の右下「씨앗 관리」→「씨앗 창고」の種スロット**。韓国語の原表示であり、日本版の正式なボタン名としては扱いません。
+
+1. 農園が解放済みなら畑の入口へ。未解放なら現在のメイン任務とロック表示を確認します。
+2. 種の管理を開き、在庫とスロットの設定を確認します。
+3. 投稿の種倉庫には設定順に栽培する説明があります。必要な作物を設定したら畑に戻り、配置と食料も確認してください。
+4. まず1回の種まき・作物の変化・回収を確認してから配置を増やします。当サイトでは自動稼働を再現していません。収穫物を自動回収する切替と、種の設定は分けて確認します。
+
+投稿者がレベル21で気づいたことは必要レベルの根拠にはなりません。15〜20分ごとに戻っていたという体験も全作物の生産周期ではありません。画面が異なる場合は自分の版の説明に従ってください。
 
 ## 中国本土の初日投稿：栽培・食卓・注文の確認から
 

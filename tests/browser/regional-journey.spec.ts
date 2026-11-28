@@ -26,12 +26,12 @@ test('regional gateway leads to the chosen device and preserves it through langu
 test('regional official entries and sources work without JavaScript in every language', async ({ browser, baseURL }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, baseURL });
   const page = await context.newPage();
-  const official = ['https://azurpromilia.jp/', 'https://azurpromilia.manjuu.com/home/', 'https://azurpromilia.jimi-global.com/home/'];
+  const official = ['https://azurpromilia.jp/', 'https://azurpromilia.manjuu.com/home/', 'https://azurpromilia.jimi-global.com/home/', 'https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true', 'https://azurpromilia.playpark.com/en/', 'https://x.com/AzurPromilia_EN/status/2109992558004998420'];
   for (const locale of ['zh-hans', 'ja', 'en']) {
     await page.goto(`/${locale}/guides/global-release/`);
     const gateway = page.locator('[data-regional-gateway]');
     await expect(gateway).toBeVisible();
-    await expect(gateway.locator('h3')).toHaveCount(3);
+    await expect(gateway.locator('h3')).toHaveCount(6);
     for (const url of official) await expect(gateway.locator(`a[href="${url}"]`)).toBeVisible();
     await expect(gateway.locator('a[href="https://azurpromilia.jp/PCdownload"]')).toBeVisible();
     for (const href of await gateway.locator('a[href^="#source-"]').evaluateAll(nodes => nodes.map(node => node.getAttribute('href')!))) {
@@ -41,6 +41,18 @@ test('regional official entries and sources work without JavaScript in every lan
     if (locale !== 'en') await expect(page.locator('.distribution-card:visible')).toHaveCount(6);
   }
   await context.close();
+});
+
+test('official code announcements are readable in every language without fabricated active records', async ({ page }) => {
+  for (const locale of ['zh-hans', 'ja', 'en']) {
+    await page.goto(`/${locale}/guides/redeem-codes/`);
+    const code = page.locator('[data-announced-code="AZPR1126"]');
+    await expect(code).toBeVisible();
+    await expect(code).toContainText('2027');
+    await expect(code).toContainText('設定');
+    await expect(code.locator('a')).toHaveAttribute('href', 'https://x.com/AzurPromilia_JP/status/2125892182511083828');
+    await expect(page.locator('[data-code-expiry]')).toHaveCount(0);
+  }
 });
 
 test('English device links land on real steps and all core journeys reach published guides without overflow', async ({ page, request }) => {

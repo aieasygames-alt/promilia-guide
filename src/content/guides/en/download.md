@@ -3,13 +3,16 @@ contentId: download
 locale: en
 slug: download
 section: guides
-title: "Azur Promilia Download Guide: Japan & China PC, Android, iOS"
-description: Find official Azur Promilia PC and mobile download routes for Japan and China. Follow launcher, client, extra-resource and login checks, with storage and regional account guidance.
+title: "Azur Promilia Download: Japan, Korea, China & SEA Status"
+description: Official Japan, Korea, China and Traditional Chinese PC/mobile
+  entries. Check SEA preregistration separately, then follow regional
+  installation and account steps.
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / sources checked November 27, 2026
-gameRegion: Japan and mainland China, described separately
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
+gameRegion: Japan, mainland China, Traditional Chinese, Korea, SEA and English
+  release, described separately
 verification: official
 status: published
 sourceRefs:
@@ -18,6 +21,13 @@ sourceRefs:
   - cn-community-download-2026-11-27
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
+  - tc-official-launch-2026-11-28
+  - kr-official-launch-2026-11-28
+  - sea-official-faq-2026-11-28
+  - sea-official-home-2026-11-28
+  - sea-official-news-2026-11-28
+  - en-release-window-2026-10-13
+  - cn-thanks-download-update-2026-11-27
 claimRefs:
   - cn-ios-compatibility
   - cn-launch-date
@@ -64,11 +74,11 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 17
-translatedFromRevision: 17
+sourceRevision: 18
+translatedFromRevision: 18
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -83,15 +93,33 @@ related:
   - support
 revisions:
   - date: "2026-11-25"
-    note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
+    note: Published the English launch guide using the existing regional source
+      checks. The project owner requested creation and production deployment in
+      this conversation; this records publication authorization, not an
+      independent language review or a completed installation/gameplay test.
   - date: "2026-11-26"
-    note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
+    note: Clarified inclusive recommended storage values. Publication follows the
+      project owner’s request to implement the multilingual audit; no
+      independent language or installation test is claimed.
   - date: "2026-11-26"
-    note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
+    note: Added the China cloud announcement and Mac/browser route with independent
+      regional and native-client limits. Current publication authorized in
+      conversation; login and language review are not claimed.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under
+      the project owner’s development and deployment authorization. No
+      independent language review or gameplay test is claimed.
   - date: "2026-11-27"
-    note: Prioritized official installation stages and completion checks; moved the individual download report into troubleshooting and updated post-launch account paths. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
+    note: Prioritized official installation stages and completion checks; moved the
+      individual download report into troubleshooting and updated post-launch
+      account paths. Published under the project owner’s development and
+      deployment authorization; no independent language review or gameplay test
+      is claimed.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 order: 2
 minutes: 8
 ---
@@ -111,6 +139,17 @@ These instructions are based on official pages and the November 24 regional FAQs
 | Mainland China | HarmonyOS | [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) and official site | Listed separately in the regional FAQ; do not assume the Android package is the HarmonyOS route |
 
 For Traditional Chinese store identities and the limits of regional availability, see [release dates and regions](/en/guides/global-release/).
+
+
+## Korea, Traditional Chinese and SEA official entries
+
+| Edition | Official starting point | Current step |
+| --- | --- | --- |
+| Korea / Nexon | [Korea official site](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) → [PC download](https://azurpromilia.nexon.com/support/download); mobile uses its App Store, Google Play or Galaxy Store links | GRAND OPEN and distribution entries are visible. Account eligibility and installation are separate checks |
+| Traditional Chinese | [Official homepage](https://azurpromilia.jimi-global.com/home/) → PC, Google Play or App Store | Downloads now replace the earlier preregistration display |
+| SEA / PlayPark | [SEA site](https://azurpromilia.playpark.com/en/) and [FAQ](https://azurpromilia.playpark.com/en/faq/) | Preregister independently. Another edition's installer is not a confirmed SEA client; device information is unannounced in the FAQ |
+
+The installation instructions and 55GB/120GB recommendations below are sourced to Japan and China. The English release [targets summer 2027, subject to change](https://x.com/AzurPromilia_EN/status/2109992558004998420), separately from SEA preregistration. See [regional editions and language support](/en/guides/global-release/) for app IDs and differences.
 
 ## Before installing: account and four completion checks
 
@@ -209,3 +248,9 @@ Do not include passwords or verification codes. This fan site cannot change game
 ## Does pre-download mean the game is live?
 
 No. Pre-download and service launch are separate announcements. [Japan](https://azurpromilia.jp/news/5225) and [China](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) independently announced launch on November 26; the notices were checked November 27. Check current maintenance and account messages before login. For global English availability and other regional editions, use the [release guide](/en/guides/global-release/).
+
+## China download optimization is still in progress
+
+The [November 27 official China notice](https://www.taptap.cn/moment/875477210155189543) acknowledges long iOS download/verification waits with large resources or unstable networks, occasional stalls and repeated login-page verification. Resource packaging, verification and interrupted-download resumption are being optimized through staged platform updates, prioritizing iOS. **This is not a completed-fix announcement.**
+
+Record the failure stage, device, version, message and time, then use the regional FAQ and support. Do not infer the same Japan issue or repeatedly delete downloaded resources because of this notice. China's [official cloud route](/en/guides/cloud-gaming/) is an alternative with separate network and account checks.

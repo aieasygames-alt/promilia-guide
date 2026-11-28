@@ -7,8 +7,8 @@ title: 蓝色星原客服怎么联系：登录、渠道账号与问题反馈
 description: 按国服、日本及渠道账号选择官方客服，核对实名登录要求、游戏内入口和故障信息；附可直接整理的反馈模板，区分玩法卡点与技术异常。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-25"
-gameVersion: 公测前 / 2026-11-24 官方FAQ与客服说明
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: editorial
 status: published
@@ -16,6 +16,7 @@ sourceRefs:
   - cn-login-troubleshooting-support-2026-11-24
   - jp-launch-faq-2026-11-24
   - jp-support-page-2026-11-24
+  - cn-thanks-download-update-2026-11-27
 claimRefs:
   - cn-login-support-rules
   - cn-launch-troubleshooting
@@ -24,7 +25,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-launch-troubleshooting: 1
   jp-launch-troubleshooting: 1
-sourceRevision: 1
+sourceRevision: 2
 translationStatus: published
 aliases: [ 蓝色星原客服, 蓝色星原登录失败, 蓝色星原实名认证, 渠道账号, 联系客服, アズールプロミリア 問い合わせ ]
 related:
@@ -45,8 +46,10 @@ revisions:
     note: 按两地官方FAQ新增客服分流与问题说明指南；正文与日文译稿待本批确认，未提交任何咨询或验证游戏内操作。
   - date: "2026-11-25"
     note: 项目负责人在本会话明确要求全部开发内容上线并进行线上验证；记录当前正文与译文的发布确认，不声称另行完成独立语言审校或游戏内实操。
+  - date: "2026-11-28"
+    note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-25"
+reviewedAt: "2026-11-28"
 ---
 
 ## 先选地区和问题，再找客服入口
@@ -144,3 +147,9 @@ UID（確認できない場合はその理由）：
 ```
 
 发送后，按官方页面的受理结果与后续要求补充资料。本站没有提交咨询、取得工单回执或确认客服响应时间；国服FAQ也没有在上述条款给出统一回复时限。
+
+## 国服首次下载专项优化仍在进行
+
+[11月27日官方说明](https://www.taptap.cn/moment/875477210155189543)确认：资源包较大和网络波动时，部分iOS设备下载／校验等待偏长，个别进度停滞或登录页反复校验。官方已定位问题，正调整资源分包、校验逻辑与断点续传，按端分批推送、iOS优先。**这不是全部修复完成公告。**
+
+记录卡在本体、追加资源、校验还是登录，以及设备、版本、错误和时间，再按对应国服FAQ处理，仍失败找官方客服。不据此认定日服同样故障，也不反复删除已下载资源。空间紧张可另查官方[云游戏](/zh-hans/guides/cloud-gaming/)，网络和账号条件单独确认。
