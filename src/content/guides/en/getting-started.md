@@ -4,9 +4,7 @@ locale: en
 slug: getting-started
 section: guides
 title: "Azur Promilia Beginner Guide: First Steps, Rewards & Dailies"
-description: "Start Azur Promilia with the right account, follow the story,
-  claim mail and choose your first banner. Includes regional daily-task
-  references and tips for short sessions."
+description: "Start Azur Promilia with the right account, follow the story, claim mail and choose your first banner. Includes regional daily-task references and tips for short sessions."
 claimRefs:
   - cn-public-launch-requirements
   - jp-public-launch-requirements
@@ -29,6 +27,8 @@ sourceRefs:
   - tc-community-daily-unlock-2026-11-27
   - kr-community-daily-weekly-2026-11-27
   - kr-community-auto-seeds-2026-11-27
+  - tc-community-weekly-materials-2026-11-28
+  - tc-community-map-travel-2026-11-28
 order: 4
 aliases:
   - Azur Promilia beginner guide
@@ -46,8 +46,7 @@ author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
 gameVersion: Launch version
-gameRegion: Japan and mainland China; Korean and Traditional Chinese reports
-  labeled separately
+gameRegion: Japan and mainland China; Korean and Traditional Chinese reports labeled separately
 verification: editorial
 status: published
 claimRevisions:
@@ -63,37 +62,27 @@ claimRevisions:
   jp-account-deletion-terms: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 20
-translatedFromRevision: 20
+sourceRevision: 21
+translatedFromRevision: 21
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
-minutes: 8
+minutes: 10
 revisions:
   - date: "2026-11-28"
     note: "Added the relevant selector or ticket-budget explanation under the standing development and publication authorization; no independent language review or gameplay test is claimed."
   - date: "2026-11-26"
-    note: Published the English first-session guide following the project owner’s
-      multilingual development request and existing deployment authorization.
-      Regional evidence dates are retained; this is not an independent language
-      review or a gameplay, account, claim or support-submission test.
+    note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under
-      the project owner’s development and deployment authorization. No
-      independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
   - date: "2026-11-27"
-    note: Updated the post-launch session flow and verified banner guidance;
-      connected rewards, character and Kibo catalogs with honest route-coverage
-      limits. Published under the project owner’s development and deployment
-      authorization; no independent language review or gameplay test is claimed.
+    note: Updated the post-launch session flow and verified banner guidance; connected rewards, character and Kibo catalogs with honest route-coverage limits. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
   - date: "2026-11-28"
-    note: Added attributed regional daily and farm menu references under the project
-      owner’s implementation and deployment authorization; no independent
-      gameplay or language review claimed.
+    note: Added attributed regional daily and farm menu references under the project owner’s implementation and deployment authorization; no independent gameplay or language review claimed.
   - date: "2026-11-28"
-    note: Player-facing copy and regional reading order revised; publication
-      authorized by the project owner’s current request and standing deployment
-      instruction. No independent language review or gameplay test claimed.
+    note: Player-facing copy and regional reading order revised; publication authorized by the project owner’s current request and standing deployment instruction. No independent language review or gameplay test claimed.
+  - date: "2026-11-28"
+    note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits. Published under standing development and deployment authorization; no independent gameplay or language review claimed.
 checklist:
   - id: region
     text: Confirm your regional service, account and distribution route
@@ -104,11 +93,12 @@ checklist:
   - id: download
     text: Use the official regional client download
   - id: account
-    text: Check account access, recovery and event participation before character
-      creation
+    text: Check account access, recovery and event participation before character creation
   - id: rules
     text: Read current reward conditions and regional banner details
 readerUpdates:
+  - date: "2026-11-28"
+    note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits.
   - date: "2026-11-28"
     note: "Added a worked example for Japan’s 20 beginner tickets, with a separate China standard-selector reference."
   - date: "2026-11-28"
@@ -128,6 +118,7 @@ This guide focuses on Japan, with China and other regional differences labeled s
 | Make your first pulls | [Tickets, banners and pity](/en/guides/banner-rules/) |
 | Find daily and weekly tasks | See the regional references below |
 | Identify a character or Kibo | [Character list](/en/characters/) · [Kibo catalog](/en/kibo/) |
+
 
 ## Before creating a character: keep the right account
 
@@ -162,6 +153,30 @@ For players using the Korean PC client, [this community checklist](https://arca.
 | Farm collection | Farm headquarters in the Esc menu |
 
 These shortcuts are Korean-client references. Use your edition's menu and key bindings, especially if you have changed the controls. Check reward collection as well as task completion. Reset times should come from your edition's countdown; no universal reset time is established here.
+
+## Before the weekly refresh, check limits and shop stock
+
+**Check opportunities that will refresh before spending on limited shop items.** [新葉綠素’s November 28 Traditional Chinese launch post](https://forum.gamer.com.tw/C.php?bsn=79865&snA=787) separates weekly bosses, hunts and several shops. This is a regional reference; use your current client for exact reset times and menu names.
+
+| Place to check | How to decide |
+| --- | --- |
+| 「往厄殘影」 | The author lists three weekly attempts. The claw pictured is for 星賜 advancement; match your [required material source](/en/systems/combat/#find-the-exact-upgrade-material-before-choosing-a-weekly-boss) and remaining reward claims |
+| 「危機討伐」 | The post describes separate weekly refills for normal and surprise attempts, with extra normal attempts claimable from weekly tasks. Inspect both counters and task claims separately |
+| Shop at the bottom left of the hunt screen | Read each item’s refresh cycle. The pictured [potential-training supplies](/en/systems/kibo/#where-can-you-exchange-for-kibo-potential-training-supplies) have a weekly allowance; other stock may refresh by version |
+| Home hub’s 「閃亮奇珍」 | Separate permanent purchase limits from recurring stock, then compare purpose and available currency; continue with the [home shop guidance](/en/systems/home/) |
+
+Choose a difficulty you can currently complete and rewards your active characters or Kibo need. A remaining attempt is not a reason to force an unwinnable fight, and a purchase limit alone does not make an item urgent. Follow your region’s displayed dates, time zone, allowances and unlock conditions.
+
+## Use the commission marker to return to the village
+
+[偽物’s November 28 post](https://forum.gamer.com.tw/C.php?bsn=79865&snA=808) explains a shortcut after the main story unlocks commissions: selecting the village commission marker lets you teleport to the village entrance. The screenshots label the village 「夏露露村」 and the detail panel 「委託·夏露露村」, with 「傳送」 at the bottom. These Traditional Chinese names are retained so you can identify the source images.
+
+1. Open the map and locate the village’s commission marker.
+2. Select it and confirm that the panel belongs to your destination.
+3. Use the teleport button, then walk from the entrance to the person you need.
+
+This takes you to the entrance rather than every NPC’s position. The post does not establish another region’s official village name or a universal unlock level. If the marker or button is missing, follow your current story prompt. For travel to a boss, also check the [boss-marker teleport example](/en/systems/combat/#check-the-boss-marker-for-a-teleport-button).
+
 
 ## What if you have little time to play?
 
