@@ -9,7 +9,8 @@ const c = t(locale);
 <div id="search-app" data-locale={locale} data-empty={c.searchEmpty} data-unavailable={c.searchUnavailable} data-loading={c.loading} data-count={c.resultCount}>
   <form class="search-form" role="search"><Icon name="search" size={21}/><label class="sr-only" for="search-input">{c.searchLabel}</label><input id="search-input" name="q" type="search" autocomplete="off" placeholder={c.search} maxlength="160"/><button type="submit">{c.searchButton}</button></form>
   <p class="search-help">{c.searchHelp}</p><p class="search-status" role="status" aria-live="polite"></p><div class="search-results" aria-label={c.results}></div>
-  <noscript><p class="notice">{locale === 'en' ? 'Search requires JavaScript. You can also browse the English guides on the homepage.' : locale === 'ja' ? '検索には JavaScript が必要です。ガイド一覧から記事を読むこともできます。' : '搜索需要启用 JavaScript，你也可以从攻略目录直接阅读。'}</p></noscript>
+  <button type="button" class="search-more" hidden>{locale === 'en' ? 'Show more results' : locale === 'ja' ? '他の結果を表示' : '显示更多结果'}</button>
+  <noscript><p class="notice">{locale === 'en' ? 'Search requires JavaScript. ' : locale === 'ja' ? '検索には JavaScript が必要です。' : '搜索需要启用 JavaScript。'}<a href={locale === 'en' ? '/en/#guides' : `/${locale}/guides/`}>{locale === 'en' ? 'Browse all English guides' : locale === 'ja' ? 'ガイド一覧から記事を読む' : '从攻略目录直接阅读'}</a></p></noscript>
 </div>
 <script>
   const app = document.getElementById('search-app');
@@ -18,6 +19,27 @@ const c = t(locale);
     const form = app.querySelector('form')!;
     const status = app.querySelector<HTMLElement>('.search-status')!;
     const results = app.querySelector<HTMLElement>('.search-results')!;
+    const more = app.querySelector<HTMLButtonElement>('.search-more')!;
+    let matching: any[] = [];
+    let displayed = 0;
+    function renderMore() {
+      matching.slice(displayed, displayed + 12).forEach((item) => {
+        const article = document.createElement('article'); article.className = 'search-result';
+        const h2 = document.createElement('h2'); const link = document.createElement('a');
+        link.href = new URL(item.url, location.origin).pathname;
+        link.textContent = item.meta.title || link.pathname; h2.append(link);
+        const excerpt = document.createElement('p');
+        excerpt.textContent = new DOMParser().parseFromString(item.excerpt || item.meta.description || '', 'text/html').body.textContent;
+        article.append(h2, excerpt); results.append(article);
+      });
+      displayed = Math.min(displayed + 12, matching.length);
+      more.hidden = displayed >= matching.length;
+    }
+    more.addEventListener('click', () => {
+      const firstNew = displayed;
+      renderMore();
+      results.querySelectorAll<HTMLAnchorElement>('h2 a')[firstNew]?.focus();
+    });
     let sequence = 0;
     let engine: Promise<any> | undefined;
     const loadEngine = () => engine ||= (async () => {
@@ -28,6 +50,7 @@ const c = t(locale);
       const current = ++sequence;
       const term = input.value.trim();
       results.replaceChildren();
+      matching = []; displayed = 0; more.hidden = true;
       const url = new URL(location.href);
       if (term) url.searchParams.set('q', term); else url.searchParams.delete('q');
       history.replaceState(null, '', url);
@@ -38,19 +61,12 @@ const c = t(locale);
         const gameName = app!.dataset.locale === 'ja' ? 'アズールプロミリア' : app!.dataset.locale === 'en' ? 'Azur Promilia' : '蓝色星原';
         const query = term.replace(/\b(?:azure?\s*promill?ia)\b|藍色星原/gi, gameName);
         const response = await pagefind.search(query);
-        const data = await Promise.all(response.results.slice(0, 30).map((result: { data: () => Promise<any> }) => result.data()));
+        const data = await Promise.all(response.results.map((result: { data: () => Promise<any> }) => result.data()));
         if (current !== sequence) return;
         const local = data.filter((item) => new URL(item.url, location.origin).pathname.startsWith(`/${app!.dataset.locale}/`));
         status.textContent = local.length ? `${local.length} ${app!.dataset.count}` : app!.dataset.empty!;
-        local.slice(0, 12).forEach((item) => {
-          const article = document.createElement('article'); article.className = 'search-result';
-          const h2 = document.createElement('h2'); const link = document.createElement('a');
-          link.href = new URL(item.url, location.origin).pathname;
-          link.textContent = item.meta.title || link.pathname; h2.append(link);
-          const excerpt = document.createElement('p');
-          excerpt.textContent = new DOMParser().parseFromString(item.excerpt || item.meta.description || '', 'text/html').body.textContent;
-          article.append(h2, excerpt); results.append(article);
-        });
+        matching = local;
+        renderMore();
       } catch {
         if (current === sequence) status.textContent = app!.dataset.unavailable!;
       }
@@ -62,4 +78,4 @@ const c = t(locale);
     if (input.value) search();
   }
 </script>
-<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+<style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.search-more{margin-top:20px;padding:12px 20px;border:1px solid var(--line);border-radius:6px;background:var(--mint);color:var(--ink);cursor:pointer}.search-more[hidden]{display:none}.search-more:focus-visible{outline:2px solid var(--green);outline-offset:3px}</style>

@@ -1,0 +1,156 @@
+{
+  "/images/entities/characters/anais.webp": [
+    {
+      "src": "/images/entities/characters/anais-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/anais-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/anais.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/cathbelle.webp": [
+    {
+      "src": "/images/entities/characters/cathbelle-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/cathbelle-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/cathbelle.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/hanyouyou.webp": [
+    {
+      "src": "/images/entities/characters/hanyouyou-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/hanyouyou-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/hanyouyou.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/metsa.webp": [
+    {
+      "src": "/images/entities/characters/metsa-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/metsa-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/metsa.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/symphoria.webp": [
+    {
+      "src": "/images/entities/characters/symphoria-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/symphoria-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/symphoria.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/terara.webp": [
+    {
+      "src": "/images/entities/characters/terara-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/terara-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/terara.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/kibo/bluda.webp": [
+    {
+      "src": "/images/entities/kibo/bluda-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/kibo/bluda-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/kibo/bluda.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/kibo/cabbird.webp": [
+    {
+      "src": "/images/entities/kibo/cabbird-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/kibo/cabbird-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/kibo/cabbird.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/kibo/downybrinny.webp": [
+    {
+      "src": "/images/entities/kibo/downybrinny-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/kibo/downybrinny-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/kibo/downybrinny.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/kibo/staray.webp": [
+    {
+      "src": "/images/entities/kibo/staray-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/kibo/staray-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/kibo/staray.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/kibo/vespervamp.webp": [
+    {
+      "src": "/images/entities/kibo/vespervamp-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/kibo/vespervamp-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/kibo/vespervamp.webp",
+      "width": 1200
+    }
+  ]
+}

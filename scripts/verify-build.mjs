@@ -50,8 +50,25 @@ for (const file of htmlFiles) {
     const structured = $('script[type="application/ld+json"]').text();
     if (!structured.includes(ogImage)) fail(`${file}: structured data must include the representative image`);
   }
+  const structuredNodes = [];
+  const collectStructuredNodes = (value) => {
+    if (Array.isArray(value)) return value.forEach(collectStructuredNodes);
+    if (!value || typeof value !== 'object') return;
+    structuredNodes.push(value);
+    if (value['@graph']) collectStructuredNodes(value['@graph']);
+  };
   for (const script of $('script[type="application/ld+json"]').toArray()) {
-    try { JSON.parse($(script).text()); } catch { fail(`${file}: invalid JSON-LD`); }
+    try { collectStructuredNodes(JSON.parse($(script).text())); } catch { fail(`${file}: invalid JSON-LD`); }
+  }
+  const articles = structuredNodes.filter(node => node['@type'] === 'Article');
+  if ($('meta[property="og:type"]').attr('content') !== (articles.length ? 'article' : 'website')) fail(`${file}: Open Graph type must match the actual page schema`);
+  for (const article of articles) {
+    if (article.headline !== $('h1').text().trim()) fail(`${file}: Article headline must match its visible heading`);
+    if (article.description !== $('meta[name=description]').attr('content')) fail(`${file}: Article description must match its page metadata`);
+    if (article.inLanguage !== $('html').attr('lang')) fail(`${file}: Article language must match the page language`);
+    if (article.url !== canonical || article.mainEntityOfPage !== canonical) fail(`${file}: Article must identify its canonical page`);
+    if (article.publisher?.['@type'] !== 'Organization' || article.publisher.url !== origin) fail(`${file}: Article must identify the site publisher`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(article.datePublished || '') || !/^\d{4}-\d{2}-\d{2}$/.test(article.dateModified || '') || article.dateModified < article.datePublished) fail(`${file}: Article dates must be valid and ordered`);
   }
   for (const node of $('img[src],script[src],link[rel=stylesheet][href]').toArray()) {
     const src = $(node).attr('src') || $(node).attr('href');
@@ -74,12 +91,23 @@ for (const [path, { $, file }] of pages) {
       if (!destination.$('[id]').toArray().some((node) => destination.$(node).attr('id') === id)) fail(`${file}: broken anchor ${href}`);
     }
   }
-  for (const alt of $('link[rel=alternate][hreflang]').toArray()) {
+  const alternateLanguages = new Set();
+  const alternates = $('link[rel=alternate][hreflang]').toArray();
+  if (alternates.length && path !== '/' && !alternates.some(alt => $(alt).attr('hreflang') === $('html').attr('lang') && $(alt).attr('href') === origin + path)) fail(`${file}: alternate cluster must include this page with its own language`);
+  for (const alt of alternates) {
     const lang = $(alt).attr('hreflang');
     const href = $(alt).attr('href');
-    const target = pages.get(new URL(href).pathname);
+    if (alternateLanguages.has(lang)) fail(`${file}: duplicate hreflang ${lang}`);
+    alternateLanguages.add(lang);
+    let targetUrl;
+    try { targetUrl = new URL(href); } catch { fail(`${file}: invalid alternate URL ${href}`); continue; }
+    if (targetUrl.origin !== origin || targetUrl.search || targetUrl.hash) fail(`${file}: alternate must use a clean production URL ${href}`);
+    const target = pages.get(targetUrl.pathname);
     if (!target) { fail(`${file}: missing alternate target ${href}`); continue; }
-    if (lang !== 'x-default' && !target.$('link[rel=alternate]').toArray().some((node) => target.$(node).attr('href') === origin + path)) fail(`${file}: alternate does not link back ${href}`);
+    if (target.$('meta[name=robots]').attr('content')?.includes('noindex')) fail(`${file}: alternate target must be indexable ${href}`);
+    if (target.$('link[rel=canonical]').attr('href') !== href) fail(`${file}: alternate target must be canonical ${href}`);
+    if (lang !== 'x-default' && lang?.toLowerCase() !== target.$('html').attr('lang')?.toLowerCase()) fail(`${file}: alternate language does not match its target ${href}`);
+    if (lang !== 'x-default' && !target.$('link[rel=alternate]').toArray().some((node) => target.$(node).attr('href') === origin + path && (path === '/' || target.$(node).attr('hreflang') === $('html').attr('lang')))) fail(`${file}: alternate does not link back with the correct language ${href}`);
   }
 }
 const entries = (await readEntries()).map((entry) => ({ ...entry, data: guideSchema.parse(entry.data) }));

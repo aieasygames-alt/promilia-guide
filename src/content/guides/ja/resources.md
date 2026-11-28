@@ -29,9 +29,9 @@ sourceRefs:
   - tc-thanks-mail-2026-11-27
   - jp-thanks-mail-2026-11-27
   - jp-redeem-azpr1126-2026-11-26
-sourceRevision: 13
+sourceRevision: 14
 translationStatus: published
-translatedFromRevision: 13
+translatedFromRevision: 14
 aliases:
   - リソース計画
   - 序盤攻略
@@ -52,6 +52,8 @@ related:
 order: 8
 minutes: 18
 revisions:
+  - date: "2026-11-28"
+    note: "天井を最大回数として説明し、中国本土と日本のガチャ規則をそれぞれ案内しました。"
   - date: "2026-11-14"
     note: 編集草稿を作成。ゲーム仕様と正式名称の確認待ち。
   - date: "2026-11-20"
@@ -111,6 +113,8 @@ claimRevisions:
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
 readerUpdates:
+  - date: "2026-11-28"
+    note: "天井を最大回数として説明し、中国本土と日本のガチャ規則をそれぞれ案内しました。"
   - date: "2026-11-28"
     note: 特典の受取説明を簡潔にし、現在のガチャに合わせてチケットの用途を整理しました。
 ---
@@ -304,7 +308,7 @@ readerUpdates:
 
 ## 受取後の配分：券種と地域を先に分ける
 
-中国本土の11月24日告知では、[「桃笺为契」キャラ](https://azurpromilia.manjuu.com/home/news/detail/912104344520888320)は90回目、[「绯影入怀」霊子](https://azurpromilia.manjuu.com/home/news/detail/912105412612984832)は80回目に当期限定星5を必ず獲得します。同種内で共有・引き継ぎ、対応する限定星5の獲得後にリセット。上昇条件と対象は[ガチャ仕様の地域別確認](/ja/guides/banner-rules/)に整理しています。**これは日本版の天井ではありません。**
+中国本土の11月24日告知では、[「桃笺为契」キャラ](https://azurpromilia.manjuu.com/home/news/detail/912104344520888320)は最大90回、[「绯影入怀」霊子](https://azurpromilia.manjuu.com/home/news/detail/912105412612984832)は最大80回で当期限定星5を必ず獲得します。同種内で共有・引き継ぎ、対応する限定星5の獲得後にリセット。この節は中国本土向けです。日本版も限定キャラ90回・アニマ80回を独自に発表していますが、券種・確率・開催期間はそれぞれの[地域別ガチャガイド](/ja/guides/banner-rules/)で確認してください。
 
 中国本土の初心者は纯粹忆痕、限定キャラは璀璨忆痕、限定霊子は析光忆痕を使います。日本の無垢な痕跡は始源の観測で使用できます。交換資源の比率と有効期限は、各道具とガチャの詳細をご確認ください。
 

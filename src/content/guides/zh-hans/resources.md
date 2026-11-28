@@ -29,7 +29,7 @@ sourceRefs:
   - tc-thanks-mail-2026-11-27
   - jp-thanks-mail-2026-11-27
   - jp-redeem-azpr1126-2026-11-26
-sourceRevision: 13
+sourceRevision: 14
 translationStatus: published
 aliases:
   - 开荒资源
@@ -51,6 +51,8 @@ related:
 order: 8
 minutes: 18
 revisions:
+  - date: "2026-11-28"
+    note: "更新首期国服卡池期间的表述，与日本的独立规则分开说明。"
   - date: "2026-11-14"
     note: 建立编辑草稿，游戏事实与正式名称待核验。
   - date: "2026-11-20"
@@ -108,6 +110,8 @@ claimRevisions:
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
 readerUpdates:
+  - date: "2026-11-28"
+    note: "更新首期国服卡池期间的表述，与日本的独立规则分开说明。"
   - date: "2026-11-28"
     note: 简化福利领取说明，按当前卡池规则说明票券用途。
 ---
@@ -313,7 +317,7 @@ readerUpdates:
 | 消耗前 | 同类未得限定五星次数、目标池和结束时间 | 把灵子80次加到角色90次计数 |
 | 留到下期 | 票券有效期与转换规则、保底类别 | 用保底继承证明所有票永久有效 |
 
-两项国服池均计划开服后至12月17日03:59（UTC+8）。这不是所有福利邮件或网页活动的领取截止，也不是日本版卡池期限。选择继续推进或重开前，读[首抽与账号奖励绑定](/zh-hans/guides/reroll/)；任务准备见[新手入门](/zh-hans/guides/getting-started/)、[家园起步](/zh-hans/systems/home/)与[奇波入门](/zh-hans/systems/kibo/)。
+两项国服池的公告期间均为11月26日开服后至12月17日03:59（UTC+8）。这不是所有福利邮件或网页活动的领取截止，也不是日本版卡池期限。选择继续推进或重开前，读[首抽与账号奖励绑定](/zh-hans/guides/reroll/)；任务准备见[新手入门](/zh-hans/guides/getting-started/)、[家园起步](/zh-hans/systems/home/)与[奇波入门](/zh-hans/systems/kibo/)。
 
 ## 奖励没有到账时
 

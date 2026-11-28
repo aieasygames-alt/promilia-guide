@@ -45,13 +45,15 @@ claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
   jp-account-deletion-terms: 1
-sourceRevision: 3
-translatedFromRevision: 3
+sourceRevision: 4
+translatedFromRevision: 4
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
+  - date: "2026-11-28"
+    note: "Updated login troubleshooting to distinguish current maintenance, account prompts and installation errors."
   - date: "2026-11-26"
     note: Published the English first-session guide following the project owner’s
       multilingual development request and existing deployment authorization.
@@ -67,6 +69,8 @@ revisions:
       authorized by the project owner’s current request and standing deployment
       instruction. No independent language review or gameplay test claimed.
 readerUpdates:
+  - date: "2026-11-28"
+    note: "Updated login troubleshooting to distinguish current maintenance, account prompts and installation errors."
   - date: "2026-11-28"
     note: Simplified regional support and issue-reporting advice.
 ---
@@ -85,11 +89,11 @@ A completed download, successful installation, server opening and successful acc
 | --- | --- | --- |
 | Launcher or client download | Official regional URL, installation drive and exact download error | [Downloads](/en/guides/download/) |
 | Verification or additional data | Whether the failing program is the launcher or game client | [Regional troubleshooting](/en/guides/download/#download-failed-choose-the-stage-and-region) |
-| Login before opening or during maintenance | Latest regional service notice and attempt time | [Release schedule and regions](/en/guides/global-release/) |
+| Login blocked or maintenance message | Latest regional maintenance notice, account, exact error and attempt time | [Release status and regions](/en/guides/global-release/) |
 | Account or real-name prompt | Regional account, distribution route and official instructions | The correct regional support below |
 | Missing mail or a locked feature | Reward source, character, conditions and current lock message | [Rewards](/en/guides/resources/) |
 
-The announced Japan opening is November 26, 2026 at **11:00 JST**, equal to **02:00 UTC**. China's separate schedule is **10:00 UTC+8**. Consult current notices for actual availability; do not diagnose a closed service as damaged account data.
+Check the latest regional notice for maintenance or service interruptions. A temporary service restriction needs a different response from an account or installation error; keep the exact message when contacting support.
 
 ## Japan: language, email replies and missing responses
 

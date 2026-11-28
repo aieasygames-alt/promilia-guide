@@ -1443,7 +1443,8 @@
     "affectedPages": [
       "global-release",
       "launch",
-      "getting-started"
+      "getting-started",
+      "recharge-return"
     ],
     "conflicts": [],
     "value": {

@@ -49,8 +49,8 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 15
-translatedFromRevision: 15
+sourceRevision: 16
+translatedFromRevision: 16
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -67,6 +67,8 @@ related:
   - getting-started
   - support
 revisions:
+  - date: "2026-11-28"
+    note: "Clarified maintenance and account checks when a completed download will not log in."
   - date: "2026-11-25"
     note: Published the English launch guide using the existing regional source
       checks. The project owner requested creation and production deployment in
@@ -101,6 +103,8 @@ revisions:
 order: 3
 minutes: 8
 readerUpdates:
+  - date: "2026-11-28"
+    note: "Clarified maintenance and account checks when a completed download will not log in."
   - date: "2026-11-28"
     note: Shortened store-size explanations and clarified storage and
       troubleshooting advice.
@@ -220,7 +224,7 @@ Record the symptom before changing hardware. An installation error, slow startup
 - **Insufficient-space error:** check the target drive, not the combined free space of all disks. The FAQs recommend freeing space or choosing a larger installation destination.
 - **Slow PC loading:** the Japan FAQ recommends an SSD and enough space. It does not guarantee a loading time.
 - **Repeated crashes during play:** both regional FAQs advise restarting the device, then starting the game; contact the relevant support service if the issue continues.
-- **Login blocked after downloading:** check the current service announcement and account rules. China requires real-name verification. An unopened server or an account prompt is not proof of insufficient RAM.
+- **Login blocked after downloading:** check the current maintenance notice, account rules and exact error. China requires real-name verification. Maintenance or an account prompt needs a different response from insufficient RAM.
 
 Use the [regional troubleshooting steps](/en/guides/download/#download-failed-choose-the-stage-and-region) and include the device, OS, time and exact error in a support report.
 
