@@ -7,9 +7,9 @@ title: アズールプロミリアのダウンロード｜PC・スマホ公式�
 description: 日本版PC・Android・iPhoneの公式ダウンロード入口と導入手順。ランチャー、本体、追加データ、ログインの完了条件、空き容量とアカウントの確認、地域別エラー対処を案内します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-27"
-gameVersion: 正式サービス開始後 / 2026-11-27資料照合
-gameRegion: 中国本土・日本（地域別に記載）
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
+gameRegion: 日本・中国本土・繁体字版・韓国・SEA・英語版（地域別に記載）
 verification: official
 status: published
 sourceRefs:
@@ -48,7 +48,14 @@ sourceRefs:
   - cn-community-download-2026-11-27
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
-sourceRevision: 17
+  - tc-official-launch-2026-11-28
+  - kr-official-launch-2026-11-28
+  - sea-official-faq-2026-11-28
+  - sea-official-home-2026-11-28
+  - sea-official-news-2026-11-28
+  - en-release-window-2026-10-13
+  - cn-thanks-download-update-2026-11-27
+sourceRevision: 18
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -116,8 +123,11 @@ revisions:
   - date: "2026-11-27"
     note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
   - date: "2026-11-27"
-    note: 公式の導入順と各段階の完了条件を優先し、個別の追加DL報告を対処欄へ移動。開始後の案内を更新。 責任者の会話中の開発・公開指示に基づく更新。独立した言語校閲や実機検証の完了を示すものではありません。
-translatedFromRevision: 17
+    note: 公式の導入順と各段階の完了条件を優先し、個別の追加DL報告を対処欄へ移動。開始後の案内を更新。
+      責任者の会話中の開発・公開指示に基づく更新。独立した言語校閲や実機検証の完了を示すものではありません。
+  - date: "2026-11-28"
+    note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
+translatedFromRevision: 18
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -169,7 +179,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
 
 ## 公式ダウンロードはどこ？PCは日本公式Windowsページへ
@@ -179,6 +189,17 @@ reviewedAt: "2026-11-27"
 [日本](https://azurpromilia.jp/news/5225)と[中国本土](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)は11月26日に開始を発表し、11月27日に確認済みです。現在のメンテナンス、個別アカウントのログイン可否、ファイル取得結果は分けて確認します。当サイトでは導入・ゲームログインを未実施です。
 
 上の早見表は公式入口と、公式による事前DL開始発表を分けています。地域と端末を選んでください。記事の言語を変えてもゲームの地域は切り替わらず、JavaScriptが無効でも全端末の記録を読めます。
+
+
+## 韓国・繁体字・SEA版の入口
+
+| 対象 | 公式入口 | 現在の案内 |
+| --- | --- | --- |
+| 韓国／Nexon | [韓国公式](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) → [PC配布](https://azurpromilia.nexon.com/support/download)。スマホは公式のApp Store／Google Play／Galaxy Storeへ | GRAND OPENと配布先を確認。資格と実際の導入は別 |
+| 繁体字 | [公式ホーム](https://azurpromilia.jimi-global.com/home/)のPC・Google Play・App Storeボタン | 事前登録から正式DL表示へ更新。対象ストアとアカウントを確認 |
+| SEA／PlayPark | [SEA公式](https://azurpromilia.playpark.com/en/)と[FAQ](https://azurpromilia.playpark.com/en/faq/) | 現在は独立した事前登録。機種情報は未発表で、他版の配布先をSEAとして使わない |
+
+上の端末フィルターは日本・中国本土用です。下の55GB／120GBとFAQの対処法はその2地域の資料に基づきます。英語版の[2027年夏という目標](https://x.com/AzurPromilia_EN/status/2109992558004998420)は変更の可能性があり、SEAとは別です。[地域・言語対照](/ja/guides/global-release/)も確認してください。
 
 ## 導入前のアカウント確認と4段階の完了条件
 
@@ -319,3 +340,9 @@ FAQのスマホ55GB以上・PC120GB以上は推奨する空き容量です。ス
 日本の専用ページが案内するのはランチャーです。ランチャー、本体、差分データ、インストール後の占有量を別々に確認してください。今回、ファイルのHEAD取得は403でしたが、他の利用環境でも取得不能とは判断しません。公式ページから操作し、失敗する場合はエラーと日時を残して公式サポートへ。
 
 両地域の開始公告は、追加資源が差分配信であることと、PCの追加資源が大きいことを説明しています。固定の追加GB数は掲載していません。120GB・55GBを追加資源の実測値に読み替えず、[容量表](/ja/guides/requirements/)とクライアント表示を分けて確認します。
+
+## 中国本土の初回DL最適化は進行中
+
+[11月27日中国本土公式](https://www.taptap.cn/moment/875477210155189543)は大容量資源・回線変動時の一部iOS端末のDL・検証待ち、進行停止、ログイン画面での再検証を案内。資源分割・検証・中断再開を調整し、iOS優先で段階配布する方針です。**修正完了の発表ではありません。**
+
+本体・追加データ・検証・ログインの停止段階、端末、バージョン、表示と時刻を記録し、対象版のFAQとサポートへ。日本版にも同じ問題があるとは推定せず、この告知だけで取得済みデータを繰り返し削除しないでください。中国本土の[クラウド版](/ja/guides/cloud-gaming/)は回線・アカウント条件を別に確認します。

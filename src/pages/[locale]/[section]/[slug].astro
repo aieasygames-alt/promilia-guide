@@ -6,6 +6,7 @@ import Icon from '../../../components/Icon.astro';
 import ClaimSummary from '../../../components/ClaimSummary.astro';
 import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import RegionalGateway from '../../../components/RegionalGateway.astro';
+import AnnouncedCodes from '../../../components/AnnouncedCodes.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
 import { pageVisuals } from '../../../lib/visuals';
@@ -50,7 +51,6 @@ const featureVisual = pageVisuals(articlePath(data))[0];
 const toc = [
   ...(data.contentId === 'global-release' ? [{ id: 'regional-gateway-title', text: en ? 'Official regional entries' : locale === 'ja' ? '地域別の公式入口' : '各地区官方入口' }] : []),
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
-  ...(en && data.contentId === 'redeem-codes' ? [{ id: 'redeem-title', text: 'Verified code records' }] : []),
   ...(!en && data.claimRefs.length ? [{ id: compactFacts ? 'claim-summary-details' : 'claim-summary-title', text: locale === 'ja' ? '確認できたこと・確認中のこと' : '已确认与待确认' }] : []),
   ...headings.filter((heading) => heading.depth === 2).map((heading) => ({ id: heading.slug, text: heading.text })),
   { id: 'sources', text: c.sources }, { id: 'revisions', text: c.revisions },
@@ -69,6 +69,7 @@ const schema = [
     <div class="article-grid"><article data-pagefind-body data-content-id={data.contentId} data-published={String(published)}>
       {data.contentId === 'global-release' && <RegionalGateway locale={locale}/>}
       {hasDistribution && <DistributionMatrix locale={referenceLocale}/>}
+      {data.contentId === 'redeem-codes' && <AnnouncedCodes locale={locale}/>}
       {isRedeemCodes && <RedeemCodeBox locale={referenceLocale}/>}
       {en && data.contentId === 'redeem-codes' && <EnglishCodeStatus/>}
       {!en && (compactFacts ? <details id="claim-summary-details" class="article-facts"><summary>{locale === 'ja' ? '出典と確認状況を開く' : '展开来源与核验状态'}</summary><ClaimSummary locale={referenceLocale} refs={data.claimRefs} revisions={data.claimRevisions}/></details> : <ClaimSummary locale={referenceLocale} refs={data.claimRefs} revisions={data.claimRevisions}/>)}

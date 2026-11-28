@@ -1,5 +1,7 @@
 # 基于社区与搜索需求的内容扩充队列
 
+2026-11-28 公测后重排：以[最新用户需求更新计划](2026-11-28-demand-update-plan.md)为下一批执行顺序，依据[跨语言社交／社区／联想词研究](../research/2026-11-28-user-demand/README.md)。本文件保留11月21日起的历史队列与补证记录，不代表当前所有项目仍未实施。
+
 更新：2026-11-21。依据 [本轮研究](../research/2026-11-21-community-demand/README.md)、[社区样本](../research/2026-11-21-community-demand/social-findings.md)、[完整联想词](../research/2026-11-21-community-demand/search-suggestions.md) 和 [40题FAQ](../research/2026-11-21-community-demand/faq.md)。这是版本内容准备，不是已发布清单；本轮没有新增公开攻略或自动继承此前8篇的审核。
 
 优先级依据是玩家行动影响、样本证据和答案可验证程度，不使用虚构的搜索量、难度或综合热度分。P0为影响下载、领取或稀缺资源决策；P1为入门、玩法与养成；P2为验证成本较高的深入建议。涉及正式公告的P0先于所有扩展；P1按证据到达顺序推进。

@@ -4,11 +4,13 @@ locale: en
 slug: requirements
 section: guides
 title: "Azur Promilia Requirements: PC, Android, iOS & Storage"
-description: "Azur Promilia PC, Android and iPhone requirements. Compare regional hardware specs and recommended free storage: at least 55GB on mobile and 120GB on PC."
+description: "Azur Promilia PC, Android and iPhone requirements. Compare
+  regional hardware specs and recommended free storage: at least 55GB on mobile
+  and 120GB on PC."
 author: Promilia Guide
 publishedAt: "2026-11-25"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / sources checked November 27, 2026
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
 gameRegion: Japan and mainland China, described separately
 verification: official
 status: published
@@ -16,6 +18,9 @@ sourceRefs:
   - cn-ios-store-followup-2026-11-24
   - cn-cloud-launch-2026-11-26
   - cn-community-performance-2026-11-27
+  - sea-official-faq-2026-11-28
+  - kr-official-launch-2026-11-28
+  - tc-official-launch-2026-11-28
 claimRefs:
   - cn-ios-compatibility
   - cn-platform-details
@@ -44,11 +49,11 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 13
-translatedFromRevision: 13
+sourceRevision: 14
+translatedFromRevision: 14
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 aliases:
   - Azur Promilia
   - azurpromilia
@@ -63,18 +68,37 @@ related:
   - support
 revisions:
   - date: "2026-11-25"
-    note: Published the English launch guide using the existing regional source checks. The project owner requested creation and production deployment in this conversation; this records publication authorization, not an independent language review or a completed installation/gameplay test.
+    note: Published the English launch guide using the existing regional source
+      checks. The project owner requested creation and production deployment in
+      this conversation; this records publication authorization, not an
+      independent language review or a completed installation/gameplay test.
   - date: "2026-11-26"
-    note: Clarified inclusive recommended storage values. Publication follows the project owner’s request to implement the multilingual audit; no independent language or installation test is claimed.
+    note: Clarified inclusive recommended storage values. Publication follows the
+      project owner’s request to implement the multilingual audit; no
+      independent language or installation test is claimed.
   - date: "2026-11-26"
-    note: Added the China cloud announcement and Mac/browser route with independent regional and native-client limits. Current publication authorized in conversation; login and language review are not claimed.
+    note: Added the China cloud announcement and Mac/browser route with independent
+      regional and native-client limits. Current publication authorized in
+      conversation; login and language review are not claimed.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under
+      the project owner’s development and deployment authorization. No
+      independent language review or gameplay test is claimed.
   - date: "2026-11-27"
-    note: Added a device and target-drive preparation checklist, prioritized the specification tables and connected download and login help. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
+    note: Added a device and target-drive preparation checklist, prioritized the
+      specification tables and connected download and login help. Published
+      under the project owner’s development and deployment authorization; no
+      independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 order: 3
 minutes: 8
 ---
+
+The hardware tables and 55GB-mobile/120GB-PC recommendations are sourced to Japan and China. Korea and Traditional Chinese downloads do not establish identical requirements. SEA device information is unannounced in its FAQ. Check the [regional edition and source](/en/guides/global-release/) first.
 
 ## How much storage does Azur Promilia need?
 

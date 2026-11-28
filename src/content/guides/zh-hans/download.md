@@ -3,13 +3,13 @@ contentId: download
 locale: zh-hans
 slug: download
 section: guides
-title: 蓝色星原官方下载：国服、日服PC与手机安装步骤
-description: 查蓝色星原国服与日服官方PC、Android、iPhone下载入口，按启动器、本体、追加资源和登录分步核对；附空间要求、账号准备与地区故障排查。
+title: 蓝色星原官方下载：国服、日服、繁中与韩国PC手机入口
+description: 查国服、日服、繁中与韩国官方PC、Android、iPhone下载入口，区分SEA预约与英语版计划；按启动器、本体、追加资源和登录核对安装，附空间与故障排查。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-27"
-gameVersion: 公测后 / 2026-11-27资料核对
-gameRegion: 中国大陆、日本（分地区说明）
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区资料核对
+gameRegion: 中国大陆、日本、繁中、韩国、SEA及英语版（分地区说明）
 verification: official
 status: published
 sourceRefs:
@@ -48,7 +48,14 @@ sourceRefs:
   - cn-community-download-2026-11-27
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
-sourceRevision: 17
+  - tc-official-launch-2026-11-28
+  - kr-official-launch-2026-11-28
+  - sea-official-faq-2026-11-28
+  - sea-official-home-2026-11-28
+  - sea-official-news-2026-11-28
+  - en-release-window-2026-10-13
+  - cn-thanks-download-update-2026-11-27
+sourceRevision: 18
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -114,7 +121,10 @@ revisions:
   - date: "2026-11-27"
     note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
   - date: "2026-11-27"
-    note: 前置官方路径和安装阶段完成条件，将玩家下载个例放回故障区，更新开服后的账号与后续路径。 按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
+    note: 前置官方路径和安装阶段完成条件，将玩家下载个例放回故障区，更新开服后的账号与后续路径。
+      按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-launch-date
   - cn-official-entry
@@ -166,7 +176,7 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
 
 ## 官方下载从哪里开始？国服官网与日本PC专页
@@ -176,6 +186,17 @@ reviewedAt: "2026-11-27"
 [国服](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)与[日本](https://azurpromilia.jp/news/5225)已分别于11月26日公告正式上线，11月27日核对。当前维护、个人账号能否登录与文件取得结果分别确认；本站尚未完成下载、安装或游戏登录。
 
 上方速查区分官方入口、预下载开始公告与本机下载结果。选地区后再选设备，语言切换不会替你换游戏地区；关闭JavaScript也可阅读全部记录。
+
+
+## 韩服、繁中与SEA：先确认版本
+
+| 目标版本 | 官方入口 | 当前操作 |
+| --- | --- | --- |
+| 韩国／Nexon | [韩国官网](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) → [PC下载页](https://azurpromilia.nexon.com/support/download)；手机从官网进入App Store／Google Play／Galaxy Store | 已展示GRAND OPEN及链接，账号资格与安装结果另核 |
+| 繁中 | [繁中官网](https://azurpromilia.jimi-global.com/home/) → PC／Google Play／App Store下载 | 已从预约转为正式下载，核对该版账号与商店 |
+| SEA／PlayPark | [SEA官网](https://azurpromilia.playpark.com/en/)与[FAQ](https://azurpromilia.playpark.com/en/faq/) | 当前为独立预约，其他版安装器不是SEA客户端；设备信息尚未公布 |
+
+上方设备速查针对中日版本，其他版走本表。下文55GB／120GB与排错依据来自中日FAQ，不能直接套给其他版。英语版[官方目标2027年夏且可能调整](https://x.com/AzurPromilia_EN/status/2109992558004998420)，与SEA分开；语言与应用ID见[地区对照](/zh-hans/guides/global-release/)。
 
 ## 下载前先确认账号，按四个阶段检查完成情况
 
@@ -316,3 +337,9 @@ reviewedAt: "2026-11-27"
 日本独立页面提供的是启动器；启动器文件大小、游戏本体、增量更新、安装后占用分别记录。本轮对启动器文件的HEAD请求返回403，没有下载或执行；这不代表所有玩家都会遇到同样结果。请从官方页面操作，失败时保留错误原文和时间，再联系官方支持。
 
 两地开始公告均说明追加资源以增量方式提供，PC资源较大，但没有公布固定追加GB数。不需要重新下载完整客户端，也不等于无需更新。建议预留120GB／55GB见[配置与空间表](/zh-hans/guides/requirements/)，实际追加量以客户端提示为准。
+
+## 国服首次下载专项优化仍在进行
+
+[11月27日官方说明](https://www.taptap.cn/moment/875477210155189543)确认：资源包较大和网络波动时，部分iOS设备下载／校验等待偏长，个别进度停滞或登录页反复校验。官方已定位问题，正调整资源分包、校验逻辑与断点续传，按端分批推送、iOS优先。**这不是全部修复完成公告。**
+
+记录卡在本体、追加资源、校验还是登录，以及设备、版本、错误和时间，再按对应国服FAQ处理，仍失败找官方客服。不据此认定日服同样故障，也不反复删除已下载资源。空间紧张可另查官方[云游戏](/zh-hans/guides/cloud-gaming/)，网络和账号条件单独确认。

@@ -1,0 +1,66 @@
+{
+  "observedDate": "2026-11-28",
+  "method": "Google结果页底部相关搜索，不计入autocomplete数量",
+  "limits": [
+    "相同浏览器会话；曾显示美国IP。地区参数不证明本地市场。",
+    "这些是搜索引擎相关搜索，非真实提问频率、非搜索量。"
+  ],
+  "snapshots": [
+    {
+      "query": "蓝色星原 公测 攻略 11月27日 社区",
+      "url": "https://www.google.com/search?q=蓝色星原+公测+攻略+11月27日+社区&hl=zh-CN",
+      "items": [
+        "蓝色星原日服",
+        "蓝色星原国际版",
+        "蓝色星原旅谣",
+        "蓝色星原什么时候出",
+        "蓝色星原sea",
+        "蓝色星原steam",
+        "蓝色星原日服有中文吗",
+        "蓝色星原东南亚服"
+      ]
+    },
+    {
+      "query": "アズールプロミリア",
+      "url": "https://www.google.com/search?q=アズールプロミリア&hl=ja&gl=jp",
+      "items": [
+        "アズール プロ ミリア PC",
+        "アズール プロ ミリア Wiki",
+        "アズール プロ ミリア キャラ 一覧",
+        "アズール プロ ミリア ダウンロード",
+        "アズール プロ ミリア 公式サイト",
+        "アズール プロ ミリア 攻略",
+        "アズール プロ ミリア 最強",
+        "アズール プロ ミリア 評価"
+      ]
+    },
+    {
+      "query": "아주르 프로밀리아",
+      "url": "https://www.google.com/search?q=아주르+프로밀리아&hl=ko&gl=kr",
+      "items": [
+        "아주르 프로 밀리아 출시 예정일",
+        "아주르 프로 밀리아 갤러리",
+        "아주르 프로 밀리아 사전예약",
+        "아주르 프로 밀리아 나무위키",
+        "아주르 프로 밀리아 후기",
+        "아주르 프로 밀리아 출시 시간",
+        "아주르 프로 밀리아 디시",
+        "아주르 프로 밀리아 BM"
+      ]
+    },
+    {
+      "query": "azur promilia",
+      "url": "https://www.google.com/search?q=azur+promilia&hl=en&gl=us",
+      "items": [
+        "Azur Promilia Mobile",
+        "Azur promilia sea release date",
+        "Azur Promilia PC",
+        "Azur Promilia official website",
+        "Azur promilia jp pc",
+        "Azur Promilia Global",
+        "Azur promilia mod",
+        "Azur promilia english patch"
+      ]
+    }
+  ]
+}

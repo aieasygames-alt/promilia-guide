@@ -13,7 +13,7 @@ test('English preparation checklist persists through Japanese switching and FAQ 
   await expect(page.locator('input[data-task="account"]')).toBeChecked();
   await page.locator('.related-questions a[href$="#q-first-day"]').click();
   await expect(page.locator('#q-first-day')).toHaveAttribute('open', '');
-  await expect(page.locator('[data-faq-id]')).toHaveCount(19);
+  await expect(page.locator('[data-faq-id]')).toHaveCount(20);
   await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
   await page.locator('#q-first-day a').click();
   await expect(page).toHaveURL(/\/en\/guides\/getting-started\/$/);
@@ -29,7 +29,8 @@ test('English reward and code paths expose tools without unverified code actions
     expect(await response.text()).toContain('https://promiliaguide.com/en/guides/');
   }
   await page.goto('/en/guides/redeem-codes/');
-  await expect(page.locator('[data-redeem-container]')).toContainText('no independently verified active codes');
+  await expect(page.locator('[data-announced-code="AZPR1126"]')).toBeVisible();
+  await expect(page.locator('[data-redeem-container]')).toHaveCount(0);
   await expect(page.locator('[data-copy-target]')).toHaveCount(0);
   await page.goto('/en/search/?q=rewards');
   await expect(page.locator('.search-results a[href="/en/guides/resources/"]')).toBeVisible();
@@ -83,7 +84,8 @@ test('untranslated topics offer English home without a false article alternate',
   await english.click();
   await expect(page.locator('#guides .guide-card')).toHaveCount(9);
   await expect(page.locator('#regional-status')).toBeVisible();
-  await expect(page.locator('.english-scope')).toContainText('not verified a global English release date');
+  await expect(page.locator('.english-scope')).toContainText('summer 2027, subject to change');
+  await expect(page.locator('.english-scope')).toContainText('PlayPark SEA is a separate service');
 });
 
 test('English search finds only English pages and preserves manual language preference', async ({ page }) => {
@@ -105,7 +107,9 @@ test('English launch facts retain regional and storage boundaries', async ({ pag
   await page.goto('/en/guides/global-release/');
   await expect(page.locator('.prose')).toContainText('11:00 JST');
   await expect(page.locator('.prose')).toContainText('02:00 UTC');
-  await expect(page.locator('.prose')).toContainText('Both publishers announced service began');
+  await expect(page.locator('.prose')).toContainText('November 26 launch announcements');
+  await expect(page.locator('.prose')).toContainText('summer 2027');
+  await expect(page.locator('.prose')).toContainText('subject to change');
   await page.goto('/en/guides/requirements/');
   await expect(page.locator('.prose')).toContainText('at least 55GB');
   await expect(page.locator('.prose')).toContainText('not measured download sizes');

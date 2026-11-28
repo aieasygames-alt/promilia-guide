@@ -4,7 +4,9 @@ locale: en
 slug: getting-started
 section: guides
 title: "Azur Promilia Beginner Guide: Accounts, Mail & First Steps"
-description: "Azur Promilia beginner preparation after launch: regional account and client, mail, beginner tickets, 90/80 guarantees and Japan’s first event. Exact unlock routes remain untested."
+description: "Azur Promilia beginner preparation after launch: regional account
+  and client, mail, beginner tickets, 90/80 guarantees and Japan’s first event.
+  Exact unlock routes remain untested."
 claimRefs:
   - cn-public-launch-requirements
   - jp-public-launch-requirements
@@ -24,6 +26,9 @@ sourceRefs:
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
   - cn-beginner-probability-2026-11-26
+  - tc-community-daily-unlock-2026-11-27
+  - kr-community-daily-weekly-2026-11-27
+  - kr-community-auto-seeds-2026-11-27
 order: 4
 aliases:
   - Azur Promilia beginner guide
@@ -39,9 +44,10 @@ related:
   - global-release
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / sources checked November 27, 2026
-gameRegion: Japan and mainland China, described separately
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / community posts checked November 28, 2026
+gameRegion: Japan and mainland China; Korean and Traditional Chinese reports
+  labeled separately
 verification: editorial
 status: published
 claimRevisions:
@@ -57,19 +63,31 @@ claimRevisions:
   jp-account-deletion-terms: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 17
-translatedFromRevision: 17
+sourceRevision: 18
+translatedFromRevision: 18
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
   - date: "2026-11-26"
-    note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+    note: Published the English first-session guide following the project owner’s
+      multilingual development request and existing deployment authorization.
+      Regional evidence dates are retained; this is not an independent language
+      review or a gameplay, account, claim or support-submission test.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under
+      the project owner’s development and deployment authorization. No
+      independent language review or gameplay test is claimed.
   - date: "2026-11-27"
-    note: Updated the post-launch session flow and verified banner guidance; connected rewards, character and Kibo catalogs with honest route-coverage limits. Published under the project owner’s development and deployment authorization; no independent language review or gameplay test is claimed.
+    note: Updated the post-launch session flow and verified banner guidance;
+      connected rewards, character and Kibo catalogs with honest route-coverage
+      limits. Published under the project owner’s development and deployment
+      authorization; no independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Added attributed regional daily and farm menu references under the project
+      owner’s implementation and deployment authorization; no independent
+      gameplay or language review claimed.
 checklist:
   - id: region
     text: Confirm your regional service, account and distribution route
@@ -80,10 +98,21 @@ checklist:
   - id: download
     text: Use the official regional client download
   - id: account
-    text: Check account access, recovery and event participation before character creation
+    text: Check account access, recovery and event participation before character
+      creation
   - id: rules
     text: Read current reward conditions and regional banner details
 ---
+
+## Missing daily or weekly tasks: check story progress first
+
+**Continue your current main quest, then check task completion and reward collection separately.** A [Traditional Chinese player report from November 27](https://forum.gamer.com.tw/C.php?bsn=79865&snA=711) says daily and weekly tasks appeared after a main-story boar boss. The post does not establish the exact quest title, level requirement or a Japan unlock chain.
+
+A [Korean PC checklist](https://arca.live/b/azurpromilia/190508272) lists **F4 / 의뢰** for commissions, **F5** for daily and weekly rewards, and **F2**, then the task area, for pass tasks. A comment corrected the commission shortcut to F4. These are Korean-client references; Japanese or future English-client names and bindings have not been established from them. If you changed keys, use the visible Esc menu instead.
+
+When an entry is absent, follow the current quest and read its locked-feature prompt. When it is present, open both daily and weekly tabs, then check the pass separately. The Traditional Chinese post's “4 a.m.” headline does not establish a universal reset time. Confirm the countdown and time zone in your edition before planning around a cutoff.
+
+With limited time, collect earned rewards and check expiring events first, continue the story that blocks your next feature, then choose optional exploration. This is an editorial order, not a timed speedrun or a compulsory shopping list. Farm collection, seeds and food are separate checks; Korean players locate seed management via **키보 농장 → 씨앗 관리** in [this illustrated post](https://arca.live/b/azurpromilia/190507810). The writer discovering it at level 21 does not mean level 21 is required. Read the local menu and verify actual production before filling every job.
 
 ## After launch: follow the confirmed notices and current tutorial
 

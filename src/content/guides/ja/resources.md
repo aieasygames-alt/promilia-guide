@@ -4,12 +4,12 @@ locale: ja
 slug: resources
 section: guides
 title: アズプロの配信記念特典と初回イベント：5つの結末・報酬・期限
-description: 初回ログインのアニス・20個の無垢な痕跡、花逢ひの縁契りての5つの結末と秘虹晶600、2027年1月5日の期限。巣穴報酬と限定観測を分けて整理。
+description: 日本・中国本土・繁体字版の感謝特典10回分を地域別に確認。メールの条件と1月5日の期限、アニス・20個の無垢な痕跡、初回イベントの5つの結末と報酬を整理。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-21"
-updatedAt: "2026-11-27"
-gameVersion: 正式サービス開始後 / 2026-11-27資料照合
-gameRegion: 中国本土・日本（地域別明記）
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
+gameRegion: 日本・中国本土・繁体字版（地域別に記載）
 verification: official
 status: published
 sourceRefs:
@@ -25,9 +25,13 @@ sourceRefs:
   - cn-launch-returns-rewards-2026-11-24
   - jp-public-launch-2026-11-26
   - cn-beginner-probability-2026-11-26
-sourceRevision: 11
+  - cn-thanks-download-update-2026-11-27
+  - tc-thanks-mail-2026-11-27
+  - jp-thanks-mail-2026-11-27
+  - jp-redeem-azpr1126-2026-11-26
+sourceRevision: 12
 translationStatus: published
-translatedFromRevision: 11
+translatedFromRevision: 12
 aliases:
   - リソース計画
   - 序盤攻略
@@ -80,6 +84,8 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-27"
     note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
+  - date: "2026-11-28"
+    note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
 claimRefs:
   - cn-opening-rewards-resource
   - cn-rewards-conditions
@@ -101,8 +107,20 @@ claimRevisions:
   cn-test-recharge-return: 1
   cn-preregister-mail-benefits: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+## 11月27日の感謝ギフト：メール配布とコードを区別
+
+| 版・原文 | 内容と入口 | 配布期間・条件 |
+| --- | --- | --- |
+| [日本公式](https://x.com/AzurPromilia_JP/status/2126311912610935144) | 煌めく痕跡×10、ゲーム内メール | 2027年1月5日メンテナンス開始前まで。開始時刻、全資格条件、メール有効日数は原文未記載 |
+| [中国本土公式](https://www.taptap.cn/moment/875477210155189543) | 璀璨忆痕×10、ゲーム内メール | 原文は11月27日20:30～2027年1月5日更新メンテナンス前。事前の登録・メール解放、メール有効期間30日 |
+| [繁体字版公式](https://azurpromilia.jimi-global.com/home/news/detail/914650651865255936/) | 璀璨憶痕×10、ゲーム内メール | 原文に同じ開始・終了表記と登録・メール解放条件。メール有効日数は未記載 |
+
+時刻は各原文どおりです。未記載のタイムゾーンで換算したり、メンテナンス開始時刻を補ったりしません。中国本土の30日期限は他版に適用しません。対象アカウントを確認→メール解放→感謝ギフト添付の受取→所持品確認。当サイトでの実機受取は未検証です。未着は[対象版のサポート](/ja/guides/support/)へ。
+
+日本の[AZPR1126と設定内の入力場所](/ja/guides/redeem-codes/)は別の告知です。韓国・SEAに同じギフトがあるとは推定しません。
 
 ## 正式サービス開始後：初回特典と「花逢ひの縁契りて」
 

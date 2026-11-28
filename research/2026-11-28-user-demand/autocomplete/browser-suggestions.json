@@ -1,0 +1,84 @@
+{
+  "observedDate": "2026-11-28",
+  "timezone": "Asia/Shanghai",
+  "method": "Google搜索结果页点击现有搜索框，直接摘录展开下拉列表；未将提交后的相关搜索混入。",
+  "limits": [
+    "hl/gl是请求参数，不等于当地IP或用户样本。英语页脚显示United States—From your IP address；中/日页脚显示位置未知，日语另有日本地区文字。",
+    "未登录Google，仍可能受会话、语言、位置和历史影响；列表顺序不是热度或搜索量。",
+    "种子词由研究者选择。保留实际空格、大小写及噪声；不把编辑扩词当作实际返回。"
+  ],
+  "snapshots": [
+    {
+      "engine": "google",
+      "regionParameter": "cn",
+      "languageParameter": "zh-CN",
+      "seed": "蓝色星原",
+      "url": "https://www.google.com/search?q=蓝色星原&hl=zh-CN&gl=cn",
+      "suggestions": [
+        "蓝色星原国际版",
+        "蓝色星原什么时候上线",
+        "蓝色星原日服",
+        "蓝色星原什么时候出",
+        "蓝色星原ps5",
+        "蓝色星原pc",
+        "蓝色星原steam",
+        "蓝色星原角色",
+        "蓝色星原公测",
+        "蓝色星原英文"
+      ]
+    },
+    {
+      "engine": "google",
+      "regionParameter": "jp",
+      "languageParameter": "ja",
+      "seed": "アズールプロミリア",
+      "url": "https://www.google.com/search?q=アズールプロミリア&hl=ja&gl=jp",
+      "suggestions": [
+        "アズール プロ ミリア 評価",
+        "アズール プロ ミリア 最強",
+        "アズール プロ ミリア 攻略",
+        "アズール プロ ミリア 公式サイト",
+        "アズール プロ ミリア ダウンロード",
+        "アズール プロ ミリア キャラ 一覧",
+        "アズール プロ ミリア wiki",
+        "アズール プロ ミリア pc",
+        "アズール プロ ミリア 開発 中止",
+        "アズール プロ ミリア リセマラ"
+      ]
+    },
+    {
+      "engine": "google",
+      "regionParameter": "us",
+      "languageParameter": "en",
+      "seed": "azur promilia",
+      "url": "https://www.google.com/search?q=azur+promilia&hl=en&gl=us",
+      "suggestions": [
+        "azur promilia sea release date",
+        "azur promilia pc",
+        "azur promilia official website",
+        "azur promilia jp pc",
+        "azur promilia global",
+        "azur promilia tier list",
+        "azur promilia discord",
+        "azur promilia characters",
+        "azur promilia release date",
+        "ananta",
+        "azur lane",
+        "manjuu"
+      ],
+      "otherDropdownGroups": {
+        "People also ask": [
+          "Is Azur Promilia released?",
+          "Will Azur Promilia release in 2026?",
+          "Is Azur Promilia related to Azur Lane?"
+        ],
+        "People also search for": [
+          "Silver Palace",
+          "Azur Lane",
+          "Ananta",
+          "Playpark Company Limited"
+        ]
+      }
+    }
+  ]
+}

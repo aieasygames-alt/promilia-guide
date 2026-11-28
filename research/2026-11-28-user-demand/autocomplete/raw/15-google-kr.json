@@ -1,0 +1,11 @@
+{
+  "engine": "google",
+  "region": "kr",
+  "language": "ko",
+  "seed": "아주르 프로밀리아 키보",
+  "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=%EC%95%84%EC%A3%BC%EB%A5%B4+%ED%94%84%EB%A1%9C%EB%B0%80%EB%A6%AC%EC%95%84+%ED%82%A4%EB%B3%B4&hl=ko&gl=kr",
+  "observed_at": "2026-11-28T08:04:46+08:00",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "suggestions": []
+}

@@ -1,0 +1,31 @@
+---
+import { redeemCodes } from '../lib/redeem-data';
+import { sources } from '../lib/facts';
+import { announcedCodeRows } from '../lib/redeem-codes.mjs';
+interface Props { locale: 'zh-hans' | 'ja' | 'en' }
+const { locale } = Astro.props;
+const codes = announcedCodeRows({ codes: redeemCodes, sources });
+const copy = {
+  'zh-hans': { title: '官方已公布：日服兑换码', region: '日本版', method: '输入路径', reward: '原帖未列奖励明细；按游戏兑换结果确认。', note: '以下确认了官方字符串和输入方式，未实测兑换。期限保留公告原文，不按缺失的时区生成“有效中”倒计时。', source: '查看官方原帖', checked: '来源核对' },
+  ja: { title: '公式発表済みの日本版コード', region: '日本版', method: '入力場所', reward: '報酬内訳は原文に記載がありません。ゲーム内の結果を確認してください。', note: '公式の文字列と入力場所を確認しました。交換の実機検証は未実施です。期限は原文どおり表示し、未記載のタイムゾーンから有効判定は行いません。', source: '公式の投稿を読む', checked: '出典確認日' },
+  en: { title: 'Officially announced Japan code', region: 'Japan edition', method: 'Where to enter it', reward: 'The post does not list reward quantities. Check the result in the game.', note: 'The official code and menu path are confirmed; redemption has not been tested. The deadline is quoted as written, without an automated active status based on an unstated time zone.', source: 'Read the official post', checked: 'Source checked' },
+}[locale];
+---
+{codes.length > 0 && <section class="announced-codes notice" aria-labelledby="announced-codes-title" data-announced-codes>
+  <h2 id="announced-codes-title">{copy.title}</h2>
+  {codes.map(item => <article data-announced-code={item.code}>
+    <p><strong><code>{item.code}</code></strong> · {copy.region}</p>
+    <p>{item.announcedValidity![locale]}</p>
+    <p>{copy.method}: {item.redemptionMethod![locale]}</p>
+    <p>{item.reward?.[locale] || copy.reward}</p>
+    <p>{item.sourceRefs.map(id => <a href={sources.find(source => source.id === id)!.url!} rel="noopener noreferrer" target="_blank">{copy.source} ↗</a>)} · {copy.checked}: <time datetime={item.checkedAt!}>{item.checkedAt}</time></p>
+  </article>)}
+  <p class="scope">{copy.note}</p>
+</section>}
+<style>
+  .announced-codes { display: block; line-height: 1.8; overflow-wrap: anywhere; }
+  h2 { font-size: 1.2rem; margin-bottom: .7rem; }
+  code { font-size: 1.15rem; user-select: all; }
+  a { text-decoration: underline; }
+  .scope { font-size: .85rem; color: var(--muted); }
+</style>

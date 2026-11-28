@@ -7,8 +7,8 @@ title: 蓝色星原容量与配置要求：手机、iPad和PC确认表
 description: 11月24日两地官方FAQ：手机建议预留55GB以上、PC120GB以上。列日本与国服最低/推荐配置、鸿蒙差异，并区分商店包体、追加资源和实际安装占用。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-27"
-gameVersion: 公测后 / 2026-11-27资料核对
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区资料核对
 gameRegion: 中国大陆、日本（分地区说明）
 verification: official
 status: published
@@ -33,7 +33,10 @@ sourceRefs:
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
   - cn-community-performance-2026-11-27
-sourceRevision: 13
+  - sea-official-faq-2026-11-28
+  - kr-official-launch-2026-11-28
+  - tc-official-launch-2026-11-28
+sourceRevision: 14
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -87,6 +90,8 @@ revisions:
     note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
   - date: "2026-11-27"
     note: 补充下载前设备与实际安装盘核对清单，将配置表提前并连接下载与登录排查。 按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -122,8 +127,10 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+本页配置及手机55GB／PC120GB建议空间来自中日FAQ。韩国与繁中已出现官方下载，不证明要件相同；SEA FAQ设备信息尚未公布，不将中日数字改标为SEA配置。先查[地区与官方入口](/zh-hans/guides/global-release/)。
 
 ## 手机要留多少空间？PC要留多少？
 

@@ -6,39 +6,39 @@ const copy = {
   'zh-hans': {
     title: '先选游戏地区，再选下载设备',
     intro: 'Promilia Guide 是玩家攻略站。下面直接前往各地区官网；攻略语言不会改变游戏地区。',
-    regions: ['日本 / 日服', '中国大陆 / 国服', '繁中官方入口'],
-    notes: ['PC从日本Windows专页开始；手机从日本官网进入商店。', '官方服与渠道账号先分清，再选对应客户端。', '核对对应商店与运营公告；完整发行范围、账号与服务器规则仍待确认。'],
-    official: '前往官网', pc: '日本Windows官方下载页', steps: '安装与账号步骤',
+    regions: ['日本 / 日服', '中国大陆 / 国服', '繁中版', '韩国 / 韩服', 'SEA / 东南亚版', '英语版计划'],
+    notes: ['PC从日本Windows专页开始；手机从日本官网进入商店。', '官方服与渠道账号先分清，再选对应客户端。', '已显示11月26日正式公测与PC、手机官方下载按钮。', 'Nexon官网显示11月26日GRAND OPEN及PC、移动商店入口。', 'PlayPark独立运营，当前官网为预约；FAQ列出含英语在内的5种界面语言。', '官方目标2027年夏季，可能调整；不作为SEA版日期。'],
+    official: '查看官方入口／公告', pc: '日本Windows官方下载页', steps: '安装与账号步骤',
     devices: ['PC步骤', 'Android步骤', 'iPhone / iPad核对'], evidence: '入口核验记录',
-    unknown: '找“国际服”或“日服中文”？本页尚未核实统一全球英语服或日本客户端中文支持，先核对目标版本与游戏内语言。',
+    unknown: '“国际服”需区分SEA与英语版计划；SEA支持简中不代表日服支持中文。先核对版本，再查游戏内语言与账号条件。',
   },
   ja: {
     title: 'プレイする地域を選び、公式からダウンロード',
     intro: 'Promilia Guideは非公式の攻略サイトです。以下は各地域の公式サイトへのリンクです。記事の言語とゲームの地域は別に選びます。',
-    regions: ['日本版', '中国本土版', '繁体字版の公式入口'],
-    notes: ['PCは日本公式Windowsページ、スマホは日本公式のストアリンクへ。', '公式版と配布元別アカウントの違いを確認してから取得します。', '対象ストアと運営告知を確認。配信地域の全範囲・アカウント・サーバー規約は別途確認が必要です。'],
-    official: '公式サイトへ', pc: '日本公式Windowsダウンロード', steps: '導入とアカウントの手順',
+    regions: ['日本版', '中国本土版', '繁体字版', '韓国版', 'SEA / 東南アジア版', '英語版の予定'],
+    notes: ['PCは日本公式Windowsページ、スマホは日本公式のストアリンクへ。', '公式版と配布元別アカウントの違いを確認してから取得します。', '11月26日開始とPC・スマホの公式ダウンロードを表示。', 'Nexon公式に11月26日GRAND OPENとPC・各ストアの入口を確認。', 'PlayParkが独立運営。現在は事前登録で、英語を含む5表示言語を案内。', '公式の目標時期は2027年夏。変更の可能性があり、SEA版の日程とは別です。'],
+    official: '公式の入口・告知へ', pc: '日本公式Windowsダウンロード', steps: '導入とアカウントの手順',
     devices: ['PCの手順', 'Androidの手順', 'iPhone / iPadの確認'], evidence: '入口の照合記録',
-    unknown: '世界共通の英語版サービスや、日本版クライアントの中国語対応は本ページでは未確認です。対象の版とゲーム内言語を個別に確認してください。',
+    unknown: 'SEA版と英語版の予定は別に確認してください。SEA版の中国語対応は、日本版の中国語対応を意味しません。利用資格とゲーム内言語も各版で確認します。',
   },
   en: {
     title: 'Choose your regional edition, then your device',
     intro: 'Promilia Guide is an unofficial guide site. These links lead to regional official sites; the language of this guide does not select a game region.',
-    regions: ['Japan edition', 'Mainland China edition', 'Traditional Chinese official site'],
-    notes: ['Start on the Japan Windows page for PC, or follow mobile-store links from the Japan homepage.', 'Check official-server versus channel-account rules before choosing a client.', 'Check the linked store and regional notices. Full country coverage, account and server rules remain unverified here.'],
-    official: 'Visit official site', pc: 'Official Japan Windows page', steps: 'Installation and account steps',
+    regions: ['Japan edition', 'Mainland China edition', 'Traditional Chinese edition', 'Korea edition', 'SEA edition', 'English release plan'],
+    notes: ['Start on the Japan Windows page for PC, or follow mobile-store links from the Japan homepage.', 'Check official-server versus channel-account rules before choosing a client.', 'The site now displays November 26 launch and official PC/mobile download buttons.', 'Nexon displays November 26 GRAND OPEN with PC and mobile-store entries.', 'PlayPark operates this edition independently. The site offers preregistration and lists five interface languages including English.', 'The official target is summer 2027, subject to change. This is separate from the SEA schedule.'],
+    official: 'Official entry / announcement', pc: 'Official Japan Windows page', steps: 'Installation and account steps',
     devices: ['PC steps', 'Android steps', 'iPhone / iPad checks'], evidence: 'Entry verification record',
-    unknown: 'A worldwide English service and Chinese-language support in the Japan client remain unverified in this guide. Check the intended edition and its in-game language options separately.',
+    unknown: 'SEA and the English release plan are separate. SEA language support does not establish English or Chinese text in the Japan client. Check each edition’s account eligibility and language options.',
   },
 }[locale];
-const sourceIds = ['jp-official-home-2026-11-14', 'cn-official-home-2026-11-14', 'tc-official-home-2026-11-14'];
+const sourceIds = ['jp-official-home-2026-11-14', 'cn-official-home-2026-11-14', 'tc-official-launch-2026-11-28', 'kr-official-launch-2026-11-28', 'sea-official-home-2026-11-28', 'en-release-window-2026-10-13'];
 function officialUrl(id: string) {
   const source = sources.find(source => source.id === id);
   if (!source || source.status !== 'verified' || source.kind !== 'official' || !source.url?.startsWith('https://')) throw new Error(`Unverified gateway entry: ${id}`);
   return source.url;
 }
 const pcUrl = officialUrl('jp-pc-download-page-2026-11-24');
-const regions = ['jp', 'cn', 'tc'];
+const regions = ['jp', 'cn', 'tc', 'kr', 'sea', 'en'];
 const englishTargets = ['how-to-download-the-japan-version-on-pc', 'how-to-download-on-android-or-iphone', 'how-to-download-on-android-or-iphone'];
 ---
 <section class="regional-gateway" aria-labelledby="regional-gateway-title" data-regional-gateway>

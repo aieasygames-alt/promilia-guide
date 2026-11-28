@@ -4,7 +4,9 @@ locale: en
 slug: resources
 section: guides
 title: "Azur Promilia Launch Rewards & First Event: Gifts, Endings, Dates"
-description: "Japan launch gifts, beginner tickets and the first story event: five endings, 600 秘虹晶, reward targets and January 5 deadline. Track missing mail separately."
+description: "Compare 10-pull thank-you gifts in Japan, mainland China and the
+  Traditional Chinese edition: mail conditions, January 5 deadlines, ticket
+  types and Japan’s first story event."
 claimRefs:
   - jp-preregister-benefits
   - jp-kibo-web-rewards
@@ -16,6 +18,10 @@ sourceRefs:
   - cn-launch-returns-rewards-2026-11-24
   - jp-public-launch-2026-11-26
   - cn-beginner-probability-2026-11-26
+  - cn-thanks-download-update-2026-11-27
+  - tc-thanks-mail-2026-11-27
+  - jp-thanks-mail-2026-11-27
+  - jp-redeem-azpr1126-2026-11-26
 order: 5
 aliases:
   - Azur Promilia rewards
@@ -29,9 +35,9 @@ related:
   - banner-rules
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / sources checked November 27, 2026
-gameRegion: Japan and mainland China, described separately
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
+gameRegion: Japan, mainland China and Traditional Chinese editions, described separately
 verification: editorial
 status: published
 claimRevisions:
@@ -39,18 +45,40 @@ claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
   cn-preregister-mail-benefits: 1
-sourceRevision: 11
-translatedFromRevision: 11
+sourceRevision: 12
+translatedFromRevision: 12
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
   - date: "2026-11-26"
-    note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+    note: Published the English first-session guide following the project owner’s
+      multilingual development request and existing deployment authorization.
+      Regional evidence dates are retained; this is not an independent language
+      review or a gameplay, account, claim or support-submission test.
   - date: "2026-11-27"
-    note: Updated official launch evidence and attributed community reports under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Updated official launch evidence and attributed community reports under
+      the project owner’s development and deployment authorization. No
+      independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 ---
+
+## November 27 thank-you gifts: claim by region
+
+| Edition and original source | Gift and delivery | Distribution terms |
+| --- | --- | --- |
+| [Japan](https://x.com/AzurPromilia_JP/status/2126311912610935144) | 煌めく痕跡 ×10 by game mail | Until January 5, 2027 maintenance starts; no start hour, full eligibility or mail-validity duration in the post |
+| [Mainland China](https://www.taptap.cn/moment/875477210155189543) | 璀璨忆痕 ×10 by game mail | Original: November 27 at 20:30 until January 5, 2027 maintenance; register and unlock mail before maintenance. Mail validity: 30 days |
+| [Traditional Chinese](https://azurpromilia.jimi-global.com/home/news/detail/914650651865255936/) | 璀璨憶痕 ×10 by game mail | Same start/end wording and registration/mailbox conditions, without a separate mail-validity duration |
+
+Times retain each notice's wording; no unstated time zone or exact maintenance hour is added. China's 30-day term is not applied to the other editions. Confirm your regional account, unlock mail, open the thank-you message, claim the attachment and check inventory. This site has not tested receipt. Record missing-mail details for [regional support](/en/guides/support/).
+
+Japan's [AZPR1126 code and settings path](/en/guides/redeem-codes/) are a separate announcement. Do not assign the gifts to Korea or SEA without their own notices. Original item names are retained to match the announcements, not presented as official English names.
 
 ## Post-launch Japan event: five endings and reward targets
 

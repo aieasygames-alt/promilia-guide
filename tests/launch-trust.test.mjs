@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { claimSchema } from '../src/lib/editorial-schema.mjs';
 import { countdownText, regionalReleaseState } from '../src/lib/release-state.mjs';
 import { distributionRows } from '../src/lib/distribution.mjs';
-import { redeemCodeSchema, redeemCodeRows, validateRedeemCodes } from '../src/lib/redeem-codes.mjs';
+import { redeemCodeSchema, redeemCodeRows, announcedCodeRows, validateRedeemCodes } from '../src/lib/redeem-codes.mjs';
 import { entityImpact, isEntityCatalogPublishable, isEntityDetailPublishable } from '../src/lib/entity-publication.mjs';
 
 const source = { id: 'official', status: 'verified', kind: 'official', url: 'https://example.com/original', excerpt: 'Fixture evidence', checkedAt: '2026-11-21' };
@@ -80,6 +80,23 @@ test('codes fail closed for missing fields, pending or lost evidence, duplicates
   for (const patch of [{ status: 'unavailable' }, { kind: 'community' }, { url: 'http://example.com' }, { excerpt: '' }]) assert.equal(codeRows({ sources: [{ ...source, ...patch }] }).length, 0);
   assert.equal(codeRows({ sources: [] }).length, 0);
   assert.match(validateRedeemCodes([code, code], [source]).join(' '), /Duplicate/);
+});
+
+test('officially announced codes can retain incomplete fields without becoming active or accepting community evidence', () => {
+  const announced = { ...code, verification: 'announced', reward: null, availableAt: null, expiresAt: null, timeZone: null, announcedValidity: { 'zh-hans': '原文期限，时区未列', ja: '原文の期限・時差未記載' } };
+  assert.equal(redeemCodeSchema.safeParse(announced).success, true);
+  assert.equal(announcedCodeRows({ codes: [announced], sources: [source] }).length, 1);
+  assert.equal(redeemCodeRows({ codes: [announced], sources: [source] }).length, 0);
+  for (const field of ['announcedValidity', 'redemptionMethod', 'checkedAt']) {
+    const incomplete = { ...announced }; delete incomplete[field];
+    assert.equal(announcedCodeRows({ codes: [incomplete], sources: [source] }).length, 0);
+  }
+  for (const patch of [{ kind: 'community' }, { status: 'unavailable' }, { excerpt: '' }]) {
+    assert.equal(announcedCodeRows({ codes: [announced], sources: [{ ...source, ...patch }] }).length, 0);
+  }
+  assert.equal(announcedCodeRows({ codes: [announced], sources: [] }).length, 0);
+  assert.equal(announcedCodeRows({ codes: [{ ...announced, verification: 'pending' }], sources: [source] }).length, 0);
+  assert.match(validateRedeemCodes([announced, announced], [source]).join(' '), /Duplicate/);
 });
 
 const entity = { id: 'fixture', kind: 'character', catalogStatus: 'verified', revision: 2, sourceRefs: { 'zh-hans': source.id, ja: source.id }, detailContent: { 'zh-hans': 'Useful guide', ja: 'Useful translation' }, detailReview: Object.fromEntries(['zh-hans', 'ja'].map(locale => [locale, { status: 'published', reviewer: 'Fixture reviewer', reviewedAt: '2026-11-21', revision: 2, translatedFromRevision: 2, sourceChecks: { [source.id]: source.checkedAt } }])) };

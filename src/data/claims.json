@@ -262,24 +262,24 @@
   },
   {
     "id": "tc-official-announcement",
-    "revision": 1,
-    "text": "繁中官网标题与公告列表也出现 11 月 26 日公测信息；发行范围仍需独立核对。",
+    "revision": 2,
+    "text": "繁中官网已显示11月26日正式公测及PC、Google Play、App Store正式下载按钮。",
     "localized": {
       "zh-hans": {
-        "summary": "繁中官网标题与公告列表也出现 11 月 26 日公测信息；发行范围仍需独立核对。",
-        "detail": "不据此推断全球同步、服务器互通或日本发行。"
+        "summary": "繁中官网已显示11月26日正式公测及PC、Google Play、App Store正式下载按钮。",
+        "detail": "应用ID保留此前官网链接身份；完整服务地区、账号资格与跨服共享仍需独立规则。"
       },
       "ja": {
-        "summary": "繁体字公式サイトにも11月26日の案内があります。対象地域と運営条件は別途確認が必要です。",
-        "detail": "世界共通の配信日、サーバー共有、日本向け配信の根拠にはしません。"
+        "summary": "繁体字版公式サイトは11月26日正式開始とPC・各ストアのダウンロードボタンを表示しています。",
+        "detail": "アプリIDと個人のストア利用資格・全運営地域・地域間共有は別の確認事項です。"
       }
     },
     "sourceRefs": [
-      "tc-official-home-2026-11-14"
+      "tc-official-launch-2026-11-28"
     ],
     "type": "official",
     "gameRegion": "繁中官网，地区与服务器范围未完全核验",
-    "gameVersion": "公测前",
+    "gameVersion": "公测后 / 2026-11-28官网核对",
     "verification": "verified",
     "affectedPages": [
       "global-release"
@@ -940,24 +940,24 @@
   },
   {
     "id": "tc-mobile-official-entry",
-    "revision": 1,
-    "text": "繁中官网提供台湾App Store应用ID6789139052与Google Play包名com.jimi.azurpromilia的预约链接。",
+    "revision": 2,
+    "text": "繁中官网现显示PC、Google Play和App Store下载按钮；此前11月23日预约展示已更新。",
     "localized": {
       "zh-hans": {
-        "summary": "繁中官网提供台湾App Store与独立Google Play预约链接。",
-        "detail": "官网展示App Store预订、Google Play预先注册；不确认个人资格、全部发行地区、配置、预下载或跨服互通。"
+        "summary": "繁中官网现显示PC、Google Play和App Store下载按钮；此前11月23日预约展示已更新。",
+        "detail": "应用ID保留此前官网链接身份；完整服务地区、账号资格与跨服共享仍需独立规则。"
       },
       "ja": {
-        "summary": "繁体字公式サイトに台湾App Storeと独立したGoogle Playの登録リンクを確認。",
-        "detail": "アプリIDは6789139052とcom.jimi.azurpromilia。全運営地域・利用資格・動作環境・事前DL・地域間共有は別途確認します。"
+        "summary": "繁体字版公式サイトはPC・Google Play・App Storeのダウンロード入口を表示。11月23日の事前登録表示から更新されています。",
+        "detail": "アプリIDと個人のストア利用資格・全運営地域・地域間共有は別の確認事項です。"
       }
     },
     "sourceRefs": [
-      "tc-mobile-entry-2026-11-23"
+      "tc-official-launch-2026-11-28"
     ],
     "type": "official",
     "gameRegion": "繁中官网；链接指向台湾区App Store",
-    "gameVersion": "正式发行前 / 2026-11-23 官网展示",
+    "gameVersion": "公测后 / 2026-11-28官网核对",
     "distributionScope": {
       "region": "tc",
       "release": "public-launch"
@@ -969,8 +969,9 @@
     "conflicts": [],
     "value": {
       "url": "https://azurpromilia.jimi-global.com/home/",
-      "availability": "reservation",
+      "availability": "download",
       "platforms": [
+        "PC",
         "iOS",
         "Android"
       ]

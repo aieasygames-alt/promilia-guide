@@ -1,0 +1,26 @@
+{
+  "engine": "bing",
+  "region": "us",
+  "language": "en",
+  "seed": "azur promilia",
+  "url": "https://api.bing.com/osjson.aspx?query=azur+promilia&market=en-US",
+  "observed_at": "2026-11-28T08:05:30+08:00",
+  "http_status": 200,
+  "raw_response": "[\"azur promilia\",[\"azur promilia\",\"azur promilia release date\",\"azur promilia download\",\"azur promilia reddit\",\"azur promilia sea\",\"azur promilia jp\",\"azur promilia global\",\"azur promilia download pc\",\"azur promilia characters\",\"azur promilia wiki\",\"azur promilia news\",\"azur promilia storyline\",\"azur promilia spec requirements\"]]",
+  "suggestions": [
+    "azur promilia",
+    "azur promilia release date",
+    "azur promilia download",
+    "azur promilia reddit",
+    "azur promilia sea",
+    "azur promilia jp",
+    "azur promilia global",
+    "azur promilia download pc",
+    "azur promilia characters",
+    "azur promilia wiki",
+    "azur promilia news",
+    "azur promilia storyline",
+    "azur promilia spec requirements"
+  ],
+  "status": "ok"
+}

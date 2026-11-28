@@ -3,13 +3,17 @@ contentId: redeem-codes
 locale: en
 slug: redeem-codes
 section: guides
-title: "Azur Promilia Codes: Verified Status & Redemption Checks"
-description: Check verified Azur Promilia code status, regional rules, expiry times and redemption evidence. Keep codes separate from preregistration and Kibo rewards.
+title: "Azur Promilia Codes: AZPR1126, Japan Menu & Deadline"
+description: Japan officially announced AZPR1126. Find its redemption menu and
+  original November 26, 2027 deadline, regional limits and missing-reward
+  checks.
 claimRefs:
   - jp-kibo-web-rewards
   - cn-kibo-web-rewards
 sourceRefs:
   - jp-contact-instructions-2026-11-21
+  - jp-redeem-azpr1126-2026-11-26
+  - jp-thanks-mail-2026-11-27
 order: 6
 aliases:
   - Azur Promilia codes
@@ -22,101 +26,84 @@ related:
   - support
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: Launch preparation / regional source dates recorded below
+updatedAt: "2026-11-28"
+gameVersion: Post-launch / regional sources checked November 28, 2026
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
 claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
-sourceRevision: 6
-translatedFromRevision: 6
+sourceRevision: 7
+translatedFromRevision: 7
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
   - date: "2026-11-26"
-    note: Published the English first-session guide following the project owner’s multilingual development request and existing deployment authorization. Regional evidence dates are retained; this is not an independent language review or a gameplay, account, claim or support-submission test.
+    note: Published the English first-session guide following the project owner’s
+      multilingual development request and existing deployment authorization.
+      Regional evidence dates are retained; this is not an independent language
+      review or a gameplay, account, claim or support-submission test.
+  - date: "2026-11-28"
+    note: Updated applicable regional entries, English target window, official
+      gifts, code announcement and ongoing download status under the project
+      owner’s implementation and deployment authorization. No independent
+      language review or gameplay test is claimed.
 ---
 
-## Are there verified active Azur Promilia codes?
+## Japan code AZPR1126: official menu and deadline
 
-**This site's code records currently contain no independently verified active redeem codes.** This is the status of our checked records, not a claim that no code exists on any official channel. Unverified strings are not offered as working codes, and a published English guide does not establish an English or worldwide redemption service.
+**Japan's official account has announced `AZPR1126`.** The [November 26 original post](https://x.com/AzurPromilia_JP/status/2125892182511083828) gives **設定 → アカウント → 引き換えコード** (Settings → Account → Redeem code) and a deadline of **November 26, 2027 at 23:59**, as written. The year is 2027, not launch day in 2026.
 
-If you found an Azur Promilia code elsewhere, check the original regional announcement before using it. A current guide date, an attractive reward total or a copied string is not proof that the code is valid for your account.
+On November 28 we checked the official string, Japan context, menu and literal deadline. The post does not state item quantities, a start hour or an explicit time zone, so it is shown without an automated active countdown. Community claims of 300 resources are not treated as confirmed rewards. Redemption has not been tested, nor has cross-region use.
 
-## What makes a code usable?
+## How to enter the Japan code
 
-A useful code record needs more than the string itself. Check each field below against the official announcement for the service you actually use.
+1. Open Japan's client with the account and character intended to receive the reward.
+2. Go to **設定 (Settings) → アカウント (Account) → 引き換えコード (Redeem code)**.
+3. Select and copy the code above or enter `AZPR1126` manually. Check spaces and spelling.
+4. Read the response and check the actual reward. Copying is not proof of redemption.
 
-| Field | What to verify |
+If the option is missing, confirm the edition and current client first. Do not delete accounts, recreate characters or reinstall to try to reset use limits.
+
+## Codes and thank-you mail are separate
+
+| Source | How to claim | Where to check |
+| --- | --- | --- |
+| Japan AZPR1126 | Official settings menu | This page's original announcement |
+| November 27 thank-you gift | Regional game-mail attachment | [Thank-you gifts and mail terms](/en/guides/resources/) |
+| Preregistration or Kibo nest | Each event's account and mail rules | [Rewards and missing mail](/en/guides/resources/) |
+
+Older unsupported strings remain excluded. This Japan announcement does not establish an English or worldwide redemption service.
+
+## If the code fails or the reward is missing
+
+| Result | First checks |
 | --- | --- |
-| Code | Exact spelling, including any stated case requirements |
-| Region | Japan or mainland China, plus any stated distribution restrictions |
-| Validity | Start and end time, date and time zone |
-| Reward | Original item names and quantities |
-| Redemption route | An official form or the current game's documented menu |
-| Eligibility | Account, character, server or one-use conditions stated by the publisher |
-| Evidence | A link to the original official notice, not only another code list |
+| Invalid | Exact string, client region, deadline and game response |
+| Already used | This account's history and official use-limit terms |
+| Accepted but no item | The specified destination, character, inventory and mail |
+| No menu | Japan edition, current client and official instructions |
 
-Japan uses **JST, UTC+9**; mainland China notices commonly use **UTC+8**. A deadline without a time zone is incomplete for a cross-region guide. Do not add a day, extend a deadline or reinterpret “today” using your own clock without the original announcement.
+These are reporting steps, not tested errors or fixes. Record the original URL, region, version, message and attempt time for [official support](/en/guides/support/). Do not send passwords or verification codes.
 
-We have not verified a launch-client code-entry menu or an official web redemption form from the sources used for this guide. Accordingly, this page does not invent a settings path, a redemption URL or a promise that codes work across regional accounts.
+## Code questions
 
-## Codes, preregistration and Kibo rewards are different
+### Does AZPR1126 work in every region?
 
-A preregistration confirmation is not necessarily a redeem code. Japan's [launch FAQ](https://azurpromilia.jp/contact) describes preregistration benefits through game mail after service starts. The [nest exploration event](https://kiboadventure.azurpromilia.jp/) instead uses tasks, exploration attempts and earned bag items.
+The source is Japan's official account. Cross-region use has not been established here.
 
-| What you found | Correct next step |
-| --- | --- |
-| An official code string | Read its region, deadline and documented redemption instructions |
-| A preregistration gift notice | Check mail eligibility and the regional distribution announcement |
-| Nest event task progress | Use available explorations and inspect earned items in the event bag |
-| A sign-in or quest reward | Check the current client condition and claim state |
+### Does the ten-ticket thank-you gift need this code?
 
-Japan's nest rewards are tied to the participating Yostar ID's first created character and a collection period within **365 days of the first game login**. Those are event rules, not generic code rules. For the detailed distinction, use [launch rewards and missing mail](/en/guides/resources/).
+The thank-you announcement directs players to game mail. It is separate from the code.
 
-China's nest program is reached through its [official regional site](https://azurpromilia.manjuu.com/). It has its own account and event rules; the existence of similarly named rewards does not establish shared Japan–China codes.
+### Why are reward quantities and a time-zone countdown missing?
 
-## How to check a newly announced code
+They are not supplied in the original post. The confirmed string and menu remain useful without guesses; follow the official notice and current game result.
 
-1. Start with the official site or official account for your regional version.
-2. Open the original notice and note its publication time and any updates.
-3. Copy the exact string only after confirming the validity window and region.
-4. Follow the input route stated in that notice. If the menu or form is not documented, keep the procedure unconfirmed.
-5. Check the official result and actual item receipt. Clipboard success is not redemption success.
-6. Record any error text and the attempted time before contacting support.
 
-If a supposed code expires before the announced service opening, do not assume it will become usable after opening. A separate pre-launch claim would need its own official entry point and rules.
+### What should I record before contacting support?
 
-## Why does a code fail or a reward not arrive?
-
-| Observed result | First checks |
-| --- | --- |
-| Invalid code | Exact string, regional edition, date and time zone |
-| Already used | Stated account / character use limit and earlier claim history |
-| Input accepted but item absent | Official delivery route, receiving character, attachment and expiry |
-| No code-entry option | The current regional instructions and client version; do not guess a menu |
-| A web task is complete but no game reward appears | Whether exploration actually earned an item and which account receives it |
-
-These are a reporting checklist, not verified error messages or a tested repair procedure for the launch client. Do not delete an account, recreate a character or reinstall to try to refresh a code's use limit.
-
-Use [official support](/en/guides/support/) for account-specific issues. Include the code's official notice URL, region, exact error and attempt time; do not send passwords or verification codes. The English [troubleshooting record](/downloads/launch-troubleshooting-en.txt) can help you prepare that information locally.
-
-## Redeem-code questions
-
-### Do Japan and China use the same codes?
-
-That has not been independently confirmed. Apply only the region and distribution conditions written in each official code announcement. The English name “Azur Promilia” does not make all regional services interchangeable.
-
-### Why is there no copy button for an unverified code?
-
-A copy button can make a string look ready to use. We only offer actionable code records when the original evidence supports their region, rewards, method and validity. Old unsupported strings are not reintroduced as working codes.
-
-### Does this page's update date mean every official channel was checked today?
-
-No. Article editing dates and source-check dates are recorded separately. Read the source section for the actual checks. This edition adds English guidance and localizes the surrounding instructions; it does not claim a completed game redemption test.
-
-For preparing the right account and client before claiming anything, continue with [getting started](/en/guides/getting-started/) or the [English FAQ](/en/faq/).
+Keep a short note such as “Japan edition, PC, client version shown in settings, AZPR1126, attempted at [your local date and time with time zone], response: [exact text].” Add whether you checked the intended character and the destination specified by the game. A screenshot of the response can help support distinguish an invalid string from an account-specific issue. Hide personal account details when sharing publicly; submit account identifiers only through the publisher’s official support route. Do not assume that changing the website language changes code eligibility.

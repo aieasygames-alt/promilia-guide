@@ -1,0 +1,11 @@
+{
+  "engine": "google",
+  "region": "tw",
+  "language": "zh-TW",
+  "seed": "藍色星原",
+  "url": "https://suggestqueries.google.com/complete/search?client=firefox&q=%E8%97%8D%E8%89%B2%E6%98%9F%E5%8E%9F&hl=zh-TW&gl=tw",
+  "observed_at": "2026-11-28T08:03:17+08:00",
+  "status": "error",
+  "error": "<urlopen error timed out>",
+  "suggestions": []
+}

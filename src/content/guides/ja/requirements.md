@@ -7,8 +7,8 @@ title: アズールプロミリアの容量・推奨スペック｜スマホ・P
 description: 日本公式FAQはスマホ55GB以上・PC120GB以上の空き容量を推奨。最低・推奨スペック、iPhone・iPadの確認点、ストアサイズと追加データの違いを解説。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-27"
-gameVersion: 正式サービス開始後 / 2026-11-27資料照合
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -33,7 +33,10 @@ sourceRefs:
   - cn-login-troubleshooting-support-2026-11-24
   - cn-cloud-launch-2026-11-26
   - cn-community-performance-2026-11-27
-sourceRevision: 13
+  - sea-official-faq-2026-11-28
+  - kr-official-launch-2026-11-28
+  - tc-official-launch-2026-11-28
+sourceRevision: 14
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -88,8 +91,11 @@ revisions:
   - date: "2026-11-27"
     note: 正式サービス開始告知と出典を更新。プレイヤー投稿は個別報告として明記。責任者の開発・公開指示に基づき公開し、独立言語校閲・実機検証を完了したとは記録しません。
   - date: "2026-11-27"
-    note: 導入前の機種・保存先確認を追加し、スペック表を前に配置。ダウンロードとログイン対処を接続。 責任者の会話中の開発・公開指示に基づく更新。独立した言語校閲や実機検証の完了を示すものではありません。
-translatedFromRevision: 13
+    note: 導入前の機種・保存先確認を追加し、スペック表を前に配置。ダウンロードとログイン対処を接続。
+      責任者の会話中の開発・公開指示に基づく更新。独立した言語校閲や実機検証の完了を示すものではありません。
+  - date: "2026-11-28"
+    note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
+translatedFromRevision: 14
 claimRefs:
   - cn-opening-time
   - jp-opening-time
@@ -125,8 +131,10 @@ claimRevisions:
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
+
+本ページの機種表・スマホ55GB／PC120GBは日本と中国本土のFAQに基づきます。韓国・繁体字の配布開始は同じ要件を意味しません。SEA FAQの機種情報は未発表です。[地域別入口](/ja/guides/global-release/)を確認してください。
 
 ## スマホは55GB以上、PCは120GB以上の空き容量を推奨
 

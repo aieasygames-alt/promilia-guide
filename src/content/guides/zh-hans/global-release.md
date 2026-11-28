@@ -3,13 +3,13 @@ contentId: global-release
 locale: zh-hans
 slug: global-release
 section: guides
-title: 蓝色星原日服、国际服与繁中版：官方入口和应用ID
-description: 找蓝色星原日服官网、日本PC下载与国服、繁中官方入口。按地区和设备继续安装，核对应用ID、账号与语言支持，再查公测福利、卡池和新手步骤。
+title: 蓝色星原日服与国际服：韩服、繁中、SEA下载和英语版时间
+description: 对照蓝色星原日服、国服、繁中与韩服官方入口及应用ID。SEA独立预约，英语版目标2027年夏且可能调整；核对客户端语言、账号与下载。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-27"
-gameVersion: 公测后 / 2026-11-27资料核对
-gameRegion: 中国大陆、日本、繁中官网（分地区说明）
+updatedAt: "2026-11-28"
+gameVersion: 公测后 / 2026-11-28地区资料核对
+gameRegion: 中国大陆、日本、繁中、韩国、SEA及英语版计划（分区）
 verification: official
 status: published
 sourceRefs:
@@ -35,7 +35,13 @@ sourceRefs:
   - jp-pc-download-page-2026-11-24
   - cn-public-launch-2026-11-26
   - jp-public-launch-2026-11-26
-sourceRevision: 13
+  - tc-official-launch-2026-11-28
+  - kr-official-launch-2026-11-28
+  - sea-official-faq-2026-11-28
+  - sea-official-home-2026-11-28
+  - sea-official-news-2026-11-28
+  - en-release-window-2026-10-13
+sourceRevision: 14
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -93,7 +99,10 @@ revisions:
   - date: "2026-11-27"
     note: 依据公测后官方公告与具名原帖更新；玩家个例单独归因。按项目负责人开发及上线授权发布，不另称独立语言审校或实机验证。
   - date: "2026-11-27"
-    note: 按Webmaster入口需求前置地区官网、设备分流与公测后路径，补充日服语言核对边界。 按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
+    note: 按Webmaster入口需求前置地区官网、设备分流与公测后路径，补充日服语言核对边界。
+      按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
 claimRefs:
   - cn-launch-date
   - cn-ios-store
@@ -117,13 +126,13 @@ claimRevisions:
   cn-ios-store: 3
   cn-opening-time: 4
   jp-release-status: 2
-  tc-official-announcement: 1
+  tc-official-announcement: 2
   jp-official-entry: 2
   jp-platform-plan: 1
   jp-opening-time: 2
   cn-preload-status: 6
   jp-preload-status: 6
-  tc-mobile-official-entry: 1
+  tc-mobile-official-entry: 2
   cn-public-launch-requirements: 1
   jp-public-launch-requirements: 1
   cn-public-launch-platform-rules: 1
@@ -131,108 +140,76 @@ claimRevisions:
   cn-service-status: 1
   jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 ---
 
-## 11月26日，两地官方均已宣布正式上线
+## 现在能玩哪些版本？SEA与英语版计划分别看
 
-11月27日分别核对[国服公测正式开启公告](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576)与[日本正式服务开始公告](https://azurpromilia.jp/news/5225)。这已超出此前只确认计划时刻的资料范围；当前维护状态、排队或个人账号是否可登录仍查即时公告。同步更新[两地抽卡规则](/zh-hans/guides/banner-rules/)与[日本首期剧情活动](/zh-hans/guides/resources/)，不把同日上线推广为全球英语服。
+**国服、日本、繁中与韩国官方均已展示11月26日开服信息。SEA由PlayPark独立运营，目前官网为预约；英语官方另将英语版目标定为2027年夏季，并明确可能调整。** 搜索中的“国际服”不能直接确定唯一服务。
 
-## 日服能用中文吗？与朋友一起玩先核对什么？
+新地区入口与公告于11月28日核对；中日正式开服公告保留11月27日核查记录。官方宣布开放与个人账号当前能否登录分别确认，维护状态看目标地区即时公告。
 
-本页已核对日本官网、商店身份和服务开始公告，但尚未核实日本正式客户端是否提供中文。不能用本站有中文攻略、繁中官网存在或商店页面语言来替代游戏内语言支持。安装前查看日本官方当前说明；取得客户端后查看实际语言选项，不把未核实写成“不支持”。
+## 地区、运营与官方入口对照
 
-和朋友先对齐**地区版本、运营／渠道、服务器**，再核对同地区多端进度规则。国服与日本同日上线、应用名称相似，都不能证明跨区组队或账号互通。
-
-## 下载完成后，按当前任务继续
-
-| 当前目标 | 直接查看 | 先确认什么 |
+| 版本 | 官方说明与入口 | 下载前检查 |
 | --- | --- | --- |
-| 第一次登录／账号准备 | [公测新手步骤](/zh-hans/guides/getting-started/) | 参与活动的账号与奖励接收角色 |
-| 找预约、巢穴或活动福利 | [福利与未到账排查](/zh-hans/guides/resources/) | 来源、领取条件、截止时区 |
-| 准备首次抽卡 | [两地卡池与票券规则](/zh-hans/guides/banner-rules/) | 对应地区、券种、保底与卡池期限 |
-| 查角色或奇波名称 | [角色图鉴](/zh-hans/characters/) · [奇波图鉴](/zh-hans/kibo/) | 已公开资料与正式服获取条件分别阅读 |
-| 开始家园生产 | [家园起步与停产排查](/zh-hans/systems/home/) | 当前任务前置、设施岗位与产出用途 |
+| 中国大陆／国服 | [蛮啾官网](https://azurpromilia.manjuu.com/home/)及[11月26日开启公告](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) | 官方服／渠道账号、实名与设备条件 |
+| 日本／日服 | [日本官网](https://azurpromilia.jp/)及[正式服务公告](https://azurpromilia.jp/news/5225)；PC从[日本Windows专页](https://azurpromilia.jp/PCdownload)开始 | Yostar ID、商店资格与游戏内语言 |
+| 繁中版 | [繁中官网](https://azurpromilia.jimi-global.com/home/)现显示正式公测及PC、Google Play、App Store下载按钮 | 完整发行地区、账号和服务器规则另查该版公告 |
+| 韩国／韩服 | [Nexon官网](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true)显示11月26日GRAND OPEN，附[PC下载页](https://azurpromilia.nexon.com/support/download)和移动商店 | 使用Nexon版本规则，不套用日服账号或国服礼包 |
+| SEA／东南亚 | [PlayPark官网](https://azurpromilia.playpark.com/en/)预约；[发行公告](https://azurpromilia.playpark.com/en/news/sea-official-announcement/)与[FAQ](https://azurpromilia.playpark.com/en/faq/)说明独立运营 | 预约不等于可下载游玩，测试与上线看SEA公告 |
+| 英语版计划 | [英语官方10月13日公告](https://x.com/AzurPromilia_EN/status/2109992558004998420)：不含在初期上线，目标2027年夏季，可能调整 | 不是具体开放日，不作为SEA日期或所有国家资格清单 |
 
-配置还没确定时先看[手机55GB／PC120GB建议空间与配置表](/zh-hans/guides/requirements/)，再从[对应地区下载路径](/zh-hans/guides/download/)继续。
+## SEA支持英语吗？与Global有何区别？
 
+[PlayPark FAQ](https://azurpromilia.playpark.com/en/faq/)列出SEA版的**英语、泰语、印尼语、越南语、简体中文**5种界面语言及**中文、日语、英语**3种配音。服务器、客服和预约独立，早期活动与更新可能不同；其他地区预约不会自动同步到SEA。
 
-## 本轮分别确认了哪些地区
+10月9日FAQ写上线日期及设备信息尚未公布；11月28日读取最新新闻列表，仅见10月20日发行与预约公告。不将中日11月26日和配置套给SEA。FAQ地区概括与逐国列表不完全一致，所在国家资格按最新SEA条款确认。
 
-国服、日本均有独立的 2026 年 11 月 26 日官方日程。繁中官网也展示日期信息，但完整发行范围、商店资格与服务器规则需要逐项确认，不能合并为“全球服统一开放”。
+英语官方账号的[2027年夏目标](https://x.com/AzurPromilia_EN/status/2109992558004998420)来自另一份英语版进度声明，没有确定某天，也不能推断SEA同步上线或跨服数据继承。这里将此前“未核到英语版时间”的说明更新为官方可调整的计划窗口。
 
-| 信息范围 | 本次确认的内容 | 仍需独立核对 |
+## 日服能用中文或英文吗？
+
+本页尚未取得日本正式客户端中文或英语文本支持的官方依据。**SEA支持简中与英语，不代表日服提供这些语言。** 本站攻略语言也不会改变游戏语言；查日本当前说明及游戏内实际选项，不将未核实写成不支持。
+
+和朋友先对齐**地区版本、运营／渠道、服务器**。同日开服、应用名字相似均不能证明跨区联机、账号或进度互通。
+
+## 应用ID怎么识别？
+
+| 版本 | 来自官方链接的应用身份 | 范围 |
 | --- | --- | --- |
-| 中国大陆 | 11/26已公告公测开启；11/24 FAQ列正式配置与官方服四端进度同步 | PC/安卓实际安装器、部分渠道安排及付费权益 |
-| 日本 | 11/26已公告正式服务开始；11/24 FAQ列正式配置与同账号三端进度共享 | PC文件取得结果、个人商店资格及付费权益 |
-| 繁中官网 | 首页日期及台湾App Store、独立Google Play预约链接 | 完整运营地区、商店资格、配置、服务器范围 |
-| 其他地区 | 本轮没有完成对应原始公告核验 | 不套用上述日期、下载渠道或付费条件 |
+| 中国大陆 | App Store `6754017631` | 中国区商店；PC／Android从官网开始 |
+| 日本 | App Store `6787982572`；Google Play `com.Yostar.AzurpromiliaJP` | PC用日本Windows页；此前Apple元数据与个人安装资格分别核对 |
+| 繁中 | App Store `6789139052`；Google Play `com.jimi.azurpromilia` | 保留此前官网链接身份；11月23日预约展示已被当前下载按钮替代 |
+| 韩国 | App Store `6754899430`；Google Play `com.nexon.azurpromilia`；Galaxy `com.nexon.azurpromiliagalaxy` | 均来自Nexon官网，未安装或登录 |
 
+ID用于识别版本，不能单独证明完整服务地区、商店资格或跨服共享。可见下载按钮也不是文件取得或成功安装的实测。
 
-## 国服、日服与繁中版的应用ID对照
+## 中日开服小时、空间与进度共享
 
-| 官网范围 | 从哪里进入 | 已核对的应用身份 | 核验范围 |
-| --- | --- | --- | --- |
-| 中国大陆 | [国服官网](https://azurpromilia.manjuu.com/home/) | 中国区App Store `6754017631` | 已有应用正文，不代表当前可安装 |
-| 日本 | [日本官网](https://azurpromilia.jp/) | App Store链接 `6787982572`；Google Play `com.Yostar.AzurpromiliaJP` | 官网链接和Apple日本区元数据已核对；iOS网页仍跳Today |
-| 繁中官网 | [繁中官方入口](https://azurpromilia.jimi-global.com/home/) | 台湾App Store链接 `6789139052`；Google Play `com.jimi.azurpromilia` | 11月23日官网标“App Store預訂／Google Play預先註冊”；商店本文与个人资格另核 |
+日本原日程为11月26日11:00 JST，国服为同日10:00 UTC+8，均为02:00 UTC。繁中和韩国本页仅确认日期，不补未核小时。
 
-繁中行记录的是官网实际提供的链接，不是完整运营国家或地区清单。不同应用身份也不能单独证明账号或进度一定不互通；互通仍需对应规则。
+两地FAQ建议手机至少预留55GB、PC至少120GB并推荐SSD。这是中日建议空间，不是下载包实测，也不自动适用于韩国或SEA。见[配置表](/zh-hans/guides/requirements/)和[安装步骤](/zh-hans/guides/download/)。
 
-## 搜索「国际服」时，应该核对哪一版？
+日本FAQ确认同账号PC／Android／iOS进度共享；国服FAQ确认官方服同账号PC／Android／iOS／鸿蒙进度同步，部分渠道与官方服不同。两者均不能证明跨区互通。11月24日预下载与预约任务切换属于历史日程，当前服务与奖励领取分别核对。
 
-“国际服／國際服”是搜索表达，不能直接确定唯一官方服务。先确定目标地区、运营方、应用ID及服务器，再查该版本的日期、活动和付费条款。不要将日本、繁中或英文介绍页统称为同一个全球服。
+## 选好版本后继续
 
-### 台湾玩家要看哪一份预约规则？
-
-计划使用繁中官网所链接的客户端时，先从该官网阅读对应预约和活动原文。国服蛮啾通行证、日本Yostar ID的巢穴奖励绑定规则，不能自动套给繁中活动。
-
-### 台湾App Store链接能打开，就说明现在能安装吗？
-
-不能。本次读取的是官网上的“预订”链接；直接获取商店目标时跳转到Today，未取得该应用正文。系统、完整空间、个人账号资格及实际安装均需另核。
-
-
-## 日本日期的证据为什么更新了
-
-Yostar 在 2025 年 12 月的公告中确认日本共同发行，并列出 iOS、Android、Windows 为计划平台，当时日期未定。2026 年 10 月 23 日的日本官方 X 原帖随后给出正式发行日期。
-
-11月24日日本正式服务FAQ进一步给出26日11:00（日本时间）的计划小时、配置和同账号PC/Android/iOS进度共享。国服FAQ独立给出26日10:00（UTC+8）及官方服PC/Android/iOS/鸿蒙进度同步。公告支持范围与实际下载、登录状态分别记录；日本[PC独立下载页](https://azurpromilia.jp/PCdownload)已核实，文件本身仍未取得。
-
-## 语言、商店与服务器分开选择
-
-阅读日语攻略、使用日本区商店、进入日本地区服务是三个不同条件。能打开某区应用网页，并不证明当前账号具备注册、安装或付费资格。
-
-和朋友一起游玩前，先比对目标地区、渠道和服务器，再查联机及进度共享规则。不要只因日期相同就认定国服与日本服互通。
-
-## 按你的目标地区继续
-
-1. 中国大陆：从国服官网的当前平台入口开始，先区分官方服与渠道账号。PC/Android按钮已核对，文件取得与个人安装结果分别确认。
-2. 日本：PC直接前往上方官方Windows专页；手机从日本官网进入商店，再核对应用ID、商店资格和参与网页活动的Yostar ID。
-3. 繁中与其他地区：保留对应官方原文、商店地区与账号条件，待范围明确后再决定渠道。
-
-在[地区和设备速查](/zh-hans/guides/download/)中手动选择目标，切换文章语言会保留筛选条件。本站不会根据语言或 IP 代选服务器。
-
-## 新公告怎样改变结论
-
-同地区的后续或更正公告应记录日期与适用版本，跨地区资料分别维护。只有原文给出具体小时和时区时才换算时间；预约、历史测试、预下载和正式开放分别记录。
-
-尚未查证的范围会继续明确写为待核验。“本站本轮未确认”是核验进度，不能用来断言官方从未发布。
-
-## 两地预下载计划与11月24日FAQ
-
-| 地区 | 原规则计划时刻 | 依据 |
+| 当前目标 | 指南 | 检查重点 |
 | --- | --- | --- |
-| 中国大陆 | 2026年11月24日15:00（UTC+8，北京时间） | 国服官网「集结，勇闯奇波巢穴」→「活动规则」 |
-| 日本 | 2026年11月24日16:00（日本时间，即北京时间15:00） | 日本「集まれ！キボの巣穴探索」→「イベントルール」 |
+| 安装PC／手机 | [地区与设备下载](/zh-hans/guides/download/) | 本体、增量、实际目标盘与登录分阶段完成 |
+| 选账号和角色 | [公测新手步骤](/zh-hans/guides/getting-started/) | 网页奖励绑定账号与首个角色 |
+| 领感谢礼／查未到账 | [福利与邮件](/zh-hans/guides/resources/) | 地区条件、维护前截止及邮件到期 |
+| 输入官方代码 | [AZPR1126及输入方法](/zh-hans/guides/redeem-codes/) | 日服代码与邮件感谢礼分开 |
+| 首次抽卡 | [各区卡池规则](/zh-hans/guides/banner-rules/) | 券种、保底和限定期限 |
+| 查角色与玩法 | [角色](/zh-hans/characters/) · [奇波](/zh-hans/kibo/) · [家园](/zh-hans/systems/home/) | 公开身份与实测获取／配队分别阅读 |
 
-两行来自各自地区原文。后续两地官方分别公告预下载开始，仍不等于本机成功安装或服务器已开服；两地规则均说明届时停止预约任务，不能等到活动总截止再做预约任务。
+## 地区常见问题
 
-上表是预下载的历史日程；当前设备入口见上方地区卡片。网页奖励的角色绑定、任务和领取期限见[资源说明](/zh-hans/guides/resources/)。
+### 台湾玩家还只能预约吗？
 
-## 两地具体小时相同，仍不等于跨区互通
+繁中官网现在显示正式公测与下载按钮，已替换11月23日预约状态。个人商店账户能否安装仍在对应商店确认。
 
-国服计划11月26日10:00（UTC+8）、日本计划同日11:00（日本时间），换算后相同；本轮未核实繁中具体小时。两地各自FAQ确认的是地区内同账号多端进度，不能用于证明国服、日本和繁中共用账号或服务器。两地完整配置与手机55GB、PC120GB建议空间见[设备配置](/zh-hans/guides/requirements/)。
+### 美国或欧洲能按11月26日直接玩吗？
 
-## 预下载开始后，按官方入口完成追加资源
-
-[国服开始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)与[日本开始公告](https://azurpromilia.jp/news/5191)已独立核对。日本PC可用[官方Windows专页](https://azurpromilia.jp/PCdownload)，国服官网现有PC、Android按钮，但本轮点击未取得文件。各端安装本体后仍须增量资源，按[下载说明](/zh-hans/guides/download/)区分官网入口、文件取得和服务器登录。
+中日韩及繁中公告不是美国／欧洲统一英语服务公告，也不保证个人账号资格。英语版目标2027年夏且可能调整，跨区游玩另查目标版本规则。
