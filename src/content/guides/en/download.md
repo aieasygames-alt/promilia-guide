@@ -10,7 +10,7 @@ description: Official Japan, Korea, China and Traditional Chinese PC/mobile
 author: Promilia Guide
 publishedAt: "2026-11-25"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan, mainland China, Traditional Chinese, Korea, SEA and English
   release, described separately
 verification: official
@@ -74,8 +74,8 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 18
-translatedFromRevision: 18
+sourceRevision: 19
+translatedFromRevision: 19
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -120,13 +120,21 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
 order: 2
 minutes: 8
+readerUpdates:
+  - date: "2026-11-28"
+    note: Official links and installation steps now come first, with shorter source
+      notes.
 ---
 
 ## Where is the official Azur Promilia download?
 
-**For Japan on PC, start at the [official Windows download page](https://azurpromilia.jp/PCdownload). For Japan mobile or the China edition, use the corresponding regional homepage and follow its platform links.** Japan and China both announced pre-download on November 24, 2026.
+**For Japan on PC, start at the [official Windows download page](https://azurpromilia.jp/PCdownload). For Japan mobile or the China edition, use the corresponding regional homepage and follow its platform links.** Both services launched on November 26, 2026.
 
 These instructions are based on official pages and the November 24 regional FAQs. We have not completed installer download, installation or a game login. Store eligibility and game-client language support need their own confirmation; an English guide does not establish an English client.
 
@@ -134,24 +142,23 @@ These instructions are based on official pages and the November 24 regional FAQs
 | --- | --- | --- | --- |
 | Japan | Windows PC | [Japan PC download](https://azurpromilia.jp/PCdownload) | Follow the Yostar launcher route, then the game-client and additional-resource prompts |
 | Japan | Android / iOS | [Japan official site](https://azurpromilia.jp/) | Google Play ID `com.Yostar.AzurpromiliaJP`; App Store ID `6787982572` |
-| Mainland China | PC / Android | [China official site](https://azurpromilia.manjuu.com/home/) | Official site download buttons were visible; installer acquisition was not verified |
+| Mainland China | PC / Android | [China official site](https://azurpromilia.manjuu.com/home/) | Choose PC or Android; use the matching client for a channel account |
 | Mainland China | iOS | [China official site](https://azurpromilia.manjuu.com/home/) | Follow the China App Store link; app ID `6754017631` |
 | Mainland China | HarmonyOS | [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) and official site | Listed separately in the regional FAQ; do not assume the Android package is the HarmonyOS route |
 
 For Traditional Chinese store identities and the limits of regional availability, see [release dates and regions](/en/guides/global-release/).
 
-
 ## Korea, Traditional Chinese and SEA official entries
 
 | Edition | Official starting point | Current step |
 | --- | --- | --- |
-| Korea / Nexon | [Korea official site](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) → [PC download](https://azurpromilia.nexon.com/support/download); mobile uses its App Store, Google Play or Galaxy Store links | GRAND OPEN and distribution entries are visible. Account eligibility and installation are separate checks |
-| Traditional Chinese | [Official homepage](https://azurpromilia.jimi-global.com/home/) → PC, Google Play or App Store | Downloads now replace the earlier preregistration display |
+| Korea / Nexon | [Korea official site](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) → [PC download](https://azurpromilia.nexon.com/support/download); mobile uses its App Store, Google Play or Galaxy Store links | Choose the Nexon client and check its account requirements |
+| Traditional Chinese | [Official homepage](https://azurpromilia.jimi-global.com/home/) → PC, Google Play or App Store | Choose your platform and check regional account terms |
 | SEA / PlayPark | [SEA site](https://azurpromilia.playpark.com/en/) and [FAQ](https://azurpromilia.playpark.com/en/faq/) | Preregister independently. Another edition's installer is not a confirmed SEA client; device information is unannounced in the FAQ |
 
 The installation instructions and 55GB/120GB recommendations below are sourced to Japan and China. The English release [targets summer 2027, subject to change](https://x.com/AzurPromilia_EN/status/2109992558004998420), separately from SEA preregistration. See [regional editions and language support](/en/guides/global-release/) for app IDs and differences.
 
-## Before installing: account and four completion checks
+## Before you install
 
 Confirm the **regional edition, official or channel account, login ID and target drive**. If you earned Kibo web-event rewards, read the [first-character and account checks](/en/guides/getting-started/) before creating a character. Check [hardware and storage](/en/guides/requirements/): the regional FAQs recommend at least 120GB free on the PC target drive and at least 55GB on Android/iOS.
 
@@ -162,13 +169,12 @@ Confirm the **regional edition, official or channel account, login ID and target
 | Additional resources | The current download and verification finish; record the version | Use the regional retry/restart steps below |
 | Login and character | You enter the intended account and character | Check maintenance and account prompts; unresolved issues go to [official support](/en/guides/support/) |
 
-After login, continue with [launch rewards](/en/guides/resources/) and [regional banner tickets and guarantees](/en/guides/banner-rules/). A download reaching 100% does not establish that a reward has arrived.
-
+After login, check game mail for [launch rewards](/en/guides/resources/), then read the [regional banner tickets and guarantees](/en/guides/banner-rules/) before pulling.
 
 ## How to download the Japan version on PC
 
 1. Open the [Japan official Windows page](https://azurpromilia.jp/PCdownload). Confirm that you are following the Japan service, rather than a mirror or a different regional client.
-2. Follow the official Yostar launcher download and installation instructions. Our web check confirmed the page and launcher link; it did not verify a downloaded file or run it.
+2. Follow the official Yostar launcher download and installation instructions.
 3. Choose the game installation directory. The Japan FAQ recommends an SSD and **at least 120GB free space on the target drive**. Free space on another drive does not expand the selected installation directory.
 4. Let the launcher install the game client, then follow the additional-resource prompts. The launcher, game client and in-game resources are separate stages.
 5. Check the current regional service and maintenance notices before login. Japan officially announced service began on November 26; a completed download does not resolve individual account or maintenance errors.
@@ -181,11 +187,9 @@ Start from your regional official site and follow its Android or App Store link.
 
 Both regional FAQs recommend **at least 55GB free storage** on Android/iOS before installation. The store's base-app size is not the complete game; both FAQs describe additional downloads after the base client. See the [device and storage requirements](/en/guides/requirements/) before clearing space.
 
-During the Japan iOS web check, the linked page redirected to App Store Today. Apple Japan metadata separately confirmed app ID `6787982572` and Yostar as publisher. We do not treat that metadata response as an installation test.
-
 ## China client: accounts and old test versions
 
-1. Open the [China official homepage](https://azurpromilia.manjuu.com/home/) and follow the current platform entry. PC and Android buttons were visible during our page check; file acquisition remains untested here. On iOS, match App Store ID `6754017631`.
+1. Open the [China official homepage](https://azurpromilia.manjuu.com/home/) and follow the current platform entry. Choose the PC or Android button for your device. On iOS, match App Store ID `6754017631`.
 2. Check the intended official-server or channel account and target-drive space before installing. Use the matching distribution route for a channel account.
 3. Install the current client, start it and finish the additional-resource prompts. Check current maintenance and real-name-verification messages before login.
 
@@ -207,7 +211,7 @@ A [mainland-China player's TapTap post](https://www.taptap.cn/moment/87519046043
 
 If the same content downloads on every start, record the launcher and game versions, each resource name and size, whether verification completed, free space, installation directory and exact error. Check whether the same location is being used and whether the download and disk write actually finish. Follow the correct regional retry and restart sequence below. New resources for a new version differ from the same version repeatedly failing verification; report the two cases separately.
 
-This site has not reproduced the loop or verified an official post-launch fix. Repeated deletion and reinstallation should not replace collecting the version and file details first. If the game runs but stutters, use [requirements and frame-drop checks](/en/guides/requirements/). For unresolved download failures, prepare a report for [regional official support](/en/guides/support/).
+No completed fix for this loop is established in the sources used here. Repeated deletion and reinstallation should not replace collecting the version and file details first. If the game runs but stutters, use [requirements and frame-drop checks](/en/guides/requirements/). For unresolved download failures, prepare a report for [regional official support](/en/guides/support/).
 
 ## Download failed: choose the stage and region
 
@@ -229,7 +233,7 @@ For slow PC startup, the Japan FAQ recommends an SSD and sufficient free space. 
 
 The [November 26 China announcement](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) confirms an official cloud service with Windows and macOS browser recommendations and separate Android and iOS cloud apps. This is a mainland China service announcement; it does not establish a native Mac installer, a Japan cloud service or an English game client.
 
-See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements. We have not tested cloud login, performance or saved-progress compatibility.
+See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements.
 
 ## What to send to official support
 
@@ -253,4 +257,4 @@ No. Pre-download and service launch are separate announcements. [Japan](https://
 
 The [November 27 official China notice](https://www.taptap.cn/moment/875477210155189543) acknowledges long iOS download/verification waits with large resources or unstable networks, occasional stalls and repeated login-page verification. Resource packaging, verification and interrupted-download resumption are being optimized through staged platform updates, prioritizing iOS. **This is not a completed-fix announcement.**
 
-Record the failure stage, device, version, message and time, then use the regional FAQ and support. Do not infer the same Japan issue or repeatedly delete downloaded resources because of this notice. China's [official cloud route](/en/guides/cloud-gaming/) is an alternative with separate network and account checks.
+If the problem persists, send the failure stage, device, version, error and time to regional support. Avoid repeatedly deleting downloaded resources. The notice covers China; check Japan’s own notices for Japan issues. China’s [official cloud service](/en/guides/cloud-gaming/) is another option if its account and network requirements suit you.

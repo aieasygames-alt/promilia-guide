@@ -57,7 +57,7 @@ const category = entityCategory(entity);
     {entity.feature && <div><dt>{featureLabel}</dt><dd>{entity.feature[locale]}</dd></div>}
   </dl>}
   <div class="entity-card-action" style="padding: 0 0 1rem;">
-    <a class="text-link" href={`/${locale}/${entity.kind === 'character' ? 'characters' : 'kibo'}/${entity.id}/`}>{ja ? '資料と確認状況' : '资料摘要与核验状态'}<Icon name="arrow" size={14}/></a>
+    <a class="text-link" href={`/${locale}/${entity.kind === 'character' ? 'characters' : 'kibo'}/${entity.id}/`}>{ja ? '紹介を読む' : '查看介绍'}<Icon name="arrow" size={14}/></a>
   </div>
   <footer class="entity-card-footer">
     <span>{ja ? '資料確認日：' : '资料核对：'}{source?.checkedAt || (ja ? '確認中' : '待核验')}</span>

@@ -8,7 +8,7 @@ description: 对照蓝色星原日服、国服、繁中与韩服官方入口及�
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-28"
-gameVersion: 公测后 / 2026-11-28地区资料核对
+gameVersion: 公测正式版
 gameRegion: 中国大陆、日本、繁中、韩国、SEA及英语版计划（分区）
 verification: official
 status: published
@@ -41,7 +41,7 @@ sourceRefs:
   - sea-official-home-2026-11-28
   - sea-official-news-2026-11-28
   - en-release-window-2026-10-13
-sourceRevision: 14
+sourceRevision: 15
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -103,6 +103,8 @@ revisions:
       按项目负责人会话中的开发及上线授权发布，不另称独立语言审校或实机验证。
   - date: "2026-11-28"
     note: 按优先级更新地区与语言、官方礼物、代码公告及下载优化相关内容。依项目负责人会话开发和上线授权发布，不另称独立语言审校或实机验证。
+  - date: "2026-11-28"
+    note: 按本轮用户要求审计并改写玩家正文与本地化表达；沿用既有开发上线授权，不记为独立语言审校或游戏实测。
 claimRefs:
   - cn-launch-date
   - cn-ios-store
@@ -141,6 +143,9 @@ claimRevisions:
   jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 精简地区核对说明，保留各服入口与SEA、英语版计划的区别。
 ---
 
 ## 现在能玩哪些版本？SEA与英语版计划分别看
@@ -166,7 +171,7 @@ reviewedAt: "2026-11-28"
 
 10月9日FAQ写上线日期及设备信息尚未公布；11月28日读取最新新闻列表，仅见10月20日发行与预约公告。不将中日11月26日和配置套给SEA。FAQ地区概括与逐国列表不完全一致，所在国家资格按最新SEA条款确认。
 
-英语官方账号的[2027年夏目标](https://x.com/AzurPromilia_EN/status/2109992558004998420)来自另一份英语版进度声明，没有确定某天，也不能推断SEA同步上线或跨服数据继承。这里将此前“未核到英语版时间”的说明更新为官方可调整的计划窗口。
+英语官方账号的[2027年夏目标](https://x.com/AzurPromilia_EN/status/2109992558004998420)来自另一份英语版进度声明，没有确定某天，也不能推断SEA同步上线或跨服数据继承。
 
 ## 日服能用中文或英文吗？
 
@@ -180,8 +185,8 @@ reviewedAt: "2026-11-28"
 | --- | --- | --- |
 | 中国大陆 | App Store `6754017631` | 中国区商店；PC／Android从官网开始 |
 | 日本 | App Store `6787982572`；Google Play `com.Yostar.AzurpromiliaJP` | PC用日本Windows页；此前Apple元数据与个人安装资格分别核对 |
-| 繁中 | App Store `6789139052`；Google Play `com.jimi.azurpromilia` | 保留此前官网链接身份；11月23日预约展示已被当前下载按钮替代 |
-| 韩国 | App Store `6754899430`；Google Play `com.nexon.azurpromilia`；Galaxy `com.nexon.azurpromiliagalaxy` | 均来自Nexon官网，未安装或登录 |
+| 繁中 | App Store `6789139052`；Google Play `com.jimi.azurpromilia` | 使用繁中版账号和商店规则 |
+| 韩国 | App Store `6754899430`；Google Play `com.nexon.azurpromilia`；Galaxy `com.nexon.azurpromiliagalaxy` | Nexon版官方商店身份 |
 
 ID用于识别版本，不能单独证明完整服务地区、商店资格或跨服共享。可见下载按钮也不是文件取得或成功安装的实测。
 
@@ -208,7 +213,7 @@ ID用于识别版本，不能单独证明完整服务地区、商店资格或跨
 
 ### 台湾玩家还只能预约吗？
 
-繁中官网现在显示正式公测与下载按钮，已替换11月23日预约状态。个人商店账户能否安装仍在对应商店确认。
+繁中官网现在显示正式公测与下载按钮，个人商店账户能否安装仍在对应商店确认。
 
 ### 美国或欧洲能按11月26日直接玩吗？
 

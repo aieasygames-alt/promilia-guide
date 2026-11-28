@@ -29,7 +29,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
 ---
 <Base locale={locale} title={locale === 'ja' ? 'アズールプロミリア攻略｜ダウンロード・容量・特典' : '蓝色星原：旅谣攻略｜下载、开荒与福利'} description={c.intro} alternates={alternates}>
   <section class="hero">
-    <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1><span class="hero-game">{locale === 'ja' ? 'アズールプロミリア攻略' : '蓝色星原：旅谣攻略'}</span>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? '出典を明記 · バージョンを区別 · 継続して更新' : '来源可追溯 · 版本有标注 · 内容持续修订'}</span></div></div>
+    <div class="hero-copy"><p class="eyebrow">{c.eyebrow}</p><h1><span class="hero-game">{locale === 'ja' ? 'アズールプロミリア攻略' : '蓝色星原：旅谣攻略'}</span>{c.hero[0]}<br/><em>{c.hero[1]}</em><span class="hero-spark" aria-hidden="true">✧</span></h1><p class="hero-intro">{c.intro}</p><div class="hero-actions"><a class="button" href={guideLink('getting-started')}>{c.start}<Icon name="arrow" size={18}/></a><a class="hero-secondary" href={root + 'guides/'}><Icon name="book" size={17}/>{c.explore}</a></div><div class="hero-note"><span class="note-rule"></span><span>{locale === 'ja' ? 'ダウンロード・特典・初心者攻略' : '下载与福利 · 新手入门 · 持续更新'}</span></div></div>
     <div class="hero-visual"><img src="/images/feature/home-world.webp" srcset={visualSrcSet('home-world')} sizes="(max-width: 900px) 100vw, 55vw" width="1500" height="843" alt={visuals['home-world'].alt[locale]} fetchpriority="high" loading="eager" decoding="async"/><div class="visual-coordinate" aria-hidden="true">PROMILIA FIELD NOTES<br/>VOL. 01 — A NEW JOURNEY</div><div class="visual-compass" aria-hidden="true"><span>N</span><Icon name="compass" size={50}/></div><div class="visual-caption"><span class="caption-symbol">✧</span><span><small>THE JOURNEY STARTS HERE</small><strong>{c.fieldnotesSub}</strong></span><span class="caption-index">01 / ∞</span></div></div>
   </section>
   <div class="container">
@@ -45,7 +45,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
           </div>
           <strong class="quick-nav-title">{c.quickNav.launchTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.launchDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? '日程を見る' : '核对日程'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '日程を見る' : '查看日程'}</span><Icon name="arrow" size={14}/></div>
         </a>
         <a class="quick-nav-card" href={guideLink('download')}>
           <div class="quick-nav-header">
@@ -54,7 +54,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
           </div>
           <strong class="quick-nav-title">{c.quickNav.codesTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.codesDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? '配布先を見る' : '核对官方入口'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '配布先を見る' : '前往下载指南'}</span><Icon name="arrow" size={14}/></div>
         </a>
         <a class="quick-nav-card" href={guideLink('getting-started')}>
           <div class="quick-nav-header">
@@ -63,7 +63,7 @@ const tools = [{ icon: 'person', path: 'characters/' }, { icon: 'leaf', path: 'k
           </div>
           <strong class="quick-nav-title">{c.quickNav.rerollTitle}</strong>
           <span class="quick-nav-desc">{c.quickNav.rerollDesc}</span>
-          <div class="quick-nav-footer"><span>{locale === 'ja' ? '準備リスト' : '准备清单'}</span><Icon name="arrow" size={14}/></div>
+          <div class="quick-nav-footer"><span>{locale === 'ja' ? '初心者ガイド' : '新手攻略'}</span><Icon name="arrow" size={14}/></div>
         </a>
         <a class="quick-nav-card" href={root + 'characters/'}>
           <div class="quick-nav-header">

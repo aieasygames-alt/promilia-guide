@@ -34,7 +34,7 @@ related:
 author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
@@ -45,8 +45,8 @@ claimRevisions:
   cn-opening-time: 4
   jp-opening-time: 2
   jp-account-deletion-terms: 1
-sourceRevision: 2
-translatedFromRevision: 2
+sourceRevision: 3
+translatedFromRevision: 3
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -62,6 +62,13 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
+readerUpdates:
+  - date: "2026-11-28"
+    note: Simplified regional support and issue-reporting advice.
 ---
 
 ## Where should you contact Azur Promilia support?
@@ -125,7 +132,7 @@ If you cannot log in and have no game UID, say so. A web-event participation ID 
 
 The China [November 24 FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) lists the in-game route **主页面 → 设置 → 账户 → 用户中心 → 联系客服**, with the actual game entry taking precedence. If you cannot enter, use **客服中心** on the [official China site](https://azurpromilia.manjuu.com/).
 
-China's FAQ requires real-name verification before login. That clause does not establish every failure cause, a processing time or an account-change method, and it is not a Japan requirement. If the problem concerns a channel account, follow that channel's support and client instructions rather than assuming the official-server account can replace it.
+China's FAQ requires real-name verification before login. If verification fails, contact the account provider; processing times and account-change options are unconfirmed. This requirement comes from the China FAQ. If the problem concerns a channel account, follow that channel's support and client instructions rather than assuming the official-server account can replace it.
 
 For test-payment returns, preserve the original paying account. Do not use account recreation as a general fix for missing entitlements.
 
@@ -139,7 +146,7 @@ Follow the regional steps in the [download guide](/en/guides/download/) and writ
 
 For Japan nest rewards, check the participating Yostar ID, earned items in the web bag and the first created character. For preregistration mail, check that program's distribution notice separately. A farming feature with a quest lock is different from a production failure after all stated conditions are met.
 
-Record the actual lock message, attachment name and inventory change. We have not verified every launch unlock level or menu route, so this guide does not supply an invented level as a troubleshooting prerequisite.
+Include the lock message or the missing attachment’s name when contacting support. Unlock levels and menu locations vary; check your current quest and the in-game message.
 
 ## Support questions
 
@@ -159,4 +166,4 @@ Use the site's [correction route](/en/#corrections) with the affected guide URL,
 
 The [November 27 official China notice](https://www.taptap.cn/moment/875477210155189543) acknowledges long iOS download/verification waits with large resources or unstable networks, occasional stalls and repeated login-page verification. Resource packaging, verification and interrupted-download resumption are being optimized through staged platform updates, prioritizing iOS. **This is not a completed-fix announcement.**
 
-Record the failure stage, device, version, message and time, then use the regional FAQ and support. Do not infer the same Japan issue or repeatedly delete downloaded resources because of this notice. China's [official cloud route](/en/guides/cloud-gaming/) is an alternative with separate network and account checks.
+If the problem persists, send the failure stage, device, version, error and time to regional support. Avoid repeatedly deleting downloaded resources. The notice covers China; check Japan’s own notices for Japan issues. China’s [official cloud service](/en/guides/cloud-gaming/) is another option if its account and network requirements suit you.

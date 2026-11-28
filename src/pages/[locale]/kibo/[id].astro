@@ -31,8 +31,8 @@ const other = ja ? 'zh-hans' : 'ja';
 const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
 
 const title = ja
-  ? `${entity.names.ja}（${entity.romanized}）- キボ図鑑・生態と特徴`
-  : `${entity.names['zh-hans']}（${entity.romanized}）- 奇波图鉴 · 生态与特性解析`;
+  ? `${entity.names.ja}（${entity.romanized}）- キボ図鑑・公式紹介と生態`
+  : `${entity.names['zh-hans']}（${entity.romanized}）- 奇波图鉴 · 官方介绍与生态`;
 
 const description = ja
   ? `『アズールプロミリア』の星霊「${entity.names.ja}」（${entity.romanized}）。${entity.classification ? `分類：${entity.classification.ja}。` : ''}${entity.summary.ja}`
@@ -95,7 +95,7 @@ const allKibo = visibleEntitiesFor('kibo', locale).filter((e) => e.id !== entity
       <p class="entity-romanized" data-pagefind-meta="description">{entity.romanized}</p>
     </header>
 
-    {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公開紹介の要約です。実用的な詳細ガイドは本文・出典・翻訳レビュー待ちです。' : '此页保留已公开的资料摘要。完整用途指南仍待正文、来源与译文审核。'}</p>}
+    {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公式の人物・生態紹介をまとめたページです。スキルや育成の詳細ガイドは含みません。' : '本页提供官方名称与介绍，暂不含完整技能、培养和实战攻略。'}</p>}
     <article class="article-grid" data-pagefind-body={detailPublished || undefined}>
       <div>
         <div class="entity-card entity-card-kibo" style="margin-bottom: 2rem;">
@@ -160,7 +160,7 @@ const allKibo = visibleEntitiesFor('kibo', locale).filter((e) => e.id !== entity
       <aside class="article-aside">
         <div class="notice">
           <strong>{ja ? 'キボの収集と生態について' : '奇波的生态与获取'}</strong>
-          <p>{ja ? '公開されている生態紹介と、ゲーム内で実際に利用できる機能は区別します。捕獲地点、解放条件、戦闘や拠点の用途は、版と根拠を確認してから追加します。' : '公开生态简介与游戏内实际功能分别核验。捕捉地点、解锁条件、战斗或家园用途将在版本与证据明确后补充。'}</p>
+          <p>{ja ? '公式の生態紹介を掲載しています。捕獲場所や解放条件はゲーム内の図鑑・任務表示を、戦闘や農園での用途は個体の能力をご確認ください。' : '本页提供官方生态介绍。捕获地点与解锁条件可在游戏内图鉴和任务提示中查看；战斗和家园岗位请读个体能力说明。'}</p>
         </div>
         <div style="margin-top: 1rem;">
           <a class="text-link" href={`/${locale}/kibo/`}>← {ja ? 'キボ一覧へ戻る' : '返回奇波图鉴总览'}</a>

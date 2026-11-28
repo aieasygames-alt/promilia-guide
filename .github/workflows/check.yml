@@ -26,6 +26,7 @@ jobs:
             content-status.json
             release-readiness.json
       - run: npm run build
+      - run: npm run audit:copy
       - uses: actions/upload-artifact@v4
         with:
           name: production-site

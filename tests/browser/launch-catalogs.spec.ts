@@ -24,7 +24,7 @@ for (const locale of ['zh-hans', 'ja', 'en']) {
     await expect(page.locator('.language-selector a[lang="en"]')).toHaveAttribute('href', '/en/kibo/');
     await page.locator('.language-selector a[lang="en"]').click();
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
-    await expect(page.locator('[data-launch-kibo]')).toContainText('not verified English localizations');
+    await expect(page.locator('[data-launch-kibo]')).toContainText('official English names are unconfirmed');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 

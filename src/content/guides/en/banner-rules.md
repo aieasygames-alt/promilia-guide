@@ -4,7 +4,9 @@ locale: en
 slug: banner-rules
 section: guides
 title: "Azur Promilia Pity & Banners: 90 / 80 Guarantees, Rates & Tickets"
-description: "Japan and China Azur Promilia pity rules: 90 for characters, 80 for anima, beginner 30 guarantee, carryover, regional ticket names and China base probabilities."
+description: "Japan and China Azur Promilia pity rules: 90 for characters, 80
+  for anima, beginner 30 guarantee, carryover, regional ticket names and China
+  base probabilities."
 claimRefs:
   - cn-banner-rules-system
   - jp-banner-rules-system
@@ -28,23 +30,33 @@ related:
   - global-release
 author: Promilia Guide
 publishedAt: "2026-11-27"
-updatedAt: "2026-11-27"
-gameVersion: Post-launch / official sources checked November 27, 2026
+updatedAt: "2026-11-28"
+gameVersion: Launch version
 gameRegion: Japan and mainland China, described separately
 verification: official
 status: published
 claimRevisions:
   cn-banner-rules-system: 4
   jp-banner-rules-system: 2
-sourceRevision: 8
-translatedFromRevision: 8
+sourceRevision: 9
+translatedFromRevision: 9
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-27"
+reviewedAt: "2026-11-28"
 minutes: 10
 revisions:
   - date: "2026-11-27"
-    note: Published regional banner rules from November 26 official launch and probability notices under the project owner’s development and deployment authorization. No independent language review or gameplay test is claimed.
+    note: Published regional banner rules from November 26 official launch and
+      probability notices under the project owner’s development and deployment
+      authorization. No independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
+readerUpdates:
+  - date: "2026-11-28"
+    note: Moved the regional guarantees to the opening answer and retained ticket
+      and rate conditions.
 ---
 
 ## Azur Promilia pity: 90 for characters, 80 for anima
@@ -69,7 +81,7 @@ The end time is early morning in Japan, not the evening of December 17. A maximu
 
 Japan's **始源の観測** uses **無垢な痕跡 ×8 for ten observations**, with a five-star character guaranteed within 30 observations. Three ten-pulls therefore cost 24 tickets and count as 30 observations. The banner ends after its cumulative 30 are completed.
 
-The observation feature unlocks as you progress. The launch article does not specify an exact quest name or player level, so this guide does not invent one. It also does not establish a selectable five-star character. For Japan's base probabilities, probability-increase curve and the complete count-reset wording, consult Japanese in-game details; China's more detailed disclosure cannot fill those gaps automatically.
+The observation feature unlocks as you progress. Follow the current quest prompts to unlock it. The beginner guarantee is not a five-star selector. For Japan's base probabilities, probability-increase curve and the complete count-reset wording, consult Japanese in-game details; China's more detailed disclosure cannot fill those gaps automatically.
 
 ## Mainland China: tickets and published probabilities
 
@@ -109,4 +121,4 @@ Pity carryover does not prove that unused tickets last forever. Check the actual
 
 Japan's launch notice lists アニス and 無垢な痕跡 ×20 among first-login preregistration benefits. Its promotion of **40 or more character-observation opportunities** also includes repeat logins and designated quest completions. It is not a promise of 40 immediate limited-character pulls.
 
-Sort rewards into claimed items, unfinished conditions, beginner tickets, limited-character tickets, limited-anima tickets and other currency. China's three ticket names above now have official uses, but conversion rates and item expiry still need their own details. Read [launch rewards and the first Japan story event](/en/guides/resources/) before spending, or return to the [first-session checklist](/en/guides/getting-started/). This site has not performed an in-game observation or measured an average pull cost.
+Sort rewards into claimed items, unfinished conditions, beginner tickets, limited-character tickets, limited-anima tickets and other currency. China's three ticket names above now have official uses, but conversion rates and item expiry still need their own details. Read [launch rewards and the first Japan story event](/en/guides/resources/) before spending, or return to the [first-session checklist](/en/guides/getting-started/). No measured average pull cost is available here.

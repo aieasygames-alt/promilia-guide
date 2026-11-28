@@ -27,15 +27,15 @@ related:
 author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan and mainland China, described separately
 verification: editorial
 status: published
 claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
-sourceRevision: 7
-translatedFromRevision: 7
+sourceRevision: 8
+translatedFromRevision: 8
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -51,13 +51,21 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
+readerUpdates:
+  - date: "2026-11-28"
+    note: Grouped Japan’s official code, menu path and deadline; separated mail
+      gifts from codes.
 ---
 
 ## Japan code AZPR1126: official menu and deadline
 
 **Japan's official account has announced `AZPR1126`.** The [November 26 original post](https://x.com/AzurPromilia_JP/status/2125892182511083828) gives **設定 → アカウント → 引き換えコード** (Settings → Account → Redeem code) and a deadline of **November 26, 2027 at 23:59**, as written. The year is 2027, not launch day in 2026.
 
-On November 28 we checked the official string, Japan context, menu and literal deadline. The post does not state item quantities, a start hour or an explicit time zone, so it is shown without an automated active countdown. Community claims of 300 resources are not treated as confirmed rewards. Redemption has not been tested, nor has cross-region use.
+The post does not list reward quantities or an explicit time zone. Check the in-game response for the actual reward. Redemption has not been tested by this site, and use outside Japan remains unconfirmed.
 
 ## How to enter the Japan code
 
@@ -76,8 +84,6 @@ If the option is missing, confirm the edition and current client first. Do not d
 | November 27 thank-you gift | Regional game-mail attachment | [Thank-you gifts and mail terms](/en/guides/resources/) |
 | Preregistration or Kibo nest | Each event's account and mail rules | [Rewards and missing mail](/en/guides/resources/) |
 
-Older unsupported strings remain excluded. This Japan announcement does not establish an English or worldwide redemption service.
-
 ## If the code fails or the reward is missing
 
 | Result | First checks |
@@ -87,7 +93,7 @@ Older unsupported strings remain excluded. This Japan announcement does not esta
 | Accepted but no item | The specified destination, character, inventory and mail |
 | No menu | Japan edition, current client and official instructions |
 
-These are reporting steps, not tested errors or fixes. Record the original URL, region, version, message and attempt time for [official support](/en/guides/support/). Do not send passwords or verification codes.
+If the issue continues, Record the original URL, region, version, message and attempt time for [official support](/en/guides/support/). Do not send passwords or verification codes.
 
 ## Code questions
 
@@ -99,10 +105,9 @@ The source is Japan's official account. Cross-region use has not been establishe
 
 The thank-you announcement directs players to game mail. It is separate from the code.
 
-### Why are reward quantities and a time-zone countdown missing?
+### What rewards does AZPR1126 give?
 
-They are not supplied in the original post. The confirmed string and menu remain useful without guesses; follow the official notice and current game result.
-
+The official post does not list quantities. Read the in-game response and check the destination shown after entering the code.
 
 ### What should I record before contacting support?
 

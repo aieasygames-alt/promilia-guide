@@ -3,10 +3,10 @@ contentId: getting-started
 locale: en
 slug: getting-started
 section: guides
-title: "Azur Promilia Beginner Guide: Accounts, Mail & First Steps"
-description: "Azur Promilia beginner preparation after launch: regional account
-  and client, mail, beginner tickets, 90/80 guarantees and Japan’s first event.
-  Exact unlock routes remain untested."
+title: "Azur Promilia Beginner Guide: First Steps, Rewards & Dailies"
+description: "Start Azur Promilia with the right account, follow the story,
+  claim mail and choose your first banner. Includes regional daily-task
+  references and tips for short sessions."
 claimRefs:
   - cn-public-launch-requirements
   - jp-public-launch-requirements
@@ -45,7 +45,7 @@ related:
 author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / community posts checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan and mainland China; Korean and Traditional Chinese reports
   labeled separately
 verification: editorial
@@ -63,8 +63,8 @@ claimRevisions:
   jp-account-deletion-terms: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 18
-translatedFromRevision: 18
+sourceRevision: 19
+translatedFromRevision: 19
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -88,11 +88,15 @@ revisions:
     note: Added attributed regional daily and farm menu references under the project
       owner’s implementation and deployment authorization; no independent
       gameplay or language review claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
 checklist:
   - id: region
     text: Confirm your regional service, account and distribution route
   - id: announcement
-    text: Save the original regional release notice
+    text: Check current service and maintenance notices
   - id: device
     text: Check device, OS and free storage
   - id: download
@@ -102,110 +106,72 @@ checklist:
       creation
   - id: rules
     text: Read current reward conditions and regional banner details
+readerUpdates:
+  - date: "2026-11-28"
+    note: Reordered first-session advice around story, mail, banners and daily tasks.
 ---
-
-## Missing daily or weekly tasks: check story progress first
-
-**Continue your current main quest, then check task completion and reward collection separately.** A [Traditional Chinese player report from November 27](https://forum.gamer.com.tw/C.php?bsn=79865&snA=711) says daily and weekly tasks appeared after a main-story boar boss. The post does not establish the exact quest title, level requirement or a Japan unlock chain.
-
-A [Korean PC checklist](https://arca.live/b/azurpromilia/190508272) lists **F4 / 의뢰** for commissions, **F5** for daily and weekly rewards, and **F2**, then the task area, for pass tasks. A comment corrected the commission shortcut to F4. These are Korean-client references; Japanese or future English-client names and bindings have not been established from them. If you changed keys, use the visible Esc menu instead.
-
-When an entry is absent, follow the current quest and read its locked-feature prompt. When it is present, open both daily and weekly tabs, then check the pass separately. The Traditional Chinese post's “4 a.m.” headline does not establish a universal reset time. Confirm the countdown and time zone in your edition before planning around a cutoff.
-
-With limited time, collect earned rewards and check expiring events first, continue the story that blocks your next feature, then choose optional exploration. This is an editorial order, not a timed speedrun or a compulsory shopping list. Farm collection, seeds and food are separate checks; Korean players locate seed management via **키보 농장 → 씨앗 관리** in [this illustrated post](https://arca.live/b/azurpromilia/190507810). The writer discovering it at level 21 does not mean level 21 is required. Read the local menu and verify actual production before filling every job.
-
-## After launch: follow the confirmed notices and current tutorial
-
-[Japan](https://azurpromilia.jp/news/5225) and [mainland China](https://azurpromilia.manjuu.com/home/news/detail/912762865511960576) officially announced launch on November 26. These notices were checked November 27; current maintenance and individual login problems still need their own checks.
-
-After the tutorial unlocks observations, Japan’s beginner banner uses eight 無垢な痕跡 for ten observations with a five-star character within 30. Japan’s limited character and anima guarantees are independently confirmed at 90 and 80. Read [the regional ticket and pity table](/en/guides/banner-rules/) before spending, then check [Japan’s first story event and objective rewards](/en/guides/resources/). Exact unlock quests, reset steps and a timed first-pull route remain untested.
-
-## After login: choose the task you need now
-
-| Your task | Continue here | What to check next |
-| --- | --- | --- |
-| Missing mail or web-event rewards | [Reward sources and missing-mail checks](/en/guides/resources/) | Received items, unmet conditions and later sign-in or quest rewards separately |
-| First banner spending | [Regional banner rules](/en/guides/banner-rules/) | Region, ticket, count and expiry before spending |
-| Character names and launch roster | [English character catalog](/en/characters/) | Official identities and available records; a complete tested tier list is not established |
-| Kibo names and sources | [English Kibo catalog](/en/kibo/) | Catalog entries and event rewards are separate from verified capture locations |
-| Download or login blocked | [Download stages](/en/guides/download/) · [Official support](/en/guides/support/) | Version, time, exact error and the appropriate regional steps |
-
-This connects the available launch guides. Exact quest names, unlock levels, capture coordinates and a timed daily farming routine still need launch-client testing.
-
 
 ## What should you do first in Azur Promilia?
 
-**Choose the regional client and the account you intend to keep, finish installation and additional downloads, then follow the current tutorial and check each reward source before spending.** If you took part in the Japan Kibo web event, check the participating Yostar ID before creating a character: that event assigns earned rewards to the first character created under that ID.
+**Keep the account you intend to play, follow the main story and tutorial, then claim mail rewards and check your tickets before pulling.** Prioritize earned rewards and events close to ending, followed by story quests that unlock your next feature. Explore at your own pace.
 
-This English beginner guide covers the Japan service and explains important China differences separately. It is based on regional announcements, not a tested speedrun. Exact tutorial quest names, unlock levels, first-pull time and an optimal daily routine have not been verified here.
+This guide focuses on Japan, with China and other regional differences labeled separately. It offers an order of play, rather than a timed leveling route; exact unlock quests and levels are not verified here. For the future English release and PlayPark SEA, start with [release dates and regions](/en/guides/global-release/).
 
-## Before character creation: keep the right account
-
-For Japan, use the official [download route](/en/guides/download/) and check which Yostar ID participated in the [Kibo nest event](https://kiboadventure.azurpromilia.jp/). The event rules describe a specific receiving character; reinstalling the client does not make those rewards freely transferable.
-
-| Check | What to confirm before continuing |
+| What you need | Where to go |
 | --- | --- |
-| Regional version | Publisher, official distribution page and intended service |
-| Login account | The account you can access again, including any event participation |
-| Web rewards | Actual earned items in the event bag, not just completed tasks |
-| Receiving character | The first-character condition for the particular event |
-| Device and files | Installation drive, free space, base client and additional data |
+| Install or check your device | [Official downloads](/en/guides/download/) · [Requirements and storage](/en/guides/requirements/) |
+| Claim launch gifts | [Mail rewards and events](/en/guides/resources/) |
+| Make your first pulls | [Tickets, banners and pity](/en/guides/banner-rules/) |
+| Find daily and weekly tasks | See the regional references below |
+| Identify a character or Kibo | [Character list](/en/characters/) · [Kibo catalog](/en/kibo/) |
 
-Japan's FAQ says the same account shares progress across PC, Android and iOS. China's official service separately covers PC, Android, iOS and HarmonyOS, while some channel editions do not share progress with the official service. Neither statement establishes Japan–China transfers. Review [regions and availability](/en/guides/global-release/) if you are unsure which version a link refers to.
+## Before creating a character: keep the right account
 
-## Install, update and check the service notice
+Japan's Kibo nest web event sends earned exploration rewards to **the first character created under the participating Yostar ID**. If you took part, confirm that ID before creating a character. Reinstalling the client does not transfer those rewards.
 
-Japan PC distribution uses the official Windows page and Yostar launcher. The game client then downloads additional resources. On mobile, the store payload is also only one stage of installation.
+Japan's FAQ supports same-account progress on PC, Android and iOS. China’s official service separately supports PC, Android, iOS and HarmonyOS, with some channel-server exceptions. These rules apply within each regional service; they do not provide Japan–China transfers.
 
-The regional FAQs recommend at least **55GB free storage on Android/iOS** and **120GB on PC**, with an SSD recommended for PC. These are recommended allowances, not measured final download sizes. Check the full [requirements](/en/guides/requirements/) rather than treating a store size as the complete game.
+Japan's [account terms](https://azurpromilia.jp/terms/user) say deleted accounts cannot be restored, including accidental deletion. Check your existing progress and reward entitlements before considering a new account. A repeatable account-reset route has not been verified for this guide.
 
-Japan and China officially announced launch on November 26. The original schedules were **11:00 JST in Japan / 02:00 UTC** and **10:00 UTC+8 in China**, the same instant. Check current maintenance notices and account messages before login; an installed client does not resolve a blocked account.
+## Your first session: story, mail and banners
 
-## Your first session: tutorial, mail, then reward checks
+1. **Follow the current tutorial and main quest.** Read locked-feature messages when a menu is missing.
+2. **Claim mail when it becomes available.** Japan's preregistration benefits include アニス and 無垢な痕跡 ×20. Thank-you gifts and nest-event rewards have their own terms; see [reward sources and deadlines](/en/guides/resources/).
+3. **Check the ticket before pulling.** Japan's beginner banner costs eight 無垢な痕跡 per ten-pull, with a five-star character within 30 pulls. Limited character and anima banners have separate 90/80 guarantees, carried to the next banner of the same category. Read the [regional banner guide](/en/guides/banner-rules/) for details.
+4. **Look at current events.** Start with rewards you can earn before their deadline. Japan's first story event and its reward targets are in the [event guide](/en/guides/resources/).
 
-Use the quest and lock messages in the current client to decide what is available. The sequence below is a practical checklist, not a claim that specific menus unlock at a verified level.
+Promotional totals can include later logins, levels, quests and different ticket types. Plan around the tickets in your inventory and the banner they actually use.
 
-1. Confirm you entered the intended regional account and character.
-2. Follow the live tutorial until it directs you to available quests and features.
-3. Inspect mail, events and sign-in screens when the client makes them available.
-4. Read each reward's source, attachment, conditions and expiry before claiming.
-5. Check the inventory change after claiming. Keep level-gated, later sign-in and unfinished quest rewards separate from what you already own.
-6. Read the actual regional banner details before using any currency or ticket.
+## Where are daily and weekly tasks?
 
-Download the [English reward checklist](/downloads/launch-rewards-en.txt) to record what arrived. It helps separate missing rewards from rewards whose requirements are unfinished; filling it in does not submit a support request.
+If the menus are absent, continue the main story and read any lock message. A [Traditional Chinese player report](https://forum.gamer.com.tw/C.php?bsn=79865&snA=711) says daily and weekly tasks appeared after a main-story boar boss. It does not establish a Japanese unlock quest or level.
 
-## Japan rewards: two Kibo sources to keep separate
+For players using the Korean PC client, [this community checklist](https://arca.live/b/azurpromilia/190508272) lists:
 
-The [Japan FAQ](https://azurpromilia.jp/contact) says preregistration benefits are delivered through in-game mail after service starts and names **星彩・クロディーメ** and **無垢な痕跡** among the benefits. Check the current distribution notice for individual eligibility and quantities.
+| Task | Korean PC reference |
+| --- | --- |
+| Commissions / stamina activities | Esc, bottom-right 의뢰; F4 |
+| Daily and weekly rewards | F5; check both tabs |
+| Pass tasks | F2, then the lower task area |
+| Farm collection | Farm headquarters in the Esc menu |
 
-The nest web event instead lists **星彩・キラミィ**. Its earned exploration rewards are assigned to the first character created under the participating Yostar ID, with collection within **365 days of the first game login**. Do not apply that event's account and deadline rules to every preregistration gift.
+These shortcuts are Korean-client references. Use your edition's menu and key bindings, especially if you have changed the controls. Check reward collection as well as task completion. Reset times should come from your edition's countdown; no universal reset time is established here.
 
-See [launch rewards and missing mail](/en/guides/resources/) for the complete distinction. A task tick, an exploration attempt, an earned item in the web bag and a claimed game-mail attachment are separate progress steps.
+## What if you have little time to play?
 
-## Before your first pull or a reroll decision
+A useful order is **claim earned rewards → check expiring events → continue story unlocks → explore**. Choose stamina materials for the characters you are currently developing.
 
-Do not assume every displayed ticket can be used on the same banner. Read the item name, eligible banner, cost, period and current in-game probability details. Japan’s published beginner and limited-banner guarantees are summarized in the [regional banner guide](/en/guides/banner-rules/). A tested account-reset or timed reroll route remains unverified.
+For farm problems, the [Chinese farming guide](/zh-hans/systems/home/) and [Japanese farming guide](/ja/systems/home/) cover seeds, food and production checks. Korean seed-management screenshots show **키보 농장 → 씨앗 관리 → 씨앗 창고** in [this player post](https://arca.live/b/azurpromilia/190507810). The author's discovery at level 21 is not an unlock requirement. Names and button positions may differ in your edition.
 
-Japan's [account terms](https://azurpromilia.jp/terms/user) state that a deleted account cannot be restored, including accidental deletion. That does not establish a reusable reset procedure. Before any account change, check existing progress and web-event rewards tied to the original ID and receiving character.
+## Login or rewards not working?
 
-There is no evidence-backed universal “must pull” or complete character ranking on this site yet. Preserve resources until you know the role you need and the regional rules that apply.
+| Problem | Next step |
+| --- | --- |
+| File verification or additional downloads fail | [Regional download troubleshooting](/en/guides/download/) |
+| A feature or mailbox is locked | Follow its current quest requirement |
+| Mail is open but a gift is missing | [Missing-mail checks](/en/guides/resources/) |
+| Wrong character or account trouble | Confirm the ID, region and server, then use [official support](/en/guides/support/) |
 
-## Mainland China: different account and reward checks
+China requires real-name verification and uses separate official/channel account rules. Players who paid during its 旅迹测试 need the original paying account and matching client for test-payment returns. Those conditions do not apply to Japan.
 
-China's [launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/) requires real-name verification before login. It also says the old “旅迹测试” client cannot update directly to the launch client. These are China instructions, not additional Japan requirements.
-
-If you paid during that China test, check the original paying account and matching official or channel client. Test-payment returns, ordinary preregistration mail and Kibo web rewards have different qualifications and deadlines. Do not create a new account expecting it to inherit those entitlements.
-
-## Beginner questions
-
-### The game is installed. Why can I not log in?
-
-Check the affected stage: launcher, extra data, login, maintenance or an account prompt. The regional opening notice and your actual client matter. Use [download troubleshooting](/en/guides/download/) for file problems and [official support](/en/guides/support/) for account or unresolved errors.
-
-### How many pulls can I get immediately?
-
-A promotional cumulative total is not a measured first-session balance. Sign-in days, levels, quests, currencies and eligible banners must be checked separately. Record items already received before estimating any usable pulls.
-
-### Where are the farming, capture and material routes?
-
-Use the [English character catalog](/en/characters/) and [Kibo catalog](/en/kibo/) to identify published names and available official records. Verified unlock quests, farming production tables, capture coordinates and complete material routes are not available in this English section yet. Follow current in-game source hints. If you read Chinese or Japanese, the [China-focused farming guide (Chinese)](/zh-hans/systems/home/) and [Japan-language farming guide](/ja/systems/home/) explain the available evidence and unresolved mechanics; neither is a tested English farming route.
+The [English reward sheet](/downloads/launch-rewards-en.txt) is available if you want a local list of gifts and deadlines. Completing it does not send a support request.

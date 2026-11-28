@@ -31,8 +31,8 @@ const other = ja ? 'zh-hans' : 'ja';
 const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
 
 const title = ja
-  ? `${entity.names.ja}（${entity.romanized}）- キャラクター資料・紹介の確認状況`
-  : `${entity.names['zh-hans']}（${entity.romanized}）- 角色资料 · 简介与核验状态`;
+  ? `${entity.names.ja}（${entity.romanized}）- キャラ紹介・公式プロフィール`
+  : `${entity.names['zh-hans']}（${entity.romanized}）- 角色介绍与官方资料`;
 
 const description = ja
   ? `『アズールプロミリア』の${entity.catalogStatus === 'verified' ? '公式キャラクター' : '確認中のキャラクター'}「${entity.names.ja}」。${entity.origin ? `所属・ゆかりの地：${entity.origin.ja}。` : ''}${entity.summary.ja}`
@@ -99,7 +99,7 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
       <p class="entity-romanized" data-pagefind-meta="description">{entity.romanized}</p>
     </header>
 
-    {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公開紹介の要約です。実用的な詳細ガイドは本文・出典・翻訳レビュー待ちです。' : '此页保留已公开的资料摘要。完整用途指南仍待正文、来源与译文审核。'}</p>}
+    {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公式の人物・生態紹介をまとめたページです。スキルや育成の詳細ガイドは含みません。' : '本页提供官方名称与介绍，暂不含完整技能、培养和实战攻略。'}</p>}
     <article class="article-grid" data-pagefind-body={detailPublished || undefined}>
       <div>
         <div class="entity-card entity-card-character" style="margin-bottom: 2rem;">
@@ -163,8 +163,8 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
 
       <aside class="article-aside">
         <div class="notice">
-          <strong>{ja ? '公式根拠について' : '官方依据边界'}</strong>
-          <p>{ja ? '現在は公式紹介の名前と概要を掲載しています。技能、育成素材、強さや実際の用途は、同地域・同バージョンの根拠とレビューがそろってから案内します。' : '当前保留官方介绍中的名称与简介。技能、养成材料、强度和实际用途，需要同地区、同版本的证据与审核后再补充。'}</p>
+          <strong>{ja ? '公式根拠について' : '资料说明'}</strong>
+          <p>{ja ? '公式人物紹介の名前と概要を掲載しています。スキルや育成素材は、プレイ中のゲーム内説明をご確認ください。' : '本页的名称与简介来自官方人物介绍。实际技能和培养材料请查看所玩版本的游戏内说明。'}</p>
         </div>
         <div style="margin-top: 1rem;">
           <a class="text-link" href={`/${locale}/characters/`}>← {ja ? 'キャラクター一覧へ戻る' : '返回角色图鉴总览'}</a>

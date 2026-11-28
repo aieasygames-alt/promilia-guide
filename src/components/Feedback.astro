@@ -5,7 +5,7 @@ const { locale } = Astro.props;
 const ja = locale === 'ja';
 const endpoint = import.meta.env.PUBLIC_FEEDBACK_URL;
 ---
-<div class="notice">{ja ? 'お問い合わせ先はまだ設定されていません。下のフォームは内容をコピー・保存するためのもので、送信は行いません。' : '站点接收渠道尚未配置。下方表单可整理、复制或下载纠错内容，不会自动发送。'}{endpoint && <a href={endpoint} target="_blank" rel="noopener noreferrer">{ja ? '設定済みのお問い合わせ窓口を開く' : '打开已配置的反馈渠道'} ↗</a>}</div>
+<div class="notice">{ja ? '下のフォームで修正メモをコピー・保存できます。メモは自動送信されません。' : '下方表单可复制或保存纠错内容，填写后不会自动发送。'}{endpoint && <a href={endpoint} target="_blank" rel="noopener noreferrer">{ja ? 'お問い合わせ窓口を開く' : '打开反馈入口'} ↗</a>} <a href="https://github.com/aieasygames-alt/promilia-guide/issues/new" target="_blank" rel="noopener noreferrer">{ja ? 'GitHubで修正内容を送る（ログインが必要）' : '通过GitHub提交纠错（需登录）'} ↗</a></div>
 <form class="feedback-form" data-locale={locale}>
   <label for="feedback-page">{ja ? '該当ページの URL' : '相关页面 URL'}</label><input id="feedback-page" name="page" type="text" maxlength="2000" placeholder="https://promiliaguide.com/…"/>
   <label for="feedback-kind">{ja ? '内容の種類' : '问题类型'}</label><select id="feedback-kind" name="kind">{(ja ? ['情報の誤り', '古い情報', '出典の補足', '翻訳・用語', '不具合・その他'] : ['事实错误', '版本过期', '补充来源', '翻译与术语', '功能或其他问题']).map((kind) => <option>{kind}</option>)}</select>

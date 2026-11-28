@@ -5,7 +5,7 @@ interface Props { locale: Locale; entries: Guide[]; section?: 'guides' | 'system
 const { locale, entries, section } = Astro.props;
 const groups = contentRoutes.filter(group => section === 'systems' ? group.id === 'play' : section === 'guides' ? group.id !== 'play' : true);
 ---
-<nav class="content-routes" aria-label={locale === 'ja' ? '目的から探す' : '按当前任务找攻略'}>
+<nav class="content-routes" aria-label={locale === 'ja' ? '目的から探す' : '按问题找攻略'}>
   {groups.map((group, index) => <section class="route-group">
     <span class="route-number" aria-hidden="true">0{index + 1}</span><div><h2>{group.title[locale]}</h2><p>{group.note[locale]}</p>
     <ul>{group.topics.flatMap(id => { const entry = entries.find(entry => entry.data.contentId === id); return entry ? [<li><a href={articlePath(entry.data)}>{topicLabels[id][locale]}</a></li>] : []; })}</ul></div>

@@ -10,7 +10,7 @@ description: Compare Azur Promilia global and SEA release status with Japan,
 author: Promilia Guide
 publishedAt: "2026-11-25"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan, China, Traditional Chinese, Korea, SEA and English release plan
 verification: official
 status: published
@@ -65,8 +65,8 @@ claimRevisions:
   jp-public-launch-requirements: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 14
-translatedFromRevision: 14
+sourceRevision: 15
+translatedFromRevision: 15
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -106,8 +106,16 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
 order: 1
 minutes: 6
+readerUpdates:
+  - date: "2026-11-28"
+    note: Shortened regional explanations while keeping SEA and the English release
+      plan separate.
 ---
 
 ## Which Azur Promilia versions are available?
@@ -129,7 +137,7 @@ New regional entries and announcements were checked November 28, 2026. Japan and
 
 ## When is the global English release?
 
-**The official English account says it is targeting summer 2027 and explicitly says the timing may change as development progresses.** This replaces this guide's earlier lack of a verified English-release statement. The announcement is dated October 13; this site read it on November 28.
+**The official English account says it is targeting summer 2027 and explicitly says the timing may change as development progresses.** The October 13 announcement gives a target season, not a fixed release day.
 
 It does not give a specific day, confirm every country's eligibility or establish cross-region progress transfers. Do not turn the target season into a fixed countdown. Check SEA separately through PlayPark's announcements.
 
@@ -137,7 +145,7 @@ It does not give a specific day, confirm every country's eligibility or establis
 
 The [SEA FAQ](https://azurpromilia.playpark.com/en/faq/) lists five interface languages: **English, Thai, Indonesian, Vietnamese and Simplified Chinese**. It also lists **Chinese, Japanese and English voice-over**. Servers, support and preregistration are independent of other editions; early updates and events may differ. Preregistration elsewhere does not automatically carry over.
 
-The FAQ is dated October 9 and states that the launch date and device information have not been announced. On November 28, the All News list showed the October 20 release-confirmation and preregistration announcement. This records the checked official web status. Japan and China's November 26 date and hardware requirements should not be applied to SEA. The FAQ's general service-area wording and named-country list do not fully align; consult current SEA terms for your country.
+The FAQ is dated October 9 and states that the launch date and device information have not been announced. On November 28, the All News list showed the October 20 release-confirmation and preregistration announcement.  Japan and China's November 26 date and hardware requirements should not be applied to SEA. The FAQ's general service-area wording and named-country list do not fully align; consult current SEA terms for your country.
 
 An English guide or unofficial patch is not proof that Japan's official client includes English text. SEA's language list does not establish English or Chinese text in Japan's client; that remains unverified in the Japan sources used here.
 
@@ -185,4 +193,4 @@ Identify the publisher and announcement. SEA is operated independently by PlayPa
 
 ### Is the Traditional Chinese site still only a preorder?
 
-Its homepage now shows launch and download buttons. The old November 23 preregistration description has been superseded. Individual store eligibility remains a separate check.
+Its homepage now shows launch and download buttons.  Individual store eligibility remains a separate check.

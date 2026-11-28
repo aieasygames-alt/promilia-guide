@@ -36,7 +36,7 @@ related:
 author: Promilia Guide
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan, mainland China and Traditional Chinese editions, described separately
 verification: editorial
 status: published
@@ -45,8 +45,8 @@ claimRevisions:
   jp-kibo-web-rewards: 1
   cn-kibo-web-rewards: 1
   cn-preregister-mail-benefits: 1
-sourceRevision: 12
-translatedFromRevision: 12
+sourceRevision: 13
+translatedFromRevision: 13
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -66,6 +66,14 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
+readerUpdates:
+  - date: "2026-11-28"
+    note: Shortened reward-claim advice while preserving regional conditions and
+      deadlines.
 ---
 
 ## November 27 thank-you gifts: claim by region
@@ -76,7 +84,7 @@ revisions:
 | [Mainland China](https://www.taptap.cn/moment/875477210155189543) | 璀璨忆痕 ×10 by game mail | Original: November 27 at 20:30 until January 5, 2027 maintenance; register and unlock mail before maintenance. Mail validity: 30 days |
 | [Traditional Chinese](https://azurpromilia.jimi-global.com/home/news/detail/914650651865255936/) | 璀璨憶痕 ×10 by game mail | Same start/end wording and registration/mailbox conditions, without a separate mail-validity duration |
 
-Times retain each notice's wording; no unstated time zone or exact maintenance hour is added. China's 30-day term is not applied to the other editions. Confirm your regional account, unlock mail, open the thank-you message, claim the attachment and check inventory. This site has not tested receipt. Record missing-mail details for [regional support](/en/guides/support/).
+Times retain each notice's wording; no unstated time zone or exact maintenance hour is added. China's 30-day term is not applied to the other editions. Confirm your regional account, unlock mail, open the thank-you message, claim the attachment and check inventory.  Record missing-mail details for [regional support](/en/guides/support/).
 
 Japan's [AZPR1126 code and settings path](/en/guides/redeem-codes/) are a separate announcement. Do not assign the gifts to Korea or SEA without their own notices. Original item names are retained to match the announcements, not presented as official English names.
 

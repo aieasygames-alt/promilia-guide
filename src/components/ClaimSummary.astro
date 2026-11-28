@@ -8,15 +8,16 @@ const ja = locale === 'ja';
 const items = refs.map((id) => claims.find((claim) => claim.id === id)!).filter(Boolean);
 ---
 {items.length > 0 && <section class="claim-summary" aria-labelledby="claim-summary-title">
-  <div class="claim-summary-heading"><h2 id="claim-summary-title">{ja ? '確認できたこと・確認中のこと' : '已确认与待确认'}</h2><span>{ja ? '共通の出典から整理' : '依据共享来源整理'}</span></div>
+  <div class="claim-summary-heading"><h2 id="claim-summary-title">{ja ? '参考にした発表内容' : '参考公告摘要'}</h2></div>
   <ul>{items.map((claim) => {
     const verified = isVerifiedClaim(claim, sources);
     const stale = revisions[claim.id] !== claim.revision;
     const text = claim.localized[locale];
+    const summary = text.summary;
     return <li data-claim-id={claim.id} data-claim-revision={claim.revision} data-claim-verified={String(verified)}>
-      <div class="claim-summary-line"><span class={`pill ${verified ? '' : 'pending'}`}>{verified ? (ja ? '出典確認済み' : '来源已核验') : (ja ? '確認中' : '待核验')}</span><span class="claim-revision">r{claim.revision}</span></div>
-      <p class="claim-text">{text.summary}</p>{text.detail && <p class="claim-detail">{text.detail}</p>}
-      {verified && claim.value.url && <a class="text-link" href={claim.value.url} target="_blank" rel="noopener noreferrer">{ja ? '確認した公式ページを開く' : '打开已核验的官方页面'} ↗</a>}
+      <div class="claim-summary-line"><span class={`pill ${verified ? '' : 'pending'}`}>{verified ? (ja ? '公式資料あり' : '附官方来源') : (ja ? '未確認' : '尚未确认')}</span></div>
+      <p class="claim-text">{summary}</p>
+      {verified && claim.value.url && <a class="text-link" href={claim.value.url} target="_blank" rel="noopener noreferrer">{ja ? '公式ページへ' : '前往官方页面'} ↗</a>}
       {stale && <p class="claim-stale">{ja ? '出典側の情報が更新されています。本文の再確認が必要です。' : '引用事实已有更新，正文需要重新核对。'}</p>}
       <div class="claim-citations">{claim.sourceRefs.map((id) => { const source = sources.find((source) => source.id === id); return source && <a href={`#source-${source.id}`}>{source.localized?.[locale]?.title || source.title}</a>; })}</div>
     </li>;
