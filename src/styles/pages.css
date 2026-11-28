@@ -1680,6 +1680,9 @@
 .mobile-bar-btn[hidden] { display: none; }
 .mobile-share-status:empty { display: none; }
 @media (max-width: 820px) {
+  body:has(.mobile-action-bar) {
+    padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+  }
   .mobile-action-bar {
     display: block;
     position: fixed;
