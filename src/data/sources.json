@@ -2034,5 +2034,32 @@
         "publisher": "17173 / 带侠虎"
       }
     }
+  },
+  {
+    "id": "tc-community-home-yamou-2026-11-26",
+    "title": "夜某：家园必做清单与首日开荒路线",
+    "publisher": "巴哈姆特 / YaMou（lego1111，夜某）",
+    "kind": "community",
+    "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=696",
+    "publishedAt": "2026-11-26",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测首日玩家攻略 / 2026-11-26",
+    "gameRegion": "繁中社区作者所用版本；不推定其他地区同名菜单或键位",
+    "status": "verified",
+    "note": "读取完整正文及评论，页面时间属性data-mtime为2026-11-26 21:44:03。采用有归因的工作台、心得、开地、种子、布局、交易与野外设施路线。未独立实测；不采纳固定主线门槛、必做次数、最高效率、最赚钱商品、固定价格或其他地区同名道具推断。",
+    "excerpt": "工作台锁定可由前往查看进入心得；E锄地，耕作小屋安排播种、浇水、收获；种子仓库按顺序播种；交易站、订单看板、行商日记、明日预告；闪亮奇珍每周限定与永久限购；开图并解锁野外建筑。",
+    "evidenceFile": "research/2026-11-28-gameplay-depth/README.md",
+    "localized": {
+      "ja": {
+        "title": "夜某：繁体字版コミュニティの農園・注文ガイド",
+        "publisher": "巴哈姆特 / YaMou（夜某）",
+        "note": "11月26日の本文・コメントを確認。作者のPC操作と農園ルートを地域別の参考として掲載。日本版の公式メニュー名・共通解放レベル・実測効率を確定する資料ではありません。"
+      },
+      "en": {
+        "title": "YaMou: launch-day home and order walkthrough (Traditional Chinese)",
+        "publisher": "Bahamut / YaMou (夜某)",
+        "note": "Read the original November 26 post and comments. Attributed PC menu, farming, processing and shop advice for the author’s edition; not an independently tested route, universal unlock table, profit benchmark or confirmed English nomenclature."
+      }
+    }
   }
 ]
