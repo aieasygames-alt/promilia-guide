@@ -1989,5 +1989,35 @@
         "publisher": "Arca Live / Horol"
       }
     }
+  },
+  {
+    "id": "cn-community-selector-daixiahu-2026-11-27",
+    "title": "带侠虎：公测常驻五星自选与配队建议",
+    "publisher": "17173 / 带侠虎",
+    "kind": "community",
+    "url": "https://news.17173.com/content/11272026/112816971.shtml",
+    "publishedAt": "2026-11-27",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "作者标注公测版 / 2026-11-27",
+    "gameRegion": "中国大陆服配队讨论",
+    "status": "verified",
+    "note": "已读全文，核对署名、日期与嵌入原视频BV1eLykzMESn。仅采用归因后的候选配队思路；原文“佩佩不在常驻池”与官方公示冲突，弃用该说法。三天进度、270抽、满星深渊、最强及未来卡池判断未独立核验，不采纳。未核实队伍的等级、定弦、装备、奇波或实战输出。 文章配图含“当前为测试版本，不代表最终品质”水印，不能作为正式服技能或性能已验证的证据。",
+    "excerpt": "作者建议末音搭配星临者、米蒂；红宝石搭配法兰塔，第三位可用米蒂或星临者；夏儿、阿比、璐璐卡需三位五星，缺人可考虑卡塔露、艾妮丝过渡；小玉队提出米砂和星临者、莉莉或枫糖的不同投入思路。",
+    "evidenceFile": "research/2026-11-28-selector-followup/README.md",
+    "localized": {
+      "zh-hans": {
+        "title": "带侠虎：公测常驻五星自选与配队建议",
+        "note": "采用具名作者的候选组合，不构成本站实测或强度排名；名单以官方公示为准。未采用文中佩佩退池、未来卡池和资源总量说法。 配图含测试版水印，只作作者开服候选思路。"
+      },
+      "ja": {
+        "title": "中国本土・带侠虎氏の恒常星5選択と編成案",
+        "note": "中国本土版の個人提案です。日本版の検証済み編成ではありません。佩佩の排出対象に関する記述は公式表と矛盾するため採用せず、将来のガチャ・資源総量の予測も除外しています。 掲載画像にはテスト版の表示があるため、正式版の性能を裏付ける資料とは扱いません。"
+      },
+      "en": {
+        "title": "China community selector and team suggestions by 带侠虎",
+        "note": "Attributed China team ideas, not tested rankings. A claim excluding 佩佩 conflicts with the official roster and is not used; future banners and resource forecasts are also excluded.",
+        "publisher": "17173 / 带侠虎"
+      }
+    }
   }
 ]

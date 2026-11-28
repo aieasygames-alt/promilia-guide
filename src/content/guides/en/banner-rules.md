@@ -11,6 +11,7 @@ claimRefs:
   - cn-banner-rules-system
   - jp-banner-rules-system
 sourceRefs:
+  - cn-standard-character-pool-2026-11-26
   - cn-character-probability-2026-11-26
   - cn-anima-probability-2026-11-26
   - cn-beginner-probability-2026-11-26
@@ -38,13 +39,15 @@ status: published
 claimRevisions:
   cn-banner-rules-system: 4
   jp-banner-rules-system: 2
-sourceRevision: 9
-translatedFromRevision: 9
+sourceRevision: 10
+translatedFromRevision: 10
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 minutes: 10
 revisions:
+  - date: "2026-11-28"
+    note: "Added the relevant selector or ticket-budget explanation under the standing development and publication authorization; no independent language review or gameplay test is claimed."
   - date: "2026-11-27"
     note: Published regional banner rules from November 26 official launch and
       probability notices under the project owner’s development and deployment
@@ -55,6 +58,8 @@ revisions:
       instruction. No independent language review or gameplay test claimed.
 readerUpdates:
   - date: "2026-11-28"
+    note: "Added China’s 50 / 250 / 450 standard-selector milestones and an example separating beginner from standard counts; kept these separate from Japan’s banner terms."
+  - date: "2026-11-28"
     note: Moved the regional guarantees to the opening answer and retained ticket
       and rate conditions.
 ---
@@ -63,7 +68,7 @@ readerUpdates:
 
 **Japan's November 26 launch announcement independently confirms a maximum of 90 observations for the featured limited five-star character and 80 for the featured limited five-star anima. Every five-star on these limited banners is the current featured item, and counts carry to the next banner of the same category.** Mainland China's separate probability disclosures confirm its own 90/80 guarantees and publish base rates and probability increases.
 
-This English guide covers the Japanese and mainland-China services. Original item and banner names help you identify the correct screen; they are not official English localizations. These regional rules do not establish a global English server or English client support. Sources were checked on November 27, after launch.
+This English guide covers the Japanese and mainland-China services. Original item and banner names help you identify the correct screen; they are not official English localizations. These regional rules do not establish a global English server or English client support. The standard-banner notice was checked again on November 28; the remaining launch sources were checked after service began.
 
 ## Japan: current banners and end time
 
@@ -116,6 +121,22 @@ China's first banners are [桃笺为契](https://azurpromilia.manjuu.com/home/ne
 China’s character banner also boosts four-star characters 枫糖 and 艾妮丝. Its anima banner boosts 折纸寄情, 未来之星 and 一点都不痛, with 折纸寄情 explicitly described as limited. China's disclosures say limited five-stars and their corresponding newly introduced limited four-star anima are not added to the character or anima permanent pools when the event ends. This does not make every boosted four-star a newly limited item. Exchange inventory and purchase limits refresh with the displayed shop countdown; the disclosures do not establish a universal daily reset time.
 
 Pity carryover does not prove that unused tickets last forever. Check the actual ticket expiry, conversion rules, regional account and remaining banner time separately.
+
+## China standard five-star selector: 50, 250 and 450 pulls
+
+**China's first selector requires 50 cumulative standard-character observations; each further 200 observations adds another selection.** That gives cumulative milestones of 50, 250 and 450. The second selection is at 250, not 200, and beginner or limited-banner observations do not count toward it.
+
+| China standard pulls | Selectors earned |
+| --- | --- |
+| 50 | 1 |
+| 250 | 2 |
+| 450 | 3 |
+
+The [November 26 official standard disclosure](https://azurpromilia.manjuu.com/home/news/detail/912772234182004736) also states a separate five-star guarantee within 90 consecutive standard observations. **The selector does not mean pull 50 itself produces a five-star.** Obtaining a random five-star resets that probability counter; keep it separate from cumulative selector progress.
+
+Both China's beginner and standard-character banners use 纯粹忆痕, but **sharing a ticket does not mean sharing a counter**. Three beginner ten-pulls cost 24 tickets and produce 30 beginner observations. If you then make 50 standard observations, the combined 80 observations include only 50 toward the standard selector. Do not confuse observation totals with ticket costs, or assume you must finish the beginner banner before using the standard one.
+
+The official five-star pool includes 佩佩 and excludes the separately announced limited character 涂山小玉. Check the [China standard roster](/en/characters/) and the in-game selection screen for eligible characters. These are mainland-China terms; they do not establish the Japanese, SEA or future global service's selector rules.
 
 ## How many free limited pulls do launch rewards provide?
 

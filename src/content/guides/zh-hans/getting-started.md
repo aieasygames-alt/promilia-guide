@@ -39,7 +39,7 @@ sourceRefs:
   - tc-community-daily-unlock-2026-11-27
   - kr-community-daily-weekly-2026-11-27
   - kr-community-auto-seeds-2026-11-27
-sourceRevision: 19
+sourceRevision: 20
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -63,6 +63,8 @@ related:
 order: 6
 minutes: 12
 revisions:
+  - date: "2026-11-28"
+    note: "补常驻自选、开局预算与具名公测配队资料；按既有开发上线授权发布，不声称游戏实测或独立语言审校。"
   - date: "2026-11-14"
     note: 建立编辑草稿，游戏事实与正式名称待核验。
   - date: "2026-11-14"
@@ -176,6 +178,8 @@ reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
 readerUpdates:
   - date: "2026-11-28"
+    note: "增加普通票用量例子与国服按手持自选、配队入口。"
+  - date: "2026-11-28"
     note: 按主线、邮箱、首次抽卡、每日与周常重新安排入门顺序。
 ---
 
@@ -209,6 +213,8 @@ readerUpdates:
 4. **查看正在开放的活动。** 优先处理自己能完成、且临近截止的奖励，其他内容随进度安排。首期活动与期限见[福利总览](/zh-hans/guides/resources/)。
 
 累计宣传抽数包含签到、等级、主线和不同票券，不等于创角后立即能用的限定抽数。按背包内实际券种安排投入更准确。
+
+新手三次十连要24张普通票；20张票够两次十连、剩4张，再补4张才够第三次。国服首次自选需要50次常驻角色观测，新手的30次不计入这50次。已拿到五星、想决定自选对象时，可看[按现有角色选择的候选表](/zh-hans/guides/reroll/#国服常驻五星自选选谁先看你已有谁)，以及[具体配队案例](/zh-hans/systems/combat/#国服公测配队案例先按已有角色组一队)。
 
 ## 每日和周常在哪里？
 
