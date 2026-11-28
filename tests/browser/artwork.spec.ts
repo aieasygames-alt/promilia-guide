@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 for (const locale of ['zh-hans', 'ja', 'en']) {
   test(`${locale}: artwork loads and representative images agree with search metadata`, async ({ page }) => {
-    for (const route of ['', 'characters/', 'kibo/', 'guides/getting-started/']) {
+    for (const route of ['', 'characters/', 'kibo/', 'guides/getting-started/', 'guides/launch/', 'systems/kibo/']) {
       await page.goto(`/${locale}/${route}`);
       const imageURL = await page.locator('meta[property="og:image"]').getAttribute('content');
       const relative = new URL(imageURL!).pathname;
@@ -32,7 +32,10 @@ for (const locale of ['zh-hans', 'ja', 'en']) {
     await expect(holiday).toContainText('NEXON Korea Corp.');
     await page.goto(`/${locale}/characters/`);
     await expect(page.locator('[data-visual-id="nono-profile"]')).toContainText('ノノ / NONO');
-    await expect(page.locator('.artwork-grid img')).toHaveCount(2);
+    await expect(page.locator('.artwork-grid img')).toHaveCount(10);
+    await expect(page.locator('[data-visual-id="xiaoyu-profile"] img')).toHaveAttribute('height', '360');
+    await expect(page.locator('[data-visual-id="moren-preview"]')).toContainText('© Manjuu © Yostar');
+    await expect(page.locator('[data-visual-id="character-riverside"]')).toContainText('© Manjuu Co., Ltd. © Yostar, Inc.');
     for (const image of await page.locator('.artwork-grid img').all()) {
       await expect(image).toHaveAttribute('loading', 'lazy');
       await expect(image).not.toHaveAttribute('fetchpriority', 'high');

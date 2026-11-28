@@ -1,6 +1,7 @@
 ---
 import FeatureVisual from './FeatureVisual.astro';
 import type { Locale } from '../lib/content';
+import { characterArtwork } from '../lib/visuals';
 interface Props { locale: Locale; kind: 'home' | 'characters'; }
 const { locale, kind } = Astro.props;
 const en = locale === 'en', ja = locale === 'ja';
@@ -11,13 +12,23 @@ const title = kind === 'home' ? (en ? 'Characters and Kibo in artwork' : ja ? '�
   {kind === 'home' ? <>
     <p>{en ? 'Explore the artwork, then use the sourced lists to check names and regional information.' : ja ? 'イラストを楽しんだら、出典付きの一覧で名称や地域ごとの情報を確認できます。' : '欣赏游戏插画，也可以通过有来源的名单继续查找角色名称和奇波资料。'} <a href={`/${locale}/characters/`}>{en ? 'Characters' : ja ? 'キャラクター一覧' : '角色一览'}</a> · <a href={`/${locale}/kibo/`}>{en ? 'Kibo' : ja ? 'キボ一覧' : '奇波图鉴'}</a></p>
     <FeatureVisual id="holiday-illustration" locale={locale}/>
-  </> : <div class="artwork-grid"><FeatureVisual id="nono-profile" locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 488px"/><FeatureVisual id="celebration-art" locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 488px"/></div>}
+  </> : <>
+    <p>{en ? 'Browse character scenes, portraits and Japanese preview images. Names printed in the artwork are kept as shown; development previews may differ from the current game. Use the roster above for region-specific names and banner information.' : ja ? 'キャラクターの登場シーンや立ち姿、日本語の紹介画像をまとめました。名前は画像内の表記をそのまま掲載しています。開発中の映像は現在のゲームと異なる場合があります。地域ごとの名前やガチャ情報は、上の名簿をご覧ください。' : '这里收录角色场景、竖幅形象与日文介绍图，姓名保留图中原文。开发中画面可能与当前游戏不同；查找各地区角色名称和卡池信息时，可以使用上方名单。'}</p>
+    <h3>{en ? 'Characters in the world' : ja ? '世界の中のキャラクターたち' : '角色与世界场景'}</h3>
+    <div class="artwork-grid">{characterArtwork.scenes.map(id => <FeatureVisual id={id} locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 488px"/>)}</div>
+    <h3>{en ? 'Character profiles and illustrations' : ja ? 'キャラクター紹介とイラスト' : '角色介绍与插画'}</h3>
+    <div class="artwork-grid artwork-portraits">{characterArtwork.profiles.map(id => <FeatureVisual id={id} locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 317px"/>)}</div>
+    <h3>{en ? 'Character portraits' : ja ? 'キャラクターの立ち姿' : '角色竖幅形象'}</h3>
+    <div class="artwork-grid artwork-portraits">{characterArtwork.portraits.map(id => <FeatureVisual id={id} locale={locale} sizes="(max-width: 650px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 64px) / 2), 317px"/>)}</div>
+  </>}
 </section>
 <style>
   .artwork-section { margin: 2.5rem 0 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
   h2 { font-size: 1.4rem; margin-bottom: .8rem; }
+  h3 { font-size: 1.1rem; margin-top: 1.5rem; }
   p { color: var(--muted); line-height: 1.9; }
   a { text-decoration: underline; text-underline-offset: .2em; }
   .artwork-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; max-width: 1000px; }
+  @media (min-width: 1101px) { .artwork-portraits { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
   @media (max-width: 650px) { .artwork-grid { grid-template-columns: 1fr; gap: 0; } }
 </style>
