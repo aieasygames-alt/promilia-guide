@@ -2115,5 +2115,86 @@
         "note": "Read the original post and comments and inspected both map screenshots. Shows a village shortcut after commissions unlock and one boss teleport example; does not establish universal boss access, free attempts or English names."
       }
     }
+  },
+  {
+    "id": "cn-community-xiaoyu-shicha-2026-11-26",
+    "title": "时差：涂山小玉公测养成三图",
+    "publisher": "TapTap / 时差",
+    "url": "https://www.taptap.cn/moment/875006988424055551",
+    "publishedAt": "2026-11-26",
+    "gameVersion": "作者标注公测版 / 2026-11-26",
+    "note": "核对原帖作者、时间属性2026/11/26 13:25:22，查看全部三图。仅采用归因后的配队、奇波、灵子和装备候选。verified表示原始资料已读，不代表本站实战复现。获取难度排序不作必须培养路线，单件数值不作毕业线，未采纳必抽或伤害排名。",
+    "excerpt": "涂山小玉＋枫糖，第三格星临者／米砂／兰香子／卡塔露；风音花42、摩空球86、森彩灵蝶171、风翼狮鹫186；队友音霸蛙73；花之舞、折纸寄情；云啸风吟及长空协奏四部位。",
+    "localized": {
+      "ja": {
+        "title": "时差：塗山小玉の編成・キボ・アニマ・装備例",
+        "publisher": "TapTap / 时差",
+        "note": "原文と3枚の画像を確認。中国本土の公測向け個人提案です。日本版の火力・装備名・共通必須条件を検証したものではありません。"
+      },
+      "en": {
+        "title": "时差: China launch Xiaoyu build images",
+        "publisher": "TapTap / 时差",
+        "note": "Read the original post and inspected all three build images. Attributed team, Kibo, anima and equipment recommendations, not tested rankings, mandatory pulls or confirmed English names."
+      }
+    },
+    "kind": "community",
+    "checkedAt": "2026-11-28",
+    "gameRegion": "中国大陆公测作者记录；其他地区名称与条件分别对照",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-28-character-depth/README.md"
+  },
+  {
+    "id": "cn-community-launch-teams-meng-2026-11-26",
+    "title": "檬涩味：公测配队图中的小玉过渡建议",
+    "publisher": "TapTap / 檬涩味",
+    "url": "https://www.taptap.cn/moment/874999208371817009",
+    "publishedAt": "2026-11-26",
+    "gameVersion": "作者标注公测版 / 2026-11-26",
+    "note": "核对原帖作者和时间属性2026/11/26 12:54:27，查看五图中的第一图，仅采用该图小玉队及缺枫糖用主角过渡建议。读取可见一级评论，未读需登录展开的三条回复；评论不作技能或削弱依据。未将作者角色定位当成本站实战结论。",
+    "excerpt": "小玉风队：涂山小玉输出、枫糖印记增益、米砂／星临者／卡塔露增益生存；图注前期没有枫糖可以用主角替换。",
+    "localized": {
+      "ja": {
+        "title": "檬涩味：小玉編成と序盤の代役案",
+        "publisher": "TapTap / 檬涩味",
+        "note": "5枚中の1枚目を確認。枫糖がいない場合の主人公案を紹介。日本版で同じ支援効果を保証する資料ではありません。"
+      },
+      "en": {
+        "title": "檬涩味: launch Xiaoyu team and early substitute",
+        "publisher": "TapTap / 檬涩味",
+        "note": "Inspected the first of five images. Uses only its Xiaoyu support choices and protagonist substitution; does not treat comments as proof of balance changes or independently verified effects."
+      }
+    },
+    "kind": "community",
+    "checkedAt": "2026-11-28",
+    "gameRegion": "中国大陆公测作者记录；其他地区名称与条件分别对照",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-28-character-depth/README.md"
+  },
+  {
+    "id": "cn-community-butterfly-shicha-2026-11-27",
+    "title": "时差：森彩灵蝶捕获与鞍具路线",
+    "publisher": "TapTap / 时差",
+    "url": "https://www.taptap.cn/moment/875365845360968831",
+    "publishedAt": "2026-11-27",
+    "gameVersion": "作者标注公测版 / 2026-11-27",
+    "note": "核对原帖作者和时间属性2026/11/27 13:11:21，查看全部两图及当时五条可见评论。采用雾叶密林图示标记、压低血量、紫卡商店、鞍具工作台与PC轮盘步骤。未独立进游戏复现；不采纳无限飞行、毕业、必成概率、固定解锁等级、完整配方或将图中进化箭头解为独立进化系统。评论不作独立复现证据。",
+    "excerpt": "雾叶密林图示红圈首领，作者称三条血；珍贵的星结卡，家园→家园中枢→闪亮奇珍；捕获后工作台→冒险→森彩灵蝶鞍具；PC长按T轮盘装备。",
+    "localized": {
+      "ja": {
+        "title": "时差：森彩灵蝶の捕獲・鞍製作・装備手順",
+        "publisher": "TapTap / 时差",
+        "note": "2枚の図と可視コメントを確認。中国本土の作者の手順で、日本版の正式名称・捕獲率・飛行スタミナ・共通解放条件は未確認です。"
+      },
+      "en": {
+        "title": "时差: butterfly capture, saddle and riding route",
+        "publisher": "TapTap / 时差",
+        "note": "Read the post and visible comments; inspected both images. Attributed China route, not independent gameplay testing, guaranteed capture, a complete recipe or proof of unlimited flight."
+      }
+    },
+    "kind": "community",
+    "checkedAt": "2026-11-28",
+    "gameRegion": "中国大陆公测作者记录；其他地区名称与条件分别对照",
+    "status": "verified",
+    "evidenceFile": "research/2026-11-28-character-depth/README.md"
   }
 ]

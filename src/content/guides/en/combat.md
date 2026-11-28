@@ -3,8 +3,8 @@ contentId: combat
 locale: en
 slug: combat
 section: systems
-title: "Azur Promilia Combat Guide: Teams & Skill Troubleshooting"
-description: Compare China starter teams, follow attributed weekly upgrade-material sources and boss teleport steps, and troubleshoot skills, missed attacks and survival.
+title: "Azur Promilia Combat Guide: Xiaoyu Build, Teams & Kibo"
+description: "Explore an attributed China launch Xiaoyu build: teammates, Kibo, anima and a four-piece equipment set, plus substitutions, material sources and combat troubleshooting."
 author: Promilia Guide
 publishedAt: "2026-11-28"
 updatedAt: "2026-11-28"
@@ -13,18 +13,22 @@ gameRegion: China team suggestions; general troubleshooting for each current reg
 verification: editorial
 status: published
 sourceRefs:
+  - cn-community-xiaoyu-shicha-2026-11-26
+  - cn-community-launch-teams-meng-2026-11-26
   - cn-community-selector-daixiahu-2026-11-27
   - cn-standard-character-pool-2026-11-26
   - tc-community-weekly-materials-2026-11-28
   - tc-community-map-travel-2026-11-28
 claimRefs: []
 claimRevisions: {}
-sourceRevision: 5
-translatedFromRevision: 5
+sourceRevision: 6
+translatedFromRevision: 6
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 aliases:
+  - Xiaoyu build
+  - 涂山小玉
   - Azur Promilia combat
   - Azur Promilia team building
   - Azur Promilia skill not working
@@ -33,13 +37,17 @@ related:
   - banner-rules
   - getting-started
 order: 7
-minutes: 8
+minutes: 15
 revisions:
+  - date: "2026-11-28"
+    note: "Added attributed China launch Xiaoyu team, Kibo, anima and equipment choices with original names and regional limits."
   - date: "2026-11-28"
     note: Published a localized English guide under the project owner’s standing development and deployment authorization. No independent language review or gameplay test is claimed.
   - date: "2026-11-28"
     note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits. Published under standing development and deployment authorization; no independent gameplay or language review claimed.
 readerUpdates:
+  - date: "2026-11-28"
+    note: "Added attributed China launch Xiaoyu team, Kibo, anima and equipment choices with original names and regional limits."
   - date: "2026-11-28"
     note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits.
   - date: "2026-11-28"
@@ -56,6 +64,33 @@ checklist:
   - id: performance
     text: Use device troubleshooting for stutters or crashes
 ---
+
+## Xiaoyu build: start with 枫糖 and one available support
+
+**If you own Xiaoyu (涂山小玉), the China launch guide by 时差 suggests 涂山小玉 + 枫糖 + 星临者 as a starter team.** Its [November 26 build images](https://www.taptap.cn/moment/875006988424055551) also list 米砂, 兰香子 and 卡塔露 as alternatives to 星临者 in the third slot. Pick **one** third-slot character. These are attributed build suggestions, without a controlled damage comparison by this site. Chinese item and teammate names below let you match the original images; they are not confirmed official English names.
+
+Missing 枫糖? [檬涩味’s launch-day team image](https://www.taptap.cn/moment/874999208371817009) suggests the protagonist as an early substitute. Then use a different available support, such as 米砂 or 卡塔露, in the third slot: 星临者 is the protagonist and cannot fill both slots. The two authors’ support lists differ slightly. Read your substitute’s actual skills rather than assuming identical buffs.
+
+### Which Kibo and anima does the Xiaoyu guide recommend?
+
+The second build image lists **风音花 (No.42) → 摩空球 (No.86) → 森彩灵蝶 (No.171) → 风翼狮鹫 (No.186)** in the author’s order of increasing acquisition difficulty. This is a choice of candidates, not a mandatory upgrade chain or a capture route. The same image pairs both 枫糖 and 星临者 with 音霸蛙 (No.73), rather than copying the damage dealer’s choices to every teammate.
+
+For anima, the author lists five-star 「花之舞」 and four-star 「折纸寄情」. Compare owned effects, eligible characters and upgrade costs before spending on a new pull. The recommendation does not establish a mandatory dedicated anima or an exact damage gap. Check [banner rules and your pull budget](/en/guides/banner-rules/) first. To obtain and ride 森彩灵蝶, follow the [sourced butterfly capture and saddle steps](/en/systems/kibo/#capture-and-ride-森彩灵蝶-a-china-launch-route).
+
+### Equipment: match the four-piece set and its trigger
+
+The third image recommends the weapon 「云啸风吟」 alongside four pieces of 「长空协奏」:
+
+| Slot | Item shown in the source |
+| --- | --- |
+| Upper body | 星云同声 |
+| Lower body | 心之回响 |
+| Headwear | 翠华响 |
+| Hands | 琉璃卷云 |
+
+The pictured set description grants 「超限强度 +110」 at two pieces. At four pieces, **the wearer consuming a mark** raises their 「超限」 damage by 7% for 15 seconds, stacking up to three times. These terms and numbers describe the author’s screenshot. Match your current regional item description, equipped piece count and the character’s mark-consumption condition before building around the effect.
+
+The individual wind-damage, critical and other stats pictured on the items are examples, not universal endgame targets. The post does not provide a complete drop-location list, crafting recipe or tested skill rotation. Use each missing item’s current source entry rather than guessing materials from its name.
 
 ## Build one usable team, then solve the fight’s main problem
 
@@ -75,7 +110,7 @@ The team examples below are mainland-China community suggestions. They are not t
 
 For someone who owns only 夏儿, the article also mentions 卡塔露 and 艾妮丝 as four-star transition candidates. A transition option does not promise identical effects. The spelling 夏儿 follows the [official China standard roster](/en/characters/), rather than the article’s 夏尔 transcription. These Chinese names are retained because confirmed official English names are not available in the cited evidence.
 
-If you are deciding which missing teammate to select, use the [reroll and selector guide](/en/guides/reroll/). These examples cannot determine a dedicated anima requirement, exact Kibo pairing, constellation threshold or optimal skill-upgrade order. There is no controlled same-level, same-equipment damage comparison behind this table.
+If you are deciding which missing teammate to select, use the [reroll and selector guide](/en/guides/reroll/). These three examples cannot determine a dedicated anima requirement, exact Kibo pairing, constellation threshold or optimal skill-upgrade order. The separate Xiaoyu section above provides attributed choices from a different launch guide. There is no controlled same-level, same-equipment damage comparison behind this table.
 
 ## Find the exact upgrade material before choosing a weekly boss
 

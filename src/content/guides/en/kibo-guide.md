@@ -3,16 +3,17 @@ contentId: kibo-guide
 locale: en
 slug: kibo
 section: systems
-title: "Azur Promilia Kibo Guide: Capture, Potential Training & Rewards"
-description: Check capture-card spending, egg previews and regional rewards. Follow a sourced potential-training shop route and learn how to read its weekly purchase allowance.
+title: "Azur Promilia Kibo Guide: Butterfly Capture, Saddle & Training"
+description: "Follow an attributed China launch route to capture 森彩灵蝶, craft its saddle and equip it for riding. Also covers capture-card spending, potential training and regional rewards."
 author: Promilia Guide
 publishedAt: "2026-11-28"
 updatedAt: "2026-11-28"
 gameVersion: Launch version
-gameRegion: China and Japan rewards; Korean capture and egg reports attributed separately
+gameRegion: China capture and riding route; China/Japan rewards; Korean and Traditional Chinese reports attributed separately
 verification: editorial
 status: published
 sourceRefs:
+  - cn-community-butterfly-shicha-2026-11-27
   - cn-launch-benefits-images-2026-11-21
   - jp-kibo-adventure-rules-2026-11-21
   - cn-kibo-adventure-rules-2026-11-21
@@ -37,12 +38,15 @@ claimRevisions:
   cn-store-home-kibo-overview: 1
   jp-store-home-kibo-overview: 1
   jp-preregister-benefits: 1
-sourceRevision: 7
-translatedFromRevision: 7
+sourceRevision: 8
+translatedFromRevision: 8
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 aliases:
+  - 森彩灵蝶
+  - 森彩灵蝶鞍具
+  - Kibo flying mount
   - Azur Promilia Kibo capture
   - Azur Promilia capture cards
   - Azur Promilia eggs
@@ -52,24 +56,48 @@ related:
   - resources
   - home
 order: 13
-minutes: 8
+minutes: 12
 revisions:
+  - date: "2026-11-28"
+    note: "Added an attributed China butterfly capture, card-shop, saddle-crafting and wheel-equipment route."
   - date: "2026-11-28"
     note: Published a localized English guide under the project owner’s standing development and deployment authorization. No independent language review or gameplay test is claimed.
   - date: "2026-11-28"
     note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits. Published under standing development and deployment authorization; no independent gameplay or language review claimed.
 readerUpdates:
   - date: "2026-11-28"
+    note: "Added an attributed China butterfly capture, card-shop, saddle-crafting and wheel-equipment route."
+  - date: "2026-11-28"
     note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits.
   - date: "2026-11-28"
     note: Added English guidance with original regional names, source attribution and practical next steps.
 ---
 
+## Capture and ride 森彩灵蝶: a China launch route
+
+**Capture the butterfly, craft its saddle at the home workbench, then equip the saddle in the wheel.** [时差’s November 27 guide](https://www.taptap.cn/moment/875365845360968831) illustrates the wild target and saddle steps in two images. The Chinese names below help you follow those images; they are not confirmed English-client labels. The title’s “unlimited flight” wording does not establish a verified stamina or flight-duration rule.
+
+1. **Find the target in 雾叶密林.** Use the red-circled boss marker on the east/northeast side of the first image’s map. The source does not establish exact coordinates or a universal unlock level. If the area is inaccessible, follow your current quest and map requirements first.
+2. **Lower its health before attempting capture.** The author describes three health bars and recommends the purple 「珍贵的星结卡」. This is not a guaranteed catch. Check your own capture prompt and set a card budget before trying.
+3. **If you lack the card, inspect the home shop.** The pictured menu path is 「家园 → 家园中枢 → 闪亮奇珍」. Match the item description, price and purchase allowance in your own edition before exchanging.
+4. **Return to the home workbench after capture.** Open 「冒险」 and craft 「森彩灵蝶鞍具」, the butterfly’s saddle. For locked recipes or missing materials, read the entry’s requirements and use the [home crafting and unlock guide](/en/systems/home/). The image does not list every ingredient quantity.
+5. **Equip the saddle in the wheel.** The author’s PC control is **hold T**. Use your current binding if you changed it; mobile players should follow their on-screen controls rather than assuming a keyboard equivalent.
+
+### Why can’t you fly after catching the butterfly?
+
+| Where you are stuck | Check next |
+| --- | --- |
+| Captured it, but cannot ride | Whether its saddle has been crafted under the workbench’s 「冒险」 category |
+| Cannot craft the saddle | Recipe access, requirements and missing materials |
+| Crafted the saddle, but cannot call it | Wheel equipment, current bindings and scene prompts |
+
+Capture, saddle crafting and equipping are separate steps. Flight stamina, access across every map and exact capture probabilities are not established by this post. If you came for a Xiaoyu companion, also read the [Xiaoyu build choices](/en/systems/combat/#xiaoyu-build-start-with-枫糖-and-one-available-support); obtaining transport and investing in combat upgrades are separate decisions.
+
 ## Before spending another Kibo capture card
 
 **Read the current target’s capture prompt, the card’s description and any success information shown in your client. For an egg, check whether its preview fixes the species or leaves a random result.** A high success chance in an early area does not establish the same chance for later targets, and one rare egg result cannot prove a guaranteed trait.
 
-This guide separates official regional reward rules from Korean community experiences. It does not contain verified capture coordinates, a complete species map or trait probabilities. Original names identify items in the cited edition; they do not establish official English names or equivalence between different regional names.
+This guide separates official regional reward rules from community experiences. The butterfly route above follows a named China author; it does not establish a complete species map, exact coordinates or trait probabilities. Original names identify items in the cited edition; they do not establish official English names or equivalence between different regional names.
 
 
 ## Where can you exchange for Kibo potential-training supplies?
