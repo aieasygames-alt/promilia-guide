@@ -3,10 +3,8 @@ contentId: global-release
 locale: en
 slug: global-release
 section: guides
-title: "Azur Promilia Release Date: Global, SEA, Japan & Korea"
-description: Compare Azur Promilia global and SEA release status with Japan,
-  China, Korea and Traditional Chinese downloads. English release targets summer
-  2027, subject to change.
+title: "Azur Promilia Global Release Date: English & SEA Status"
+description: "Azur Promilia’s English release targets summer 2027, subject to change. Check the global release date announcement, separate SEA status and regional launches."
 author: Promilia Guide
 publishedAt: "2026-11-25"
 updatedAt: "2026-11-28"
@@ -74,6 +72,7 @@ aliases:
   - Azur Promilia
   - azurpromilia
   - azure promilia
+  - Azur Promilia release date global
   - Azur Promilia global release date
   - Azur Promilia JP release
 related:
@@ -114,6 +113,8 @@ order: 1
 minutes: 6
 readerUpdates:
   - date: "2026-11-28"
+    note: Put the English release window before the regional download choices, with SEA explained separately.
+  - date: "2026-11-28"
     note: Shortened regional explanations while keeping SEA and the English release
       plan separate.
 ---
@@ -134,12 +135,6 @@ New regional entries and announcements were checked November 28, 2026. Japan and
 | Korea | [Nexon official page](https://azurpromilia.nexon.com/events/2026/11/milestone?introset=true) displays November 26 GRAND OPEN, with [PC download](https://azurpromilia.nexon.com/support/download) and mobile-store entries | Nexon edition rules, rather than Japan accounts or China rewards |
 | SEA | [PlayPark site](https://azurpromilia.playpark.com/en/) offers preregistration; see its [announcement](https://azurpromilia.playpark.com/en/news/sea-official-announcement/) and [FAQ](https://azurpromilia.playpark.com/en/faq/) | Preregistration is not a playable client or a confirmed launch date |
 | English release plan | [October 13 official English update](https://x.com/AzurPromilia_EN/status/2109992558004998420): outside the initial launch; targets summer 2027 | Subject to change; not an exact date, SEA schedule or country-eligibility list |
-
-## When is the global English release?
-
-**The official English account says it is targeting summer 2027 and explicitly says the timing may change as development progresses.** The October 13 announcement gives a target season, not a fixed release day.
-
-It does not give a specific day, confirm every country's eligibility or establish cross-region progress transfers. Do not turn the target season into a fixed countdown. Check SEA separately through PlayPark's announcements.
 
 ## SEA release date and English-language support
 

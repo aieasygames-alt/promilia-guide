@@ -41,20 +41,6 @@
       "width": 1200
     }
   ],
-  "/images/entities/characters/metsa.webp": [
-    {
-      "src": "/images/entities/characters/metsa-400w.webp",
-      "width": 400
-    },
-    {
-      "src": "/images/entities/characters/metsa-800w.webp",
-      "width": 800
-    },
-    {
-      "src": "/images/entities/characters/metsa.webp",
-      "width": 1200
-    }
-  ],
   "/images/entities/characters/symphoria.webp": [
     {
       "src": "/images/entities/characters/symphoria-400w.webp",
@@ -150,6 +136,20 @@
     },
     {
       "src": "/images/entities/kibo/vespervamp.webp",
+      "width": 1200
+    }
+  ],
+  "/images/entities/characters/metsa-official.webp": [
+    {
+      "src": "/images/entities/characters/metsa-official-400w.webp",
+      "width": 400
+    },
+    {
+      "src": "/images/entities/characters/metsa-official-800w.webp",
+      "width": 800
+    },
+    {
+      "src": "/images/entities/characters/metsa-official.webp",
       "width": 1200
     }
   ]

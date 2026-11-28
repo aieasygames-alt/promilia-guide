@@ -6,6 +6,7 @@ import Icon from '../../../components/Icon.astro';
 import ClaimSummary from '../../../components/ClaimSummary.astro';
 import DistributionMatrix from '../../../components/DistributionMatrix.astro';
 import RegionalGateway from '../../../components/RegionalGateway.astro';
+import GlobalReleaseAnswer from '../../../components/GlobalReleaseAnswer.astro';
 import AnnouncedCodes from '../../../components/AnnouncedCodes.astro';
 import ArticleToc from '../../../components/ArticleToc.astro';
 import FeatureVisual from '../../../components/FeatureVisual.astro';
@@ -47,6 +48,7 @@ const isRedeemCodes = !en && data.contentId === 'redeem-codes';
 const compactFacts = !en && data.claimRefs.length > 0;
 const featureVisual = pageVisuals(articlePath(data))[0];
 const toc = [
+  ...(en && data.contentId === 'global-release' ? [{ id: 'english-release-answer', text: 'Global English release date' }] : []),
   ...(data.contentId === 'global-release' ? [{ id: 'regional-gateway-title', text: en ? 'Official regional entries' : locale === 'ja' ? '地域別の公式入口' : '各地区官方入口' }] : []),
   ...headings.filter((heading) => heading.depth === 2).map((heading) => ({ id: heading.slug, text: heading.text })),
   ...(hasDistribution ? [{ id: 'distribution-title', text: locale === 'ja' ? '地域・端末の早見表' : '地区与设备速查' }] : []),
@@ -64,6 +66,7 @@ const schema = [
     {!translation && <p class="search-help">{c.missing} · <a class="text-link" href={`/${other}/`}>{c.targetHome} ↗</a></p>}
     {featureVisual && <FeatureVisual id={featureVisual} locale={locale} priority/>}
     <div class="article-grid"><article data-pagefind-body data-content-id={data.contentId} data-published={String(published)}>
+      {en && data.contentId === 'global-release' && <GlobalReleaseAnswer/>}
       {data.contentId === 'global-release' && <RegionalGateway locale={locale}/>}
       {data.contentId === 'redeem-codes' && <AnnouncedCodes locale={locale}/>}
       {isRedeemCodes && <RedeemCodeBox locale={referenceLocale}/>}

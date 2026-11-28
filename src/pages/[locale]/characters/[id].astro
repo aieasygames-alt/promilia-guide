@@ -31,13 +31,15 @@ const showDetail = detailPublished || (preview && Boolean(entity.detailContent?.
 const other = ja ? 'zh-hans' : 'ja';
 const source = sources.find((s) => s.id === entity.sourceRefs[locale]);
 
-const title = ja
+const title = (detailPublished && entity.detailTitle?.[locale]) || (ja
   ? `${entity.names.ja}（${entity.romanized}）- キャラ紹介・公式プロフィール`
-  : `${entity.names['zh-hans']}（${entity.romanized}）- 角色介绍与官方资料`;
+  : `${entity.names['zh-hans']}（${entity.romanized}）- 角色介绍与官方资料`);
 
-const description = ja
+const description = (detailPublished && entity.detailDescription?.[locale]) || (ja
   ? `『アズールプロミリア』の${entity.catalogStatus === 'verified' ? '公式キャラクター' : '確認中のキャラクター'}「${entity.names.ja}」。${entity.origin ? `所属・ゆかりの地：${entity.origin.ja}。` : ''}${entity.summary.ja}`
-  : `《蓝色星原：旅谣》${entity.catalogStatus === 'verified' ? '官方公布角色' : '待核验角色'}「${entity.names['zh-hans']}」。${entity.origin ? `所属与相关地区：${entity.origin['zh-hans']}。` : ''}${entity.summary['zh-hans']}`;
+  : `《蓝色星原：旅谣》${entity.catalogStatus === 'verified' ? '官方公布角色' : '待核验角色'}「${entity.names['zh-hans']}」。${entity.origin ? `所属与相关地区：${entity.origin['zh-hans']}。` : ''}${entity.summary['zh-hans']}`);
+const detailSections = showDetail ? entity.detailSections?.[locale] || [] : [];
+const detailReferences = showDetail ? (entity.detailSourceRefs || []).map(id => sources.find(source => source.id === id)!) : [];
 
 const alternates = locales
   .map((l) => ({ lang: languageTag[l], href: `${origin}/${l}/characters/${entity.id}/` }))
@@ -101,7 +103,7 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
     </header>
 
     {!detailPublished && <p class="notice" data-entity-review-note>{ja ? '公式の人物・生態紹介をまとめたページです。スキルや育成の詳細ガイドは含みません。' : '本页提供官方名称与介绍，暂不含完整技能、培养和实战攻略。'}</p>}
-    <article class="article-grid" data-pagefind-body={detailPublished || undefined}>
+    <article class:list={['article-grid', { 'character-guide': detailSections.length > 0 }]} data-pagefind-body={detailPublished || undefined}>
       <div>
         <div class="entity-card entity-card-character" style="margin-bottom: 2rem;">
           <figure class="entity-media entity-media-character" data-image-source={entity.imageSource}>
@@ -127,6 +129,9 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
             {entity.quote && <blockquote>{entity.quote[locale]}</blockquote>}
             <p>{entity.summary[locale]}</p>
             {showDetail && <section data-entity-detail data-detail-status={detailPublished ? 'published' : 'draft'}><h2>{ja ? '人物紹介とゲーム内情報' : '人物介绍与游戏信息'}</h2>{entity.detailContent![locale]!.split(/\n{2,}/).map((paragraph) => <p>{paragraph}</p>)}</section>}
+            {detailSections.length > 0 && <nav aria-label={ja ? '攻略の目次' : '攻略目录'}><ul>{detailSections.map(section => <li><a href={`#${section.id}`}>{section.title}</a></li>)}</ul></nav>}
+            {detailSections.map(section => <section id={section.id} data-entity-guide-section><h2>{section.title}</h2>{section.paragraphs.map(paragraph => <p>{paragraph}</p>)}{section.steps && <ol>{section.steps.map(step => <li>{step}</li>)}</ol>}</section>)}
+            {detailReferences.length > 0 && <section id="gameplay-sources"><h2>{ja ? '性能・育成情報の出典' : '玩法与培养资料来源'}</h2><ul>{detailReferences.map(reference => <li><a href={reference.url!} target="_blank" rel="noopener noreferrer">{reference.localized?.[locale]?.title || reference.title}</a><p>{reference.localized?.[locale]?.note || reference.note}</p><small>{reference.publisher} · {ja ? '確認日' : '核对日期'}：{reference.checkedAt}</small></li>)}</ul></section>}
           </div>
 
           <dl class="entity-facts">
@@ -168,7 +173,7 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
       <aside class="article-aside">
         <div class="notice">
           <strong>{ja ? '公式根拠について' : '资料说明'}</strong>
-          <p>{ja ? '公式人物紹介の名前と概要を掲載しています。スキルや育成素材は、プレイ中のゲーム内説明をご確認ください。' : '本页的名称与简介来自官方人物介绍。实际技能和培养材料请查看所玩版本的游戏内说明。'}</p>
+          <p>{detailReferences.length > 0 ? (ja ? '人物設定は日本公式、性能・育成は出典付きの日本向け第三者攻略から整理しています。現在の技能や排出条件はゲーム内の説明をご確認ください。' : '人物设定来自日本官方；玩法与培养建议注明日本向第三方攻略来源。当前技能和卡池条件请以游戏内说明为准。') : (ja ? '公式人物紹介の名前と概要を掲載しています。スキルや育成素材は、プレイ中のゲーム内説明をご確認ください。' : '本页的名称与简介来自官方人物介绍。实际技能和培养材料请查看所玩版本的游戏内说明。')}</p>
         </div>
         <div style="margin-top: 1rem;">
           <a class="text-link" href={`/${locale}/characters/`}>← {ja ? 'キャラクター一覧へ戻る' : '返回角色图鉴总览'}</a>
@@ -177,3 +182,9 @@ const allCharacters = visibleEntitiesFor('character', locale).filter((e) => e.id
     </article>
   </div>
 </Base>
+
+<style>
+  @media (max-width: 820px) {
+    .character-guide { flex-direction: column; }
+  }
+</style>
