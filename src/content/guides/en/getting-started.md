@@ -63,13 +63,15 @@ claimRevisions:
   jp-account-deletion-terms: 1
   cn-service-status: 1
   jp-service-status: 1
-sourceRevision: 19
-translatedFromRevision: 19
+sourceRevision: 20
+translatedFromRevision: 20
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
 minutes: 8
 revisions:
+  - date: "2026-11-28"
+    note: "Added the relevant selector or ticket-budget explanation under the standing development and publication authorization; no independent language review or gameplay test is claimed."
   - date: "2026-11-26"
     note: Published the English first-session guide following the project owner’s
       multilingual development request and existing deployment authorization.
@@ -108,6 +110,8 @@ checklist:
     text: Read current reward conditions and regional banner details
 readerUpdates:
   - date: "2026-11-28"
+    note: "Added a worked example for Japan’s 20 beginner tickets, with a separate China standard-selector reference."
+  - date: "2026-11-28"
     note: Reordered first-session advice around story, mail, banners and daily tasks.
 ---
 
@@ -141,6 +145,8 @@ Japan's [account terms](https://azurpromilia.jp/terms/user) say deleted accounts
 4. **Look at current events.** Start with rewards you can earn before their deadline. Japan's first story event and its reward targets are in the [event guide](/en/guides/resources/).
 
 Promotional totals can include later logins, levels, quests and different ticket types. Plan around the tickets in your inventory and the banner they actually use.
+
+Japan's 20-ticket first-login gift covers two beginner ten-pulls: spend 16 tickets and keep four. A third ten-pull needs four more tickets, for 24 in total. These are beginner tickets, not 20 limited-character pulls. If you play the mainland China service, beginner pulls also stay separate from the standard selector counter; see the [China standard roster and selection terms](/en/characters/).
 
 ## Where are daily and weekly tasks?
 

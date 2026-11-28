@@ -102,7 +102,7 @@ test('missing translation goes to explicit target language home', async ({ page 
 });
 
 test('combat guide helps troubleshoot skill input and links from home', async ({ page }) => {
-  for (const [locale, title] of [['zh-hans', '战斗卡点排查'], ['ja', '戦闘の困りごと']]) {
+  for (const [locale, title] of [['zh-hans', '战斗与开荒配队'], ['ja', '戦闘ガイド']]) {
     await page.goto(`/${locale}/systems/combat/`);
     await expect(page.locator('h1')).toContainText(title);
     await expect(page.locator('.prose')).toContainText(locale === 'ja' ? 'スキルが発動しない' : '技能按了没反应');
