@@ -43,7 +43,7 @@
       },
       {
         "id": "progress",
-        "contentId": "download",
+        "contentId": "platforms",
         "claimRevisions": {
           "cn-public-launch-platform-rules": 1,
           "jp-public-launch-platform-rules": 1
@@ -88,7 +88,7 @@
       },
       {
         "id": "kibo-rewards",
-        "contentId": "resources",
+        "contentId": "kibo-guide",
         "claimRevisions": {
           "jp-preregister-benefits": 1,
           "jp-kibo-web-rewards": 1
@@ -102,7 +102,7 @@
       },
       {
         "id": "delete-account",
-        "contentId": "getting-started",
+        "contentId": "reroll",
         "claimRevisions": {
           "jp-account-deletion-terms": 1,
           "jp-kibo-web-rewards": 1
@@ -272,6 +272,80 @@
         },
         "answer": {
           "en": "The official China notice marks browser play as computer-only and lists separate cloud apps for Android 6.0 or later and iOS 15 or later. A site loading on a phone is not proof of browser streaming support. These cloud conditions do not replace the full game’s native requirements."
+        }
+      }
+    ]
+  },
+  {
+    "id": "gameplay",
+    "title": {
+      "en": "Teams, farming and Kibo"
+    },
+    "questions": [
+      {
+        "id": "standard-selector",
+        "contentId": "reroll",
+        "question": {
+          "en": "When do I get the China standard five-star selector?"
+        },
+        "answer": {
+          "en": "China’s first selector requires 50 cumulative standard-character observations, with another for every additional 200: 50, 250 and 450. Beginner and limited observations do not count. This is separate from random five-star pity and does not establish Japan’s selector rules."
+        },
+        "claimRevisions": {
+          "cn-banner-rules-system": 4
+        }
+      },
+      {
+        "id": "starter-team",
+        "contentId": "combat",
+        "question": {
+          "en": "How should I choose a starter team?"
+        },
+        "answer": {
+          "en": "Compare the teammates you already own before selecting another five-star. The guide attributes three China team ideas to 带侠虎, whose article contains test-version imagery; they are candidates rather than tested rankings. First distinguish missed inputs, missed attacks, survival problems and low damage before spending more materials."
+        }
+      },
+      {
+        "id": "farm-stopped",
+        "contentId": "home",
+        "question": {
+          "en": "Why has my farm stopped producing?"
+        },
+        "answer": {
+          "en": "Read the station’s reason, then check seeds or materials, job suitability, food, the timer and storage or collection. Community reports describe seed management and food shortages, but do not establish universal unlock levels or production rates. Adding more workers is not automatically the solution."
+        }
+      },
+      {
+        "id": "seed-management",
+        "contentId": "home",
+        "question": {
+          "en": "Where is seed management?"
+        },
+        "answer": {
+          "en": "Horol’s Korean screenshots show home overview → 키보 농장 → 씨앗 관리 → 씨앗 창고 and seed slots. Those are Korean menu labels. The author finding the menu at level 21 does not prove an unlock level, and configured planting does not prove automatic collection."
+        }
+      },
+      {
+        "id": "egg-card",
+        "contentId": "kibo-guide",
+        "question": {
+          "en": "Does a rare capture card guarantee a special egg trait?"
+        },
+        "answer": {
+          "en": "The cited Korean report describes one 환상의 스타링크 result on a specified-species egg, not a universal guarantee or probability. Read the current egg preview and exact card effects. Card color and a single community result cannot establish equivalent behavior in another regional edition."
+        }
+      },
+      {
+        "id": "test-return",
+        "contentId": "recharge-return",
+        "question": {
+          "en": "How is China’s historical test-spending return calculated?"
+        },
+        "answer": {
+          "en": "Eligible spending returns 星虹 at marginal rates: the first CNY 2,000 at 200%, the next CNY 3,000 at 150%, and the amount above CNY 5,000 at 125%, using CNY 1 = 10 星虹. Use the original paying account; this is not a cash refund or a Japan program."
+        },
+        "claimRevisions": {
+          "cn-test-recharge-return": 1
         }
       }
     ]

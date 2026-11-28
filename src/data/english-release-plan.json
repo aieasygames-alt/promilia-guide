@@ -1,6 +1,6 @@
 {
   "id": "english-launch-essentials",
-  "title": "English launch and first-session essentials",
+  "title": "English launch, account and gameplay guides",
   "locales": [
     "en"
   ],
@@ -85,6 +85,59 @@
       "requiredClaims": [
         "cn-banner-rules-system",
         "jp-banner-rules-system"
+      ]
+    },
+    {
+      "contentId": "reroll",
+      "label": "Reroll and standard selector decisions",
+      "requiredClaims": [
+        "cn-banner-rules-system",
+        "jp-banner-rules-system",
+        "jp-account-deletion-terms"
+      ]
+    },
+    {
+      "contentId": "combat",
+      "label": "Starter teams and combat troubleshooting",
+      "requiredClaims": []
+    },
+    {
+      "contentId": "home",
+      "label": "Farm seeds, Kibo jobs and food",
+      "requiredClaims": [
+        "cn-store-home-kibo-overview",
+        "jp-store-home-kibo-overview"
+      ]
+    },
+    {
+      "contentId": "kibo-guide",
+      "label": "Kibo capture, eggs and event rewards",
+      "requiredClaims": [
+        "cn-kibo-web-rewards",
+        "jp-kibo-web-rewards"
+      ]
+    },
+    {
+      "contentId": "platforms",
+      "label": "Platforms and cross-save",
+      "requiredClaims": [
+        "cn-public-launch-platform-rules",
+        "jp-public-launch-platform-rules"
+      ]
+    },
+    {
+      "contentId": "launch",
+      "label": "Launch checklist and first-session help",
+      "requiredClaims": [
+        "cn-service-status",
+        "jp-service-status"
+      ]
+    },
+    {
+      "contentId": "recharge-return",
+      "label": "China test-spending returns",
+      "requiredClaims": [
+        "cn-test-recharge-return"
       ]
     }
   ]

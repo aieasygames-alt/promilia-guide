@@ -63,8 +63,8 @@ export function pageVisuals(path: string): VisualId[] {
   if (/^\/(zh-hans|ja|en)\/characters\/$/.test(path)) return ['character-ensemble', 'nono-profile', 'celebration-art'];
   if (/^\/(zh-hans|ja|en)\/kibo\/$/.test(path)) return ['kibo-companions', ...(path.startsWith('/en/') ? [] : ['kibo-showcase' as const])];
   if (/^\/(zh-hans|ja|en)\/guides\/getting-started\/$/.test(path)) return ['home-world'];
-  if (/^\/(zh-hans|ja)\/guides\/launch\/$/.test(path)) return ['public-beta'];
-  if (/^\/(zh-hans|ja)\/systems\/kibo\/$/.test(path)) return ['kibo-companions'];
+  if (/^\/(zh-hans|ja|en)\/guides\/launch\/$/.test(path)) return ['public-beta'];
+  if (/^\/(zh-hans|ja|en)\/systems\/kibo\/$/.test(path)) return ['kibo-companions'];
   return [];
 }
 

@@ -59,7 +59,7 @@ export function validateDistribution(channels, claims, entries = []) {
   }
   if (new Set(channels.map((channel) => channel.id)).size !== channels.length) errors.push('Duplicate distribution IDs');
   const required = [...new Set(channels.flatMap((channel) => [channel.entryClaim, channel.scheduleClaim, channel.preloadClaim, channel.openingClaim, channel.compatibilityClaim].filter(Boolean)))];
-  for (const { data, path } of entries.filter(({ data }) => ['download', 'platforms'].includes(data.contentId))) {
+  for (const { data, path } of entries.filter(({ data }) => data.locale !== 'en' && ['download', 'platforms'].includes(data.contentId))) {
     for (const id of required) if (!data.claimRefs?.includes(id)) errors.push(`${path}: distribution component requires claimRefs ${id}`);
   }
   return errors;

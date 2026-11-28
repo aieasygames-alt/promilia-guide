@@ -43,8 +43,13 @@ test('English guides stop publishing when their Chinese source, shared claim rev
     const original = entries.find(entry => entry.data.locale === 'zh-hans' && entry.data.contentId === data.contentId);
     assert.equal(isPublishable(data, { ...context, entries: entries.map(item => item === original ? { ...item, data: { ...item.data, sourceRevision: item.data.sourceRevision + 1 } } : item) }), false);
     const id = data.claimRefs.find(id => claims.find(claim => claim.id === id).verification === 'verified');
-    const target = claims.find(claim => claim.id === id);
-    assert.equal(isPublishable(data, { ...context, claims: claims.map(claim => claim === target ? { ...claim, revision: claim.revision + 1 } : claim) }), false);
-    assert.equal(isPublishable(data, { ...context, sources: sources.map(source => source.id === target.sourceRefs[0] ? { ...source, status: 'unavailable' } : source) }), false);
+    if (id) {
+      const target = claims.find(claim => claim.id === id);
+      assert.equal(isPublishable(data, { ...context, claims: claims.map(claim => claim === target ? { ...claim, revision: claim.revision + 1 } : claim) }), false);
+      assert.equal(isPublishable(data, { ...context, sources: sources.map(source => source.id === target.sourceRefs[0] ? { ...source, status: 'unavailable' } : source) }), false);
+    }
+    const direct = data.sourceRefs.find(id => sources.find(source => source.id === id)?.status === 'verified');
+    assert.ok(direct, data.contentId);
+    assert.equal(isPublishable(data, { ...context, sources: sources.map(source => source.id === direct ? { ...source, status: 'unavailable' } : source) }), false);
   }
 });

@@ -181,3 +181,5 @@ For farm problems, the [Chinese farming guide](/zh-hans/systems/home/) and [Japa
 China requires real-name verification and uses separate official/channel account rules. Players who paid during its 旅迹测试 need the original paying account and matching client for test-payment returns. Those conditions do not apply to Japan.
 
 The [English reward sheet](/downloads/launch-rewards-en.txt) is available if you want a local list of gifts and deadlines. Completing it does not send a support request.
+
+For your next step, compare [first pulls and selector choices](/en/guides/reroll/), solve [combat problems](/en/systems/combat/), or learn [farm seeds and food](/en/systems/home/) and [Kibo capture](/en/systems/kibo/).

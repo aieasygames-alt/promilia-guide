@@ -190,3 +190,5 @@ That has not been established. The nest event explicitly names the first charact
 ### Can I count these benefits as a monthly income?
 
 No verified recurring budget follows from a launch milestone list. Separate one-time rewards, sign-in days, unfinished quests and any recurring sources with their actual reset rules. Begin with the [first-session checklist](/en/guides/getting-started/) before planning spending.
+
+For companion reward conditions and capture decisions, continue to the [Kibo guide](/en/systems/kibo/). China test payers can separately check [return rates, vouchers and claim deadlines](/en/guides/recharge-return/).

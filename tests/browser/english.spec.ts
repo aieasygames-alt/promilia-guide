@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const topics = ['global-release', 'download', 'requirements', 'cloud-gaming', 'getting-started', 'resources', 'redeem-codes', 'support', 'banner-rules'];
+const topics = ['global-release', 'download', 'requirements', 'cloud-gaming', 'getting-started', 'resources', 'redeem-codes', 'support', 'banner-rules', 'reroll', 'platforms', 'launch', 'recharge-return'].map(slug => `guides/${slug}/`).concat(['combat', 'home', 'kibo'].map(slug => `systems/${slug}/`));
 
 test('English preparation checklist persists through Japanese switching and FAQ returns to its guide', async ({ page }) => {
   await page.goto('/en/guides/getting-started/');
@@ -13,7 +13,7 @@ test('English preparation checklist persists through Japanese switching and FAQ 
   await expect(page.locator('input[data-task="account"]')).toBeChecked();
   await page.locator('.related-questions a[href$="#q-first-day"]').click();
   await expect(page.locator('#q-first-day')).toHaveAttribute('open', '');
-  await expect(page.locator('[data-faq-id]')).toHaveCount(20);
+  await expect(page.locator('[data-faq-id]')).toHaveCount(26);
   await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
   await page.locator('#q-first-day a').click();
   await expect(page).toHaveURL(/\/en\/guides\/getting-started\/$/);
@@ -55,34 +55,33 @@ test('English guides provide matching translations and native source / article U
   const errors: string[] = [];
   page.on('pageerror', error => errors.push(error.message));
   for (const topic of topics) {
-    await page.goto(`/en/guides/${topic}/`);
+    await page.goto(`/en/${topic}`);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.locator('.article-toc h2')).toHaveText('On this page');
     await expect(page.locator('#sources h2')).toHaveText('Sources');
     await expect(page.locator('#sources')).toContainText('Checked');
     await expect(page.locator('#sources')).not.toContainText('来源核对');
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://promiliaguide.com/en/guides/${topic}/`);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://promiliaguide.com/en/${topic}`);
     const schema = await page.locator('script[type="application/ld+json"]').textContent();
     expect(JSON.parse(schema!)[0].inLanguage).toBe('en');
     await page.locator('.language-selector summary').click();
-    await expect(page.locator('.language-selector a[lang="ja"]')).toHaveAttribute('href', `/ja/guides/${topic}/`);
+    await expect(page.locator('.language-selector a[lang="ja"]')).toHaveAttribute('href', `/ja/${topic}`);
     await page.locator('.language-selector a[lang="ja"]').click();
     await page.locator('.language-selector summary').click();
     await page.locator('.language-selector a[lang="en"]').click();
-    await expect(page).toHaveURL(new RegExp(`/en/guides/${topic}/$`));
+    await expect(page).toHaveURL(new RegExp(`/en/${topic}$`));
   }
   expect(errors).toEqual([]);
 });
 
-test('untranslated topics offer English home without a false article alternate', async ({ page }) => {
+test('all planned English topics have article alternates and grouped homepage discovery', async ({ page }) => {
   await page.goto('/zh-hans/guides/recharge-return/');
-  await expect(page.locator('link[hreflang="en"]')).toHaveCount(0);
   await page.locator('.language-selector summary').click();
-  const english = page.locator('.language-selector a[lang="en"]');
-  await expect(english).toHaveAttribute('href', '/en/');
-  await expect(english).toContainText('首页');
-  await english.click();
-  await expect(page.locator('#guides .guide-card')).toHaveCount(9);
+  await page.locator('.language-selector a[lang="en"]').click();
+  await expect(page).toHaveURL(/\/en\/guides\/recharge-return\/$/);
+  await page.goto('/en/');
+  await expect(page.locator('#guides .guide-card')).toHaveCount(16);
+  await expect(page.locator('#gameplay .guide-card')).toHaveCount(3);
   await expect(page.locator('#regional-status')).toBeVisible();
   await expect(page.locator('.english-scope')).toContainText('summer 2027, subject to change');
   await expect(page.locator('.english-scope')).toContainText('PlayPark SEA is a separate service');
@@ -120,7 +119,7 @@ test('English launch facts retain regional and storage boundaries', async ({ pag
 test('English home and guides fit narrow phones and tablets with accessible language navigation', async ({ page }) => {
   for (const width of [320, 768]) {
     await page.setViewportSize({ width, height: 900 });
-    for (const path of ['', ...topics.map(topic => `guides/${topic}/`), 'search/', 'faq/', 'characters/', 'kibo/']) {
+    for (const path of ['', ...topics, 'search/', 'faq/', 'characters/', 'kibo/']) {
       await page.goto(`/en/${path}`);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${path} at ${width}px`).toBe(true);
       await page.locator('.language-selector summary').click();
@@ -128,4 +127,26 @@ test('English home and guides fit narrow phones and tablets with accessible lang
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     }
   }
+});
+
+test('English gameplay decisions preserve attribution, regional limits and search paths', async ({ page }) => {
+  for (const [path, texts] of [
+    ['guides/reroll/', ['250', '佩佩', 'test-version watermark', '24 tickets']],
+    ['systems/combat/', ['米蒂 or 星临者', 'test-version watermark', 'input focus']],
+    ['systems/home/', ['씨앗 관리', 'level 21 does not prove', 'food', 'January 5, 2027']],
+    ['systems/kibo/', ['환상의 스타링크', 'specified target species', '365 days of first game login']],
+    ['guides/platforms/', ['HarmonyOS', 'Steam, PS5 or PS4', 'China cloud browser play']],
+    ['guides/recharge-return/', ['97,500', 'not a cash refund', '730-day']]
+  ] as const) {
+    await page.goto(`/en/${path}`);
+    for (const text of texts) await expect(page.locator('.prose')).toContainText(text);
+    await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
+  }
+  await page.goto('/en/search/?q=seed');
+  await expect(page.locator('.search-results a[href="/en/systems/home/"]')).toBeVisible();
+  await page.goto('/en/faq/#q-egg-card');
+  await expect(page.locator('#q-egg-card')).toHaveAttribute('open', '');
+  await page.locator('#q-egg-card a').click();
+  await expect(page).toHaveURL(/\/en\/systems\/kibo\/$/);
+  await expect(page.locator('[data-visual-id="kibo-companions"] img')).toHaveAttribute('alt', /Kibo/);
 });

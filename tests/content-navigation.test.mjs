@@ -16,7 +16,7 @@ const context = { entries, sources, claims };
 
 test('English FAQ answers resolve to English guides and stop exposing withdrawn reward evidence', () => {
   const resolved = resolveQuestions(englishGroups, 'en', context).flatMap(group => group.questions);
-  assert.equal(resolved.length, 20);
+  assert.equal(resolved.length, 26);
   assert.equal(new Set(resolved.map(question => question.id)).size, resolved.length);
   assert.ok(resolved.every(question => question.available && question.href.startsWith('/en/')));
   const withdrawn = sources.map(source => source.id === 'jp-kibo-adventure-rules-2026-11-21' ? { ...source, status: 'unavailable' } : source);
