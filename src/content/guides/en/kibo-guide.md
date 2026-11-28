@@ -3,9 +3,8 @@ contentId: kibo-guide
 locale: en
 slug: kibo
 section: systems
-title: "Azur Promilia Kibo Guide: Capture Cards, Eggs & Rewards"
-description: Before spending capture cards, check target prompts, egg previews and regional rewards.
-  Includes attributed Korean reports and China/Japan event conditions.
+title: "Azur Promilia Kibo Guide: Capture, Potential Training & Rewards"
+description: Check capture-card spending, egg previews and regional rewards. Follow a sourced potential-training shop route and learn how to read its weekly purchase allowance.
 author: Promilia Guide
 publishedAt: "2026-11-28"
 updatedAt: "2026-11-28"
@@ -23,6 +22,7 @@ sourceRefs:
   - jp-preregister-benefits-2026-11-24
   - kr-community-capture-budget-2026-11-27
   - kr-community-egg-card-2026-11-27
+  - tc-community-weekly-materials-2026-11-28
 claimRefs:
   - cn-rewards-conditions
   - jp-kibo-web-rewards
@@ -37,8 +37,8 @@ claimRevisions:
   cn-store-home-kibo-overview: 1
   jp-store-home-kibo-overview: 1
   jp-preregister-benefits: 1
-sourceRevision: 6
-translatedFromRevision: 6
+sourceRevision: 7
+translatedFromRevision: 7
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -52,15 +52,17 @@ related:
   - resources
   - home
 order: 13
-minutes: 6
+minutes: 8
 revisions:
   - date: "2026-11-28"
-    note: Published a localized English guide under the project owner’s standing development and
-      deployment authorization. No independent language review or gameplay test is claimed.
+    note: Published a localized English guide under the project owner’s standing development and deployment authorization. No independent language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits. Published under standing development and deployment authorization; no independent gameplay or language review claimed.
 readerUpdates:
   - date: "2026-11-28"
-    note: Added English guidance with original regional names, source attribution and practical next
-      steps.
+    note: Added attributed launch material, exchange and teleport routes from Traditional Chinese posts and screenshots, with regional limits.
+  - date: "2026-11-28"
+    note: Added English guidance with original regional names, source attribution and practical next steps.
 ---
 
 ## Before spending another Kibo capture card
@@ -68,6 +70,19 @@ readerUpdates:
 **Read the current target’s capture prompt, the card’s description and any success information shown in your client. For an egg, check whether its preview fixes the species or leaves a random result.** A high success chance in an early area does not establish the same chance for later targets, and one rare egg result cannot prove a guaranteed trait.
 
 This guide separates official regional reward rules from Korean community experiences. It does not contain verified capture coordinates, a complete species map or trait probabilities. Original names identify items in the cited edition; they do not establish official English names or equivalence between different regional names.
+
+
+## Where can you exchange for Kibo potential-training supplies?
+
+**The Traditional Chinese launch screenshots show a shop at the bottom left of 「危機討伐」.** [新葉綠素’s November 28 guide](https://forum.gamer.com.tw/C.php?bsn=79865&snA=787) pictures both the entrance and 「潛能訓練補給×100」. The item description says it is for Kibo potential training. Its panel shows 「本週限購：0/1」 alongside 「已售罄」 (sold out). The labels below are retained for comparison; they are not confirmed English-client names.
+
+1. Open the relevant hunt screen through the commission-related menu and look for 「商店」 at the bottom left. If it is locked, follow your current unlock prompt.
+2. Open the supplies and read their purpose, pack size, currency cost and weekly allowance. The pictured ×100 is the quantity in one pack. The 0/1 allowance together with “sold out” means that screenshot’s weekly purchase has already been used.
+3. Compare the item with your chosen Kibo’s training needs before exchanging. The author recommends stocking up, but also weigh your current material shortage, available currency and other urgent shop items.
+4. If it is sold out, check that item’s refresh timer. The post also describes items that refresh by version, so do not assume the whole shop restocks weekly.
+
+Potential-training supplies are separate from capture cards and egg outcomes. This source does not promise better capture odds, a guaranteed special variant or a specific personality. Read your current training screen for stat choices and consumption per use. Character advancement uses a different route, covered in the [material-source and weekly-boss steps](/en/systems/combat/#find-the-exact-upgrade-material-before-choosing-a-weekly-boss).
+
 
 ## Wild capture: when repeated attempts cost too much
 

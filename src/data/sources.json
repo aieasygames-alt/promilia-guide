@@ -2061,5 +2061,59 @@
         "note": "Read the original November 26 post and comments. Attributed PC menu, farming, processing and shop advice for the author’s edition; not an independently tested route, universal unlock table, profit benchmark or confirmed English nomenclature."
       }
     }
+  },
+  {
+    "id": "tc-community-weekly-materials-2026-11-28",
+    "title": "新叶绿素：换日换周提醒与培养物资入口",
+    "publisher": "巴哈姆特 / 新葉綠素（yeh0512）",
+    "kind": "community",
+    "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=787",
+    "publishedAt": "2026-11-28",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后玩家记录 / 2026-11-28",
+    "gameRegion": "繁中社区作者所用版本",
+    "status": "verified",
+    "note": "已读正文及可见评论，data-mtime为2026-11-28 10:44:32；查看危机讨伐入口、潜能训练补给详情、悖论的利爪详情三图。verified表示已核对原帖归因，不代表独立游戏实测。未采用统一重置时刻、全角色最优顺序、固定掉落、蛋概率或通用商店购买结论。",
+    "excerpt": "危机讨伐左下角商店；潜能训练补给×100说明用于奇波潜能训练，图示本周限购0/1且已售罄；悖论的利爪用于星赐临阶提升，来源为往厄残影。作者称周本每周3次，商店含周限购和版本更新。",
+    "evidenceFile": "research/2026-11-28-material-routes/README.md",
+    "localized": {
+      "ja": {
+        "title": "新葉綠素：週の回数・育成素材と交換先",
+        "publisher": "巴哈姆特 / 新葉綠素（yeh0512）",
+        "note": "本文・コメントと3枚の画像を確認。繁体字版作者の例で、日本版の正式名称・時刻・共通仕様や実機検証ではありません。"
+      },
+      "en": {
+        "title": "新葉綠素: weekly limits and upgrade-material sources",
+        "publisher": "Bahamut / 新葉綠素 (yeh0512)",
+        "note": "Read the original post and visible comments; inspected three screenshots showing the hunt shop, potential-training pack and advancement claw. Attributed regional evidence, not independent gameplay testing or confirmed English nomenclature."
+      }
+    }
+  },
+  {
+    "id": "tc-community-map-travel-2026-11-28",
+    "title": "偽物：委托与地图首领传送技巧",
+    "publisher": "巴哈姆特 / 偽物（gestapo123）",
+    "kind": "community",
+    "url": "https://forum.gamer.com.tw/C.php?bsn=79865&snA=808",
+    "publishedAt": "2026-11-28",
+    "checkedAt": "2026-11-28",
+    "gameVersion": "公测后玩家记录 / 2026-11-28",
+    "gameRegion": "繁中社区作者所用版本",
+    "status": "verified",
+    "note": "已读完整正文及两条评论，data-mtime为2026-11-28 17:11:54；查看村庄委托和红框首领两张地图截图，均显示传送按钮。只采用有前置与示例范围的操作路径，不推断所有首领可用、免费挑战、同名菜单或统一等级。",
+    "excerpt": "主线开放委托后，地图委托可传送夏露露村村口；红框首领示例鐵鬃霸主右侧面板底部有傳送。",
+    "evidenceFile": "research/2026-11-28-material-routes/README.md",
+    "localized": {
+      "ja": {
+        "title": "偽物：委託とマップボスの転送手順",
+        "publisher": "巴哈姆特 / 偽物（gestapo123）",
+        "note": "原文・コメントと2枚のマップ画像を確認。委託解放後の村入口と特定ボスの例で、日本版の名称や全ボス共通の条件は未確認です。"
+      },
+      "en": {
+        "title": "偽物: commission and map-boss teleport shortcuts",
+        "publisher": "Bahamut / 偽物 (gestapo123)",
+        "note": "Read the original post and comments and inspected both map screenshots. Shows a village shortcut after commissions unlock and one boss teleport example; does not establish universal boss access, free attempts or English names."
+      }
+    }
   }
 ]
