@@ -39,6 +39,7 @@ test('Metsa has published bilingual gameplay guidance with attributed sources', 
     await expect(page.locator('#equipment')).toContainText('慈悲の光');
     await expect(page.locator('#gameplay-sources a').first()).toHaveAttribute('href', 'https://game8.jp/azurpromilia/846242');
     await expect(page.locator('.entity-image')).toHaveAttribute('src', '/images/entities/characters/metsa-official.webp');
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://promiliaguide.com/images/entities/characters/metsa-official.webp');
     await page.locator('nav[aria-label="攻略の目次"], nav[aria-label="攻略目录"]').getByRole('link').first().click();
     await expect(page).toHaveURL(/#combat-loop$/);
   }

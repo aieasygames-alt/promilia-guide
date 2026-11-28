@@ -12,6 +12,12 @@ const asset = (name: string, width: number, height: number, smaller: number[] = 
 });
 // Artwork describes a scene; it does not verify gameplay rules or regional availability.
 export const visuals = {
+  'metsa-profile': {
+    src: '/images/entities/characters/metsa-official.webp', width: 1200, height: 1200,
+    variants: [400, 800, 1200].map(width => ({ src: `/images/entities/characters/metsa-official${width === 1200 ? '' : `-${width}w`}.webp`, width })),
+    alt: { 'zh-hans': 'メーツァ（Metsa）的日本官方角色形象', ja: 'メーツァの公式キャラクタービジュアル', en: 'Official Japanese character artwork of Metsa.' },
+    caption: { 'zh-hans': 'メーツァ（Metsa）· 日本官网角色素材', ja: 'メーツァ · 日本公式サイトのキャラクター画像', en: 'Metsa · Character artwork from the official Japan website' },
+  },
   'home-world': {
     ...asset('home-world', 1500, 843, [800]),
     alt: { 'zh-hans': '蓝色星原风景插画，展示山地、花田与角色。', ja: '山々、花畑、キャラクターを描いた「アズールプロミリア」の風景イラスト。', en: 'Azur Promilia landscape artwork with mountains, flowers and characters.' },
@@ -59,6 +65,7 @@ export const visualSrcSet = (id: VisualId) => visuals[id].variants.map(v => `${v
 
 // Only images rendered on these pages belong in their metadata and sitemap.
 export function pageVisuals(path: string): VisualId[] {
+  if (/^\/(zh-hans|ja)\/characters\/metsa\/$/.test(path)) return ['metsa-profile'];
   if (/^\/(zh-hans|ja|en)\/$/.test(path)) return ['home-world', 'holiday-illustration'];
   if (/^\/(zh-hans|ja|en)\/characters\/$/.test(path)) return ['character-ensemble', 'nono-profile', 'celebration-art'];
   if (/^\/(zh-hans|ja|en)\/kibo\/$/.test(path)) return ['kibo-companions', ...(path.startsWith('/en/') ? [] : ['kibo-showcase' as const])];
