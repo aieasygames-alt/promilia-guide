@@ -1,0 +1,10 @@
+---
+import { sources } from '../lib/facts';
+const source = sources.find(source => source.id === 'en-release-window-2026-10-13');
+if (!source?.url || source.status !== 'verified') throw new Error('English release answer requires a verified announcement');
+---
+<section class="notice" aria-labelledby="english-release-answer" data-release-answer>
+  <h2 id="english-release-answer">When is the Azur Promilia global English release?</h2>
+  <p><strong>The official English account targets summer 2027, subject to change. An exact release date has not been announced in the source checked here.</strong> Its <a href={source.url} target="_blank" rel="noopener noreferrer">October 13 announcement</a> gives a target season, with timing dependent on development progress.</p>
+  <p>Japan, mainland China, Korea and the Traditional Chinese edition have November 26, 2026 launch announcements. <strong>PlayPark SEA is a separate service taking preregistrations</strong>; its schedule does not follow automatically from the English target. Country eligibility, client languages and cross-region transfers need separate confirmation.</p>
+</section>

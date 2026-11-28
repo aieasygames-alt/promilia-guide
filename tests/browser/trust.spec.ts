@@ -67,7 +67,7 @@ test('unreviewed details are explicitly excluded from indexing and CV claims', a
 
 test('pending entity revisions are readable in preview while remaining outside search', async ({ page }) => {
   for (const locale of ['zh-hans', 'ja']) {
-    for (const path of ['characters/metsa', 'kibo/cabbird']) {
+    for (const path of ['kibo/cabbird']) {
       await page.goto(`/${locale}/${path}/`);
       await expect(page.locator('[data-entity-detail][data-detail-status="draft"]')).toBeVisible();
       await expect(page.locator('[data-entity-detail] p')).toHaveCount(3);

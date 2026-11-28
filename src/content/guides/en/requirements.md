@@ -3,10 +3,8 @@ contentId: requirements
 locale: en
 slug: requirements
 section: guides
-title: "Azur Promilia Requirements: PC, Android, iOS & Storage"
-description: "Azur Promilia PC, Android and iPhone requirements. Compare
-  regional hardware specs and recommended free storage: at least 55GB on mobile
-  and 120GB on PC."
+title: "Azur Promilia System Requirements & Size: PC, Android, iOS"
+description: "Azur Promilia system requirements and size: PC, Android and iOS specs, 120GB PC / 55GB mobile recommended free space, and what is known about download size."
 author: Promilia Guide
 publishedAt: "2026-11-25"
 updatedAt: "2026-11-28"
@@ -58,6 +56,9 @@ aliases:
   - Azur Promilia
   - azurpromilia
   - azure promilia
+  - Azur Promilia size
+  - Azur Promilia system requirements
+  - Azur Promilia spec requirements
   - Azur Promilia storage
   - Azur Promilia minimum specs
 related:
@@ -104,13 +105,17 @@ order: 3
 minutes: 8
 readerUpdates:
   - date: "2026-11-28"
+    note: Added a direct specs summary and a comparison of download, installed and recommended free-space figures.
+  - date: "2026-11-28"
     note: "Clarified maintenance and account checks when a completed download will not log in."
   - date: "2026-11-28"
     note: Shortened store-size explanations and clarified storage and
       troubleshooting advice.
 ---
 
-The hardware tables and 55GB-mobile/120GB-PC recommendations are sourced to Japan and China. Korea and Traditional Chinese downloads do not establish identical requirements. SEA device information is unannounced in its FAQ. Check the [regional edition and source](/en/guides/global-release/) first.
+**Prepare at least 120GB of free space on PC or 55GB on Android/iOS for the Japan and mainland China editions, as recommended by their launch FAQs. These are free-space recommendations, not confirmed download or installed sizes.** The PC minimum includes Windows 10 64-bit, Core i5-9400F, GTX 1060 and 16GB RAM; the full PC, Android and iOS tables are below.
+
+Korea and Traditional Chinese downloads do not establish identical requirements. SEA device information is unannounced in its FAQ. Check the [regional edition and source](/en/guides/global-release/) first.
 
 ## How much storage does Azur Promilia need?
 
@@ -125,6 +130,17 @@ The China FAQ also recommends at least 55GB free for HarmonyOS. Keep that platfo
 | HarmonyOS, China FAQ only | At least 55GB | China's separately listed platform recommendation |
 
 Sources: [Japan launch FAQ](https://azurpromilia.jp/contact) and [China launch FAQ](https://azurpromilia.manjuu.com/home/news/detail/912070871064121344/), checked independently on November 24, 2026.
+
+## Download size versus installed size
+
+| Number you see | Where to check | How to use it |
+| --- | --- | --- |
+| Store app or launcher download | Your regional store or official launcher | Initial package only; additional game resources may follow |
+| Additional-resource download | The game’s current download prompt | Data still to transfer for that client version; not a universal total |
+| Installed size | Device storage settings or the game folder after updating | Files currently on that device; language resources and updates can change it |
+| Recommended free space | The regional launch FAQ | Prepare 55GB on mobile or 120GB on PC for Japan/China; temporary update space is not separately measured here |
+
+The [Japan FAQ](https://azurpromilia.jp/contact), rechecked November 28, says to read the additional-data size in game. This guide has no complete, versioned installation measurement. A small store download is therefore insufficient evidence that the whole game will fit in that amount of space.
 
 ## Four checks before you download
 

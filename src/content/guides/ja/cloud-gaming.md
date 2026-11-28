@@ -3,8 +3,8 @@ contentId: cloud-gaming
 locale: ja
 slug: cloud-gaming
 section: guides
-title: アズールプロミリアの中国本土クラウド版｜Mac・無料時間
-description: 中国本土の公式クラウド版「云·蓝色星原」を解説。Macのブラウザ、iOS・Androidの条件、初回600分・毎日15分・累積上限、購入特典を確認。日本版の対応とは区別します。
+title: アズールプロミリアはMacで遊べる？日本版の対応とクラウド版
+description: 日本版の公式対応機種はWindows・Android・iOS。Mac版の案内は未確認です。macOSブラウザを案内する中国本土クラウド版とは、アカウント・データ・無料時間を分けて解説。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
@@ -14,6 +14,7 @@ verification: official
 status: published
 sourceRefs:
   - cn-cloud-launch-2026-11-26
+  - jp-launch-faq-2026-11-24
 claimRefs:
   - cn-cloud-gaming-launch
 claimRevisions:
@@ -42,12 +43,26 @@ revisions:
     note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
 readerUpdates:
   - date: "2026-11-28"
+    note: 日本版のMac対応と中国本土クラウド版の違いを冒頭の比較表にまとめました。
+  - date: "2026-11-28"
     note: "日本版と中国本土のクラウド利用範囲を分かりやすくしました。"
   - date: "2026-11-28"
     note: 出典確認の説明を整理し、Macの入口・無料時間・対象地域を読みやすくしました。
 ---
 
-## Macで遊べる？中国本土の公式クラウド版について
+## 日本版アズールプロミリアはMacに対応している？
+
+**日本公式FAQが案内する対応機種はWindows・Android・iOSです。Mac向けの通常クライアントや、日本版をMacで遊べる公式クラウドサービスは、確認した案内にはありません。** 11月28日に[日本公式FAQ](https://azurpromilia.jp/contact)を再確認しました。Macで日本版の続きを遊びたい場合、まず対応端末とYostar IDを確認してください。
+
+| 遊びたい版・方法 | 確認できた案内 | セーブデータの扱い |
+| --- | --- | --- |
+| 日本版の通常クライアント | Windows・Android・iOS | 同じアカウントなら、この3機種間で進行状況を共有 |
+| 日本版をMacでプレイ | 公式のMac版・クラウド対応は未確認 | 中国本土クラウドへの引継ぎは確認できません |
+| 中国本土のクラウド版 | macOSのパソコン向けブラウザを案内 | 中国本土サービスのアカウント条件を別に確認 |
+
+Apple SiliconのMacでiOSアプリを使う方法や、Windows互換環境での動作も、このFAQからは保証できません。日本版の公式入口は[ダウンロード案内](/ja/guides/download/)、対応端末の詳細は[必要スペック](/ja/guides/requirements/)をご覧ください。
+
+## Macのブラウザを案内する中国本土クラウド版
 
 **中国本土の公式サイトは11月26日、「云·蓝色星原」のAndroid・iOSアプリとパソコン向けブラウザ版の提供開始を発表しました。** 推奨ブラウザにはmacOS向けのSafariなども含まれます。[公式クラウドサイト](https://azurpromilia.manjuu.com/cloudgame)と[ダウンロードページ](https://azurpromilia.manjuu.com/cloudgame/download)が案内されています。
 

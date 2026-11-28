@@ -2196,5 +2196,57 @@
     "gameRegion": "中国大陆公测作者记录；其他地区名称与条件分别对照",
     "status": "verified",
     "evidenceFile": "research/2026-11-28-character-depth/README.md"
+  },
+  {
+    "id": "jp-game8-metsa-build-2026-11-28",
+    "title": "Game8：メーツァの評価・使い方・アニマと装備",
+    "publisher": "Game8 / アズプロ攻略班",
+    "kind": "community",
+    "url": "https://game8.jp/azurpromilia/846242",
+    "publishedAt": null,
+    "checkedAt": "2026-11-28",
+    "gameVersion": "日本公测后攻略 / 页面更新2026-11-28 21:11",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "核对原文玩法、配队、アニマ和装备推荐。第三方攻略，不是官方技能公告或本站实机测试；不搬运原站图片，不将日文名称自行映射为国服官方译名。",
+    "excerpt": "種を拾ってチームを回復・強化。通常攻撃3段目は蝶生の種、星響は霊木の種、チャージで回収。塗山小玉・メイプルとの編成、新生／木漏れ日の眼差し、旅路の錬磨／慈悲の光を推奨。",
+    "evidenceFile": "research/2026-11-28-query-intent/README.md",
+    "localized": {
+      "ja": {
+        "title": "Game8：メーツァの評価とおすすめアニマ・装備",
+        "note": "日本向け第三者攻略。回復と種の回収、編成、アニマと装備の推奨を確認。実機検証や公式推奨ではありません。"
+      },
+      "en": {
+        "title": "Game8: Metsa playstyle, Anima and equipment recommendations",
+        "publisher": "Game8 / Azur Promilia guide team",
+        "note": "Third-party Japan guide checked November 28. Recommendations are attributed; no independent gameplay testing or official build endorsement is claimed."
+      }
+    }
+  },
+  {
+    "id": "jp-metsa-official-art-2026-11-28",
+    "title": "日本官网：メーツァ官方角色图片",
+    "publisher": "Yostar / 日本官方网站",
+    "kind": "official",
+    "url": "https://webusstatic.yo-star.com/azurpromilia-jp/azurpromilia-jp-official-2026/prod/azurpromiliajpofficial2026/assets/bg-runtime-CZJgdu2g.webp",
+    "publishedAt": null,
+    "checkedAt": "2026-11-28",
+    "gameVersion": "官网角色素材 / 2026-11-28",
+    "gameRegion": "日本",
+    "status": "verified",
+    "note": "日本官网加载的character-Dgl2-lVw.js将r4角色记录与englishName METSA、nameText メーツァ、该角色背景图和头像绑定。记录含hidden:true，不据此推定官网可见名单、当前卡池或实装条件。替换本站只有装饰框的旧占位图；裁切和尺寸压缩，不生成新角色图。",
+    "excerpt": "id:r4; englishName:METSA; nameText:メーツァ; roleImg.bg:bg-runtime-CZJgdu2g.webp; avatar:avatar-D8mr6duj.png; hidden:true.",
+    "evidenceFile": "research/2026-11-28-query-intent/README.md",
+    "localized": {
+      "ja": {
+        "title": "日本公式サイト：メーツァのキャラクター画像",
+        "note": "公式サイトが配信するキャラクターデータ内の名前と画像の対応を確認。現在の排出対象や実装条件を示す資料ではありません。"
+      },
+      "en": {
+        "title": "Official Japan website: Metsa character artwork",
+        "publisher": "Yostar / official Japan website",
+        "note": "Name-to-art mapping verified in the official site’s character resources. This does not establish current availability or banner eligibility."
+      }
+    }
   }
 ]

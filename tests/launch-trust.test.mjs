@@ -101,6 +101,17 @@ test('officially announced codes can retain incomplete fields without becoming a
 
 const entity = { id: 'fixture', kind: 'character', catalogStatus: 'verified', revision: 2, sourceRefs: { 'zh-hans': source.id, ja: source.id }, detailContent: { 'zh-hans': 'Useful guide', ja: 'Useful translation' }, detailReview: Object.fromEntries(['zh-hans', 'ja'].map(locale => [locale, { status: 'published', reviewer: 'Fixture reviewer', reviewedAt: '2026-11-21', revision: 2, translatedFromRevision: 2, sourceChecks: { [source.id]: source.checkedAt } }])) };
 
+test('entity gameplay sources must remain verified and match the reviewed version', () => {
+  const guide = { ...source, id: 'third-party-guide', kind: 'community' };
+  const reviewed = { ...entity, detailSourceRefs: [guide.id], detailReview: Object.fromEntries(['zh-hans', 'ja'].map(locale => [locale, { ...entity.detailReview[locale], sourceChecks: { ...entity.detailReview[locale].sourceChecks, [guide.id]: guide.checkedAt } }])) };
+  for (const locale of ['zh-hans', 'ja']) {
+    assert.equal(isEntityDetailPublishable(reviewed, locale, [source, guide]), true);
+    assert.equal(isEntityDetailPublishable(reviewed, locale, [source]), false);
+    for (const patch of [{ status: 'unavailable' }, { checkedAt: '2026-11-22' }, { excerpt: '' }]) assert.equal(isEntityDetailPublishable(reviewed, locale, [source, { ...guide, ...patch }]), false);
+  }
+  assert.deepEqual(entityImpact([reviewed], guide.id), ['/zh-hans/characters/fixture/', '/ja/characters/fixture/']);
+});
+
 test('entity details need body, current bilingual review and matching source checks', () => {
   for (const locale of ['zh-hans', 'ja']) {
     assert.equal(isEntityDetailPublishable(entity, locale, [source]), true);
