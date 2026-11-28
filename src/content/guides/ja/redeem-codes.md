@@ -8,7 +8,7 @@ description: 日本公式のAZPR1126を確認。設定→アカウント→引�
 author: Promilia Guide 編集部
 publishedAt: "2026-11-15"
 updatedAt: "2026-11-28"
-gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
+gameVersion: 正式サービス版
 gameRegion: 中国本土・日本（地域別に記載）
 verification: editorial
 status: published
@@ -18,7 +18,7 @@ sourceRefs:
   - jp-contact-instructions-2026-11-21
   - jp-redeem-azpr1126-2026-11-26
   - jp-thanks-mail-2026-11-27
-sourceRevision: 7
+sourceRevision: 8
 translationStatus: published
 aliases:
   - アズールプロミリア シリアルコード
@@ -55,7 +55,9 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-28"
     note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
-translatedFromRevision: 7
+  - date: "2026-11-28"
+    note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
+translatedFromRevision: 8
 claimRefs:
   - cn-kibo-web-rewards
   - jp-kibo-web-rewards
@@ -64,6 +66,9 @@ claimRevisions:
   jp-kibo-web-rewards: 1
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 日本公式コード、入力場所、期限をまとめ、メール特典と分けて説明しました。
 ---
 
 ## 日本公式コードAZPR1126の入力場所
@@ -112,6 +117,6 @@ reviewedAt: "2026-11-28"
 
 感謝ギフトはメールで受け取る案内です。コードとは別に確認してください。
 
-### 報酬数と時刻の換算がないのはなぜ？
+### 何がもらえますか？
 
-原文にない値を補わないためです。確認できた文字列と入力方法を公開し、詳細は公式・ゲーム内結果に従います。
+公式の投稿には報酬の数量が記載されていません。入力後のゲーム内表示と配布先をご確認ください。

@@ -4,11 +4,12 @@ locale: en
 slug: cloud-gaming
 section: guides
 title: "Azur Promilia Cloud Gaming: Mac, Free Time & Mobile"
-description: "Check Azur Promilia cloud gaming on Mac and mobile: official China links, 600 free minutes, daily time, device requirements and regional limits."
+description: "Check Azur Promilia cloud gaming on Mac and mobile: official China
+  links, 600 free minutes, daily time, device requirements and regional limits."
 author: Promilia Guide
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: November 26, 2026 official cloud launch notice
+updatedAt: "2026-11-28"
+gameVersion: Launch version
 gameRegion: Mainland China official cloud service
 verification: official
 status: published
@@ -18,11 +19,11 @@ claimRefs:
   - cn-cloud-gaming-launch
 claimRevisions:
   cn-cloud-gaming-launch: 1
-sourceRevision: 1
-translatedFromRevision: 1
+sourceRevision: 2
+translatedFromRevision: 2
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
 aliases:
   - Azur Promilia Mac
   - Azur Promilia cloud gaming
@@ -36,14 +37,25 @@ order: 3.5
 minutes: 7
 revisions:
   - date: "2026-11-26"
-    note: Created from the November 26 China cloud announcement. Publication authorized by the project owner’s request to continue content development and the standing deployment instruction; no independent native-language review, login or gameplay test is claimed.
+    note: Created from the November 26 China cloud announcement. Publication
+      authorized by the project owner’s request to continue content development
+      and the standing deployment instruction; no independent native-language
+      review, login or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
+readerUpdates:
+  - date: "2026-11-28"
+    note: Shortened source-check explanations and clarified Mac access, free time
+      and regional scope.
 ---
 
 ## Can you play Azur Promilia on Mac or in a browser?
 
 **The mainland China publisher announced its official cloud version, 云·蓝色星原, on November 26, 2026, with Android and iOS apps and a computer browser service. Its recommended browsers explicitly include macOS.** Start at the [official China cloud site](https://azurpromilia.manjuu.com/cloudgame), or use its [download page](https://azurpromilia.manjuu.com/cloudgame/download) for the mobile cloud apps.
 
-This guide is for readers considering a Mac browser session, a smaller mobile installation, or the cloud service's free time. It explains the [China launch notice](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/). The announcement does not establish a Japan cloud service, a global English release, or an English game client. We checked public information and entry pages; we have not logged in, queued, streamed the game or measured performance.
+The [China launch notice](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) covers Mac browser play, mobile cloud apps and free time for China’s service. Japan cloud availability and English client support are unconfirmed. The details below come from public notices; we have not tested cloud gameplay or performance.
 
 ## Supported cloud devices and recommended browsers
 
@@ -84,7 +96,7 @@ The official notice lists qualifying products bought in the regular game, the cl
 
 The last row describes the upgrade purchase. It is not evidence that directly buying 游记拾遗 also grants an additional 21 days beyond its listed 42. The paragraph does not establish repeat-purchase stacking, activation timing or refund handling. Read the current product details before purchasing; this table is a reference for checking an entitlement, not a recommendation to buy an item for cloud time.
 
-Keep cloud time separate from [launch rewards and mail](/en/guides/resources/). A play-time allowance is not a redeem code or a number of limited-banner pulls. The notice also does not establish that a purchase in a different regional edition qualifies.
+Cloud play time is separate from [launch rewards and mail](/en/guides/resources/). These purchase benefits apply to the China service; eligibility for purchases in other regional editions is unconfirmed.
 
 ## Before using cloud gaming for a storage problem
 
@@ -110,4 +122,4 @@ The announcement marks the browser service as computer-only and lists separate A
 
 ### Does the launch announcement guarantee an immediate login?
 
-No. The publisher has announced cloud availability and also warns about peak-time queues. We have not tested login, network quality or saved progress. Check current service notices and the displayed error or queue state; do not treat a queue as proof that the regular client files need repair.
+No. The publisher warns of peak-time queues. Check the current service notice and your queue or error message before retrying. A cloud queue does not call for repairing the regular game client.

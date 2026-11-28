@@ -101,11 +101,11 @@ test('missing translation goes to explicit target language home', async ({ page 
   await expect(page).toHaveURL(/\/ja\/$/);
 });
 
-test('combat preview provides a bilingual, actionable first-run record and links from home', async ({ page }) => {
-  for (const [locale, title] of [['zh-hans', '战斗与元素入门'], ['ja', '戦闘と元素の入門']]) {
+test('combat guide helps troubleshoot skill input and links from home', async ({ page }) => {
+  for (const [locale, title] of [['zh-hans', '战斗卡点排查'], ['ja', '戦闘の困りごと']]) {
     await page.goto(`/${locale}/systems/combat/`);
     await expect(page.locator('h1')).toContainText(title);
-    await expect(page.locator('.prose')).toContainText(/记录|記録/);
+    await expect(page.locator('.prose')).toContainText(locale === 'ja' ? 'スキルが発動しない' : '技能按了没反应');
     await expect(page.locator('[data-checklist="combat"] input')).toHaveCount(5);
     await page.goto(`/${locale}/`);
     await expect(page.locator('.toolkit-grid a').nth(2)).toHaveAttribute('href', `/${locale}/systems/combat/`);

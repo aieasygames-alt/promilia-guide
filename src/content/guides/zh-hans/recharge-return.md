@@ -7,14 +7,14 @@ title: 蓝色星原测试充值返还：比例、查询入口、凭证与领取�
 description: 国服旅迹测试充值返还按200%／150%／125%分段计算，原账号邮箱领取。核对查询入口、渠道与iOS、飞信订约和游记凭证，以及两个365天的区别。
 author: Promilia Guide 编辑部
 publishedAt: "2026-11-24"
-updatedAt: "2026-11-24"
-gameVersion: 公测前 / 2026-11-24 旅迹测试返还FAQ
+updatedAt: "2026-11-28"
+gameVersion: 国服旅迹测试充值返还（公测领取）
 gameRegion: 中国大陆（旅迹测试充值玩家；不适用于日本）
 verification: official
 status: published
 sourceRefs:
   - cn-launch-returns-rewards-2026-11-24
-sourceRevision: 1
+sourceRevision: 2
 translationStatus: published
 aliases:
   - 蓝色星原充值返还
@@ -33,12 +33,17 @@ revisions:
     note: 按国服FAQ第3节建立独立测试返还指南，分开分段星虹、凭证、账号渠道和邮件期限。算术示例为编辑计算，未查询个人账单，正文与译文待审。
   - date: "2026-11-24"
     note: 项目负责人在本会话明确要求全部开发内容上线并做好线上验证。记录当前正文与译文的本次发布确认，不另称独立语言校阅或正式版实机完成，未核实事项继续保留边界。
+  - date: "2026-11-28"
+    note: 按本轮用户要求审计并改写玩家正文与本地化表达；沿用既有开发上线授权，不记为独立语言审校或游戏实测。
 claimRefs:
   - cn-test-recharge-return
 claimRevisions:
   cn-test-recharge-return: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-24"
+reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 精简流程性说明，保留原账号、分段比例与领取期限。
 ---
 
 ## 测试充值返还怎么领？用原账号，邮箱开放后领取
@@ -116,9 +121,9 @@ FAQ说明两类购买金额计入总充值，按上面的星虹规则返还，**
 
 ## 去哪查测试金额？返还没到账怎么排查？
 
-FAQ说明可从[国服官网](https://azurpromilia.manjuu.com/home/)的「充值返还查询」入口登录查询；本轮首页实际按钮写「充值返利查询」。该查询只支持蛮啾通行证，页面数据可能有延迟。bilibili等渠道的测试充值数据需联系对应渠道客服。本轮确认按钮可见，但点击未取得查询结果页，未验证登录或个人数据。
+从[国服官网](https://azurpromilia.manjuu.com/home/)的「充值返利查询」入口登录查询。该入口仅支持蛮啾通行证，数据可能有延迟；bilibili等渠道玩家请联系对应渠道客服。
 
-1. 确认正式服务已经开放，而非只有预下载开放；本次FAQ计划不能替代[当前开服信息](/zh-hans/guides/launch/)。
+1. 先查[当前地区状态](/zh-hans/guides/launch/)，排除维护导致的登录问题。
 2. 对照原充值账号、官方／渠道身份和当前客户端，确认没有用新账号或别的渠道。
 3. 确认角色已创建且邮箱功能已开放；邮箱未解锁不能按邮件列表判断返还缺失。
 4. 将星虹分段返还与两类凭证分别核对，抄录邮件标题、附件原名、数量、领取状态及有效期。

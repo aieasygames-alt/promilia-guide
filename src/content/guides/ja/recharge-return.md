@@ -7,14 +7,14 @@ title: アズールプロミリア中国本土テスト課金返還：割合・�
 description: 中国本土「旅迹测试」の課金返還を解説。区間別200%・150%・125%、元アカウント、チャネル・iOS、証票、2種類の365日期限を確認。日本版とは別制度です。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-24"
-updatedAt: "2026-11-26"
-gameVersion: 中国本土版の正式サービス開始前 / 2026-11-24 テスト返還FAQ
+updatedAt: "2026-11-28"
+gameVersion: 中国本土・旅迹测试の課金返還（正式版で受取）
 gameRegion: 中国本土（旅迹测试課金者のみ、日本版対象外）
 verification: official
 status: published
 sourceRefs:
   - cn-launch-returns-rewards-2026-11-24
-sourceRevision: 1
+sourceRevision: 2
 translationStatus: published
 aliases:
   - 中国版 課金返還
@@ -34,13 +34,18 @@ revisions:
     note: プロジェクト責任者が本会話で全開発内容の公開と公開後検証を明示。現在の本文・訳文を対象とする公開確認を記録。別途の独立言語校閲や正式版の実操作を完了したとは記録せず、未確認事項は維持。
   - date: "2026-11-26"
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
+  - date: "2026-11-28"
+    note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
 claimRefs:
   - cn-test-recharge-return
 claimRevisions:
   cn-test-recharge-return: 1
-translatedFromRevision: 1
+translatedFromRevision: 2
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 説明を簡潔にし、元のアカウント・区間別割合・受取期限を確認しやすくしました。
 ---
 
 ## 中国本土テストの課金返還：元のアカウントでメール受取

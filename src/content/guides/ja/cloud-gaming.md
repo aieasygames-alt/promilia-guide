@@ -7,8 +7,8 @@ title: アズールプロミリアの中国本土クラウド版｜Mac・無料�
 description: 中国本土の公式クラウド版「云·蓝色星原」を解説。Macのブラウザ、iOS・Androidの条件、初回600分・毎日15分・累積上限、購入特典を確認。日本版の対応とは区別します。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-gameVersion: 2026-11-26 中国本土のクラウド版告知
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス版
 gameRegion: 中国本土の公式クラウドサービス
 verification: official
 status: published
@@ -18,11 +18,11 @@ claimRefs:
   - cn-cloud-gaming-launch
 claimRevisions:
   cn-cloud-gaming-launch: 1
-sourceRevision: 1
-translatedFromRevision: 1
+sourceRevision: 2
+translatedFromRevision: 2
 translationStatus: published
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
 aliases:
   - アズールプロミリア Mac
   - アズプロ クラウド
@@ -36,6 +36,11 @@ minutes: 7
 revisions:
   - date: "2026-11-26"
     note: 依据11月26日中国大陆官方云游戏公告新建，保留地区、原生版本及实测边界。项目负责人要求继续补充并沿用既有上线授权；此处记录发布确认，不另称独立语言审核或实机测试。
+  - date: "2026-11-28"
+    note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
+readerUpdates:
+  - date: "2026-11-28"
+    note: 出典確認の説明を整理し、Macの入口・無料時間・対象地域を読みやすくしました。
 ---
 
 ## Macで遊べる？中国本土の公式クラウド版について
@@ -68,7 +73,7 @@ revisions:
 
 単純な計算例として、受取前の残り時間が590分で、ほかの消費や変化がなければ、15分分の付与は上限600分により最大10分の増加となります。600分の状態から615分に増える規則ではありません。この例は告知の上限に基づく計算で、実際の残高変化や計時順序を検証したものではありません。
 
-待機中に時間が減るか、切断後の計時、無料分と有料特典の消費順、残高の有効期限、全料金表は今回の告知だけでは分かりません。利用前に現在のクラウド側の規約を読み、[クラウド利用記録シート](/downloads/cloud-gaming-ja.txt)で開始前後の表示を記録してください。
+待機中に時間が減るか、切断後の計時、無料分と有料特典の消費順、残高の有効期限、全料金表は今回の告知だけでは分かりません。利用前に現在の料金・時間消費のルールをご確認ください。残り時間を控えたい場合は、[クラウド利用メモ](/downloads/cloud-gaming-ja.txt)を使えます。
 
 ## 指定商品の購入に付く「畅玩卡」
 

@@ -13,8 +13,8 @@ test('bilingual database and FAQ connect actual profiles, answers and guides on 
     await expect(page.locator('#q-home-unlock')).toHaveAttribute('open', '');
     await expect(page.locator('[data-faq-id]')).toHaveCount(33);
     await expect(page.locator('[data-answer-current="false"]')).toHaveCount(0);
-    await expect(page.locator('#q-pvp')).toContainText(locale === 'ja' ? '判断できません' : '判断');
-    await expect(page.locator('#q-home-unlock')).toContainText(locale === 'ja' ? '未検証' : '未实测');
+    await expect(page.locator('#q-pvp')).toContainText(locale === 'ja' ? '未確認' : '尚不能确认');
+    await expect(page.locator('#q-home-unlock')).toContainText(locale === 'ja' ? '未確認' : '尚未确认');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.locator('#q-home-unlock a').click();
     await expect(page).toHaveURL(new RegExp(`/${locale}/systems/home/`));
@@ -43,7 +43,8 @@ test('updates show latest releases first and consolidate official announcement l
   for (const locale of ['zh-hans', 'ja']) {
     await page.goto(`/${locale}/updates/`);
     await expect(page.locator('[data-site-update]').first()).toHaveAttribute('data-site-update', '2026-11-28');
-    await expect(page.locator('[data-site-update]').first()).toContainText('41');
+    await expect(page.locator('[data-site-update]').first()).toContainText(locale === 'ja' ? '読みやすく' : '阅读体验');
+    await expect(page.locator('[data-site-update]').first().locator(`a[href="/${locale}/guides/getting-started/"]`)).toBeVisible();
     const links = await page.locator('[data-announcement-url]').evaluateAll(nodes => nodes.map(node => node.getAttribute('data-announcement-url')!.replace(/\/$/, '')));
     expect(links.length).toBe(new Set(links).size);
     const dates = await page.locator('[data-announcement-url] time').allTextContents();
@@ -57,7 +58,7 @@ test('FAQ works without JavaScript and new hub content is searchable in the matc
     const offline = await context.newPage();
     await offline.goto('/ja/faq/');
     await offline.locator('#q-home-unlock summary').click();
-    await expect(offline.locator('#q-home-unlock')).toContainText('未検証');
+    await expect(offline.locator('#q-home-unlock')).toContainText('未確認');
     await offline.locator('#q-home-unlock a').click();
     await expect(offline).toHaveURL(/\/ja\/systems\/home\//);
   } finally { await context.close(); }

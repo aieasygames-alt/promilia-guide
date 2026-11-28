@@ -233,3 +233,5 @@ npm run site:verify -- --url https://promiliaguide.com --mode production --redir
 推送 main 后，`Validate site / Verify production deployment` 在质量检查通过后自动等待本次 SHA 的 Cloudflare Pages 生产检查成功，并等待主域名提供相同 SHA 的 production 清单，再检查全部页面和 15 组域名跳转。不以固定延时或旧站 200 判断部署成功；失败会使 Actions 失败，并保留部署信息与逐项报告。main 已前进时旧任务会跳过或被新任务取消。
 
 `.github/workflows/verify-deployment.yml` 保留手动入口，可填写完整 `expected_commit` 和启用 `verify_redirects`，用于重查与回滚验收。CLI 对应 `--commit FULL_SHA`、`--redirects`；后者只接受正式主域名 production 模式。验收均只读取站点，不创建部署或更改 DNS，也不能替代人工正文/日语审核、真实设备与目标网络验收。实际执行结果见 `plans/DEPLOYMENT-LOG.md`。
+
+2026-11-28 全站完成一轮玩家阅读表达与三语本地化整理，详见[逐页审计与改造记录](research/2026-11-28-player-language-audit/README.md)。文章的 `readerUpdates` 用于公开显示读者可用的内容变化，原 `revisions` 保留内部编辑历史；不要把授权、构建或研究日志写入玩家攻略。`npm run audit:copy` 检查生产HTML中的内部流程措辞，已纳入 `verify:release` 与CI。

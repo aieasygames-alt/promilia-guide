@@ -7,8 +7,8 @@ title: アズールプロミリアのPC版・対応機種｜PS5・Steam・デー
 description: 日本公式FAQはPC・Android・iOSの同一アカウントでのプレイデータ共有を案内。Yostarランチャー、Steam・PS5、地域と有償通貨の確認範囲を整理。
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
-updatedAt: "2026-11-26"
-gameVersion: 正式サービス開始前 / 2026-11-24 公式FAQ照合
+updatedAt: "2026-11-28"
+gameVersion: 正式サービス版
 gameRegion: 中国本土・日本（地域別に記載）
 verification: official
 status: published
@@ -35,7 +35,7 @@ sourceRefs:
   - jp-preload-open-2026-11-24
   - jp-pc-download-page-2026-11-24
   - cn-cloud-launch-2026-11-26
-sourceRevision: 12
+sourceRevision: 13
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -86,7 +86,9 @@ revisions:
     note: 多言語監査を反映し、日本語の表現・農園用語・地域別の案内順を修正。プロジェクト責任者の開発・公開指示に基づく更新で、独立した言語校閲や実機検証を完了したという記録ではありません。
   - date: "2026-11-26"
     note: 补入中国大陆官方云游戏与Mac网页方式，区分云配置、原生客户端及日本版本。项目负责人本轮继续开发及既有部署授权适用当前修订，不声称登录或独立语言审核。
-translatedFromRevision: 12
+  - date: "2026-11-28"
+    note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
+translatedFromRevision: 13
 claimRefs:
   - cn-ios-store
   - cn-ios-compatibility
@@ -128,7 +130,10 @@ claimRevisions:
   jp-public-launch-platform-rules: 1
   cn-cloud-gaming-launch: 1
 reviewer: 项目负责人（会话发布确认）
-reviewedAt: "2026-11-26"
+reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 古い事前ダウンロードの説明を整理し、対応機種とデータ共有を探しやすくしました。
 ---
 
 ## 対応機種とデータ共有は？
@@ -144,16 +149,15 @@ reviewedAt: "2026-11-26"
 
 上の早見表は日本・中国本土のPC、Android、iPhone/iPadの6行です。中国本土FAQの鴻蒙は独立項目で、Android用リンクを代用しません。
 
-
 ## Mac・容量不足と中国本土のクラウド版
 
 11月26日の[中国本土公式告知](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/)は「云·蓝色星原」の提供開始を案内しています。パソコンのブラウザにはmacOSも記載され、モバイルにはAndroid・iOSのクラウドアプリがあります。日本版のクラウド対応やネイティブMac版を発表したものではありません。
 
-[中国本土クラウド版ガイド](/ja/guides/cloud-gaming/)で入口、初回600分・毎日15分・無料分の累積上限600分を確認できます。通常版の動作環境と別に読み、Yostar IDでの利用や日本のデータ引継ぎは推測しないでください。当サイトではログインと通信品質を未検証です。
+[中国本土クラウド版ガイド](/ja/guides/cloud-gaming/)で入口、初回600分・毎日15分・無料分の累積上限600分を確認できます。通常版の動作環境と別に読み、Yostar IDでの利用や日本のデータ引継ぎは推測しないでください。
 
 ## 日本PC版の入手経路
 
-日本FAQの説明は、公式サイトのダウンロードページ → Yostar公式ランチャー → 本体取得 → ゲーム起動後の追加データ取得です。[公式Windows専用ページ](https://azurpromilia.jp/PCdownload)とYostarランチャー1.8.1のリンクを確認済みです。ファイルへのHEAD取得は403で、ファイル自体の取得・実行は未実施です。
+日本FAQの説明は、公式サイトのダウンロードページ → Yostar公式ランチャー → 本体取得 → ゲーム起動後の追加データ取得です。[公式Windows専用ページ](https://azurpromilia.jp/PCdownload)とYostarランチャー1.8.1のリンクを確認済みです。公式ページの案内に従ってインストールしてください。
 
 スマホは日本公式からGoogle PlayまたはApp Storeへ進みます。スマホ向け登録ページをPC用インストーラーとしては扱いません。現在の入口と本体・追加データの手順は[ダウンロード案内](/ja/guides/download/)へ。
 
@@ -169,12 +173,6 @@ reviewedAt: "2026-11-26"
 2. 端末を正式要件と比較。日本版はPC120GB以上、Android/iOS55GB以上の空き容量を推奨。中国本土の鴻蒙も55GB以上です。[動作環境](/ja/guides/requirements/)を確認してください。
 3. 正式クライアントと追加データを取得。インストールとログイン可能は別の状態です。
 4. 目的のキャラクターと進行を確認し、購入履歴、有償通貨、イベント特典は個別に調べます。「プレイデータ共有」だけでは全権利が共有されると判断しません。
-
-## 事前DL開始の発表とサービス開始予定
-
-日本は11月24日16:00、中国本土は同日15:00（UTC+8）の事前DL開始を発表済みです。正式サービスは日本が26日11:00（日本時間）、中国本土が同日10:00（UTC+8）予定です。[開始時刻](/ja/guides/launch/)で時差と状態を確認してください。
-
-予定は実際の配布・ログイン成功を証明しません。巣穴イベントの登録任務切り替えは事前DL予定時刻で、報酬の期限は[受取案内](/ja/guides/resources/)へ。
 
 ## PC・Steam・PS5のよくある質問
 
@@ -193,7 +191,3 @@ reviewedAt: "2026-11-26"
 ### 日本版は鴻蒙に対応していますか？
 
 日本FAQに鴻蒙の記載はありません。中国本土のプラットフォームを日本版や繁体字版へ適用せず、[地域別の入口](/ja/guides/global-release/)から確認します。
-
-## 事前DL開始後の公式入口と確認範囲
-
-[日本の開始公告](https://azurpromilia.jp/news/5191)と[中国本土の開始公告](https://azurpromilia.manjuu.com/home/news/detail/912088789906755584)を別々に確認しました。日本PCは[公式Windowsページ](https://azurpromilia.jp/PCdownload)へ。中国本土の公式サイトはPC・Androidボタンを表示していますが、今回はファイル取得を確認できていません。各版の本体後に追加データを取得し、[ダウンロード案内](/ja/guides/download/)で機種・地域・エラーを切り分けてください。

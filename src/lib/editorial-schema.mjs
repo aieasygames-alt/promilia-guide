@@ -119,6 +119,7 @@ export const guideSchema = z.object({
   related: z.array(nonempty).default([]),
   checklist: z.array(z.object({ id: nonempty, text: nonempty })).default([]),
   revisions: z.array(z.object({ date: calendarDate, note: nonempty })).default([]),
+  readerUpdates: z.array(z.object({ date: calendarDate, note: nonempty })).default([]),
   order: z.number().default(99),
   minutes: z.number().positive().default(3),
 });

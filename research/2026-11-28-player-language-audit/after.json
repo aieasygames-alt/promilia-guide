@@ -1,0 +1,727 @@
+[
+  {
+    "locale": "zh-hans",
+    "contentId": "banner-rules",
+    "path": "src/content/guides/zh-hans/banner-rules.md",
+    "url": "/zh-hans/guides/banner-rules/",
+    "title": "蓝色星原抽卡保底与概率：角色90、灵子80、新手30次",
+    "headings": [
+      "抽卡保底多少次？",
+      "国服券种、保底与概率表",
+      "国服概率递增：70／60是门槛，90／80是保证",
+      "十连保证四星角色吗？",
+      "当期卡池、对象与结束时间",
+      "免费福利怎么计算抽数？"
+    ],
+    "readerUpdate": "开头直接说明各地区保底次数，保留票券与概率条件。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "cloud-gaming",
+    "path": "src/content/guides/zh-hans/cloud-gaming.md",
+    "url": "/zh-hans/guides/cloud-gaming/",
+    "title": "云·蓝色星原怎么玩：Mac网页、免费时长与手机配置",
+    "headings": [
+      "云·蓝色星原在哪里玩？Mac可以玩吗？",
+      "电脑网页与手机云客户端怎样选？",
+      "免费时长：首次600分钟、每日15分钟、上限600分钟",
+      "哪些商品附赠畅玩卡？",
+      "容量不足时，用云游戏前先检查什么？",
+      "云游戏常见问题"
+    ],
+    "readerUpdate": "精简来源检查说明，突出Mac网页入口、免费时长与地区条件。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "combat",
+    "path": "src/content/guides/zh-hans/combat.md",
+    "url": "/zh-hans/systems/combat/",
+    "title": "蓝色星原战斗卡点排查：技能不触发、命中与操作设置",
+    "headings": [
+      "技能按了没反应，先检查哪里？",
+      "卡关时，先找最影响推进的问题",
+      "元素与角色定位去哪里看？",
+      "排查后仍然异常"
+    ],
+    "readerUpdate": "改为技能不触发与命中问题排查，清单同步调整为操作检查。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "download",
+    "path": "src/content/guides/zh-hans/download.md",
+    "url": "/zh-hans/guides/download/",
+    "title": "蓝色星原官方下载：国服、日服、繁中与韩国PC手机入口",
+    "headings": [
+      "蓝色星原PC和手机怎么下载？",
+      "韩服、繁中与SEA：先确认版本",
+      "安装前需要准备什么？",
+      "按地区与设备找到正确客户端",
+      "国服本体与追加资源的操作顺序",
+      "日本PC与手机的操作顺序",
+      "商店大小为什么不等于完整空间？",
+      "公测后反复下载资源：先区分追加更新与循环失败",
+      "国服下载失败、校验错误怎么处理？",
+      "日服下载失败、启动慢或闪退怎么办？",
+      "Mac与容量不足：新增官方云游戏方式",
+      "进不去游戏时，怎样联系日本官方客服？",
+      "常见问题",
+      "启动器、完整客户端和增量更新怎样区分？",
+      "国服首次下载专项优化仍在进行"
+    ],
+    "readerUpdate": "先展示官方下载与安装步骤，地区设备筛选和参考资料移到后方。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "getting-started",
+    "path": "src/content/guides/zh-hans/getting-started.md",
+    "url": "/zh-hans/guides/getting-started/",
+    "title": "蓝色星原新手攻略：主线、福利、首次抽卡与每日任务",
+    "headings": [
+      "新手先做什么？",
+      "创角前：用对账号，保留活动奖励",
+      "进入游戏后：主线、邮箱、抽卡",
+      "每日和周常在哪里？",
+      "每天时间少，优先做哪些？",
+      "登录或领奖卡住了怎么办？"
+    ],
+    "readerUpdate": "按主线、邮箱、首次抽卡、每日与周常重新安排入门顺序。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "global-release",
+    "path": "src/content/guides/zh-hans/global-release.md",
+    "url": "/zh-hans/guides/global-release/",
+    "title": "蓝色星原日服与国际服：韩服、繁中、SEA下载和英语版时间",
+    "headings": [
+      "现在能玩哪些版本？SEA与英语版计划分别看",
+      "地区、运营与官方入口对照",
+      "SEA支持英语吗？与Global有何区别？",
+      "日服能用中文或英文吗？",
+      "应用ID怎么识别？",
+      "中日开服小时、空间与进度共享",
+      "选好版本后继续",
+      "地区常见问题"
+    ],
+    "readerUpdate": "精简地区核对说明，保留各服入口与SEA、英语版计划的区别。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "home",
+    "path": "src/content/guides/zh-hans/home.md",
+    "url": "/zh-hans/systems/home/",
+    "title": "蓝色星原家园攻略：种子管理、奇波派遣与缺粮排查",
+    "headings": [
+      "家园不生产或缺粮，先看这几处",
+      "种子管理在哪里？韩国版界面参考",
+      "国服种植、餐桌和订单怎么找",
+      "派满反而缺粮？先核对额外岗位的收益",
+      "日本农园新增寮：装饰商品不等于生产解锁",
+      "没有产出时，按什么顺序排查？",
+      "先扩建还是先培养角色？"
+    ],
+    "readerUpdate": "按种子、岗位、食物和仓储整理生产问题，补充缺粮时的调整建议。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "kibo-guide",
+    "path": "src/content/guides/zh-hans/kibo-guide.md",
+    "url": "/zh-hans/systems/kibo/",
+    "title": "蓝色星原奇波获取与捕获卡：消耗判断、孵化与活动奖励",
+    "headings": [
+      "捕获卡消耗太快，什么时候先停手？",
+      "奇波先按来源领取，不把活动当野外捕获",
+      "已核实的活动来源",
+      "日本两种星彩奇波，没收到时查哪里？",
+      "选哪只奇波：先看你需要的用途"
+    ],
+    "readerUpdate": "重整捕获卡消耗、孵化参考与活动奇波领取条件。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "launch",
+    "path": "src/content/guides/zh-hans/launch.md",
+    "url": "/zh-hans/guides/launch/",
+    "title": "蓝色星原公测时间与上线状态：下载、福利和登录问题",
+    "headings": [
+      "蓝色星原已经公测了吗？",
+      "各地区上线状态",
+      "PC和手机下载入口",
+      "开始游戏后，先领哪些奖励？",
+      "下载好了却进不去怎么办？",
+      "开服时间常见问题"
+    ],
+    "readerUpdate": "开服状态、下载入口、福利和登录问题现在可按需查阅。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "platforms",
+    "path": "src/content/guides/zh-hans/platforms.md",
+    "url": "/zh-hans/guides/platforms/",
+    "title": "蓝色星原PC与手机平台：Windows、PS5、Steam和进度互通",
+    "headings": [
+      "支持哪些平台，进度能否互通？",
+      "Mac与容量不足：新增官方云游戏方式",
+      "日本PC版如何取得？",
+      "国服官方服与渠道服怎样区分？",
+      "换端前逐项确认",
+      "PC、Steam与PS5常见问题"
+    ],
+    "readerUpdate": "精简已过时的预下载说明，集中查看支持平台与进度互通。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "recharge-return",
+    "path": "src/content/guides/zh-hans/recharge-return.md",
+    "url": "/zh-hans/guides/recharge-return/",
+    "title": "蓝色星原测试充值返还：比例、查询入口、凭证与领取期限",
+    "headings": [
+      "测试充值返还怎么领？用原账号，邮箱开放后领取",
+      "先确认账号和客户端，再查金额",
+      "返还比例分三段，不按总额套一个倍率",
+      "飞信订约与游记：金额返还之外还要查凭证",
+      "两个365天：收取资格与邮件领取分开看",
+      "去哪查测试金额？返还没到账怎么排查？",
+      "常见问题"
+    ],
+    "readerUpdate": "精简流程性说明，保留原账号、分段比例与领取期限。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "redeem-codes",
+    "path": "src/content/guides/zh-hans/redeem-codes.md",
+    "url": "/zh-hans/guides/redeem-codes/",
+    "title": "蓝色星原兑换码：日服AZPR1126、输入方法与期限",
+    "headings": [
+      "日服AZPR1126在哪里输入？",
+      "日服代码输入步骤",
+      "兑换码、感谢礼和巢穴奖励分开",
+      "不能兑换或未到账怎么查？",
+      "常见问题"
+    ],
+    "readerUpdate": "日服官方码、输入位置和期限集中展示，区分代码与邮件福利。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "requirements",
+    "path": "src/content/guides/zh-hans/requirements.md",
+    "url": "/zh-hans/guides/requirements/",
+    "title": "蓝色星原容量与配置要求：手机、iPad和PC确认表",
+    "headings": [
+      "手机要留多少空间？PC要留多少？",
+      "下载前先核对这四项",
+      "日本版手机与PC配置",
+      "国服配置与鸿蒙端",
+      "Mac与容量不足：新增官方云游戏方式",
+      "国服空间不足或闪退怎么办？",
+      "3.9GB、约3.64GB与55GB为什么不同？",
+      "如何检查自己的设备",
+      "空间足够但读条慢、闪退，先核对什么？",
+      "容量、iPad与跨端常见问题",
+      "公测后掉帧与低占用反馈：怎样定位问题？"
+    ],
+    "readerUpdate": "精简商店文件信息与预下载旧说明，保留空间、配置与故障排查。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "reroll",
+    "path": "src/content/guides/zh-hans/reroll.md",
+    "url": "/zh-hans/guides/reroll/",
+    "title": "蓝色星原刷初始值得吗？首抽、账号奖励与重开代价",
+    "headings": [
+      "要不要刷初始？先看原账号会失去什么",
+      "新手与限定池，怎样影响开局选择？",
+      "网页奖励和测试返还会跟着新账号走吗？",
+      "日服删除账号前要知道什么？",
+      "首抽选谁，什么时候收手？",
+      "刷初始常见问题"
+    ],
+    "readerUpdate": "先说明重开对账号和已得奖励的影响，再比较首抽与保底。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "resources",
+    "path": "src/content/guides/zh-hans/resources.md",
+    "url": "/zh-hans/guides/resources/",
+    "title": "蓝色星原公测福利：三地感谢礼10连、邮箱条件与活动",
+    "headings": [
+      "11月27日感谢礼：三地分开领取，不需要兑换码",
+      "日服首期活动与首次登录奖励",
+      "先判断你要领哪一种福利",
+      "先看地区和领取条件",
+      "国服：哪些奖励需要完成什么",
+      "国服预约奖励已解锁：先开邮箱，测试返还另算",
+      "国服福利有哪些获取条件？",
+      "限时、月度与长期资源分开算",
+      "日本预约特典：开服后从邮件领取，先与巢穴奖励分开",
+      "国服：巢穴探索网页奖励怎么领",
+      "邀请助力：两种计数不要混淆",
+      "日本：巢穴探索活动的时间与绑定",
+      "日本：从探索背包到游戏内邮件",
+      "领到后怎样分配：先分券种，再看90／80次保证",
+      "奖励没有到账时"
+    ],
+    "readerUpdate": "简化福利领取说明，按当前卡池规则说明票券用途。"
+  },
+  {
+    "locale": "zh-hans",
+    "contentId": "support",
+    "path": "src/content/guides/zh-hans/support.md",
+    "url": "/zh-hans/guides/support/",
+    "title": "蓝色星原客服怎么联系：登录、渠道账号与问题反馈",
+    "headings": [
+      "先选地区和问题，再找客服入口",
+      "进不去游戏：先区分四个阶段",
+      "描述一次具体失败，比写“玩不了”更有用",
+      "玩法卡点也要把“未解锁”和“异常”分开",
+      "日本咨询语言、回复与未收到回信",
+      "国服首次下载专项优化仍在进行"
+    ],
+    "readerUpdate": "客服入口先按地区说明，问题描述改为更易使用的提示。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "banner-rules",
+    "path": "src/content/guides/ja/banner-rules.md",
+    "url": "/ja/guides/banner-rules/",
+    "title": "アズプロのガチャ天井：限定90・80回、初心者30回と引き継ぎ",
+    "headings": [
+      "日本版ガチャ：限定キャラ90回、アニマ80回、初心者30回",
+      "日本の初回限定ガチャと終了時刻",
+      "始源の観測：8枚で10回、最大30回",
+      "初回ログイン報酬と「40回以上」を混同しない",
+      "中国本土：限定キャラと霊子の天井比較",
+      "中国本土の10回保証は星4キャラ確定ではない",
+      "期限と残ったチケットを確認する"
+    ],
+    "readerUpdate": "冒頭で地域別の天井を説明し、チケットと確率の条件を整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "cloud-gaming",
+    "path": "src/content/guides/ja/cloud-gaming.md",
+    "url": "/ja/guides/cloud-gaming/",
+    "title": "アズールプロミリアの中国本土クラウド版｜Mac・無料時間",
+    "headings": [
+      "Macで遊べる？中国本土の公式クラウド版について",
+      "対応する端末と利用方法",
+      "無料時間は初回600分・毎日15分、累積上限600分",
+      "指定商品の購入に付く「畅玩卡」",
+      "容量不足でクラウドを検討する時の確認順",
+      "よくある質問"
+    ],
+    "readerUpdate": "出典確認の説明を整理し、Macの入口・無料時間・対象地域を読みやすくしました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "combat",
+    "path": "src/content/guides/ja/combat.md",
+    "url": "/ja/systems/combat/",
+    "title": "アズールプロミリア戦闘の困りごと｜スキル・操作・命中",
+    "headings": [
+      "スキルが発動しないときは？",
+      "勝てないときは何から見直す？",
+      "元素や役割はどこで確認できる？",
+      "条件を満たしても動かない場合"
+    ],
+    "readerUpdate": "スキルが発動しない・当たらない場合の案内に改め、操作チェックをまとめました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "download",
+    "path": "src/content/guides/ja/download.md",
+    "url": "/ja/guides/download/",
+    "title": "アズールプロミリアのダウンロード｜PC・スマホ公式入口と導入手順",
+    "headings": [
+      "日本版をPC・スマホにダウンロードするには",
+      "韓国・繁体字・SEA版の入口",
+      "インストール前の準備",
+      "地域・端末別の公式クライアント",
+      "日本PC・スマホのインストール手順",
+      "中国本土の本体・更新データ",
+      "ストアのサイズと推奨空き容量は別",
+      "配信後に追加データを何度も取得する場合",
+      "中国本土版のダウンロード失敗への対処",
+      "ダウンロード失敗・起動が遅い・強制終了の確認順",
+      "Mac・容量不足と中国本土のクラウド版",
+      "日本の公式サポートに問い合わせるには",
+      "ダウンロードのよくある質問",
+      "追加データの数字・ファイル取得が気になる場合",
+      "中国本土の初回DL最適化は進行中"
+    ],
+    "readerUpdate": "公式ダウンロードと導入手順を先に掲載し、地域・端末の早見表を後半に移しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "getting-started",
+    "path": "src/content/guides/ja/getting-started.md",
+    "url": "/ja/guides/getting-started/",
+    "title": "アズールプロミリア初心者攻略｜序盤・特典・デイリー",
+    "headings": [
+      "始めたばかりなら何をする？",
+      "キャラ作成前に、イベント参加IDを確認",
+      "ログイン後はメインストーリー、メール、観測の順に",
+      "デイリーやウィークリーが見つからない",
+      "遊べる時間が少ない日は？",
+      "ログインや受取で困ったら"
+    ],
+    "readerUpdate": "メインストーリー、メール、初回ガチャ、デイリー・ウィークリーの順に案内を整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "global-release",
+    "path": "src/content/guides/ja/global-release.md",
+    "url": "/ja/guides/global-release/",
+    "title": "アズールプロミリアの海外版｜韓国・繁体字・SEAと英語版の予定",
+    "headings": [
+      "配信中の版とSEA・英語版の予定",
+      "地域と公式入口",
+      "SEA版の言語と英語版の違い",
+      "日本版は中国語・英語に対応する？",
+      "アプリの識別情報",
+      "日本・中国本土の開始時刻と端末間共有",
+      "選んだ後に読む案内",
+      "よくある質問"
+    ],
+    "readerUpdate": "地域別の説明を簡潔にし、各版の入口とSEA・英語版の予定を区別しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "home",
+    "path": "src/content/guides/ja/home.md",
+    "url": "/ja/systems/home/",
+    "title": "アズールプロミリア農園ガイド｜種の管理・配置・食料不足",
+    "headings": [
+      "農園の生産が止まったら？",
+      "日本版の寮と販売期間",
+      "種の管理画面：韓国版の参考",
+      "中国本土の初日投稿：栽培・食卓・注文の確認から",
+      "配置を増やしたら食料不足？追加分の収支を見る",
+      "生産が進まないときの確認順",
+      "拡張とキャラ育成、どちらを先にする？"
+    ],
+    "readerUpdate": "種・配置・食料・保管から生産の問題を探せるよう整理。食料不足の見直し方もまとめました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "kibo-guide",
+    "path": "src/content/guides/ja/kibo-guide.md",
+    "url": "/ja/systems/kibo/",
+    "title": "キボの入手と捕獲カード：消費前の確認・卵・特典",
+    "headings": [
+      "捕獲でカードを消費し続ける前に",
+      "キボは入手元ごとに確認：事前登録と巣穴は別",
+      "確認できた特典経路",
+      "クロディーメとキラミィが届かないとき",
+      "どのキボを使う？目的から選ぶ"
+    ],
+    "readerUpdate": "捕獲カードの消費、卵の参考情報、特典キボの受取条件を整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "launch",
+    "path": "src/content/guides/ja/launch.md",
+    "url": "/ja/guides/launch/",
+    "title": "アズールプロミリア配信日・開始時間｜ダウンロードと特典",
+    "headings": [
+      "アズールプロミリアは配信開始済み？",
+      "地域別の配信状況",
+      "日本版のダウンロード方法",
+      "ログインしたら受け取りたい特典",
+      "ダウンロード後に入れないとき",
+      "配信日のよくある質問"
+    ],
+    "readerUpdate": "配信状況、ダウンロード、特典、ログインの案内を目的別に整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "platforms",
+    "path": "src/content/guides/ja/platforms.md",
+    "url": "/ja/guides/platforms/",
+    "title": "アズールプロミリアのPC版・対応機種｜PS5・Steam・データ共有",
+    "headings": [
+      "対応機種とデータ共有は？",
+      "Mac・容量不足と中国本土のクラウド版",
+      "日本PC版の入手経路",
+      "中国本土の公式サーバーとチャネル版",
+      "別端末へ移る前の確認順",
+      "PC・Steam・PS5のよくある質問"
+    ],
+    "readerUpdate": "古い事前ダウンロードの説明を整理し、対応機種とデータ共有を探しやすくしました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "recharge-return",
+    "path": "src/content/guides/ja/recharge-return.md",
+    "url": "/ja/guides/recharge-return/",
+    "title": "アズールプロミリア中国本土テスト課金返還：割合・受取条件",
+    "headings": [
+      "中国本土テストの課金返還：元のアカウントでメール受取",
+      "アカウント・配布元別の受取条件",
+      "200%・150%・125%は金額の区間ごとに計算",
+      "飞信订约・游记は星虹と証票を分けて確認",
+      "2種類の365日と、証票の使用期限",
+      "テスト金額の照会先・届かない場合の順序",
+      "よくある質問"
+    ],
+    "readerUpdate": "説明を簡潔にし、元のアカウント・区間別割合・受取期限を確認しやすくしました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "redeem-codes",
+    "path": "src/content/guides/ja/redeem-codes.md",
+    "url": "/ja/guides/redeem-codes/",
+    "title": "アズールプロミリア交換コード｜AZPR1126の入力場所と期限",
+    "headings": [
+      "日本公式コードAZPR1126の入力場所",
+      "入力手順",
+      "メール配布とコードは別",
+      "入力できない・報酬が未着の場合",
+      "よくある質問"
+    ],
+    "readerUpdate": "日本公式コード、入力場所、期限をまとめ、メール特典と分けて説明しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "requirements",
+    "path": "src/content/guides/ja/requirements.md",
+    "url": "/ja/guides/requirements/",
+    "title": "アズールプロミリアの容量・推奨スペック｜スマホ・PC対応",
+    "headings": [
+      "スマホは55GB以上、PCは120GB以上の空き容量を推奨",
+      "ダウンロード前の4項目",
+      "日本版の最低・推奨スペック",
+      "中国本土の要件と鴻蒙版",
+      "Mac・容量不足と中国本土のクラウド版",
+      "中国本土の容量不足・強制終了は保存先と発生段階から",
+      "ストアの約3.64GB・3.9GBと55GBの違い",
+      "端末の仕様と空き容量を調べる",
+      "空き容量があるのに遅い・強制終了する場合",
+      "容量・iPad・データ共有のよくある質問",
+      "配信後のフレーム低下・低使用率の個別報告"
+    ],
+    "readerUpdate": "ストア容量の説明と古い事前DL情報を整理。空き容量・スペック・不具合対策を確認しやすくしました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "reroll",
+    "path": "src/content/guides/ja/reroll.md",
+    "url": "/ja/guides/reroll/",
+    "title": "アズールプロミリアのリセマラ判断｜天井・報酬・削除の注意点",
+    "headings": [
+      "リセマラする前に、元のアカウントを確認",
+      "初心者ガチャと限定ガチャの違い",
+      "巣穴探索の報酬は別のキャラへ移せる？",
+      "アカウント削除は取り消せますか？",
+      "どのキャラで始める？やめどきは？",
+      "リセマラのよくある質問"
+    ],
+    "readerUpdate": "リセマラで失う可能性のあるデータと特典を先に説明し、初回ガチャと天井を整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "resources",
+    "path": "src/content/guides/ja/resources.md",
+    "url": "/ja/guides/resources/",
+    "title": "アズプロの配信記念特典と初回イベント：5つの結末・報酬・期限",
+    "headings": [
+      "11月27日の感謝ギフト：メール配布とコードを区別",
+      "正式サービス開始後：初回特典と「花逢ひの縁契りて」",
+      "事前登録特典の受け取り方：配信後のゲーム内メールを確認",
+      "日本：「集まれ！キボの巣穴探索」の期限と配布先",
+      "日本：探索バッグからゲーム内メールまで",
+      "受け取りたい特典の種類から確認",
+      "地域と受取条件から確認する",
+      "中国本土の予約報酬：メール解放後、課金返還とは別枠",
+      "中国本土：特典と必要な条件",
+      "特典プレビューで読める段階",
+      "期間限定・月次交換・恒常を分ける",
+      "中国本土：巣穴探索のWeb報酬を受け取る手順",
+      "フレンド協力のカウントを分ける",
+      "受取後の配分：券種と地域を先に分ける",
+      "報酬が届かないとき"
+    ],
+    "readerUpdate": "特典の受取説明を簡潔にし、現在のガチャに合わせてチケットの用途を整理しました。"
+  },
+  {
+    "locale": "ja",
+    "contentId": "support",
+    "path": "src/content/guides/ja/support.md",
+    "url": "/ja/guides/support/",
+    "title": "アズールプロミリアの問い合わせ先｜ログイン・不具合・アカウント",
+    "headings": [
+      "利用地域と問題を確かめてから窓口へ",
+      "ゲームに入れない時は四つの段階に分ける",
+      "問い合わせには何を書けばいい？",
+      "システムのロックと不具合も区別する",
+      "日本の受付言語・返信・返事が見つからない時",
+      "中国本土の初回DL最適化は進行中"
+    ],
+    "readerUpdate": "地域別の窓口を先に案内し、問い合わせ内容のまとめ方を分かりやすくしました。"
+  },
+  {
+    "locale": "en",
+    "contentId": "banner-rules",
+    "path": "src/content/guides/en/banner-rules.md",
+    "url": "/en/guides/banner-rules/",
+    "title": "Azur Promilia Pity & Banners: 90 / 80 Guarantees, Rates & Tickets",
+    "headings": [
+      "Azur Promilia pity: 90 for characters, 80 for anima",
+      "Japan: current banners and end time",
+      "Japan beginner banner: eight tickets for ten observations",
+      "Mainland China: tickets and published probabilities",
+      "China: when the probability increases",
+      "Does a ten-pull guarantee a four-star character?",
+      "First-banner names, carryover and expiry",
+      "How many free limited pulls do launch rewards provide?"
+    ],
+    "readerUpdate": "Moved the regional guarantees to the opening answer and retained ticket and rate conditions."
+  },
+  {
+    "locale": "en",
+    "contentId": "cloud-gaming",
+    "path": "src/content/guides/en/cloud-gaming.md",
+    "url": "/en/guides/cloud-gaming/",
+    "title": "Azur Promilia Cloud Gaming: Mac, Free Time & Mobile",
+    "headings": [
+      "Can you play Azur Promilia on Mac or in a browser?",
+      "Supported cloud devices and recommended browsers",
+      "Is Azur Promilia cloud gaming free?",
+      "Which purchases include a cloud play card?",
+      "Before using cloud gaming for a storage problem",
+      "Cloud gaming FAQ"
+    ],
+    "readerUpdate": "Shortened source-check explanations and clarified Mac access, free time and regional scope."
+  },
+  {
+    "locale": "en",
+    "contentId": "download",
+    "path": "src/content/guides/en/download.md",
+    "url": "/en/guides/download/",
+    "title": "Azur Promilia Download: Japan, Korea, China & SEA Status",
+    "headings": [
+      "Where is the official Azur Promilia download?",
+      "Korea, Traditional Chinese and SEA official entries",
+      "Before you install",
+      "How to download the Japan version on PC",
+      "How to download on Android or iPhone",
+      "China client: accounts and old test versions",
+      "Can I use the same account on PC and mobile?",
+      "Post-launch report: repeated additional-resource downloads",
+      "Download failed: choose the stage and region",
+      "Mac and low storage: the China cloud alternative",
+      "What to send to official support",
+      "Does pre-download mean the game is live?",
+      "China download optimization is still in progress"
+    ],
+    "readerUpdate": "Official links and installation steps now come first, with shorter source notes."
+  },
+  {
+    "locale": "en",
+    "contentId": "getting-started",
+    "path": "src/content/guides/en/getting-started.md",
+    "url": "/en/guides/getting-started/",
+    "title": "Azur Promilia Beginner Guide: First Steps, Rewards & Dailies",
+    "headings": [
+      "What should you do first in Azur Promilia?",
+      "Before creating a character: keep the right account",
+      "Your first session: story, mail and banners",
+      "Where are daily and weekly tasks?",
+      "What if you have little time to play?",
+      "Login or rewards not working?"
+    ],
+    "readerUpdate": "Reordered first-session advice around story, mail, banners and daily tasks."
+  },
+  {
+    "locale": "en",
+    "contentId": "global-release",
+    "path": "src/content/guides/en/global-release.md",
+    "url": "/en/guides/global-release/",
+    "title": "Azur Promilia Release Date: Global, SEA, Japan & Korea",
+    "headings": [
+      "Which Azur Promilia versions are available?",
+      "Release dates, publishers and official entries",
+      "When is the global English release?",
+      "SEA release date and English-language support",
+      "How to identify each regional app",
+      "Japan and China opening times and cross-device progress",
+      "After choosing an edition",
+      "Release-date questions"
+    ],
+    "readerUpdate": "Shortened regional explanations while keeping SEA and the English release plan separate."
+  },
+  {
+    "locale": "en",
+    "contentId": "redeem-codes",
+    "path": "src/content/guides/en/redeem-codes.md",
+    "url": "/en/guides/redeem-codes/",
+    "title": "Azur Promilia Codes: AZPR1126, Japan Menu & Deadline",
+    "headings": [
+      "Japan code AZPR1126: official menu and deadline",
+      "How to enter the Japan code",
+      "Codes and thank-you mail are separate",
+      "If the code fails or the reward is missing",
+      "Code questions"
+    ],
+    "readerUpdate": "Grouped Japan’s official code, menu path and deadline; separated mail gifts from codes."
+  },
+  {
+    "locale": "en",
+    "contentId": "requirements",
+    "path": "src/content/guides/en/requirements.md",
+    "url": "/en/guides/requirements/",
+    "title": "Azur Promilia Requirements: PC, Android, iOS & Storage",
+    "headings": [
+      "How much storage does Azur Promilia need?",
+      "Four checks before you download",
+      "Azur Promilia PC system requirements",
+      "Android minimum and recommended requirements",
+      "iPhone, iOS and iPad requirements",
+      "HarmonyOS requirements: China only",
+      "Mac and low storage: the China cloud alternative",
+      "Why is the App Store size much smaller than 55GB?",
+      "How to check your device before downloading",
+      "Enough space, but the game will not load?",
+      "Requirements questions",
+      "Frame drops and low GPU usage: what to check"
+    ],
+    "readerUpdate": "Shortened store-size explanations and clarified storage and troubleshooting advice."
+  },
+  {
+    "locale": "en",
+    "contentId": "resources",
+    "path": "src/content/guides/en/resources.md",
+    "url": "/en/guides/resources/",
+    "title": "Azur Promilia Launch Rewards & First Event: Gifts, Endings, Dates",
+    "headings": [
+      "November 27 thank-you gifts: claim by region",
+      "Post-launch Japan event: five endings and reward targets",
+      "How do you claim Azur Promilia launch rewards?",
+      "Japan preregistration gifts: start with the official mail notice",
+      "Japan Kibo nest event: account, first character and deadline",
+      "Which reward are you missing?",
+      "Mainland China: a separate set of benefits",
+      "If your reward mail has not arrived",
+      "Launch reward questions"
+    ],
+    "readerUpdate": "Shortened reward-claim advice while preserving regional conditions and deadlines."
+  },
+  {
+    "locale": "en",
+    "contentId": "support",
+    "path": "src/content/guides/en/support.md",
+    "url": "/en/guides/support/",
+    "title": "Azur Promilia Support: Login, Errors & Missing Rewards",
+    "headings": [
+      "Where should you contact Azur Promilia support?",
+      "Identify the affected stage before reporting",
+      "Japan: language, email replies and missing responses",
+      "What to record before contacting support",
+      "Mainland China: official versus channel support",
+      "Restart the right program",
+      "Missing rewards and locked features",
+      "Support questions",
+      "China download optimization is still in progress"
+    ],
+    "readerUpdate": "Simplified regional support and issue-reporting advice."
+  }
+]

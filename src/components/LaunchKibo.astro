@@ -6,27 +6,27 @@ interface Props { locale: Locale; compact?: boolean }
 const { locale, compact = false } = Astro.props;
 const c = {
   'zh-hans': {
-    title:'公测官网奇波：地区与官方图像', intro:'国服官网当前展示24个不同名称，其中18个可以打开介绍图，另6个仅展示名称。下方按官网地区分组，方便比对外形与名字；不是完整实装图鉴，也不是捕捉地点表。',
+    title:'奇波名称与官方介绍图', intro:'国服官网当前展示24个不同名称，其中18个可以打开介绍图，另6个仅展示名称。下方按官网地区分组，方便比对外形与名字；不是完整实装图鉴，也不是捕捉地点表。',
     source:'国服官网奇波展示', image:'查看官方介绍原图', alt:'的国服官方介绍图', checked:'核对日期', nameOnly:'仅展示名称，介绍入口未开放',
-    pending:'辰王朝还有以下6个名称。官网入口未开放，暂不据此确认获取方式或实装时间。戏风鸢的同名入口合并计数；组合入口中的椒饱饱、鲜灵灵分别列名。',
+    pending:'辰王朝还展示了以下6个名称，暂无可打开的介绍页。获取方式与可用时间尚未确认。',
     scope:'新芽山谷、弗利斯城邦、辰王朝是官网展示分组，不证明这些奇波能在对应地区的任意位置捕捉。飞鳐与星鳐暂不合并；星彩奖励与异色形态也不自动计为新物种。',
-    next:'查获取与用途时怎么走', use:'先确认游戏内名称、形态和当前版本，再区分野外捕捉、孵化与活动领取。农园岗位要看个体工作能力和岗位要求，不能由这张外形图推断。',
+    next:'奇波怎么获取、怎么用', use:'先确认游戏内名称、形态和当前版本，再区分野外捕捉、孵化与活动领取。农园岗位要看个体工作能力和岗位要求，不能由这张外形图推断。',
     guide:'奇波获取与用途指南', home:'家园岗位与派遣指南', all:'查看全部官方图像',
     regions:{'新芽山谷':'新芽山谷','弗利斯城邦':'弗利斯城邦','辰王朝':'辰王朝'},
   },
   ja: {
     title:'中国本土の公式キボ紹介：地域別の名前と画像', intro:'中国本土の公式サイトには24の異なる名前が表示されています。18件は紹介画像を開けますが、残る6件は名前のみです。中国語名を原文で残し、外見を照合できるようにまとめました。全実装一覧や捕獲場所の表ではありません。',
     source:'中国本土公式のキボ紹介', image:'公式の紹介画像を開く', alt:'の中国本土公式紹介画像', checked:'確認日', nameOnly:'名前のみ公開・紹介ページは未開放',
-    pending:'辰王朝には次の6名も表示されていますが、紹介の入口は無効です。入手方法や実装日は確認できません。同名の戏风鸢は1件として数え、椒饱饱と鲜灵灵はそれぞれ記載しています。',
+    pending:'辰王朝には次の6つの名前も表示されていますが、紹介ページはまだ開けません。入手方法や実装日は未確認です。',
     scope:'地域名は中国本土公式の表示区分であり、実際の捕獲エリアや座標を保証しません。飞鳐と星鳐は別に扱い、星彩の報酬や異色の姿も新種として自動的に加算しません。日本名との対応は推測していません。',
     next:'入手と農園の仕事を調べるには', use:'ゲーム内の名前・姿・バージョンを確認し、野外での捕獲、孵化、イベント受取を区別してください。農園の配置は個体の作業能力と仕事の条件で判断します。外見の紹介画像だけでは分かりません。',
     guide:'キボの入手・用途ガイド', home:'農園の配置・派遣ガイド', all:'公式画像の一覧へ',
     regions:{'新芽山谷':'新芽山谷（中国本土の表記）','弗利斯城邦':'弗利斯城邦（中国本土の表記）','辰王朝':'辰王朝'},
   },
   en: {
-    title:'Kibo names and official artwork from China’s launch site', intro:'China’s official showcase displays 24 distinct names. Eighteen have an introduction image; six are name-only previews. Browse the regional groups to match a name and appearance. This is a source-dated showcase, not a complete obtainable roster or a catch-location map. Names are original Chinese, not verified English localizations.',
+    title:'Kibo names and official artwork from China’s launch site', intro:'China’s official showcase displays 24 distinct names. Eighteen have an introduction image; six are name-only previews. Browse the regional groups to match a name and appearance. Catch locations and a complete obtainable roster are not yet included. Names remain in Chinese; official English names are unconfirmed.',
     source:'Official China Kibo showcase', image:'Open official introduction image', alt:' — official China Kibo introduction artwork', checked:'Source checked', nameOnly:'Name-only previews: introductions not yet open',
-    pending:'The China site also displays these six names under 辰王朝, with disabled introduction controls. Their acquisition methods and implementation dates are unverified. Duplicate 戏风鸢 controls count once; the combined 椒饱饱 & 鲜灵灵 control contributes two names.',
+    pending:'These six names also appear under 辰王朝 on China’s site, but their introduction pages are not yet open. How and when you can obtain them is unconfirmed.',
     scope:'Regional groups describe the official website layout, not verified catch areas or coordinates. 飞鳐 and 星鳐 are kept separate. Starry reward forms and alternate colors are not automatically counted as new species. This page does not infer Japan–China name mappings.',
     next:'Before catching, hatching or assigning a Kibo', use:'Match the in-game name, form and version first. Wild capture, hatching and event claims have different requirements. For farm work, check the individual’s work abilities and the job’s conditions; appearance alone cannot establish suitability.',
     guide:'Check launch reward and Kibo claim conditions', home:'First-session account checklist', all:'Browse all official images',

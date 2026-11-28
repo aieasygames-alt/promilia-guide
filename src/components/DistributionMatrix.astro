@@ -9,22 +9,22 @@ const ja = locale === 'ja';
 const rows = distributionRows({ channels, claims, sources, locale });
 const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => [source.id, source] as const))).values()];
 ---
-<section class="distribution" data-distribution aria-labelledby="distribution-title">
-  <header class="distribution-heading"><p class="eyebrow">BEFORE YOU DOWNLOAD</p><h2 id="distribution-title">{ja ? '地域と端末で配布状況を確認' : '按地区和设备核对入口'}</h2><p>{ja ? '事前登録・事前ダウンロード・配信開始は別の段階です。未確認の欄は非対応を意味しません。' : '预约、预下载与正式下载分别核对。“待核验”不代表不支持该设备。'}</p></header>
+<section class="distribution" data-distribution data-locale={locale} aria-labelledby="distribution-title">
+  <header class="distribution-heading"><p class="eyebrow">OFFICIAL DOWNLOADS</p><h2 id="distribution-title">{ja ? '地域・端末別の公式リンク' : '按地区和设备查找官方入口'}</h2><p>{ja ? '公式サイトとストアのリンク集です。インストールやエラーへの対処は上の本文をご覧ください。' : '这里汇总官网与商店入口，安装步骤和报错处理见上方正文。'}</p></header>
   <div class="distribution-filters" data-distribution-controls hidden>
     <label>{ja ? '利用する地域' : '使用地区'}<select data-region-filter><option value="all">{ja ? 'すべての地域' : '全部地区'}</option><option value="cn">{ja ? '中国本土' : '中国大陆'}</option><option value="jp">{ja ? '日本' : '日本地区'}</option></select></label>
     <label>{ja ? '利用する端末' : '使用设备'}<select data-platform-filter><option value="all">{ja ? 'すべての端末' : '全部设备'}</option><option value="pc">PC</option><option value="android">Android</option><option value="ios">iPhone / iPad</option></select></label>
     <p data-distribution-count role="status" aria-live="polite" data-ja={String(ja)}>{ja ? `${rows.length} 件を表示` : `显示 ${rows.length} 项`}</p>
   </div>
   <div class="distribution-grid">{rows.map((row) => <article class="distribution-card" data-channel={row.id} data-region={row.region} data-platform={row.platform} data-stage={row.stage || 'pending'}>
-    <div class="distribution-card-top"><span class="distribution-region">{row.regionLabel}</span><span class={`pill ${row.stage ? '' : 'pending'}`}>{row.stageLabel}</span></div>
-    <h3>{row.platformLabel}</h3><p class="distribution-summary">{row.entrySummary}</p>
+    <div class="distribution-card-top"><span class="distribution-region">{row.regionLabel}</span><span class={`pill ${row.stage ? '' : 'pending'}`}>{row.entryUrl ? (ja ? '公式リンク' : '官方入口') : (ja ? '公式サイトから選択' : '从官网选择平台')}</span></div>
+    <h3>{row.platformLabel}</h3><p class="distribution-summary">{ja ? (row.platform === 'pc' ? '公式サイトからPC版の案内へ進みます。' : '公式サイトまたはストアで、地域とアプリ名を確認してください。') : (row.platform === 'pc' ? '从对应地区官网进入PC下载，按页面提示安装。' : '进入官网或商店后，核对地区、应用名称与发行者。')}</p>
     <dl>
-      <div><dt>{ja ? '対象地域の開始予定' : '地区计划日程'}</dt><dd><ScheduleTime schedule={row.launch} locale={locale}/></dd></div>
+      <div><dt>{ja ? 'サービス開始の日程' : '开服公告日程'}</dt><dd><ScheduleTime schedule={row.launch} locale={locale}/></dd></div>
       <div><dt>{row.preloadUrl ? (ja ? '事前DL開始（公式発表）' : '预下载开始（官方公告）') : (ja ? '事前ダウンロード予定' : '预下载计划')}</dt><dd data-preload-schedule><ScheduleTime schedule={row.preload} locale={locale}/>{row.preload && <small>{row.preloadUrl ? (ja ? '公式が開始を発表。個別のファイル取得・インストール結果とは別です。' : '官方已公告开始；具体文件取得和安装结果另行确认。') : (ja ? '予定の確認です。現在の配布状況は別途確認してください。' : '此为计划，当前是否已开放须另行确认。')}</small>}{row.preloadUrl && <a href={row.preloadUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式の配布先' : '官方分发入口'} ↗</a>}</dd></div>
       {row.minimumOS && <div><dt>{ja ? 'ストアの互換性表示' : '商店兼容条件'}</dt><dd>{row.minimumOS}</dd></div>}
     </dl>
-    {row.entryUrl ? <a class="distribution-action" href={row.entryUrl} target="_blank" rel="noopener noreferrer">{ja ? `${row.stageLabel}の入口を確認` : `查看${row.stageLabel}入口`} <span aria-hidden="true">↗</span></a> : <p class="distribution-pending">{ja ? '確認できた配布先を登録するまで、リンクは表示しません。' : '确认公开入口后补充链接。'}</p>}
+    {row.entryUrl ? <a class="distribution-action" href={row.entryUrl} target="_blank" rel="noopener noreferrer">{ja ? '公式のダウンロード先へ' : '前往官方下载入口'} <span aria-hidden="true">↗</span></a> : <p class="distribution-pending">{ja ? '上の本文にある中国本土公式サイトから、利用する端末を選んでください。' : '请从上方正文中的国服官网进入，再选择对应平台。'}</p>}
     {row.evidence.length > 0 && <p class="distribution-source-note">{ja ? `出典 ${row.evidence.length} 件 · 確認日 ` : `${row.evidence.length} 份来源 · 核对日期 `}{[...new Set(row.evidence.map((source) => source.checkedAt))].join(' / ')}</p>}
   </article>)}</div>
   <details class="distribution-evidence" data-distribution-evidence>
@@ -42,7 +42,7 @@ const evidence = [...new Map(rows.flatMap((row) => row.evidence.map((source) => 
     const cards = [...section.querySelectorAll<HTMLElement>('[data-channel]')];
     const evidence = [...section.querySelectorAll<HTMLElement>('[data-evidence-channels]')];
     const params = new URLSearchParams(location.search);
-    region.value = [...region.options].some((option) => option.value === params.get('region')) ? params.get('region')! : 'cn';
+    region.value = [...region.options].some((option) => option.value === params.get('region')) ? params.get('region')! : section.dataset.locale === 'ja' ? 'jp' : 'cn';
     platform.value = [...platform.options].some((option) => option.value === params.get('platform')) ? params.get('platform')! : 'all';
     section.querySelector<HTMLElement>('[data-distribution-controls]')!.hidden = false;
     const filter = (updateUrl = false) => {

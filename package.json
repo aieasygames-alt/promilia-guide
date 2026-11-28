@@ -26,7 +26,8 @@
     "perf:images": "node scripts/audit-image-pages.mjs",
     "test": "node --test tests/*.test.mjs",
     "test:browser": "CONTENT_PREVIEW=true playwright test",
-    "verify:release": "npm run check && npm test && npm run build:preview && npm run test:browser && npm run build:release"
+    "verify:release": "npm run check && npm test && npm run build:preview && npm run test:browser && npm run build:release && npm run audit:copy",
+    "audit:copy": "node scripts/audit-reader-copy.mjs"
   },
   "dependencies": {
     "astro": "7.4.12",

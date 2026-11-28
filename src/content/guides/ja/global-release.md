@@ -8,7 +8,7 @@ description: 日本・中国本土・繁体字・韓国とSEA版の公式入口�
 author: Promilia Guide 編集部
 publishedAt: "2026-11-14"
 updatedAt: "2026-11-28"
-gameVersion: 正式サービス開始後 / 2026-11-28地域別資料照合
+gameVersion: 正式サービス版
 gameRegion: 日本・中国本土・繁体字・韓国・SEAと英語版予定（版別）
 verification: official
 status: published
@@ -41,7 +41,7 @@ sourceRefs:
   - sea-official-home-2026-11-28
   - sea-official-news-2026-11-28
   - en-release-window-2026-10-13
-sourceRevision: 14
+sourceRevision: 15
 translationStatus: published
 aliases:
   - 蓝色星原
@@ -102,7 +102,9 @@ revisions:
       責任者の会話中の開発・公開指示に基づく更新。独立した言語校閲や実機検証の完了を示すものではありません。
   - date: "2026-11-28"
     note: 地域・言語、公式ギフト、コード告知、DL最適化の該当箇所を更新。会話内の開発・公開承認に基づき、独立した言語校閲や実機検証は示しません。
-translatedFromRevision: 14
+  - date: "2026-11-28"
+    note: 読者向け表現・地域別の順序を修正。既存の公開指示に基づく編集更新であり、独立言語校閲やゲーム実機検証の記録ではありません。
+translatedFromRevision: 15
 claimRefs:
   - cn-launch-date
   - cn-ios-store
@@ -141,6 +143,9 @@ claimRevisions:
   jp-service-status: 1
 reviewer: 项目负责人（会话发布确认）
 reviewedAt: "2026-11-28"
+readerUpdates:
+  - date: "2026-11-28"
+    note: 地域別の説明を簡潔にし、各版の入口とSEA・英語版の予定を区別しました。
 ---
 
 ## 配信中の版とSEA・英語版の予定

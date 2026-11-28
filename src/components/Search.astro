@@ -35,7 +35,9 @@ const c = t(locale);
       status.textContent = app!.dataset.loading!;
       try {
         const pagefind = await loadEngine();
-        const response = await pagefind.search(term);
+        const gameName = app!.dataset.locale === 'ja' ? 'アズールプロミリア' : app!.dataset.locale === 'en' ? 'Azur Promilia' : '蓝色星原';
+        const query = term.replace(/\b(?:azure?\s*promill?ia)\b|藍色星原/gi, gameName);
+        const response = await pagefind.search(query);
         const data = await Promise.all(response.results.slice(0, 30).map((result: { data: () => Promise<any> }) => result.data()));
         if (current !== sequence) return;
         const local = data.filter((item) => new URL(item.url, location.origin).pathname.startsWith(`/${app!.dataset.locale}/`));

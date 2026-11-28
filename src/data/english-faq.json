@@ -18,17 +18,17 @@
           "en": "When does Azur Promilia open in Japan and China?"
         },
         "answer": {
-          "en": "Both regional publishers announced service began on November 26, 2026; the notices were checked November 27. Original opening times were 11:00 JST in Japan and 10:00 UTC+8 in China, both 02:00 UTC. These announcements do not establish current uptime, personal login eligibility or a global English release."
+          "en": "Japan and mainland China launched on November 26, 2026. Their original opening times were 11:00 JST and 10:00 UTC+8, both 02:00 UTC. Check the current regional notice for maintenance or queues. The future English release is a separate schedule."
         }
       },
       {
         "id": "global",
         "contentId": "global-release",
         "question": {
-          "en": "Does an English guide mean there is a global English server?"
+          "en": "When is Azur Promilia releasing in English?"
         },
         "answer": {
-          "en": "The English guide is a website language choice. Separately, the official English account targets summer 2027 for the English release, subject to change. PlayPark SEA is a separate service with English among five announced interface languages; its launch date remains unannounced in the checked sources. Choose the publisher and region before creating an account."
+          "en": "The official English account targets summer 2027, subject to change. PlayPark SEA is a separate service taking preregistrations, with English among five announced interface languages. SEA’s launch date is unannounced in the referenced FAQ; check the publisher and edition before signing up."
         }
       },
       {
@@ -131,7 +131,7 @@
           "en": "Where do I enter a redeem code?"
         },
         "answer": {
-          "en": "A launch-client menu or official web redemption form has not been verified from this guide's sources. Follow the input route stated in the original regional code announcement. Preregistration mail and nest exploration are separate programs and do not by themselves establish a code-entry method."
+          "en": "For Japan, open 設定 → アカウント → 引き換えコード (Settings → Account → Redeem code). The official AZPR1126 announcement gives this path. The ten-ticket thank-you gift is delivered by mail and does not require this code."
         }
       },
       {

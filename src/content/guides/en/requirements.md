@@ -10,7 +10,7 @@ description: "Azur Promilia PC, Android and iPhone requirements. Compare
 author: Promilia Guide
 publishedAt: "2026-11-25"
 updatedAt: "2026-11-28"
-gameVersion: Post-launch / regional sources checked November 28, 2026
+gameVersion: Launch version
 gameRegion: Japan and mainland China, described separately
 verification: official
 status: published
@@ -49,8 +49,8 @@ claimRevisions:
   cn-launch-troubleshooting: 1
   cn-login-support-rules: 1
   cn-cloud-gaming-launch: 1
-sourceRevision: 14
-translatedFromRevision: 14
+sourceRevision: 15
+translatedFromRevision: 15
 translationStatus: published
 reviewer: Project owner (publication authorized in conversation)
 reviewedAt: "2026-11-28"
@@ -94,8 +94,16 @@ revisions:
       gifts, code announcement and ongoing download status under the project
       owner’s implementation and deployment authorization. No independent
       language review or gameplay test is claimed.
+  - date: "2026-11-28"
+    note: Player-facing copy and regional reading order revised; publication
+      authorized by the project owner’s current request and standing deployment
+      instruction. No independent language review or gameplay test claimed.
 order: 3
 minutes: 8
+readerUpdates:
+  - date: "2026-11-28"
+    note: Shortened store-size explanations and clarified storage and
+      troubleshooting advice.
 ---
 
 The hardware tables and 55GB-mobile/120GB-PC recommendations are sourced to Japan and China. Korea and Traditional Chinese downloads do not establish identical requirements. SEA device information is unannounced in its FAQ. Check the [regional edition and source](/en/guides/global-release/) first.
@@ -124,7 +132,6 @@ Sources: [Japan launch FAQ](https://azurpromilia.jp/contact) and [China launch F
 | Download stage | Launcher, game client and additional resources | Store app and in-game additional resources |
 
 Compare the relevant specification tables below, then follow the [official PC and mobile download steps](/en/guides/download/). The PC recommendation applies to the **target drive**; free space on other drives cannot be added to it. If installation is complete but an account, verification or maintenance prompt blocks login, use the [beginner account checks](/en/guides/getting-started/) rather than assuming the hardware is at fault.
-
 
 ## Azur Promilia PC system requirements
 
@@ -181,7 +188,7 @@ Use the official regional distribution route. The existence of an Android downlo
 
 The [November 26 China announcement](https://azurpromilia.manjuu.com/home/news/detail/912757675975118848/) confirms an official cloud service with Windows and macOS browser recommendations and separate Android and iOS cloud apps. This is a mainland China service announcement; it does not establish a native Mac installer, a Japan cloud service or an English game client.
 
-See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements above. We have not tested cloud login, performance or saved-progress compatibility.
+See the [cloud gaming and Mac guide](/en/guides/cloud-gaming/) for the official links, first-login 600 minutes, daily 15 minutes and 600-minute free-time cap. Cloud requirements are separate from the full game’s device and storage requirements above.
 
 ## Why is the App Store size much smaller than 55GB?
 
@@ -195,7 +202,7 @@ The store's base-app payload and the FAQ's recommended free space describe diffe
 
 Both FAQs describe additional resources after the base client. Do not add the store payload to the free-space recommendation and call the result a “total download.” Sizes may change with later versions; use the live client prompts for the actual download you are offered.
 
-Our Japan App Store web check redirected to Today, so the Japan payload above comes from Apple's metadata response. Its `releaseDate` field is not evidence of a server opening time. We have not installed the game or measured extraction space and final disk usage.
+The Japan payload is from Apple’s app metadata, not a measurement of the complete game. Final installed space and temporary extraction space have not been measured here.
 
 ## How to check your device before downloading
 
@@ -231,7 +238,7 @@ The FAQs recommend an SSD. This guide does not recast that recommendation as a s
 
 Japan's FAQ confirms same-account progress on PC, Android and iOS. China's official service confirms PC, Android, iOS and HarmonyOS, with some channel-server exceptions. This does not establish cross-region progress or shared paid currency. See [regional availability](/en/guides/global-release/).
 
-## Post-launch frame drops and low utilization: what to record
+## Frame drops and low GPU usage: what to check
 
 A [TapTap report by kelinton](https://www.taptap.cn/moment/875181885217573464), checked November 27, describes low utilization and frame drops at high settings and 2K resolution in mainland China. It does not provide a complete controlled comparison of hardware, drivers and scenes. Treat it as an individual report, not a universal GPU benchmark or evidence that the Japan client has the same issue. This site has not performed a performance benchmark.
 

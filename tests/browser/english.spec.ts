@@ -58,8 +58,8 @@ test('English guides provide matching translations and native source / article U
     await page.goto(`/en/guides/${topic}/`);
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
     await expect(page.locator('.article-toc h2')).toHaveText('On this page');
-    await expect(page.locator('#sources h2')).toHaveText('Sources and verification');
-    await expect(page.locator('#sources')).toContainText('Source checked');
+    await expect(page.locator('#sources h2')).toHaveText('Sources');
+    await expect(page.locator('#sources')).toContainText('Checked');
     await expect(page.locator('#sources')).not.toContainText('来源核对');
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', `https://promiliaguide.com/en/guides/${topic}/`);
     const schema = await page.locator('script[type="application/ld+json"]').textContent();

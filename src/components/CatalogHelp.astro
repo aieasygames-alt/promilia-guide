@@ -15,7 +15,7 @@ const rows = character ? [
 ];
 ---
 <aside class="catalog-help" aria-label={ja ? '一覧の使い方' : '目录使用说明'}>
-  <div class="catalog-help-heading"><h2>{ja ? 'この一覧で分かること' : '这份目录能帮你查什么'}</h2><span class="pill">{count} {ja ? '件の確認済み紹介' : '项已核验介绍'}</span></div>
+  <div class="catalog-help-heading"><h2>{ja ? 'この一覧で分かること' : '这份目录能帮你查什么'}</h2><span class="pill">{count} {ja ? '件の公式紹介' : '项官方介绍'}</span></div>
   <dl>{rows.map(([title, note]) => <div><dt>{title}</dt><dd>{note}</dd></div>)}</dl>
   <div class="catalog-help-links"><a href={`/${locale}/database/`}>{ja ? '図鑑の総合索引' : '图鉴总索引'} →</a><a href={`/${locale}/${character ? 'guides/reroll/' : 'systems/kibo/'}`}>{ja ? character ? 'リセマラの判断' : 'キボの入手と用途' : character ? '首抽与投入判断' : '奇波获取与用途'} →</a><a href={`/${locale}/${character ? 'guides/banner-rules/' : 'systems/home/'}`}>{ja ? character ? 'ガチャ規約' : '農園と配置' : character ? '卡池规则' : '家园与岗位'} →</a></div>
 </aside>
