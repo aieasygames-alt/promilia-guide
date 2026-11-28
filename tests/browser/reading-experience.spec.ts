@@ -14,6 +14,9 @@ test('mobile quick contents opens the folded index and transfers keyboard focus'
     await page.locator('#mobile-top-btn').click();
     await expect(page.locator('#main')).toBeFocused();
     await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+    await page.evaluate(() => scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' }));
+    const footerClear = await page.evaluate(() => document.querySelector('.footer-bottom')!.getBoundingClientRect().bottom <= document.querySelector('.mobile-action-bar')!.getBoundingClientRect().top);
+    expect(footerClear, `${locale} footer must clear the fixed toolbar`).toBe(true);
   }
 });
 
